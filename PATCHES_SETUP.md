@@ -1,6 +1,6 @@
 # TADa Patches Setup & Development Guide
 
-Đây là tài liệu hướng dẫn nhanh để quản lý, build và phát triển thêm các bản patch mới cho TADa Patches. TADa Patches là một bản fork từ Morphe Patches và tuân thủ chặt chẽ giấy phép GPLv3.
+Đây là tài liệu hướng dẫn nhanh để quản lý, build và phát triển thêm các bản patch mới cho TADa Patches. TADa Patches là một bản fork từ TADa Patches và tuân thủ chặt chẽ giấy phép GPLv3.
 
 ## 1. Cách Build Bundle
 
@@ -12,7 +12,7 @@
    ```bash
    ./gradlew build
    ```
-4. Nếu yêu cầu token GitHub Packages để tải dependencies của patcher framework (như `app.morphe.patches` plugin), bạn cần set biến môi trường:
+4. Nếu yêu cầu token GitHub Packages để tải dependencies của patcher framework (như `app.tada.patches` plugin), bạn cần set biến môi trường:
    ```bash
    export GITHUB_TOKEN=your_personal_access_token
    export GITHUB_ACTOR=your_github_username
@@ -32,10 +32,10 @@
 
 ## 3. Cách Thêm Patch Mới
 
-TADa Patches (thừa kế kiến trúc từ Morphe/ReVanced) cho phép bạn mở rộng bằng cách thêm patch mới cho các ứng dụng:
+TADa Patches (thừa kế kiến trúc từ TADa/ReVanced) cho phép bạn mở rộng bằng cách thêm patch mới cho các ứng dụng:
 
 1. Xác định thư mục extension của ứng dụng mục tiêu (ví dụ: `extensions/youtube` hoặc `extensions/reddit`).
-2. Tìm đến vị trí đặt source code của patch (ví dụ: `src/main/kotlin/app/morphe/patches/...`).
+2. Tìm đến vị trí đặt source code của patch (ví dụ: `src/main/kotlin/app/tada/patches/...`).
 3. Tạo một file `.kt` mới, khai báo class thừa kế framework `BytecodePatch`.
 4. Gắn Annotation `@Patch(...)`:
    ```kotlin
@@ -61,9 +61,9 @@ TADa Patches (thừa kế kiến trúc từ Morphe/ReVanced) cho phép bạn m�
 
 TADa Patches phải tuân thủ các quy định nghiêm ngặt từ GPLv3 (Section 7) dựa trên yêu cầu từ nguyên bản:
 
-- [ ] **Giữ nguyên Copyright/License Headers:** Tuyệt đối không xóa hoặc thay đổi các header bản quyền (VD: `Copyright 2026 Morphe.`) ở đầu các file source code.
+- [ ] **Giữ nguyên Copyright/License Headers:** Tuyệt đối không xóa hoặc thay đổi các header bản quyền (VD: `Copyright 2026 TADa.`) ở đầu các file source code.
 - [ ] **Giữ nguyên các file `LICENSE` và `NOTICE`:** Các file này phải được giữ nguyên vẹn ở thư mục gốc.
-- [ ] **Tôn trọng Name & Branding Restrictions (GPLv3 7c & 7e):** Bản thân tên gọi "Morphe", "Morphe Plus", v.v. không được dùng để đặt tên cho app/bundle của bạn. Ở đây chúng ta đã rebrand thành "TADa" để hợp lệ.
-- [ ] **Attribution (Ghi nhận tác giả gốc):** `README.md` của repo này phải ghi rõ TADa Patches là một bản fork từ Morphe Patches và để link trỏ về repo gốc.
-- [ ] **Sửa đổi chuỗi hiển thị:** Chỉ chỉnh sửa (rebrand) các chuỗi văn bản (display strings) mà người dùng cuối nhìn thấy (thay từ "Morphe" thành "TADa") để giữ cho app mang thương hiệu của bạn, nhưng KHÔNG sửa tên class, tên biến nội bộ hay package names của core logic để tránh lỗi tương thích.
+- [ ] **Tôn trọng Name & Branding Restrictions (GPLv3 7c & 7e):** Bản thân tên gọi "TADa", "TADa Plus", v.v. không được dùng để đặt tên cho app/bundle của bạn. Ở đây chúng ta đã rebrand thành "TADa" để hợp lệ.
+- [ ] **Attribution (Ghi nhận tác giả gốc):** `README.md` của repo này phải ghi rõ TADa Patches là một bản fork từ TADa Patches và để link trỏ về repo gốc.
+- [ ] **Sửa đổi chuỗi hiển thị:** Chỉ chỉnh sửa (rebrand) các chuỗi văn bản (display strings) mà người dùng cuối nhìn thấy (thay từ "TADa" thành "TADa") để giữ cho app mang thương hiệu của bạn, nhưng KHÔNG sửa tên class, tên biến nội bộ hay package names của core logic để tránh lỗi tương thích.
 - [ ] **Mã nguồn mở:** Các bản phát hành public của TADa Patches phải đi kèm với toàn bộ mã nguồn theo giấy phép tương đương.

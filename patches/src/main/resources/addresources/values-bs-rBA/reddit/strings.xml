@@ -16,7 +16,7 @@ Second \"item\" text"</string>
 
 -->
 <resources>
-  <string name="morphe_screen_ads_title">Reklame</string>
-  <string name="morphe_about_title">O TADa</string>
-  <string name="morphe_app_icon_default">The </string>
+  <string name="tada_screen_ads_title">Reklame</string>
+  <string name="tada_about_title">O TADa</string>
+  <string name="tada_app_icon_default">The </string>
 </resources>

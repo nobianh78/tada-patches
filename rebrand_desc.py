@@ -8,12 +8,12 @@ for root, dirs, files in os.walk("patches/src/main/kotlin"):
             with open(filepath, "r", encoding="utf-8") as f:
                 content = f.read()
             
-            # Replace Morphe with TADa in description = "..." and patchName = "..."
+            # Replace TADa with TADa in description = "..." and patchName = "..."
             def replacer(match):
                 prefix = match.group(1)
                 text = match.group(2)
-                text = text.replace("Morphe", "TADa")
-                text = text.replace("morphe", "tada")
+                text = text.replace("TADa", "TADa")
+                text = text.replace("tada", "tada")
                 return f'{prefix}"{text}"'
                 
             new_content = re.sub(r'(description\s*=\s*)"([^"]*)"', replacer, content)

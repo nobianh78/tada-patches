@@ -5,27 +5,27 @@
          only the 60fps 1 second styles are exposed in the settings.
          YT Music has a single animation, so the same three styles apply to it.
          Imported settings data can still be manually edited to force the other styles. -->
-    <string-array name="morphe_splash_screen_animation_style_entries">
-        <item>@string/morphe_splash_screen_animation_style_entry_1</item>
-        <item>@string/morphe_splash_screen_animation_style_entry_2</item>
-        <item>@string/morphe_splash_screen_animation_style_entry_3</item>
+    <string-array name="tada_splash_screen_animation_style_entries">
+        <item>@string/tada_splash_screen_animation_style_entry_1</item>
+        <item>@string/tada_splash_screen_animation_style_entry_2</item>
+        <item>@string/tada_splash_screen_animation_style_entry_3</item>
     </string-array>
-    <string-array name="morphe_splash_screen_animation_style_entry_values">
+    <string-array name="tada_splash_screen_animation_style_entry_values">
         <item>DISABLED</item>
         <item>FPS_60_ONE_SECOND</item>
         <item>FPS_60_BLACK_AND_WHITE</item>
     </string-array>
 
     <!-- layout.branding.baseCustomBrandingPatch -->
-    <string-array name="morphe_custom_branding_icon_entries">
-        <item>@string/morphe_custom_branding_icon_entry_1</item>
-        <item>@string/morphe_custom_branding_icon_entry_2</item>
-        <item>@string/morphe_custom_branding_icon_entry_3</item>
-        <item>@string/morphe_custom_branding_icon_entry_4</item>
-        <item>@string/morphe_custom_branding_icon_entry_5</item>
-        <item>@string/morphe_custom_branding_icon_entry_6</item>
+    <string-array name="tada_custom_branding_icon_entries">
+        <item>@string/tada_custom_branding_icon_entry_1</item>
+        <item>@string/tada_custom_branding_icon_entry_2</item>
+        <item>@string/tada_custom_branding_icon_entry_3</item>
+        <item>@string/tada_custom_branding_icon_entry_4</item>
+        <item>@string/tada_custom_branding_icon_entry_5</item>
+        <item>@string/tada_custom_branding_icon_entry_6</item>
     </string-array>
-    <string-array name="morphe_custom_branding_icon_entry_values">
+    <string-array name="tada_custom_branding_icon_entry_values">
         <item>ORIGINAL</item>
         <item>BLACK</item>
         <item>DARK</item>
@@ -33,16 +33,16 @@
         <item>PLAY</item>
         <item>PLAY_BLACK</item>
     </string-array>
-    <string-array name="morphe_custom_branding_icon_custom_entries">
-        <item>@string/morphe_custom_branding_icon_entry_1</item>
-        <item>@string/morphe_custom_branding_icon_entry_2</item>
-        <item>@string/morphe_custom_branding_icon_entry_3</item>
-        <item>@string/morphe_custom_branding_icon_entry_4</item>
-        <item>@string/morphe_custom_branding_icon_entry_5</item>
-        <item>@string/morphe_custom_branding_icon_entry_6</item>
-        <item>@string/morphe_custom_branding_icon_entry_7</item>
+    <string-array name="tada_custom_branding_icon_custom_entries">
+        <item>@string/tada_custom_branding_icon_entry_1</item>
+        <item>@string/tada_custom_branding_icon_entry_2</item>
+        <item>@string/tada_custom_branding_icon_entry_3</item>
+        <item>@string/tada_custom_branding_icon_entry_4</item>
+        <item>@string/tada_custom_branding_icon_entry_5</item>
+        <item>@string/tada_custom_branding_icon_entry_6</item>
+        <item>@string/tada_custom_branding_icon_entry_7</item>
     </string-array>
-    <string-array name="morphe_custom_branding_icon_custom_entry_values">
+    <string-array name="tada_custom_branding_icon_custom_entry_values">
         <item>ORIGINAL</item>
         <item>BLACK</item>
         <item>DARK</item>
@@ -51,26 +51,26 @@
         <item>PLAY_BLACK</item>
         <item>CUSTOM</item>
     </string-array>
-    <string-array name="morphe_custom_branding_notification_icon_entries">
-        <item>@string/morphe_custom_branding_notification_icon_entry_1</item>
-        <item>@string/morphe_custom_branding_icon_entry_1</item>
-        <item>@string/morphe_custom_branding_notification_icon_entry_2</item>
-        <item>@string/morphe_custom_branding_notification_icon_entry_3</item>
+    <string-array name="tada_custom_branding_notification_icon_entries">
+        <item>@string/tada_custom_branding_notification_icon_entry_1</item>
+        <item>@string/tada_custom_branding_icon_entry_1</item>
+        <item>@string/tada_custom_branding_notification_icon_entry_2</item>
+        <item>@string/tada_custom_branding_notification_icon_entry_3</item>
     </string-array>
-    <string-array name="morphe_custom_branding_notification_icon_entry_values">
+    <string-array name="tada_custom_branding_notification_icon_entry_values">
         <item>FOLLOW</item>
         <item>ORIGINAL</item>
         <item>BLACK</item>
         <item>PLAY</item>
     </string-array>
-    <string-array name="morphe_custom_branding_notification_icon_custom_entries">
-        <item>@string/morphe_custom_branding_notification_icon_entry_1</item>
-        <item>@string/morphe_custom_branding_icon_entry_1</item>
-        <item>@string/morphe_custom_branding_notification_icon_entry_2</item>
-        <item>@string/morphe_custom_branding_notification_icon_entry_3</item>
-        <item>@string/morphe_custom_branding_icon_entry_7</item>
+    <string-array name="tada_custom_branding_notification_icon_custom_entries">
+        <item>@string/tada_custom_branding_notification_icon_entry_1</item>
+        <item>@string/tada_custom_branding_icon_entry_1</item>
+        <item>@string/tada_custom_branding_notification_icon_entry_2</item>
+        <item>@string/tada_custom_branding_notification_icon_entry_3</item>
+        <item>@string/tada_custom_branding_icon_entry_7</item>
     </string-array>
-    <string-array name="morphe_custom_branding_notification_icon_custom_entry_values">
+    <string-array name="tada_custom_branding_notification_icon_custom_entry_values">
         <item>FOLLOW</item>
         <item>ORIGINAL</item>
         <item>BLACK</item>
@@ -79,13 +79,13 @@
     </string-array>
 
     <!-- misc.framerate.baseAppRefreshRatePatch -->
-    <string-array name="morphe_app_refresh_rate_type_entries">
-        <item>@string/morphe_app_refresh_rate_type_entry_1</item>
-        <item>@string/morphe_app_refresh_rate_type_entry_2</item>
-        <item>@string/morphe_app_refresh_rate_type_entry_3</item>
-        <item>@string/morphe_app_refresh_rate_type_entry_4</item>
+    <string-array name="tada_app_refresh_rate_type_entries">
+        <item>@string/tada_app_refresh_rate_type_entry_1</item>
+        <item>@string/tada_app_refresh_rate_type_entry_2</item>
+        <item>@string/tada_app_refresh_rate_type_entry_3</item>
+        <item>@string/tada_app_refresh_rate_type_entry_4</item>
     </string-array>
-    <string-array name="morphe_app_refresh_rate_type_entry_values">
+    <string-array name="tada_app_refresh_rate_type_entry_values">
         <item>ALWAYS</item>
         <item>PORTRAIT</item>
         <item>FULLSCREEN</item>
@@ -93,7 +93,7 @@
     </string-array>
     
     <!-- misc.audio.silence.skipSilencePatch -->
-    <string-array name="morphe_skip_silence_minimum_pause_entries" translatable="false">
+    <string-array name="tada_skip_silence_minimum_pause_entries" translatable="false">
         <item>0.5 seconds</item>
         <item>0.7 seconds</item>
         <item>1 second</item>
@@ -102,7 +102,7 @@
         <item>5 seconds</item>
         <item>10 seconds</item>
     </string-array>
-    <string-array name="morphe_skip_silence_minimum_pause_entry_values" translatable="false">
+    <string-array name="tada_skip_silence_minimum_pause_entry_values" translatable="false">
         <item>MS_500</item>
         <item>MS_700</item>
         <item>S_1</item>
@@ -113,25 +113,25 @@
     </string-array>
 
     <!-- layout.theme.baseThemePatch -->
-    <string-array name="morphe_theme_color_dark_entries">
-        <item>@string/morphe_theme_color_entry_1</item>
-        <item>@string/morphe_theme_color_dark_entry_2</item>
-        <item>@string/morphe_theme_color_dark_entry_3</item>
-        <item>@string/morphe_theme_color_entry_4</item>
-        <item>@string/morphe_theme_color_entry_5</item>
-        <item>@string/morphe_theme_color_entry_6</item>
-        <item>@string/morphe_theme_color_entry_7</item>
-        <item>@string/morphe_theme_color_dark_entry_8</item>
-        <item>@string/morphe_theme_color_dark_entry_9</item>
-        <item>@string/morphe_theme_color_dark_entry_10</item>
-        <item>@string/morphe_theme_color_dark_entry_11</item>
-        <item>@string/morphe_theme_color_dark_entry_12</item>
-        <item>@string/morphe_theme_color_dark_entry_13</item>
-        <item>@string/morphe_theme_color_dark_entry_14</item>
-        <item>@string/morphe_theme_color_dark_entry_15</item>
-        <item>@string/morphe_theme_color_custom_entry</item>
+    <string-array name="tada_theme_color_dark_entries">
+        <item>@string/tada_theme_color_entry_1</item>
+        <item>@string/tada_theme_color_dark_entry_2</item>
+        <item>@string/tada_theme_color_dark_entry_3</item>
+        <item>@string/tada_theme_color_entry_4</item>
+        <item>@string/tada_theme_color_entry_5</item>
+        <item>@string/tada_theme_color_entry_6</item>
+        <item>@string/tada_theme_color_entry_7</item>
+        <item>@string/tada_theme_color_dark_entry_8</item>
+        <item>@string/tada_theme_color_dark_entry_9</item>
+        <item>@string/tada_theme_color_dark_entry_10</item>
+        <item>@string/tada_theme_color_dark_entry_11</item>
+        <item>@string/tada_theme_color_dark_entry_12</item>
+        <item>@string/tada_theme_color_dark_entry_13</item>
+        <item>@string/tada_theme_color_dark_entry_14</item>
+        <item>@string/tada_theme_color_dark_entry_15</item>
+        <item>@string/tada_theme_color_custom_entry</item>
     </string-array>
-    <string-array name="morphe_theme_color_dark_entry_values">
+    <string-array name="tada_theme_color_dark_entry_values">
         <item>APP_DEFAULT</item>
         <item>PURE_BLACK</item>
         <item>MATERIAL_YOU_PURE_BLACK</item>

@@ -1,6 +1,6 @@
-Morphe NOTICE
+TADa NOTICE
 
-https://github.com/MorpheApp/morphe-patches
+https://github.com/TADaApp/tada-patches
 
 =============
 
@@ -9,7 +9,7 @@ GPLv3 Section 7b: Preservation of User Notices
 All derivative works (source code and binaries) must include this
 NOTICE text and provide it to the software user.
 
-Portions of this software are provided "AS IS" by the Morphe software project.
+Portions of this software are provided "AS IS" by the TADa software project.
 Any express or implied warranties, including the implied warranties of
 merchantability and fitness for a particular purpose, are disclaimed.
 
@@ -25,5 +25,5 @@ confusion regarding their origin.
 GPLv3 Section 7e: Declining Grant of Trademark Rights
 
 This License does not grant any rights or permission under trademark law
-to use the name "Morphe" or any of the Program's trade names, trademarks,
+to use the name "TADa" or any of the Program's trade names, trademarks,
 service marks, or logos.

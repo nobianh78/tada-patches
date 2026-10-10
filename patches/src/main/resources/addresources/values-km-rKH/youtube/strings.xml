@@ -18,22 +18,22 @@ Second \"item\" text"</string>
 <resources>
   <!-- misc.settings.settingsPatch -->
   <!-- In languages where "About" is ambiguous, translate this as "About TADa" (i.e., About this app). -->
-  <string name="morphe_settings_screen_00_about_title">អំពីកម្មវិធីនេះ</string>
-  <string name="morphe_settings_screen_01_ads_title">ពាណិជ្ជកម្ម</string>
-  <string name="morphe_settings_screen_03_feed_title">ព័ត៌មាន</string>
-  <string name="morphe_settings_screen_04_general_title">ជាទូទៅ</string>
-  <string name="morphe_settings_screen_05_player_title">ការីចាក់</string>
-  <string name="morphe_settings_screen_11_misc_title">ផ្សេងៗទៀត</string>
-  <string name="morphe_settings_screen_12_video_title">វីដេអូ</string>
+  <string name="tada_settings_screen_00_about_title">អំពីកម្មវិធីនេះ</string>
+  <string name="tada_settings_screen_01_ads_title">ពាណិជ្ជកម្ម</string>
+  <string name="tada_settings_screen_03_feed_title">ព័ត៌មាន</string>
+  <string name="tada_settings_screen_04_general_title">ជាទូទៅ</string>
+  <string name="tada_settings_screen_05_player_title">ការីចាក់</string>
+  <string name="tada_settings_screen_11_misc_title">ផ្សេងៗទៀត</string>
+  <string name="tada_settings_screen_12_video_title">វីដេអូ</string>
   <!-- misc.backgroundplayback.backgroundPlaybackPatch -->
-  <string name="morphe_auto_pause_on_screen_lock_off">បិទ</string>
+  <string name="tada_auto_pause_on_screen_lock_off">បិទ</string>
   <!-- layout.disableScrollSpeedLimitPatch -->
   <!-- layout.disableLayoutUpdatesPatch -->
   <!-- layout.hide.general.hideLayoutComponentsPatch -->
-  <string name="morphe_hide_album_cards_title">លាក់កាតអាល់ប៊ុម</string>
-  <string name="morphe_hide_artist_cards_title">លាក់កាតសិល្បករ</string>
-  <string name="morphe_hide_community_posts_title">លាក់សារបង្ហោះសហគមន៍</string>
-  <string name="morphe_hide_compact_banner_title">លាក់ផ្ទាំងបដាតូចៗ</string>
+  <string name="tada_hide_album_cards_title">លាក់កាតអាល់ប៊ុម</string>
+  <string name="tada_hide_artist_cards_title">លាក់កាតសិល្បករ</string>
+  <string name="tada_hide_community_posts_title">លាក់សារបង្ហោះសហគមន៍</string>
+  <string name="tada_hide_compact_banner_title">លាក់ផ្ទាំងបដាតូចៗ</string>
   <!-- 'Invite others to message' should be translated using the same localized wording YouTube displays
           for the card in the Messages section at the top of the Notifications tab. -->
   <!-- 'Latest videos' should be translated using the same localized wording YouTube displays for the button.
@@ -43,9 +43,9 @@ Second \"item\" text"</string>
           This button usually appears in the Subscriptions feed for future live streams or unreleased videos. -->
   <!-- 'Show more' should be translated using the same localized wording YouTube displays for the button.
           This button usually appears when searching for a YouTube creator. -->
-  <!-- Translations should match the language used in 'morphe_hide_view_count_summary'. -->
+  <!-- Translations should match the language used in 'tada_hide_view_count_summary'. -->
   <!-- 'People also watched' and 'You might also like' should be translated using the same localized wording YouTube displays for the label. -->
-  <!-- Translations should match the language used in 'morphe_hide_upload_time_summary'. -->
+  <!-- Translations should match the language used in 'tada_hide_upload_time_summary'. -->
   <!-- https://logos.fandom.com/wiki/YouTube/Yoodles -->
   <!-- 'Join' should be translated using the same localized wording YouTube displays for the button.
           This button usually appears in the video player for certain videos. -->
@@ -62,10 +62,10 @@ Second \"item\" text"</string>
          This is because keywords can be in any language, and showing an example in the localized script helps convey this. -->
   <!-- Translations must use a localized example. For languages that do not use spaces between words (Chinese, Japanese, etc.) the English AI example should be used since no localized examples exist. Or if using machine translations, or if nobody wants to think of a localized example, then the English 'ai' example should be left as-is. -->
   <!-- Translations of this should not be longer than the original English text, otherwise the text can be clipped and not entirely shown. -->
-  <string name="morphe_hide_about_category_title">អំពីកម្មវិធីនេះ</string>
+  <string name="tada_hide_about_category_title">អំពីកម្មវិធីនេះ</string>
   <!-- ad.hideAdsPatch -->
   <!-- Channel whitelist dialog, shared by ad.hideAdsPatch and layout.sponsorblock.sponsorBlockPatch -->
-  <string name="morphe_channel_whitelist_remove">ដកចេញ</string>
+  <string name="tada_channel_whitelist_remove">ដកចេញ</string>
   <!-- interaction.doubletap.doubleTapLengthPatch -->
   <!-- interaction.channelsearch.channelSearchPatch -->
   <!-- interaction.copyvideolink.copyVideoLinkButtonPatch -->
@@ -74,27 +74,27 @@ Second \"item\" text"</string>
   <!-- interaction.downloads.downloadsPatch -->
   <!-- 'Download' should be translated using the same localized wording YouTube displays for the button. -->
   <!-- video.voiceovertranslation.voiceOverTranslationPatch -->
-  <string name="morphe_vot_openrouter_model_custom">ផ្ទាល់ខ្លួន</string>
+  <string name="tada_vot_openrouter_model_custom">ផ្ទាល់ខ្លួន</string>
   <!-- %s is dollar cost, e.g., $0.10 per 100 hours -->
-  <string name="morphe_vot_tts_system">ប្រព័ន្ធ</string>
+  <string name="tada_vot_tts_system">ប្រព័ន្ធ</string>
   <!-- interaction.loop.loopVideoPatch -->
   <!-- interaction.loop.loopVideoButtonPatch -->
   <!-- interaction.pip.pipButtonPatch -->
   <!-- interaction.playall.playAllButtonPatch -->
   <!-- interaction.reload.reloadVideoPatch -->
   <!-- interaction.savetowatchlater.saveToWatchLaterPatch -->
-  <!-- "Spoof video streams" must use the same translation as morphe_spoof_video_streams_screen_title -->
+  <!-- "Spoof video streams" must use the same translation as tada_spoof_video_streams_screen_title -->
   <!-- interaction.livering.openChannelOfLiveAvatarPatch -->
   <!-- interaction.seekbar.disablePreciseSeekingGesturePatch -->
   <!-- interaction.seekbar.liveStreamDVRPatch -->
   <!-- interaction.seekbar.seekbarThumbnailPreviewPatch -->
-  <!-- 'Spoof video streams' should be the same translation used for 'morphe_spoof_video_streams_screen_title'. -->
-  <!-- 'Spoof video streams' should be the same translation used for 'morphe_spoof_video_streams_screen_title'. -->
+  <!-- 'Spoof video streams' should be the same translation used for 'tada_spoof_video_streams_screen_title'. -->
+  <!-- 'Spoof video streams' should be the same translation used for 'tada_spoof_video_streams_screen_title'. -->
   <!-- interaction.seekbar.enableSlideToSeekPatch -->
   <!-- interaction.seekbar.enableTapToSeekPatch -->
   <!-- interaction.swipecontrols.swipeControlsPatch -->
-  <string name="morphe_swipe_zone_label_native">ដើម</string>
-  <string name="morphe_swipe_zone_label_off">បិទ</string>
+  <string name="tada_swipe_zone_label_native">ដើម</string>
+  <string name="tada_swipe_zone_label_off">បិទ</string>
   <!-- 'Lock screen' should be translated using the same localized wording YouTube displays for the player menu item. -->
   <!-- layout.buttons.action.hideButtonsPatch -->
   <!-- 'Share' should be translated using the same localized wording YouTube displays for the button. -->
@@ -124,11 +124,11 @@ Second \"item\" text"</string>
   <!-- 'Create' has no display name. Translate normally. -->
   <!-- 'Subscriptions' should be translated using the same localized wording YouTube displays for the tab. -->
   <!-- 'Notifications' should be translated using the same localized wording YouTube displays for the tab. -->
-  <string name="morphe_hide_navigation_bar_title">លាក់របាររុករក</string>
+  <string name="tada_hide_navigation_bar_title">លាក់របាររុករក</string>
   <!-- layout.hide.player.flyoutmenupanel.hidePlayerFlyoutMenuPatch -->
   <!-- 'Additional settings / More' should be translated using the same localized wording YouTube displays for the menu item. -->
   <!-- 'Ambient mode' should be translated using the same localized wording YouTube displays for the menu item. -->
-  <!-- 'Spoof video streams' should match the language used in 'morphe_spoof_video_streams_screen_title'.
+  <!-- 'Spoof video streams' should match the language used in 'tada_spoof_video_streams_screen_title'.
          'Android Studio' and 'Android VR Downgraded' must be kept untranslated. -->
   <!-- 'Audio Track' should be translated using the same localized wording YouTube displays for the menu item. -->
   <!-- 'Captions' should be translated using the same localized wording YouTube displays for the menu item. -->
@@ -144,7 +144,7 @@ Second \"item\" text"</string>
   <!-- 'Watch in VR' should be translated using the same localized wording YouTube displays for the menu item. -->
   <!-- layout.hide.autoplaypreview.hideAutoplayPreviewPatch -->
   <!-- layout.buttons.overlay.hidePlayerOverlayButtonsPatch -->
-  <!-- This button does not display any text, but 'Captions' should match the language used in 'morphe_hide_player_flyout_captions_title'. -->
+  <!-- This button does not display any text, but 'Captions' should match the language used in 'tada_hide_player_flyout_captions_title'. -->
   <!-- layout.hide.endscreencards.hideEndScreenCardsPatch -->
   <!-- layout.hide.ambientmode.ambientModePatch -->
   <!-- layout.hide.infocards.hideInfocardsPatch -->
@@ -168,15 +168,15 @@ Second \"item\" text"</string>
   <!-- layout.player.fullscreen.forceFullscreenLandscapePatch -->
   <!-- layout.player.fullscreen.disableFullscreenGesturesPatch -->
   <!-- layout.player.fullscreen.openVideosFullscreenPatch -->
-  <string name="morphe_open_videos_fullscreen_entry_1">បានផ្ដាច់</string>
+  <string name="tada_open_videos_fullscreen_entry_1">បានផ្ដាច់</string>
   <!-- layout.player.fullscreen.stretchVideoPatch -->
   <!-- layout.player.buttons.muteVideoButtonPatch -->
   <!-- layout.player.overlay.customPlayerOverlayOpacityPatch -->
   <!-- layout.searchbar.wideSearchbarPatch -->
-  <string name="morphe_searchbar_type_entry_disabled">បានផ្ដាច់</string>
+  <string name="tada_searchbar_type_entry_disabled">បានផ្ដាច់</string>
   <!-- layout.sponsorblock.sponsorBlockPatch -->
   <!-- layout.formfactor.changeFormFactorPatch -->
-  <!-- "Restore old video action bar" must be translated the same as morphe_restore_old_video_action_bar_title -->
+  <!-- "Restore old video action bar" must be translated the same as tada_restore_old_video_action_bar_title -->
   <!-- misc.spoof.appversion.spoofAppVersionPatch -->
   <!-- misc.sharesheet.openSystemShareSheetPatch -->
   <!-- layout.music.overrideYouTubeMusicButtonsPatch -->
@@ -185,7 +185,7 @@ Second \"item\" text"</string>
   <!-- layout.shortsplayer.shortsPlayerTypePatch -->
   <!-- layout.shortsautoplay.shortsAutoplayPatch -->
   <!-- layout.playbackinfeeds.playbackInFeedsPatch -->
-  <string name="morphe_playback_in_feeds_entry_off">បិទ</string>
+  <string name="tada_playback_in_feeds_entry_off">បិទ</string>
   <!-- layout.originaltitles.restoreOriginalTitlesPatch -->
   <!-- layout.feedrefresh.disableAutoFeedRefreshPatch -->
   <!-- layout.miniplayer.miniplayerPatch -->
@@ -194,8 +194,8 @@ Second \"item\" text"</string>
   <!-- layout.theme.themePatch -->
   <!-- layout.branding.customBrandingPatch -->
   <!-- layout.branding.header.changeHeaderPatch -->
-  <!-- Translations should match the language used in 'morphe_custom_branding_icon_entry_7'. -->
-  <string name="morphe_header_logo_entry_5">ផ្ទាល់ខ្លួន</string>
+  <!-- Translations should match the language used in 'tada_custom_branding_icon_entry_7'. -->
+  <string name="tada_header_logo_entry_5">ផ្ទាល់ខ្លួន</string>
   <!-- layout.thumbnails.bypassImageRegionRestrictionsPatch -->
   <!-- layout.dearrow.deArrowPatch -->
   <!-- "DeArrow" must be kept untranslated. -->
@@ -212,22 +212,22 @@ Second \"item\" text"</string>
   <!-- misc.links.openLinksExternallyPatch -->
   <!-- video.buffer.playbackBufferPatch -->
   <!-- video.quality.rememberVideoQualityPatch -->
-  <!-- Translations should match the language used in 'morphe_custom_playback_speeds_auto'. -->
+  <!-- Translations should match the language used in 'tada_custom_playback_speeds_auto'. -->
   <!-- video.speed.button.playbackSpeedButtonPatch -->
   <!-- video.quality.button.videoQualityDialogButtonPatch -->
   <!-- video.speed.custom.customPlaybackSpeedPatch -->
   <!-- video.speed.remember.rememberPlaybackSpeedPatch -->
   <!-- video.livestream.rememberLiveStreamPositionPatch -->
   <!-- video.codecs.disableVideoCodecsPatch -->
-  <!-- 'Spoof video streams' should be the same translation used for 'morphe_spoof_video_streams_screen_title'. -->
+  <!-- 'Spoof video streams' should be the same translation used for 'tada_spoof_video_streams_screen_title'. -->
   <!-- video.quality.advancedVideoQualityMenuPatch -->
   <!-- video.quality.hidePremiumVideoQualityPatch -->
   <!-- video.quality.prioritizeVideoQualityPatch -->
   <!-- misc.spoof.spoofVideoStreamsPatch -->
-  <!-- "Force original audio" should match the language used in 'morphe_force_original_audio_title'. -->
+  <!-- "Force original audio" should match the language used in 'tada_force_original_audio_title'. -->
   <!-- Quality refers to video quality -->
   <!-- misc.fix.videoactionbar.restoreOldVideoActionBarPatch -->
   <!-- layout.player.icons.playerIconStylePatch -->
-  <string name="morphe_player_icon_style_entry_auto">ស្វ័យប្រវត្តិ</string>
-  <string name="morphe_player_icon_style_entry_custom">ផ្ទាល់ខ្លួន</string>
+  <string name="tada_player_icon_style_entry_auto">ស្វ័យប្រវត្តិ</string>
+  <string name="tada_player_icon_style_entry_custom">ផ្ទាល់ខ្លួន</string>
 </resources>

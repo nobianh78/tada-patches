@@ -5,7 +5,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "app.morphe.extension.shared"
+    namespace = "app.tada.extension.shared"
     compileSdk = 36
 
     defaultConfig {
@@ -19,6 +19,6 @@ configure<LibraryExtension> {
 }
 
 dependencies {
-    implementation(libs.morphe.extensions.library)
+    implementation(libs.tada.extensions.library)
     compileOnly(libs.annotation)
 }

@@ -1,7 +1,7 @@
 -dontobfuscate
 -dontoptimize
 -keepattributes *
--keep class app.morphe.** {
+-keep class app.tada.** {
   *;
 }
 -keep class com.google.** {

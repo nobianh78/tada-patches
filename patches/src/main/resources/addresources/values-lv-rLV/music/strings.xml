@@ -16,19 +16,19 @@ Second \"item\" text"</string>
 
 -->
 <resources>
-  <!-- app.morphe.patches.music.interaction.jam -->
-  <string name="morphe_music_jam_cancel">Atcelt</string>
+  <!-- app.tada.patches.music.interaction.jam -->
+  <string name="tada_music_jam_cancel">Atcelt</string>
   <!-- layout.branding.customBrandingPatch -->
   <!-- layout.branding.header.changeHeaderPatch -->
   <!-- misc.album.albumMusicVideoPatch -->
-  <!-- 'Spoof video streams' should match the language used in 'morphe_spoof_video_streams_screen_title' -->
+  <!-- 'Spoof video streams' should match the language used in 'tada_spoof_video_streams_screen_title' -->
   <!-- interaction.downloads.downloadsPatch -->
   <!-- 'Download' should be translated using the same localized wording YouTube displays for the button. -->
   <!-- misc.settings.settingsPatch -->
   <!-- In languages where "About" is ambiguous, translate this as "About TADa" (i.e., About this app). -->
   <!-- ad.hideAdsPatch -->
   <!-- layout.hide.general.hideLayoutComponentsPatch -->
-  <string name="morphe_music_comments_screen_title">Komentāri</string>
+  <string name="tada_music_comments_screen_title">Komentāri</string>
   <!-- interaction.crossfade.crossfadePatch -->
   <!-- Empty string because custom preference handles the title itself -->
   <!-- Banner row has no text; it shows a full-width graphic via a custom layout. -->
@@ -46,11 +46,11 @@ Second \"item\" text"</string>
   <!-- 'Start radio' should be translated using the same localized wording YouTube Music displays for the button. -->
   <!-- flyoutmenu.components.hideFlyoutMenuComponentsPatch -->
   <!-- layout.startpage.changeStartPagePatch -->
-  <string name="morphe_change_start_page_entry_history">Skatīšanās vēsture</string>
-  <string name="morphe_change_start_page_entry_library">Bibliotēka</string>
-  <string name="morphe_change_start_page_entry_playlists">Atskaņošanas saraksti</string>
-  <string name="morphe_change_start_page_entry_search">Meklēt</string>
-  <string name="morphe_change_start_page_entry_subscriptions">Abonementi</string>
+  <string name="tada_change_start_page_entry_history">Skatīšanās vēsture</string>
+  <string name="tada_change_start_page_entry_library">Bibliotēka</string>
+  <string name="tada_change_start_page_entry_playlists">Atskaņošanas saraksti</string>
+  <string name="tada_change_start_page_entry_search">Meklēt</string>
+  <string name="tada_change_start_page_entry_subscriptions">Abonementi</string>
   <!-- layout.compactheader.hideFilterBarPatch -->
   <!-- layout.orientation.forcePortraitOrientationPatch -->
   <!-- layout.miniplayer.changeMiniplayerColorPatch -->

@@ -16,25 +16,25 @@ Second \"item\" text"</string>
 
 -->
 <resources>
-  <string name="morphe_sb_appearance_category_title">Penampilan</string>
-  <string name="morphe_sb_duration_1s">1 saat</string>
-  <string name="morphe_sb_duration_2s">2 saat</string>
-  <string name="morphe_sb_duration_3s">3 saat</string>
-  <string name="morphe_sb_duration_4s">4 saat</string>
-  <string name="morphe_sb_duration_5s">5 saat</string>
-  <string name="morphe_sb_duration_6s">6 saat</string>
-  <string name="morphe_sb_duration_7s">7 saat</string>
-  <string name="morphe_sb_duration_8s">8 saat</string>
-  <string name="morphe_sb_duration_9s">9 saat</string>
-  <string name="morphe_sb_duration_10s">10 saat</string>
-  <string name="morphe_sb_general_title">Umum</string>
-  <string name="morphe_sb_channel_whitelist_title">Senarai putih saluran</string>
-  <string name="morphe_sb_channel_whitelist_summary">SponsorBlock dilumpuhkan untuk saluran di dalam senarai putih</string>
-  <string name="morphe_sb_toast_on_whitelisted_channel_title">Beritahu pada saluran di dalam senarai putih</string>
-  <string name="morphe_sb_toast_on_whitelisted_channel_summary">Menunjukkan pemberitahuan apabila SponsorBlock dilumpuhkan untuk saluran di dalam senarai putih</string>
-  <string name="morphe_sb_channel_whitelisted_toast">SponsorBlock dilumpuhkan untuk saluran ini</string>
+  <string name="tada_sb_appearance_category_title">Penampilan</string>
+  <string name="tada_sb_duration_1s">1 saat</string>
+  <string name="tada_sb_duration_2s">2 saat</string>
+  <string name="tada_sb_duration_3s">3 saat</string>
+  <string name="tada_sb_duration_4s">4 saat</string>
+  <string name="tada_sb_duration_5s">5 saat</string>
+  <string name="tada_sb_duration_6s">6 saat</string>
+  <string name="tada_sb_duration_7s">7 saat</string>
+  <string name="tada_sb_duration_8s">8 saat</string>
+  <string name="tada_sb_duration_9s">9 saat</string>
+  <string name="tada_sb_duration_10s">10 saat</string>
+  <string name="tada_sb_general_title">Umum</string>
+  <string name="tada_sb_channel_whitelist_title">Senarai putih saluran</string>
+  <string name="tada_sb_channel_whitelist_summary">SponsorBlock dilumpuhkan untuk saluran di dalam senarai putih</string>
+  <string name="tada_sb_toast_on_whitelisted_channel_title">Beritahu pada saluran di dalam senarai putih</string>
+  <string name="tada_sb_toast_on_whitelisted_channel_summary">Menunjukkan pemberitahuan apabila SponsorBlock dilumpuhkan untuk saluran di dalam senarai putih</string>
+  <string name="tada_sb_channel_whitelisted_toast">SponsorBlock dilumpuhkan untuk saluran ini</string>
   <!-- Notification (toast) shown if network connection times out. Translations of this should not be longer than the original English text, otherwise the text can be clipped and not entirely shown. -->
   <!-- A segment start and end time, such as "02:10 to 03:40". -->
   <!-- Shown in the settings preferences, and translations can be any text length. -->
-  <string name="morphe_sb_about_title">Mengenai</string>
+  <string name="tada_sb_about_title">Mengenai</string>
 </resources>

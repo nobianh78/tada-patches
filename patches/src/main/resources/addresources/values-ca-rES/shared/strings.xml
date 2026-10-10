@@ -26,7 +26,7 @@ Second \"item\" text"</string>
   <!-- Keep short, four of these are shown in one row. -->
   <!-- Keep short, shown as a badge and as a button. -->
   <!-- Keep short, shown as a badge and as a button. -->
-  <string name="morphe_debug_feature_flags_manager_state_blocked">Apagat</string>
+  <string name="tada_debug_feature_flags_manager_state_blocked">Apagat</string>
   <!-- Keep short, shown as a badge and as a button. -->
   <!-- Could be its own resource file, but for simplicity it's shared among all apps. -->
   <!-- misc.gms.gmsCoreSupportResourcePatch -->

@@ -2,7 +2,7 @@
 > Task :tasks
 
 ------------------------------------------------------------
-Tasks runnable from root project 'morphe-patches'
+Tasks runnable from root project 'tada-patches'
 ------------------------------------------------------------
 
 Android tasks
@@ -193,7 +193,7 @@ patches:stub:javadoc - Generates Javadoc API documentation for the 'main' featur
 
 Help tasks
 ----------
-artifactTransforms - Displays the Artifact Transforms that can be executed in root project 'morphe-patches'.
+artifactTransforms - Displays the Artifact Transforms that can be executed in root project 'tada-patches'.
 extensions:artifactTransforms - Displays the Artifact Transforms that can be executed in project ':extensions'.
 extensions:all:artifactTransforms - Displays the Artifact Transforms that can be executed in project ':extensions:all'.
 extensions:all:change-version-code:artifactTransforms - Displays the Artifact Transforms that can be executed in project ':extensions:all:change-version-code'.
@@ -209,7 +209,7 @@ extensions:youtube:artifactTransforms - Displays the Artifact Transforms that ca
 extensions:youtube:stub:artifactTransforms - Displays the Artifact Transforms that can be executed in project ':extensions:youtube:stub'.
 patches:artifactTransforms - Displays the Artifact Transforms that can be executed in project ':patches'.
 patches:stub:artifactTransforms - Displays the Artifact Transforms that can be executed in project ':patches:stub'.
-buildEnvironment - Displays all buildscript dependencies declared in root project 'morphe-patches'.
+buildEnvironment - Displays all buildscript dependencies declared in root project 'tada-patches'.
 extensions:buildEnvironment - Displays all buildscript dependencies declared in project ':extensions'.
 extensions:all:buildEnvironment - Displays all buildscript dependencies declared in project ':extensions:all'.
 extensions:all:change-version-code:buildEnvironment - Displays all buildscript dependencies declared in project ':extensions:all:change-version-code'.
@@ -225,7 +225,7 @@ extensions:youtube:buildEnvironment - Displays all buildscript dependencies decl
 extensions:youtube:stub:buildEnvironment - Displays all buildscript dependencies declared in project ':extensions:youtube:stub'.
 patches:buildEnvironment - Displays all buildscript dependencies declared in project ':patches'.
 patches:stub:buildEnvironment - Displays all buildscript dependencies declared in project ':patches:stub'.
-dependencies - Displays all dependencies declared in root project 'morphe-patches'.
+dependencies - Displays all dependencies declared in root project 'tada-patches'.
 extensions:dependencies - Displays all dependencies declared in project ':extensions'.
 extensions:all:dependencies - Displays all dependencies declared in project ':extensions:all'.
 extensions:all:change-version-code:dependencies - Displays all dependencies declared in project ':extensions:all:change-version-code'.
@@ -241,7 +241,7 @@ extensions:youtube:dependencies - Displays all dependencies declared in project 
 extensions:youtube:stub:dependencies - Displays all dependencies declared in project ':extensions:youtube:stub'.
 patches:dependencies - Displays all dependencies declared in project ':patches'.
 patches:stub:dependencies - Displays all dependencies declared in project ':patches:stub'.
-dependencyInsight - Displays the insight into a specific dependency in root project 'morphe-patches'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'tada-patches'.
 extensions:dependencyInsight - Displays the insight into a specific dependency in project ':extensions'.
 extensions:all:dependencyInsight - Displays the insight into a specific dependency in project ':extensions:all'.
 extensions:all:change-version-code:dependencyInsight - Displays the insight into a specific dependency in project ':extensions:all:change-version-code'.
@@ -303,7 +303,7 @@ extensions:youtube:kotlinDslAccessorsReport - Prints the Kotlin code for accessi
 extensions:youtube:stub:kotlinDslAccessorsReport - Prints the Kotlin code for accessing the currently available project extensions.
 patches:kotlinDslAccessorsReport - Prints the Kotlin code for accessing the currently available project extensions.
 patches:stub:kotlinDslAccessorsReport - Prints the Kotlin code for accessing the currently available project extensions.
-outgoingVariants - Displays the outgoing variants of root project 'morphe-patches'.
+outgoingVariants - Displays the outgoing variants of root project 'tada-patches'.
 extensions:outgoingVariants - Displays the outgoing variants of project ':extensions'.
 extensions:all:outgoingVariants - Displays the outgoing variants of project ':extensions:all'.
 extensions:all:change-version-code:outgoingVariants - Displays the outgoing variants of project ':extensions:all:change-version-code'.
@@ -319,7 +319,7 @@ extensions:youtube:outgoingVariants - Displays the outgoing variants of project 
 extensions:youtube:stub:outgoingVariants - Displays the outgoing variants of project ':extensions:youtube:stub'.
 patches:outgoingVariants - Displays the outgoing variants of project ':patches'.
 patches:stub:outgoingVariants - Displays the outgoing variants of project ':patches:stub'.
-projects - Displays the sub-projects of root project 'morphe-patches'.
+projects - Displays the sub-projects of root project 'tada-patches'.
 extensions:projects - Displays the sub-projects of project ':extensions'.
 extensions:all:projects - Displays the sub-projects of project ':extensions:all'.
 extensions:all:change-version-code:projects - Displays the sub-projects of project ':extensions:all:change-version-code'.
@@ -335,7 +335,7 @@ extensions:youtube:projects - Displays the sub-projects of project ':extensions:
 extensions:youtube:stub:projects - Displays the sub-projects of project ':extensions:youtube:stub'.
 patches:projects - Displays the sub-projects of project ':patches'.
 patches:stub:projects - Displays the sub-projects of project ':patches:stub'.
-properties - Displays the properties of root project 'morphe-patches'.
+properties - Displays the properties of root project 'tada-patches'.
 extensions:properties - Displays the properties of project ':extensions'.
 extensions:all:properties - Displays the properties of project ':extensions:all'.
 extensions:all:change-version-code:properties - Displays the properties of project ':extensions:all:change-version-code'.
@@ -351,7 +351,7 @@ extensions:youtube:properties - Displays the properties of project ':extensions:
 extensions:youtube:stub:properties - Displays the properties of project ':extensions:youtube:stub'.
 patches:properties - Displays the properties of project ':patches'.
 patches:stub:properties - Displays the properties of project ':patches:stub'.
-resolvableConfigurations - Displays the configurations that can be resolved in root project 'morphe-patches'.
+resolvableConfigurations - Displays the configurations that can be resolved in root project 'tada-patches'.
 extensions:resolvableConfigurations - Displays the configurations that can be resolved in project ':extensions'.
 extensions:all:resolvableConfigurations - Displays the configurations that can be resolved in project ':extensions:all'.
 extensions:all:change-version-code:resolvableConfigurations - Displays the configurations that can be resolved in project ':extensions:all:change-version-code'.
@@ -367,7 +367,7 @@ extensions:youtube:resolvableConfigurations - Displays the configurations that c
 extensions:youtube:stub:resolvableConfigurations - Displays the configurations that can be resolved in project ':extensions:youtube:stub'.
 patches:resolvableConfigurations - Displays the configurations that can be resolved in project ':patches'.
 patches:stub:resolvableConfigurations - Displays the configurations that can be resolved in project ':patches:stub'.
-tasks - Displays the tasks runnable from root project 'morphe-patches' (some of the displayed tasks may belong to subprojects).
+tasks - Displays the tasks runnable from root project 'tada-patches' (some of the displayed tasks may belong to subprojects).
 extensions:tasks - Displays the tasks runnable from project ':extensions' (some of the displayed tasks may belong to subprojects).
 extensions:all:tasks - Displays the tasks runnable from project ':extensions:all' (some of the displayed tasks may belong to subprojects).
 extensions:all:change-version-code:tasks - Displays the tasks runnable from project ':extensions:all:change-version-code'.

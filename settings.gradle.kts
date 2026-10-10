@@ -1,4 +1,4 @@
-rootProject.name = "morphe-patches"
+rootProject.name = "tada-patches"
 
 pluginManagement {
     repositories {
@@ -7,7 +7,7 @@ pluginManagement {
         google()
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/MorpheApp/registry")
+            url = uri("https://maven.pkg.github.com/TADaApp/registry")
             credentials {
                 username = providers.gradleProperty("gpr.user").getOrElse(System.getenv("GITHUB_ACTOR"))
                 password = providers.gradleProperty("gpr.key").getOrElse(System.getenv("GITHUB_TOKEN"))
@@ -20,12 +20,12 @@ pluginManagement {
 }
 
 plugins {
-    id("app.morphe.patches") version "1.3.4"
+    id("app.tada.patches") version "1.3.4"
 }
 
 settings {
     extensions {
-        defaultNamespace = "app.morphe.extension"
+        defaultNamespace = "app.tada.extension"
 
         // Must resolve to an absolute path (not relative),
         // otherwise the extensions in subfolders will fail to find the proguard config.
@@ -35,9 +35,9 @@ settings {
 
 include(":patches:stub")
 
-// Include morphe-patcher as composite builds if they exist locally
+// Include tada-patcher as composite builds if they exist locally
 mapOf(
-    "morphe-patcher" to "app.morphe:morphe-patcher",
+    "tada-patcher" to "app.tada:tada-patcher",
 ).forEach { (libraryPath, libraryName) ->
     val libDir = file("../$libraryPath")
     if (libDir.exists()) {
@@ -49,14 +49,14 @@ mapOf(
     }
 }
 
-// Include morphe-patches-library as composite build if it exists locally.
+// Include tada-patches-library as composite build if it exists locally.
 // It is a multi-module project, so each artifact maps to a specific subproject.
-file("../morphe-patches-library").let { libDir ->
+file("../tada-patches-library").let { libDir ->
     if (libDir.exists()) {
         includeBuild(libDir) {
             dependencySubstitution {
-                substitute(module("app.morphe:morphe-patches-library")).using(project(":patch-library"))
-                substitute(module("app.morphe:morphe-extensions-library")).using(project(":extension-library"))
+                substitute(module("app.tada:tada-patches-library")).using(project(":patch-library"))
+                substitute(module("app.tada:tada-extensions-library")).using(project(":extension-library"))
             }
         }
     }

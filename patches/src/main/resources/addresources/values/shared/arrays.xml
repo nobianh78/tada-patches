@@ -1,14 +1,14 @@
 <resources>
     <!-- misc.settings.settingsResourcePatch -->
-    <string-array name="morphe_settings_name_entries">
-        <item>@string/morphe_settings_name_default_item</item>
-        <item>@string/morphe_settings_name_entry_1</item>
-        <item>@string/morphe_settings_name_entry_2</item>
-        <item>@string/morphe_settings_name_entry_3</item>
-        <item>@string/morphe_settings_name_entry_4</item>
-        <item>@string/morphe_settings_name_custom_item</item>
+    <string-array name="tada_settings_name_entries">
+        <item>@string/tada_settings_name_default_item</item>
+        <item>@string/tada_settings_name_entry_1</item>
+        <item>@string/tada_settings_name_entry_2</item>
+        <item>@string/tada_settings_name_entry_3</item>
+        <item>@string/tada_settings_name_entry_4</item>
+        <item>@string/tada_settings_name_custom_item</item>
     </string-array>
-    <string-array name="morphe_settings_name_entry_values">
+    <string-array name="tada_settings_name_entry_values">
         <item>DEFAULT</item>
         <item>PREMIUM</item>
         <item>EXTRAS</item>
@@ -16,8 +16,8 @@
         <item>MORPHING_TIME</item>
         <item>CUSTOM</item>
     </string-array>
-    <string-array name="morphe_language_entries">
-        <item>@string/morphe_language_DEFAULT</item>
+    <string-array name="tada_language_entries">
+        <item>@string/tada_language_DEFAULT</item>
         <item>Afrikaans</item>
         <item>አማርኛ</item>
         <item>العربية</item>
@@ -96,7 +96,7 @@
         <item>中文</item>
         <item>isiZulu</item>
     </string-array>
-    <string-array name="morphe_language_entry_values">
+    <string-array name="tada_language_entry_values">
         <item>DEFAULT</item>
         <item>AF</item>
         <item>AM</item>

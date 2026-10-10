@@ -16,24 +16,24 @@ Second \"item\" text"</string>
 
 -->
 <resources>
-  <!-- app.morphe.patches.music.interaction.jam -->
+  <!-- app.tada.patches.music.interaction.jam -->
   <!-- layout.branding.customBrandingPatch -->
   <!-- layout.branding.header.changeHeaderPatch -->
   <!-- misc.album.albumMusicVideoPatch -->
-  <!-- 'Spoof video streams' should match the language used in 'morphe_spoof_video_streams_screen_title' -->
+  <!-- 'Spoof video streams' should match the language used in 'tada_spoof_video_streams_screen_title' -->
   <!-- interaction.downloads.downloadsPatch -->
   <!-- 'Download' should be translated using the same localized wording YouTube displays for the button. -->
   <!-- misc.settings.settingsPatch -->
   <!-- In languages where "About" is ambiguous, translate this as "About TADa" (i.e., About this app). -->
-  <string name="morphe_settings_music_screen_2_feed_title"> ஊட்டம்</string>
-  <string name="morphe_settings_music_screen_3_general_title">பொது</string>
-  <string name="morphe_settings_music_screen_4_player_title">பிளேயர்</string>
-  <string name="morphe_settings_music_screen_9_misc_title">இதரவை</string>
+  <string name="tada_settings_music_screen_2_feed_title"> ஊட்டம்</string>
+  <string name="tada_settings_music_screen_3_general_title">பொது</string>
+  <string name="tada_settings_music_screen_4_player_title">பிளேயர்</string>
+  <string name="tada_settings_music_screen_9_misc_title">இதரவை</string>
   <!-- ad.hideAdsPatch -->
   <!-- layout.hide.general.hideLayoutComponentsPatch -->
   <!-- interaction.crossfade.crossfadePatch -->
   <!-- Empty string because custom preference handles the title itself -->
-  <string name="morphe_music_crossfade_about_title">விபரம்</string>
+  <string name="tada_music_crossfade_about_title">விபரம்</string>
   <!-- Banner row has no text; it shows a full-width graphic via a custom layout. -->
   <!-- interaction.remember.repeatstate.rememberRepeatStatePatch-->
   <!-- interaction.remember.shufflestate.rememberShuffleStatePatch -->
@@ -72,7 +72,7 @@ Second \"item\" text"</string>
   <!-- 'scrobbling' must be kept untranslated -->
   <!-- 'scrobbling' must be kept untranslated -->
   <!-- layout.lyrics.lyricsPatch -->
-  <string name="morphe_music_lyrics_section_about_title">விபரம்</string>
+  <string name="tada_music_lyrics_section_about_title">விபரம்</string>
   <!-- Shown under the lyrics. The placeholder is a service name such as LRCLIB. -->
   <!-- Tappable label under the lyrics that turns the translation on. -->
   <!-- misc.spoof.appversion.spoofAppVersionPatch -->

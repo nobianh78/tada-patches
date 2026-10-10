@@ -33,8 +33,8 @@ Second \"item\" text"</string>
   <!-- 'Visit Community' should be translated with the same localized wording that YouTube displays. -->
   <!-- 'Visit store' should be translated with the same localized wording that YouTube displays. -->
   <!-- 'Component path builder strings' is the technical name for identifying the Litho UI layout items to hide. This is an advanced feature and most users will never use this. -->
-  <!-- Translations should lanaguge similar to morphe_hide_upload_time_user_dialog_message -->
-  <!-- Translations should lanaguge similar to morphe_hide_view_count_user_dialog_message -->
+  <!-- Translations should lanaguge similar to tada_hide_upload_time_user_dialog_message -->
+  <!-- Translations should lanaguge similar to tada_hide_view_count_user_dialog_message -->
   <!-- For localization, it is preferred, but not required, if 'LeBlanc' is replaced with a localized name or a familiar word that has upper case letters in the middle of the word.
          This is because keywords can be in any language, and showing an example in the localized script helps convey this. -->
   <!-- Translations _must_ use a localized example.  For languages that do not use spaces between words (Chinese, Japanese, etc.) the English AI example should be used since no localized examples exist.  Or if using machine translations, or if nobody wants to think of a localized example, then the English 'ai' example should be left as-is. -->
@@ -46,7 +46,7 @@ Second \"item\" text"</string>
   <!-- layout.hide.signintotv.disableSignInToTvPopupPatch -->
   <!-- interaction.doubletap.disableDoubleTapActionsPatch -->
   <!-- interaction.downloads.downloadsResourcePatch -->
-  <!-- 'Download action button' should be translated using the same wording as the translation of 'morphe_hide_download_button_title'. -->
+  <!-- 'Download action button' should be translated using the same wording as the translation of 'tada_hide_download_button_title'. -->
   <!-- interaction.seekbar.disablePreciseSeekingGesturePatch -->
   <!-- interaction.seekbar.enableSeekbarTappingPatch -->
   <!-- interaction.swipecontrols.swipeControlsResourcePatch -->
@@ -85,11 +85,11 @@ Second \"item\" text"</string>
   <!-- 'Lock screen' should be translated using the same localized wording YouTube displays for the menu item. -->
   <!-- 'Listen with YouTube Music' should be translated using the same localized wording YouTube displays for the menu item. -->
   <!-- 'Audio track' should be translated using the same localized wording YouTube displays for the menu item. -->
-  <!-- 'Spoof video streams' should be the same translation used for 'morphe_spoof_video_streams_screen_title'.
+  <!-- 'Spoof video streams' should be the same translation used for 'tada_spoof_video_streams_screen_title'.
           'Android No SDK' must be kept untranslated. -->
   <!-- 'Watch in VR' should be translated using the same localized wording YouTube displays for the menu item. -->
   <!-- layout.buttons.overlay.hidePlayerOverlayButtonsPatch -->
-  <!-- This button does not display any text, but 'Captions' should be translated using the same wording used as the translation of 'morphe_hide_player_flyout_captions_title'. -->
+  <!-- This button does not display any text, but 'Captions' should be translated using the same wording used as the translation of 'tada_hide_player_flyout_captions_title'. -->
   <!-- layout.hide.endscreencards.hideEndScreenCardsResourcePatch -->
   <!-- layout.hide.fullscreenambientmode.disableFullscreenAmbientModePatch -->
   <!-- layout.hide.infocards.hideInfocardsResourcePatch -->
@@ -114,11 +114,11 @@ Second \"item\" text"</string>
   <!-- Brief notification (toast) shown if network connection times out. Translations of this should not be longer than the original English or the text can be clipped and not entirely shown. -->
   <!-- Brief notification (Toast) shown if the user enables RYD while a video is opened, and then tries to vote for the video. -->
   <!-- Video likes have been set to hidden by the video uploader. -->
-  <!-- Translations should use language similar to 'morphe_sb_enable_compact_skip_button'. -->
+  <!-- Translations should use language similar to 'tada_sb_enable_compact_skip_button'. -->
   <!-- Statistic strings are shown in the settings only when TADa debug mode is enabled. Typical users will never see these. -->
   <!-- layout.searchbar.wideSearchbarPatch -->
   <!-- layout.sponsorblock.sponsorBlockResourcePatch -->
-  <!-- Translations should use language similar to 'morphe_ryd_compact_layout_title'. -->
+  <!-- Translations should use language similar to 'tada_ryd_compact_layout_title'. -->
   <!-- Notification (toast) shown if network connection times out. Translations of this should not be longer than the original English or the text can be clipped and not entirely shown. -->
   <!-- A segment start and end time, such as "02:10 to 03:40". -->
   <!-- Shown in the settings preferences, and translations can be any text length. -->
@@ -132,7 +132,7 @@ Second \"item\" text"</string>
   <!-- layout.theme.themePatch -->
   <!-- layout.branding.customBrandingPatch -->
   <!-- layout.branding.changeHeaderPatch -->
-  <!-- Translation of this should be identical to morphe_custom_branding_icon_entry_3 -->
+  <!-- Translation of this should be identical to tada_custom_branding_icon_entry_3 -->
   <!-- layout.thumbnails.bypassImageRegionRestrictionsPatch -->
   <!-- layout.thumbnails.alternativeThumbnailsPatch -->
   <!-- 'Home' should be translated using the same localized wording YouTube displays for the Home tab. -->
@@ -148,7 +148,7 @@ Second \"item\" text"</string>
   <!-- misc.links.bypassURLRedirectsPatch -->
   <!-- misc.links.openLinksExternallyPatch -->
   <!-- video.quality.rememberVideoQualityPatch -->
-  <!-- Translations should use the same text as 'morphe_custom_playback_speeds_auto'. -->
+  <!-- Translations should use the same text as 'tada_custom_playback_speeds_auto'. -->
   <!-- video.speed.button.playbackSpeedButtonPatch -->
   <!-- video.quality.button.videoQualityDialogButtonPatch -->
   <!-- video.speed.custom.customPlaybackSpeedPatch -->
@@ -157,5 +157,5 @@ Second \"item\" text"</string>
   <!-- video.quality.advancedVideoQualityMenuPatch -->
   <!-- interaction.seekbar.enableSlideToSeekPatch -->
   <!-- misc.fix.playback.spoofVideoStreamsPatch -->
-  <!-- "Force original audio" should use the same text as morphe_force_original_audio_title -->
+  <!-- "Force original audio" should use the same text as tada_force_original_audio_title -->
 </resources>

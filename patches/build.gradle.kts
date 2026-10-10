@@ -1,15 +1,15 @@
 import org.gradle.api.tasks.JavaExec
 
-group = "app.morphe"
+group = "app.tada"
 
 patches {
     about {
-        name = "Morphe Patches"
-        description = "Patches for Morphe"
-        source = "git@github.com:MorpheApp/morphe-patches.git"
-        author = "MorpheApp"
+        name = "TADa Patches"
+        description = "Patches for TADa"
+        source = "git@github.com:TADaApp/tada-patches.git"
+        author = "TADaApp"
         contact = "na"
-        website = "https://morphe.software"
+        website = "https://github.com/nobianh78/tada-patches"
         license = "GNU General Public License v3.0, with additional GPL section 7 requirements"
     }
 }
@@ -24,7 +24,7 @@ dependencies {
     // Required due to smali, or build fails. Can be removed once smali is bumped.
     implementation(libs.guava)
 
-    implementation(libs.morphe.patches.library)
+    implementation(libs.tada.patches.library)
 
     patchListGeneratorClasspath(libs.gson)
 
@@ -48,7 +48,7 @@ tasks {
         dependsOn(build)
 
         classpath = sourceSets["main"].runtimeClasspath
-        mainClass.set("app.morphe.patches.util.resource.CheckStringResourcesKt")
+        mainClass.set("app.tada.patches.util.resource.CheckStringResourcesKt")
     }
 
     register<JavaExec>("generatePatchesList") {
@@ -57,7 +57,7 @@ tasks {
         dependsOn(build)
 
         classpath = sourceSets["main"].runtimeClasspath + patchListGeneratorClasspath
-        mainClass.set("app.morphe.util.PatchListGeneratorKt")
+        mainClass.set("app.tada.util.PatchListGeneratorKt")
     }
 
     register<JavaExec>("validateJam") {
@@ -66,7 +66,7 @@ tasks {
 
         dependsOn("testClasses")
         classpath = sourceSets["test"].runtimeClasspath
-        mainClass.set("app.morphe.patches.music.interaction.jam.JamDeviceBuildKt")
+        mainClass.set("app.tada.patches.music.interaction.jam.JamDeviceBuildKt")
 
         doFirst {
             val apk = jamApk.orNull

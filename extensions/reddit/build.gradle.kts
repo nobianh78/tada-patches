@@ -3,9 +3,9 @@ import com.android.build.api.dsl.ApplicationExtension
 dependencies {
     compileOnly(project(":extensions:shared:library"))
     compileOnly(project(":extensions:reddit:stub"))
-    compileOnly(libs.morphe.extensions.library)
+    compileOnly(libs.tada.extensions.library)
 
-    // Used by MorpheSettingsIconVectorDrawable.
+    // Used by TADaSettingsIconVectorDrawable.
     implementation(libs.androidx.core)
 
     // Used by SpoofSignaturePatch.

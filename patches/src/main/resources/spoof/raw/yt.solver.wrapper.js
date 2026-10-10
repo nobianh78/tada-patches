@@ -1,6 +1,6 @@
 /*
- * Copyright 2026 Morphe.
- * https://github.com/MorpheApp/morphe-patches
+ * Copyright 2026 TADa.
+ * https://github.com/TADaApp/tada-patches
  *
  * See the included NOTICE file for GPLv3 Section 7 terms that apply to this code.
  */

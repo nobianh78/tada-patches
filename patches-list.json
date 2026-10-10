@@ -4,7 +4,7 @@
   "patches": [
     {
       "name": "Add to queue",
-      "description": "Overrides the feed flyout 'Play next in queue' with the Morphe video queue.",
+      "description": "Overrides the feed flyout 'Play next in queue' with the TADa video queue.",
       "default": true,
       "category": null,
       "dependencies": [
@@ -945,7 +945,7 @@
         {
           "key": "custom",
           "title": "Custom header logo",
-          "description": "\n            Folder with images to use as a custom header logo.\n\n            The folder must contain one or more of the following folders, depending on the DPI of the device:\n            - drawable-hdpi\n- drawable-xhdpi\n- drawable-xxhdpi\n- drawable-xxxhdpi\n\n            Each of the folders must contain the following file(s):\n            - morphe_header_custom_dark.png\n\n            Required dimensions:\n            - drawable-hdpi: 121x36 px\n- drawable-xhdpi: 160x48 px\n- drawable-xxhdpi: 240x72 px\n- drawable-xxxhdpi: 320x96 px\n        ",
+          "description": "\n            Folder with images to use as a custom header logo.\n\n            The folder must contain one or more of the following folders, depending on the DPI of the device:\n            - drawable-hdpi\n- drawable-xhdpi\n- drawable-xxhdpi\n- drawable-xxxhdpi\n\n            Each of the folders must contain the following file(s):\n            - tada_header_custom_dark.png\n\n            Required dimensions:\n            - drawable-hdpi: 121x36 px\n- drawable-xhdpi: 160x48 px\n- drawable-xxhdpi: 240x72 px\n- drawable-xxxhdpi: 320x96 px\n        ",
           "required": false,
           "type": "kotlin.String",
           "default": null,
@@ -1043,7 +1043,7 @@
         {
           "key": "custom",
           "title": "Custom header logo",
-          "description": "\n            Folder with images to use as a custom header logo.\n\n            The folder must contain one or more of the following folders, depending on the DPI of the device:\n            - drawable-hdpi\n- drawable-xhdpi\n- drawable-xxhdpi\n- drawable-xxxhdpi\n\n            Each of the folders must contain the following file(s):\n            - morphe_header_custom_light.png\n- morphe_header_custom_dark.png\n\n            Required dimensions:\n            - drawable-hdpi: 194x72 px\n- drawable-xhdpi: 258x96 px\n- drawable-xxhdpi: 387x144 px\n- drawable-xxxhdpi: 512x192 px\n        ",
+          "description": "\n            Folder with images to use as a custom header logo.\n\n            The folder must contain one or more of the following folders, depending on the DPI of the device:\n            - drawable-hdpi\n- drawable-xhdpi\n- drawable-xxhdpi\n- drawable-xxxhdpi\n\n            Each of the folders must contain the following file(s):\n            - tada_header_custom_light.png\n- tada_header_custom_dark.png\n\n            Required dimensions:\n            - drawable-hdpi: 194x72 px\n- drawable-xhdpi: 258x96 px\n- drawable-xxhdpi: 387x144 px\n- drawable-xxxhdpi: 512x192 px\n        ",
           "required": false,
           "type": "kotlin.String",
           "default": null,
@@ -1619,7 +1619,7 @@
     },
     {
       "name": "Clone app",
-      "description": "Changes the app package name to allow installing the same app multiple times. By default \".morphe\" is appended to the package name. Each cloned install must use a unique package name. Cloning does not work with all apps and using this patch may cause app crashes or other unexpected behavior.",
+      "description": "Changes the app package name to allow installing the same app multiple times. By default \".tada\" is appended to the package name. Each cloned install must use a unique package name. Cloning does not work with all apps and using this patch may cause app crashes or other unexpected behavior.",
       "default": false,
       "category": null,
       "dependencies": [
@@ -1888,7 +1888,7 @@
         {
           "key": "customIcon",
           "title": "Custom icon",
-          "description": "\n            Folder with images to use as a custom icon.\n            \n            The folder must contain one or more of the following folders, depending on the DPI of the device:\n            - mipmap-mdpi\n- mipmap-hdpi\n- mipmap-xhdpi\n- mipmap-xxhdpi\n- mipmap-xxxhdpi\n            \n            Each of the folders must contain all of the following files:\n            morphe_adaptive_background_custom.png\nmorphe_adaptive_foreground_custom.png\n            \n            The image dimensions must be as follows:\n            - mipmap-mdpi: 108x108 px\n- mipmap-hdpi: 162x162 px\n- mipmap-xhdpi: 216x216 px\n- mipmap-xxhdpi: 324x324 px\n- mipmap-xxxhdpi: 432x432 px\n\n            Optionally, the path contains a 'drawable' folder with a monochrome icon file:\n            morphe_adaptive_monochrome_custom.xml\n\n            Optionally, the path contains a notification icon in one of the following formats:\n            - XML vector drawable placed in 'drawable':\n              morphe_notification_icon_custom.xml\n            - PNG raster images placed in the matching 'drawable-<dpi>' folders:\n              - drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)\n- drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)\n- drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)\n- drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)\n- drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)\n        ",
+          "description": "\n            Folder with images to use as a custom icon.\n            \n            The folder must contain one or more of the following folders, depending on the DPI of the device:\n            - mipmap-mdpi\n- mipmap-hdpi\n- mipmap-xhdpi\n- mipmap-xxhdpi\n- mipmap-xxxhdpi\n            \n            Each of the folders must contain all of the following files:\n            tada_adaptive_background_custom.png\ntada_adaptive_foreground_custom.png\n            \n            The image dimensions must be as follows:\n            - mipmap-mdpi: 108x108 px\n- mipmap-hdpi: 162x162 px\n- mipmap-xhdpi: 216x216 px\n- mipmap-xxhdpi: 324x324 px\n- mipmap-xxxhdpi: 432x432 px\n\n            Optionally, the path contains a 'drawable' folder with a monochrome icon file:\n            tada_adaptive_monochrome_custom.xml\n\n            Optionally, the path contains a notification icon in one of the following formats:\n            - XML vector drawable placed in 'drawable':\n              tada_notification_icon_custom.xml\n            - PNG raster images placed in the matching 'drawable-<dpi>' folders:\n              - drawable-mdpi/tada_notification_icon_custom.png (24x24 px)\n- drawable-hdpi/tada_notification_icon_custom.png (36x36 px)\n- drawable-xhdpi/tada_notification_icon_custom.png (48x48 px)\n- drawable-xxhdpi/tada_notification_icon_custom.png (72x72 px)\n- drawable-xxxhdpi/tada_notification_icon_custom.png (96x96 px)\n        ",
           "required": false,
           "type": "kotlin.String",
           "default": null,
@@ -2017,7 +2017,7 @@
         {
           "key": "customIcon",
           "title": "Custom icon",
-          "description": "\n            Folder with images to use as a custom icon.\n            \n            The folder must contain one or more of the following folders, depending on the DPI of the device:\n            - mipmap-mdpi\n- mipmap-hdpi\n- mipmap-xhdpi\n- mipmap-xxhdpi\n- mipmap-xxxhdpi\n            \n            Each of the folders must contain all of the following files:\n            morphe_adaptive_background_custom.png\nmorphe_adaptive_foreground_custom.png\n            \n            The image dimensions must be as follows:\n            - mipmap-mdpi: 108x108 px\n- mipmap-hdpi: 162x162 px\n- mipmap-xhdpi: 216x216 px\n- mipmap-xxhdpi: 324x324 px\n- mipmap-xxxhdpi: 432x432 px\n\n            Optionally, the path contains a 'drawable' folder with a monochrome icon file:\n            morphe_adaptive_monochrome_custom.xml\n\n            Optionally, the path contains a notification icon in one of the following formats:\n            - XML vector drawable placed in 'drawable':\n              morphe_notification_icon_custom.xml\n            - PNG raster images placed in the matching 'drawable-<dpi>' folders:\n              - drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)\n- drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)\n- drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)\n- drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)\n- drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)\n        ",
+          "description": "\n            Folder with images to use as a custom icon.\n            \n            The folder must contain one or more of the following folders, depending on the DPI of the device:\n            - mipmap-mdpi\n- mipmap-hdpi\n- mipmap-xhdpi\n- mipmap-xxhdpi\n- mipmap-xxxhdpi\n            \n            Each of the folders must contain all of the following files:\n            tada_adaptive_background_custom.png\ntada_adaptive_foreground_custom.png\n            \n            The image dimensions must be as follows:\n            - mipmap-mdpi: 108x108 px\n- mipmap-hdpi: 162x162 px\n- mipmap-xhdpi: 216x216 px\n- mipmap-xxhdpi: 324x324 px\n- mipmap-xxxhdpi: 432x432 px\n\n            Optionally, the path contains a 'drawable' folder with a monochrome icon file:\n            tada_adaptive_monochrome_custom.xml\n\n            Optionally, the path contains a notification icon in one of the following formats:\n            - XML vector drawable placed in 'drawable':\n              tada_notification_icon_custom.xml\n            - PNG raster images placed in the matching 'drawable-<dpi>' folders:\n              - drawable-mdpi/tada_notification_icon_custom.png (24x24 px)\n- drawable-hdpi/tada_notification_icon_custom.png (36x36 px)\n- drawable-xhdpi/tada_notification_icon_custom.png (48x48 px)\n- drawable-xxhdpi/tada_notification_icon_custom.png (72x72 px)\n- drawable-xxxhdpi/tada_notification_icon_custom.png (96x96 px)\n        ",
           "required": false,
           "type": "kotlin.String",
           "default": null,
@@ -2114,9 +2114,9 @@
           "description": "The name of the app.",
           "required": true,
           "type": "kotlin.String",
-          "default": "Reddit Morphe",
+          "default": "Reddit TADa",
           "values": {
-            "Default": "Reddit Morphe"
+            "Default": "Reddit TADa"
           }
         }
       ]
@@ -4190,7 +4190,7 @@
     },
     {
       "name": "Enable debugging",
-      "description": "Adds options for debugging and exporting Morphe logs to the clipboard.",
+      "description": "Adds options for debugging and exporting TADa logs to the clipboard.",
       "default": true,
       "category": null,
       "dependencies": [
@@ -4252,7 +4252,7 @@
     },
     {
       "name": "Enable debugging",
-      "description": "Adds options for debugging and exporting Morphe logs to the clipboard.",
+      "description": "Adds options for debugging and exporting TADa logs to the clipboard.",
       "default": true,
       "category": null,
       "dependencies": [
@@ -8844,7 +8844,7 @@
     },
     {
       "name": "Override YouTube Music buttons",
-      "description": "Overrides YouTube Music buttons to open Morphe Music or any compatible third-party client.",
+      "description": "Overrides YouTube Music buttons to open TADa Music or any compatible third-party client.",
       "default": true,
       "category": null,
       "dependencies": [
@@ -9280,7 +9280,7 @@
     },
     {
       "name": "Playback in feeds",
-      "description": "Adds the 'Playback in feeds' setting of YouTube to the Morphe settings, where it is always available even if YouTube hides it.",
+      "description": "Adds the 'Playback in feeds' setting of YouTube to the TADa settings, where it is always available even if YouTube hides it.",
       "default": true,
       "category": null,
       "dependencies": [
@@ -9612,7 +9612,7 @@
         {
           "key": "customIcons",
           "title": "Custom icons",
-          "description": "\n    Zip file with icons to use as the 'Custom' icon style.\n\n    Each icon is named after the icon it replaces, such as 'morphe_yt_copy.xml'.\n    An icon is a vector drawable (.xml), or a white square PNG image (.png, 96x96 pixels is recommended).\n    Icons missing from the file keep the 'Automatic' style.\n",
+          "description": "\n    Zip file with icons to use as the 'Custom' icon style.\n\n    Each icon is named after the icon it replaces, such as 'tada_yt_copy.xml'.\n    An icon is a vector drawable (.xml), or a white square PNG image (.png, 96x96 pixels is recommended).\n    Icons missing from the file keep the 'Automatic' style.\n",
           "required": false,
           "type": "kotlin.String",
           "default": null,
@@ -11495,7 +11495,7 @@
         {
           "key": "customIcons",
           "title": "Custom icons",
-          "description": "\n    Zip file with icons to use as the 'Custom' icon style.\n\n    Each icon is named after the icon it replaces, such as 'morphe_shorts_heart.xml'.\n    An icon is a vector drawable (.xml), or a white square PNG image (.png, 96x96 pixels is recommended).\n    Icons missing from the file keep the 'Automatic' style.\n",
+          "description": "\n    Zip file with icons to use as the 'Custom' icon style.\n\n    Each icon is named after the icon it replaces, such as 'tada_shorts_heart.xml'.\n    An icon is a vector drawable (.xml), or a white square PNG image (.png, 96x96 pixels is recommended).\n    Icons missing from the file keep the 'Automatic' style.\n",
           "required": false,
           "type": "kotlin.String",
           "default": null,

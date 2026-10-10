@@ -3,7 +3,7 @@ extension {
 }
 
 android {
-    namespace = "app.morphe.extension"
+    namespace = "app.tada.extension"
     compileSdk = 37
 
     defaultConfig {

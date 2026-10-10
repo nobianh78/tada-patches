@@ -7,7 +7,7 @@
     android:layoutDirection="ltr">
 
     <com.google.android.libraries.youtube.common.ui.TouchImageView
-        android:id="@+id/morphe_addon_button_1"
+        android:id="@+id/tada_addon_button_1"
         style="@style/YouTubePlayerButton"
         android:layout_width="48.0dip"
         android:layout_height="60.0dip"
@@ -19,7 +19,7 @@
         yt:layout_constraintRight_toLeftOf="@+id/fullscreen_button" />
 
     <com.google.android.libraries.youtube.common.ui.TouchImageView
-        android:id="@+id/morphe_addon_button_2"
+        android:id="@+id/tada_addon_button_2"
         style="@style/YouTubePlayerButton"
         android:layout_width="48.0dip"
         android:layout_height="60.0dip"
@@ -31,7 +31,7 @@
         yt:layout_constraintRight_toLeftOf="@+id/fullscreen_button" />
 
     <com.google.android.libraries.youtube.common.ui.TouchImageView
-        android:id="@+id/morphe_addon_button_3"
+        android:id="@+id/tada_addon_button_3"
         style="@style/YouTubePlayerButton"
         android:layout_width="48.0dip"
         android:layout_height="60.0dip"
@@ -43,7 +43,7 @@
         yt:layout_constraintRight_toLeftOf="@+id/fullscreen_button" />
 
     <com.google.android.libraries.youtube.common.ui.TouchImageView
-        android:id="@+id/morphe_addon_button_4"
+        android:id="@+id/tada_addon_button_4"
         style="@style/YouTubePlayerButton"
         android:layout_width="48.0dip"
         android:layout_height="60.0dip"

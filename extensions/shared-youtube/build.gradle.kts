@@ -6,7 +6,7 @@ dependencies {
 }
 
 configure<ApplicationExtension> {
-    namespace = "app.morphe.extension"
+    namespace = "app.tada.extension"
     compileSdk = 36
 
     defaultConfig {

@@ -6,7 +6,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "app.morphe.extension.shared.youtube"
+    namespace = "app.tada.extension.shared.youtube"
     compileSdk = 36
 
     defaultConfig {
@@ -20,7 +20,7 @@ configure<LibraryExtension> {
 }
 
 dependencies {
-    implementation(libs.morphe.extensions.library)
+    implementation(libs.tada.extensions.library)
     implementation(libs.androidx.javascriptengine)
     implementation(libs.gson)
     implementation(libs.protobuf.javalite)

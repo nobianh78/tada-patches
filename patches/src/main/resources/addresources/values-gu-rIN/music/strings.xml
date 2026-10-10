@@ -16,12 +16,12 @@ Second \"item\" text"</string>
 
 -->
 <resources>
-  <!-- app.morphe.patches.music.interaction.jam -->
+  <!-- app.tada.patches.music.interaction.jam -->
   <!-- layout.branding.customBrandingPatch -->
   <!-- layout.branding.header.changeHeaderPatch -->
-  <string name="morphe_header_logo_entry_1">ડિફૉલ્ટ</string>
+  <string name="tada_header_logo_entry_1">ડિફૉલ્ટ</string>
   <!-- misc.album.albumMusicVideoPatch -->
-  <!-- 'Spoof video streams' should match the language used in 'morphe_spoof_video_streams_screen_title' -->
+  <!-- 'Spoof video streams' should match the language used in 'tada_spoof_video_streams_screen_title' -->
   <!-- interaction.downloads.downloadsPatch -->
   <!-- 'Download' should be translated using the same localized wording YouTube displays for the button. -->
   <!-- misc.settings.settingsPatch -->
@@ -45,8 +45,8 @@ Second \"item\" text"</string>
   <!-- 'Start radio' should be translated using the same localized wording YouTube Music displays for the button. -->
   <!-- flyoutmenu.components.hideFlyoutMenuComponentsPatch -->
   <!-- layout.startpage.changeStartPagePatch -->
-  <string name="morphe_change_start_page_entry_default">ડિફૉલ્ટ</string>
-  <string name="morphe_change_start_page_entry_search">શોધો</string>
+  <string name="tada_change_start_page_entry_default">ડિફૉલ્ટ</string>
+  <string name="tada_change_start_page_entry_search">શોધો</string>
   <!-- layout.compactheader.hideFilterBarPatch -->
   <!-- layout.orientation.forcePortraitOrientationPatch -->
   <!-- layout.miniplayer.changeMiniplayerColorPatch -->
@@ -67,7 +67,7 @@ Second \"item\" text"</string>
   <!-- 'scrobble' must be kept untranslated -->
   <!-- 'scrobble' must be kept untranslated -->
   <!-- 'scrobbling' must be kept untranslated -->
-  <string name="morphe_music_listenbrainz_token_status_invalid_unknown">અજ્ઞાત</string>
+  <string name="tada_music_listenbrainz_token_status_invalid_unknown">અજ્ઞાત</string>
   <!-- 'scrobbling' must be kept untranslated -->
   <!-- 'scrobbling' must be kept untranslated -->
   <!-- layout.lyrics.lyricsPatch -->

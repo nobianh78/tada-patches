@@ -1,4 +1,4 @@
-The Morphe patches project is an independent project derived from the prior works
+The TADa patches project is an independent project derived from the prior works
 of exactly two repositories:
 
 2022-2025 https://github.com/inotia00/revanced-patches

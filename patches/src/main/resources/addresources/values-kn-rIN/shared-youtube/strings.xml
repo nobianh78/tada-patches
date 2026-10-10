@@ -21,19 +21,19 @@ Second \"item\" text"</string>
   <!-- misc.initialization.initializationPatch -->
   <!-- layout.branding.baseCustomBrandingPatch -->
   <!-- layout.theme.baseThemePatch -->
-  <string name="morphe_theme_color_custom_entry">Custom</string>
+  <string name="tada_theme_color_custom_entry">Custom</string>
   <!-- interaction.downloads.downloadsPatch -->
-  <!-- Translations of this should be identical to morphe_custom_branding_icon_entry_7 -->
-  <!-- Translation should match morphe_custom_branding_notification_icon_entry_3 -->
-  <!-- Translation should match morphe_custom_branding_notification_icon_entry_3 -->
-  <!-- Translations of this should be identical to morphe_custom_branding_name_entry_5 -->
+  <!-- Translations of this should be identical to tada_custom_branding_icon_entry_7 -->
+  <!-- Translation should match tada_custom_branding_notification_icon_entry_3 -->
+  <!-- Translation should match tada_custom_branding_notification_icon_entry_3 -->
+  <!-- Translations of this should be identical to tada_custom_branding_name_entry_5 -->
   <!-- misc.dns.checkWatchHistoryDomainNameResolutionPatch -->
   <!-- misc.spoof.spoofVideoStreamsPatch -->
-  <!-- 'Spoof video streams' must use the same translation as morphe_spoof_video_streams_title.
-         "Sign in to Android VR" must use the same translation as morphe_spoof_video_streams_sign_in_android_vr_about_title -->
-  <!-- Ensure this translation matches the translation of morphe_spoof_video_streams_no_clients_suggest_vr_toast -->
-  <!-- "Default client" must be the same translated text as morphe_spoof_video_streams_client_type_title -->
-  <!-- "Open website" must use the same translation as morphe_spoof_video_streams_sign_in_android_vr_activation_code_dialog_open_website -->
+  <!-- 'Spoof video streams' must use the same translation as tada_spoof_video_streams_title.
+         "Sign in to Android VR" must use the same translation as tada_spoof_video_streams_sign_in_android_vr_about_title -->
+  <!-- Ensure this translation matches the translation of tada_spoof_video_streams_no_clients_suggest_vr_toast -->
+  <!-- "Default client" must be the same translated text as tada_spoof_video_streams_client_type_title -->
+  <!-- "Open website" must use the same translation as tada_spoof_video_streams_sign_in_android_vr_activation_code_dialog_open_website -->
   <!-- misc.medianotification.mediaNotificationControlsPatch -->
   <!-- misc.quic.disableQUICProtocolPatch -->
   <!-- misc.audio.drc.disableDRCAudioPatch  -->
@@ -41,7 +41,7 @@ Second \"item\" text"</string>
   <!-- misc.audio.silence.skipSilencePatch -->
   <!-- misc.proxy.networkProxyPatch -->
   <!-- ad.hideFullscreenAdsPatch -->
-  <!-- 'Spoof video streams' must use the same translation as morphe_spoof_video_streams_title.
+  <!-- 'Spoof video streams' must use the same translation as tada_spoof_video_streams_title.
           'Android Studio' and 'Android VR Downgraded' must be kept untranslated. -->
   <!-- misc.privacy.sanitizeSharingLinksPatch -->
   <!-- misc.debugging.enableDebuggingPatch -->
@@ -50,8 +50,8 @@ Second \"item\" text"</string>
   <!-- layout.hide.settingsmenu.hideSettingsMenuFilterPatch -->
   <!-- interaction.dialog.removeViewerDiscretionDialogPatch -->
   <!-- misc.potoken.poTokenProviderPatch -->
-  <!-- "Fixes playback issues using an external PoToken minter (Experimental)" should use the same wording as morphe_external_potoken_provider_summary
-         'Spoof video streams' must use the same translation as morphe_spoof_video_streams_title -->
+  <!-- "Fixes playback issues using an external PoToken minter (Experimental)" should use the same wording as tada_external_potoken_provider_summary
+         'Spoof video streams' must use the same translation as tada_spoof_video_streams_title -->
   <!-- misc.spoof.appversion.spoofAppVersionPatch -->
   <!-- misc.framerate.baseAppRefreshRatePatch -->
   <!-- layout.returnyoutubedislike.returnYouTubeDislikePatch -->

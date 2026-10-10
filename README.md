@@ -11,15 +11,15 @@ TADa Patches
 
 ## ❓ About
 
-**TADa Patches** is a rebranded fork of [Morphe Patches](https://github.com/MorpheApp/morphe-patches). 
-All original work and credits go to the Morphe team and the prior work of [ReVanced](https://github.com/ReVanced).
-All modifications made by TADa and Morphe can be found in the Git history.
+**TADa Patches** is a rebranded fork of [TADa Patches](https://github.com/TADaApp/tada-patches). 
+All original work and credits go to the TADa team and the prior work of [ReVanced](https://github.com/ReVanced).
+All modifications made by TADa and TADa can be found in the Git history.
 
 &nbsp;
 ## 🩹 Patches list
 
 <!-- PATCHES_START -->
-> **[v1.46.0](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.46.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;166 patches total
+> **[v1.46.0](https://github.com/TADaApp/tada-patches/releases/tag/v1.46.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;166 patches total
 <details>
 <summary>📦 YouTube&nbsp;&nbsp;•&nbsp;&nbsp;93 patches</summary>
 <br>
@@ -243,13 +243,13 @@ All modifications made by TADa and Morphe can be found in the Git history.
 
 We currently accept pull requests for fixes/improvements to YouTube, YT Music, and Reddit.
 If you have developed patches for other apps, you are encouraged to release your patches in a third party repository.
-See the [Patches template](https://github.com/morpheapp/morphe-patches-template) for more information.  
+See the [Patches template](https://github.com/tadaapp/tada-patches-template) for more information.  
 
 ## 📜 License
 
-TADa Patches (forked from Morphe Patches) are licensed under the [GNU General Public License v3.0](LICENSE), with additional conditions under GPLv3 Section 7:
+TADa Patches (forked from TADa Patches) are licensed under the [GNU General Public License v3.0](LICENSE), with additional conditions under GPLv3 Section 7:
 
 - **Attribution (7b):** Any use of this code, including derivative works, must preserve all original notices and disclaimers.
-- **Name & Branding Restrictions (7c & 7e):** Derivative works must use their own distinct branding. The **"Morphe"** name, logos, and trademarks may not be used for the branding or title of derivative works (e.g., names like *"Morphe Plus"*, *"Morphe Expanded"*, or *"Morphe UserXYZ"* are strictly prohibited).
+- **Name & Branding Restrictions (7c & 7e):** Derivative works must use their own distinct branding. The **"TADa"** name, logos, and trademarks may not be used for the branding or title of derivative works (e.g., names like *"TADa Plus"*, *"TADa Expanded"*, or *"TADa UserXYZ"* are strictly prohibited).
 
 See the [LICENSE](LICENSE) file for full GPLv3 terms and the [NOTICE](NOTICE) file for full conditions of GPLv3 Section 7.
