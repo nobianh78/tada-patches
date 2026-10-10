@@ -126,16 +126,18 @@ public class TADaAboutPreference extends Preference {
 
         html.append("<div class=\"dialog-header\">");
 
-        // The logo is fetched over the network, so the container is skipped entirely when offline.
-        if (Utils.isNetworkConnected()) {
-            html.append(String.format("""
-                    <div class="app-logo">
-                        <div class="app-logo-inner">
-                            <img src="%s" onerror="this.parentElement.parentElement.style.display='none';" />
-                        </div>
+        html.append("""
+                <div class="app-logo" style="display:flex; justify-content:center; align-items:center; gap: 16px; margin-bottom: 16px;">
+                    <div style="width:48px; height:48px; display:flex; justify-content:center; align-items:center;">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--text-color, currentColor)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6,7 L18,7 M12,7 L12,18" />
+                        </svg>
                     </div>
-                    """, AboutRoutes.aboutLogoUrl));
-        }
+                    <div style="width:48px; height:48px; display:flex; justify-content:center; align-items:center;">
+                        <img src="file:///android_res/drawable/tada_logo.png" onerror="this.style.display='none';" style="max-width:100%; max-height:100%; object-fit:contain;" />
+                    </div>
+                </div>
+                """);
 
         html.append("<div class=\"app-name\">TADa</div>");
 

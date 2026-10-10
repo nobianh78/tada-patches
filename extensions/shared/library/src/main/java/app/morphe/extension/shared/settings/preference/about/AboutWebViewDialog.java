@@ -73,7 +73,7 @@ class AboutWebViewDialog extends Dialog {
         webView.setOverScrollMode(View.OVER_SCROLL_NEVER);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(createWebViewClient());
-        webView.loadDataWithBaseURL(null, htmlContent, "text/html", "utf-8", null);
+        webView.loadDataWithBaseURL("file:///android_res/drawable/", htmlContent, "text/html", "utf-8", null);
 
         // Add WebView to layout.
         mainLayout.addView(webView);
