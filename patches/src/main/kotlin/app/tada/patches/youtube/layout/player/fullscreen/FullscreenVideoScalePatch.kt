@@ -7,9 +7,9 @@
 
 package app.tada.patches.youtube.layout.player.fullscreen
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
@@ -29,12 +29,12 @@ import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.shared.getPlayerTypeFingerprint
 import app.tada.patches.youtube.video.format.hookAdaptiveFormat
 import app.tada.patches.youtube.video.format.videoFormatPatch
-import app.tada.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.addInstructionsAtControlFlowLabel
 
 private const val EXTENSION_CLASS_VIDEO_SCALE =
-    "Lapp/tada/extension/youtube/patches/FullscreenVideoScalePatch;"
+    "Lapp/morphe/extension/youtube/patches/FullscreenVideoScalePatch;"
 private const val EXTENSION_BUTTON =
-    "Lapp/tada/extension/youtube/videoplayer/FullscreenVideoScaleButton;"
+    "Lapp/morphe/extension/youtube/videoplayer/FullscreenVideoScaleButton;"
 
 private val fullscreenVideoScaleResourcePatch = resourcePatch {
     dependsOn(

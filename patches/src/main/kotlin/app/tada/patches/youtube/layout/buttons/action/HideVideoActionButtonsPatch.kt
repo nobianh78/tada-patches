@@ -10,9 +10,9 @@
 
 package app.tada.patches.youtube.layout.buttons.action
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.fix.proto.fixProtoLibraryPatch
 import app.tada.patches.shared.misc.litho.filter.addLithoFilter
 import app.tada.patches.shared.misc.litho.node.hookTreeNodeResult
@@ -32,9 +32,9 @@ import app.tada.patches.youtube.video.information.videoInformationPatch
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 private const val VIDEO_ACTION_FILTER =
-    "Lapp/tada/extension/youtube/patches/components/VideoActionButtonsFilter;"
+    "Lapp/morphe/extension/youtube/patches/components/VideoActionButtonsFilter;"
 private const val QUICK_ACTIONS_FILTER =
-    "Lapp/tada/extension/youtube/patches/components/QuickActionButtonsFilter;"
+    "Lapp/morphe/extension/youtube/patches/components/QuickActionButtonsFilter;"
 
 @Suppress("unused")
 val hideVideoActionButtonsPatch = bytecodePatch(
@@ -89,7 +89,7 @@ val hideVideoActionButtonsPatch = bytecodePatch(
                         preferences = setOf(
                             NonInteractivePreference(
                                 key = "tada_quick_actions_top_margin",
-                                tag = "app.tada.extension.shared.settings.preference.SeekBarPreference"
+                                tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference"
                             ),
                             SwitchPreference("tada_hide_quick_actions"),
                             SwitchPreference("tada_hide_quick_actions_ask_button"),

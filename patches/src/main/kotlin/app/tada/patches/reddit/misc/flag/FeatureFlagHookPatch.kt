@@ -7,11 +7,11 @@
 
 package app.tada.patches.reddit.misc.flag
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.reddit.misc.extension.sharedExtensionPatch
-import app.tada.util.cloneMutable
+import app.morphe.util.cloneMutable
 import java.lang.ref.WeakReference
 
 private lateinit var featureFlagMethod : WeakReference<MutableMethod>

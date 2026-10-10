@@ -10,14 +10,14 @@
 
 package app.tada.patches.youtube.layout.buttons.overlay
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resource.resourceId
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resource.resourceId
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
@@ -28,12 +28,12 @@ import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.shared.LayoutConstructorFingerprint
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.findFreeRegister
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.indexOfFirstResourceIdOrThrow
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.findFreeRegister
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.indexOfFirstResourceIdOrThrow
+import app.morphe.util.insertLiteralOverride
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
@@ -41,7 +41,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/HidePlayerOverlayButtonsPatch;"
+    "Lapp/morphe/extension/youtube/patches/HidePlayerOverlayButtonsPatch;"
 
 val hidePlayerOverlayButtonsPatch = bytecodePatch(
     name = "Hide player overlay buttons",
@@ -71,7 +71,7 @@ val hidePlayerOverlayButtonsPatch = bytecodePatch(
             ),
             NonInteractivePreference(
                 key = "tada_player_control_buttons_background_opacity",
-                tag = "app.tada.extension.shared.settings.preference.SeekBarPreference",
+                tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference",
             )
         )
 

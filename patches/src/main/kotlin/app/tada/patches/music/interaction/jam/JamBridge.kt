@@ -7,10 +7,10 @@
 
 package app.tada.patches.music.interaction.jam
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.util.proxy.mutableTypes.MutableClass
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.util.proxy.mutableTypes.MutableClass
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.iface.Method

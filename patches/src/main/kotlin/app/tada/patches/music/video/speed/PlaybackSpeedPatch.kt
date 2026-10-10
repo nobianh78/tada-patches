@@ -7,7 +7,7 @@
 
 package app.tada.patches.music.video.speed
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.settings.PreferenceScreen
 import app.tada.patches.music.misc.settings.settingsPatch
@@ -20,7 +20,7 @@ import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenc
 import app.tada.patches.youtube.video.information.addExoPlayerHooks
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/music/patches/PlaybackSpeedPatch;"
+    "Lapp/morphe/extension/music/patches/PlaybackSpeedPatch;"
 
 @Suppress("unused")
 val playbackSpeedPatch = bytecodePatch(
@@ -41,7 +41,7 @@ val playbackSpeedPatch = bytecodePatch(
             noTitleUnsortedPreferenceCategory(
                 NonInteractivePreference(
                     key = "tada_music_playback_speed",
-                    tag = "app.tada.extension.shared.settings.preference.SeekBarPreference",
+                    tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference",
                     selectable = true
                 ),
                 SwitchPreference("tada_music_playback_speed_change_pitch")

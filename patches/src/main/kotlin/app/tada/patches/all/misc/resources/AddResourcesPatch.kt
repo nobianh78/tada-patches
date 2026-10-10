@@ -23,12 +23,12 @@
 
 package app.tada.patches.all.misc.resources
 
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.util.Document
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.util.Document
 import app.tada.patches.util.resource.StringResourceSanitizer.sanitizeAndroidResourceString
-import app.tada.util.forEachChildElement
-import app.tada.util.getNode
-import app.tada.util.inputStreamFromBundledResource
+import app.morphe.util.forEachChildElement
+import app.morphe.util.getNode
+import app.morphe.util.inputStreamFromBundledResource
 import org.w3c.dom.Element
 import org.w3c.dom.Node
 import java.io.File

@@ -10,7 +10,7 @@
 
 package app.tada.patches.youtube.video.speed
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.BasePreference
 import app.tada.patches.shared.misc.settings.preference.PreferenceCategory
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference.Sorting
@@ -20,7 +20,7 @@ import app.tada.patches.youtube.video.information.EXTENSION_CLASS
 import app.tada.patches.youtube.video.speed.button.playbackSpeedButtonPatch
 import app.tada.patches.youtube.video.speed.custom.customPlaybackSpeedPatch
 import app.tada.patches.youtube.video.speed.remember.rememberPlaybackSpeedPatch
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.setExtensionIsPatchIncluded
 
 /**
  * Speed menu settings. Used to organize all speed related settings together.
@@ -49,7 +49,7 @@ val playbackSpeedPatch = bytecodePatch(
                 key = "tada_zz_video_key", // Dummy key to force the speed settings last.
                 titleKey = null,
                 sorting = Sorting.UNSORTED,
-                tag = "app.tada.extension.shared.settings.preference.NoTitlePreferenceCategory",
+                tag = "app.morphe.extension.shared.settings.preference.NoTitlePreferenceCategory",
                 preferences = settingsMenuVideoSpeedGroup
             )
         )

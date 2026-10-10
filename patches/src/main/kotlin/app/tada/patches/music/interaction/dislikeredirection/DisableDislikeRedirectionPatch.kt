@@ -7,11 +7,11 @@
 
 package app.tada.patches.music.interaction.dislikeredirection
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.playservice.is_9_32_or_greater
 import app.tada.patches.music.misc.playservice.is_9_35_or_greater
@@ -19,16 +19,16 @@ import app.tada.patches.music.misc.settings.PreferenceScreen
 import app.tada.patches.music.misc.settings.settingsPatch
 import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.indexOfFirstInstructionReversedOrThrow
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.indexOfFirstInstructionReversedOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/music/patches/DisableDislikeRedirectionPatch;"
+    "Lapp/morphe/extension/music/patches/DisableDislikeRedirectionPatch;"
 
 @Suppress("unused")
 val disableDislikeRedirectionPatch = bytecodePatch(

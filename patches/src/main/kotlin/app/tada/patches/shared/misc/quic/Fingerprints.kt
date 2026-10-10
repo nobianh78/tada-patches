@@ -7,7 +7,7 @@
 
 package app.tada.patches.shared.misc.quic
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 import com.android.tools.smali.dexlib2.AccessFlags
 
 internal object CronetEngineBuilderFingerprint : Fingerprint(

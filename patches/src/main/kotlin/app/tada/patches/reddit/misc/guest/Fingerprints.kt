@@ -7,9 +7,9 @@
 
 package app.tada.patches.reddit.misc.guest
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.InstructionLocation.MatchAfterWithin
-import app.tada.patcher.methodCall
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation.MatchAfterWithin
+import app.morphe.patcher.methodCall
 import com.android.tools.smali.dexlib2.Opcode
 
 internal object FrontPageApplicationHasFinishedOnboardingFingerprint : Fingerprint(

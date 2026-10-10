@@ -10,10 +10,10 @@
 
 package app.tada.patches.music.layout.branding
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.gms.Constants.MUSIC_MAIN_ACTIVITY_NAME
 import app.tada.patches.music.misc.gms.Constants.MUSIC_PACKAGE_NAME
@@ -26,16 +26,16 @@ import app.tada.patches.shared.layout.branding.baseCustomBrandingPatch
 import app.tada.patches.shared.misc.lottie.LOTTIE_ANIMATION_VIEW_CLASS_TYPE
 import app.tada.patches.shared.misc.lottie.lottieAnimationPatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.returnEarly
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
 private const val STARTUP_ANIMATION_EXTENSION_CLASS =
-    "Lapp/tada/extension/music/patches/StartupAnimationPatch;"
+    "Lapp/morphe/extension/music/patches/StartupAnimationPatch;"
 
 private val startupAnimationPatch = bytecodePatch {
     dependsOn(settingsPatch, lottieAnimationPatch)

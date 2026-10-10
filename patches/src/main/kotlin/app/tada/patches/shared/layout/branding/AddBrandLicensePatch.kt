@@ -1,8 +1,8 @@
 package app.tada.patches.shared.layout.branding
 
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.rawResourcePatch
-import app.tada.util.inputStreamFromBundledResource
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.rawResourcePatch
+import app.morphe.util.inputStreamFromBundledResource
 import java.nio.file.Files
 
 /**

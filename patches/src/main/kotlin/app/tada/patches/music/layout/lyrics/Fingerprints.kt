@@ -7,7 +7,7 @@
 
 package app.tada.patches.music.layout.lyrics
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 
 /**
  * Matched only to reach the engagement panel controller class, which owns the field

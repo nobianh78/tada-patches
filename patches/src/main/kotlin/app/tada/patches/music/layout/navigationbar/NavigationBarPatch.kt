@@ -1,9 +1,9 @@
 package app.tada.patches.music.layout.navigationbar
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.settings.PreferenceScreen
 import app.tada.patches.music.misc.settings.settingsPatch
@@ -14,7 +14,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/music/patches/NavigationBarPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/music/patches/NavigationBarPatch;"
 
 @Suppress("unused")
 val navigationBarPatch = bytecodePatch(

@@ -7,21 +7,21 @@
 
 package app.tada.patches.reddit.layout.modern
 
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.reddit.misc.settings.settingsPatch
 import app.tada.patches.reddit.misc.version.is_2026_25_0_or_greater
 import app.tada.patches.reddit.misc.version.versionCheckPatch
 import app.tada.patches.reddit.shared.Constants.COMPATIBILITY_REDDIT
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.setExtensionIsPatchIncluded
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import java.util.logging.Logger
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/reddit/patches/DisableModernHomePatch;"
+    "Lapp/morphe/extension/reddit/patches/DisableModernHomePatch;"
 
 @Suppress("unused")
 val disableModernHomePatch = bytecodePatch(

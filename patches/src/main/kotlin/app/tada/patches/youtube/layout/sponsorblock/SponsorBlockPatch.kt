@@ -10,11 +10,11 @@
 
 package app.tada.patches.youtube.layout.sponsorblock
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.all.misc.resources.addAppResources
 import app.tada.patches.all.misc.resources.addResourcesPatch
 import app.tada.patches.shared.misc.settings.preference.BasePreference
@@ -44,21 +44,21 @@ import app.tada.patches.youtube.video.information.videoTimeHook
 import app.tada.patches.youtube.video.videoid.hookBackgroundPlayVideoId
 import app.tada.patches.youtube.video.videoid.hookVideoId
 import app.tada.patches.youtube.video.videoid.videoIdPatch
-import app.tada.util.ResourceGroup
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.copyResources
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionReversedOrThrow
+import app.morphe.util.ResourceGroup
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.copyResources
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionReversedOrThrow
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
-private const val SB_PREFERENCES_PACKAGE = "app.tada.extension.youtube.sponsorblock.preferences"
-private const val YOUTUBE_PREFERENCES_PACKAGE = "app.tada.extension.youtube.settings.preference"
+private const val SB_PREFERENCES_PACKAGE = "app.morphe.extension.youtube.sponsorblock.preferences"
+private const val YOUTUBE_PREFERENCES_PACKAGE = "app.morphe.extension.youtube.settings.preference"
 private const val SEGMENT_CATEGORY_PREFERENCE_TAG =
-    "app.tada.extension.shared.sponsorblock.objects.SegmentCategoryPreference"
+    "app.morphe.extension.shared.sponsorblock.objects.SegmentCategoryPreference"
 
 fun categoryPreference(settingKey: String): BasePreference =
     object : BasePreference(settingKey, null, null, null, null, null, SEGMENT_CATEGORY_PREFERENCE_TAG) {}
@@ -163,7 +163,7 @@ private val sponsorBlockResourcePatch = resourcePatch {
                 key = "tada_sb_stats",
                 sorting = PreferenceScreenPreference.Sorting.UNSORTED,
                 preferences = emptySet(), // Preferences are added by custom class at runtime.
-                tag = "app.tada.extension.youtube.sponsorblock.ui.SponsorBlockStatsPreferenceCategory"
+                tag = "app.morphe.extension.youtube.sponsorblock.ui.SponsorBlockStatsPreferenceCategory"
             ),
             PreferenceCategory(
                 key = "tada_sb_about",
@@ -171,7 +171,7 @@ private val sponsorBlockResourcePatch = resourcePatch {
                 preferences = setOf(
                     NonInteractivePreference(
                         key = "tada_sb_about_api",
-                        tag = "app.tada.extension.shared.sponsorblock.ui.SponsorBlockAboutPreference",
+                        tag = "app.morphe.extension.shared.sponsorblock.ui.SponsorBlockAboutPreference",
                         selectable = true
                     )
                 )
@@ -209,13 +209,13 @@ private val sponsorBlockResourcePatch = resourcePatch {
 }
 
 internal const val EXTENSION_SEGMENT_PLAYBACK_CONTROLLER_CLASS =
-    "Lapp/tada/extension/youtube/sponsorblock/YouTubeSponsorBlockConfig;"
+    "Lapp/morphe/extension/youtube/sponsorblock/YouTubeSponsorBlockConfig;"
 private const val EXTENSION_CREATE_SEGMENT_BUTTON_CONTROLLER_CLASS =
-    "Lapp/tada/extension/youtube/sponsorblock/ui/CreateSegmentButton;"
+    "Lapp/morphe/extension/youtube/sponsorblock/ui/CreateSegmentButton;"
 private const val EXTENSION_VOTING_BUTTON_CONTROLLER_CLASS =
-    "Lapp/tada/extension/youtube/sponsorblock/ui/VotingButton;"
+    "Lapp/morphe/extension/youtube/sponsorblock/ui/VotingButton;"
 private const val EXTENSION_SPONSORBLOCK_VIEW_CONTROLLER_CLASS =
-    "Lapp/tada/extension/youtube/sponsorblock/ui/SponsorBlockViewController;"
+    "Lapp/morphe/extension/youtube/sponsorblock/ui/SponsorBlockViewController;"
 
 @Suppress("unused")
 val sponsorBlockPatch = bytecodePatch(

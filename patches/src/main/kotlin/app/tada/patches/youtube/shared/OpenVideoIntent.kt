@@ -7,17 +7,17 @@
 
 package app.tada.patches.youtube.shared
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.all.misc.resources.addResourcesPatch
 import app.tada.patches.youtube.misc.playservice.is_21_20_or_greater
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.video.information.PlaybackStartDescriptorToStringFingerprint
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.getFreeRegisterProvider
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.getFreeRegisterProvider
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import java.lang.ref.WeakReference
 

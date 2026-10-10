@@ -10,25 +10,25 @@
 
 package app.tada.patches.shared.layout.theme
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.ResourcePatchContext
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.colorOption
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.ResourcePatchContext
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.colorOption
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.overrideThemeColors
-import app.tada.util.childElementsSequence
-import app.tada.util.forEachChildElement
-import app.tada.util.getNode
-import app.tada.util.inputStreamFromBundledResource
-import app.tada.util.matchAllMethodIndicesForEach
-import app.tada.util.returnEarly
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.childElementsSequence
+import app.morphe.util.forEachChildElement
+import app.morphe.util.getNode
+import app.morphe.util.inputStreamFromBundledResource
+import app.morphe.util.matchAllMethodIndicesForEach
+import app.morphe.util.returnEarly
+import app.morphe.util.setExtensionIsPatchIncluded
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import java.util.Locale
@@ -37,7 +37,7 @@ import kotlin.math.cos
 import kotlin.math.pow
 import kotlin.math.sin
 
-internal const val THEME_COLOR_EXTENSION_CLASS = "Lapp/tada/extension/shared/theme/ThemeColorPatch;"
+internal const val THEME_COLOR_EXTENSION_CLASS = "Lapp/morphe/extension/shared/theme/ThemeColorPatch;"
 
 /**
  * A mobile country code and a mobile network code are three digits, so a device never reports one

@@ -10,16 +10,16 @@
 
 package app.tada.patches.youtube.layout.hide.general
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.removeInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.removeInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.shared.misc.fix.proto.fixProtoLibraryPatch
 import app.tada.patches.shared.misc.litho.filter.addLithoFilter
 import app.tada.patches.shared.misc.litho.node.hookTreeNodeResult
@@ -61,14 +61,14 @@ import app.tada.patches.youtube.shared.ModernRelateVideoOverlayFingerprint
 import app.tada.patches.youtube.shared.RelateVideoOverlayLayoutParamFingerprint
 import app.tada.patches.youtube.shared.hookVideoIntent
 import app.tada.patches.youtube.shared.openVideoIntentPatch
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.findFreeRegister
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.indexOfFirstInstructionReversedOrThrow
-import app.tada.util.insertLiteralOverride
-import app.tada.util.registersUsed
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.findFreeRegister
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.indexOfFirstInstructionReversedOrThrow
+import app.morphe.util.insertLiteralOverride
+import app.morphe.util.registersUsed
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -82,23 +82,23 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
 private const val LAYOUT_COMPONENTS_FILTER =
-    "Lapp/tada/extension/youtube/patches/components/LayoutComponentsFilter;"
+    "Lapp/morphe/extension/youtube/patches/components/LayoutComponentsFilter;"
 private const val DESCRIPTION_COMPONENTS_FILTER =
-    "Lapp/tada/extension/youtube/patches/components/DescriptionComponentsFilter;"
+    "Lapp/morphe/extension/youtube/patches/components/DescriptionComponentsFilter;"
 private const val EXPLORE_MENU_FILTER =
-    "Lapp/tada/extension/youtube/patches/components/ExploreMenuFilter;"
+    "Lapp/morphe/extension/youtube/patches/components/ExploreMenuFilter;"
 private const val COMMENTS_FILTER =
-    "Lapp/tada/extension/youtube/patches/components/CommentsFilter;"
+    "Lapp/morphe/extension/youtube/patches/components/CommentsFilter;"
 private const val CUSTOM_FILTER =
-    "Lapp/tada/extension/youtube/patches/components/CustomFilter;"
+    "Lapp/morphe/extension/youtube/patches/components/CustomFilter;"
 private const val KEYWORD_FILTER =
-    "Lapp/tada/extension/youtube/patches/components/KeywordContentFilter;"
+    "Lapp/morphe/extension/youtube/patches/components/KeywordContentFilter;"
 private const val AISLIST_FILTER =
-    "Lapp/tada/extension/youtube/patches/components/AiSListFilter;"
+    "Lapp/morphe/extension/youtube/patches/components/AiSListFilter;"
 private const val SANITIZE_VIDEO_SUBTITLE_FILTER =
-    "Lapp/tada/extension/youtube/patches/spans/SanitizeVideoSubtitleFilter;"
+    "Lapp/morphe/extension/youtube/patches/spans/SanitizeVideoSubtitleFilter;"
 private const val SEARCH_LINKS_FILTER =
-    "Lapp/tada/extension/youtube/patches/spans/SearchLinksFilter;"
+    "Lapp/morphe/extension/youtube/patches/spans/SearchLinksFilter;"
 
 val hideLayoutComponentsPatch = bytecodePatch(
     name = "Hide layout components",
@@ -161,7 +161,7 @@ val hideLayoutComponentsPatch = bytecodePatch(
                         SwitchPreference(
                             "tada_hide_comments_carousel",
                             summary = true,
-                            tag = "app.tada.extension.shared.settings.preference.BulletPointSwitchPreference"
+                            tag = "app.morphe.extension.shared.settings.preference.BulletPointSwitchPreference"
                         ),
                         TextPreference(
                             "tada_hide_comments_carousel_filter_strings",
@@ -261,7 +261,7 @@ val hideLayoutComponentsPatch = bytecodePatch(
                         titleKey = "tada_hide_stats_category_title",
                         sorting = Sorting.UNSORTED,
                         preferences = emptySet(),
-                        tag = "app.tada.extension.youtube.settings.preference.KeywordContentStatsPreferenceCategory"
+                        tag = "app.morphe.extension.youtube.settings.preference.KeywordContentStatsPreferenceCategory"
                     ),
                     PreferenceCategory(
                         key = "tada_hide_keyword_content_about_category",
@@ -271,11 +271,11 @@ val hideLayoutComponentsPatch = bytecodePatch(
                             NonInteractivePreference(
                                 key = "tada_hide_keyword_content_about",
                                 titleKey = "tada_hide_keyword_content_screen_title",
-                                tag = "app.tada.extension.shared.settings.preference.BulletPointPreference"
+                                tag = "app.morphe.extension.shared.settings.preference.BulletPointPreference"
                             ),
                             NonInteractivePreference(
                                 key = "tada_hide_keyword_content_about_whole_words",
-                                tag = "app.tada.extension.youtube.settings.preference.HTMLPreference"
+                                tag = "app.morphe.extension.youtube.settings.preference.HTMLPreference"
                             )
                         )
                     )
@@ -330,7 +330,7 @@ val hideLayoutComponentsPatch = bytecodePatch(
                         titleKey = "tada_hide_stats_category_title",
                         sorting = Sorting.UNSORTED,
                         preferences = emptySet(),
-                        tag = "app.tada.extension.youtube.settings.preference.AiSListStatsPreferenceCategory"
+                        tag = "app.morphe.extension.youtube.settings.preference.AiSListStatsPreferenceCategory"
                     ),
                     PreferenceCategory(
                         key = "tada_hide_aislist_about_category",
@@ -340,11 +340,11 @@ val hideLayoutComponentsPatch = bytecodePatch(
                             NonInteractivePreference(
                                 key = "tada_hide_aislist_about",
                                 titleKey = "tada_hide_aislist_screen_title",
-                                tag = "app.tada.extension.shared.settings.preference.BulletPointPreference"
+                                tag = "app.morphe.extension.shared.settings.preference.BulletPointPreference"
                             ),
                             NonInteractivePreference(
                                 key = "tada_hide_aislist_attribution",
-                                tag = "app.tada.extension.shared.settings.preference.AiSListAttributionPreference",
+                                tag = "app.morphe.extension.shared.settings.preference.AiSListAttributionPreference",
                                 selectable = true
                             )
                         )
@@ -436,14 +436,14 @@ val hideLayoutComponentsPatch = bytecodePatch(
             SwitchPreference(
                 "tada_hide_upload_time",
                 summary = true,
-                tag = "app.tada.extension.shared.settings.preference.BulletPointSwitchPreference"
+                tag = "app.morphe.extension.shared.settings.preference.BulletPointSwitchPreference"
             ),
             SwitchPreference("tada_hide_video_thumbnail"),
             SwitchPreference("tada_hide_video_recommendation_labels", summary = true),
             SwitchPreference(
                 "tada_hide_view_count",
                 summary = true,
-                tag = "app.tada.extension.shared.settings.preference.BulletPointSwitchPreference"
+                tag = "app.morphe.extension.shared.settings.preference.BulletPointSwitchPreference"
             ),
             SwitchPreference("tada_hide_web_search_results", summary = true),
             SwitchPreference("tada_hide_youtube_doodles", summary = true)

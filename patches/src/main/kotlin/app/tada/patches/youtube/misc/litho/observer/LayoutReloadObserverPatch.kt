@@ -9,13 +9,13 @@
 
 package app.tada.patches.youtube.misc.litho.observer
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.litho.node.hookTreeNodeResult
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.litho.node.treeNodeElementHookPatch
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/LayoutReloadObserverPatch;"
+    "Lapp/morphe/extension/youtube/patches/LayoutReloadObserverPatch;"
 
 val layoutReloadObserverPatch = bytecodePatch(
     description = "Hooks a method to detect in the extension when the RecyclerView at the bottom of the player is redrawn."

@@ -7,9 +7,9 @@
 
 package app.tada.patches.music.layout.sponsorblock
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.all.misc.resources.addAppResources
 import app.tada.patches.all.misc.resources.addResourcesPatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
@@ -26,15 +26,15 @@ import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreferen
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.TextPreference
 import app.tada.patches.youtube.layout.sponsorblock.categoryPreference
-import app.tada.util.findFreeRegister
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionReversedOrThrow
+import app.morphe.util.findFreeRegister
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionReversedOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 
 private const val EXTENSION_SEGMENT_PLAYBACK_CONTROLLER_CLASS =
-    "Lapp/tada/extension/music/sponsorblock/MusicSponsorBlockConfig;"
+    "Lapp/morphe/extension/music/sponsorblock/MusicSponsorBlockConfig;"
 
 @Suppress("unused")
 val musicSponsorBlockPatch = bytecodePatch(
@@ -124,7 +124,7 @@ val musicSponsorBlockPatch = bytecodePatch(
                 preferences = setOf(
                     NonInteractivePreference(
                         key = "tada_sb_about_api",
-                        tag = "app.tada.extension.shared.sponsorblock.ui.SponsorBlockAboutPreference",
+                        tag = "app.morphe.extension.shared.sponsorblock.ui.SponsorBlockAboutPreference",
                         selectable = true
                     )
                 )

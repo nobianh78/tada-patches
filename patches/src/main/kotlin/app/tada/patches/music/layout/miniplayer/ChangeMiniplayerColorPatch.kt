@@ -9,20 +9,20 @@
 
 package app.tada.patches.music.layout.miniplayer
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.playservice.is_9_32_or_greater
 import app.tada.patches.music.misc.settings.PreferenceScreen
 import app.tada.patches.music.misc.settings.settingsPatch
 import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.findFreeRegister
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.indexOfFirstInstructionReversedOrThrow
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.findFreeRegister
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.indexOfFirstInstructionReversedOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
@@ -30,7 +30,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/music/patches/ChangeMiniplayerColorPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/music/patches/ChangeMiniplayerColorPatch;"
 
 @Suppress("unused")
 val changeMiniplayerColorPatch = bytecodePatch(

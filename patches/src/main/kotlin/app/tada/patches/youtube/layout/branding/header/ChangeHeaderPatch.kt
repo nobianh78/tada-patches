@@ -10,19 +10,19 @@
 
 package app.tada.patches.youtube.layout.branding.header
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resource.resourceId
-import app.tada.patcher.resourceLiteral
-import app.tada.patcher.util.Document
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resource.resourceId
+import app.morphe.patcher.resourceLiteral
+import app.morphe.patcher.util.Document
 import app.tada.patches.shared.layout.branding.header.CUSTOM_HEADER_RESOURCE_NAME
 import app.tada.patches.shared.layout.branding.header.baseChangeHeaderPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.findElementByAttributeValueOrThrow
-import app.tada.util.matchAllMethodIndicesForEach
+import app.morphe.util.findElementByAttributeValueOrThrow
+import app.morphe.util.matchAllMethodIndicesForEach
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
@@ -37,7 +37,7 @@ private val targetResourceDirectoryNames = mapOf(
 
 private val logoResourceNames = arrayOf("tada_header")
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/ChangeHeaderPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/ChangeHeaderPatch;"
 
 private val changeHeaderBytecodePatch = bytecodePatch {
 

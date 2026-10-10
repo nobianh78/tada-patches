@@ -7,9 +7,9 @@
 
 package app.tada.patches.youtube.layout.statusbar
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
@@ -18,7 +18,7 @@ import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.shared.YouTubeActivityOnCreateFingerprint
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/HideStatusBarPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/HideStatusBarPatch;"
 
 @Suppress("unused")
 val hideStatusBarPatch = bytecodePatch(

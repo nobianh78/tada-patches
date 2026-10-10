@@ -7,8 +7,8 @@
 
 package app.tada.patches.youtube.misc.fix.videoactionbar
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.fieldAccess
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.fieldAccess
 import app.tada.patches.youtube.shared.CLIENT_INFO_CLASS
 import com.android.tools.smali.dexlib2.Opcode
 

@@ -9,17 +9,17 @@
 
 package app.tada.patches.youtube.layout.miniplayer
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.shared.misc.settings.preference.BasePreference
 import app.tada.patches.shared.misc.settings.preference.InputType
 import app.tada.patches.shared.misc.settings.preference.ListPreference
@@ -42,15 +42,15 @@ import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.video.format.hookAdaptiveFormat
 import app.tada.patches.youtube.video.format.videoFormatPatch
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.cloneParameters
-import app.tada.util.findFreeRegister
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.indexOfFirstLiteralInstructionOrThrow
-import app.tada.util.insertLiteralOverride
-import app.tada.util.numberOfParameterRegisters
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.cloneParameters
+import app.morphe.util.findFreeRegister
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.indexOfFirstLiteralInstructionOrThrow
+import app.morphe.util.insertLiteralOverride
+import app.morphe.util.numberOfParameterRegisters
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -63,10 +63,10 @@ import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/MiniplayerPatch;"
-internal const val MINIMAL_EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/MinimalMiniplayerPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/MiniplayerPatch;"
+internal const val MINIMAL_EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/MinimalMiniplayerPatch;"
 internal const val MINIMAL_BOUNDS_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/MinimalMiniplayerPatch$MiniplayerBoundsController;"
+    $$"Lapp/morphe/extension/youtube/patches/MinimalMiniplayerPatch$MiniplayerBoundsController;"
 
 @Suppress("unused")
 val miniplayerPatch = bytecodePatch(
@@ -121,7 +121,7 @@ val miniplayerPatch = bytecodePatch(
         if (!is_21_29_or_greater) {
             preferences += NonInteractivePreference(
                 key = "tada_miniplayer_opacity",
-                tag = "app.tada.extension.shared.settings.preference.SeekBarPreference"
+                tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference"
             )
         }
         preferences += SwitchPreference("tada_miniplayer_disable_horizontal_drag_playback", summary = true)

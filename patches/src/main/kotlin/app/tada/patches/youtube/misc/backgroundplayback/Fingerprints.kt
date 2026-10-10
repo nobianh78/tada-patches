@@ -10,11 +10,11 @@
 
 package app.tada.patches.youtube.misc.backgroundplayback
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.OpcodesFilter
-import app.tada.patcher.literal
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resourceLiteral
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.OpcodesFilter
+import app.morphe.patcher.literal
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resourceLiteral
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 

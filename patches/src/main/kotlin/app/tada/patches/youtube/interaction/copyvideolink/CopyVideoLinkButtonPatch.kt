@@ -1,7 +1,7 @@
 package app.tada.patches.youtube.interaction.copyvideolink
 
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
 import app.tada.patches.youtube.layout.buttons.overlay.addPlayerOverlayPreferences
@@ -16,7 +16,7 @@ import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.video.information.videoInformationPatch
 
-private const val EXTENSION_BUTTON = "Lapp/tada/extension/youtube/videoplayer/CopyVideoLinkButton;"
+private const val EXTENSION_BUTTON = "Lapp/morphe/extension/youtube/videoplayer/CopyVideoLinkButton;"
 
 private val copyVideoLinkButtonResourcePatch = resourcePatch {
     dependsOn(

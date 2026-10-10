@@ -10,11 +10,11 @@
 
 package app.tada.patches.youtube.interaction.loop
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
@@ -22,7 +22,7 @@ import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.video.information.playerStatusMethodRef
 import app.tada.patches.youtube.video.information.videoInformationPatch
 import app.tada.patches.youtube.video.information.videoTimeHook
-import app.tada.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -31,9 +31,9 @@ import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/LoopVideoPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/LoopVideoPatch;"
 private const val EXTENSION_SLEEP_TIMER_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/LoopVideoPatch$SleepTimerController;"
+    $$"Lapp/morphe/extension/youtube/patches/LoopVideoPatch$SleepTimerController;"
 
 val loopVideoPatch = bytecodePatch(
     name = "Loop video",

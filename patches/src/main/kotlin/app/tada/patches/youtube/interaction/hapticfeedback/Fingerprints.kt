@@ -1,10 +1,10 @@
 package app.tada.patches.youtube.interaction.hapticfeedback
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.InstructionLocation.MatchAfterImmediately
-import app.tada.patcher.checkCast
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation.MatchAfterImmediately
+import app.morphe.patcher.checkCast
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.string
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 

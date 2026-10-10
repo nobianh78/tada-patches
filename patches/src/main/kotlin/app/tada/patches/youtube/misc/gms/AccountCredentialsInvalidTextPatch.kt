@@ -1,13 +1,13 @@
 package app.tada.patches.youtube.misc.gms
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/AccountCredentialsInvalidTextPatch;"
+    "Lapp/morphe/extension/youtube/patches/AccountCredentialsInvalidTextPatch;"
 
 internal val accountCredentialsInvalidTextPatch = bytecodePatch {
 

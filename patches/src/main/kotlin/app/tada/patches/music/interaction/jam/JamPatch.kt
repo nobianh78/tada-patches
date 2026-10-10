@@ -7,9 +7,9 @@
 
 package app.tada.patches.music.interaction.jam
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.playservice.versionCheckPatch
 import app.tada.patches.music.misc.settings.PreferenceScreen
@@ -20,9 +20,9 @@ import app.tada.patches.music.video.information.musicVideoInformationPatch
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.findElementByAttributeValueOrThrow
+import app.morphe.util.findElementByAttributeValueOrThrow
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/music/jam/JamUi;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/music/jam/JamUi;"
 
 private val jamResources = resourcePatch {
     dependsOn(versionCheckPatch)
@@ -42,7 +42,7 @@ private val jamResources = resourcePatch {
                 )
             }
             val service = doc.createElement("service")
-            service.setAttribute("android:name", "app.tada.extension.music.jam.JamBridgeService")
+            service.setAttribute("android:name", "app.morphe.extension.music.jam.JamBridgeService")
             service.setAttribute("android:exported", "true")
             doc.getElementsByTagName("application").item(0).appendChild(service)
             val queries =
@@ -63,7 +63,7 @@ private val jamResources = resourcePatch {
                     "@id/bottom_sheet_tabbed_view",
                 )
             root.insertBefore(
-                doc.createElement("app.tada.extension.music.jam.JamBar").apply {
+                doc.createElement("app.morphe.extension.music.jam.JamBar").apply {
                     setAttribute("android:layout_width", "match_parent")
                     setAttribute("android:layout_height", "48dp")
                 },
@@ -117,17 +117,17 @@ val jamQueueSharingPatch = bytecodePatch(
                     SwitchPreference(key = "tada_music_jam_enabled", summary = true),
                     NonInteractivePreference(
                         key = "tada_music_jam_download",
-                        tag = "app.tada.extension.music.jam.JamDownloadPreference",
+                        tag = "app.morphe.extension.music.jam.JamDownloadPreference",
                         selectable = true,
                     ),
                     NonInteractivePreference(
                         key = "tada_music_jam_controls",
-                        tag = "app.tada.extension.music.jam.JamProbePreference",
+                        tag = "app.morphe.extension.music.jam.JamProbePreference",
                         selectable = true,
                     ),
                     NonInteractivePreference(
                         key = "tada_music_jam_companion_package",
-                        tag = "app.tada.extension.music.jam.JamCompanionPackagePreference",
+                        tag = "app.morphe.extension.music.jam.JamCompanionPackagePreference",
                         selectable = true
                     )
                 )

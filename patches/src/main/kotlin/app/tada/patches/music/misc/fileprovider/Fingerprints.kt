@@ -1,6 +1,6 @@
 package app.tada.patches.music.misc.fileprovider
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 
 internal object FileProviderResolverFingerprint : Fingerprint(
     returnType = "L",

@@ -7,8 +7,8 @@
 
 package app.tada.patches.youtube.interaction.savetowatchlater
 
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
 import app.tada.patches.youtube.layout.buttons.overlay.addPlayerOverlayPreferences
@@ -33,7 +33,7 @@ private val saveToWatchLaterButtonResourcePatch = resourcePatch {
 }
 
 private const val EXTENSION_BUTTON =
-    "Lapp/tada/extension/youtube/videoplayer/SaveToWatchLaterButton;"
+    "Lapp/morphe/extension/youtube/videoplayer/SaveToWatchLaterButton;"
 
 @Suppress("unused")
 val saveToWatchLaterButtonPatch = bytecodePatch(

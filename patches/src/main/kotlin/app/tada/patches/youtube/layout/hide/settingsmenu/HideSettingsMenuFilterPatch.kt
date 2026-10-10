@@ -7,8 +7,8 @@
 
 package app.tada.patches.youtube.layout.hide.settingsmenu
 
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
 import app.tada.patches.shared.misc.settingsmenu.HIDE_MATCHING_METHOD
 import app.tada.patches.shared.misc.settingsmenu.SETTINGS_MENU_FILTER_CLASS
@@ -18,13 +18,13 @@ import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.findFreeRegister
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.findFreeRegister
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/SettingsMenuFilterPatch;"
+    "Lapp/morphe/extension/youtube/patches/SettingsMenuFilterPatch;"
 
 @Suppress("unused")
 val hideSettingsMenuFilterPatch = bytecodePatch(
@@ -44,7 +44,7 @@ val hideSettingsMenuFilterPatch = bytecodePatch(
                 key = "tada_settings_menu_filter",
                 titleKey = "tada_settings_menu_filter_screen_title",
                 summaryKey = "tada_settings_menu_filter_screen_summary",
-                tag = "app.tada.extension.shared.patches.SettingsMenuFilterPickerPreference",
+                tag = "app.morphe.extension.shared.patches.SettingsMenuFilterPickerPreference",
                 selectable = true
             )
         )

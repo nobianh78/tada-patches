@@ -7,7 +7,7 @@
 
 package app.tada.patches.youtube.layout.buttons.overlay
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.BasePreference
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch

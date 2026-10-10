@@ -7,8 +7,8 @@
 
 package app.tada.patches.youtube.layout.hide.updatescreen
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.string
 
 internal object AppBlockingCheckResultToStringFingerprint : Fingerprint(
     name = "toString",

@@ -7,9 +7,9 @@
 
 package app.tada.patches.youtube.misc.medianotification
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.shared.misc.medianotification.EXTENSION_CLASS
 import app.tada.patches.shared.misc.medianotification.mediaNotificationControlsPatch
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch

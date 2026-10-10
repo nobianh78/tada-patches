@@ -7,29 +7,29 @@
 
 package app.tada.patches.music.misc.androidauto
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.instructions
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableClass
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.instructions
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableClass
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
-import app.tada.util.cloneMutable
-import app.tada.util.findFreeRegister
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.findMutableMethodOf
-import app.tada.util.getReference
-import app.tada.util.matchSingle
-import app.tada.util.p0Register
-import app.tada.util.toPublicAccessFlags
+import app.morphe.util.cloneMutable
+import app.morphe.util.findFreeRegister
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.findMutableMethodOf
+import app.morphe.util.getReference
+import app.morphe.util.matchSingle
+import app.morphe.util.p0Register
+import app.morphe.util.toPublicAccessFlags
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -43,21 +43,21 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/music/patches/AndroidAutoPatch;"
+    "Lapp/morphe/extension/music/patches/AndroidAutoPatch;"
 private const val EXTENSION_PHONE_BROWSE_CLIENT_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/AndroidAutoPatch$PhoneBrowseClient;"
+    $$"Lapp/morphe/extension/music/patches/AndroidAutoPatch$PhoneBrowseClient;"
 private const val EXTENSION_PHONE_BROWSE_RESPONSE_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/AndroidAutoPatch$PhoneBrowseResponse;"
+    $$"Lapp/morphe/extension/music/patches/AndroidAutoPatch$PhoneBrowseResponse;"
 private const val EXTENSION_PHONE_BROWSE_TAB_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/AndroidAutoPatch$PhoneBrowseTab;"
+    $$"Lapp/morphe/extension/music/patches/AndroidAutoPatch$PhoneBrowseTab;"
 private const val EXTENSION_GRID_RENDERER_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/AndroidAutoPatch$GridRenderer;"
+    $$"Lapp/morphe/extension/music/patches/AndroidAutoPatch$GridRenderer;"
 private const val EXTENSION_ANDROID_AUTO_BROWSE_REQUEST_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/AndroidAutoPatch$AndroidAutoBrowseRequest;"
+    $$"Lapp/morphe/extension/music/patches/AndroidAutoPatch$AndroidAutoBrowseRequest;"
 private const val EXTENSION_ANDROID_AUTO_FOLDER_RELOAD_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/AndroidAutoPatch$AndroidAutoFolderReload;"
+    $$"Lapp/morphe/extension/music/patches/AndroidAutoPatch$AndroidAutoFolderReload;"
 private const val EXTENSION_PHONE_BROWSE_ITEM_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/AndroidAutoPatch$PhoneBrowseItem;"
+    $$"Lapp/morphe/extension/music/patches/AndroidAutoPatch$PhoneBrowseItem;"
 private const val MUSIC_BROWSER_SERVICE_CLASS =
     "Lcom/google/android/apps/youtube/music/mediabrowser/MusicBrowserService;"
 

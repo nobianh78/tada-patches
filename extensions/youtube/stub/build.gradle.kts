@@ -5,7 +5,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "app.tada.extension"
+    namespace = "app.morphe.extension"
     compileSdk = 36
 
     defaultConfig {

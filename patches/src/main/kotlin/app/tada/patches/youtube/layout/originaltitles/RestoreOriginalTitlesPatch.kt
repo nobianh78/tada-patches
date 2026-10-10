@@ -7,10 +7,10 @@
 
 package app.tada.patches.youtube.layout.originaltitles
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.all.misc.resources.addResourcesPatch
 import app.tada.patches.shared.misc.litho.relayout.lithoRelayoutPatch
 import app.tada.patches.shared.misc.proto.hookElement
@@ -24,11 +24,11 @@ import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.video.videoid.hookVideoId
 import app.tada.patches.youtube.video.videoid.videoIdPatch
-import app.tada.util.findFreeRegister
+import app.morphe.util.findFreeRegister
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/originaltitles/RestoreOriginalTitlesPatch;"
+    "Lapp/morphe/extension/youtube/patches/originaltitles/RestoreOriginalTitlesPatch;"
 
 @Suppress("unused")
 val restoreOriginalTitlesPatch = bytecodePatch(

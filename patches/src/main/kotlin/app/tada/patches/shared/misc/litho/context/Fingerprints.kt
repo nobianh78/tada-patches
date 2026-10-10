@@ -7,7 +7,7 @@
 
 package app.tada.patches.shared.misc.litho.context
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 
 internal const val IDENTIFIER_PROPERTY = ", identifierProperty="
 internal const val HORIZONTAL_COLLECTION_SWIPE_PROTECTOR_PROPERTY = "horizontalCollectionSwipeProtector="

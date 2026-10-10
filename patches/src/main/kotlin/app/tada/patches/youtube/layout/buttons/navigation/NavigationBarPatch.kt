@@ -11,17 +11,17 @@
 
 package app.tada.patches.youtube.layout.buttons.navigation
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.booleanOption
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.booleanOption
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.misc.fix.proto.fixProtoLibraryPatch
 import app.tada.patches.shared.misc.fix.proto.immutableMethodRef
 import app.tada.patches.shared.misc.fix.proto.mutableCopyMethodRef
@@ -46,13 +46,13 @@ import app.tada.patches.youtube.misc.toolbar.hookToolBar
 import app.tada.patches.youtube.misc.toolbar.toolBarHookPatch
 import app.tada.patches.youtube.shared.ActionBarSearchResultsFingerprint
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.findElementByAttributeValueOrThrow
-import app.tada.util.getFreeRegisterProvider
-import app.tada.util.getReference
-import app.tada.util.insertLiteralOverride
-import app.tada.util.removeFromParent
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.findElementByAttributeValueOrThrow
+import app.morphe.util.getFreeRegisterProvider
+import app.morphe.util.getReference
+import app.morphe.util.insertLiteralOverride
+import app.morphe.util.removeFromParent
+import app.morphe.util.setExtensionIsPatchIncluded
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -68,16 +68,16 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.util.MethodUtil
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/NavigationBarPatch;"
+    "Lapp/morphe/extension/youtube/patches/NavigationBarPatch;"
 
 private const val EXTENSION_SETTING_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/NavigationBarPatch$SettingsController;"
+    $$"Lapp/morphe/extension/youtube/patches/NavigationBarPatch$SettingsController;"
 
 private const val EXTENSION_SUBSCRIPTIONS_CLASS =
-    "Lapp/tada/extension/youtube/patches/ClassicSubscriptionsLayoutPatch;"
+    "Lapp/morphe/extension/youtube/patches/ClassicSubscriptionsLayoutPatch;"
 
 private const val EXTENSION_PIVOT_BAR_ITEM_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/ClassicSubscriptionsLayoutPatch$PivotBarItemInterface;"
+    $$"Lapp/morphe/extension/youtube/patches/ClassicSubscriptionsLayoutPatch$PivotBarItemInterface;"
 
 private val hideSearchAppShortcutOption = booleanOption(
     key = "hideSearchAppShortcut",

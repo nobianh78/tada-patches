@@ -7,7 +7,7 @@
 
 package app.tada.patches.youtube.misc.toolbar
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 import com.android.tools.smali.dexlib2.AccessFlags
 
 internal object ToolBarPatchFingerprint : Fingerprint(

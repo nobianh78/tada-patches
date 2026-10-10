@@ -1,6 +1,6 @@
 package app.tada.patches.youtube.interaction.doubletap
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 import com.android.tools.smali.dexlib2.AccessFlags
 
 internal object SeekTypeEnumFingerprint : Fingerprint(

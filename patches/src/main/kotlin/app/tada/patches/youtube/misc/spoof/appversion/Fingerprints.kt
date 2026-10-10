@@ -7,8 +7,8 @@
 
 package app.tada.patches.youtube.misc.spoof.appversion
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.literal
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.literal
 import com.android.tools.smali.dexlib2.AccessFlags
 
 internal object ShortsBoldIconsPrimaryFeatureFlagFingerprint : Fingerprint(

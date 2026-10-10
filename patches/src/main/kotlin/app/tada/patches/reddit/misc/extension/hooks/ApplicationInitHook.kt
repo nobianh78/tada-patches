@@ -7,9 +7,9 @@
 
 package app.tada.patches.reddit.misc.extension.hooks
 
-import app.tada.patcher.Fingerprint
-import app.tada.patches.all.misc.extension.ExtensionHook
-import app.tada.patches.all.misc.extension.activityOnCreateExtensionHook
+import app.morphe.patcher.Fingerprint
+import app.morphe.patches.all.misc.extension.ExtensionHook
+import app.morphe.patches.all.misc.extension.activityOnCreateExtensionHook
 
 internal object RedditActivityOnCreateFingerprint : Fingerprint(
     definingClass = "Lcom/reddit/launch/main/MainActivity;",

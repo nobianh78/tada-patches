@@ -1,8 +1,8 @@
 package app.tada.patches.youtube.misc.recyclerviewtree
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import java.lang.ref.WeakReference
 

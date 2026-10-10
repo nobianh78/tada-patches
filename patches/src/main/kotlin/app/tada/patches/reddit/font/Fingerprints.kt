@@ -7,10 +7,10 @@
 
 package app.tada.patches.reddit.font
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import com.android.tools.smali.dexlib2.AccessFlags
 
 internal enum class TypefaceCompatCreateFromResourcesFontFileVariant {

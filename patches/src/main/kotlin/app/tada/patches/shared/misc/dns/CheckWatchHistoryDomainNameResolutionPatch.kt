@@ -1,13 +1,13 @@
 package app.tada.patches.shared.misc.dns
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.bytecodePatch
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/shared/patches/CheckWatchHistoryDomainNameResolutionPatch;"
+    "Lapp/morphe/extension/shared/patches/CheckWatchHistoryDomainNameResolutionPatch;"
 
 /**
  * Patch shared with YouTube and YT Music.

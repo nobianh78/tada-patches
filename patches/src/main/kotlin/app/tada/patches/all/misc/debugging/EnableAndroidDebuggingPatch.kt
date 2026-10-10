@@ -1,6 +1,6 @@
 package app.tada.patches.all.misc.debugging
 
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.resourcePatch
 import org.w3c.dom.Element
 
 @Suppress("unused")

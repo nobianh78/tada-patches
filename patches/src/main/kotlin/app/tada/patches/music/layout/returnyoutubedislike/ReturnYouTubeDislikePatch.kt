@@ -7,10 +7,10 @@
 
 package app.tada.patches.music.layout.returnyoutubedislike
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.music.misc.settings.PreferenceScreen
 import app.tada.patches.music.misc.settings.settingsPatch
 import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
@@ -27,8 +27,8 @@ import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreferen
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.textcomponent.hookSpannableString
 import app.tada.patches.shared.misc.textcomponent.textComponentPatch
-import app.tada.util.getFreeRegisterProvider
-import app.tada.util.getReference
+import app.morphe.util.getFreeRegisterProvider
+import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 
@@ -43,21 +43,21 @@ private val returnYouTubeDislikeResourcePatch = resourcePatch {
             SwitchPreference("tada_ryd_toast_on_connection_error", summary = true),
             NonInteractivePreference(
                 key = "tada_ryd_attribution",
-                tag = "app.tada.extension.shared.returnyoutubedislike.ui.ReturnYouTubeDislikeAboutPreference",
+                tag = "app.morphe.extension.shared.returnyoutubedislike.ui.ReturnYouTubeDislikeAboutPreference",
                 selectable = true,
             ),
             PreferenceCategory(
                 key = "tada_ryd_statistics_category",
                 sorting = PreferenceScreenPreference.Sorting.UNSORTED,
                 preferences = emptySet(), // Preferences are added by custom class at runtime.
-                tag = "app.tada.extension.shared.returnyoutubedislike.ui.ReturnYouTubeDislikeDebugStatsPreferenceCategory"
+                tag = "app.morphe.extension.shared.returnyoutubedislike.ui.ReturnYouTubeDislikeDebugStatsPreferenceCategory"
             )
         )
     }
 }
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/music/patches/ReturnYouTubeDislikePatch;"
+    "Lapp/morphe/extension/music/patches/ReturnYouTubeDislikePatch;"
 
 @Suppress("unused")
 val returnYouTubeDislikePatch = bytecodePatch(

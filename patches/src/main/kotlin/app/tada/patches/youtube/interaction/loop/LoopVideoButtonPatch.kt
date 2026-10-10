@@ -1,8 +1,8 @@
 package app.tada.patches.youtube.interaction.loop
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.layout.buttons.overlay.addPlayerOverlayPreferences
 import app.tada.patches.youtube.layout.buttons.overlay.playerOverlayButtonsSettingsPatch
@@ -40,7 +40,7 @@ private val loopVideoButtonResourcePatch = resourcePatch {
 }
 
 private const val EXTENSION_BUTTON =
-    "Lapp/tada/extension/youtube/videoplayer/LoopVideoButton;"
+    "Lapp/morphe/extension/youtube/videoplayer/LoopVideoButton;"
 
 internal val loopVideoButtonPatch = bytecodePatch(
     description = "Adds an option to display loop video button in the video player."

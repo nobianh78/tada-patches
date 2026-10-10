@@ -1,7 +1,7 @@
 package app.tada.patches.youtube.misc.engagement
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.fieldAccess
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.fieldAccess
 import app.tada.patches.youtube.shared.EngagementPanelControllerFingerprint
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode

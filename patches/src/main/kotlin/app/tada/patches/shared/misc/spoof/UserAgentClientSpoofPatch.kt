@@ -1,13 +1,13 @@
 package app.tada.patches.shared.misc.spoof
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.getInstructionOrNull
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstruction
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.getInstructionOrNull
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstruction
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.instruction.BuilderInstruction21c
 import com.android.tools.smali.dexlib2.iface.instruction.Instruction
@@ -31,7 +31,7 @@ fun userAgentClientSpoofPatch(originalPackageName: String) = bytecodePatch(
 
         Fingerprint(
             filters = listOf(getPackageNameCall),
-            custom = { _, classDef -> !classDef.type.startsWith("Lapp/tada/extension") }
+            custom = { _, classDef -> !classDef.type.startsWith("Lapp/morphe/extension") }
         ).matchAll().forEach { match ->
             match.originalMethod.apply {
                 val resourceOrGmsStringInstructionIndex = indexOfFirstInstruction {

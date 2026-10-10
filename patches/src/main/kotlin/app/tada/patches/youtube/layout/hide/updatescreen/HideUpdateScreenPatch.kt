@@ -7,9 +7,9 @@
 
 package app.tada.patches.youtube.layout.hide.updatescreen
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.youtube.misc.playservice.is_20_22_or_greater
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE

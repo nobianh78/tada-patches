@@ -1,10 +1,10 @@
 package app.tada.patches.music.layout.compactheader
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.InstructionLocation.MatchAfterImmediately
-import app.tada.patcher.opcode
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resourceLiteral
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation.MatchAfterImmediately
+import app.morphe.patcher.opcode
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resourceLiteral
 import com.android.tools.smali.dexlib2.Opcode
 
 internal object ChipCloudFingerprint : Fingerprint(

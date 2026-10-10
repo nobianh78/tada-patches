@@ -7,8 +7,8 @@
 
 package app.tada.patches.music.layout.buttons.action
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.methodCall
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.methodCall
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 

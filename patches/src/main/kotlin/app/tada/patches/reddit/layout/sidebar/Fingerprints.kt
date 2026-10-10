@@ -7,11 +7,11 @@
 
 package app.tada.patches.reddit.layout.sidebar
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.methodCall
-import app.tada.patcher.parametersMatch
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.parametersMatch
+import app.morphe.patcher.string
 import com.android.tools.smali.dexlib2.AccessFlags
 
 private object CommunityDrawerBuilderParentFingerprint : Fingerprint(

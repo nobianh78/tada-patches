@@ -7,14 +7,14 @@
 
 package app.tada.patches.youtube.layout.buttons.action
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/QuickActionsMarginPatch;"
+    "Lapp/morphe/extension/youtube/patches/QuickActionsMarginPatch;"
 
 internal val quickActionsMarginPatch = bytecodePatch(
     description = "Injects a configurable top margin into the quick actions container view."

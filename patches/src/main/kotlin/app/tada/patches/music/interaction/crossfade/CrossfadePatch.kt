@@ -6,20 +6,20 @@
  */
 package app.tada.patches.music.interaction.crossfade
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.instructions
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.literal
-import app.tada.patcher.methodCall
-import app.tada.patcher.opcode
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.util.ResourceGroup
-import app.tada.util.copyResources
-import app.tada.patcher.util.proxy.mutableTypes.MutableClass
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.instructions
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.literal
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.opcode
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.util.ResourceGroup
+import app.morphe.util.copyResources
+import app.morphe.patcher.util.proxy.mutableTypes.MutableClass
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.playservice.is_9_28_or_greater
 import app.tada.patches.music.misc.playservice.versionCheckPatch
@@ -31,7 +31,7 @@ import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.getReference
+import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -45,30 +45,30 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 import java.util.logging.Logger
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/music/patches/CrossfadeManager;"
+    "Lapp/morphe/extension/music/patches/CrossfadeManager;"
 
 private const val COORDINATOR_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/CrossfadeManager$PlayerCoordinatorAccess;"
+    $$"Lapp/morphe/extension/music/patches/CrossfadeManager$PlayerCoordinatorAccess;"
 private const val EXO_PLAYER_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/CrossfadeManager$ExoPlayerAccess;"
+    $$"Lapp/morphe/extension/music/patches/CrossfadeManager$ExoPlayerAccess;"
 private const val SESSION_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/CrossfadeManager$SessionAccess;"
+    $$"Lapp/morphe/extension/music/patches/CrossfadeManager$SessionAccess;"
 private const val FACTORY_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/CrossfadeManager$PlayerFactoryAccess;"
+    $$"Lapp/morphe/extension/music/patches/CrossfadeManager$PlayerFactoryAccess;"
 private const val SHARED_STATE_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/CrossfadeManager$SharedStateAccess;"
+    $$"Lapp/morphe/extension/music/patches/CrossfadeManager$SharedStateAccess;"
 private const val SHARED_CALLBACK_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/CrossfadeManager$SharedCallbackAccess;"
+    $$"Lapp/morphe/extension/music/patches/CrossfadeManager$SharedCallbackAccess;"
 private const val VIDEO_SURFACE_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/CrossfadeManager$VideoSurfaceAccess;"
+    $$"Lapp/morphe/extension/music/patches/CrossfadeManager$VideoSurfaceAccess;"
 private const val MEDIALIB_PLAYER_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/CrossfadeManager$MedialibPlayerAccess;"
+    $$"Lapp/morphe/extension/music/patches/CrossfadeManager$MedialibPlayerAccess;"
 private const val VIDEO_TOGGLE_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/CrossfadeManager$VideoToggleAccess;"
+    $$"Lapp/morphe/extension/music/patches/CrossfadeManager$VideoToggleAccess;"
 private const val DELEGATE_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/CrossfadeManager$DelegateAccess;"
+    $$"Lapp/morphe/extension/music/patches/CrossfadeManager$DelegateAccess;"
 private const val LISTENER_WRAPPER_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/CrossfadeManager$ListenerWrapperAccess;"
+    $$"Lapp/morphe/extension/music/patches/CrossfadeManager$ListenerWrapperAccess;"
 
 private const val EXO_PLAYER_TYPE = "Landroidx/media3/exoplayer/ExoPlayer;"
 
@@ -230,7 +230,7 @@ val crossfadePatch = bytecodePatch(
                     NonInteractivePreference(
                         key = "tada_music_crossfade_curve_preview",
                         summaryKey = null,
-                        tag = "app.tada.extension.music.settings.preference.CrossfadeCurvePreference",
+                        tag = "app.morphe.extension.music.settings.preference.CrossfadeCurvePreference",
                     ),
                     ListPreference("tada_music_crossfade_duration"),
                     SwitchPreference("tada_music_crossfade_on_skip", summary = true),

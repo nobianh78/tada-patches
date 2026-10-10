@@ -1,8 +1,8 @@
 package app.tada.patches.youtube.interaction.downloads
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference.Sorting
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
@@ -32,7 +32,7 @@ private val downloadsResourcePatch = resourcePatch {
                     SwitchPreference("tada_external_downloader_action_button", summary = true),
                     TextPreference(
                         "tada_external_downloader_name",
-                        tag = "app.tada.extension.shared.settings.preference.ExternalDownloaderPreference",
+                        tag = "app.morphe.extension.shared.settings.preference.ExternalDownloaderPreference",
                     )
                 )
             )
@@ -48,9 +48,9 @@ private val downloadsResourcePatch = resourcePatch {
     }
 }
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/DownloadsPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/DownloadsPatch;"
 
-private const val EXTENSION_BUTTON = "Lapp/tada/extension/youtube/videoplayer/ExternalDownloadButton;"
+private const val EXTENSION_BUTTON = "Lapp/morphe/extension/youtube/videoplayer/ExternalDownloadButton;"
 
 @Suppress("unused")
 val downloadsPatch = bytecodePatch(

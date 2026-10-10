@@ -7,21 +7,21 @@
 
 package app.tada.patches.music.interaction.jam
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.InstructionLocation.MatchAfterImmediately
-import app.tada.patcher.checkCast
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.literal
-import app.tada.patcher.methodCall
-import app.tada.patcher.opcode
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resourceLiteral
-import app.tada.patcher.string
-import app.tada.util.findInstructionIndicesReversed
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstruction
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation.MatchAfterImmediately
+import app.morphe.patcher.checkCast
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.literal
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.opcode
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resourceLiteral
+import app.morphe.patcher.string
+import app.morphe.util.findInstructionIndicesReversed
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstruction
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.ClassDef

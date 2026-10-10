@@ -1,7 +1,7 @@
 package app.tada.patches.youtube.misc.spoof.dimensions
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
@@ -9,7 +9,7 @@ import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/spoof/SpoofDeviceDimensionsPatch;"
+    "Lapp/morphe/extension/youtube/patches/spoof/SpoofDeviceDimensionsPatch;"
 
 val spoofDeviceDimensionsPatch = bytecodePatch(
     name = "Spoof device dimensions",

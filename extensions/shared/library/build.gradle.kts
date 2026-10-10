@@ -5,7 +5,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "app.tada.extension.shared"
+    namespace = "app.morphe.extension.shared"
     compileSdk = 36
 
     defaultConfig {

@@ -7,8 +7,8 @@
 
 package app.tada.patches.youtube.layout.player.fullscreen
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playertype.playerTypeHookPatch
@@ -18,7 +18,7 @@ import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.shared.getPlayerTypeFingerprint
 
 private const val EXTENSION_CLASS_FORCE_LANDSCAPE =
-    "Lapp/tada/extension/youtube/patches/ForceFullscreenLandscapePatch;"
+    "Lapp/morphe/extension/youtube/patches/ForceFullscreenLandscapePatch;"
 
 @Suppress("unused")
 val forceFullscreenLandscapePatch = bytecodePatch(

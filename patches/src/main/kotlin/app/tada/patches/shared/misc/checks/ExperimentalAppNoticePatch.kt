@@ -1,12 +1,12 @@
 package app.tada.patches.shared.misc.checks
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.RecommendedAppVersionUtilsFingerprint
-import app.tada.util.returnEarly
+import app.morphe.util.returnEarly
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/shared/patches/ExperimentalAppNoticePatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/shared/patches/ExperimentalAppNoticePatch;"
 
 internal fun experimentalAppNoticePatch(
     mainActivityFingerprint: Fingerprint,

@@ -7,17 +7,17 @@
 
 package app.tada.patches.youtube.misc.fix.preference
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playservice.is_21_14_or_greater
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.findFreeRegister
-import app.tada.util.getReference
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.findFreeRegister
+import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
@@ -26,7 +26,7 @@ import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/FixPreferenceIconPatch;"
+    "Lapp/morphe/extension/youtube/patches/FixPreferenceIconPatch;"
 
 /**
  * Fixes https://github.com/TADaApp/tada-patches/issues/1117.

@@ -7,7 +7,7 @@
 
 package app.tada.patches.music.misc.proxy
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.tada.patches.music.misc.extension.hooks.YouTubeMusicApplicationInitFingerprint
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.playservice.is_9_20_or_greater

@@ -1,9 +1,9 @@
 package app.tada.patches.youtube.layout.startpage
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.literal
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.literal
+import app.morphe.patcher.string
 import com.android.tools.smali.dexlib2.Opcode
 
 internal object IntentActionFingerprint : Fingerprint(

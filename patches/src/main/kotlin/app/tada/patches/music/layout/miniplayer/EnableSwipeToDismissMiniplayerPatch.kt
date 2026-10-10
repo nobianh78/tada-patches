@@ -7,26 +7,26 @@
 
 package app.tada.patches.music.layout.miniplayer
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.InstructionLocation.MatchAfterWithin
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.methodCall
-import app.tada.patcher.opcode
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation.MatchAfterWithin
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.opcode
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.playservice.versionCheckPatch
 import app.tada.patches.music.misc.settings.PreferenceScreen
 import app.tada.patches.music.misc.settings.settingsPatch
 import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.findFreeRegister
-import app.tada.util.getReference
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.findFreeRegister
+import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -38,8 +38,8 @@ import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/music/patches/EnableSwipeToDismissMiniplayerPatch;"
-private const val CROSSFADE_MANAGER_CLASS = "Lapp/tada/extension/music/patches/CrossfadeManager;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/music/patches/EnableSwipeToDismissMiniplayerPatch;"
+private const val CROSSFADE_MANAGER_CLASS = "Lapp/morphe/extension/music/patches/CrossfadeManager;"
 
 @Suppress("unused")
 val enableSwipeToDismissMiniplayerPatch = bytecodePatch(

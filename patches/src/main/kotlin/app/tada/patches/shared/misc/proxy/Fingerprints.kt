@@ -7,7 +7,7 @@
 
 package app.tada.patches.shared.misc.proxy
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 import com.android.tools.smali.dexlib2.AccessFlags
 
 internal const val CRONET_ENGINE_CLASS = "Lorg/chromium/net/CronetEngine;"

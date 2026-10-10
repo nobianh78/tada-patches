@@ -10,13 +10,13 @@
 
 package app.tada.patches.youtube.misc.fix.backtoexitgesture
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.InstructionLocation.MatchAfterImmediately
-import app.tada.patcher.OpcodesFilter
-import app.tada.patcher.checkCast
-import app.tada.patcher.literal
-import app.tada.patcher.methodCall
-import app.tada.patcher.opcode
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation.MatchAfterImmediately
+import app.morphe.patcher.OpcodesFilter
+import app.morphe.patcher.checkCast
+import app.morphe.patcher.literal
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.opcode
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 

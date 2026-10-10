@@ -10,13 +10,13 @@
 
 package app.tada.patches.music.ad
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.InstructionLocation.MatchAfterImmediately
-import app.tada.patcher.OpcodesFilter
-import app.tada.patcher.methodCall
-import app.tada.patcher.opcode
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resourceLiteral
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation.MatchAfterImmediately
+import app.morphe.patcher.OpcodesFilter
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.opcode
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resourceLiteral
 import app.tada.patches.music.shared.YOUTUBE_MUSIC_MAIN_ACTIVITY_CLASS_TYPE
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode

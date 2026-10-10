@@ -7,12 +7,12 @@
 
 package app.tada.patches.music.interaction.remember.shufflestate
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.playservice.versionCheckPatch
 import app.tada.patches.music.misc.settings.PreferenceScreen
@@ -21,14 +21,14 @@ import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
 import app.tada.patches.music.video.information.musicVideoIdHook
 import app.tada.patches.music.video.information.musicVideoInformationPatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.addStaticFieldToExtension
-import app.tada.util.cloneMutable
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstruction
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.indexOfFirstInstructionReversedOrThrow
-import app.tada.util.numberOfParameterRegistersLogical
-import app.tada.util.toPublicAccessFlags
+import app.morphe.util.addStaticFieldToExtension
+import app.morphe.util.cloneMutable
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstruction
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.indexOfFirstInstructionReversedOrThrow
+import app.morphe.util.numberOfParameterRegistersLogical
+import app.morphe.util.toPublicAccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
@@ -36,7 +36,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/music/patches/RememberShuffleStatePatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/music/patches/RememberShuffleStatePatch;"
 
 @Suppress("unused")
 val rememberShuffleStatePatch = bytecodePatch(

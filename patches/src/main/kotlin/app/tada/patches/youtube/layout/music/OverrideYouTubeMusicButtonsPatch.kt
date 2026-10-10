@@ -7,24 +7,24 @@
 
 package app.tada.patches.youtube.layout.music
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.TextPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.fiveRegisters
-import app.tada.util.matchAllMethodIndicesForEach
+import app.morphe.util.fiveRegisters
+import app.morphe.util.matchAllMethodIndicesForEach
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.RegisterRangeInstruction
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/OverrideYouTubeMusicButtonsPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/OverrideYouTubeMusicButtonsPatch;"
 
 private fun overrideYouTubeMusicManifestPatch() = resourcePatch{
     compatibleWith(COMPATIBILITY_YOUTUBE)

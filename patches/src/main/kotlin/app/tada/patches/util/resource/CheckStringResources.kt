@@ -25,7 +25,7 @@ package app.tada.patches.util.resource
 
 import app.tada.patches.all.misc.resources.localesAll
 import app.tada.patches.util.resource.StringResourceSanitizer.sanitizeAndroidResourceString
-import app.tada.util.inputStreamFromBundledResource
+import app.morphe.util.inputStreamFromBundledResource
 import org.w3c.dom.Element
 import org.w3c.dom.Node
 import javax.xml.parsers.DocumentBuilderFactory

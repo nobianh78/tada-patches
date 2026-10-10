@@ -7,13 +7,13 @@
 
 package app.tada.patches.shared.misc.litho.relayout
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
-import app.tada.util.getReference
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
@@ -21,10 +21,10 @@ import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/shared/patches/LithoRelayoutPatch;"
+    "Lapp/morphe/extension/shared/patches/LithoRelayoutPatch;"
 
 private const val EXTENSION_LITHO_VIEW_INTERFACE =
-    $$"Lapp/tada/extension/shared/patches/LithoRelayoutPatch$LithoViewInterface;"
+    $$"Lapp/morphe/extension/shared/patches/LithoRelayoutPatch$LithoViewInterface;"
 
 /**
  * Adds support to force Litho views to calculate their layout again,

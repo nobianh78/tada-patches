@@ -18,13 +18,13 @@ import android.os.Build.RADIO
 import android.os.Build.TAGS
 import android.os.Build.TYPE
 import android.os.Build.USER
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.Patch
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.encodedValue.MutableEncodedValue
-import app.tada.patcher.util.proxy.mutableTypes.encodedValue.MutableLongEncodedValue
-import app.tada.patcher.util.proxy.mutableTypes.encodedValue.MutableStringEncodedValue
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.Patch
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.encodedValue.MutableEncodedValue
+import app.morphe.patcher.util.proxy.mutableTypes.encodedValue.MutableLongEncodedValue
+import app.morphe.patcher.util.proxy.mutableTypes.encodedValue.MutableStringEncodedValue
 import app.tada.patches.youtube.shared.YouTubeActivityOnCreateFingerprint
 import com.android.tools.smali.dexlib2.immutable.value.ImmutableLongEncodedValue
 import com.android.tools.smali.dexlib2.immutable.value.ImmutableStringEncodedValue
@@ -34,7 +34,7 @@ import kotlin.io.encoding.Base64
 import kotlin.io.encoding.ExperimentalEncodingApi
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/shared/checks/CheckEnvironmentPatch;"
+    "Lapp/morphe/extension/shared/checks/CheckEnvironmentPatch;"
 
 fun checkEnvironmentPatch(
     @Suppress("unused")

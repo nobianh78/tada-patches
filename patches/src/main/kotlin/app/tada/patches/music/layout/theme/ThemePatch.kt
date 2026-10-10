@@ -10,9 +10,9 @@
 
 package app.tada.patches.music.layout.theme
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.playservice.is_9_30_or_greater
 import app.tada.patches.music.misc.playservice.versionCheckPatch
@@ -29,14 +29,14 @@ import app.tada.patches.shared.misc.settings.preference.InputType
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.TextPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
-import app.tada.util.doRecursively
+import app.morphe.util.doRecursively
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import org.w3c.dom.Element
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/music/patches/theme/ThemePatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/music/patches/theme/ThemePatch;"
 
 private const val HEADER_FADE_LAYOUT_CLASS =
-    "app.tada.extension.music.patches.theme.HeaderFadeLayout"
+    "app.morphe.extension.music.patches.theme.HeaderFadeLayout"
 
 private const val DETAIL_PAGE_HEADER_LAYOUT = "res/layout/music_element_header.xml"
 
@@ -163,11 +163,11 @@ val themePatch = baseThemePatch(
                 noTitleUnsortedPreferenceCategory(
                     ListPreference(
                         "tada_theme_color_dark",
-                        tag = "app.tada.extension.shared.theme.ThemeColorListPreference"
+                        tag = "app.morphe.extension.shared.theme.ThemeColorListPreference"
                     ),
                     TextPreference(
                         "tada_theme_color_dark_custom",
-                        tag = "app.tada.extension.shared.settings.preference.ColorPickerPreference",
+                        tag = "app.morphe.extension.shared.settings.preference.ColorPickerPreference",
                         inputType = InputType.TEXT_CAP_CHARACTERS
                     )
                 )

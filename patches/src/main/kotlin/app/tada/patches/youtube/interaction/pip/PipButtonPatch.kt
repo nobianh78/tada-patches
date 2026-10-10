@@ -7,8 +7,8 @@
 
 package app.tada.patches.youtube.interaction.pip
 
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.layout.buttons.overlay.addPlayerOverlayPreferences
 import app.tada.patches.youtube.layout.buttons.overlay.playerOverlayButtonsSettingsPatch
@@ -35,7 +35,7 @@ private val pipButtonResourcePatch = resourcePatch {
     }
 }
 
-private const val EXTENSION_BUTTON = "Lapp/tada/extension/youtube/videoplayer/PipButton;"
+private const val EXTENSION_BUTTON = "Lapp/morphe/extension/youtube/videoplayer/PipButton;"
 
 @Suppress("unused")
 val pipButtonPatch = bytecodePatch(

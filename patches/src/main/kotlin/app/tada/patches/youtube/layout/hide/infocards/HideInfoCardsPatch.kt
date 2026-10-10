@@ -1,11 +1,11 @@
 package app.tada.patches.youtube.layout.hide.infocards
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.shared.misc.litho.filter.addLithoFilter
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
@@ -13,12 +13,12 @@ import app.tada.patches.youtube.misc.litho.filter.lithoFilterPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.findFreeRegister
-import app.tada.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.findFreeRegister
+import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/HideInfoCardsPatch;"
-private const val EXTENSION_FILTER = "Lapp/tada/extension/youtube/patches/components/InfoCardsFilter;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/HideInfoCardsPatch;"
+private const val EXTENSION_FILTER = "Lapp/morphe/extension/youtube/patches/components/InfoCardsFilter;"
 
 @Suppress("unused")
 val hideInfoCardsPatch = bytecodePatch(

@@ -22,7 +22,7 @@ class TextPreference(
     icon: String? = null,
     iconBold: String? = null,
     layout: String? = null,
-    tag: String = "app.tada.extension.shared.settings.preference.ResettableEditTextPreference",
+    tag: String = "app.morphe.extension.shared.settings.preference.ResettableEditTextPreference",
     val inputType: InputType = InputType.TEXT,
 ) : BasePreference(key, titleKey, summaryKey, icon, iconBold, layout, tag) {
 

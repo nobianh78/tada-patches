@@ -10,16 +10,16 @@
 
 package app.tada.patches.shared.misc.spoof.appversion
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.BasePreferenceScreen
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
-import app.tada.util.returnEarly
+import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 @Suppress("unused")
@@ -27,7 +27,7 @@ fun baseSpoofAppVersionPatch(
     defaultTargetString: () -> String,
     preferenceScreen: BasePreferenceScreen.Screen,
     listPreference: () -> ListPreference,
-    sharedExtensionClass: String = "Lapp/tada/extension/shared/spoof/SpoofAppVersionPatch;",
+    sharedExtensionClass: String = "Lapp/morphe/extension/shared/spoof/SpoofAppVersionPatch;",
     block: BytecodePatchBuilder.() -> Unit,
     executeBlock: BytecodePatchContext.() -> Unit = {}
 ) = bytecodePatch(

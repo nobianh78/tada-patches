@@ -10,16 +10,16 @@
 
 package app.tada.patches.youtube.misc.playercontrols
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.util.Document
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.util.Document
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.addon.EXTENSION_ADD_ON_API_CLASS_DESCRIPTOR
 import app.tada.patches.youtube.misc.addon.LEGACY_BUTTON_SLOTS_RESOURCE_DIRECTORY
@@ -36,12 +36,12 @@ import app.tada.patches.youtube.misc.playservice.is_21_36_or_greater
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
-import app.tada.util.copyXmlNode
-import app.tada.util.findElementByAttributeValue
-import app.tada.util.findElementByAttributeValueOrThrow
-import app.tada.util.findFreeRegister
-import app.tada.util.inputStreamFromBundledResource
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.copyXmlNode
+import app.morphe.util.findElementByAttributeValue
+import app.morphe.util.findElementByAttributeValueOrThrow
+import app.morphe.util.findFreeRegister
+import app.morphe.util.inputStreamFromBundledResource
+import app.morphe.util.insertLiteralOverride
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import org.w3c.dom.Node
@@ -239,7 +239,7 @@ fun initializeLegacyBottomControl(descriptor: String) {
     )
 }
 
-internal const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/LegacyPlayerControlsPatch;"
+internal const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/LegacyPlayerControlsPatch;"
 
 private lateinit var inflateTopControlMethodRef : WeakReference<MutableMethod>
 private var inflateTopControlInsertIndex = -1

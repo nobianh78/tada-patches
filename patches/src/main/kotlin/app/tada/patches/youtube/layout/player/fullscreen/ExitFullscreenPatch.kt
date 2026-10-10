@@ -10,7 +10,7 @@
 
 package app.tada.patches.youtube.layout.player.fullscreen
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playertype.playerTypeHookPatch
@@ -39,7 +39,7 @@ internal val exitFullscreenPatch = bytecodePatch(
     // other patches that declare same constant name with internal visibility.
     @Suppress("LocalVariableName")
     val EXTENSION_CLASS =
-        "Lapp/tada/extension/youtube/patches/ExitFullscreenPatch;"
+        "Lapp/morphe/extension/youtube/patches/ExitFullscreenPatch;"
 
     execute {
         PreferenceScreen.PLAYER.addPreferences(

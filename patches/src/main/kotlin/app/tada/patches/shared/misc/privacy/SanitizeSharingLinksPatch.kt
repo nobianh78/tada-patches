@@ -1,21 +1,21 @@
 package app.tada.patches.shared.misc.privacy
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.BasePreference
 import app.tada.patches.shared.misc.settings.preference.BasePreferenceScreen
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
-import app.tada.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.addInstructionsAtControlFlowLabel
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/shared/patches/SanitizeSharingLinksPatch;"
+    "Lapp/morphe/extension/shared/patches/SanitizeSharingLinksPatch;"
 
 /**
  * Patch shared by YouTube and YT Music.

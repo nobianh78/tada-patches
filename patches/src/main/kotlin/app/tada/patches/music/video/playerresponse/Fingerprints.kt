@@ -7,7 +7,7 @@
 
 package app.tada.patches.music.video.playerresponse
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 import com.android.tools.smali.dexlib2.AccessFlags
 
 private val PLAYER_PARAMETER_STARTS_WITH_PARAMETER_LIST = listOf(

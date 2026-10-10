@@ -7,9 +7,9 @@
 
 package app.tada.patches.youtube.layout.player.buttons
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.youtube.misc.addon.EXTENSION_ADD_ON_API_CLASS_DESCRIPTOR
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
@@ -38,7 +38,7 @@ internal val playerOverlayButtonsHookPatch = bytecodePatch {
 
     execute {
         addPlayerBottomButton(
-            "Lapp/tada/extension/youtube/videoplayer/PlayerOverlayButton;"
+            "Lapp/morphe/extension/youtube/videoplayer/PlayerOverlayButton;"
         )
 
         // Buttons of add-on patch bundles, which cannot add a button of their own.

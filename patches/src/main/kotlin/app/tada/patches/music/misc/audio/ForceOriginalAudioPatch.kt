@@ -23,6 +23,6 @@ val forceOriginalAudioPatch = forceOriginalAudioPatch(
     fixUseLocalizedAudioTrackFlag = { !is_9_26_or_greater },
     forcedServerAdaptiveStreaming = { is_9_26_or_greater },
     mainActivityOnCreateFingerprint = MusicActivityOnCreateFingerprint,
-    subclassExtensionClassDescriptor = "Lapp/tada/extension/music/patches/ForceOriginalAudioPatch;",
+    subclassExtensionClassDescriptor = "Lapp/morphe/extension/music/patches/ForceOriginalAudioPatch;",
     preferenceScreen = PreferenceScreen.MISC,
 )

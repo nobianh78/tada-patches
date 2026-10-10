@@ -7,9 +7,9 @@
 
 package app.tada.patches.music.video.information
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.parametersMatch
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.parametersMatch
+import app.morphe.patcher.string
 
 /**
  * Matches the player class that exposes a seek method.

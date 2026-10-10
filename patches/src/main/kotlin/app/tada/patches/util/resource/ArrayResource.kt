@@ -1,6 +1,6 @@
 package app.tada.patches.util.resource
 
-import app.tada.util.childElementsSequence
+import app.morphe.util.childElementsSequence
 import org.w3c.dom.Document
 import org.w3c.dom.Node
 

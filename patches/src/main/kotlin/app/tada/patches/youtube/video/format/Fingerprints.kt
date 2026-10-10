@@ -7,14 +7,14 @@
 
 package app.tada.patches.youtube.video.format
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.InstructionLocation.MatchAfterImmediately
-import app.tada.patcher.InstructionLocation.MatchFirst
-import app.tada.patcher.anyInstruction
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.methodCall
-import app.tada.patcher.newInstance
-import app.tada.patcher.opcode
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation.MatchAfterImmediately
+import app.morphe.patcher.InstructionLocation.MatchFirst
+import app.morphe.patcher.anyInstruction
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.newInstance
+import app.morphe.patcher.opcode
 import app.tada.patches.shared.FormatStreamModelToStringFingerprint
 import app.tada.patches.youtube.shared.VideoStreamingDataToStringFingerprint
 import com.android.tools.smali.dexlib2.AccessFlags

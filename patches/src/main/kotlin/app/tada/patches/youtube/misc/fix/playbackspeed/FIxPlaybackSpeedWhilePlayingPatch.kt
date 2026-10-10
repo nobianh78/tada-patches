@@ -1,20 +1,20 @@
 package app.tada.patches.youtube.misc.fix.playbackspeed
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playertype.playerTypeHookPatch
-import app.tada.util.findFreeRegister
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.indexOfFirstInstructionReversed
+import app.morphe.util.findFreeRegister
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.indexOfFirstInstructionReversed
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/FixPlaybackSpeedWhilePlayingPatch;"
+    "Lapp/morphe/extension/youtube/patches/FixPlaybackSpeedWhilePlayingPatch;"
 
 /**
  * Fixes a bug in YouTube 19.34+ where the playback speed

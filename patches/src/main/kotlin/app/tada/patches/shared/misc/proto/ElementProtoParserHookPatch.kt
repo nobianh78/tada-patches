@@ -7,12 +7,12 @@
 
 package app.tada.patches.shared.misc.proto
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.BytecodePatch
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.BytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.shared.misc.fix.proto.fixProtoLibraryPatch
-import app.tada.util.cloneMutable
+import app.morphe.util.cloneMutable
 import java.lang.ref.WeakReference
 
 private var elementprotoParserInsertIndexStep = 2

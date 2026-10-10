@@ -1,8 +1,8 @@
 package app.tada.patches.youtube.layout.hide.relatedvideooverlay
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resourceLiteral
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resourceLiteral
 
 private object RelatedEndScreenResultsParentFingerprint : Fingerprint(
     returnType = "V",

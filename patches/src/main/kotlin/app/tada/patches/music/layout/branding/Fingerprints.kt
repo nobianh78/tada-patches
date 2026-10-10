@@ -10,10 +10,10 @@
 
 package app.tada.patches.music.layout.branding
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.checkCast
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resourceLiteral
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.checkCast
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resourceLiteral
 import app.tada.patches.music.shared.YOUTUBE_MUSIC_MAIN_ACTIVITY_CLASS_TYPE
 import com.android.tools.smali.dexlib2.AccessFlags
 

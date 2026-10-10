@@ -7,11 +7,11 @@
 
 package app.tada.patches.youtube.interaction.reload
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.layout.buttons.overlay.addPlayerOverlayPreferences
 import app.tada.patches.youtube.layout.buttons.overlay.playerOverlayButtonsSettingsPatch
@@ -22,8 +22,8 @@ import app.tada.patches.youtube.misc.playercontrols.legacyPlayerControlsPatch
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.video.information.videoInformationPatch
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionReversedOrThrow
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionReversedOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -45,13 +45,13 @@ private val reloadVideoButtonResourcePatch = resourcePatch {
 }
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/LoadVideoPatch;"
+    "Lapp/morphe/extension/youtube/patches/LoadVideoPatch;"
 
 private const val EXTENSION_PLAYER_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/LoadVideoPatch$PlayerInterface;"
+    $$"Lapp/morphe/extension/youtube/patches/LoadVideoPatch$PlayerInterface;"
 
 private const val EXTENSION_BUTTON =
-    "Lapp/tada/extension/youtube/videoplayer/ReloadVideoButton;"
+    "Lapp/morphe/extension/youtube/videoplayer/ReloadVideoButton;"
 
 @Suppress("unused")
 val reloadVideoButtonPatch = bytecodePatch(

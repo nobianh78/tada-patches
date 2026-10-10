@@ -9,8 +9,8 @@
  */
 package app.tada.patches.youtube.layout.shortsnoresume
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playservice.is_21_03_or_greater
@@ -19,12 +19,12 @@ import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.insertLiteralOverride
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.RegisterRangeInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/DisableShortsResumingOnStartupPatch;"
+    "Lapp/morphe/extension/youtube/patches/DisableShortsResumingOnStartupPatch;"
 
 @Suppress("unused")
 val disableShortsResumingOnStartupPatch = bytecodePatch(

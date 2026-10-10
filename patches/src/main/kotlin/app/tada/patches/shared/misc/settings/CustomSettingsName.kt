@@ -7,12 +7,12 @@
 
 package app.tada.patches.shared.misc.settings
 
-import app.tada.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.BytecodePatchContext
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settingsmenu.PreferenceGroupFindPreferenceFingerprint
 import app.tada.patches.shared.misc.settingsmenu.PreferenceSetTitleFingerprint
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/shared/patches/SettingsNamePatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/shared/patches/SettingsNamePatch;"
 
 /**
  * Key of the TADa entry added to the app settings screen. The entry declares its name in XML,
@@ -22,7 +22,7 @@ internal const val SETTINGS_NAME_PREFERENCE_KEY = "tada_settings_root"
 
 internal fun customSettingsNamePreference() = ListPreference(
     key = "tada_settings_name",
-    tag = "app.tada.extension.shared.settings.preference.SettingsNamePreference"
+    tag = "app.morphe.extension.shared.settings.preference.SettingsNamePreference"
 )
 
 /**

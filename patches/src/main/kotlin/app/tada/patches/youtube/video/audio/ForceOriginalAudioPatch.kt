@@ -24,6 +24,6 @@ val forceOriginalAudioPatch = forceOriginalAudioPatch(
     fixUseLocalizedAudioTrackFlag = { !is_21_26_or_greater },
     forcedServerAdaptiveStreaming = { is_21_26_or_greater },
     mainActivityOnCreateFingerprint = YouTubeActivityOnCreateFingerprint,
-    subclassExtensionClassDescriptor = "Lapp/tada/extension/youtube/patches/ForceOriginalAudioPatch;",
+    subclassExtensionClassDescriptor = "Lapp/morphe/extension/youtube/patches/ForceOriginalAudioPatch;",
     preferenceScreen = PreferenceScreen.VIDEO,
 )

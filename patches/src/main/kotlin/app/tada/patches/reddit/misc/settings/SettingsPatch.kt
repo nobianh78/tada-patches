@@ -7,15 +7,15 @@
 
 package app.tada.patches.reddit.misc.settings
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.string
-import app.tada.patches.all.misc.fix.openurllinks.removeLinkVerification
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.string
+import app.morphe.patches.all.misc.fix.openurllinks.removeLinkVerification
 import app.tada.patches.all.misc.resources.addAppResources
 import app.tada.patches.all.misc.resources.addResourcesPatch
 import app.tada.patches.all.misc.resources.localesReddit
@@ -31,19 +31,19 @@ import app.tada.patches.reddit.misc.version.is_2026_30_0_or_greater
 import app.tada.patches.reddit.misc.version.versionCheckPatch
 import app.tada.patches.reddit.shared.Constants.COMPATIBILITY_REDDIT
 import app.tada.patches.shared.misc.checks.experimentalAppNoticePatch
-import app.tada.util.ResourceGroup
-import app.tada.util.cloneParameters
-import app.tada.util.copyResources
-import app.tada.util.findElementByAttributeValue
-import app.tada.util.findFreeRegister
-import app.tada.util.p0Register
-import app.tada.util.registersUsed
-import app.tada.util.returnEarly
+import app.morphe.util.ResourceGroup
+import app.morphe.util.cloneParameters
+import app.morphe.util.copyResources
+import app.morphe.util.findElementByAttributeValue
+import app.morphe.util.findFreeRegister
+import app.morphe.util.p0Register
+import app.morphe.util.registersUsed
+import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/reddit/settings/RedditActivityHook;"
+    "Lapp/morphe/extension/reddit/settings/RedditActivityHook;"
 
 val settingsPatch = bytecodePatch(
     description = "Applies mandatory patches to implement TADa settings into the application."

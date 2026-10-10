@@ -1,21 +1,21 @@
 package app.tada.patches.youtube.interaction.seekbar
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
-import app.tada.util.findInstructionIndicesReversed
-import app.tada.util.getReference
+import app.morphe.util.findInstructionIndicesReversed
+import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/SlideToSeekPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/SlideToSeekPatch;"
 
 val enableSlideToSeekPatch = bytecodePatch(
     description = "Adds an option to enable slide to seek " +

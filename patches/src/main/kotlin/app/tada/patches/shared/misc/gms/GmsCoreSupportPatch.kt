@@ -10,22 +10,22 @@
 
 package app.tada.patches.shared.misc.gms
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.StringComparisonType
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.instructions
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.InstallerType
-import app.tada.patcher.patch.Patch
-import app.tada.patcher.patch.PatchAvailability
-import app.tada.patcher.patch.ResourcePatchBuilder
-import app.tada.patcher.patch.ResourcePatchContext
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.StringComparisonType
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.instructions
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.InstallerType
+import app.morphe.patcher.patch.Patch
+import app.morphe.patcher.patch.PatchAvailability
+import app.morphe.patcher.patch.ResourcePatchBuilder
+import app.morphe.patcher.patch.ResourcePatchContext
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.string
 import app.tada.patches.all.misc.clone.cloneAppPatch
 import app.tada.patches.all.misc.clone.setOrGetFallbackPackageName
 import app.tada.patches.shared.misc.gms.Constants.ACTIONS
@@ -34,10 +34,10 @@ import app.tada.patches.shared.misc.gms.Constants.PERMISSIONS
 import app.tada.patches.shared.misc.settings.preference.BasePreferenceScreen
 import app.tada.patches.shared.misc.settings.preference.IntentPreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.getReference
-import app.tada.util.matchAllMethodIndicesForEach
-import app.tada.util.matchSingle
-import app.tada.util.returnEarly
+import app.morphe.util.getReference
+import app.morphe.util.matchAllMethodIndicesForEach
+import app.morphe.util.matchSingle
+import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.instruction.BuilderInstruction21c
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
@@ -48,7 +48,7 @@ import org.w3c.dom.Element
 import org.w3c.dom.Node
 
 internal const val EXTENSION_CLASS =
-    "Lapp/tada/extension/shared/patches/GmsCoreSupportPatch;"
+    "Lapp/morphe/extension/shared/patches/GmsCoreSupportPatch;"
 
 /**
  * Old vendor id for maximum backwards compatibility.

@@ -10,10 +10,10 @@
 
 package app.tada.patches.shared.layout.theme
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import java.lang.ref.WeakReference
 
 private lateinit var lithoColorOverrideHookRef : WeakReference<MutableMethod>

@@ -7,10 +7,10 @@
 
 package app.tada.patches.shared.misc.lottie
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.anyInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.anyInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.string
 import com.android.tools.smali.dexlib2.AccessFlags
 
 internal const val LOTTIE_ANIMATION_VIEW_CLASS_TYPE = "Lcom/airbnb/lottie/LottieAnimationView;"

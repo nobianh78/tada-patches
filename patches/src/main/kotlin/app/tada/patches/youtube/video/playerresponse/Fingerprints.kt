@@ -1,7 +1,7 @@
 package app.tada.patches.youtube.video.playerresponse
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.string
 import com.android.tools.smali.dexlib2.AccessFlags
 
 /**

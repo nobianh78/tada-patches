@@ -7,12 +7,12 @@
 
 package app.tada.patches.youtube.misc.fix.videoactionbar
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.BuildInnerTubeProtoRequestUriFingerprint
 import app.tada.patches.shared.BuildInnerTubeProtoRequestUriLegacyFingerprint
 import app.tada.patches.shared.misc.fix.proto.fixProtoLibraryPatch
@@ -32,11 +32,11 @@ import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.ModernRelateVideoOverlayFingerprint
 import app.tada.patches.youtube.shared.RelateVideoOverlayLayoutParamFingerprint
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionReversedOrThrow
-import app.tada.util.insertLiteralOverride
-import app.tada.util.registersUsed
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionReversedOrThrow
+import app.morphe.util.insertLiteralOverride
+import app.morphe.util.registersUsed
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -49,13 +49,13 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/RestoreOldVideoActionBarPatch;"
+    "Lapp/morphe/extension/youtube/patches/RestoreOldVideoActionBarPatch;"
 
 private const val EXTENSION_CONFIG_INFO_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/RestoreOldVideoActionBarPatch$ConfigInfoInterface;"
+    $$"Lapp/morphe/extension/youtube/patches/RestoreOldVideoActionBarPatch$ConfigInfoInterface;"
 
 private const val EXTENSION_REQUEST_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/RestoreOldVideoActionBarPatch$RequestInterface;"
+    $$"Lapp/morphe/extension/youtube/patches/RestoreOldVideoActionBarPatch$RequestInterface;"
 
 internal val restoreOldVideoActionBarPatch = bytecodePatch(
     description = "Overrides 'X-Youtube-Cold-Config-Data', fixes 'Hide video action buttons' and 'Return YouTube Dislike', "

@@ -7,21 +7,21 @@
 
 package app.tada.patches.shared.misc.litho.node
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.BytecodePatch
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableClass
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.BytecodePatch
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableClass
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.misc.litho.context.EXTENSION_CONTEXT_INTERFACE
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.getFreeRegisterProvider
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.p0Register
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.getFreeRegisterProvider
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.p0Register
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -33,9 +33,9 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import java.lang.ref.WeakReference
 
 internal const val EXTENSION_CLASS =
-    "Lapp/tada/extension/shared/patches/TreeNodeElementPatch;"
+    "Lapp/morphe/extension/shared/patches/TreeNodeElementPatch;"
 private const val EXTENSION_LITHO_CONTAINER_INTERFACE =
-    $$"Lapp/tada/extension/shared/patches/TreeNodeElementPatch$LithoGetBufferContainerInterface;"
+    $$"Lapp/morphe/extension/shared/patches/TreeNodeElementPatch$LithoGetBufferContainerInterface;"
 
 private lateinit var componentLoadedMethodRef: WeakReference<MutableMethod>
 private lateinit var lazilyConvertedElementLoadedMethodRef: WeakReference<MutableMethod>

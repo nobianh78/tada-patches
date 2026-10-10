@@ -7,11 +7,11 @@
 
 package app.tada.patches.shared.misc.initialization
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.Patch
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.Patch
+import app.morphe.patcher.patch.bytecodePatch
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/shared/patches/InitializationPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/shared/patches/InitializationPatch;"
 
 internal fun initializationPatch(
     extensionPatch: Patch<*>

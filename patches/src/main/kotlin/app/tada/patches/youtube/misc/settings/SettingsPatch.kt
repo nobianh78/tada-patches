@@ -10,15 +10,15 @@
 
 package app.tada.patches.youtube.misc.settings
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.all.misc.clone.setOrGetFallbackPackageName
-import app.tada.patches.all.misc.fix.openurllinks.removeLinkVerification
+import app.morphe.patches.all.misc.fix.openurllinks.removeLinkVerification
 import app.tada.patches.all.misc.resources.addAppResources
 import app.tada.patches.all.misc.resources.addResourcesPatch
 import app.tada.patches.all.misc.resources.localesYouTube
@@ -57,13 +57,13 @@ import app.tada.patches.youtube.misc.playservice.is_21_30_or_greater
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.shared.YouTubeActivityOnCreateFingerprint
-import app.tada.util.ResourceGroup
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.copyResources
-import app.tada.util.findElementByAttributeValueOrThrow
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.getFreeRegisterProvider
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.ResourceGroup
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.copyResources
+import app.morphe.util.findElementByAttributeValueOrThrow
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.getFreeRegisterProvider
+import app.morphe.util.insertLiteralOverride
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -74,8 +74,8 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 import com.android.tools.smali.dexlib2.util.MethodUtil
 
-private const val BASE_ACTIVITY_HOOK_CLASS = "Lapp/tada/extension/shared/settings/BaseActivityHook;"
-private const val YOUTUBE_ACTIVITY_HOOK_CLASS = "Lapp/tada/extension/youtube/settings/YouTubeActivityHook;"
+private const val BASE_ACTIVITY_HOOK_CLASS = "Lapp/morphe/extension/shared/settings/BaseActivityHook;"
+private const val YOUTUBE_ACTIVITY_HOOK_CLASS = "Lapp/morphe/extension/youtube/settings/YouTubeActivityHook;"
 
 private val preferences = mutableSetOf<BasePreference>()
 
@@ -248,7 +248,7 @@ val settingsPatch = bytecodePatch(
             iconBold = "@drawable/tada_settings_screen_00_about_bold",
             layout = "@layout/preference_with_icon",
             summaryKey = null,
-            tag = "app.tada.extension.shared.settings.preference.about.TADaAboutPreference",
+            tag = "app.morphe.extension.shared.settings.preference.about.TADaAboutPreference",
             selectable = true
         )
 
@@ -270,11 +270,11 @@ val settingsPatch = bytecodePatch(
                 titleKey = "tada_pref_import_export_title",
                 summaryKey = "tada_pref_import_export_summary",
                 inputType = InputType.TEXT_MULTI_LINE,
-                tag = "app.tada.extension.shared.settings.preference.ImportExportPreference"
+                tag = "app.morphe.extension.shared.settings.preference.ImportExportPreference"
             ),
             ListPreference(
                 key = "tada_language",
-                tag = "app.tada.extension.shared.settings.preference.SortedListPreference"
+                tag = "app.morphe.extension.shared.settings.preference.SortedListPreference"
             )
         )
 

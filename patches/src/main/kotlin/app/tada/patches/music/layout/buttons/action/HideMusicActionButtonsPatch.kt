@@ -7,9 +7,9 @@
 
 package app.tada.patches.music.layout.buttons.action
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.litho.filter.lithoFilterPatch
 import app.tada.patches.music.misc.litho.node.treeNodeElementHookPatch
@@ -25,10 +25,10 @@ import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 
 private const val ACTION_BUTTONS_FILTER =
-    "Lapp/tada/extension/music/patches/components/MusicActionButtonsFilter;"
+    "Lapp/morphe/extension/music/patches/components/MusicActionButtonsFilter;"
 
 private const val EXTENSION_BUTTON_PROTO_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/components/MusicActionButtonsFilter$ButtonProtoBufferInterface;"
+    $$"Lapp/morphe/extension/music/patches/components/MusicActionButtonsFilter$ButtonProtoBufferInterface;"
 
 @Suppress("unused")
 val hideMusicActionButtonsPatch = bytecodePatch(

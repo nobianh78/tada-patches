@@ -7,8 +7,8 @@
 
 package app.tada.patches.music.layout.startpage
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.string
 
 internal object ColdStartUpFingerprint : Fingerprint(
     returnType = "Ljava/lang/String;",

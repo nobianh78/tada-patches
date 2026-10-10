@@ -7,9 +7,9 @@
 
 package app.tada.patches.shared.misc.spans
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.instanceOf
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.instanceOf
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 

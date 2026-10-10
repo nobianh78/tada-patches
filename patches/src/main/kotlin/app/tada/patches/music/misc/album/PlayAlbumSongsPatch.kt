@@ -7,8 +7,8 @@
 
 package app.tada.patches.music.misc.album
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.settings.PreferenceScreen
 import app.tada.patches.music.misc.settings.settingsPatch
@@ -20,7 +20,7 @@ import app.tada.patches.music.video.playerresponse.musicPlayerResponseMethodHook
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/music/patches/album/PlayAlbumSongsPatch;"
+    "Lapp/morphe/extension/music/patches/album/PlayAlbumSongsPatch;"
 
 @Suppress("unused")
 val playAlbumSongsPatch = bytecodePatch(

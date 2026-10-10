@@ -26,25 +26,25 @@
 
 package app.tada.patches.all.misc.updates
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.util.getFreeRegisterProvider
-import app.tada.util.getNode
-import app.tada.util.matchAllMethodIndicesForEach
-import app.tada.util.returnEarly
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.util.getFreeRegisterProvider
+import app.morphe.util.getNode
+import app.morphe.util.matchAllMethodIndicesForEach
+import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import org.w3c.dom.Element
 import java.util.logging.Logger
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/all/versioncode/DisablePlayStoreUpdatesPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/all/versioncode/DisablePlayStoreUpdatesPatch;"
 
 private var originalVersionCode: Int = 0
 
@@ -97,7 +97,7 @@ internal val disablePlayStoreUpdatesPatch = bytecodePatch(
                 )
             ),
             custom = { _, classDef ->
-                !classDef.type.startsWith("Lapp/tada/extension")
+                !classDef.type.startsWith("Lapp/morphe/extension")
             }
         ).matchAllMethodIndicesForEach(requireMatches = false) { index ->
             val instruction = this.getInstruction<TwoRegisterInstruction>(index)
@@ -152,7 +152,7 @@ internal val disablePlayStoreUpdatesPatch = bytecodePatch(
                 )
             ),
             custom = { _, classDef ->
-                !classDef.type.startsWith("Lapp/tada/extension")
+                !classDef.type.startsWith("Lapp/morphe/extension")
             }
         ).matchAllMethodIndicesForEach(requireMatches = false) { index ->
             if (getInstruction(index + 1).opcode != Opcode.MOVE_RESULT_WIDE) {

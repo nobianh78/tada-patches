@@ -23,7 +23,7 @@ package app.tada.patches.youtube.misc.addon
  *   into the TADa settings and then removes.
  */
 internal const val EXTENSION_ADD_ON_API_CLASS_DESCRIPTOR =
-    "Lapp/tada/extension/youtube/addon/AddOnApi;"
+    "Lapp/morphe/extension/youtube/addon/AddOnApi;"
 
 /**
  * Button slots an add-on can claim at runtime with `AddOnApi.createLegacyButton()`.

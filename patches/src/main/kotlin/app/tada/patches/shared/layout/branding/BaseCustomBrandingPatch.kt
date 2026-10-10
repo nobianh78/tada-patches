@@ -10,20 +10,20 @@
 
 package app.tada.patches.shared.layout.branding
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.InstallerType
-import app.tada.patcher.patch.PatchAvailability
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.ResourcePatch
-import app.tada.patcher.patch.ResourcePatchBuilder
-import app.tada.patcher.patch.ResourcePatchContext
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.folderOption
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.patch.stringOption
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.InstallerType
+import app.morphe.patcher.patch.PatchAvailability
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.ResourcePatch
+import app.morphe.patcher.patch.ResourcePatchBuilder
+import app.morphe.patcher.patch.ResourcePatchContext
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.folderOption
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.stringOption
 import app.tada.patches.all.misc.clone.setOrGetFallbackPackageName
 import app.tada.patches.shared.misc.fix.bitmap.fixRecycledBitmapPatch
 import app.tada.patches.shared.misc.settings.preference.BasePreference
@@ -31,13 +31,13 @@ import app.tada.patches.shared.misc.settings.preference.BasePreferenceScreen
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
 import app.tada.patches.util.resource.StringResourceSanitizer
-import app.tada.util.ResourceGroup
-import app.tada.util.asSequence
-import app.tada.util.copyResources
-import app.tada.util.findElementByAttributeValueOrThrow
-import app.tada.util.inputStreamFromBundledResource
-import app.tada.util.removeFromParent
-import app.tada.util.returnEarly
+import app.morphe.util.ResourceGroup
+import app.morphe.util.asSequence
+import app.morphe.util.copyResources
+import app.morphe.util.findElementByAttributeValueOrThrow
+import app.morphe.util.inputStreamFromBundledResource
+import app.morphe.util.removeFromParent
+import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import org.w3c.dom.Element
@@ -106,7 +106,7 @@ private val notificationIconPngDirectories = mapOf(
     "drawable-xxxhdpi" to "96x96 px",
 )
 
-internal const val EXTENSION_CLASS = "Lapp/tada/extension/shared/patches/CustomBrandingPatch;"
+internal const val EXTENSION_CLASS = "Lapp/morphe/extension/shared/patches/CustomBrandingPatch;"
 
 // Must be named in the 'app.tada' namespace, otherwise the log is not published.
 private val logger = Logger.getLogger(ResourcePatchContext::class.java.name)
@@ -485,24 +485,24 @@ internal fun baseCustomBrandingPatch(
         if (useCustomIcon) {
             preferences += ListPreference(
                 key = "tada_custom_branding_icon",
-                tag = "app.tada.extension.shared.settings.preference.IconListPreference",
+                tag = "app.morphe.extension.shared.settings.preference.IconListPreference",
                 entriesKey = "tada_custom_branding_icon_custom_entries",
                 entryValuesKey = "tada_custom_branding_icon_custom_entry_values"
             )
             preferences += ListPreference(
                 key = "tada_custom_branding_notification_icon",
-                tag = "app.tada.extension.shared.settings.preference.NotificationIconListPreference",
+                tag = "app.morphe.extension.shared.settings.preference.NotificationIconListPreference",
                 entriesKey = "tada_custom_branding_notification_icon_custom_entries",
                 entryValuesKey = "tada_custom_branding_notification_icon_custom_entry_values"
             )
         } else {
             preferences += ListPreference(
                 key = "tada_custom_branding_icon",
-                tag = "app.tada.extension.shared.settings.preference.IconListPreference"
+                tag = "app.morphe.extension.shared.settings.preference.IconListPreference"
             )
             preferences += ListPreference(
                 key = "tada_custom_branding_notification_icon",
-                tag = "app.tada.extension.shared.settings.preference.NotificationIconListPreference"
+                tag = "app.morphe.extension.shared.settings.preference.NotificationIconListPreference"
             )
         }
 

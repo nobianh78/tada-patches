@@ -10,8 +10,8 @@
 
 package app.tada.patches.shared.misc.spoof.appversion
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.OpcodesFilter
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.OpcodesFilter
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 
@@ -31,6 +31,6 @@ internal object SpoofAppVersionFingerprint : Fingerprint(
 )
 
 internal object SpoofAppVersionExtensionDefaultTargetFingerprint : Fingerprint(
-    definingClass = "Lapp/tada/extension/shared/settings/SharedYouTubeSettings;",
+    definingClass = "Lapp/morphe/extension/shared/settings/SharedYouTubeSettings;",
     name = "getDefaultSpoofAppVersionTarget"
 )

@@ -2,8 +2,8 @@
 
 package app.tada.patches.youtube.interaction.playall
 
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
@@ -36,7 +36,7 @@ private val playAllButtonResourcePatch = resourcePatch {
     }
 }
 
-private const val EXTENSION_BUTTON = "Lapp/tada/extension/youtube/videoplayer/PlayAllButton;"
+private const val EXTENSION_BUTTON = "Lapp/morphe/extension/youtube/videoplayer/PlayAllButton;"
 
 @Suppress("unused")
 val playAllButtonPatch = bytecodePatch(

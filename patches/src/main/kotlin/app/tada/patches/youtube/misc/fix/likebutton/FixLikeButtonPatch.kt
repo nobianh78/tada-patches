@@ -10,10 +10,10 @@
 
 package app.tada.patches.youtube.misc.fix.likebutton
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playertype.playerTypeHookPatch
 import com.android.tools.smali.dexlib2.AccessFlags
@@ -22,7 +22,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/FixLikeButtonPatch;"
+    "Lapp/morphe/extension/youtube/patches/FixLikeButtonPatch;"
 
 /**
  * Fixes https://github.com/TADaApp/tada-patches/issues/113.

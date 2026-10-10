@@ -1,6 +1,6 @@
 package app.tada.patches.youtube.misc.extension
 
-import app.tada.patches.all.misc.extension.sharedExtensionPatch
+import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.extension.hooks.applicationInitHook
 import app.tada.patches.youtube.misc.extension.hooks.applicationInitOnCreateHook
 

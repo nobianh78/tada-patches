@@ -1,7 +1,7 @@
 package app.tada.patches.youtube.layout.hide.player.popup
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
@@ -9,7 +9,7 @@ import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/DisablePlayerPopupPanelsPatch;"
+    "Lapp/morphe/extension/youtube/patches/DisablePlayerPopupPanelsPatch;"
 
 @Suppress("unused")
 val disablePlayerPopupPanelsPatch = bytecodePatch(

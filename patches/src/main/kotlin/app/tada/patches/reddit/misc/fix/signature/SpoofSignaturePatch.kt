@@ -7,7 +7,7 @@
 
 package app.tada.patches.reddit.misc.fix.signature
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.all.misc.installer.changeInstallerSource
 import app.tada.patches.reddit.misc.extension.sharedExtensionPatch
 import app.tada.patches.reddit.misc.version.is_2024_03_0_or_greater
@@ -16,7 +16,7 @@ import app.tada.patches.reddit.shared.Constants.COMPATIBILITY_REDDIT_INCLUDING_L
 import java.util.logging.Logger
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/reddit/patches/SpoofSignaturePatch;"
+    "Lapp/morphe/extension/reddit/patches/SpoofSignaturePatch;"
 
 @Suppress("unused")
 val spoofSignaturePatch = bytecodePatch(

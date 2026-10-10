@@ -10,25 +10,25 @@
 
 package app.tada.patches.shared.misc.audio.tracks
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableField.Companion.toMutable
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableField.Companion.toMutable
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.FormatStreamModelToStringFingerprint
 import app.tada.patches.shared.misc.settings.preference.BasePreferenceScreen
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.cloneMutable
-import app.tada.util.findMethodFromToString
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionReversedOrThrow
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.cloneMutable
+import app.morphe.util.findMethodFromToString
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionReversedOrThrow
+import app.morphe.util.insertLiteralOverride
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -41,9 +41,9 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/shared/patches/ForceOriginalAudioPatch;"
+    "Lapp/morphe/extension/shared/patches/ForceOriginalAudioPatch;"
 private const val EXTENSION_AUDIO_TRACK_INTERFACE =
-    $$"Lapp/tada/extension/shared/patches/ForceOriginalAudioPatch$AudioTrackInterface;"
+    $$"Lapp/morphe/extension/shared/patches/ForceOriginalAudioPatch$AudioTrackInterface;"
 
 /**
  * Patch shared with YouTube and YT Music.
@@ -67,7 +67,7 @@ internal fun forceOriginalAudioPatch(
         preferenceScreen.addPreferences(
             SwitchPreference(
                 key = "tada_force_original_audio",
-                tag = "app.tada.extension.shared.settings.preference.ForceOriginalAudioSwitchPreference",
+                tag = "app.morphe.extension.shared.settings.preference.ForceOriginalAudioSwitchPreference",
                 summary = true
             )
         )

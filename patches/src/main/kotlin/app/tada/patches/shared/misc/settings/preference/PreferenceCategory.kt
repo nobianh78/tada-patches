@@ -44,7 +44,7 @@ internal fun noTitleUnsortedPreferenceCategory(
     key = null,
     titleKey = null,
     sorting = Sorting.UNSORTED,
-    tag = "app.tada.extension.shared.settings.preference.NoTitlePreferenceCategory",
+    tag = "app.morphe.extension.shared.settings.preference.NoTitlePreferenceCategory",
     preferences = preferences
 )
 

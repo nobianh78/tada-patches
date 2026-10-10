@@ -7,9 +7,9 @@
 
 package app.tada.patches.music.interaction.downloads
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.music.misc.settings.PreferenceScreen
 import app.tada.patches.music.misc.settings.settingsPatch
 import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
@@ -20,7 +20,7 @@ import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.TextPreference
 import app.tada.patches.shared.misc.textcomponent.hookSpannableString
 import app.tada.patches.shared.misc.textcomponent.textComponentPatch
-import app.tada.util.cloneParameters
+import app.morphe.util.cloneParameters
 
 private val OFFLINE_PLAYBACK_PERMISSIONS = listOf(
     "android.permission.WAKE_LOCK",
@@ -30,7 +30,7 @@ private val OFFLINE_PLAYBACK_PERMISSIONS = listOf(
 )
 
 private const val OFFLINE_PLAYBACK_SERVICE =
-    "app.tada.extension.music.patches.downloads.OfflinePlaybackService"
+    "app.morphe.extension.music.patches.downloads.OfflinePlaybackService"
 
 private val downloadsResourcePatch = resourcePatch {
     dependsOn(settingsPatch)
@@ -46,7 +46,7 @@ private val downloadsResourcePatch = resourcePatch {
                     SwitchPreference("tada_music_in_app_downloads", summary = true),
                     TextPreference(
                         "tada_external_downloader_name",
-                        tag = "app.tada.extension.shared.settings.preference.ExternalDownloaderPreference"
+                        tag = "app.morphe.extension.shared.settings.preference.ExternalDownloaderPreference"
                     )
                 )
             )
@@ -80,9 +80,9 @@ private val downloadsResourcePatch = resourcePatch {
     }
 }
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/music/patches/DownloadsPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/music/patches/DownloadsPatch;"
 private const val EXTENSION_PROTOCOL_BUFFER_INTERFACE =
-    $$"Lapp/tada/extension/music/patches/DownloadsPatch$ProtocolBufferFieldInterface;"
+    $$"Lapp/morphe/extension/music/patches/DownloadsPatch$ProtocolBufferFieldInterface;"
 
 
 @Suppress("unused")

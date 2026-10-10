@@ -7,17 +7,17 @@
 
 package app.tada.patches.reddit.layout.ask
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.reddit.misc.flag.featureFlagHookPatch
 import app.tada.patches.reddit.misc.flag.hookFeatureFlag
 import app.tada.patches.reddit.misc.settings.settingsPatch
 import app.tada.patches.reddit.misc.version.versionCheckPatch
 import app.tada.patches.reddit.shared.Constants.COMPATIBILITY_REDDIT
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.setExtensionIsPatchIncluded
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/reddit/patches/HideAskButtonPatch;"
+    "Lapp/morphe/extension/reddit/patches/HideAskButtonPatch;"
 
 @Suppress("unused")
 val hideAskButtonPatch = bytecodePatch(

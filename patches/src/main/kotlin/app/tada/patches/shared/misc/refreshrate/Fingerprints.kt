@@ -7,7 +7,7 @@
 
 package app.tada.patches.shared.misc.refreshrate
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 
 internal object ActivityOnCreateFingerprint : Fingerprint(
     name = "onCreate",

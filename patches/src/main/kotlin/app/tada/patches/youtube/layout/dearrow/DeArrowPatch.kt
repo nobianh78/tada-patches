@@ -10,7 +10,7 @@
 
 package app.tada.patches.youtube.layout.dearrow
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.litho.relayout.lithoRelayoutPatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
@@ -28,7 +28,7 @@ import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/dearrow/DeArrowPatch;"
+    "Lapp/morphe/extension/youtube/patches/dearrow/DeArrowPatch;"
 
 @Suppress("unused")
 val deArrowPatch = bytecodePatch(
@@ -83,7 +83,7 @@ val deArrowPatch = bytecodePatch(
             NonInteractivePreference(
                 "tada_dearrow_about",
                 // Custom about preference with link to the DeArrow website.
-                tag = "app.tada.extension.youtube.settings.preference.DeArrowAboutPreference",
+                tag = "app.morphe.extension.youtube.settings.preference.DeArrowAboutPreference",
                 selectable = true,
             ),
             SwitchPreference("tada_dearrow_connection_toast", summary = true),

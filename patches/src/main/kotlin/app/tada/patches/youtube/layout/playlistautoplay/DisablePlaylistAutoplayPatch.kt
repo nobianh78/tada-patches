@@ -7,20 +7,20 @@
 
 package app.tada.patches.youtube.layout.playlistautoplay
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.cloneParameters
-import app.tada.util.findFreeRegister
+import app.morphe.util.cloneParameters
+import app.morphe.util.findFreeRegister
 import com.android.tools.smali.dexlib2.AccessFlags
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/DisablePlaylistAutoplayPatch;"
+    "Lapp/morphe/extension/youtube/patches/DisablePlaylistAutoplayPatch;"
 
 @Suppress("unused")
 val disablePlaylistAutoplayPatch = bytecodePatch(

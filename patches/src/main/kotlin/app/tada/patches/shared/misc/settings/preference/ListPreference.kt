@@ -22,7 +22,7 @@ class ListPreference(
     icon: String? = null,
     iconBold: String? = null,
     layout: String? = null,
-    tag: String = "app.tada.extension.shared.settings.preference.CustomDialogListPreference",
+    tag: String = "app.morphe.extension.shared.settings.preference.CustomDialogListPreference",
     val entriesKey: String? = "${key}_entries",
     val entryValuesKey: String? = "${key}_entry_values"
 ) : BasePreference(key, titleKey, null, icon, iconBold, layout, tag) {

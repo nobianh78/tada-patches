@@ -7,15 +7,15 @@
 
 package app.tada.patches.music.layout.branding.header
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resourceLiteral
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resourceLiteral
 import app.tada.patches.music.misc.settings.PreferenceScreen
 import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
 import app.tada.patches.shared.layout.branding.header.baseChangeHeaderPatch
-import app.tada.util.matchAllMethodIndicesForEach
+import app.morphe.util.matchAllMethodIndicesForEach
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 private val targetResourceDirectoryNames = mapOf(
@@ -34,7 +34,7 @@ private val headerDrawableNames = arrayOf(
 )
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/music/patches/ChangeHeaderPatch;"
+    "Lapp/morphe/extension/music/patches/ChangeHeaderPatch;"
 
 private val changeHeaderBytecodePatch = bytecodePatch {
     execute {

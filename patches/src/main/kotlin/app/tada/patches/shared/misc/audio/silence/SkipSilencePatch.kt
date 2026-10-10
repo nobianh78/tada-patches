@@ -7,18 +7,18 @@
 
 package app.tada.patches.shared.misc.audio.silence
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.BasePreferenceScreen
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
-import app.tada.util.matchSingle
+import app.morphe.util.matchSingle
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import java.util.logging.Logger
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/shared/patches/SkipSilencePatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/shared/patches/SkipSilencePatch;"
 
 @Suppress("unused")
 internal fun skipSilencePatch(

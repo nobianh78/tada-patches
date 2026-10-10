@@ -7,9 +7,9 @@
 
 package app.tada.patches.reddit.misc.guest
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.reddit.shared.Constants.COMPATIBILITY_REDDIT
-import app.tada.util.returnEarly
+import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val startAsGuestPatch = bytecodePatch(

@@ -1,18 +1,18 @@
 package app.tada.patches.youtube.misc.engagement
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.shared.EngagementPanelControllerFingerprint
-import app.tada.util.getReference
+import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import java.lang.ref.WeakReference
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/shared/EngagementPanel;"
+    "Lapp/morphe/extension/youtube/shared/EngagementPanel;"
 
 private var panelIdField: FieldReference? = null
 private var panelIdIndex = -1

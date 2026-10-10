@@ -1,6 +1,6 @@
 package app.tada.patches.youtube.layout.livering
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.all.misc.resources.addResourcesPatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
@@ -11,7 +11,7 @@ import app.tada.patches.youtube.shared.hookVideoIntent
 import app.tada.patches.youtube.shared.openVideoIntentPatch
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/OpenChannelOfLiveAvatarPatch;"
+    "Lapp/morphe/extension/youtube/patches/OpenChannelOfLiveAvatarPatch;"
 
 @Suppress("unused")
 val openChannelOfLiveAvatarPatch = bytecodePatch(

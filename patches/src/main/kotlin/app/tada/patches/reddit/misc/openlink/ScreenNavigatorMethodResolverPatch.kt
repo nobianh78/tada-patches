@@ -7,15 +7,15 @@
 
 package app.tada.patches.reddit.misc.openlink
 
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.reddit.misc.settings.settingsPatch
 import app.tada.patches.reddit.misc.version.is_2026_11_0_or_greater
 import app.tada.patches.reddit.misc.version.versionCheckPatch
-import app.tada.util.getMutableMethod
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.getMutableMethod
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import java.lang.ref.WeakReference

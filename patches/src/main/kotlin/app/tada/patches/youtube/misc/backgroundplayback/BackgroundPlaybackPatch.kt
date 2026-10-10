@@ -10,12 +10,12 @@
 
 package app.tada.patches.youtube.misc.backgroundplayback
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.instructions
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.instructions
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.shared.misc.fix.bitmap.fixRecycledBitmapPatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
@@ -34,18 +34,18 @@ import app.tada.patches.youtube.shared.BackgroundPlaybackManagerShortsFingerprin
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.video.information.onCreateHook
 import app.tada.patches.youtube.video.information.videoInformationPatch
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.getMutableMethod
-import app.tada.util.getReference
-import app.tada.util.insertLiteralOverride
-import app.tada.util.matchSingle
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.getMutableMethod
+import app.morphe.util.getReference
+import app.morphe.util.insertLiteralOverride
+import app.morphe.util.matchSingle
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/BackgroundPlaybackPatch;"
+    "Lapp/morphe/extension/youtube/patches/BackgroundPlaybackPatch;"
 
 val backgroundPlaybackPatch = bytecodePatch(
     name = "Remove background playback restrictions",

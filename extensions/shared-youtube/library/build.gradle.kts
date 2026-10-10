@@ -6,7 +6,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
-    namespace = "app.tada.extension.shared.youtube"
+    namespace = "app.morphe.extension.shared.youtube"
     compileSdk = 36
 
     defaultConfig {

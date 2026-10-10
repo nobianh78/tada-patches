@@ -7,7 +7,7 @@
 
 package app.tada.patches.music.layout.sponsorblock
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 
 /**
  * Matches {@code MusicPlaybackControlsTimeBar.draw(Canvas)}.

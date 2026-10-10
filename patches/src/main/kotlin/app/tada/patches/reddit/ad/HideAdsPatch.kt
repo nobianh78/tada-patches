@@ -7,25 +7,25 @@
 
 package app.tada.patches.reddit.ad
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.reddit.misc.settings.settingsPatch
 import app.tada.patches.reddit.misc.version.is_2026_04_0_or_greater
 import app.tada.patches.reddit.misc.version.is_2026_16_0_or_greater
 import app.tada.patches.reddit.misc.version.versionCheckPatch
 import app.tada.patches.reddit.shared.Constants.COMPATIBILITY_REDDIT
-import app.tada.util.findFieldFromToString
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.findFieldFromToString
+import app.morphe.util.setExtensionIsPatchIncluded
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/reddit/patches/HideAdsPatch;"
+    "Lapp/morphe/extension/reddit/patches/HideAdsPatch;"
 
 @Suppress("unused")
 val hideAdsPatch = bytecodePatch(

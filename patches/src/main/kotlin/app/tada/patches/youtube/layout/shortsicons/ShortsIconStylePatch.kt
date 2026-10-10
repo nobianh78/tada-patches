@@ -7,8 +7,8 @@
 
 package app.tada.patches.youtube.layout.shortsicons
 
-import app.tada.patcher.patch.filePathOption
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.filePathOption
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.youtube.layout.player.icons.CustomIcons
 import app.tada.patches.youtube.layout.player.icons.copyIconStyles
@@ -75,12 +75,12 @@ val shortsIconStylePatch = resourcePatch(
             if (custom == null) {
                 ListPreference(
                     key = "tada_shorts_icon_style",
-                    tag = "app.tada.extension.youtube.settings.preference.PlayerIconStyleListPreference"
+                    tag = "app.morphe.extension.youtube.settings.preference.PlayerIconStyleListPreference"
                 )
             } else {
                 ListPreference(
                     key = "tada_shorts_icon_style",
-                    tag = "app.tada.extension.youtube.settings.preference.PlayerIconStyleListPreference",
+                    tag = "app.morphe.extension.youtube.settings.preference.PlayerIconStyleListPreference",
                     entriesKey = "tada_shorts_icon_style_custom_entries",
                     entryValuesKey = "tada_shorts_icon_style_custom_entry_values"
                 )

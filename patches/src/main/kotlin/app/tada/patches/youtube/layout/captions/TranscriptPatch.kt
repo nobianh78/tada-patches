@@ -1,6 +1,6 @@
 package app.tada.patches.youtube.layout.captions
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.contexthook.Endpoint
 import app.tada.patches.youtube.misc.contexthook.addClientVersionHook
@@ -10,7 +10,7 @@ import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.misc.settings.settingsPatch
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/TranscriptPatch;"
+    "Lapp/morphe/extension/youtube/patches/TranscriptPatch;"
 
 internal val transcriptPatch = bytecodePatch(
     description = "Add an option to fix an issue where transcript is unavailable due to a precondition check failure.",

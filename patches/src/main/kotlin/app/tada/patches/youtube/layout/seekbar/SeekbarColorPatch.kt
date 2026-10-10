@@ -10,11 +10,11 @@
 
 package app.tada.patches.youtube.layout.seekbar
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.shared.layout.theme.lithoColorHookPatch
 import app.tada.patches.shared.layout.theme.lithoColorOverrideHook
 import app.tada.patches.youtube.layout.theme.splashAnimationPatch
@@ -23,11 +23,11 @@ import app.tada.patches.youtube.misc.playservice.is_20_34_or_greater
 import app.tada.patches.youtube.misc.playservice.is_21_21_or_greater
 import app.tada.patches.youtube.misc.playservice.is_21_30_or_greater
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.insertLiteralOverride
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/theme/SeekbarColorPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/theme/SeekbarColorPatch;"
 
 val seekbarColorPatch = bytecodePatch(
     description = "Hide or set a custom seekbar color",

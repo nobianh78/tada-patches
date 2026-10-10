@@ -7,7 +7,7 @@
 
 package app.tada.patches.youtube.video.livestream
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
@@ -19,7 +19,7 @@ import app.tada.patches.youtube.video.information.videoInformationPatch
 import app.tada.patches.youtube.video.information.videoTimeHook
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/playback/livestream/RememberLiveStreamPositionPatch;"
+    "Lapp/morphe/extension/youtube/patches/playback/livestream/RememberLiveStreamPositionPatch;"
 
 @Suppress("unused")
 val rememberLiveStreamPositionPatch = bytecodePatch(

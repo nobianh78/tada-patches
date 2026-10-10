@@ -7,15 +7,15 @@
 
 package app.tada.patches.youtube.layout.flyout
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.InstructionLocation.MatchAfterWithin
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.string
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation.MatchAfterWithin
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.string
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.misc.litho.filter.addLithoFilter
 import app.tada.patches.shared.misc.proto.hookElement
 import app.tada.patches.youtube.layout.hide.general.ContextualMenuItemBuilderFingerprint
@@ -24,11 +24,11 @@ import app.tada.patches.youtube.misc.litho.filter.lithoFilterPatch
 import app.tada.patches.youtube.misc.proto.elementProtoParserHookPatch
 import app.tada.patches.youtube.shared.StartVideoInformerFingerprint
 import app.tada.patches.youtube.video.information.videoInformationPatch
-import app.tada.util.cloneParameters
-import app.tada.util.findFreeRegister
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.getReference
-import app.tada.util.numberOfParameterRegisters
+import app.morphe.util.cloneParameters
+import app.morphe.util.findFreeRegister
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.getReference
+import app.morphe.util.numberOfParameterRegisters
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -40,13 +40,13 @@ import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 
 private const val EXTENSION_UTILS_CLASS =
-    "Lapp/tada/extension/youtube/patches/utils/FlyoutUtils;"
+    "Lapp/morphe/extension/youtube/patches/utils/FlyoutUtils;"
 
 private const val EXTENSION_FLYOUT_MENU_VIDEO_ID_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/utils/FlyoutUtils$FlyoutMenuVideoIdInterface;"
+    $$"Lapp/morphe/extension/youtube/patches/utils/FlyoutUtils$FlyoutMenuVideoIdInterface;"
 
 private const val EXTENSION_PROTOCOL_BUFFER_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/utils/FlyoutUtils$ProtocolBufferFieldInterface;"
+    $$"Lapp/morphe/extension/youtube/patches/utils/FlyoutUtils$ProtocolBufferFieldInterface;"
 
 val flyoutPatch = bytecodePatch(
     description = "Provides shared flyout menu hooks.",
@@ -209,7 +209,7 @@ val flyoutPatch = bytecodePatch(
 
         hookElement("$EXTENSION_UTILS_CLASS->onCommentsLoaded")
         addLithoFilter(
-            "Lapp/tada/extension/youtube/patches/components/ChannelPageFlyoutFilter;"
+            "Lapp/morphe/extension/youtube/patches/components/ChannelPageFlyoutFilter;"
         )
 
         // Track and initialize flyout menu buttons generically.

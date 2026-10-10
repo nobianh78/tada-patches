@@ -7,7 +7,7 @@
 
 package app.tada.patches.youtube.misc.refreshrate
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.tada.patches.shared.misc.refreshrate.baseAppRefreshRatePatch
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
@@ -15,7 +15,7 @@ import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.shared.YouTubeActivityOnCreateFingerprint
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/AppRefreshRatePatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/AppRefreshRatePatch;"
 
 @Suppress("unused")
 val appRefreshRatePatch = baseAppRefreshRatePatch(

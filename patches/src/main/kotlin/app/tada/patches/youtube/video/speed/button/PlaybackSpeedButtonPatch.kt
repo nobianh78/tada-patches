@@ -10,8 +10,8 @@
 
 package app.tada.patches.youtube.video.speed.button
 
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.layout.buttons.overlay.addPlayerOverlayPreferences
 import app.tada.patches.youtube.layout.buttons.overlay.playerOverlayButtonsSettingsPatch
@@ -36,7 +36,7 @@ private val playbackSpeedButtonResourcePatch = resourcePatch {
 }
 
 private const val EXTENSION_BUTTON =
-    "Lapp/tada/extension/youtube/videoplayer/PlaybackSpeedDialogButton;"
+    "Lapp/morphe/extension/youtube/videoplayer/PlaybackSpeedDialogButton;"
 
 val playbackSpeedButtonPatch = bytecodePatch(
     description = "Adds the option to display playback speed dialog button in the video player.",

@@ -7,21 +7,21 @@
 
 package app.tada.patches.reddit.layout.navigation
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.reddit.misc.settings.settingsPatch
 import app.tada.patches.reddit.misc.version.is_2026_25_0_or_greater
 import app.tada.patches.reddit.misc.version.versionCheckPatch
 import app.tada.patches.reddit.shared.Constants.COMPATIBILITY_REDDIT
-import app.tada.util.findFreeRegister
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.getReference
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.findFreeRegister
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.getReference
+import app.morphe.util.setExtensionIsPatchIncluded
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
@@ -30,10 +30,10 @@ import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/reddit/patches/HideNavigationButtonsPatch;"
+    "Lapp/morphe/extension/reddit/patches/HideNavigationButtonsPatch;"
 
 private const val EXTENSION_HEADER_ITEM_INTERFACE =
-    $$"Lapp/tada/extension/reddit/patches/HideNavigationButtonsPatch$NavigationButtonInterface;"
+    $$"Lapp/morphe/extension/reddit/patches/HideNavigationButtonsPatch$NavigationButtonInterface;"
 
 @Suppress("unused")
 val hideNavigationButtonsPatch = bytecodePatch(

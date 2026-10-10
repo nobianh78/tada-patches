@@ -10,16 +10,16 @@
 
 package app.tada.patches.shared.layout.branding.header
 
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.ResourcePatch
-import app.tada.patcher.patch.ResourcePatchBuilder
-import app.tada.patcher.patch.ResourcePatchContext
-import app.tada.patcher.patch.folderOption
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.ResourcePatch
+import app.morphe.patcher.patch.ResourcePatchBuilder
+import app.morphe.patcher.patch.ResourcePatchContext
+import app.morphe.patcher.patch.folderOption
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.BasePreferenceScreen
 import app.tada.patches.shared.misc.settings.preference.ListPreference
-import app.tada.util.ResourceGroup
-import app.tada.util.copyResources
+import app.morphe.util.ResourceGroup
+import app.morphe.util.copyResources
 import java.io.File
 
 const val CUSTOM_HEADER_RESOURCE_NAME = "tada_header_custom"

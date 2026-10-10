@@ -7,9 +7,9 @@
 
 package app.tada.patches.youtube.layout.scrolling
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.checkCast
-import app.tada.patcher.fieldAccess
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.checkCast
+import app.morphe.patcher.fieldAccess
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 

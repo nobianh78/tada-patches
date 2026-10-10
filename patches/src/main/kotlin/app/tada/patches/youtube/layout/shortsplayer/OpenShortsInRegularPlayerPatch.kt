@@ -10,7 +10,7 @@
 
 package app.tada.patches.youtube.layout.shortsplayer
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.youtube.interaction.reload.reloadVideoButtonPatch
 import app.tada.patches.youtube.layout.player.fullscreen.openVideosFullscreenHookPatch
@@ -24,7 +24,7 @@ import app.tada.patches.youtube.shared.hookVideoIntent
 import app.tada.patches.youtube.shared.openVideoIntentPatch
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/OpenShortsInRegularPlayerPatch;"
+    "Lapp/morphe/extension/youtube/patches/OpenShortsInRegularPlayerPatch;"
 
 @Suppress("unused")
 val openShortsInRegularPlayerPatch = bytecodePatch(

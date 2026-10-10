@@ -10,14 +10,14 @@
 
 package app.tada.patches.youtube.misc.fix.contentprovider
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/FixContentProviderPatch;"
+    "Lapp/morphe/extension/youtube/patches/FixContentProviderPatch;"
 
 /**
  * Fixes crashing for some users with a beta release where the YouTube content provider uses null map values.

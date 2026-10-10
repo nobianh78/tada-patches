@@ -1,6 +1,6 @@
 package app.tada.patches.youtube.misc.fix.pipchatbar
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 import app.tada.patches.youtube.shared.YOUTUBE_MAIN_ACTIVITY_CLASS_TYPE
 
 internal object PipModeChangedFingerprint : Fingerprint(

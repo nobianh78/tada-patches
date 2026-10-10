@@ -7,14 +7,14 @@
 
 package app.tada.patches.shared.misc.textcomponent
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.newInstance
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.newInstance
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.shared.LithoSpannableStringCreationFingerprint
 import app.tada.patches.shared.SpannableStringBuilderFingerprint
 import app.tada.patches.shared.TextComponentConstructorFingerprint
@@ -24,12 +24,12 @@ import app.tada.patches.shared.misc.litho.context.EXTENSION_CONTEXT_INTERFACE
 import app.tada.patches.shared.misc.litho.context.conversionContextClassDef
 import app.tada.patches.shared.misc.litho.context.conversionContextPatch
 import app.tada.patches.youtube.layout.returnyoutubedislike.TextComponentDataFingerprint
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.cloneParameters
-import app.tada.util.findFreeRegister
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.insertLiteralOverride
-import app.tada.util.numberOfParameterRegistersLogical
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.cloneParameters
+import app.morphe.util.findFreeRegister
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.insertLiteralOverride
+import app.morphe.util.numberOfParameterRegistersLogical
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Field
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
@@ -54,7 +54,7 @@ private var lithoSpannableStringCreationConversionContextRegister = -1
 private var lithoSpannableStringCreationConversionContextField : String = ""
 private var lithoSpannableStringCreationCharSequenceRegister = -1
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/shared/patches/TextComponentPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/shared/patches/TextComponentPatch;"
 
 val textComponentPatch = bytecodePatch(
     description = "Provides hooks into text components for extension filtering."

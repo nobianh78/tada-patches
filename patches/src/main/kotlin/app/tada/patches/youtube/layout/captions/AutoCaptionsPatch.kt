@@ -10,10 +10,10 @@
 
 package app.tada.patches.youtube.layout.captions
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playservice.is_20_26_or_greater
@@ -22,11 +22,11 @@ import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.StartVideoInformerFingerprint
 import app.tada.patches.youtube.video.information.onCreateHook
 import app.tada.patches.youtube.video.information.videoInformationPatch
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.insertLiteralOverride
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/AutoCaptionsPatch;"
+    "Lapp/morphe/extension/youtube/patches/AutoCaptionsPatch;"
 
 internal val autoCaptionsPatch = bytecodePatch(
     description = "Adds an option to disable captions from being automatically enabled.",

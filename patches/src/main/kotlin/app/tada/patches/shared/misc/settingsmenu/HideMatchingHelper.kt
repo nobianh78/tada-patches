@@ -7,12 +7,12 @@
 
 package app.tada.patches.shared.misc.settingsmenu
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
-import app.tada.patcher.util.smali.ExternalLabel
-import app.tada.util.getReference
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.util.smali.ExternalLabel
+import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
@@ -21,7 +21,7 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
 private const val PREFERENCE_GROUP_CLASS = "Landroidx/preference/PreferenceGroup;"
 private const val PREFERENCE_CLASS = "Landroidx/preference/Preference;"
-internal const val SETTINGS_MENU_FILTER_CLASS = "Lapp/tada/extension/shared/patches/BaseSettingsMenuFilter;"
+internal const val SETTINGS_MENU_FILTER_CLASS = "Lapp/morphe/extension/shared/patches/BaseSettingsMenuFilter;"
 
 /**
  * Smali descriptor of the helper method injected by [injectHideMatchingHelper].

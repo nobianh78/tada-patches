@@ -10,10 +10,10 @@
 
 package app.tada.patches.youtube.interaction.swipecontrols
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.misc.settings.preference.InputType
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
@@ -30,13 +30,13 @@ import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.shared.YouTubeMainActivityConstructorFingerprint
 import app.tada.patches.youtube.video.audio.soundBoostPatch
 import app.tada.patches.youtube.video.information.videoInformationPatch
-import app.tada.util.insertLiteralOverride
-import app.tada.util.transformMethods
-import app.tada.util.traverseClassHierarchy
+import app.morphe.util.insertLiteralOverride
+import app.morphe.util.transformMethods
+import app.morphe.util.traverseClassHierarchy
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 
-internal const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/swipecontrols/SwipeControlsHostActivity;"
+internal const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/swipecontrols/SwipeControlsHostActivity;"
 
 private val swipeControlsResourcePatch = resourcePatch {
     dependsOn(
@@ -73,33 +73,33 @@ private val swipeControlsResourcePatch = resourcePatch {
             ),
             NonInteractivePreference(
                 key = "tada_swipe_zone_width",
-                tag = "app.tada.extension.shared.settings.preference.SeekBarPreference"
+                tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference"
             ),
             NonInteractivePreference(
                 key = "tada_swipe_speed_zone_height",
-                tag = "app.tada.extension.shared.settings.preference.SeekBarPreference"
+                tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference"
             ),
             NonInteractivePreference(
                 key = "tada_swipe_zone_preview",
                 summaryKey = null,
-                tag = "app.tada.extension.youtube.settings.preference.SwipeZonePreference"
+                tag = "app.morphe.extension.youtube.settings.preference.SwipeZonePreference"
             ),
             NonInteractivePreference(
                 key = "tada_swipe_brightness_sensitivity",
-                tag = "app.tada.extension.shared.settings.preference.SeekBarPreference"
+                tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference"
             ),
             NonInteractivePreference(
                 key = "tada_swipe_volume_distance",
-                tag = "app.tada.extension.shared.settings.preference.SeekBarPreference"
+                tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference"
             ),
             ListPreference(
                 "tada_swipe_volume_steps",
-                tag = "app.tada.extension.youtube.settings.preference.SwipeVolumeStepsPreference"
+                tag = "app.morphe.extension.youtube.settings.preference.SwipeVolumeStepsPreference"
             ),
             SwitchPreference("tada_volume_boost", summary = true),
             NonInteractivePreference(
                 key = "tada_swipe_speed_sensitivity",
-                tag = "app.tada.extension.shared.settings.preference.SeekBarPreference"
+                tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference"
             ),
             ListPreference("tada_swipe_speed_step"),
             SwitchPreference("tada_swipe_ignore_when_locked", summary = true),
@@ -110,23 +110,23 @@ private val swipeControlsResourcePatch = resourcePatch {
             ListPreference("tada_swipe_overlay_style"),
             NonInteractivePreference(
                 key = "tada_swipe_overlay_background_opacity",
-                tag = "app.tada.extension.shared.settings.preference.SeekBarPreference"
+                tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference"
             ),
             TextPreference("tada_swipe_overlay_progress_brightness_color",
-                tag = "app.tada.extension.shared.settings.preference.ColorPickerWithOpacitySliderPreference",
+                tag = "app.morphe.extension.shared.settings.preference.ColorPickerWithOpacitySliderPreference",
                 inputType = InputType.TEXT_CAP_CHARACTERS
             ),
             TextPreference("tada_swipe_overlay_progress_volume_color",
-                tag = "app.tada.extension.shared.settings.preference.ColorPickerWithOpacitySliderPreference",
+                tag = "app.morphe.extension.shared.settings.preference.ColorPickerWithOpacitySliderPreference",
                 inputType = InputType.TEXT_CAP_CHARACTERS
             ),
             TextPreference("tada_swipe_overlay_progress_speed_color",
-                tag = "app.tada.extension.shared.settings.preference.ColorPickerWithOpacitySliderPreference",
+                tag = "app.morphe.extension.shared.settings.preference.ColorPickerWithOpacitySliderPreference",
                 inputType = InputType.TEXT_CAP_CHARACTERS
             ),
             NonInteractivePreference(
                 key = "tada_swipe_text_overlay_size",
-                tag = "app.tada.extension.shared.settings.preference.SeekBarPreference"
+                tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference"
             ),
             TextPreference("tada_swipe_overlay_timeout", inputType = InputType.NUMBER),
             TextPreference("tada_swipe_threshold", inputType = InputType.NUMBER)

@@ -1,16 +1,16 @@
 package app.tada.patches.youtube.interaction.seekbar
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/DisablePreciseSeekingGesturePatch;"
+    "Lapp/morphe/extension/youtube/patches/DisablePreciseSeekingGesturePatch;"
 
 val disablePreciseSeekingGesturePatch = bytecodePatch(
     description = "Adds an option to disable precise seeking when swiping up on the seekbar.",

@@ -8,29 +8,29 @@
 
 package app.tada.patches.youtube.layout.player.icons
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.ResourcePatchContext
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.filePathOption
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resource.resourceId
-import app.tada.patcher.util.proxy.mutableTypes.MutableClass
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.ResourcePatchContext
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.filePathOption
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resource.resourceId
+import app.morphe.patcher.util.proxy.mutableTypes.MutableClass
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.ResourceGroup
-import app.tada.util.copyResources
-import app.tada.util.findInstructionIndicesReversed
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionReversed
-import app.tada.util.inputStreamFromBundledResource
+import app.morphe.util.ResourceGroup
+import app.morphe.util.copyResources
+import app.morphe.util.findInstructionIndicesReversed
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionReversed
+import app.morphe.util.inputStreamFromBundledResource
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.RegisterRangeInstruction
@@ -225,7 +225,7 @@ internal fun customIconsOptionDescription(example: String) = """
 """
 
 private const val APP_PLAYER_ICON_DRAWABLE =
-    "app.tada.extension.youtube.videoplayer.AppPlayerIconDrawable"
+    "app.morphe.extension.youtube.videoplayer.AppPlayerIconDrawable"
 
 // App icon, the name its original is moved to, and the wrapper that takes its place.
 private val appPlayerIcons = listOf(
@@ -327,14 +327,14 @@ private fun ResourcePatchContext.wrapAppSelectorIcons(selectorName: String, wrap
 }
 
 private const val EXTENSION_PLAY_PAUSE_ICONS =
-    "Lapp/tada/extension/youtube/videoplayer/PlayPauseIcons;"
+    "Lapp/morphe/extension/youtube/videoplayer/PlayPauseIcons;"
 
 // The cast button, which loads the icon of each cast state itself.
 private const val MDX_ENTRY_POINT_BUTTON_CLASS =
     "Lcom/google/android/libraries/youtube/mdx/mediaroute/entrypoint/MdxEntryPointButton;"
 
 private const val EXTENSION_PLAYER_BUTTON_ICONS =
-    "Lapp/tada/extension/youtube/videoplayer/PlayerButtonIcons;"
+    "Lapp/morphe/extension/youtube/videoplayer/PlayerButtonIcons;"
 
 // The extension takes an ImageView, so only calls on these classes can be redirected to it.
 private val imageViewClasses = listOf(
@@ -503,12 +503,12 @@ val playerIconStylePatch = resourcePatch(
             if (customPlayerIcons == null) {
                 ListPreference(
                     key = "tada_player_icon_style",
-                    tag = "app.tada.extension.youtube.settings.preference.PlayerIconStyleListPreference"
+                    tag = "app.morphe.extension.youtube.settings.preference.PlayerIconStyleListPreference"
                 )
             } else {
                 ListPreference(
                     key = "tada_player_icon_style",
-                    tag = "app.tada.extension.youtube.settings.preference.PlayerIconStyleListPreference",
+                    tag = "app.morphe.extension.youtube.settings.preference.PlayerIconStyleListPreference",
                     entriesKey = "tada_player_icon_style_custom_entries",
                     entryValuesKey = "tada_player_icon_style_custom_entry_values"
                 )

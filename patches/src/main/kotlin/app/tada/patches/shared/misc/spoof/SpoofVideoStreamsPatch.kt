@@ -10,33 +10,33 @@
 
 package app.tada.patches.shared.misc.spoof
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.OpcodesFilter.Companion.opcodesToFilters
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.OpcodesFilter.Companion.opcodesToFilters
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.BuildInnerTubeProtoRequestUriFingerprint
 import app.tada.patches.shared.BuildInnerTubeProtoRequestUriLegacyFingerprint
 import app.tada.patches.shared.misc.fix.proto.fixProtoLibraryPatch
 import app.tada.patches.shared.misc.fix.proto.parseByteArrayMethodRef
 import app.tada.patches.shared.misc.request.buildRequestPatch
 import app.tada.patches.shared.misc.request.hookBuildRequest
-import app.tada.util.ResourceGroup
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.copyResources
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.insertLiteralOverride
-import app.tada.util.registersUsed
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.ResourceGroup
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.copyResources
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.insertLiteralOverride
+import app.morphe.util.registersUsed
+import app.morphe.util.setExtensionIsPatchIncluded
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -50,7 +50,7 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/shared/spoof/SpoofVideoStreamsPatch;"
+    "Lapp/morphe/extension/shared/spoof/SpoofVideoStreamsPatch;"
 
 context(patchContext: BytecodePatchContext)
 internal fun addMediaSessionOverride(extension: String) {

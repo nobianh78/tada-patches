@@ -9,7 +9,7 @@ package app.tada.patches.reddit.misc.extension
 
 import app.tada.patches.reddit.misc.extension.hooks.redditActivityOnCreateHook
 import app.tada.patches.reddit.misc.extension.hooks.redditApplicationOnCreateHook
-import app.tada.patches.all.misc.extension.sharedExtensionPatch
+import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 
 val sharedExtensionPatch = sharedExtensionPatch(
     listOf("reddit"),

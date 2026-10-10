@@ -7,15 +7,15 @@
 
 package app.tada.patches.reddit.misc.openlink
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.reddit.misc.settings.settingsPatch
 import app.tada.patches.reddit.shared.Constants.COMPATIBILITY_REDDIT
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.setExtensionIsPatchIncluded
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/reddit/patches/OpenLinksExternallyPatch;"
+    "Lapp/morphe/extension/reddit/patches/OpenLinksExternallyPatch;"
 
 @Suppress("unused")
 val openLinksExternallyPatch = bytecodePatch(

@@ -1,9 +1,9 @@
 package app.tada.patches.youtube.interaction.doubletap
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.OpcodesFilter.Companion.opcodesToFilters
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.OpcodesFilter.Companion.opcodesToFilters
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
@@ -14,7 +14,7 @@ import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/DisableDoubleTapActionsPatch;"
+    "Lapp/morphe/extension/youtube/patches/DisableDoubleTapActionsPatch;"
 
 @Suppress("unused")
 val disableDoubleTapActionsPatch = bytecodePatch(

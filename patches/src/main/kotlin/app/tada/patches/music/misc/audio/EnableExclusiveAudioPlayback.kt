@@ -10,12 +10,12 @@
 
 package app.tada.patches.music.misc.audio
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.playservice.is_9_32_or_greater
 import app.tada.patches.music.misc.settings.settingsPatch
 import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
-import app.tada.util.returnEarly
+import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val enableExclusiveAudioPlaybackPatch = bytecodePatch(

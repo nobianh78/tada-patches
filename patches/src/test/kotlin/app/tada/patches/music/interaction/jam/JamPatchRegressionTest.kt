@@ -7,15 +7,15 @@
 
 package app.tada.patches.music.interaction.jam
 
-import app.tada.patcher.Patcher
-import app.tada.patcher.PatcherConfig
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableField.Companion.toMutable
+import app.morphe.patcher.Patcher
+import app.morphe.patcher.PatcherConfig
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableField.Companion.toMutable
 import app.tada.patches.all.misc.resources.resourceMappingPatch
-import app.tada.util.getMutableMethod
-import app.tada.util.matchSingle
+import app.morphe.util.getMutableMethod
+import app.morphe.util.matchSingle
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.immutable.ImmutableField
 import kotlinx.coroutines.runBlocking

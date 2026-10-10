@@ -7,23 +7,23 @@
 
 package app.tada.patches.shared.misc.potoken
 
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.InstallerType
-import app.tada.patcher.patch.PatchAvailability
-import app.tada.patcher.patch.ResourcePatchContext
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.InstallerType
+import app.morphe.patcher.patch.PatchAvailability
+import app.morphe.patcher.patch.ResourcePatchContext
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.all.misc.clone.setOrGetFallbackPackageName
 import app.tada.patches.shared.misc.settings.preference.BasePreferenceScreen
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.registersUsed
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.registersUsed
 import java.util.logging.Logger
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/shared/patches/PoTokenProviderPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/shared/patches/PoTokenProviderPatch;"
 
 private lateinit var resourceContext: ResourcePatchContext
 
@@ -106,11 +106,11 @@ internal fun poTokenProviderPatch(
                     SwitchPreference(
                         key = "tada_external_potoken_provider",
                         summary = true,
-                        tag = "app.tada.extension.shared.settings.preference.ExternalPoTokenProviderPreference"
+                        tag = "app.morphe.extension.shared.settings.preference.ExternalPoTokenProviderPreference"
                     ),
                     NonInteractivePreference(
                         key = "tada_external_potoken_provider_about",
-                        tag = "app.tada.extension.shared.settings.preference.ExternalPoTokenProviderAboutPreference",
+                        tag = "app.morphe.extension.shared.settings.preference.ExternalPoTokenProviderAboutPreference",
                         selectable = true,
                     )
                 )

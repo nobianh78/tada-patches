@@ -1,8 +1,8 @@
 package app.tada.patches.music.misc.backgroundplayback
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.OpcodesFilter
-import app.tada.patcher.literal
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.OpcodesFilter
+import app.morphe.patcher.literal
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 

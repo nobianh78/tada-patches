@@ -7,7 +7,7 @@
 
 package app.tada.patches.reddit.misc.fix.signature
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 
 internal object ApplicationFingerprint : Fingerprint(
     name = "attachBaseContext",

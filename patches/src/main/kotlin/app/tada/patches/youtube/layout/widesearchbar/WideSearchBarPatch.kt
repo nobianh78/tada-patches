@@ -7,7 +7,7 @@
 
 package app.tada.patches.youtube.layout.widesearchbar
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playservice.is_20_31_or_greater
@@ -17,10 +17,10 @@ import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.misc.toolbar.hookToolBar
 import app.tada.patches.youtube.misc.toolbar.toolBarHookPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.addInstructionsAtControlFlowLabel
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/WideSearchBarPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/WideSearchBarPatch;"
 
 @Suppress("unused")
 val wideSearchBarPatch = bytecodePatch(

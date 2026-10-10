@@ -26,20 +26,20 @@
 
 package app.tada.patches.all.misc.clone
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.Option
-import app.tada.patcher.patch.OptionException
-import app.tada.patcher.patch.booleanOption
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.patch.stringOption
-import app.tada.util.asSequence
-import app.tada.util.findElementByAttributeValue
-import app.tada.util.findInstructionIndicesReversedOrThrow
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.Option
+import app.morphe.patcher.patch.OptionException
+import app.morphe.patcher.patch.booleanOption
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.stringOption
+import app.morphe.util.asSequence
+import app.morphe.util.findElementByAttributeValue
+import app.morphe.util.findInstructionIndicesReversedOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import org.w3c.dom.Element

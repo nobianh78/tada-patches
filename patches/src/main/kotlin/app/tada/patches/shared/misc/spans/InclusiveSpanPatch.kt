@@ -9,19 +9,19 @@
 
 package app.tada.patches.shared.misc.spans
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.SpannableStringBuilderFingerprint
 import app.tada.patches.shared.misc.textcomponent.hookSpannableString
 import app.tada.patches.shared.misc.textcomponent.textComponentPatch
-import app.tada.util.fiveRegisters
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionReversedOrThrow
+import app.morphe.util.fiveRegisters
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionReversedOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -31,9 +31,9 @@ import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import java.lang.ref.WeakReference
 
-internal const val EXTENSION_SPANS_CLASS = "Lapp/tada/extension/shared/patches/spans/InclusiveSpanPatch;"
+internal const val EXTENSION_SPANS_CLASS = "Lapp/morphe/extension/shared/patches/spans/InclusiveSpanPatch;"
 
-internal const val EXTENSION_FILTER_ARRAY = "[Lapp/tada/extension/shared/patches/spans/SpanFilter;"
+internal const val EXTENSION_FILTER_ARRAY = "[Lapp/morphe/extension/shared/patches/spans/SpanFilter;"
 
 // Registers used in extension helperMethod.
 private const val REGISTER_FILTER_CLASS = 0

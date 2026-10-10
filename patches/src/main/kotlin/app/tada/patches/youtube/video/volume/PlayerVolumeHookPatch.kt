@@ -7,13 +7,13 @@
 
 package app.tada.patches.youtube.video.volume
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 
 internal const val PLAYER_VOLUME_CLASS_DESCRIPTOR =
-    "Lapp/tada/extension/youtube/patches/PlayerVolumePatch;"
+    "Lapp/morphe/extension/youtube/patches/PlayerVolumePatch;"
 
 // Scales the video playback volume at the ExoPlayer audio sink.
 internal val playerVolumeHookPatch = bytecodePatch(

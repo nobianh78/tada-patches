@@ -7,12 +7,12 @@
 
 package app.tada.patches.music.misc.settings
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.all.misc.clone.setOrGetFallbackPackageName
-import app.tada.patches.all.misc.fix.openurllinks.removeLinkVerification
+import app.morphe.patches.all.misc.fix.openurllinks.removeLinkVerification
 import app.tada.patches.all.misc.resources.addAppResources
 import app.tada.patches.all.misc.resources.addResourcesPatch
 import app.tada.patches.all.misc.resources.localesYouTube
@@ -42,17 +42,17 @@ import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.TextPreference
 import app.tada.patches.shared.misc.settings.settingsPatch
 import app.tada.patches.youtube.misc.settings.modifyActivityForSettingsInjection
-import app.tada.util.ResourceGroup
-import app.tada.util.copyResources
-import app.tada.util.copyXmlNode
-import app.tada.util.getFreeRegisterProvider
-import app.tada.util.getReference
-import app.tada.util.inputStreamFromBundledResource
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.ResourceGroup
+import app.morphe.util.copyResources
+import app.morphe.util.copyXmlNode
+import app.morphe.util.getFreeRegisterProvider
+import app.morphe.util.getReference
+import app.morphe.util.inputStreamFromBundledResource
+import app.morphe.util.insertLiteralOverride
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 
-private const val MUSIC_ACTIVITY_HOOK_CLASS = "Lapp/tada/extension/music/settings/MusicActivityHook;"
+private const val MUSIC_ACTIVITY_HOOK_CLASS = "Lapp/morphe/extension/music/settings/MusicActivityHook;"
 
 private val preferences = mutableSetOf<BasePreference>()
 
@@ -160,7 +160,7 @@ val settingsPatch = bytecodePatch(
             icon = "@drawable/tada_settings_screen_00_about",
             iconBold = "@drawable/tada_settings_screen_00_about_bold",
             layout = "@layout/tada_preference_with_icon",
-            tag = "app.tada.extension.shared.settings.preference.about.TADaAboutPreference",
+            tag = "app.morphe.extension.shared.settings.preference.about.TADaAboutPreference",
             selectable = true
         )
 
@@ -176,11 +176,11 @@ val settingsPatch = bytecodePatch(
                 titleKey = "tada_pref_import_export_title",
                 summaryKey = "tada_pref_import_export_summary",
                 inputType = InputType.TEXT_MULTI_LINE,
-                tag = "app.tada.extension.shared.settings.preference.ImportExportPreference"
+                tag = "app.morphe.extension.shared.settings.preference.ImportExportPreference"
             ),
             ListPreference(
                 key = "tada_language",
-                tag = "app.tada.extension.shared.settings.preference.SortedListPreference"
+                tag = "app.morphe.extension.shared.settings.preference.SortedListPreference"
             )
         )
 

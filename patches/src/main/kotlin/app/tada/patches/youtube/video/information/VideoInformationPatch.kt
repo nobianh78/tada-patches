@@ -10,20 +10,20 @@
 
 package app.tada.patches.youtube.video.information
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableClass
-import app.tada.patcher.util.proxy.mutableTypes.MutableField
-import app.tada.patcher.util.proxy.mutableTypes.MutableField.Companion.toMutable
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
-import app.tada.patcher.util.smali.toInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableClass
+import app.morphe.patcher.util.proxy.mutableTypes.MutableField
+import app.morphe.patcher.util.proxy.mutableTypes.MutableField.Companion.toMutable
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.util.smali.toInstructions
 import app.tada.patches.shared.misc.litho.context.conversionContextPatch
 import app.tada.patches.shared.misc.textcomponent.hookSpannableString
 import app.tada.patches.shared.misc.textcomponent.textComponentPatch
@@ -46,9 +46,9 @@ import app.tada.patches.youtube.video.videoid.hookPlayerResponsePlaylistId
 import app.tada.patches.youtube.video.videoid.hookPlayerResponseVideoId
 import app.tada.patches.youtube.video.videoid.hookVideoId
 import app.tada.patches.youtube.video.videoid.videoIdPatch
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -66,17 +66,17 @@ import com.android.tools.smali.dexlib2.util.MethodUtil
 import java.lang.ref.WeakReference
 
 internal const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/VideoInformation;"
+    "Lapp/morphe/extension/youtube/patches/VideoInformation;"
 private const val EXTENSION_PLAYER_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/VideoInformation$PlaybackController;"
+    $$"Lapp/morphe/extension/youtube/patches/VideoInformation$PlaybackController;"
 internal const val EXTENSION_PLAYBACK_SPEED_MENU_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/VideoInformation$PlaybackSpeedMenuInterface;"
+    $$"Lapp/morphe/extension/youtube/patches/VideoInformation$PlaybackSpeedMenuInterface;"
 internal const val EXTENSION_EXOPLAYER_INTERFACE =
-    "Lapp/tada/extension/shared/patches/ExoPlayerInterface;"
+    "Lapp/morphe/extension/shared/patches/ExoPlayerInterface;"
 private const val EXTENSION_VIDEO_QUALITY_MENU_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/VideoInformation$VideoQualityMenuInterface;"
+    $$"Lapp/morphe/extension/youtube/patches/VideoInformation$VideoQualityMenuInterface;"
 internal const val EXTENSION_VIDEO_QUALITY_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/VideoInformation$VideoQualityInterface;"
+    $$"Lapp/morphe/extension/youtube/patches/VideoInformation$VideoQualityInterface;"
 
 private lateinit var playerInitMethodRef : WeakReference<MutableMethod>
 private var playerInitInsertIndex = -1

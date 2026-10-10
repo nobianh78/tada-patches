@@ -7,14 +7,14 @@
 
 package app.tada.patches.youtube.misc.backgesture
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.youtube.misc.playservice.is_20_40_or_greater
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 import java.lang.ref.WeakReference

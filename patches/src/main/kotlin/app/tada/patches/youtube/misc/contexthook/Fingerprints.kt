@@ -7,13 +7,13 @@
 
 package app.tada.patches.youtube.misc.contexthook
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.InstructionLocation.MatchAfterImmediately
-import app.tada.patcher.InstructionLocation.MatchAfterWithin
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.methodCall
-import app.tada.patcher.opcode
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation.MatchAfterImmediately
+import app.morphe.patcher.InstructionLocation.MatchAfterWithin
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.opcode
+import app.morphe.patcher.string
 import app.tada.patches.youtube.shared.BuildClientContextBodyConstructorFingerprint
 import app.tada.patches.youtube.shared.CLIENT_INFO_CLASS
 import com.android.tools.smali.dexlib2.AccessFlags

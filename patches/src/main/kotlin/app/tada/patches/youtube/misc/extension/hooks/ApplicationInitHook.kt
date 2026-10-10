@@ -1,8 +1,8 @@
 package app.tada.patches.youtube.misc.extension.hooks
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.string
-import app.tada.patches.all.misc.extension.ExtensionHook
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.string
+import app.morphe.patches.all.misc.extension.ExtensionHook
 import app.tada.patches.youtube.shared.YouTubeActivityOnCreateFingerprint
 
 internal object YouTubeApplicationInitFingerprint : Fingerprint(

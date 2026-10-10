@@ -7,22 +7,22 @@
 
 package app.tada.patches.youtube.misc.contexthook
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.fieldAccess
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playservice.is_21_21_or_greater
 import app.tada.patches.youtube.misc.playservice.is_21_33_or_greater
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.shared.CLIENT_INFO_CLASS
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.cloneParameters
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.cloneParameters
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation

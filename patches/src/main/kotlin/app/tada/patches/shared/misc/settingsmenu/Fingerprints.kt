@@ -7,8 +7,8 @@
 
 package app.tada.patches.shared.misc.settingsmenu
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.fieldAccess
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.fieldAccess
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 

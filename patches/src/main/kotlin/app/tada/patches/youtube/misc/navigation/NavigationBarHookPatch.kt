@@ -10,15 +10,15 @@
 
 package app.tada.patches.youtube.misc.navigation
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.instructions
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.instructions
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.youtube.misc.backgesture.addBackPressedHook
 import app.tada.patches.youtube.misc.backgesture.addPredictiveBackGestureHook
 import app.tada.patches.youtube.misc.backgesture.backGesturePatch
@@ -27,10 +27,10 @@ import app.tada.patches.youtube.misc.playertype.playerTypeHookPatch
 import app.tada.patches.youtube.misc.playservice.is_20_28_or_greater
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.shared.ActionBarSearchResultsFingerprint
-import app.tada.util.ResourceGroup
-import app.tada.util.copyResources
-import app.tada.util.findFreeRegister
-import app.tada.util.getReference
+import app.morphe.util.ResourceGroup
+import app.morphe.util.copyResources
+import app.morphe.util.findFreeRegister
+import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -44,11 +44,11 @@ import com.android.tools.smali.dexlib2.util.MethodUtil
 import java.lang.ref.WeakReference
 
 internal const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/shared/NavigationBar;"
+    "Lapp/morphe/extension/youtube/shared/NavigationBar;"
 internal const val EXTENSION_NAVIGATION_BUTTON_CLASS =
-    $$"Lapp/tada/extension/youtube/shared/NavigationBar$NavigationButton;"
+    $$"Lapp/morphe/extension/youtube/shared/NavigationBar$NavigationButton;"
 private const val EXTENSION_TOOLBAR_INTERFACE =
-    $$"Lapp/tada/extension/youtube/shared/NavigationBar$AppCompatToolbarPatchInterface;"
+    $$"Lapp/morphe/extension/youtube/shared/NavigationBar$AppCompatToolbarPatchInterface;"
 
 private lateinit var hookNavigationButtonCreatedMethodRef : WeakReference<MutableMethod>
 

@@ -10,21 +10,21 @@
 
 package app.tada.patches.youtube.video.codecs
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.matchAllMethodIndicesForEach
+import app.morphe.util.matchAllMethodIndicesForEach
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/DisableVideoCodecsPatch;"
+    "Lapp/morphe/extension/youtube/patches/DisableVideoCodecsPatch;"
 
 @Suppress("unused")
 val disableVideoCodecsPatch = bytecodePatch(
@@ -46,7 +46,7 @@ val disableVideoCodecsPatch = bytecodePatch(
             ),
             SwitchPreference(
                 key = "tada_force_avc_codec",
-                tag = "app.tada.extension.youtube.settings.preference.ForceAVCSwitchPreference"
+                tag = "app.morphe.extension.youtube.settings.preference.ForceAVCSwitchPreference"
             )
         )
 

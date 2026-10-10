@@ -8,10 +8,10 @@
 
 package app.tada.patches.music.layout.lyrics
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.all.misc.resources.addResourcesPatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.litho.filter.lithoFilterPatch
@@ -30,23 +30,23 @@ import app.tada.patches.shared.misc.settings.preference.PreferenceCategory
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference.Sorting
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.TextPreference
-import app.tada.util.ResourceGroup
-import app.tada.util.copyResources
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.ResourceGroup
+import app.morphe.util.copyResources
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import java.util.logging.Logger
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/music/patches/lyrics/LyricsPatch;"
-private const val PANEL_INSTALLER_CLASS = "Lapp/tada/extension/music/patches/lyrics/LyricsPanelInstaller;"
-private const val LOCKSCREEN_CLASS = "Lapp/tada/extension/music/patches/lyrics/LockScreenLyrics;"
-private const val MINIPLAYER_LYRICS_CLASS = "Lapp/tada/extension/music/patches/lyrics/MiniPlayerLyrics;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/music/patches/lyrics/LyricsPatch;"
+private const val PANEL_INSTALLER_CLASS = "Lapp/morphe/extension/music/patches/lyrics/LyricsPanelInstaller;"
+private const val LOCKSCREEN_CLASS = "Lapp/morphe/extension/music/patches/lyrics/LockScreenLyrics;"
+private const val MINIPLAYER_LYRICS_CLASS = "Lapp/morphe/extension/music/patches/lyrics/MiniPlayerLyrics;"
 
 private const val LYRICS_PANEL_FILTER =
-    "Lapp/tada/extension/music/patches/components/LyricsPanelFilter;"
+    "Lapp/morphe/extension/music/patches/components/LyricsPanelFilter;"
 
 @Suppress("unused")
 val lyricsPatch = bytecodePatch(
@@ -84,7 +84,7 @@ val lyricsPatch = bytecodePatch(
                         key = "tada_music_lyrics_source",
                         titleKey = null,
                         summaryKey = null,
-                        tag = "app.tada.extension.music.settings.preference.LyricsOrderedListPreference",
+                        tag = "app.morphe.extension.music.settings.preference.LyricsOrderedListPreference",
                         selectable = false,
                         dependency = "tada_music_lyrics_enabled"
                     )
@@ -115,7 +115,7 @@ val lyricsPatch = bytecodePatch(
                     NonInteractivePreference(
                         key = "tada_music_lyrics_text_size",
                         summaryKey = "tada_music_lyrics_text_size_summary",
-                        tag = "app.tada.extension.shared.settings.preference.SeekBarPreference",
+                        tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference",
                         selectable = true,
                         dependency = "tada_music_lyrics_enabled"
                     ),
@@ -134,7 +134,7 @@ val lyricsPatch = bytecodePatch(
                     SwitchPreference(
                         key = "tada_music_lyrics_use_ai_translation",
                         summary = true,
-                        tag = "app.tada.extension.music.settings.preference.LyricsAiConfigPreference"
+                        tag = "app.morphe.extension.music.settings.preference.LyricsAiConfigPreference"
                     ),
                     SwitchPreference("tada_music_lyrics_show_refresh_button", summary = true),
                     SwitchPreference("tada_music_lyrics_hide_info", summary = true),
@@ -149,7 +149,7 @@ val lyricsPatch = bytecodePatch(
                     NonInteractivePreference(
                         key = "tada_music_lyrics_offset_ms",
                         summaryKey = "tada_music_lyrics_offset_ms_summary",
-                        tag = "app.tada.extension.shared.settings.preference.SeekBarPreference",
+                        tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference",
                         selectable = true,
                         dependency = "tada_music_lyrics_enabled"
                     ),

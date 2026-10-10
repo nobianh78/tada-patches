@@ -7,9 +7,9 @@
 
 package app.tada.patches.music.interaction.crossfade
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.methodCall
-import app.tada.patcher.opcode
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.opcode
 import com.android.tools.smali.dexlib2.Opcode
 
 /**

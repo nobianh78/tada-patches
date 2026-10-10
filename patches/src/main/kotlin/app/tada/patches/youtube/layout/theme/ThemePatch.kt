@@ -10,15 +10,15 @@
 
 package app.tada.patches.youtube.layout.theme
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resourceLiteral
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resourceLiteral
 import app.tada.patches.shared.layout.theme.STYLE_DEFAULT_COLOR_NAMES_DARK
 import app.tada.patches.shared.layout.theme.STYLE_DEFAULT_COLOR_NAMES_LIGHT
 import app.tada.patches.shared.layout.theme.THEME_COLOR_EXTENSION_CLASS
@@ -47,16 +47,16 @@ import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.shared.LayoutConstructorFingerprint
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.forEachChildElement
-import app.tada.util.insertLiteralOverride
-import app.tada.util.matchAllMethodIndicesForEach
-import app.tada.util.registersUsed
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.forEachChildElement
+import app.morphe.util.insertLiteralOverride
+import app.morphe.util.matchAllMethodIndicesForEach
+import app.morphe.util.registersUsed
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import org.w3c.dom.Element
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/theme/ThemePatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/theme/ThemePatch;"
 
 /** The background of the light theme, and also the white the app draws over a video. */
 private const val STATIC_WHITE_COLOR_NAME = "yt_white1"
@@ -399,20 +399,20 @@ val themePatch = baseThemePatch(
                 noTitleUnsortedPreferenceCategory(
                     ListPreference(
                         "tada_theme_color_dark",
-                        tag = "app.tada.extension.shared.theme.ThemeColorListPreference"
+                        tag = "app.morphe.extension.shared.theme.ThemeColorListPreference"
                     ),
                     TextPreference(
                         "tada_theme_color_dark_custom",
-                        tag = "app.tada.extension.shared.settings.preference.ColorPickerPreference",
+                        tag = "app.morphe.extension.shared.settings.preference.ColorPickerPreference",
                         inputType = InputType.TEXT_CAP_CHARACTERS
                     ),
                     ListPreference(
                         "tada_theme_color_light",
-                        tag = "app.tada.extension.shared.theme.ThemeColorListPreference"
+                        tag = "app.morphe.extension.shared.theme.ThemeColorListPreference"
                     ),
                     TextPreference(
                         "tada_theme_color_light_custom",
-                        tag = "app.tada.extension.shared.settings.preference.ColorPickerPreference",
+                        tag = "app.morphe.extension.shared.settings.preference.ColorPickerPreference",
                         inputType = InputType.TEXT_CAP_CHARACTERS
                     ),
                     SwitchPreference("tada_theme_color_change_foreground", summary = true)
@@ -429,12 +429,12 @@ val themePatch = baseThemePatch(
             SwitchPreference("tada_seekbar_custom_color"),
             TextPreference(
                 "tada_seekbar_custom_color_primary",
-                tag = "app.tada.extension.shared.settings.preference.ColorPickerPreference",
+                tag = "app.morphe.extension.shared.settings.preference.ColorPickerPreference",
                 inputType = InputType.TEXT_CAP_CHARACTERS
             ),
             TextPreference(
                 "tada_seekbar_custom_color_accent",
-                tag = "app.tada.extension.shared.settings.preference.ColorPickerPreference",
+                tag = "app.morphe.extension.shared.settings.preference.ColorPickerPreference",
                 inputType = InputType.TEXT_CAP_CHARACTERS
             )
         )

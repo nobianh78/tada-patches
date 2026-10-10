@@ -10,14 +10,14 @@
 
 package app.tada.patches.youtube.video.quality
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.BasePreference
 import app.tada.patches.shared.misc.settings.preference.PreferenceCategory
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference.Sorting
 import app.tada.patches.youtube.misc.playservice.is_20_40_or_greater
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.insertLiteralOverride
 
 /**
  * Video quality settings. Used to organize all speed related settings together.
@@ -46,7 +46,7 @@ val videoQualityPatch = bytecodePatch(
                 key = "tada_01_video_key", // Dummy key to force the quality preferences first.
                 titleKey = null,
                 sorting = Sorting.UNSORTED,
-                tag = "app.tada.extension.shared.settings.preference.NoTitlePreferenceCategory",
+                tag = "app.morphe.extension.shared.settings.preference.NoTitlePreferenceCategory",
                 preferences = settingsMenuVideoQualityGroup
             )
         )

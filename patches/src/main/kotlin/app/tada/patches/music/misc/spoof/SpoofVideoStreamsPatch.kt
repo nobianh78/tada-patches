@@ -25,7 +25,7 @@ import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.spoof.spoofVideoStreamsPatch
 
 val spoofVideoStreamsPatch = spoofVideoStreamsPatch(
-    extensionClass = "Lapp/tada/extension/music/patches/spoof/SpoofVideoStreamsPatch;",
+    extensionClass = "Lapp/morphe/extension/music/patches/spoof/SpoofVideoStreamsPatch;",
     mainActivityOnCreateFingerprint = MusicActivityOnCreateFingerprint,
     // Only 8.11 to 8.14 needed this, and those versions are no longer supported.
     fixMediaFetchHotConfigAlternative = { false },
@@ -62,7 +62,7 @@ val spoofVideoStreamsPatch = spoofVideoStreamsPatch(
                     ListPreference("tada_spoof_video_streams_client_type"),
                     NonInteractivePreference(
                         key = "tada_spoof_video_streams_sign_in_android_vr_about",
-                        tag = "app.tada.extension.music.settings.preference.SpoofVideoStreamsSignInPreference",
+                        tag = "app.morphe.extension.music.settings.preference.SpoofVideoStreamsSignInPreference",
                         selectable = true,
                     ),
                 )

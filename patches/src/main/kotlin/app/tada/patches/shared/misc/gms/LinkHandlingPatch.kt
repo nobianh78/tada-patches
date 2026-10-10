@@ -1,6 +1,6 @@
 package app.tada.patches.shared.misc.gms
 
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.BasePreferenceScreen
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
 
@@ -21,7 +21,7 @@ internal fun linkHandlingPatch(
                 key = "tada_link_handling:$fromPackageName",
                 titleKey = "tada_link_handling_title",
                 summaryKey = "tada_link_handling_summary",
-                tag = "app.tada.extension.shared.settings.preference.LinkHandlingPreference",
+                tag = "app.morphe.extension.shared.settings.preference.LinkHandlingPreference",
                 selectable = true,
             )
         )

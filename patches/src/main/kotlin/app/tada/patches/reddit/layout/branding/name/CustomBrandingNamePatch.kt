@@ -7,8 +7,8 @@
 
 package app.tada.patches.reddit.layout.branding.name
 
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.patch.stringOption
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.stringOption
 import app.tada.patches.reddit.misc.fix.signature.spoofSignaturePatch
 import app.tada.patches.reddit.shared.Constants.COMPATIBILITY_REDDIT
 import java.io.FileWriter

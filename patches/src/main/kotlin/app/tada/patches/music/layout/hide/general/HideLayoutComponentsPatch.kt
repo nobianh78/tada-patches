@@ -7,9 +7,9 @@
 
 package app.tada.patches.music.layout.hide.general
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.litho.filter.lithoFilterPatch
 import app.tada.patches.music.misc.settings.PreferenceScreen
@@ -26,11 +26,11 @@ import app.tada.patches.youtube.ad.injectHideViewCall
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 private const val COMMENTS_FILTER =
-    "Lapp/tada/extension/music/patches/components/CommentsFilter;"
+    "Lapp/morphe/extension/music/patches/components/CommentsFilter;"
 private const val CUSTOM_FILTER =
-    "Lapp/tada/extension/music/patches/components/CustomFilter;"
+    "Lapp/morphe/extension/music/patches/components/CustomFilter;"
 private const val LAYOUT_COMPONENTS_FILTER =
-    "Lapp/tada/extension/music/patches/components/LayoutComponentsFilter;"
+    "Lapp/morphe/extension/music/patches/components/LayoutComponentsFilter;"
 
 @Suppress("unused")
 val hideLayoutComponentsPatch = bytecodePatch(

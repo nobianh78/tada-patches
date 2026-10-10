@@ -10,11 +10,11 @@
 
 package app.tada.patches.shared.misc.settings
 
-import app.tada.patcher.Fingerprint
-import app.tada.patches.all.misc.extension.SHARED_UTILS_EXTENSION_CLASS
+import app.morphe.patcher.Fingerprint
+import app.morphe.patches.all.misc.extension.SHARED_UTILS_EXTENSION_CLASS
 import com.android.tools.smali.dexlib2.AccessFlags
 
-private const val THEME_UTILS_EXTENSION_CLASS = "Lapp/tada/extension/shared/theme/ThemeUtils;"
+private const val THEME_UTILS_EXTENSION_CLASS = "Lapp/morphe/extension/shared/theme/ThemeUtils;"
 
 internal object ThemeLightColorResourceNameFingerprint : Fingerprint(
     definingClass = THEME_UTILS_EXTENSION_CLASS,

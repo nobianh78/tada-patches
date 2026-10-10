@@ -6,10 +6,10 @@ Tuy nhiên, có một số chuỗi "TADa" hoặc "tada" vẫn được cố ý g
 
 ## Các Chuỗi Cố Ý Giữ Lại
 
-1. **Gradle Plugins & Dependencies (`app.tada.patches`, `app.tada.extensions.library`)**
+1. **Gradle Plugins & Dependencies (`app.tada.patches`, `app.morphe.extensions.library`)**
    - **Lý do**: Đây là các Maven coordinates / plugin IDs trỏ tới các package nội bộ được host trên GitHub Packages của tổ chức gốc. Đổi tên những chuỗi này sẽ làm gãy hoàn toàn tiến trình build vì Gradle sẽ không tìm thấy các dependencies `tada` tương ứng trên mạng.
    
-2. **Package Names (`app.tada.extension.*`, `app.tada.patches.*`)**
+2. **Package Names (`app.morphe.extension.*`, `app.tada.patches.*`)**
    - **Lý do**: Tuân thủ yêu cầu ban đầu ("Chỉ đổi display strings... KHÔNG đổi package names... trừ khi đã xác minh đổi không gãy build và không gãy chức năng"). Cấu trúc thư mục của code vẫn giữ nguyên package gốc. Đổi các package này tiềm ẩn rủi ro rất cao làm gãy Smali patches vì patcher framework thường mapping class qua reflection hoặc hardcode package names.
    
 3. **Tên File Resources nội bộ (`tada_add_to_queue_button.xml`, `tada_fullscreen_enter.xml`, v.v.)**

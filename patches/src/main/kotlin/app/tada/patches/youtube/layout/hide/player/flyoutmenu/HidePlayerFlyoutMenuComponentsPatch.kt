@@ -10,8 +10,8 @@
 
 package app.tada.patches.youtube.layout.hide.player.flyoutmenu
 
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.fix.proto.fixProtoLibraryPatch
 import app.tada.patches.shared.misc.litho.filter.addLithoFilter
 import app.tada.patches.shared.misc.litho.node.hookTreeNodeResult
@@ -26,12 +26,12 @@ import app.tada.patches.youtube.misc.proto.elementProtoParserHookPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
-import app.tada.util.fiveRegisters
+import app.morphe.util.fiveRegisters
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/HidePlayerFlyoutMenuPatch;"
+    "Lapp/morphe/extension/youtube/patches/HidePlayerFlyoutMenuPatch;"
 private const val EXTENSION_FILTER =
-    "Lapp/tada/extension/youtube/patches/components/PlayerFlyoutMenuComponentsFilter;"
+    "Lapp/morphe/extension/youtube/patches/components/PlayerFlyoutMenuComponentsFilter;"
 
 private val playerFlyoutMenuGroup = mutableSetOf<BasePreference>()
 
@@ -73,11 +73,11 @@ val hidePlayerFlyoutMenuComponentsPatch = bytecodePatch(
             SwitchPreference("tada_hide_player_flyout_ambient_mode"),
             SwitchPreference(
                 key = "tada_hide_player_flyout_audio_track",
-                tag = "app.tada.extension.youtube.settings.preference.HideAudioFlyoutMenuPreference"
+                tag = "app.morphe.extension.youtube.settings.preference.HideAudioFlyoutMenuPreference"
             ),
             SwitchPreference(
                 key = "tada_hide_player_flyout_audio_track_footer",
-                tag = "app.tada.extension.youtube.settings.preference.HideAudioFlyoutMenuPreference"
+                tag = "app.morphe.extension.youtube.settings.preference.HideAudioFlyoutMenuPreference"
             ),
             SwitchPreference("tada_hide_player_flyout_captions"),
             SwitchPreference("tada_hide_player_flyout_captions_footer"),

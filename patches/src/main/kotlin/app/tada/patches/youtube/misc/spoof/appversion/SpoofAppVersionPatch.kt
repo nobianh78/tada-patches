@@ -7,9 +7,9 @@
 
 package app.tada.patches.youtube.misc.spoof.appversion
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.spoof.appversion.baseSpoofAppVersionPatch
 import app.tada.patches.youtube.misc.contexthook.Endpoint
@@ -25,11 +25,11 @@ import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
 import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.shared.ToolBarButtonFingerprint
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.insertLiteralOverride
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/spoof/SpoofAppVersionPatch;"
+    "Lapp/morphe/extension/youtube/patches/spoof/SpoofAppVersionPatch;"
 
 @Suppress("unused")
 val spoofAppVersionPatch = baseSpoofAppVersionPatch(

@@ -1,6 +1,6 @@
 package app.tada.patches.youtube.layout.player.fullscreen
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.youtube.misc.playertype.playerTypeHookPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
@@ -9,7 +9,7 @@ import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.video.information.onCreateHook
 import app.tada.patches.youtube.video.information.playerStatusHook
 import app.tada.patches.youtube.video.information.videoInformationPatch
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.setExtensionIsPatchIncluded
 
 @Suppress("unused")
 val openVideosFullscreenPatch = bytecodePatch(

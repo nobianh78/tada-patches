@@ -7,18 +7,18 @@
 
 package app.tada.patches.youtube.video.format
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.FormatStreamModelToStringFingerprint
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
-import app.tada.util.cloneParameters
-import app.tada.util.findFreeRegister
-import app.tada.util.findMethodFromToString
-import app.tada.util.getReference
-import app.tada.util.numberOfParameterRegistersLogical
+import app.morphe.util.cloneParameters
+import app.morphe.util.findFreeRegister
+import app.morphe.util.findMethodFromToString
+import app.morphe.util.getReference
+import app.morphe.util.numberOfParameterRegistersLogical
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
@@ -29,9 +29,9 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import java.lang.ref.WeakReference
 
 internal const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/VideoFormat;"
+    "Lapp/morphe/extension/youtube/patches/VideoFormat;"
 private const val EXTENSION_FORMAT_INTERFACE =
-    $$"Lapp/tada/extension/youtube/patches/VideoFormat$FormatInterface;"
+    $$"Lapp/morphe/extension/youtube/patches/VideoFormat$FormatInterface;"
 
 private lateinit var adaptiveFormatMethod : WeakReference<MutableMethod>
 

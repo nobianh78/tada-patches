@@ -24,10 +24,10 @@
  */
 package app.tada.patches.music.interaction.jam
 
-import app.tada.patcher.Patcher
-import app.tada.patcher.PatcherConfig
-import app.tada.patcher.apk.ApkUtils.applyTo
-import app.tada.patcher.dex.SdkDexVerifier
+import app.morphe.patcher.Patcher
+import app.morphe.patcher.PatcherConfig
+import app.morphe.patcher.apk.ApkUtils.applyTo
+import app.morphe.patcher.dex.SdkDexVerifier
 import app.tada.patches.all.misc.clone.cloneAppPatch
 import app.tada.patches.music.ad.hideAdsPatch
 import app.tada.patches.music.layout.lyrics.lyricsPatch

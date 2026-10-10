@@ -10,12 +10,12 @@
 
 package app.tada.patches.youtube.layout.returnyoutubedislike
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.InstructionLocation.MatchAfterWithin
-import app.tada.patcher.literal
-import app.tada.patcher.methodCall
-import app.tada.patcher.newInstance
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation.MatchAfterWithin
+import app.morphe.patcher.literal
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.newInstance
+import app.morphe.patcher.string
 import com.android.tools.smali.dexlib2.AccessFlags
 
 internal object TextComponentDataFingerprint : Fingerprint(

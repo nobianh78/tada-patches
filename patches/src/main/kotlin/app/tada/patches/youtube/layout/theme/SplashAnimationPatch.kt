@@ -7,10 +7,10 @@
 
 package app.tada.patches.youtube.layout.theme
 
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.lottie.LOTTIE_ANIMATION_VIEW_CLASS_TYPE
 import app.tada.patches.shared.misc.lottie.LottieAnimationViewSetAnimationIntFingerprint
 import app.tada.patches.shared.misc.lottie.lottieAnimationPatch
@@ -20,12 +20,12 @@ import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.misc.playservice.is_20_31_or_greater
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.shared.YouTubeActivityOnCreateFingerprint
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.insertLiteralOverride
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/theme/ThemePatch;"
+    "Lapp/morphe/extension/youtube/patches/theme/ThemePatch;"
 
 /**
  * Hands the animation the app plays while it starts over to extension code,

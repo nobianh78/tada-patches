@@ -10,8 +10,8 @@
 
 package app.tada.patches.youtube.video.speed.remember
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
@@ -27,7 +27,7 @@ import app.tada.patches.youtube.video.videoid.hookPlayerResponseVideoId
 import app.tada.patches.youtube.video.videoid.videoIdPatch
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/playback/speed/RememberPlaybackSpeedPatch;"
+    "Lapp/morphe/extension/youtube/patches/playback/speed/RememberPlaybackSpeedPatch;"
 
 internal val rememberPlaybackSpeedPatch = bytecodePatch {
     dependsOn(
@@ -46,14 +46,14 @@ internal val rememberPlaybackSpeedPatch = bytecodePatch {
                     // Entries and values are set by the extension code based on the actual speeds available.
                     entriesKey = null,
                     entryValuesKey = null,
-                    tag = "app.tada.extension.youtube.settings.preference.CustomVideoSpeedListPreference"
+                    tag = "app.morphe.extension.youtube.settings.preference.CustomVideoSpeedListPreference"
                 ),
                 ListPreference(
                     key = "tada_playback_audio_pitch_default",
                     // List is shared with video speeds.
                     entriesKey = null,
                     entryValuesKey = null,
-                    tag = "app.tada.extension.youtube.settings.preference.CustomVideoSpeedListPreference"
+                    tag = "app.morphe.extension.youtube.settings.preference.CustomVideoSpeedListPreference"
                 ),
                 SwitchPreference("tada_remember_playback_speed_last_selected", summary = true),
                 SwitchPreference("tada_remember_playback_speed_last_selected_toast", summary = true),

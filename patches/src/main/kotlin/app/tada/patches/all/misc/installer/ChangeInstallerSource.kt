@@ -7,9 +7,9 @@
 
 package app.tada.patches.all.misc.installer
 
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.patch.stringOption
-import app.tada.patches.all.misc.fix.changepackageinstaller.changePackageInstallerPatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.stringOption
+import app.morphe.patches.all.misc.fix.changepackageinstaller.changePackageInstallerPatch
 
 @Suppress("unused")
 val changeInstallerSource = resourcePatch(

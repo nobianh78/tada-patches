@@ -10,8 +10,8 @@
 
 package app.tada.patches.youtube.video.quality
 
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
 import app.tada.patches.youtube.layout.buttons.overlay.addPlayerOverlayPreferences
@@ -33,7 +33,7 @@ private val videoQualityButtonResourcePatch = resourcePatch {
 }
 
 private const val EXTENSION_BUTTON =
-    "Lapp/tada/extension/youtube/videoplayer/VideoQualityDialogButton;"
+    "Lapp/morphe/extension/youtube/videoplayer/VideoQualityDialogButton;"
 
 val videoQualityDialogButtonPatch = bytecodePatch(
     description = "Adds the option to display video quality dialog button in the video player.",

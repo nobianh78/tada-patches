@@ -7,13 +7,13 @@
 
 package app.tada.patches.music.flyoutmenu.components
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resource.resourceId
-import app.tada.patcher.util.smali.ExternalLabel
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resource.resourceId
+import app.morphe.patcher.util.smali.ExternalLabel
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.litho.filter.lithoFilterPatch
 import app.tada.patches.music.misc.settings.PreferenceScreen
@@ -22,19 +22,19 @@ import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
 import app.tada.patches.shared.misc.litho.filter.addLithoFilter
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.indexOfFirstLiteralInstructionOrThrow
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.indexOfFirstLiteralInstructionOrThrow
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/music/patches/HideFlyoutMenuComponentsPatch;"
+    "Lapp/morphe/extension/music/patches/HideFlyoutMenuComponentsPatch;"
 
 private const val PLAYER_FLYOUT_MENU_COMPONENTS_FILTER =
-    "Lapp/tada/extension/music/patches/components/PlayerFlyoutMenuComponentsFilter;"
+    "Lapp/morphe/extension/music/patches/components/PlayerFlyoutMenuComponentsFilter;"
 
 @Suppress("unused")
 val hideFlyoutMenuComponentsPatch = bytecodePatch(

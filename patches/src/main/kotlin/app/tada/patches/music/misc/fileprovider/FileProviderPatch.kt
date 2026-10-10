@@ -1,7 +1,7 @@
 package app.tada.patches.music.misc.fileprovider
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.all.misc.clone.setOrGetFallbackPackageName
 
 internal fun fileProviderPatch(

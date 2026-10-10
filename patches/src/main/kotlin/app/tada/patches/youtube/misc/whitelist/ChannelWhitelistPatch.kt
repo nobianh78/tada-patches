@@ -5,7 +5,7 @@
 
 package app.tada.patches.youtube.misc.whitelist
 
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.ad.hideAdsPatch
@@ -16,7 +16,7 @@ import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.video.speed.remember.rememberPlaybackSpeedPatch
 import app.tada.patches.youtube.video.speed.settingsMenuVideoSpeedGroup
 
-private const val PREFERENCE_CLASS = "app.tada.extension.youtube.settings.preference.ChannelWhitelistPreference"
+private const val PREFERENCE_CLASS = "app.morphe.extension.youtube.settings.preference.ChannelWhitelistPreference"
 
 @Suppress("unused")
 val channelWhitelistPatch = bytecodePatch(

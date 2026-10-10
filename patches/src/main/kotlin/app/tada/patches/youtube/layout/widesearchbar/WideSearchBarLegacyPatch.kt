@@ -10,15 +10,15 @@
 
 package app.tada.patches.youtube.layout.widesearchbar
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.methodCall
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.resource.ResourceType
-import app.tada.patcher.resourceLiteral
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.findInstructionIndicesReversedOrThrow
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.resource.ResourceType
+import app.morphe.patcher.resourceLiteral
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.findInstructionIndicesReversedOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
@@ -46,7 +46,7 @@ private object WideSearchBarLayoutFingerprint : Fingerprint(
     )
 )
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/WideSearchBarLegacyPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/WideSearchBarLegacyPatch;"
 
 context(patchContext: BytecodePatchContext)
 internal fun applyLegacyWideSearchBar() {

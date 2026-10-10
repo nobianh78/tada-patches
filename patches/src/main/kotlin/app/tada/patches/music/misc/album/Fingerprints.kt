@@ -7,7 +7,7 @@
 
 package app.tada.patches.music.misc.album
 
-import app.tada.patcher.Fingerprint
+import app.morphe.patcher.Fingerprint
 import com.android.tools.smali.dexlib2.AccessFlags
 
 /**

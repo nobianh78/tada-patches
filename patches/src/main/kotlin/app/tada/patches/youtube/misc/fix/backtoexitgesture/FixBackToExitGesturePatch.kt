@@ -10,8 +10,8 @@
 
 package app.tada.patches.youtube.misc.fix.backtoexitgesture
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.misc.backgesture.addBackPressedHook
 import app.tada.patches.youtube.misc.backgesture.addPredictiveBackGestureHook
@@ -21,15 +21,15 @@ import app.tada.patches.youtube.misc.playertype.playerTypeHookPatch
 import app.tada.patches.youtube.misc.playservice.versionCheckPatch
 import app.tada.patches.youtube.misc.settings.PreferenceScreen
 import app.tada.patches.youtube.misc.settings.settingsPatch
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
-import app.tada.util.insertLiteralOverride
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.insertLiteralOverride
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/FixBackToExitGesturePatch;"
+    "Lapp/morphe/extension/youtube/patches/FixBackToExitGesturePatch;"
 
 internal val fixBackToExitGesturePatch = bytecodePatch(
     description = "Fixes the swipe back to exit gesture."

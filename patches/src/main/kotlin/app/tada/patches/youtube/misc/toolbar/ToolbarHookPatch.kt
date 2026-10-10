@@ -7,19 +7,19 @@
 
 package app.tada.patches.youtube.misc.toolbar
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.youtube.misc.extension.sharedExtensionPatch
 import app.tada.patches.youtube.shared.ToolBarButtonFingerprint
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.findFreeRegister
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.findFreeRegister
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import java.lang.ref.WeakReference
 
-internal const val EXTENSION_CLASS = "Lapp/tada/extension/youtube/patches/ToolBarPatch;"
+internal const val EXTENSION_CLASS = "Lapp/morphe/extension/youtube/patches/ToolBarPatch;"
 
 private lateinit var toolbarMethod : WeakReference<MutableMethod>
 

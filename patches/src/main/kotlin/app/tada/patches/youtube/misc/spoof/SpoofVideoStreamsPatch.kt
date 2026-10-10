@@ -29,7 +29,7 @@ import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.shared.YouTubeActivityOnCreateFingerprint
 
 val spoofVideoStreamsPatch = spoofVideoStreamsPatch(
-    extensionClass = "Lapp/tada/extension/youtube/patches/spoof/SpoofVideoStreamsPatch;",
+    extensionClass = "Lapp/morphe/extension/youtube/patches/spoof/SpoofVideoStreamsPatch;",
     mainActivityOnCreateFingerprint = YouTubeActivityOnCreateFingerprint,
     fixMediaFetchHotConfigAlternative = {
         // In 20.14 the flag was merged with 20.03 start playback flag.
@@ -78,11 +78,11 @@ val spoofVideoStreamsPatch = spoofVideoStreamsPatch(
                         // Requires a key and title but the actual text is chosen at runtime.
                         key = "tada_spoof_video_streams_about",
                         summaryKey = null,
-                        tag = "app.tada.extension.youtube.settings.preference.SpoofVideoStreamsSideEffectsPreference"
+                        tag = "app.morphe.extension.youtube.settings.preference.SpoofVideoStreamsSideEffectsPreference"
                     ),
                     NonInteractivePreference(
                         key = "tada_spoof_video_streams_sign_in_android_vr_about",
-                        tag = "app.tada.extension.youtube.settings.preference.SpoofVideoStreamsSignInPreference",
+                        tag = "app.morphe.extension.youtube.settings.preference.SpoofVideoStreamsSignInPreference",
                         selectable = true,
                     ),
                     SwitchPreference("tada_spoof_video_streams_av1", summary = true),

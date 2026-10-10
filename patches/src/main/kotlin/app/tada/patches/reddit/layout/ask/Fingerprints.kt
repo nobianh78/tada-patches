@@ -7,8 +7,8 @@
 
 package app.tada.patches.reddit.layout.ask
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.string
 
 internal object AskButtonComposableFingerprint : Fingerprint(
     returnType = "V",

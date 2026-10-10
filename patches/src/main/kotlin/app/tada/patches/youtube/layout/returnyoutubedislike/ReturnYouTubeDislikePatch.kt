@@ -10,9 +10,9 @@
 
 package app.tada.patches.youtube.layout.returnyoutubedislike
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.layout.returnyoutubedislike.DislikeFingerprint
 import app.tada.patches.shared.layout.returnyoutubedislike.EndpointServiceNameFingerprint
 import app.tada.patches.shared.layout.returnyoutubedislike.hookLikeDislikeButtons
@@ -34,13 +34,13 @@ import app.tada.patches.youtube.shared.Constants.COMPATIBILITY_YOUTUBE
 import app.tada.patches.youtube.video.videoid.hookPlayerResponseVideoId
 import app.tada.patches.youtube.video.videoid.hookVideoId
 import app.tada.patches.youtube.video.videoid.videoIdPatch
-import app.tada.util.getFreeRegisterProvider
-import app.tada.util.getReference
+import app.morphe.util.getFreeRegisterProvider
+import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/ReturnYouTubeDislikePatch;"
+    "Lapp/morphe/extension/youtube/patches/ReturnYouTubeDislikePatch;"
 
 val returnYouTubeDislikePatch = bytecodePatch(
     name = "Return YouTube Dislike",
@@ -66,14 +66,14 @@ val returnYouTubeDislikePatch = bytecodePatch(
             SwitchPreference("tada_ryd_toast_on_connection_error", summary = true),
             NonInteractivePreference(
                 key = "tada_ryd_attribution",
-                tag = "app.tada.extension.shared.returnyoutubedislike.ui.ReturnYouTubeDislikeAboutPreference",
+                tag = "app.morphe.extension.shared.returnyoutubedislike.ui.ReturnYouTubeDislikeAboutPreference",
                 selectable = true,
             ),
             PreferenceCategory(
                 key = "tada_ryd_statistics_category",
                 sorting = PreferenceScreenPreference.Sorting.UNSORTED,
                 preferences = emptySet(), // Preferences are added by custom class at runtime.
-                tag = "app.tada.extension.shared.returnyoutubedislike.ui.ReturnYouTubeDislikeDebugStatsPreferenceCategory"
+                tag = "app.morphe.extension.shared.returnyoutubedislike.ui.ReturnYouTubeDislikeDebugStatsPreferenceCategory"
             )
         )
 

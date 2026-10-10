@@ -7,18 +7,18 @@
 
 package app.tada.patches.music.video.information
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
-import app.tada.patcher.util.smali.toInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.util.smali.toInstructions
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
 import app.tada.patches.shared.misc.videoinformation.PlayerControllerSetTimeReferenceFingerprint
-import app.tada.util.addStaticFieldToExtension
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.addStaticFieldToExtension
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
@@ -28,7 +28,7 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethodImplementation
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 import java.lang.ref.WeakReference
 
-internal const val EXTENSION_CLASS = "Lapp/tada/extension/music/shared/VideoInformation;"
+internal const val EXTENSION_CLASS = "Lapp/morphe/extension/music/shared/VideoInformation;"
 
 // Register layout inside the synthetic setVideoInformation(playerResponseModel) method.
 private const val REG_PLAYER_RESPONSE = 4

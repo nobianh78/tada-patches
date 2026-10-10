@@ -10,30 +10,30 @@
 
 package app.tada.patches.shared.misc.debugging
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.tada.patches.shared.misc.settings.preference.BasePreference
 import app.tada.patches.shared.misc.settings.preference.BasePreferenceScreen
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference.Sorting
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.ResourceGroup
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.cloneParameters
-import app.tada.util.copyResources
-import app.tada.util.findInstructionIndicesReversedOrThrow
-import app.tada.util.numberOfParameterRegistersLogical
-import app.tada.util.p0Register
+import app.morphe.util.ResourceGroup
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.cloneParameters
+import app.morphe.util.copyResources
+import app.morphe.util.findInstructionIndicesReversedOrThrow
+import app.morphe.util.numberOfParameterRegistersLogical
+import app.morphe.util.p0Register
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/shared/patches/EnableDebuggingPatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/shared/patches/EnableDebuggingPatch;"
 
 /**
  * Patch shared with YouTube and YT Music.
@@ -86,12 +86,12 @@ internal fun enableDebuggingPatch(
                 SwitchPreference("tada_debug_toast_on_error"),
                 NonInteractivePreference(
                     "tada_debug_export_logs",
-                    tag = "app.tada.extension.shared.settings.preference.ExportLogToClipboardPreference",
+                    tag = "app.morphe.extension.shared.settings.preference.ExportLogToClipboardPreference",
                     selectable = true
                 ),
                 NonInteractivePreference(
                     "tada_debug_feature_flags_manager",
-                    tag = "app.tada.extension.shared.settings.preference.FeatureFlagsManagerPreference",
+                    tag = "app.morphe.extension.shared.settings.preference.FeatureFlagsManagerPreference",
                     selectable = true
                 )
             )

@@ -7,22 +7,22 @@
 
 package app.tada.patches.reddit.layout.sidebar
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.reddit.misc.settings.settingsPatch
 import app.tada.patches.reddit.shared.Constants.COMPATIBILITY_REDDIT
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.setExtensionIsPatchIncluded
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/reddit/patches/HideSidebarComponentsPatch;"
+    "Lapp/morphe/extension/reddit/patches/HideSidebarComponentsPatch;"
 
 private const val EXTENSION_HEADER_ITEM_INTERFACE =
-    $$"Lapp/tada/extension/reddit/patches/HideSidebarComponentsPatch$HeaderItemInterface;"
+    $$"Lapp/morphe/extension/reddit/patches/HideSidebarComponentsPatch$HeaderItemInterface;"
 
 @Suppress("unused")
 val hideSidebarComponentsPatch = bytecodePatch(

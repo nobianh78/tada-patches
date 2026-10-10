@@ -7,10 +7,10 @@
 
 package app.tada.patches.reddit.layout.search
 
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.reddit.misc.fix.signature.spoofSignaturePatch
 import app.tada.patches.reddit.shared.Constants.COMPATIBILITY_REDDIT
-import app.tada.util.findElementByAttributeValueOrThrow
+import app.morphe.util.findElementByAttributeValueOrThrow
 
 @Suppress("unused")
 val hideRedditSearchPatch = resourcePatch(

@@ -7,9 +7,9 @@
 
 package app.tada.patches.youtube.layout.player.buttons
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
 import app.tada.patches.youtube.layout.buttons.overlay.addPlayerOverlayPreferences
 import app.tada.patches.youtube.layout.buttons.overlay.playerOverlayButtonsSettingsPatch
@@ -24,7 +24,7 @@ import app.tada.patches.youtube.shared.StartVideoInformerFingerprint
 import app.tada.patches.youtube.video.volume.playerVolumeHookPatch
 
 private const val EXTENSION_BUTTON =
-    "Lapp/tada/extension/youtube/videoplayer/MuteVideoButton;"
+    "Lapp/morphe/extension/youtube/videoplayer/MuteVideoButton;"
 
 private val muteVideoButtonResourcePatch = resourcePatch {
     dependsOn(

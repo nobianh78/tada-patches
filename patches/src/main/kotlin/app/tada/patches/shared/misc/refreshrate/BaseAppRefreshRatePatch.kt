@@ -7,17 +7,17 @@
 
 package app.tada.patches.shared.misc.refreshrate
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.patch.BytecodePatchBuilder
-import app.tada.patcher.patch.BytecodePatchContext
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.patch.BytecodePatchBuilder
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.bytecodePatch
 import app.tada.patches.shared.misc.settings.preference.BasePreferenceScreen
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
 import app.tada.patches.shared.misc.settings.preference.noTitleUnsortedPreferenceCategory
-import app.tada.util.setExtensionIsPatchIncluded
+import app.morphe.util.setExtensionIsPatchIncluded
 
-private const val EXTENSION_CLASS = "Lapp/tada/extension/shared/patches/BaseAppRefreshRatePatch;"
+private const val EXTENSION_CLASS = "Lapp/morphe/extension/shared/patches/BaseAppRefreshRatePatch;"
 
 fun baseAppRefreshRatePatch(
     preferenceScreen: BasePreferenceScreen.Screen,
@@ -34,7 +34,7 @@ fun baseAppRefreshRatePatch(
         val refreshPreference = NonInteractivePreference(
             key = "tada_app_refresh_rate",
             summaryKey = null,
-            tag = "app.tada.extension.shared.settings.preference.AppRefreshRateListPreference",
+            tag = "app.morphe.extension.shared.settings.preference.AppRefreshRateListPreference",
             selectable = true
         )
         preferenceScreen.addPreferences(

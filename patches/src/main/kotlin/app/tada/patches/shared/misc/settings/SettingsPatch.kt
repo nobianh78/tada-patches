@@ -1,22 +1,22 @@
 package app.tada.patches.shared.misc.settings
 
-import app.tada.patcher.patch.PatchException
-import app.tada.patcher.patch.ResourcePatchContext
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.patch.ResourcePatchContext
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.all.misc.resources.addAppResources
 import app.tada.patches.all.misc.resources.addResourcesPatch
 import app.tada.patches.shared.layout.branding.addLicensePatch
 import app.tada.patches.shared.misc.settings.preference.BasePreference
 import app.tada.patches.shared.misc.settings.preference.PreferenceCategory
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference
-import app.tada.util.ResourceGroup
-import app.tada.util.childElementsSequence
-import app.tada.util.copyResources
-import app.tada.util.forEachChildElement
-import app.tada.util.getNode
-import app.tada.util.insertFirst
-import app.tada.util.returnEarly
+import app.morphe.util.ResourceGroup
+import app.morphe.util.childElementsSequence
+import app.morphe.util.copyResources
+import app.morphe.util.forEachChildElement
+import app.morphe.util.getNode
+import app.morphe.util.insertFirst
+import app.morphe.util.returnEarly
 import org.w3c.dom.Node
 
 const val MORPHE_SETTINGS_INTENT = "tada_settings_intent"

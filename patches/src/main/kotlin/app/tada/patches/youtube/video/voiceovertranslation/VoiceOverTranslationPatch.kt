@@ -7,8 +7,8 @@
 
 package app.tada.patches.youtube.video.voiceovertranslation
 
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.shared.misc.settings.preference.ListPreference
 import app.tada.patches.shared.misc.settings.preference.NonInteractivePreference
 import app.tada.patches.shared.misc.settings.preference.PreferenceScreenPreference
@@ -30,10 +30,10 @@ import app.tada.patches.youtube.video.videoid.hookVideoId
 import app.tada.patches.youtube.video.volume.playerVolumeHookPatch
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/voiceovertranslation/VoiceOverTranslationPatch;"
+    "Lapp/morphe/extension/youtube/patches/voiceovertranslation/VoiceOverTranslationPatch;"
 
 private const val EXTENSION_BUTTON =
-    "Lapp/tada/extension/youtube/videoplayer/VoiceOverTranslationButton;"
+    "Lapp/morphe/extension/youtube/videoplayer/VoiceOverTranslationButton;"
 
 private val voiceOverTranslationResourcePatch = resourcePatch {
     dependsOn(
@@ -73,20 +73,20 @@ val voiceOverTranslationPatch = bytecodePatch(
                     SwitchPreference("tada_vot_enabled", summary = true),
                     ListPreference("tada_vot_caption_language"),
                     NonInteractivePreference("tada_vot_max_speech_rate",
-                        tag = "app.tada.extension.shared.settings.preference.SeekBarPreference",
+                        tag = "app.morphe.extension.shared.settings.preference.SeekBarPreference",
                         selectable = true),
                     ListPreference("tada_vot_translation_service"),
                     NonInteractivePreference("tada_vot_openrouter_info",
                         titleKey = "tada_vot_service_openrouter",
-                        tag = "app.tada.extension.youtube.settings.preference.VoiceOverTranslationOpenRouterInfoPreference",
+                        tag = "app.morphe.extension.youtube.settings.preference.VoiceOverTranslationOpenRouterInfoPreference",
                         selectable = true),
                     TextPreference("tada_vot_openrouter_api_key"),
                     TextPreference("tada_vot_openrouter_model",
                         summaryKey = null,
-                        tag = "app.tada.extension.youtube.settings.preference.VoiceOverTranslationModelPreference"),
+                        tag = "app.morphe.extension.youtube.settings.preference.VoiceOverTranslationModelPreference"),
                     NonInteractivePreference("tada_vot_mymemory_info",
                         titleKey = "tada_vot_service_mymemory",
-                        tag = "app.tada.extension.youtube.settings.preference.VoiceOverTranslationMyMemoryInfoPreference",
+                        tag = "app.morphe.extension.youtube.settings.preference.VoiceOverTranslationMyMemoryInfoPreference",
                         selectable = true),
                     TextPreference("tada_vot_mymemory_email")
                 )

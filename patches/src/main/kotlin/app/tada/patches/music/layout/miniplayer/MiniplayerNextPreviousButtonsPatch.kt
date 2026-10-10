@@ -7,11 +7,11 @@
 
 package app.tada.patches.music.layout.miniplayer
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
 import app.tada.patches.music.misc.extension.sharedExtensionPatch
 import app.tada.patches.music.misc.playservice.is_9_28_or_greater
 import app.tada.patches.music.misc.playservice.versionCheckPatch
@@ -19,15 +19,15 @@ import app.tada.patches.music.misc.settings.PreferenceScreen
 import app.tada.patches.music.misc.settings.settingsPatch
 import app.tada.patches.music.shared.Constants.COMPATIBILITY_YOUTUBE_MUSIC
 import app.tada.patches.shared.misc.settings.preference.SwitchPreference
-import app.tada.util.adoptChild
-import app.tada.util.doRecursively
+import app.morphe.util.adoptChild
+import app.morphe.util.doRecursively
 import com.android.tools.smali.dexlib2.iface.instruction.FiveRegisterInstruction
 import org.w3c.dom.Element
 
 private const val EXTENSION_CLASS =
-    "Lapp/tada/extension/music/patches/MiniplayerPreviousNextButtonsPatch;"
+    "Lapp/morphe/extension/music/patches/MiniplayerPreviousNextButtonsPatch;"
 private const val MINIPLAYER_LYRICS_CLASS =
-    "Lapp/tada/extension/music/patches/lyrics/MiniPlayerLyrics;"
+    "Lapp/morphe/extension/music/patches/lyrics/MiniPlayerLyrics;"
 
 private const val IMAGE_VIEW_TAG =
     "com.google.android.libraries.youtube.common.ui.TouchImageView"

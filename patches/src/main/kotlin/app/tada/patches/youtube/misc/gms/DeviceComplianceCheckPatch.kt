@@ -7,8 +7,8 @@
 
 package app.tada.patches.youtube.misc.gms
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.patch.bytecodePatch
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.bytecodePatch
 
 internal val deviceComplianceCheckPatch = bytecodePatch {
     execute {

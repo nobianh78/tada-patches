@@ -10,9 +10,9 @@
 
 package app.tada.patches.shared.misc.debugging
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.parametersMatch
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.parametersMatch
+import app.morphe.patcher.string
 import com.android.tools.smali.dexlib2.AccessFlags
 
 internal object ExperimentFlagUtilFingerprint : Fingerprint(

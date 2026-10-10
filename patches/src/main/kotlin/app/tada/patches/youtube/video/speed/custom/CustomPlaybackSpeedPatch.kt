@@ -10,17 +10,17 @@
 
 package app.tada.patches.youtube.video.speed.custom
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
-import app.tada.patcher.extensions.InstructionExtensions.addInstructions
-import app.tada.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
-import app.tada.patcher.extensions.InstructionExtensions.getInstruction
-import app.tada.patcher.extensions.InstructionExtensions.instructions
-import app.tada.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.tada.patcher.patch.bytecodePatch
-import app.tada.patcher.patch.resourcePatch
-import app.tada.patcher.util.proxy.mutableTypes.MutableField
-import app.tada.patcher.util.proxy.mutableTypes.MutableField.Companion.toMutable
-import app.tada.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructionsWithLabels
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.instructions
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patcher.util.proxy.mutableTypes.MutableField
+import app.morphe.patcher.util.proxy.mutableTypes.MutableField.Companion.toMutable
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod.Companion.toMutable
 import app.tada.patches.shared.misc.litho.context.conversionContextPatch
 import app.tada.patches.shared.misc.litho.filter.addLithoFilter
 import app.tada.patches.shared.misc.settings.preference.InputType
@@ -42,13 +42,13 @@ import app.tada.patches.youtube.shared.PlaybackSpeedOnItemClickParentFingerprint
 import app.tada.patches.youtube.shared.SpeedLimiterFingerprint
 import app.tada.patches.youtube.shared.SpeedLimiterParentFingerprint
 import app.tada.patches.youtube.video.speed.settingsMenuVideoSpeedGroup
-import app.tada.util.ResourceGroup
-import app.tada.util.addInstructionsAtControlFlowLabel
-import app.tada.util.copyResources
-import app.tada.util.getReference
-import app.tada.util.indexOfFirstLiteralInstructionOrThrow
-import app.tada.util.insertLiteralOverride
-import app.tada.util.returnEarly
+import app.morphe.util.ResourceGroup
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import app.morphe.util.copyResources
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstLiteralInstructionOrThrow
+import app.morphe.util.insertLiteralOverride
+import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
@@ -58,10 +58,10 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableField
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 
 internal const val EXTENSION_CLASS =
-    "Lapp/tada/extension/youtube/patches/playback/speed/CustomPlaybackSpeedPatch;"
+    "Lapp/morphe/extension/youtube/patches/playback/speed/CustomPlaybackSpeedPatch;"
 
 private const val EXTENSION_FILTER =
-    "Lapp/tada/extension/youtube/patches/components/PlaybackSpeedMenuFilter;"
+    "Lapp/morphe/extension/youtube/patches/components/PlaybackSpeedMenuFilter;"
 
 private val customPlaybackSpeedResourcePatch = resourcePatch {
     execute {

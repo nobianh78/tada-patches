@@ -57,7 +57,7 @@ tasks {
         dependsOn(build)
 
         classpath = sourceSets["main"].runtimeClasspath + patchListGeneratorClasspath
-        mainClass.set("app.tada.util.PatchListGeneratorKt")
+        mainClass.set("app.morphe.util.PatchListGeneratorKt")
     }
 
     register<JavaExec>("validateJam") {

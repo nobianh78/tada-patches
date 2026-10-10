@@ -1,8 +1,8 @@
 package app.tada.patches.youtube.misc.fix.playbackspeed
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.OpcodesFilter
-import app.tada.patcher.fieldAccess
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.OpcodesFilter
+import app.morphe.patcher.fieldAccess
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 

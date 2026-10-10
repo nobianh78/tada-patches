@@ -7,7 +7,7 @@
 
 package app.tada.patches.youtube.misc.proxy
 
-import app.tada.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.tada.patches.shared.misc.proxy.EXTENSION_CLASS
 import app.tada.patches.shared.misc.proxy.baseNetworkProxyPatch
 import app.tada.patches.youtube.misc.extension.hooks.YouTubeApplicationInitFingerprint

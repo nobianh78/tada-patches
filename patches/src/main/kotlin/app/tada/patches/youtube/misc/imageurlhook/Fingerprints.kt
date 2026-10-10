@@ -1,8 +1,8 @@
 package app.tada.patches.youtube.misc.imageurlhook
 
-import app.tada.patcher.Fingerprint
-import app.tada.patcher.anyInstruction
-import app.tada.patcher.string
+import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.anyInstruction
+import app.morphe.patcher.string
 import com.android.tools.smali.dexlib2.AccessFlags
 
 internal object OnFailureFingerprint : Fingerprint(
