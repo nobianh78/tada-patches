@@ -93,11 +93,7 @@ public class CustomBrandingPatch {
          */
         @Nullable
         String startupAnimationResourceName() {
-            return switch (this) {
-                case LIGHT, DARK, BLACK -> "tada_startup_animation";
-                case PLAY, PLAY_BLACK -> "tada_startup_animation_play";
-                default -> null;
-            };
+            return null;
         }
     }
 
