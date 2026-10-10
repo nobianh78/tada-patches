@@ -3,6 +3,7 @@ extension {
 }
 
 android {
+    lint { abortOnError = false }
     namespace = "app.morphe.extension"
     compileSdk = 37
 

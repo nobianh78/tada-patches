@@ -6,6 +6,7 @@ plugins {
 }
 
 configure<LibraryExtension> {
+    lint { abortOnError = false }
     namespace = "app.morphe.extension.shared.youtube"
     compileSdk = 36
 

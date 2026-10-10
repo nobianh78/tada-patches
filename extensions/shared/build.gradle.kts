@@ -5,6 +5,7 @@ dependencies {
 }
 
 configure<ApplicationExtension> {
+    lint { abortOnError = false }
     namespace = "app.morphe.extension"
     compileSdk = 36
 

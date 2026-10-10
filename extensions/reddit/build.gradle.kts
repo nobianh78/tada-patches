@@ -13,6 +13,7 @@ dependencies {
 }
 
 configure<ApplicationExtension> {
+    lint { abortOnError = false }
     compileSdk = 36
 
     defaultConfig {

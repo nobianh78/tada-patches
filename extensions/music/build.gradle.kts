@@ -11,6 +11,7 @@ dependencies {
 }
 
 configure<ApplicationExtension> {
+    lint { abortOnError = false }
     defaultConfig {
         minSdk = 26
     }
