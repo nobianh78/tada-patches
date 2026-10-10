@@ -80,6 +80,10 @@ To translate new languages or improve the existing translations, visit tada.soft
     <string name="tada_settings_about_links_body_version_outdated">You are using TADa Patches version &lt;i>%1$s&lt;/i>&lt;br>&lt;br>&lt;b>Update available: &lt;i>%2$s&lt;/i>&lt;/b>&lt;br>&lt;br>To update your patches, use TADa to repatch this app</string>
     <string name="tada_settings_about_links_dev_header">Note</string>
     <string name="tada_settings_about_links_dev_body">This version is a pre-release and you may experience unexpected issues</string>
+
+    <string name="tada_settings_about_links_tada_info_title">About TADa</string>
+    <string name="tada_settings_about_links_tada_info_body">TADa is an enhanced version of the YouTube application, developed based on the Morphe source code. It provides additional features, customizations, and optimizations for a better user experience.</string>
+
     <string name="tada_settings_about_links_header">Official links</string>
     <string name="tada_settings_about_links_website">Website</string>
     <string name="tada_settings_about_links_donate">Donate</string>

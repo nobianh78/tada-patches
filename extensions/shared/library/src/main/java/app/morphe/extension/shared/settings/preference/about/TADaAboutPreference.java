@@ -160,6 +160,17 @@ public class TADaAboutPreference extends Preference {
                                 AboutDialogStyle.isolateLtr(currentVersion)))
         ));
 
+        // TADa Info card
+        html.append(String.format("""
+                        <div class="info-card">
+                            <h3>%s</h3>
+                            <p>%s</p>
+                        </div>
+                        """,
+                useNonBreakingHyphens(getString("tada_settings_about_links_tada_info_title")),
+                getString("tada_settings_about_links_tada_info_body")
+        ));
+
         // Dev note card.
         if (Utils.isPreReleasePatches()) {
             html.append(String.format("""

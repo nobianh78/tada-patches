@@ -78,6 +78,8 @@ Bạn có thể yêu cầu thêm ngôn ngữ hoặc cải thiện bản dịch h
   <string name="tada_settings_about_links_body_version_outdated">Bạn đang dùng bản vá TADa phiên bản &lt;i&gt;%1$s&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Đã có bản cập nhật mới: &lt;i&gt;%2$s&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Để cập nhật các bản vá của bạn, hãy dùng TADa để vá lại ứng dụng này</string>
   <string name="tada_settings_about_links_dev_header">Lưu ý</string>
   <string name="tada_settings_about_links_dev_body">Đây là phiên bản phát hành trước và bạn có thể gặp phải các sự cố không mong muốn</string>
+  <string name="tada_settings_about_links_tada_info_title">Giới thiệu về TADa</string>
+  <string name="tada_settings_about_links_tada_info_body">TADa là dự án được phát triển dựa trên mã nguồn của Morphe, mang đến những cải tiến, tùy chỉnh và tối ưu hóa vượt trội để nâng cao trải nghiệm người dùng.</string>
   <string name="tada_settings_about_links_header">Liên kết chính chủ</string>
   <string name="tada_settings_about_links_website">Trang web</string>
   <string name="tada_settings_about_links_donate">Ủng hộ</string>
