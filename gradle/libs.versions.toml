@@ -18,8 +18,8 @@ protobuf = "0.10.0"
 protoc = "4.36.2"
 
 [libraries]
-tada-patches-library = { module = "app.tada:tada-patches-library", version.ref = "tada-patches-library" }
-tada-extensions-library = { module = "app.tada:tada-extensions-library", version.ref = "tada-patches-library" }
+tada-patches-library = { module = "app.morphe:morphe-patches-library", version.ref = "tada-patches-library" }
+tada-extensions-library = { module = "app.morphe:morphe-extensions-library", version.ref = "tada-patches-library" }
 annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
 androidx-core = { module = "androidx.core:core", version.ref = "androidx-core" }
 androidx-javascriptengine = { module = "androidx.javascriptengine:javascriptengine", version.ref = "androidx-javascriptengine" }
