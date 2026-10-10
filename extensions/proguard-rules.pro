@@ -4,6 +4,9 @@
 -keep class app.tada.** {
   *;
 }
+-keep class app.morphe.** {
+  *;
+}
 -keep class com.google.** {
   *;
 }
