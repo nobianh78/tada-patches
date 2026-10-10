@@ -29,7 +29,7 @@ val openLinksExternallyPatch = bytecodePatch(
                 string("android.support.customtabs.action.CustomTabsService")
             ),
             custom = { _, classDef ->
-                !classDef.type.startsWith("Lapp/tada/")
+                !classDef.type.startsWith("Lapp/tada/") && !classDef.type.startsWith("Lapp/morphe/")
             }
         ).matchAllMethodIndicesForEach { index ->
             val register = getInstruction<OneRegisterInstruction>(index).registerA

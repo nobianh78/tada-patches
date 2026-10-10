@@ -22,7 +22,7 @@ internal object HDRCapabilityFingerprint : Fingerprint(
         )
     ),
     custom = { _, classDef ->
-        !classDef.type.startsWith("Lapp/tada/")
+        !classDef.type.startsWith("Lapp/tada/") && !classDef.type.startsWith("Lapp/morphe/")
     }
 )
 
