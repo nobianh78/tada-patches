@@ -13,7 +13,7 @@ import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.proxy.mutableTypes.MutableField.Companion.toMutable
-import app.tada.patches.all.misc.resources.resourceMappingPatch
+import app.tada.patches.all.misc.resources.addResourcesPatch
 import app.morphe.util.getMutableMethod
 import app.morphe.util.matchSingle
 import com.android.tools.smali.dexlib2.AccessFlags
@@ -36,7 +36,7 @@ class JamPatchRegressionTest {
             "Pass -PjamApk to verify both native player layouts"
         }
         val fixture = bytecodePatch {
-            dependsOn(resourceMappingPatch)
+            dependsOn(addResourcesPatch)
             execute {
                 val ui = resolveJamUiAbi(resolveJamQueueAbi())
                 val presenter = PlayerMetadataViewsFingerprint.matchSingle().originalClassDef
