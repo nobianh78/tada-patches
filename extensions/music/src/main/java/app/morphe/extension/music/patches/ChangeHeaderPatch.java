@@ -18,7 +18,7 @@ import app.morphe.extension.music.settings.Settings;
 public class ChangeHeaderPatch {
 
     public enum HeaderLogo {
-        DEFAULT(null),
+        DEFAULT("tada_header_dark"),
         MORPHE("tada_header_dark"),
         CUSTOM("tada_header_custom_dark");
 

@@ -82,7 +82,14 @@ public class CustomDialogListPreference extends ListPreference {
         if (staticSummary != null) {
             return staticSummary;
         }
-        return super.getSummary();
+        CharSequence summary = super.getSummary();
+        if (summary == null || summary.length() == 0) {
+            CharSequence entry = getEntry();
+            if (entry != null) {
+                return entry;
+            }
+        }
+        return summary;
     }
 
     /**

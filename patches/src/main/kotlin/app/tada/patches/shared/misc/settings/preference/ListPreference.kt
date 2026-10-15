@@ -24,8 +24,9 @@ class ListPreference(
     layout: String? = null,
     tag: String = "app.morphe.extension.shared.settings.preference.CustomDialogListPreference",
     val entriesKey: String? = "${key}_entries",
-    val entryValuesKey: String? = "${key}_entry_values"
-) : BasePreference(key, titleKey, null, icon, iconBold, layout, tag) {
+    val entryValuesKey: String? = "${key}_entry_values",
+    defaultValue: String? = null
+) : BasePreference(key, titleKey, null, icon, iconBold, layout, tag, defaultValue) {
     var entries: ArrayResource? = null
         private set
     var entryValues: ArrayResource? = null

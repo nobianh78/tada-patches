@@ -31,7 +31,7 @@ import app.morphe.extension.youtube.settings.Settings;
 public class ChangeHeaderPatch {
 
     public enum HeaderLogo {
-        DEFAULT(null, null),
+        DEFAULT("tada_header"),
         REGULAR("ytWordmarkHeader", "yt_ringo2_wordmark_header"),
         PREMIUM("ytPremiumWordmarkHeader", "yt_ringo2_premium_wordmark_header"),
         MORPHE("tada_header"),

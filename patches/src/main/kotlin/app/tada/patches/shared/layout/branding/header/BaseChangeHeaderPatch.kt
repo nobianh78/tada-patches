@@ -62,12 +62,13 @@ internal fun baseChangeHeaderPatch(
     execute {
         preferenceScreen.addPreferences(
             if (custom == null) {
-                ListPreference("tada_header_logo")
+                ListPreference("tada_header_logo", defaultValue = "MORPHE")
             } else {
                 ListPreference(
                     key = "tada_header_logo",
                     entriesKey = "tada_header_logo_custom_entries",
-                    entryValuesKey = "tada_header_logo_custom_entry_values"
+                    entryValuesKey = "tada_header_logo_custom_entry_values",
+                    defaultValue = "MORPHE"
                 )
             }
         )
