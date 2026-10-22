@@ -1,8 +1,9 @@
 {
-  "created_at": "2026-10-22T18:30:00",
-  "description": "## [2.0.8](https://github.com/nobianh78/tada-patches/compare/v2.0.7...v2.0.8) (2026-10-22)\n\n### ✨ New Features\n\n* **Instagram:** Add `Custom branding name for Instagram` patch (renames app to \"TADa Instagram\")\n\n",
-  "download_url": "https://github.com/nobianh78/tada-patches/releases/download/v2.0.8/patches-2.0.8.mpp",
+  "created_at": "2026-10-22T18:55:00",
+  "description": "## [2.0.9](https://github.com/nobianh78/tada-patches/compare/v2.0.8...v2.0.9) (2026-10-22)\n\n### 🐛 Bug Fixes\n\n* **Bundle:** Ensure `classes.dex` is properly packaged into MPP\n\n### ✨ New Features\n\n* **Instagram:** Add `Custom branding name for Instagram` patch (defaults to \"TADa Instagram\")\n\n",
+  "download_url": "https://github.com/nobianh78/tada-patches/releases/download/v2.0.9/patches-2.0.9.mpp",
   "signature_download_url": "",
-  "version": "2.0.8"
+  "version": "2.0.9"
 }
+
 
