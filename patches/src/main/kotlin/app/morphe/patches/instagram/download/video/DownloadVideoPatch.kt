@@ -163,7 +163,7 @@ val downloadVideoPatch = bytecodePatch(
         "Other switches add Download for photos, Download cover, a Details row with the post's time and " +
         "poster, a download icon beside Save under each post, and Hold to download, which saves a post or reel " +
         "you hold two fingers on. Download all waits its turn, with up to ten posts queued, so two posts' pages " +
-        "never mix in your gallery. Starts off. Turn it on in HushGram settings > Downloads.",
+        "never mix in your gallery. Starts off. Turn it on in TADa settings > Downloads.",
 ) {
     category("Downloads")
     dependsOn(settingsPatch)

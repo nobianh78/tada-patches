@@ -47,7 +47,7 @@ val storyRingSizePatch = bytecodePatch(
     name = "Story ring size",
     description = "Draws the rings in the stories row at the top of Home smaller, so more fit on screen, or " +
         "larger, and the ring of a story you haven't watched in a color you pick. Nothing changes until you " +
-        "pick a size or a color. On by default. Turn it off in HushGram settings > Stories.",
+        "pick a size or a color. On by default. Turn it off in TADa settings > Stories.",
     default = true,
 ) {
     category("Stories")

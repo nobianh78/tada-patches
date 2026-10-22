@@ -26,7 +26,7 @@ val hideActiveStatusPatch = bytecodePatch(
     name = "Hide your active status",
     description = "Stops people from seeing Active now for you while you use Instagram. You still see when they're " +
         "active. Ghost mode, at the top of Ads and privacy, turns it on with the others. Starts off. Turn it on in " +
-        "HushGram settings > Messages.",
+        "TADa settings > Messages.",
 ) {
     category("Ghost mode")
     dependsOn(settingsPatch, instagramExtensionPatch, ghostModeEntryPatch)

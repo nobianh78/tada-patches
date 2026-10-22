@@ -51,7 +51,7 @@ internal data class Sent(val posts: Int, val cancels: Int)
 val groupNotificationsPatch = bytecodePatch(
     name = "Group Instagram's notifications",
     description = "Puts Instagram's notifications in one group, or in a group for each type, so they don't fill " +
-        "your notification shade. Tapping one still opens it. Starts off. Turn it on in HushGram settings > " +
+        "your notification shade. Tapping one still opens it. Starts off. Turn it on in TADa settings > " +
         "Notifications.",
     default = true,
 ) {

@@ -105,7 +105,7 @@ private const val SET_TAG = "Landroid/view/View;->setTag(Ljava/lang/Object;)V"
 val reelSeekBarPatch = bytecodePatch(
     name = "Keep a seek bar on Reels",
     description = "Keeps a seek bar under every reel, short ones too, with the time played and the reel's length " +
-        "above it, like 0:10 / 0:55. Starts off. Turn it on in HushGram settings > Reels.",
+        "above it, like 0:10 / 0:55. Starts off. Turn it on in TADa settings > Reels.",
 ) {
     category("Reels")
     dependsOn(settingsPatch, instagramExtensionPatch)

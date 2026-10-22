@@ -99,7 +99,7 @@ val keepInChatPatch = bytecodePatch(
     name = "Keep in chat",
     description = "Keeps view once and replayable photos and videos in your chats after you open them, so they " +
         "don't disappear. A photo or video you send stays Instagram's own sent bubble. Starts off. Turn it on " +
-        "in HushGram settings > Messages.",
+        "in TADa settings > Messages.",
     default = true,
 ) {
     category("Messages")

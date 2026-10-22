@@ -92,7 +92,7 @@ private const val OBJECT = "Ljava/lang/Object;"
 val keepReelSpeedPatch = bytecodePatch(
     name = "Keep the reel speed",
     description = "Keeps the 2x speed on for the next reels after you lock a reel at 2x (hold its edge, then " +
-        "slide down), until you slide the lock off. On by default. Turn it off in HushGram settings > Reels.",
+        "slide down), until you slide the lock off. On by default. Turn it off in TADa settings > Reels.",
     default = true,
 ) {
     category("Reels")

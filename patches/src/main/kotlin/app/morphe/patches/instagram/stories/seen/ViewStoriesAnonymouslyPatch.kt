@@ -33,7 +33,7 @@ val viewStoriesAnonymouslyPatch = bytecodePatch(
     name = "View stories anonymously",
     description = "Keeps you off the viewer list of the stories you watch. Replying or reacting still shows you. " +
         "An optional Mark as seen button lets you choose. Ghost mode turns it on too. Starts off. Turn it on in " +
-        "HushGram settings > Stories.",
+        "TADa settings > Stories.",
 ) {
     category("Ghost mode")
     dependsOn(settingsPatch)

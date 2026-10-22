@@ -178,7 +178,7 @@ internal fun BytecodePatchContext.keepKeyboardDown(site: AutoShowSite) {
 val commentKeyboardPatch = bytecodePatch(
     name = "Open comments without the keyboard",
     description = "Comments open with the keyboard down. A tap in the comment box, or on Reply, still brings it up. " +
-        "Starts off. Turn it on in HushGram settings > Comments.",
+        "Starts off. Turn it on in TADa settings > Comments.",
 ) {
     category("Interaction")
     dependsOn(settingsPatch, instagramExtensionPatch)

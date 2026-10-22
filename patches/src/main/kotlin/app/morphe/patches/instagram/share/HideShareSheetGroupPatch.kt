@@ -73,7 +73,7 @@ val hideShareSheetGroupPatch = bytecodePatch(
     name = "Hide group buttons on the share sheet",
     description = "Takes the New group button and the button that sends to several people as a group off the " +
         "share sheet, and lets you pick which of the round buttons under the people it shows. You can still start " +
-        "a group from your messages. Both start off. Find them in HushGram settings > Sharing.",
+        "a group from your messages. Both start off. Find them in TADa settings > Sharing.",
 ) {
     category("Interaction")
     dependsOn(settingsPatch, instagramExtensionPatch)

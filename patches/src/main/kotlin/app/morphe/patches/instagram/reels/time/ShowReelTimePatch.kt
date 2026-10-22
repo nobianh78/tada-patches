@@ -103,7 +103,7 @@ private const val PICK_REGISTERS = 10
 val showReelTimePatch = bytecodePatch(
     name = "Show a reel's exact time",
     description = "Adds the date and time a reel was posted under the author's name, like Oct 2, 3:45 PM, with " +
-        "the seconds or how long ago (1d 2h 5m ago) if you want them. Starts off. Turn it on in HushGram settings > Reels.",
+        "the seconds or how long ago (1d 2h 5m ago) if you want them. Starts off. Turn it on in TADa settings > Reels.",
 ) {
     category("Reels")
     dependsOn(settingsPatch, instagramExtensionPatch)

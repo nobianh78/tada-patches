@@ -28,7 +28,7 @@ val hideTypingPatch = bytecodePatch(
     name = "Hide that you're typing",
     description = "Stops the people you're chatting with from seeing when you're typing. You still see when they " +
         "type. Ghost mode, at the top of Ads and privacy, turns it on with the others. Starts off. Turn it on in " +
-        "HushGram settings > Messages.",
+        "TADa settings > Messages.",
 ) {
     category("Ghost mode")
     dependsOn(settingsPatch, instagramExtensionPatch, ghostModeEntryPatch)

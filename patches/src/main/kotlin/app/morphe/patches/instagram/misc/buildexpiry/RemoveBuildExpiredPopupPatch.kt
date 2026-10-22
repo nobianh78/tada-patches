@@ -44,7 +44,7 @@ val removeBuildExpiredPopupPatch = bytecodePatch(
     name = "Remove build expired popup",
     description = "Stops Instagram from locking you out with a screen that says this version is too old. A " +
         "patched build can't update itself, so it would stop working after a few weeks. On by default. Turn it " +
-        "off in HushGram settings > Updates.",
+        "off in TADa settings > Updates.",
     default = true,
 ) {
     category("Updates")

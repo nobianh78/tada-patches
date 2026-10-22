@@ -58,7 +58,7 @@ private const val LIST = "Ljava/util/List;"
 val hideAiLabeledReelsPatch = bytecodePatch(
     name = "Hide AI-labeled reels",
     description = "Leaves out reels that carry Instagram's own AI label. A reel without that label stays. " +
-        "Starts off. Turn it on in HushGram settings > Reels.",
+        "Starts off. Turn it on in TADa settings > Reels.",
 ) {
     category("Reels")
     dependsOn(settingsPatch, instagramExtensionPatch)

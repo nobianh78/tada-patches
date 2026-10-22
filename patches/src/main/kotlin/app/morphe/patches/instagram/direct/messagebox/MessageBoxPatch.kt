@@ -65,7 +65,7 @@ internal val BOX_BUTTON_IDS = listOf(0x7f0b3891, 0x7f0b389b, 0x7f0b38b5)
 val messageBoxPatch = bytecodePatch(
     name = "Message box buttons",
     description = "Lets you take the gallery, sticker and voice message buttons off the message box of a chat, and " +
-        "keep the text box and Send. Starts with every button showing. Pick which to hide in HushGram settings > Messages.",
+        "keep the text box and Send. Starts with every button showing. Pick which to hide in TADa settings > Messages.",
     default = true,
 ) {
     category("Messages")

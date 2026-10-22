@@ -24,7 +24,7 @@ internal const val HIDE_ADS = "$ADS->hide()Z"
 val hideAdsPatch = bytecodePatch(
     name = "Hide ads",
     description = "Hides sponsored posts, reels and stories, and leaves no gap where an ad would have been. On by " +
-        "default. Turn it off in HushGram settings > Ads and privacy.",
+        "default. Turn it off in TADa settings > Ads and privacy.",
     default = true,
 ) {
     category("Ads")

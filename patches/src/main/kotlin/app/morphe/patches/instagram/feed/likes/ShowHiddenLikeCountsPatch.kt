@@ -25,7 +25,7 @@ import com.android.tools.smali.dexlib2.iface.Method
 val showHiddenLikeCountsPatch = bytecodePatch(
     name = "Show hidden like counts",
     description = "Shows how many likes a post or reel has when its owner hid the count, as long as Instagram's " +
-        "server still sends the number. If it doesn't, nothing changes. Starts off. Turn it on in HushGram settings > Feed.",
+        "server still sends the number. If it doesn't, nothing changes. Starts off. Turn it on in TADa settings > Feed.",
 ) {
     category("Feed")
     dependsOn(settingsPatch, instagramExtensionPatch)

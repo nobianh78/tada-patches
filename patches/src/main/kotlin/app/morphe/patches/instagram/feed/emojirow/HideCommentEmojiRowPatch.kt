@@ -143,7 +143,7 @@ internal fun BytecodePatchContext.hideEmojiStrip(site: EmojiStripSite) {
 val hideCommentEmojiRowPatch = bytecodePatch(
     name = "Hide the comment emoji row",
     description = "Takes the row of quick emoji off above the comment box. The box itself stays. Starts off. " +
-        "Turn it on in HushGram settings > Comments.",
+        "Turn it on in TADa settings > Comments.",
 ) {
     category("Interaction")
     dependsOn(settingsPatch, instagramExtensionPatch)

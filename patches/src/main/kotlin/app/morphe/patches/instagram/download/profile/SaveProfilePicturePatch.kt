@@ -87,7 +87,7 @@ val saveProfilePicturePatch = bytecodePatch(
     name = "Save profile picture",
     description = "Adds Save profile picture, View profile picture, Copy username and Copy bio to the menu on " +
         "someone's profile. View opens the picture full screen and lets you zoom. Starts off. Turn it on in " +
-        "HushGram settings > Downloads.",
+        "TADa settings > Downloads.",
     default = true,
 ) {
     category("Downloads")

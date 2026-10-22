@@ -58,7 +58,7 @@ internal val PRESENCE_TEXT_PARAMETERS = listOf("Landroid/content/res/Resources;"
 val showLastActivePatch = bytecodePatch(
     name = "Show when someone was last active",
     description = "Shows the exact time someone was last on, like Active at 3:42 PM, in your messages and in a " +
-        "chat, instead of Active 3h ago. Active now stays. Starts off. Turn it on in HushGram settings > Messages.",
+        "chat, instead of Active 3h ago. Active now stays. Starts off. Turn it on in TADa settings > Messages.",
     default = true,
 ) {
     category("Messages")

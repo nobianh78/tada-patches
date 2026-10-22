@@ -68,7 +68,7 @@ val hideExploreGridPatch = bytecodePatch(
     name = "Hide the Explore grid",
     description = "Empties the grid of posts and reels on the Search tab. Search, recent searches and results " +
         "stay. A second switch hides the suggested accounts that show when you tap the search bar. Starts off. " +
-        "Turn it on in HushGram settings > Explore.",
+        "Turn it on in TADa settings > Explore.",
 ) {
     category("Interface")
     dependsOn(settingsPatch, instagramExtensionPatch)

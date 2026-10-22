@@ -78,7 +78,7 @@ private val CLICK_PARAMETERS = listOf("Landroid/content/DialogInterface;", "I")
 val downloadStoryPatch = bytecodePatch(
     name = "Download any story",
     description = "Adds Download to the menu of anyone's story. Videos save at the quality you choose and photos " +
-        "at their largest size, and Download as photo saves a still from a video story. On by default. Turn it off in HushGram settings > Stories.",
+        "at their largest size, and Download as photo saves a still from a video story. On by default. Turn it off in TADa settings > Stories.",
     default = true,
 ) {
     category("Downloads")

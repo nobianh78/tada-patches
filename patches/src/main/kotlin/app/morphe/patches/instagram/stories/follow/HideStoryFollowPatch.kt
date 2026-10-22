@@ -51,7 +51,7 @@ private const val VIEW = "Landroid/view/View;"
 val hideStoryFollowPatch = bytecodePatch(
     name = "Hide Follow on stories",
     description = "Takes the Follow button off the top of stories from accounts you don't follow. The name, " +
-        "time and menu stay. Starts off. Turn it on in HushGram settings > Stories.",
+        "time and menu stay. Starts off. Turn it on in TADa settings > Stories.",
 ) {
     category("Stories")
     dependsOn(settingsPatch, instagramExtensionPatch)

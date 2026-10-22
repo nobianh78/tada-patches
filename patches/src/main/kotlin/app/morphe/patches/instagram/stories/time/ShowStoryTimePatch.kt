@@ -62,7 +62,7 @@ private const val STRING = "Ljava/lang/String;"
 val showStoryTimePatch = bytecodePatch(
     name = "Show a story's exact time",
     description = "Shows the date and time a story was posted, like Oct 2, 3:45 PM, instead of how long ago. A " +
-        "choice under the switch can show the time left instead. Starts off. Turn it on in HushGram settings > " +
+        "choice under the switch can show the time left instead. Starts off. Turn it on in TADa settings > " +
         "Stories.",
 ) {
     category("Stories")

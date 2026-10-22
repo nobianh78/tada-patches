@@ -33,7 +33,7 @@ private const val REEL_ITEM = "Lcom/instagram/model/reels/ReelItem;"
 @Suppress("unused")
 val stopStoryAutoAdvancePatch = bytecodePatch(
     name = "Stop Story auto-advance",
-    description = "Keeps each story on screen until you tap or swipe. Starts off. Turn it on in HushGram settings " +
+    description = "Keeps each story on screen until you tap or swipe. Starts off. Turn it on in TADa settings " +
         "> Stories.",
 ) {
     category("Stories")

@@ -112,7 +112,7 @@ val sanitizeSharingLinksPatch = bytecodePatch(
     name = "Sanitize sharing links",
     description = "Removes tracking tags from the links you copy or share, and opens bio links without " +
         "Instagram's click tracker. The link still opens the same post, reel, story or profile. On by default. " +
-        "Turn it off in HushGram settings > Ads and privacy.",
+        "Turn it off in TADa settings > Ads and privacy.",
     default = true,
 ) {
     category("Privacy")

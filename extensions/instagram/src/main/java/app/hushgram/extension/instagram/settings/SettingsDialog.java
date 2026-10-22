@@ -276,7 +276,7 @@ public final class SettingsDialog extends DialogFragment {
     /** Shows [title] in the bar while a category's page is open, and HushGram again for null. */
     void showTitle(@androidx.annotation.Nullable CharSequence title) {
         TextView bar = heading;
-        if (bar != null) bar.setText(title == null ? "HushGram" : title);
+        if (bar != null) bar.setText(title == null ? "TADa" : title);
     }
 
     /** Closes the settings page's open category, if one is open. Answers whether one was. */

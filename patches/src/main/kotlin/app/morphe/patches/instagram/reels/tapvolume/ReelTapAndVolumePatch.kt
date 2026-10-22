@@ -77,7 +77,7 @@ val reelTapAndVolumePatch = bytecodePatch(
     name = "Control taps and volume on Reels",
     description = "Lets you choose what a single tap on a reel does: Instagram's default, pause, or mute. " +
         "Can also keep a reel muted when you press volume up. Both start at Instagram's behavior. " +
-        "Choose them in HushGram settings > Playback.",
+        "Choose them in TADa settings > Playback.",
 ) {
     category("Reels")
     dependsOn(settingsPatch, instagramExtensionPatch)

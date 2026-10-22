@@ -26,7 +26,7 @@ val dataSaverPatch = bytecodePatch(
     name = "Data saver",
     description = "Saves mobile data by loading smaller photos and starting videos at the lowest quality. It uses " +
         "Full resolution photos and Default playback quality, so it turns both on. It starts with mobile data " +
-        "only. Starts off. Turn it on in HushGram settings > Playback.",
+        "only. Starts off. Turn it on in TADa settings > Playback.",
     default = true,
 ) {
     category("Playback")

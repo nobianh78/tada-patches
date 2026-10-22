@@ -74,7 +74,7 @@ val cleanUpReelsPatch = bytecodePatch(
         "Meta glasses, friends' activity, the Add a comment bar, the reply bar on reels from chats, the Save button, the " +
         "Create and Your algorithm buttons and the Reels tab's top bar. Each one has its own switch, and Burn-in guard can dim a reel's buttons while you aren't " +
         "touching the screen. Keep clear mode on carries Instagram's clear mode to the next reels. " +
-        "Starts off. Turn it on in HushGram settings > Reels.",
+        "Starts off. Turn it on in TADa settings > Reels.",
 ) {
     category("Reels")
     dependsOn(settingsPatch)

@@ -105,7 +105,7 @@ internal object RelativeTimeFingerprint : Fingerprint(
 val showPostTimePatch = bytecodePatch(
     name = "Show a post's exact time",
     description = "Shows the date and time a post went up, like Oct 2, 3:45 PM, instead of how long ago. It does " +
-        "the same for comments. Starts off. Turn it on in HushGram settings > Feed.",
+        "the same for comments. Starts off. Turn it on in TADa settings > Feed.",
 ) {
     category("Feed")
     dependsOn(settingsPatch, instagramExtensionPatch)

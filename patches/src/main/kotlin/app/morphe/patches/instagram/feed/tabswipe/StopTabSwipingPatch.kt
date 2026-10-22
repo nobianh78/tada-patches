@@ -53,7 +53,7 @@ internal const val PAGER_BINDER = "SwipeableTabsPagerBinder"
 val stopTabSwipingPatch = bytecodePatch(
     name = "Stop swiping between tabs",
     description = "Stops a sideways swipe from moving between Home, Reels and the other main tabs. Tapping the " +
-        "tab bar still works. Starts off. Turn it on in HushGram settings > Feed.",
+        "tab bar still works. Starts off. Turn it on in TADa settings > Feed.",
     default = true,
 ) {
     category("Feed")

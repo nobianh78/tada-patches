@@ -24,7 +24,7 @@ internal const val POSTS_LIST_PATCH = "Profile posts as a list"
 val profilePostsListPatch = bytecodePatch(
     name = "Profile posts as a list",
     description = "Opening someone's profile takes you on to their posts as a scrolling list of full posts. Back " +
-        "shows the grid. Your own profile keeps its grid. Starts off. Turn it on in HushGram settings > Profiles.",
+        "shows the grid. Your own profile keeps its grid. Starts off. Turn it on in TADa settings > Profiles.",
 ) {
     category("Profiles")
     dependsOn(settingsPatch, instagramExtensionPatch)

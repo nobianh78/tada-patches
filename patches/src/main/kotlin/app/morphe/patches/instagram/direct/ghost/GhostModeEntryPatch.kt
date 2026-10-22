@@ -112,7 +112,7 @@ internal fun BytecodePatchContext.addGhostEntries(): Boolean {
     val entries = try {
         findGhostEntries()
     } catch (refusal: PatchException) {
-        patchLog.warning("${refusal.message}. Ghost mode is still in HushGram settings, and the long press on New message is left out of the older inbox top bar.")
+        patchLog.warning("${refusal.message}. Ghost mode is still in TADa settings, and the long press on New message is left out of the older inbox top bar.")
         return false
     }
     // Later instructions first, so an insert doesn't move the index of one still to come in the same method.
@@ -155,7 +155,7 @@ internal fun BytecodePatchContext.addGhostAction(): Boolean {
     val found = try {
         findGhostAction()
     } catch (refusal: PatchException) {
-        patchLog.warning("${refusal.message}. Ghost mode is still in HushGram settings, and the long press on New message is left out of the newer inbox top bar.")
+        patchLog.warning("${refusal.message}. Ghost mode is still in TADa settings, and the long press on New message is left out of the newer inbox top bar.")
         return false
     }
     val maker = mutableClassDefBy(found.makerType).methods.single {

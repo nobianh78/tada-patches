@@ -19,7 +19,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 
-private const val WHAT = "HushGram settings row"
+private const val WHAT = "TADa settings row"
 
 internal const val CREATE_VIEW_PARAMETERS = "Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;"
 
@@ -57,7 +57,7 @@ internal fun BytecodePatchContext.settingsScreenType(): String {
 }
 
 /**
- * Puts the HushGram settings row at the top of Instagram's Settings and activity screen. That
+ * Puts the TADa settings row at the top of Instagram's Settings and activity screen. That
  * screen's rows come from Instagram's server and are drawn in Compose, so the extension wraps the
  * view its fragment makes: before each `return-object` of `onCreateView`, the view goes through
  * SettingsEntry.withSettingsRow with the fragment's arguments, which name the screen shown.

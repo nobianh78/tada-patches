@@ -58,7 +58,7 @@ private const val ENUM = "Ljava/lang/Enum;"
 val backLeavesHomePatch = bytecodePatch(
     name = "Back leaves Home",
     description = "Makes Back on Home leave Instagram at once, instead of first scrolling the feed to the top and " +
-        "reloading it. Starts off. Turn it on in HushGram settings > Feed.",
+        "reloading it. Starts off. Turn it on in TADa settings > Feed.",
 ) {
     category("Feed")
     dependsOn(settingsPatch, instagramExtensionPatch)

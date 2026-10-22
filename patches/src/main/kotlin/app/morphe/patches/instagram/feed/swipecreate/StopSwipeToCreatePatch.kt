@@ -75,7 +75,7 @@ private const val STRING = "Ljava/lang/String;"
 val stopSwipeToCreatePatch = bytecodePatch(
     name = "Stop swipe to create",
     description = "Stops a sideways swipe on Home from opening the camera. The + button still opens it. Starts " +
-        "off. Turn it on in HushGram settings > Feed.",
+        "off. Turn it on in TADa settings > Feed.",
     default = true,
 ) {
     category("Feed")

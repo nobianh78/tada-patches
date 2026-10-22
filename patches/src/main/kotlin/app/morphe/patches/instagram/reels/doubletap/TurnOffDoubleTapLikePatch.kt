@@ -90,7 +90,7 @@ val turnOffDoubleTapLikePatch = bytecodePatch(
     name = "Turn off double tap to like",
     description = "Stops a double tap on a post or reel from liking it, and the heart doesn't show. The Like " +
         "button still works. Separate switches cover posts, reels, comments and chat messages. Starts off. Turn " +
-        "it on in HushGram settings > Reels.",
+        "it on in TADa settings > Reels.",
 ) {
     category("Reels")
     dependsOn(settingsPatch, instagramExtensionPatch)

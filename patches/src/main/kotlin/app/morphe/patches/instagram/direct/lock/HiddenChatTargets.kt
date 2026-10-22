@@ -221,7 +221,7 @@ private const val HIDDEN_REDRAW_NAME = "redraw"
  * The redraw bridge's body: the two steps Instagram's subscriber takes when the inbox's state hands
  * the holder a list, the write of the holder's list and the call of its starter on the holder. The
  * starter does nothing while the inbox is paused and the inbox calls it again when it resumes, so a
- * list handed over while you're in HushGram settings is drawn when you're back.
+ * list handed over while you're in TADa settings is drawn when you're back.
  */
 private fun redrawBody(rows: InboxRows) = """
     check-cast p0, ${rows.list.definingClass}

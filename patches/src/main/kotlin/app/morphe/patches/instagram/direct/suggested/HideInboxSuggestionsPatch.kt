@@ -46,7 +46,7 @@ private val UNITS_SET = listOf("Ljava/util/List;", "Ljava/lang/String;")
 val hideInboxSuggestionsPatch = bytecodePatch(
     name = "Hide suggested accounts in DMs",
     description = "Takes the Accounts to follow section off the bottom of your messages. Your chats and follow " +
-        "requests stay. Starts off. Turn it on in HushGram settings > Messages.",
+        "requests stay. Starts off. Turn it on in TADa settings > Messages.",
     default = true,
 ) {
     category("Messages")

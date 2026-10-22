@@ -24,7 +24,7 @@ internal const val PATCH = "View DM photos and videos anonymously"
 val viewDmMediaAnonymouslyPatch = bytecodePatch(
     name = "View DM photos and videos anonymously",
     description = "Holds back the Opened notice for view once photos and videos in messages, so the sender " +
-        "doesn't see you opened them. Ghost mode turns it on too. Starts off. Turn it on in HushGram settings > " +
+        "doesn't see you opened them. Ghost mode turns it on too. Starts off. Turn it on in TADa settings > " +
         "Ads and privacy.",
     default = false,
 ) {

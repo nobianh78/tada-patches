@@ -48,7 +48,7 @@ internal const val STORY_LOOP_FLAG = 0x810ff8000155deL
 val loopStoryPatch = bytecodePatch(
     name = "Loop a story",
     description = "Plays a story again from the start when it ends, instead of moving on to the next one. Tap or " +
-        "swipe to move on. Starts off. Turn it on in HushGram settings > Stories.",
+        "swipe to move on. Starts off. Turn it on in TADa settings > Stories.",
 ) {
     category("Stories")
     dependsOn(settingsPatch, instagramExtensionPatch)

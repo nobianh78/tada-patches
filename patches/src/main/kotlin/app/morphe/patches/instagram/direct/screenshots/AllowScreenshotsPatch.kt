@@ -79,7 +79,7 @@ internal object SecureWindowFingerprint : Fingerprint(
 val allowScreenshotsPatch = bytecodePatch(
     name = "Allow screenshots",
     description = "Lets you take screenshots and record your screen where Instagram normally blocks it, such as " +
-        "disappearing photos and videos in chats. Starts off. Turn it on in HushGram settings > Messages.",
+        "disappearing photos and videos in chats. Starts off. Turn it on in TADa settings > Messages.",
     default = true,
 ) {
     category("Messages")

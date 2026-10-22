@@ -62,7 +62,7 @@ internal object LikeButtonFingerprint : Fingerprint(
 val askBeforeLikePatch = bytecodePatch(
     name = "Ask before a like",
     description = "Asks you to confirm before the Like button under a post likes or unlikes it, so a stray tap " +
-        "doesn't do it for you. Starts off. Turn it on in HushGram settings > Feed.",
+        "doesn't do it for you. Starts off. Turn it on in TADa settings > Feed.",
     default = true,
 ) {
     category("Feed")

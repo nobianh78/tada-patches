@@ -78,7 +78,7 @@ val lockMessagesPatch = bytecodePatch(
     description = "Covers your inbox and chats, all of Instagram, or just the single chats you pick under Locked chats, " +
         "until your fingerprint, face or screen lock says it's you. Message notifications only say that a message " +
         "came. Chats you pick under Hidden chats leave your inbox and their notifications don't post. Starts off. " +
-        "Turn it on in HushGram settings > Messages.",
+        "Turn it on in TADa settings > Messages.",
     default = true,
 ) {
     category("Messages")

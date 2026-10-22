@@ -85,7 +85,7 @@ private const val STRING = "Ljava/lang/String;"
 val hidePaidPartnershipReelsPatch = bytecodePatch(
     name = "Hide paid partnership Reels",
     description = "Leaves out reels with a Paid partnership label, and reels Instagram marks as boosted. Ads have " +
-        "their own switch. Starts off. Turn it on in HushGram settings > Reels.",
+        "their own switch. Starts off. Turn it on in TADa settings > Reels.",
 ) {
     category("Reels")
     dependsOn(settingsPatch, instagramExtensionPatch)

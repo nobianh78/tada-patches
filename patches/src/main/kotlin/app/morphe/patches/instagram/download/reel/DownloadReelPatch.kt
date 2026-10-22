@@ -132,7 +132,7 @@ val downloadReelPatch = bytecodePatch(
         "the quality, and best is the default. A separate Download cover switch also saves the reel's cover " +
         "picture, the largest one the post carries, and Download audio saves just its sound. Download as video on " +
         "a carousel with music saves every page, in order. A separate switch under Downloads puts a download icon under Save beside each reel. On by " +
-        "default. Turn it off in HushGram settings > Reels.",
+        "default. Turn it off in TADa settings > Reels.",
     default = true,
 ) {
     category("Downloads")

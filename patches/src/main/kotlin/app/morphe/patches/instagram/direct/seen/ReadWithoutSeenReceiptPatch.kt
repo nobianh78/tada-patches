@@ -28,7 +28,7 @@ val readWithoutSeenReceiptPatch = bytecodePatch(
     name = "Read messages without the seen receipt",
     description = "Opening a chat no longer tells people you've seen their messages. You still see when they've " +
         "seen yours. Mark as read still tells them. Ghost mode turns it on too. Starts off. Turn it on in " +
-        "HushGram settings > Messages.",
+        "TADa settings > Messages.",
 ) {
     category("Ghost mode")
     dependsOn(settingsPatch, instagramExtensionPatch, ghostModeEntryPatch)

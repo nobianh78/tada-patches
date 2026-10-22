@@ -59,7 +59,7 @@ internal const val REEL_TRAY = "ITEM_TYPE_REEL_TRAY"
 val hideHighlightsPatch = bytecodePatch(
     name = "Hide highlights",
     description = "Takes the row of story highlights off profiles, yours and other people's. Bios, counts and " +
-        "posts stay. Starts off. Turn it on in HushGram settings > Profiles.",
+        "posts stay. Starts off. Turn it on in TADa settings > Profiles.",
     default = true,
 ) {
     category("Profiles")

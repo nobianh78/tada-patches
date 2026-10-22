@@ -66,7 +66,7 @@ val fullResolutionPhotosPatch = bytecodePatch(
     name = "Full resolution photos",
     description = "Loads photos in the largest size Instagram sends instead of one picked for your screen. A " +
         "second switch asks for a larger size on screens under 1440 pixels wide. Uses more data. Starts off. Turn " +
-        "it on in HushGram settings > Feed.",
+        "it on in TADa settings > Feed.",
     default = true,
 ) {
     category("Feed")

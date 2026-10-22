@@ -289,7 +289,7 @@ private fun Method.where(): String = "$definingClass->$name"
 val launchScreenPatch = bytecodePatch(
     name = "TADa launch screen",
     description = "Shows HushGram's logo instead of Instagram's on the screen you see while Instagram starts, on " +
-        "Android 13 and newer. Starts off. Turn it on in HushGram settings > Layout.",
+        "Android 13 and newer. Starts off. Turn it on in TADa settings > Layout.",
     default = true,
 ) {
     category("Interface")

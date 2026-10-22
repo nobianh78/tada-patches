@@ -40,7 +40,7 @@ internal const val COMMENT_COUNT_LABEL = ", shouldShowCommentCountInUfi="
 val hideCommentsPatch = bytecodePatch(
     name = "Hide comments",
     description = "Takes the Comment button and the comment count off posts in your feed. Starts off. Turn it on " +
-        "in HushGram settings > Comments.",
+        "in TADa settings > Comments.",
     default = true,
 ) {
     category("Interaction")

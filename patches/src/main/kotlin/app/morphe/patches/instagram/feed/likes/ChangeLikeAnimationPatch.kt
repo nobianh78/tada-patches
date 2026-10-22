@@ -55,7 +55,7 @@ internal const val NO_ANIMATION_STUB = "noAnimation"
 val changeLikeAnimationPatch = bytecodePatch(
     name = "Change the like animation",
     description = "Lets you pick the animation that plays when you double tap a post to like it. The choices are " +
-        "animations Instagram made for its Rings creators. Starts off. Turn it on in HushGram settings > Reels.",
+        "animations Instagram made for its Rings creators. Starts off. Turn it on in TADa settings > Reels.",
     default = true,
 ) {
     category("Interaction")

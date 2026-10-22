@@ -95,7 +95,7 @@ val fullScreenBarsPatch = bytecodePatch(
     name = "Full screen Reels and Home",
     description = "Hides the status bar and the navigation bar while Reels shows, and optionally while Home does. " +
         "Swipe in from the edge to bring them back for a moment. Back and the keyboard work as usual. " +
-        "Starts off. Turn it on in HushGram settings > Reels (Full screen Reels) and Feed (Full screen Home).",
+        "Starts off. Turn it on in TADa settings > Reels (Full screen Reels) and Feed (Full screen Home).",
 ) {
     category("Reels")
     dependsOn(settingsPatch, instagramExtensionPatch, barHeightsPatch)

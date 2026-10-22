@@ -66,7 +66,7 @@ internal const val EXTERNAL_PROFILE = "external_profile"
 val hideProfileNotesPatch = bytecodePatch(
     name = "Hide Notes on profile pictures",
     description = "Takes the Notes bubble off profile pictures, yours included. Notes in Messages stay. Starts off. " +
-        "Turn it on in HushGram settings > Profiles.",
+        "Turn it on in TADa settings > Profiles.",
     default = true,
 ) {
     category("Profiles")

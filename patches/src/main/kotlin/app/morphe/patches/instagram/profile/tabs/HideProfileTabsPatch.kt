@@ -47,7 +47,7 @@ internal val PROFILE_TAB_KEYS = listOf(
 val hideProfileTabsPatch = bytecodePatch(
     name = "Hide profile tabs",
     description = "Lets you take the Reels, Reposts and Tagged tabs off profiles, yours and other people's, and keep " +
-        "the grid. Starts with every tab showing. Pick which to hide in HushGram settings > Profiles.",
+        "the grid. Starts with every tab showing. Pick which to hide in TADa settings > Profiles.",
     default = true,
 ) {
     category("Profiles")

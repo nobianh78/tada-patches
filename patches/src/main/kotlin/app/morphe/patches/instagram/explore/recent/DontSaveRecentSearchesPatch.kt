@@ -54,7 +54,7 @@ internal object RegisterRecentSearchFingerprint : Fingerprint(
 val dontSaveRecentSearchesPatch = bytecodePatch(
     name = "Don't save recent searches",
     description = "Keeps the accounts and tags you open from search out of your Recent list. Searches already in " +
-        "Recent stay until you clear them. Starts off. Turn it on in HushGram settings > Explore.",
+        "Recent stay until you clear them. Starts off. Turn it on in TADa settings > Explore.",
     default = true,
 ) {
     category("Privacy")

@@ -52,7 +52,7 @@ internal const val FEED_MEDIA_CACHE = "Lcom/instagram/mainfeed/network/FeedMedia
 val hideHomeFeedPatch = bytecodePatch(
     name = "Hide the home feed",
     description = "Empties your home feed on purpose, so Home shows only the stories row. Profiles, Explore and " +
-        "Reels still show posts. Starts off. Turn it on in HushGram settings > Feed.",
+        "Reels still show posts. Starts off. Turn it on in TADa settings > Feed.",
     default = true,
 ) {
     category("Feed")

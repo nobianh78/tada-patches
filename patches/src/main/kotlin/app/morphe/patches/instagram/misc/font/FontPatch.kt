@@ -71,7 +71,7 @@ private const val CONTEXT = "Landroid/content/Context;"
 private const val STRING = "Ljava/lang/String;"
 
 /**
- * Instagram's text draws in the phone's font or a font file picked in HushGram settings. Included
+ * Instagram's text draws in the phone's font or a font file picked in TADa settings. Included
  * in the default selection with Instagram's font chosen, which changes nothing (#166, #5).
  *
  * Instagram's newer design draws its text in Prism Sans. Its font helper loads the regular,
@@ -99,7 +99,7 @@ private const val STRING = "Ljava/lang/String;"
 val fontPatch = bytecodePatch(
     name = "Font",
     description = "Lets you pick the font Instagram's text uses: Instagram's own, your phone's, or a .ttf or .otf " +
-        "file. Restart Instagram to see a change. Starts on Instagram's font. Pick one in HushGram settings > Layout.",
+        "file. Restart Instagram to see a change. Starts on Instagram's font. Pick one in TADa settings > Layout.",
     default = true,
 ) {
     category("Interface")

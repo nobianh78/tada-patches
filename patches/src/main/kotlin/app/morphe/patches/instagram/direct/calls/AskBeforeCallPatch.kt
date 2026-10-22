@@ -79,7 +79,7 @@ val askBeforeCallPatch = bytecodePatch(
     name = "Ask before a call",
     description = "Asks you to confirm before a call starts from a chat, so a stray tap on the call button " +
         "doesn't ring anyone, and can take the call buttons off the top of a chat. Both start off. Turn them on in " +
-        "HushGram settings > Messages.",
+        "TADa settings > Messages.",
     default = true,
 ) {
     category("Messages")

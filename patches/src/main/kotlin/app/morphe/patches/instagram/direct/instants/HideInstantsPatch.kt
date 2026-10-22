@@ -41,7 +41,7 @@ internal val GATE_PARAMETERS = listOf("Lcom/instagram/common/session/UserSession
 val hideInstantsPatch = bytecodePatch(
     name = "Hide Instants",
     description = "Takes the stack of Instants out of your messages. Instants is Instagram's no-edit camera for " +
-        "sharing quick photos with friends. Starts off. Turn it on in HushGram settings > Messages.",
+        "sharing quick photos with friends. Starts off. Turn it on in TADa settings > Messages.",
     default = true,
 ) {
     category("Messages")

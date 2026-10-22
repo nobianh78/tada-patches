@@ -154,7 +154,7 @@ import app.hushgram.extension.shared.settings.preference.QuickSetups;
 @SuppressWarnings("deprecation")
 public final class HushgramPreferenceFragment extends AbstractPreferenceFragment {
     /** The repository as a link, and as a person reads it. */
-    static final String SOURCE_URL = "https://github.com/SysAdminDoc/HushGram";
+    static final String SOURCE_URL = "https://github.com/nobianh78/tada-patches";
     static final String SOURCE_ADDRESS = SOURCE_URL.substring(SOURCE_URL.indexOf("://") + 3);
     /** Where Support HushGram goes: the maintainer's Ko-fi page. */
     static final String SUPPORT_URL = "https://ko-fi.com/X8K126YVER";

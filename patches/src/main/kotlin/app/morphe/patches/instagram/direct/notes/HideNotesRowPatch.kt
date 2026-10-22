@@ -53,7 +53,7 @@ private const val BIT_SET = "Ljava/util/BitSet;"
 val hideNotesRowPatch = bytecodePatch(
     name = "Hide the notes row",
     description = "Takes the row of notes, and the Map bubble in it, off the top of your messages. Your chats " +
-        "stay. Starts off. Turn it on in HushGram settings > Messages.",
+        "stay. Starts off. Turn it on in TADa settings > Messages.",
     default = true,
 ) {
     category("Messages")

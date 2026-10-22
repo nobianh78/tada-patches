@@ -53,7 +53,7 @@ val clearMediaCachePatch = bytecodePatch(
     name = "Clear the media cache",
     description = "Frees storage by deleting Instagram's saved copies of photos and videos once they pass 500 MB. " +
         "Your sign-in, drafts and settings stay. A row clears them right away. Starts off. Turn it on in " +
-        "HushGram settings > Storage.",
+        "TADa settings > Storage.",
     default = true,
 ) {
     category("Settings")

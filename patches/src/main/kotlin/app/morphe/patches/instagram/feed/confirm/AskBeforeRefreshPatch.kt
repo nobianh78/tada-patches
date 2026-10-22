@@ -65,7 +65,7 @@ private const val ANIMATION = "Landroid/view/animation/Animation;"
 val askBeforeRefreshPatch = bytecodePatch(
     name = "Ask before a refresh",
     description = "Asks you to confirm before pulling down refreshes Home, Reels or another list, so an " +
-        "accidental pull doesn't replace what you were reading. Starts off. Turn it on in HushGram settings > " +
+        "accidental pull doesn't replace what you were reading. Starts off. Turn it on in TADa settings > " +
         "Feed.",
     default = true,
 ) {

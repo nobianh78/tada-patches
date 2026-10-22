@@ -60,7 +60,7 @@ val systemPhotoPickerPatch = bytecodePatch(
     name = "Use the system photo picker",
     description = "Adds an entry to Instagram's gallery sheet that opens Android's own photo picker when you make " +
         "a post, so you pick from your photos and any cloud gallery and Instagram only gets what you choose. " +
-        "Starts off. Turn it on in HushGram settings > Ads and privacy.",
+        "Starts off. Turn it on in TADa settings > Ads and privacy.",
 ) {
     category("Privacy")
     dependsOn(settingsPatch, instagramExtensionPatch)

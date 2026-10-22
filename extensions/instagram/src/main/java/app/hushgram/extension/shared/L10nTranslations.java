@@ -20,7 +20,7 @@ public final class L10nTranslations {
     }
 
     /** The language tags with a table, lower case. */
-    static final String[] LANGUAGES = {"de", "es", "in", "it", "ko", "pt-rbr", "tr"};
+    static final String[] LANGUAGES = {"de", "es", "in", "it", "ko", "pt-rbr", "tr", "vi"};
 
     /**
      * The table for one language tag, or null when nothing was translated into it.
@@ -44,6 +44,8 @@ public final class L10nTranslations {
                 return buildPt_rBR();
             case "tr":
                 return buildTr();
+            case "vi":
+                return buildVi();
             default:
                 return null;
         }
@@ -16028,5 +16030,2288 @@ public final class L10nTranslations {
                 "x86 cihazlar i\u00e7in a\u00e7\u0131l\u0131\u015f d\u00fczeltmesi");
         table.put("this sound",
                 "bu ses");
+    }
+
+    private static Map<String, String> buildVi() {
+        Map<String, String> table = new HashMap<>(2202);
+        fillVi0(table);
+        fillVi1(table);
+        fillVi2(table);
+        fillVi3(table);
+        fillVi4(table);
+        fillVi5(table);
+        fillVi6(table);
+        fillVi7(table);
+        fillVi8(table);
+        fillVi9(table);
+        fillVi10(table);
+        fillVi11(table);
+        fillVi12(table);
+        fillVi13(table);
+        fillVi14(table);
+        fillVi15(table);
+        fillVi16(table);
+        fillVi17(table);
+        fillVi18(table);
+        return table;
+    }
+
+    private static void fillVi0(Map<String, String> table) {
+        table.put("%1$d mentions",
+                "%1$d l\u01b0\u1ee3t nh\u1eafc");
+        table.put("%1$d saved in lower quality than on Instagram.",
+                "%1$d m\u1ee5c \u0111\u01b0\u1ee3c l\u01b0u \u1edf ch\u1ea5t l\u01b0\u1ee3ng th\u1ea5p h\u01a1n Instagram.");
+        table.put("%1$d saves stopped. Reopen the media and save again.",
+                "%1$d ti\u1ebfn tr\u00ecnh l\u01b0u b\u1ecb d\u1eebng. H\u00e3y m\u1edf l\u1ea1i n\u1ed9i dung v\u00e0 l\u01b0u l\u1ea1i.");
+        table.put("%1$d saves were interrupted",
+                "%1$d ti\u1ebfn tr\u00ecnh l\u01b0u b\u1ecb gi\u00e1n \u0111o\u1ea1n");
+        table.put("%1$d word",
+                "%1$d t\u1eeb");
+        table.put("%1$d words",
+                "%1$d t\u1eeb");
+        table.put("%1$dh %2$dm left",
+                "c\u00f2n %1$dh %2$dp");
+        table.put("%1$dm left",
+                "c\u00f2n %1$dp");
+        table.put("%1$s (opened last)",
+                "%1$s (m\u1edf g\u1ea7n nh\u1ea5t)");
+        table.put("%1$s ago",
+                "%1$s tr\u01b0\u1edbc");
+        table.put("%1$s becomes the date and time of the save, %2$s the video's number on Instagram, %3$s who posted it and %4$s the day it was posted. What a save doesn't know is left out, and a name with none of these gets the date added. When the name is already in the folder, the time of the save goes on the end. Invalid characters become underscores. Leave it blank to use the default, %5$s.",
+                "%1$s l\u00e0 ng\u00e0y gi\u1edd l\u01b0u, %2$s l\u00e0 m\u00e3 s\u1ed1 video tr\u00ean Instagram, %3$s l\u00e0 ng\u01b0\u1eddi \u0111\u0103ng v\u00e0 %4$s l\u00e0 ng\u00e0y \u0111\u0103ng. Th\u00f4ng tin kh\u00f4ng c\u00f3 s\u1ebd b\u1ecb b\u1ecf qua. N\u1ebfu t\u00ean \u0111\u00e3 t\u1ed3n t\u1ea1i trong th\u01b0 m\u1ee5c, th\u1eddi gian l\u01b0u s\u1ebd \u0111\u01b0\u1ee3c th\u00eam v\u00e0o cu\u1ed1i. K\u00fd t\u1ef1 kh\u00f4ng h\u1ee3p l\u1ec7 s\u1ebd th\u00e0nh d\u1ea5u g\u1ea1ch d\u01b0\u1edbi. \u0110\u1ec3 tr\u1ed1ng \u0111\u1ec3 d\u00f9ng m\u1eb7c \u0111\u1ecbnh: %5$s.");
+        table.put("%1$s by %2$s",
+                "%1$s b\u1edfi %2$s");
+        table.put("%1$s is hidden",
+                "%1$s \u0111\u00e3 \u0111\u01b0\u1ee3c \u1ea9n");
+        table.put("%1$s is locked",
+                "%1$s \u0111\u00e3 \u0111\u01b0\u1ee3c kh\u00f3a");
+        table.put("%1$s is shown again",
+                "%1$s \u0111\u00e3 hi\u1ec3n th\u1ecb l\u1ea1i");
+        table.put("%1$s is unlocked",
+                "%1$s \u0111\u00e3 \u0111\u01b0\u1ee3c m\u1edf kh\u00f3a");
+        table.put("%1$s of %2$s",
+                "%1$s tr\u00ean %2$s");
+        table.put("%1$s so far",
+                "%1$s cho \u0111\u1ebfn nay");
+        table.put("%1$s, gone by %2$s",
+                "%1$s, \u0111\u00e3 h\u1ee7y theo d\u00f5i tr\u01b0\u1edbc %2$s");
+        table.put("%1$s, see who this story mentions",
+                "%1$s, xem ng\u01b0\u1eddi \u0111\u01b0\u1ee3c nh\u1eafc \u0111\u1ebfn trong tin n\u00e0y");
+        table.put("%1$s. It was set when you patched, so Pause can't turn it off. To rule it out, patch again and leave out that patch.",
+                "%1$s. T\u00f9y ch\u1ecdn n\u00e0y \u0111\u00e3 \u0111\u01b0\u1ee3c b\u1eadt khi v\u00e1, n\u00ean T\u1ea1m d\u1eebng kh\u00f4ng th\u1ec3 t\u1eaft n\u00f3. \u0110\u1ec3 b\u1ecf t\u00f9y ch\u1ecdn n\u00e0y, h\u00e3y v\u00e1 l\u1ea1i v\u00e0 b\u1ecf ch\u1ecdn b\u1ea3n v\u00e1 \u0111\u00f3.");
+        table.put("%1$s. The others stay as you set them.",
+                "%1$s. C\u00e1c m\u1ee5c kh\u00e1c gi\u1eef nguy\u00ean theo thi\u1ebft l\u1eadp c\u1ee7a b\u1ea1n.");
+        table.put("%1$s. They were set when you patched, so Pause can't turn them off. To rule one out, patch again and leave out the patch in brackets after it.",
+                "%1$s. C\u00e1c t\u00f9y ch\u1ecdn n\u00e0y \u0111\u00e3 \u0111\u01b0\u1ee3c b\u1eadt khi v\u00e1, n\u00ean T\u1ea1m d\u1eebng kh\u00f4ng th\u1ec3 t\u1eaft ch\u00fang. \u0110\u1ec3 b\u1ecf m\u1ed9t t\u00f9y ch\u1ecdn, h\u00e3y v\u00e1 l\u1ea1i v\u00e0 b\u1ecf b\u1ea3n v\u00e1 trong ngo\u1eb7c \u0111\u01a1n sau n\u00f3.");
+        table.put("%d notifications",
+                "%d th\u00f4ng b\u00e1o");
+        table.put("1 hour",
+                "1 gi\u1edd");
+        table.put("1 mention",
+                "1 l\u01b0\u1ee3t nh\u1eafc");
+        table.put("1 minute",
+                "1 ph\u00fat");
+        table.put("1 second",
+                "1 gi\u00e2y");
+        table.put("1.5 seconds",
+                "1,5 gi\u00e2y");
+        table.put("15 minutes",
+                "15 ph\u00fat");
+        table.put("1m left",
+                "c\u00f2n 1p");
+        table.put("5 minutes",
+                "5 ph\u00fat");
+        table.put("A PIN you set here unlocks your messages, in place of your screen lock. It can't be recovered, only cleared by clearing Instagram's storage.",
+                "M\u00e3 PIN b\u1ea1n thi\u1ebft l\u1eadp t\u1ea1i \u0111\u00e2y s\u1ebd d\u00f9ng \u0111\u1ec3 m\u1edf kh\u00f3a tin nh\u1eafn thay cho kh\u00f3a m\u00e0n h\u00ecnh \u0111i\u1ec7n tho\u1ea1i. M\u00e3 PIN kh\u00f4ng th\u1ec3 kh\u00f4i ph\u1ee5c n\u1ebfu qu\u00ean.");
+        table.put("A chat you open stays unread in your messages on this phone until you long press it and tap Mark as read. A newer message in it stays unread too. Turned off, a chat you open stays read on this phone until a newer message comes in, even after your messages refresh.",
+                "Cu\u1ed9c tr\u00f2 chuy\u1ec7n b\u1ea1n \u0111\u00e3 m\u1edf v\u1eabn hi\u1ec3n th\u1ecb tr\u1ea1ng th\u00e1i ch\u01b0a \u0111\u1ecdc tr\u00ean m\u00e1y n\u00e0y cho \u0111\u1ebfn khi b\u1ea1n nh\u1ea5n gi\u1eef v\u00e0 ch\u1ecdn \u0110\u00e1nh d\u1ea5u l\u00e0 \u0111\u00e3 \u0111\u1ecdc. Khi t\u1eaft, cu\u1ed9c tr\u00f2 chuy\u1ec7n b\u1ea1n m\u1edf s\u1ebd \u0111\u1ed5i th\u00e0nh \u0111\u00e3 \u0111\u1ecdc tr\u00ean m\u00e1y n\u00e0y.");
+        table.put("A diagnostic report is already being saved.",
+                "B\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n \u0111ang \u0111\u01b0\u1ee3c l\u01b0u.");
+        table.put("A double tap on a comment doesn't like it. Starts off, so comments keep double tap to like until you turn this on.",
+                "Ch\u1ea1m hai l\u1ea7n v\u00e0o b\u00ecnh lu\u1eadn s\u1ebd kh\u00f4ng th\u1ea3 tim n\u1eefa. M\u1eb7c \u0111\u1ecbnh t\u1eaft.");
+        table.put("A double tap on a message in a chat doesn't react to it. Starts off. A long press still shows the reactions.",
+                "Ch\u1ea1m hai l\u1ea7n v\u00e0o tin nh\u1eafn trong \u0111o\u1ea1n chat s\u1ebd kh\u00f4ng th\u1ea3 c\u1ea3m x\u00fac. M\u1eb7c \u0111\u1ecbnh t\u1eaft. Nh\u1ea5n gi\u1eef v\u1eabn hi\u1ec7n b\u1ea3ng c\u1ea3m x\u00fac.");
+        table.put("A double tap on a post doesn't like it. Turn this off to keep double tap to like on posts.",
+                "Ch\u1ea1m hai l\u1ea7n v\u00e0o b\u00e0i vi\u1ebft s\u1ebd kh\u00f4ng th\u00edch b\u00e0i vi\u1ebft \u0111\u00f3. T\u1eaft t\u00f9y ch\u1ecdn n\u00e0y \u0111\u1ec3 gi\u1eef ch\u1ea1m hai l\u1ea7n \u0111\u1ec3 th\u00edch.");
+        table.put("A double tap on a post or reel no longer likes it or shows a heart. A single tap and the Like button work as before.",
+                "Ch\u1ea1m hai l\u1ea7n v\u00e0o b\u00e0i vi\u1ebft ho\u1eb7c reel s\u1ebd kh\u00f4ng c\u00f2n th\u1ea3 tim n\u1eefa. Ch\u1ea1m m\u1ed9t l\u1ea7n v\u00e0 n\u00fat Th\u00edch v\u1eabn ho\u1ea1t \u0111\u1ed9ng b\u00ecnh th\u01b0\u1eddng.");
+        table.put("A double tap on a reel doesn't like it. Turn this off to keep double tap to like on reels.",
+                "Ch\u1ea1m hai l\u1ea7n v\u00e0o reel s\u1ebd kh\u00f4ng th\u00edch reel \u0111\u00f3. T\u1eaft t\u00f9y ch\u1ecdn n\u00e0y \u0111\u1ec3 gi\u1eef ch\u1ea1m hai l\u1ea7n \u0111\u1ec3 th\u00edch.");
+        table.put("A file named %1$s in %2$s paused HushGram.",
+                "T\u1ec7p c\u00f3 t\u00ean %1$s trong %2$s \u0111\u00e3 t\u1ea1m d\u1eebng TADa.");
+        table.put("A finished story stays on screen until you tap or swipe. Turn this off for Instagram's timing.",
+                "Tin \u0111\u00e3 xem xong v\u1eabn gi\u1eef tr\u00ean m\u00e0n h\u00ecnh cho \u0111\u1ebfn khi b\u1ea1n ch\u1ea1m ho\u1eb7c vu\u1ed1t. T\u1eaft t\u00f9y ch\u1ecdn n\u00e0y \u0111\u1ec3 d\u00f9ng th\u1eddi gian t\u1ef1 \u0111\u1ed9ng m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram.");
+        table.put("A font file",
+                "T\u1ec7p ph\u00f4ng ch\u1eef t\u00f9y ch\u1ec9nh");
+        table.put("A group for each kind of notification, such as comments or messages, in place of one group.",
+                "T\u1ea1o nh\u00f3m ri\u00eang cho t\u1eebng lo\u1ea1i th\u00f4ng b\u00e1o (nh\u01b0 b\u00ecnh lu\u1eadn ho\u1eb7c tin nh\u1eafn) thay v\u00ec g\u1ed9p chung m\u1ed9t nh\u00f3m.");
+        table.put("A left swipe on a reel opens the creator's profile, like Instagram used to. Tap Friends at the top to reach your friends' reels.",
+                "Vu\u1ed1t sang tr\u00e1i khi \u0111ang xem reel s\u1ebd m\u1edf ngay trang c\u00e1 nh\u00e2n c\u1ee7a ng\u01b0\u1eddi s\u00e1ng t\u1ea1o video (gi\u1ed1ng t\u00ednh n\u0103ng g\u1ed1c tr\u01b0\u1edbc \u0111\u00e2y c\u1ee7a Instagram).");
+        table.put("A light tick each time the highlight slides past a tab, so it follows the bar as you tap or swipe between screens.",
+                "Rung ph\u1ea3n h\u1ed3i nh\u1eb9 m\u1ed7i khi \u0111i\u1ec3m \u0111\u00e1nh d\u1ea5u tr\u01b0\u1ee3t qua m\u1ed9t tab, \u0111\u1ed3ng b\u1ed9 khi b\u1ea1n ch\u1ea1m ho\u1eb7c vu\u1ed1t chuy\u1ec3n tab.");
+        table.put("A little more",
+                "Th\u00eam m\u1ed9t ch\u00fat");
+        table.put("A long press on the Instagram logo at the top of Home opens these settings. Off, the long press goes back to Instagram.",
+                "Nh\u1ea5n gi\u1eef logo Instagram \u1edf \u0111\u1ea7u Trang ch\u1ee7 \u0111\u1ec3 m\u1edf c\u00e0i \u0111\u1eb7t TADa n\u00e0y.");
+        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens HushGram. A tap still opens Instagram's menu, and other profiles stay the same.",
+                "Nh\u1ea5n gi\u1eef n\u00fat menu (ba d\u1ea5u g\u1ea1ch ngang \u1edf g\u00f3c tr\u00ean b\u00ean ph\u1ea3i trang c\u00e1 nh\u00e2n c\u1ee7a b\u1ea1n) \u0111\u1ec3 m\u1edf TADa. Ch\u1ea1m th\u00f4ng th\u01b0\u1eddng v\u1eabn m\u1edf menu Instagram.");
+        table.put("A reel Instagram's auto scroll moves to waits for your tap too. Off, auto scroll plays reel after reel.",
+                "Reel \u0111\u01b0\u1ee3c t\u1ef1 \u0111\u1ed9ng cu\u1ed9n t\u1edbi c\u0169ng s\u1ebd ch\u1edd b\u1ea1n ch\u1ea1m m\u1edbi ph\u00e1t ti\u1ebfp. Khi t\u1eaft, video s\u1ebd ph\u00e1t li\u00ean t\u1ee5c t\u1ef1 \u0111\u1ed9ng.");
+        table.put("A reel that doesn't fill the screen shows a blurred copy of itself above and below it instead of black bars, and the strip under the tab bar shows the reel blurred too. Open Reels again after a change.",
+                "V\u1edbi reel kh\u00f4ng v\u1eeba to\u00e0n m\u00e0n h\u00ecnh, ph\u1ea7n tr\u00ean v\u00e0 d\u01b0\u1edbi s\u1ebd hi\u1ec3n th\u1ecb b\u1ea3n sao l\u00e0m m\u1edd thay v\u00ec thanh \u0111en. M\u1edf l\u1ea1i Reels sau khi thay \u0111\u1ed5i.");
+        table.put("A save or an export is still running. Restart once it's done.",
+                "Qu\u00e1 tr\u00ecnh l\u01b0u ho\u1eb7c xu\u1ea5t t\u1ec7p \u0111ang ch\u1ea1y. H\u00e3y kh\u1edfi \u0111\u1ed9ng l\u1ea1i sau khi ho\u00e0n t\u1ea5t.");
+        table.put("A save stopped. Reopen the media and save again.",
+                "Qu\u00e1 tr\u00ecnh l\u01b0u b\u1ecb d\u1eebng. H\u00e3y m\u1edf l\u1ea1i n\u1ed9i dung v\u00e0 l\u01b0u l\u1ea1i.");
+        table.put("A save was interrupted",
+                "M\u1ed9t ti\u1ebfn tr\u00ecnh l\u01b0u b\u1ecb gi\u00e1n \u0111o\u1ea1n");
+        table.put("A sideways swipe no longer moves you between Home, Reels and the other main tabs. Tap the tab bar instead. Stop swipe to create covers the camera.",
+                "Vu\u1ed1t ngang m\u00e0n h\u00ecnh s\u1ebd kh\u00f4ng chuy\u1ec3n \u0111\u1ed5i gi\u1eefa Trang ch\u1ee7, Reels v\u00e0 c\u00e1c tab ch\u00ednh kh\u00e1c. H\u00e3y ch\u1ea1m v\u00e0o thanh tab b\u00ean d\u01b0\u1edbi \u0111\u1ec3 chuy\u1ec3n. Ch\u1eb7n vu\u1ed1t \u0111\u1ec3 t\u1ea1o b\u00e0i vi\u1ebft c\u0169ng s\u1ebd ch\u1eb7n m\u1edf m\u00e1y \u1ea3nh.");
+        table.put("A sideways swipe on Home no longer opens the camera. The + button and every other way into the camera still work.",
+                "Vu\u1ed1t ngang \u1edf Trang ch\u1ee7 s\u1ebd kh\u00f4ng c\u00f2n m\u1edf m\u00e1y \u1ea3nh. N\u00fat + v\u00e0 c\u00e1c c\u00e1ch kh\u00e1c \u0111\u1ec3 m\u1edf m\u00e1y \u1ea3nh v\u1eabn ho\u1ea1t \u0111\u1ed9ng b\u00ecnh th\u01b0\u1eddng.");
+        table.put("A smaller chip, centered under the profile picture. A profile with no room there gets the small chip under the counts.",
+                "Nh\u00e3n nh\u1ecf g\u1ecdn n\u1eb1m c\u0103n gi\u1eefa d\u01b0\u1edbi \u1ea3nh \u0111\u1ea1i di\u1ec7n. N\u1ebfu kh\u00f4ng \u0111\u1ee7 kho\u1ea3ng tr\u1ed1ng, nh\u00e3n s\u1ebd hi\u1ec3n th\u1ecb d\u01b0\u1edbi ph\u1ea7n s\u1ed1 li\u1ec7u.");
+        table.put("A story plays again from the start when it ends, until you tap or swipe to move on. Ads still move on. With Stop Story auto-advance on too, stories loop.",
+                "Tin s\u1ebd ph\u00e1t l\u1ea1i t\u1eeb \u0111\u1ea7u khi k\u1ebft th\u00fac, cho \u0111\u1ebfn khi b\u1ea1n ch\u1ea1m ho\u1eb7c vu\u1ed1t \u0111\u1ec3 xem ti\u1ebfp. Qu\u1ea3ng c\u00e1o v\u1eabn t\u1ef1 chuy\u1ec3n ti\u1ebfp. Khi b\u1eadt c\u00f9ng D\u1eebng t\u1ef1 \u0111\u1ed9ng chuy\u1ec3n tin, c\u00e1c tin s\u1ebd ph\u00e1t l\u1eb7p l\u1ea1i.");
+        table.put("A story's header says how many accounts it mentions, even when the mention is hidden. Tap that for the list, and tap someone to open their profile.",
+                "Ti\u00eau \u0111\u1ec1 c\u1ee7a tin hi\u1ec3n th\u1ecb s\u1ed1 l\u01b0\u1ee3ng t\u00e0i kho\u1ea3n \u0111\u01b0\u1ee3c nh\u1eafc \u0111\u1ebfn (k\u1ec3 c\u1ea3 khi b\u1ecb \u1ea9n trong tin). Ch\u1ea1m v\u00e0o \u0111\u00f3 \u0111\u1ec3 xem danh s\u00e1ch v\u00e0 m\u1edf trang c\u00e1 nh\u00e2n c\u1ee7a h\u1ecd.");
+        table.put("A story's header shows its time the way the choice below says, instead of how long ago. It follows your phone's language and 12 or 24-hour setting.",
+                "Ph\u1ea7n \u0111\u1ea7u c\u1ee7a tin hi\u1ec3n th\u1ecb th\u1eddi gian theo l\u1ef1a ch\u1ecdn b\u00ean d\u01b0\u1edbi thay v\u00ec hi\u1ec3n th\u1ecb th\u1eddi gian t\u01b0\u01a1ng \u0111\u1ed1i. T\u00f9y ch\u1ecdn n\u00e0y tu\u00e2n theo \u0111\u1ecbnh d\u1ea1ng 12 ho\u1eb7c 24 gi\u1edd v\u00e0 ng\u00f4n ng\u1eef c\u1ee7a m\u00e1y.");
+    }
+
+    private static void fillVi1(Map<String, String> table) {
+        table.put("A swipe in Reels no longer moves on to the next reel, and pulling down doesn't load new ones. The reel you opened still plays. Restart Instagram to see the change.",
+                "Vu\u1ed1t trong Reels s\u1ebd kh\u00f4ng chuy\u1ec3n sang reel ti\u1ebfp theo v\u00e0 k\u00e9o xu\u1ed1ng kh\u00f4ng t\u1ea3i th\u00eam reel m\u1edbi. Reel \u0111ang m\u1edf v\u1eabn ph\u00e1t. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("A swipe up on someone's story no longer opens the reply box and its reactions. Tap Send message to reply.",
+                "Vu\u1ed1t l\u00ean khi xem tin s\u1ebd kh\u00f4ng m\u1edf khung tr\u1ea3 l\u1eddi n\u1eefa, tr\u00e1nh vi\u1ec7c v\u00f4 t\u00ecnh l\u1ee1 tay g\u1eedi bi\u1ec3u c\u1ea3m. Ch\u1ea1m v\u00e0o G\u1eedi tin nh\u1eafn \u0111\u1ec3 tr\u1ea3 l\u1eddi.");
+        table.put("A tap on a playing reel turns its sound off or on and keeps it playing. A reel that's paused still plays on a tap.",
+                "Ch\u1ea1m v\u00e0o reel \u0111ang ph\u00e1t s\u1ebd b\u1eadt ho\u1eb7c t\u1eaft ti\u1ebfng trong khi video v\u1eabn ti\u1ebfp t\u1ee5c ch\u1ea1y. Ch\u1ea1m v\u00e0o reel \u0111ang t\u1ea1m d\u1eebng s\u1ebd ph\u00e1t l\u1ea1i.");
+        table.put("A tap on a reel",
+                "H\u00e0nh \u0111\u1ed9ng khi ch\u1ea1m v\u00e0o reel");
+        table.put("A tap on a reel does what Instagram does.",
+                "Ch\u1ea1m v\u00e0o reel s\u1ebd th\u1ef1c hi\u1ec7n theo m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram.");
+        table.put("A tap on a reel pauses it, and another tap plays it again.",
+                "Ch\u1ea1m v\u00e0o reel \u0111\u1ec3 t\u1ea1m d\u1eebng, ch\u1ea1m l\u1ea7n n\u1eefa \u0111\u1ec3 ti\u1ebfp t\u1ee5c ph\u00e1t.");
+        table.put("A username is up to 30 letters, numbers, dots and underscores",
+                "T\u00ean ng\u01b0\u1eddi d\u00f9ng t\u1ed1i \u0111a 30 k\u00fd t\u1ef1 (ch\u1eef c\u00e1i, s\u1ed1, d\u1ea5u ch\u1ea5m v\u00e0 g\u1ea1ch d\u01b0\u1edbi)");
+        table.put("About",
+                "Gi\u1edbi thi\u1ec7u");
+        table.put("About this reel keeps its summary and Sources, and only the Ask Meta AI box under them goes.",
+                "Gi\u1eef nguy\u00ean ph\u1ea7n t\u00f3m t\u1eaft v\u00e0 Ngu\u1ed3n trong Gi\u1edbi thi\u1ec7u v\u1ec1 th\u01b0\u1edbc phim n\u00e0y, ch\u1ec9 \u1ea9n h\u1ed9p H\u1ecfi Meta AI b\u00ean d\u01b0\u1edbi.");
+        table.put("Accent color",
+                "M\u00e0u \u0111i\u1ec3m nh\u1ea5n");
+        table.put("Account %1$s",
+                "T\u00e0i kho\u1ea3n %1$s");
+        table.put("Active %1$s at %2$s",
+                "Ho\u1ea1t \u0111\u1ed9ng %1$s l\u00fac %2$s");
+        table.put("Active at %1$s",
+                "Ho\u1ea1t \u0111\u1ed9ng l\u00fac %1$s");
+        table.put("Active yesterday at %1$s",
+                "Ho\u1ea1t \u0111\u1ed9ng h\u00f4m qua l\u00fac %1$s");
+        table.put("Activity",
+                "Ho\u1ea1t \u0111\u1ed9ng");
+        table.put("Add a username",
+                "Th\u00eam t\u00ean ng\u01b0\u1eddi d\u00f9ng");
+        table.put("Add the source to saved photos",
+                "Th\u00eam ngu\u1ed3n v\u00e0o \u1ea3nh \u0111\u00e3 l\u01b0u");
+        table.put("Add to channel",
+                "Th\u00eam v\u00e0o k\u00eanh");
+        table.put("Add to story",
+                "Th\u00eam v\u00e0o tin");
+        table.put("Adds Choose pages to a carousel's menu, after Save all, and to the download icon. Tick the pages you want and only those save, in order.",
+                "Th\u00eam t\u00f9y ch\u1ecdn Ch\u1ecdn trang v\u00e0o menu b\u00e0i vi\u1ebft nhi\u1ec1u \u1ea3nh/video v\u00e0 bi\u1ec3u t\u01b0\u1ee3ng t\u1ea3i xu\u1ed1ng. \u0110\u00e1nh d\u1ea5u c\u00e1c trang b\u1ea1n mu\u1ed1n v\u00e0 ch\u1ec9 c\u00e1c trang \u0111\u00f3 \u0111\u01b0\u1ee3c l\u01b0u.");
+        table.put("Adds Copy to a selected comment's menu. Copies the original text, including line breaks.",
+                "Th\u00eam t\u00f9y ch\u1ecdn Sao ch\u00e9p v\u00e0o menu b\u00ecnh lu\u1eadn \u0111\u00e3 ch\u1ecdn. Sao ch\u00e9p v\u0103n b\u1ea3n g\u1ed1c bao g\u1ed3m c\u1ea3 c\u00e1c l\u1ea7n xu\u1ed1ng d\u00f2ng.");
+        table.put("Adds Copy username and Copy bio to the menu on someone's profile. Each copies the text exactly as the account has it.",
+                "Th\u00eam t\u00f9y ch\u1ecdn Sao ch\u00e9p t\u00ean ng\u01b0\u1eddi d\u00f9ng v\u00e0 Sao ch\u00e9p ti\u1ec3u s\u1eed v\u00e0o menu trang c\u00e1 nh\u00e2n c\u1ee7a ng\u01b0\u1eddi kh\u00e1c.");
+        table.put("Adds Copy username to a selected comment's menu, for the account that wrote it.",
+                "Th\u00eam t\u00f9y ch\u1ecdn Sao ch\u00e9p t\u00ean ng\u01b0\u1eddi d\u00f9ng v\u00e0o menu c\u1ee7a b\u00ecnh lu\u1eadn \u0111\u00e3 ch\u1ecdn.");
+        table.put("Adds Details to a feed post's menu. It shows when the post went up, who posted it, its media ID and the size Download saves, with buttons to copy the file link, username and caption.",
+                "Th\u00eam m\u1ee5c Chi ti\u1ebft v\u00e0o menu b\u00e0i vi\u1ebft tr\u00ean b\u1ea3ng tin. Hi\u1ec3n th\u1ecb ng\u00e0y gi\u1edd \u0111\u0103ng, ng\u01b0\u1eddi \u0111\u0103ng, ID n\u1ed9i dung, k\u00edch th\u01b0\u1edbc t\u1ec7p t\u1ea3i xu\u1ed1ng k\u00e8m c\u00e1c n\u00fat sao ch\u00e9p li\u00ean k\u1ebft, t\u00ean ng\u01b0\u1eddi d\u00f9ng v\u00e0 ch\u00fa th\u00edch.");
+        table.put("Adds Download audio under Download. It saves the sound of the reel as an audio file.",
+                "Th\u00eam n\u00fat T\u1ea3i \u00e2m thanh trong m\u1ee5c T\u1ea3i xu\u1ed1ng. L\u01b0u \u00e2m thanh c\u1ee7a reel th\u00e0nh t\u1ec7p \u00e2m thanh.");
+        table.put("Adds Download cover to the menu of a feed post with a video, and of a carousel showing one. It saves the still picture shown before the video plays, at its largest size.",
+                "Th\u00eam t\u00f9y ch\u1ecdn T\u1ea3i \u1ea3nh b\u00eca v\u00e0o menu b\u00e0i vi\u1ebft video v\u00e0 b\u00e0i vi\u1ebft nhi\u1ec1u \u1ea3nh/video tr\u00ean b\u1ea3ng tin. L\u01b0u \u1ea3nh t\u0129nh \u1edf \u0111\u1ed9 ph\u00e2n gi\u1ea3i l\u1edbn nh\u1ea5t.");
+        table.put("Adds Download cover under Download. It saves the still picture a reel shows before it plays, at its largest size.",
+                "Th\u00eam n\u00fat T\u1ea3i \u1ea3nh b\u00eca trong m\u1ee5c T\u1ea3i xu\u1ed1ng. L\u01b0u h\u00ecnh \u1ea3nh \u0111\u1ea1i di\u1ec7n c\u1ee7a reel tr\u01b0\u1edbc khi ph\u00e1t \u1edf k\u00edch th\u01b0\u1edbc l\u1edbn nh\u1ea5t.");
+        table.put("Adds Download to every reel's more menu, saved at your download quality. Off or paused, Instagram's own menu returns.",
+                "Th\u00eam t\u00f9y ch\u1ecdn T\u1ea3i xu\u1ed1ng v\u00e0o menu kh\u00e1c c\u1ee7a m\u1ed7i reel, l\u01b0u theo ch\u1ea5t l\u01b0\u1ee3ng \u0111\u00e3 ch\u1ecdn. Khi t\u1eaft ho\u1eb7c t\u1ea1m d\u1eebng, menu g\u1ed1c c\u1ee7a Instagram s\u1ebd hi\u1ec3n th\u1ecb l\u1ea1i.");
+        table.put("Adds Download to the menu of a post in your feed with a video. Uses the quality below. Off or paused, Instagram's own menu returns.",
+                "Th\u00eam T\u1ea3i xu\u1ed1ng v\u00e0o menu b\u00e0i vi\u1ebft c\u00f3 video tr\u00ean b\u1ea3ng tin. S\u1eed d\u1ee5ng ch\u1ea5t l\u01b0\u1ee3ng b\u00ean d\u01b0\u1edbi. Khi t\u1eaft ho\u1eb7c t\u1ea1m d\u1eebng, menu g\u1ed1c s\u1ebd tr\u1edf l\u1ea1i.");
+        table.put("Adds Download to the menu of anyone's story, photo or video, saved at your download quality. Off or paused, Instagram's own menu returns.",
+                "Th\u00eam T\u1ea3i xu\u1ed1ng v\u00e0o menu tin (\u1ea3nh ho\u1eb7c video) c\u1ee7a b\u1ea5t k\u1ef3 ai, l\u01b0u theo ch\u1ea5t l\u01b0\u1ee3ng b\u1ea1n \u0111\u00e3 ch\u1ecdn. Khi t\u1eaft ho\u1eb7c t\u1ea1m d\u1eebng, menu g\u1ed1c s\u1ebd hi\u1ec3n th\u1ecb l\u1ea1i.");
+        table.put("Adds Follows you or Doesn't follow you beside the name on someone's profile, after their pronouns if they've set any. Nothing shows until Instagram has checked.",
+                "Th\u00eam nh\u00e3n Theo d\u00f5i b\u1ea1n ho\u1eb7c Kh\u00f4ng theo d\u00f5i b\u1ea1n b\u00ean c\u1ea1nh t\u00ean ng\u01b0\u1eddi d\u00f9ng tr\u00ean trang c\u00e1 nh\u00e2n c\u1ee7a h\u1ecd. Nh\u00e3n s\u1ebd xu\u1ea5t hi\u1ec7n ngay khi Instagram t\u1ea3i xong d\u1eef li\u1ec7u.");
+        table.put("Adds Save profile picture to the menu on someone's profile. Saves their picture at the largest size Instagram has.",
+                "Th\u00eam t\u00f9y ch\u1ecdn L\u01b0u \u1ea3nh \u0111\u1ea1i di\u1ec7n v\u00e0o menu trang c\u00e1 nh\u00e2n c\u1ee7a ng\u01b0\u1eddi kh\u00e1c, t\u1ea3i \u1ea3nh \u1edf \u0111\u1ed9 ph\u00e2n gi\u1ea3i l\u1edbn nh\u1ea5t hi\u1ec7n c\u00f3.");
+        table.put("Adds Save to a selected comment's menu when the comment has its own photo or GIF. Saves the largest size Instagram sent.",
+                "Th\u00eam t\u00f9y ch\u1ecdn L\u01b0u v\u00e0o menu b\u00ecnh lu\u1eadn khi b\u00ecnh lu\u1eadn \u0111\u00f3 c\u00f3 \u1ea3nh ho\u1eb7c GIF ri\u00eang. L\u01b0u \u1edf k\u00edch th\u01b0\u1edbc l\u1edbn nh\u1ea5t \u0111\u01b0\u1ee3c g\u1eedi \u0111\u1ebfn.");
+        table.put("Adds Save to the menu you get by holding a voice message in a chat. Saves the recording as an audio file. One sent to be played once never gets it.",
+                "Th\u00eam t\u00f9y ch\u1ecdn L\u01b0u v\u00e0o menu khi b\u1ea1n nh\u1ea5n gi\u1eef m\u1ed9t tin nh\u1eafn tho\u1ea1i trong \u0111o\u1ea1n chat. L\u01b0u b\u1ea3n ghi th\u00e0nh t\u1ec7p \u00e2m thanh.");
+        table.put("Adds View profile picture to the menu on someone's profile. Opens their picture full screen at the largest size Instagram has, with pinch zoom and a Save button.",
+                "Th\u00eam t\u00f9y ch\u1ecdn Xem \u1ea3nh \u0111\u1ea1i di\u1ec7n v\u00e0o menu trang c\u00e1 nh\u00e2n. M\u1edf \u1ea3nh to\u00e0n m\u00e0n h\u00ecnh \u1edf \u0111\u1ed9 ph\u00e2n gi\u1ea3i cao nh\u1ea5t, h\u1ed7 tr\u1ee3 ph\u00f3ng to thu nh\u1ecf v\u00e0 c\u00f3 n\u00fat L\u01b0u \u1ea3nh.");
+        table.put("Adds a Messages button at the top of Home when Instagram moved Messages to your tab bar. A tap opens your messages like the tab does. Restart Instagram to see the change.",
+                "Th\u00eam n\u00fat Tin nh\u1eafn \u1edf \u0111\u1ea7u Trang ch\u1ee7 n\u1ebfu Instagram \u0111\u00e3 chuy\u1ec3n m\u1ee5c tin nh\u1eafn xu\u1ed1ng thanh tab \u0111\u00e1y.");
+        table.put("Adds a bookmark to the tabs on your own profile that opens Saved. Restart Instagram after changing it.",
+                "Th\u00eam tab \u0110\u00e3 l\u01b0u (bi\u1ec3u t\u01b0\u1ee3ng d\u1ea5u trang) v\u00e0o trang c\u00e1 nh\u00e2n c\u1ee7a b\u1ea1n \u0111\u1ec3 truy c\u1eadp nhanh c\u00e1c m\u1ee5c \u0111\u00e3 l\u01b0u. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Adds a ghost button at the top of Home, next to Messages when it's there and at the end of the buttons when it isn't. Tap it to turn Ghost mode on or off. Restart Instagram to see the change.",
+                "Th\u00eam bi\u1ec3u t\u01b0\u1ee3ng con ma \u1edf \u0111\u1ea7u Trang ch\u1ee7 \u0111\u1ec3 b\u1ea1n b\u1eadt/t\u1eaft nhanh Ch\u1ebf \u0111\u1ed9 \u1ea9n danh ch\u1ec9 b\u1eb1ng m\u1ed9t c\u00fa ch\u1ea1m. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Adds a magnifier at the top of Home that opens Search, like the Search tab does. It works with the Search tab hidden too. Restart Instagram to see the change.",
+                "Th\u00eam bi\u1ec3u t\u01b0\u1ee3ng k\u00ednh l\u00fap \u1edf \u0111\u1ea7u Trang ch\u1ee7 \u0111\u1ec3 m\u1edf t\u00ecm ki\u1ebfm (r\u1ea5t ti\u1ec7n l\u1ee3i khi b\u1ea1n \u0111\u00e3 \u1ea9n tab T\u00ecm ki\u1ebfm \u1edf d\u01b0\u1edbi \u0111\u00e1y).");
+        table.put("Adds a row next to Download on a reel and a feed video that plays it in an app you pick, such as VLC. The player streams it from Instagram's servers.",
+                "Th\u00eam t\u00f9y ch\u1ecdn b\u00ean c\u1ea1nh T\u1ea3i xu\u1ed1ng \u0111\u1ec3 ph\u00e1t video reel ho\u1eb7c b\u1ea3ng tin b\u1eb1ng \u1ee9ng d\u1ee5ng b\u1ea1n ch\u1ecdn (nh\u01b0 VLC/MX Player).");
+        table.put("Adds a white round handle to the seek bar that you can drag. Ads keep their own bar.",
+                "Th\u00eam n\u00fat tr\u00f2n m\u00e0u tr\u1eafng v\u00e0o thanh tua \u0111\u1ec3 b\u1ea1n d\u1ec5 k\u00e9o tua video. Qu\u1ea3ng c\u00e1o gi\u1eef thanh tua m\u1eb7c \u0111\u1ecbnh.");
+        table.put("Adds an entry to the gallery sheet when you make a post that opens Android's own photo picker. You pick from your photos and any cloud gallery, and Instagram only gets what you choose instead of reaching across your whole library. Starts off.",
+                "Th\u00eam m\u1ed9t t\u00f9y ch\u1ecdn v\u00e0o trang b\u1ed9 s\u01b0u t\u1eadp khi \u0111\u0103ng b\u00e0i \u0111\u1ec3 m\u1edf tr\u00ecnh ch\u1ecdn \u1ea3nh c\u1ee7a Android. B\u1ea1n ch\u1ecdn \u1ea3nh t\u1eeb m\u00e1y ho\u1eb7c \u0111\u00e1m m\u00e2y v\u00e0 Instagram ch\u1ec9 truy c\u1eadp c\u00e1c \u1ea3nh b\u1ea1n ch\u1ecdn thay v\u00ec to\u00e0n b\u1ed9 th\u01b0 vi\u1ec7n. M\u1eb7c \u0111\u1ecbnh t\u1eaft.");
+        table.put("Adds an eye button to the top of each story while you view anonymously. Tap it to show up on that story's viewer list. The other stories stay hidden.",
+                "Th\u00eam n\u00fat h\u00ecnh con m\u1eaft \u1edf \u0111\u1ea7u m\u1ed7i tin khi \u0111ang xem \u1ea9n danh. Ch\u1ea1m v\u00e0o n\u00fat n\u00e0y \u0111\u1ec3 hi\u1ec7n t\u00ean b\u1ea1n trong danh s\u00e1ch ng\u01b0\u1eddi xem c\u1ee7a tin \u0111\u00f3. C\u00e1c tin kh\u00e1c v\u1eabn \u1ea9n danh.");
+        table.put("Adds the seconds to a reel's time, like Oct 2, 3:45:30 PM.",
+                "Hi\u1ec3n th\u1ecb th\u00eam s\u1ed1 gi\u00e2y v\u00e0o th\u1eddi gian \u0111\u0103ng c\u1ee7a reel, v\u00ed d\u1ee5: 2 thg 10, 15:45:30.");
+        table.put("Ads and privacy",
+                "Qu\u1ea3ng c\u00e1o v\u00e0 quy\u1ec1n ri\u00eang t\u01b0");
+        table.put("Advertising ID removed",
+                "\u0110\u00e3 x\u00f3a ID qu\u1ea3ng c\u00e1o");
+        table.put("After %1$d seconds",
+                "Sau %1$d gi\u00e2y");
+        table.put("After 1 hour",
+                "Sau 1 gi\u1edd");
+        table.put("After 1 minute",
+                "Sau 1 ph\u00fat");
+        table.put("After 15 minutes",
+                "Sau 15 ph\u00fat");
+        table.put("After 20 reels, swiping in Reels stops until Instagram has been in the background for 15 minutes. A reel you open from a message or a post still plays.",
+                "Sau khi xem 20 reel, thao t\u00e1c vu\u1ed1t xem ti\u1ebfp trong Reels s\u1ebd t\u1ea1m d\u1eebng cho \u0111\u1ebfn khi Instagram ch\u1ea1y ng\u1ea7m \u0111\u1ee7 15 ph\u00fat. Reel m\u1edf t\u1eeb tin nh\u1eafn ho\u1eb7c b\u00e0i vi\u1ebft v\u1eabn ph\u00e1t b\u00ecnh th\u01b0\u1eddng.");
+        table.put("After 5 minutes",
+                "Sau 5 ph\u00fat");
+        table.put("All of Instagram stays covered until your fingerprint, face or screen lock says it's you, your messages too.",
+                "To\u00e0n b\u1ed9 Instagram v\u00e0 tin nh\u1eafn c\u1ee7a b\u1ea1n s\u1ebd \u0111\u01b0\u1ee3c kh\u00f3a cho \u0111\u1ebfn khi x\u00e1c th\u1ef1c b\u1eb1ng v\u00e2n tay, khu\u00f4n m\u1eb7t ho\u1eb7c kh\u00f3a m\u00e0n h\u00ecnh c\u1ee7a b\u1ea1n.");
+        table.put("All of them. Tap to leave some out, and Ghost mode leaves those as you set them.",
+                "T\u1ea5t c\u1ea3. Ch\u1ea1m \u0111\u1ec3 lo\u1ea1i tr\u1eeb m\u1ed9t s\u1ed1 t\u00f9y ch\u1ecdn kh\u1ecfi Ch\u1ebf \u0111\u1ed9 \u1ea9n danh.");
+        table.put("Allow screenshots",
+                "Cho ph\u00e9p ch\u1ee5p \u1ea3nh m\u00e0n h\u00ecnh");
+        table.put("Already saved %1$d. Download again within 30 seconds for those.",
+                "\u0110\u00e3 l\u01b0u %1$d m\u1ee5c tr\u01b0\u1edbc \u0111\u00f3. Nh\u1ea5n t\u1ea3i l\u1ea1i trong v\u00f2ng 30 gi\u00e2y \u0111\u1ec3 t\u1ea1o th\u00eam b\u1ea3n sao.");
+        table.put("Already saved. Download again within 30 seconds for a copy.",
+                "\u0110\u00e3 l\u01b0u tr\u01b0\u1edbc \u0111\u00f3. Nh\u1ea5n t\u1ea3i l\u1ea1i trong v\u00f2ng 30 gi\u00e2y n\u1ebfu b\u1ea1n mu\u1ed1n t\u1ea1o th\u00eam b\u1ea3n sao.");
+        table.put("Also on Home",
+                "\u00c1p d\u1ee5ng c\u1ea3 tr\u00ean Trang ch\u1ee7");
+        table.put("Always Home",
+                "Lu\u00f4n m\u1edf Trang ch\u1ee7");
+        table.put("Ask before a call",
+                "H\u1ecfi x\u00e1c nh\u1eadn tr\u01b0\u1edbc khi g\u1ecdi");
+    }
+
+    private static void fillVi2(Map<String, String> table) {
+        table.put("Ask before a like",
+                "H\u1ecfi x\u00e1c nh\u1eadn tr\u01b0\u1edbc khi th\u00edch");
+        table.put("Ask before a refresh",
+                "H\u1ecfi x\u00e1c nh\u1eadn tr\u01b0\u1edbc khi l\u00e0m m\u1edbi");
+        table.put("Ask for larger photos",
+                "Y\u00eau c\u1ea7u \u1ea3nh k\u00edch th\u01b0\u1edbc l\u1edbn h\u01a1n");
+        table.put("Asks before pulling down refreshes Home, Reels or another list. Cancel keeps what's on screen.",
+                "H\u1ecfi x\u00e1c nh\u1eadn tr\u01b0\u1edbc khi thao t\u00e1c k\u00e9o xu\u1ed1ng l\u00e0m m\u1edbi Trang ch\u1ee7, Reels ho\u1eb7c danh s\u00e1ch kh\u00e1c \u0111\u1ec3 tr\u00e1nh v\u00f4 t\u00ecnh t\u1ea3i l\u1ea1i l\u00e0m m\u1ea5t v\u1ecb tr\u00ed \u0111ang xem.");
+        table.put("Asks before the Like button under a post likes or unlikes it, so a stray tap doesn't do it for you. Double taps aren't asked about.",
+                "H\u1ecfi x\u00e1c nh\u1eadn tr\u01b0\u1edbc khi b\u1ea5m n\u00fat Th\u00edch d\u01b0\u1edbi b\u00e0i vi\u1ebft \u0111\u1ec3 tr\u00e1nh v\u00f4 t\u00ecnh \u1ea5n nh\u1ea7m. Ch\u1ea1m hai l\u1ea7n s\u1ebd kh\u00f4ng hi\u1ec7n th\u00f4ng b\u00e1o h\u1ecfi n\u00e0y.");
+        table.put("At once",
+                "Ngay l\u1eadp t\u1ee9c");
+        table.put("Auto",
+                "T\u1ef1 \u0111\u1ed9ng");
+        table.put("Back",
+                "Quay l\u1ea1i");
+        table.put("Back leaves Home as it is",
+                "Ph\u00edm Quay l\u1ea1i gi\u1eef nguy\u00ean Trang ch\u1ee7");
+        table.put("Back on Home leaves Instagram without first scrolling the feed to the top and reloading it.",
+                "B\u1ea5m ph\u00edm Quay l\u1ea1i \u1edf Trang ch\u1ee7 s\u1ebd tho\u00e1t Instagram ngay m\u00e0 kh\u00f4ng t\u1ef1 \u0111\u1ed9ng cu\u1ed9n l\u00ean \u0111\u1ea7u b\u1ea3ng tin v\u00e0 t\u1ea3i l\u1ea1i.");
+        table.put("Back to defaults",
+                "Kh\u00f4i ph\u1ee5c v\u1ec1 m\u1eb7c \u0111\u1ecbnh");
+        table.put("Band",
+                "Band");
+        table.put("Bars to hide",
+                "Thanh h\u1ec7 th\u1ed1ng c\u1ea7n \u1ea9n");
+        table.put("Battery",
+                "Pin & Hi\u1ec7u n\u0103ng");
+        table.put("Before you sign in",
+                "Tr\u01b0\u1edbc khi \u0111\u0103ng nh\u1eadp");
+        table.put("Best",
+                "T\u1ed1t nh\u1ea5t");
+        table.put("Bigger seek bar on reels",
+                "Thanh tua l\u1edbn h\u01a1n tr\u00ean Reels");
+        table.put("Bio",
+                "Ti\u1ec3u s\u1eed");
+        table.put("Bio copied",
+                "\u0110\u00e3 sao ch\u00e9p ti\u1ec3u s\u1eed");
+        table.put("Block",
+                "Ch\u1eb7n");
+        table.put("Block button on reels",
+                "N\u00fat \"Ch\u1eb7n\" tr\u00ean Reels");
+        table.put("Blocked words",
+                "T\u1eeb kh\u00f3a ch\u1eb7n");
+        table.put("Blue",
+                "Xanh d\u01b0\u01a1ng");
+        table.put("Blur behind the tab bar",
+                "L\u00e0m m\u1edd ph\u00eda sau thanh tab");
+        table.put("Blur the bars around a reel",
+                "L\u00e0m m\u1edd kho\u1ea3ng tr\u1ed1ng xung quanh reel");
+        table.put("Blurs what's behind the pill on Android 12 and newer. Off, the pill is a frosted tint.",
+                "L\u00e0m m\u1edd n\u1ed9i dung ph\u00eda sau thanh tab d\u1ea1ng vi\u00ean thu\u1ed1c (Android 12 tr\u1edf l\u00ean). Khi t\u1eaft, thanh s\u1ebd c\u00f3 hi\u1ec7u \u1ee9ng k\u00ednh m\u1edd.");
+        table.put("Both bars",
+                "C\u1ea3 hai thanh (Tr\u1ea1ng th\u00e1i & \u0110i\u1ec1u h\u01b0\u1edbng)");
+        table.put("Burn-in guard",
+                "Ch\u1ed1ng l\u01b0u \u1ea3nh m\u00e0n h\u00ecnh (Burn-in guard)");
+        table.put("Buttons in the message box",
+                "C\u00e1c n\u00fat trong khung so\u1ea1n tin nh\u1eafn");
+        table.put("Buttons on the share sheet",
+                "C\u00e1c n\u00fat tr\u00ean b\u1ea3ng chia s\u1ebb");
+        table.put("By @%1$s",
+                "B\u1edfi @%1$s");
+        table.put("Call",
+                "G\u1ecdi");
+        table.put("Camera",
+                "M\u00e1y \u1ea3nh");
+        table.put("Cancel",
+                "H\u1ee7y");
+        table.put("Cancel saving this carousel",
+                "H\u1ee7y l\u01b0u b\u00e0i vi\u1ebft n\u00e0y");
+        table.put("Cancel saving this photo",
+                "H\u1ee7y l\u01b0u \u1ea3nh n\u00e0y");
+        table.put("Cancel saving this video",
+                "H\u1ee7y l\u01b0u video n\u00e0y");
+        table.put("Cancel saving this voice message",
+                "H\u1ee7y l\u01b0u tin nh\u1eafn tho\u1ea1i n\u00e0y");
+        table.put("Caption",
+                "Ch\u00fa th\u00edch");
+        table.put("Caption copied",
+                "\u0110\u00e3 sao ch\u00e9p ch\u00fa th\u00edch");
+        table.put("Carousel canceled. Saved %1$d. Failed %2$d. Skipped %3$d.",
+                "\u0110\u00e3 h\u1ee7y l\u01b0u b\u00e0i vi\u1ebft. \u0110\u00e3 l\u01b0u %1$d. L\u1ed7i %2$d. B\u1ecf qua %3$d.");
+        table.put("Center the logo on Home's header",
+                "C\u0103n gi\u1eefa logo \u1edf \u0111\u1ea7u Trang ch\u1ee7");
+        table.put("Center the name on profiles",
+                "C\u0103n gi\u1eefa t\u00ean tr\u00ean trang c\u00e1 nh\u00e2n");
+        table.put("Center titles on other screens",
+                "C\u0103n gi\u1eefa ti\u00eau \u0111\u1ec1 tr\u00ean c\u00e1c m\u00e0n h\u00ecnh kh\u00e1c");
+        table.put("Change how Instagram looks, from its colors to its emoji.",
+                "Thay \u0111\u1ed5i giao di\u1ec7n Instagram t\u1eeb m\u00e0u s\u1eafc \u0111\u1ebfn bi\u1ec3u t\u01b0\u1ee3ng c\u1ea3m x\u00fac.");
+        table.put("Change the like animation",
+                "Thay \u0111\u1ed5i ho\u1ea1t \u1ea3nh th\u1ea3 tim");
+        table.put("Changed %1$d setting",
+                "\u0110\u00e3 thay \u0111\u1ed5i %1$d c\u00e0i \u0111\u1eb7t");
+        table.put("Changed %1$d settings",
+                "\u0110\u00e3 thay \u0111\u1ed5i %1$d c\u00e0i \u0111\u1eb7t");
+        table.put("Chat %1$s",
+                "\u0110o\u1ea1n chat %1$s");
+        table.put("Choose a file for the settings export.",
+                "Ch\u1ecdn m\u1ed9t t\u1ec7p \u0111\u1ec3 l\u01b0u d\u1eef li\u1ec7u xu\u1ea5t c\u00e0i \u0111\u1eb7t.");
+        table.put("Choose a file for your installed patches' settings. Accounts and history stay on this device.",
+                "Ch\u1ecdn t\u1ec7p \u0111\u1ec3 l\u01b0u c\u00e0i \u0111\u1eb7t c\u00e1c b\u1ea3n v\u00e1. D\u1eef li\u1ec7u t\u00e0i kho\u1ea3n v\u00e0 l\u1ecbch s\u1eed v\u1eabn n\u1eb1m tr\u00ean m\u00e1y n\u00e0y.");
+        table.put("Choose a folder name under Movies and Pictures. Invalid characters become underscores. Leave it blank to use the default folder, %1$s.",
+                "Ch\u1ecdn t\u00ean th\u01b0 m\u1ee5c trong Movies v\u00e0 Pictures. K\u00fd t\u1ef1 kh\u00f4ng h\u1ee3p l\u1ec7 s\u1ebd th\u00e0nh d\u1ea5u g\u1ea1ch d\u01b0\u1edbi. \u0110\u1ec3 tr\u1ed1ng \u0111\u1ec3 s\u1eed d\u1ee5ng th\u01b0 m\u1ee5c m\u1eb7c \u0111\u1ecbnh, %1$s.");
+        table.put("Choose a settings file. All valid choices apply together, and ones this version doesn't know are skipped. The Undo row shows how long you can undo.",
+                "Ch\u1ecdn m\u1ed9t t\u1ec7p c\u00e0i \u0111\u1eb7t \u0111\u00e3 l\u01b0u. T\u1ea5t c\u1ea3 c\u00e1c t\u00f9y ch\u1ecdn h\u1ee3p l\u1ec7 s\u1ebd \u0111\u01b0\u1ee3c \u00e1p d\u1ee5ng c\u00f9ng l\u00fac, c\u00e1c t\u00f9y ch\u1ecdn l\u1ea1 s\u1ebd \u0111\u01b0\u1ee3c b\u1ecf qua. C\u00f3 th\u1ec3 ho\u00e0n t\u00e1c n\u1ebfu c\u1ea7n.");
+        table.put("Choose a tab",
+                "Ch\u1ecdn m\u1ed9t tab");
+        table.put("Choose carousel pages",
+                "Ch\u1ecdn c\u00e1c trang c\u1ea7n t\u1ea3i trong b\u00e0i vi\u1ebft");
+        table.put("Choose how videos start, sound and look.",
+                "T\u00f9y ch\u1ec9nh c\u00e1ch video kh\u1edfi ch\u1ea1y, \u00e2m thanh v\u00e0 ch\u1ea5t l\u01b0\u1ee3ng hi\u1ec3n th\u1ecb.");
+        table.put("Choose pages",
+                "Ch\u1ecdn trang c\u1ea7n t\u1ea3i");
+        table.put("Choose what Home shows and how it behaves.",
+                "T\u00f9y ch\u1ec9nh n\u1ed9i dung hi\u1ec3n th\u1ecb v\u00e0 h\u00e0nh vi c\u1ee7a Trang ch\u1ee7.");
+        table.put("Choose what reels show, and how they play and scroll.",
+                "T\u00f9y ch\u1ec9nh n\u1ed9i dung hi\u1ec3n th\u1ecb, c\u00e1ch ph\u00e1t v\u00e0 cu\u1ed9n trong Reels.");
+        table.put("Choose which stories you see and what people see you do.",
+                "Ki\u1ec3m so\u00e1t c\u00e1c tin b\u1ea1n xem v\u00e0 th\u00f4ng tin ng\u01b0\u1eddi kh\u00e1c th\u1ea5y v\u1ec1 b\u1ea1n.");
+    }
+
+    private static void fillVi3(Map<String, String> table) {
+        table.put("Chosen when you patched, so Pause leaves them on. Patch again to change them.",
+                "\u0110\u00e3 ch\u1ecdn khi v\u00e1 \u1ee9ng d\u1ee5ng. V\u00e1 l\u1ea1i \u0111\u1ec3 thay \u0111\u1ed5i c\u00e1c t\u00f9y ch\u1ecdn n\u00e0y.");
+        table.put("Clear",
+                "Trong su\u1ed1t");
+        table.put("Clear diagnostic data",
+                "X\u00f3a d\u1eef li\u1ec7u ch\u1ea9n \u0111o\u00e1n");
+        table.put("Clear download history",
+                "X\u00f3a l\u1ecbch s\u1eed t\u1ea3i xu\u1ed1ng");
+        table.put("Clear remembered positions",
+                "X\u00f3a v\u1ecb tr\u00ed ph\u00e1t \u0111\u00e3 ghi nh\u1edb");
+        table.put("Clear saved copies now",
+                "X\u00f3a b\u1ed9 nh\u1edb \u0111\u1ec7m \u0111a ph\u01b0\u01a1ng ti\u1ec7n ngay");
+        table.put("Clear search",
+                "X\u00f3a t\u00ecm ki\u1ebfm");
+        table.put("Clear the media cache",
+                "X\u00f3a b\u1ed9 nh\u1edb \u0111\u1ec7m \u0111a ph\u01b0\u01a1ng ti\u1ec7n");
+        table.put("Clear unfollower list",
+                "X\u00f3a danh s\u00e1ch ng\u01b0\u1eddi h\u1ee7y theo d\u00f5i");
+        table.put("Clearest",
+                "Trong su\u1ed1t nh\u1ea5t");
+        table.put("Close",
+                "\u0110\u00f3ng");
+        table.put("Color",
+                "M\u00e0u s\u1eafc");
+        table.put("Comment copied",
+                "\u0110\u00e3 sao ch\u00e9p b\u00ecnh lu\u1eadn");
+        table.put("Comments",
+                "B\u00ecnh lu\u1eadn");
+        table.put("Comments open with the keyboard down. A tap in the comment box, or on Reply, still brings it up.",
+                "Khi m\u1edf ph\u1ea7n b\u00ecnh lu\u1eadn, b\u00e0n ph\u00edm s\u1ebd kh\u00f4ng t\u1ef1 \u0111\u1ed9ng b\u1eadt l\u00ean. Ch\u1ea1m v\u00e0o \u00f4 nh\u1eadp b\u00ecnh lu\u1eadn ho\u1eb7c n\u00fat Tr\u1ea3 l\u1eddi \u0111\u1ec3 b\u1eadt b\u00e0n ph\u00edm.");
+        table.put("Compact",
+                "G\u1ecdn g\u00e0ng");
+        table.put("Confirm PIN",
+                "X\u00e1c nh\u1eadn m\u00e3 PIN");
+        table.put("Continue",
+                "Ti\u1ebfp t\u1ee5c");
+        table.put("Convert to keep the full size",
+                "Chuy\u1ec3n \u0111\u1ed5i \u0111\u1ec3 gi\u1eef k\u00edch th\u01b0\u1edbc \u0111\u1ea7y \u0111\u1ee7");
+        table.put("Converting to H.264",
+                "\u0110ang chuy\u1ec3n \u0111\u1ed5i sang H.264");
+        table.put("Copy a quick report or save the full one to %1$s. Links, IDs, cookies and sign-in details are left out. Check it for other private text before you share it.",
+                "Sao ch\u00e9p b\u00e1o c\u00e1o nhanh ho\u1eb7c l\u01b0u b\u1ea3n \u0111\u1ea7y \u0111\u1ee7 v\u00e0o %1$s. C\u00e1c li\u00ean k\u1ebft, ID, cookie v\u00e0 chi ti\u1ebft \u0111\u0103ng nh\u1eadp s\u1ebd \u0111\u01b0\u1ee3c l\u01b0\u1ee3c b\u1ecf. H\u00e3y ki\u1ec3m tra l\u1ea1i th\u00f4ng tin ri\u00eang t\u01b0 tr\u01b0\u1edbc khi chia s\u1ebb.");
+        table.put("Copy a short report to the clipboard.",
+                "Sao ch\u00e9p b\u00e1o c\u00e1o t\u00f3m t\u1eaft v\u00e0o b\u1ed9 nh\u1edb t\u1ea1m.");
+        table.put("Copy bio",
+                "Sao ch\u00e9p ti\u1ec3u s\u1eed");
+        table.put("Copy caption",
+                "Sao ch\u00e9p ch\u00fa th\u00edch");
+        table.put("Copy comment",
+                "Sao ch\u00e9p b\u00ecnh lu\u1eadn");
+        table.put("Copy link",
+                "Sao ch\u00e9p li\u00ean k\u1ebft");
+        table.put("Copy media link",
+                "Sao ch\u00e9p li\u00ean k\u1ebft \u0111a ph\u01b0\u01a1ng ti\u1ec7n");
+        table.put("Copy quick report",
+                "Sao ch\u00e9p b\u00e1o c\u00e1o nhanh");
+        table.put("Copy the commenter's username",
+                "Sao ch\u00e9p t\u00ean ng\u01b0\u1eddi b\u00ecnh lu\u1eadn");
+        table.put("Copy username",
+                "Sao ch\u00e9p t\u00ean ng\u01b0\u1eddi d\u00f9ng");
+        table.put("Copy username and bio",
+                "Sao ch\u00e9p t\u00ean ng\u01b0\u1eddi d\u00f9ng v\u00e0 ti\u1ec3u s\u1eed");
+        table.put("Copy without the @names at the start",
+                "Sao ch\u00e9p kh\u00f4ng k\u00e8m @t\u00ean \u1edf \u0111\u1ea7u");
+        table.put("Copy, save or hide comments.",
+                "Sao ch\u00e9p, l\u01b0u ho\u1eb7c \u1ea9n b\u00ecnh lu\u1eadn.");
+        table.put("Copying to the gallery",
+                "\u0110ang sao ch\u00e9p v\u00e0o b\u1ed9 s\u01b0u t\u1eadp");
+        table.put("Corner size",
+                "K\u00edch th\u01b0\u1edbc bo g\u00f3c");
+        table.put("Couldn't change every Ghost mode switch. Check them below.",
+                "Kh\u00f4ng th\u1ec3 thay \u0111\u1ed5i t\u1ea5t c\u1ea3 c\u00e1c c\u00f4ng t\u1eafc c\u1ee7a Ch\u1ebf \u0111\u1ed9 \u1ea9n danh. Vui l\u00f2ng ki\u1ec3m tra l\u1ea1i b\u00ean d\u01b0\u1edbi.");
+        table.put("Couldn't change every Ghost mode switch. Open HushGram settings to check them.",
+                "Kh\u00f4ng th\u1ec3 thay \u0111\u1ed5i t\u1ea5t c\u1ea3 c\u00e1c c\u00f4ng t\u1eafc c\u1ee7a Ch\u1ebf \u0111\u1ed9 \u1ea9n danh. H\u00e3y m\u1edf C\u00e0i \u0111\u1eb7t TADa \u0111\u1ec3 ki\u1ec3m tra.");
+        table.put("Couldn't clear the download history. Try again.",
+                "Kh\u00f4ng th\u1ec3 x\u00f3a l\u1ecbch s\u1eed t\u1ea3i xu\u1ed1ng. Vui l\u00f2ng th\u1eed l\u1ea1i.");
+        table.put("Couldn't clear the saved copies. Try again.",
+                "Kh\u00f4ng th\u1ec3 x\u00f3a b\u1ed9 nh\u1edb \u0111\u1ec7m \u0111\u00e3 l\u01b0u. Vui l\u00f2ng th\u1eed l\u1ea1i.");
+        table.put("Couldn't clear the unfollower list. Try again.",
+                "Kh\u00f4ng th\u1ec3 x\u00f3a danh s\u00e1ch ng\u01b0\u1eddi h\u1ee7y theo d\u00f5i. Vui l\u00f2ng th\u1eed l\u1ea1i.");
+        table.put("Couldn't copy comment",
+                "Kh\u00f4ng th\u1ec3 sao ch\u00e9p b\u00ecnh lu\u1eadn");
+        table.put("Couldn't copy the bio",
+                "Kh\u00f4ng th\u1ec3 sao ch\u00e9p ti\u1ec3u s\u1eed");
+        table.put("Couldn't copy the caption",
+                "Kh\u00f4ng th\u1ec3 sao ch\u00e9p ch\u00fa th\u00edch");
+        table.put("Couldn't copy the media link",
+                "Kh\u00f4ng th\u1ec3 sao ch\u00e9p li\u00ean k\u1ebft \u0111a ph\u01b0\u01a1ng ti\u1ec7n");
+        table.put("Couldn't copy the username",
+                "Kh\u00f4ng th\u1ec3 sao ch\u00e9p t\u00ean ng\u01b0\u1eddi d\u00f9ng");
+        table.put("Couldn't export HushGram settings. Try another file.",
+                "Kh\u00f4ng th\u1ec3 xu\u1ea5t c\u00e0i \u0111\u1eb7t TADa. Vui l\u00f2ng th\u1eed ch\u1ecdn t\u1ec7p kh\u00e1c.");
+        table.put("Couldn't find the reel you came from",
+                "Kh\u00f4ng t\u00ecm th\u1ea5y reel b\u1ea1n v\u1eeba xem");
+        table.put("Couldn't hide this account",
+                "Kh\u00f4ng th\u1ec3 \u1ea9n t\u00e0i kho\u1ea3n n\u00e0y");
+        table.put("Couldn't hide this notice. Try again.",
+                "Kh\u00f4ng th\u1ec3 \u1ea9n th\u00f4ng b\u00e1o n\u00e0y. Vui l\u00f2ng th\u1eed l\u1ea1i.");
+        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in HushGram settings > Layout.",
+                "Kh\u00f4ng th\u1ec3 t\u1ea3i t\u1ec7p ph\u00f4ng ch\u1eef c\u1ee7a b\u1ea1n, \u0111ang d\u00f9ng ph\u00f4ng ch\u1eef m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram. Vui l\u00f2ng ch\u1ecdn l\u1ea1i trong C\u00e0i \u0111\u1eb7t TADa > Giao di\u1ec7n v\u00e0 b\u1ed1 c\u1ee5c.");
+        table.put("Couldn't mark as read",
+                "Kh\u00f4ng th\u1ec3 \u0111\u00e1nh d\u1ea5u l\u00e0 \u0111\u00e3 \u0111\u1ecdc");
+        table.put("Couldn't open another player",
+                "Kh\u00f4ng th\u1ec3 m\u1edf \u1ee9ng d\u1ee5ng ph\u00e1t video kh\u00e1c");
+        table.put("Couldn't open the picture",
+                "Kh\u00f4ng th\u1ec3 m\u1edf \u1ea3nh");
+        table.put("Couldn't put back the diagnostic data. Try again.",
+                "Kh\u00f4ng th\u1ec3 kh\u00f4i ph\u1ee5c d\u1eef li\u1ec7u ch\u1ea9n \u0111o\u00e1n. Vui l\u00f2ng th\u1eed l\u1ea1i.");
+        table.put("Couldn't restart Instagram. Close it and open it again.",
+                "Kh\u00f4ng th\u1ec3 t\u1ef1 kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram. Vui l\u00f2ng \u0111\u00f3ng \u1ee9ng d\u1ee5ng v\u00e0 m\u1edf l\u1ea1i th\u1ee7 c\u00f4ng.");
+        table.put("Couldn't save or fully restore the settings. Check the shown values and try Undo.",
+                "Kh\u00f4ng th\u1ec3 l\u01b0u ho\u1eb7c kh\u00f4i ph\u1ee5c ho\u00e0n to\u00e0n c\u00e0i \u0111\u1eb7t. H\u00e3y ki\u1ec3m tra l\u1ea1i gi\u00e1 tr\u1ecb hi\u1ec3n th\u1ecb.");
+        table.put("Couldn't save the PIN.",
+                "Kh\u00f4ng th\u1ec3 l\u01b0u m\u00e3 PIN.");
+        table.put("Couldn't save the playback quality. Open HushGram settings to set it.",
+                "Kh\u00f4ng th\u1ec3 l\u01b0u ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t. H\u00e3y m\u1edf C\u00e0i \u0111\u1eb7t TADa \u0111\u1ec3 thi\u1ebft l\u1eadp.");
+        table.put("Couldn't save the settings. The previous values were restored.",
+                "Kh\u00f4ng th\u1ec3 l\u01b0u c\u00e0i \u0111\u1eb7t. C\u00e1c gi\u00e1 tr\u1ecb tr\u01b0\u1edbc \u0111\u00f3 \u0111\u00e3 \u0111\u01b0\u1ee3c kh\u00f4i ph\u1ee5c.");
+        table.put("Couldn't start that. Try again.",
+                "Kh\u00f4ng th\u1ec3 b\u1eaft \u0111\u1ea7u thao t\u00e1c \u0111\u00f3. Vui l\u00f2ng th\u1eed l\u1ea1i.");
+    }
+
+    private static void fillVi4(Map<String, String> table) {
+        table.put("Couldn't start the report export. Try again shortly.",
+                "Kh\u00f4ng th\u1ec3 b\u1eaft \u0111\u1ea7u xu\u1ea5t b\u00e1o c\u00e1o. Vui l\u00f2ng th\u1eed l\u1ea1i sau gi\u00e2y l\u00e1t.");
+        table.put("Couldn't turn HushGram back on. Try again.",
+                "Kh\u00f4ng th\u1ec3 b\u1eadt l\u1ea1i TADa. Vui l\u00f2ng th\u1eed l\u1ea1i.");
+        table.put("Couldn't update the remembered playback positions.",
+                "Kh\u00f4ng th\u1ec3 c\u1eadp nh\u1eadt c\u00e1c v\u1ecb tr\u00ed ph\u00e1t \u0111\u00e3 ghi nh\u1edb.");
+        table.put("Couldn't use that settings file. Your settings haven't changed.",
+                "Kh\u00f4ng th\u1ec3 s\u1eed d\u1ee5ng t\u1ec7p c\u00e0i \u0111\u1eb7t \u0111\u00f3. C\u00e0i \u0111\u1eb7t c\u1ee7a b\u1ea1n ch\u01b0a thay \u0111\u1ed5i.");
+        table.put("Create",
+                "T\u1ea1o");
+        table.put("Create (+)",
+                "T\u1ea1o (+)");
+        table.put("Creator tools",
+                "C\u00f4ng c\u1ee5 s\u00e1ng t\u1ea1o");
+        table.put("Custom tab",
+                "Tab t\u00f9y ch\u1ec9nh");
+        table.put("Data saver",
+                "Ti\u1ebft ki\u1ec7m d\u1eef li\u1ec7u");
+        table.put("Date and time",
+                "Ng\u00e0y v\u00e0 gi\u1edd");
+        table.put("Debug logging",
+                "Ghi nh\u1eadt k\u00fd g\u1ee1 l\u1ed7i");
+        table.put("Default playback quality",
+                "Ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t m\u1eb7c \u0111\u1ecbnh");
+        table.put("Deletes the saved photos Instagram keeps to show again, whatever their size, and the saved videos the next time it starts.",
+                "X\u00f3a c\u00e1c \u1ea3nh \u0111\u1ec7m \u0111\u00e3 l\u01b0u v\u00e0 video \u0111\u00e3 \u0111\u1ec7m trong l\u1ea7n kh\u1edfi \u0111\u1ed9ng ti\u1ebfp theo \u0111\u1ec3 gi\u1ea3i ph\u00f3ng dung l\u01b0\u1ee3ng.");
+        table.put("Details",
+                "Chi ti\u1ebft");
+        table.put("Details in a post's menu",
+                "Chi ti\u1ebft trong menu b\u00e0i vi\u1ebft");
+        table.put("Diagnostic data cleared. Tap again to put it back.",
+                "\u0110\u00e3 x\u00f3a d\u1eef li\u1ec7u ch\u1ea9n \u0111o\u00e1n. Ch\u1ea1m l\u1ea1i \u0111\u1ec3 kh\u00f4i ph\u1ee5c.");
+        table.put("Diagnostic data put back.",
+                "\u0110\u00e3 kh\u00f4i ph\u1ee5c d\u1eef li\u1ec7u ch\u1ea9n \u0111o\u00e1n.");
+        table.put("Diagnostic report copied to the clipboard.",
+                "\u0110\u00e3 sao ch\u00e9p b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n v\u00e0o b\u1ed9 nh\u1edb t\u1ea1m.");
+        table.put("Diagnostic report saved.",
+                "\u0110\u00e3 l\u01b0u b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n.");
+        table.put("Dim after",
+                "L\u00e0m m\u1edd sau");
+        table.put("Dim when idle",
+                "L\u00e0m m\u1edd khi kh\u00f4ng ch\u1ea1m");
+        table.put("Dim when idle and shift",
+                "L\u00e0m m\u1edd khi kh\u00f4ng ch\u1ea1m v\u00e0 d\u1ecbch chuy\u1ec3n nh\u1eb9");
+        table.put("Discord",
+                "Discord");
+        table.put("Doesn't follow you",
+                "Kh\u00f4ng theo d\u00f5i b\u1ea1n");
+        table.put("Don't report screenshots",
+                "Kh\u00f4ng b\u00e1o c\u00e1o khi ch\u1ee5p \u1ea3nh m\u00e0n h\u00ecnh");
+        table.put("Don't save recent searches",
+                "Kh\u00f4ng l\u01b0u t\u00ecm ki\u1ebfm g\u1ea7n \u0111\u00e2y");
+        table.put("Don't send reel watch history",
+                "Kh\u00f4ng g\u1eedi l\u1ecbch s\u1eed xem Reels");
+        table.put("Download",
+                "T\u1ea3i xu\u1ed1ng");
+        table.put("Download as photo",
+                "T\u1ea3i d\u01b0\u1edbi d\u1ea1ng \u1ea3nh");
+        table.put("Download as video",
+                "T\u1ea3i d\u01b0\u1edbi d\u1ea1ng video");
+        table.put("Download audio",
+                "T\u1ea3i \u00e2m thanh");
+        table.put("Download button on feed posts",
+                "N\u00fat t\u1ea3i xu\u1ed1ng tr\u00ean b\u00e0i vi\u1ebft b\u1ea3ng tin");
+        table.put("Download button on reels",
+                "N\u00fat t\u1ea3i xu\u1ed1ng tr\u00ean Reels");
+        table.put("Download cover",
+                "T\u1ea3i \u1ea3nh b\u00eca");
+        table.put("Download didn't finish. Check your connection and free storage, then try again.",
+                "T\u1ea3i xu\u1ed1ng ch\u01b0a ho\u00e0n t\u1ea5t. Vui l\u00f2ng ki\u1ec3m tra m\u1ea1ng v\u00e0 dung l\u01b0\u1ee3ng b\u1ed9 nh\u1edb tr\u1ed1ng r\u1ed3i th\u1eed l\u1ea1i.");
+        table.put("Download failed",
+                "T\u1ea3i xu\u1ed1ng th\u1ea5t b\u1ea1i");
+        table.put("Download failed. Check your connection and try again.",
+                "T\u1ea3i xu\u1ed1ng th\u1ea5t b\u1ea1i. Vui l\u00f2ng ki\u1ec3m tra k\u1ebft n\u1ed1i m\u1ea1ng v\u00e0 th\u1eed l\u1ea1i.");
+        table.put("Download feed photos",
+                "T\u1ea3i \u1ea3nh tr\u00ean B\u1ea3ng tin");
+        table.put("Download feed videos",
+                "T\u1ea3i video tr\u00ean B\u1ea3ng tin");
+        table.put("Download history cleared.",
+                "\u0110\u00e3 x\u00f3a l\u1ecbch s\u1eed t\u1ea3i xu\u1ed1ng.");
+        table.put("Download on a reel, a feed post or a story opens the share sheet with its link, for a downloader app such as Seal. Save all and the other save rows still save here.",
+                "Nh\u1ea5n T\u1ea3i xu\u1ed1ng tr\u00ean reel, b\u00e0i vi\u1ebft ho\u1eb7c tin s\u1ebd m\u1edf b\u1ea3ng chia s\u1ebb k\u00e8m li\u00ean k\u1ebft \u0111\u1ec3 b\u1ea1n g\u1eedi sang \u1ee9ng d\u1ee5ng t\u1ea3i ngo\u00e0i nh\u01b0 Seal.");
+        table.put("Download on reels",
+                "T\u1ea3i xu\u1ed1ng tr\u00ean Reels");
+        table.put("Download on stories",
+                "T\u1ea3i xu\u1ed1ng tr\u00ean Tin");
+        table.put("Download profile card",
+                "T\u1ea3i th\u1ebb trang c\u00e1 nh\u00e2n");
+        table.put("Download quality",
+                "Ch\u1ea5t l\u01b0\u1ee3ng t\u1ea3i xu\u1ed1ng");
+        table.put("Download video covers",
+                "T\u1ea3i \u1ea3nh b\u00eca video");
+        table.put("Download voice messages",
+                "T\u1ea3i tin nh\u1eafn tho\u1ea1i");
+        table.put("Downloading",
+                "\u0110ang t\u1ea3i xu\u1ed1ng");
+        table.put("Downloads",
+                "T\u1ea3i xu\u1ed1ng");
+        table.put("Drag to move %1$s",
+                "K\u00e9o \u0111\u1ec3 di chuy\u1ec3n %1$s");
+        table.put("Draws Instagram's tab bar as a floating, rounded glass pill with a highlight on the tab you're on. Restart Instagram after changing it.",
+                "Hi\u1ec3n th\u1ecb thanh tab c\u1ee7a Instagram d\u1ea1ng vi\u00ean thu\u1ed1c n\u1ed5i b\u1eb1ng k\u00ednh bo tr\u00f2n tuy\u1ec7t \u0111\u1eb9p. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Draws the rings in the stories row at the top of Home at the size below, and the rings of stories you haven't watched in the color below. Restart Instagram to see a change.",
+                "Hi\u1ec3n th\u1ecb vi\u1ec1n tin \u1edf \u0111\u1ea7u Trang ch\u1ee7 theo k\u00edch th\u01b0\u1edbc v\u00e0 m\u00e0u s\u1eafc \u0111\u01b0\u1ee3c ch\u1ecdn b\u00ean d\u01b0\u1edbi cho tin ch\u01b0a xem. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Each save goes into a folder named for the account that posted it, inside the save folder. A save that doesn't know who posted stays in the save folder.",
+                "M\u1ed7i t\u1ec7p t\u1ea3i v\u1ec1 s\u1ebd \u0111\u01b0\u1ee3c l\u01b0u v\u00e0o m\u1ed9t th\u01b0 m\u1ee5c ri\u00eang mang t\u00ean t\u00e0i kho\u1ea3n \u0111\u00e3 \u0111\u0103ng, n\u1eb1m b\u00ean trong th\u01b0 m\u1ee5c l\u01b0u ch\u00ednh.");
+        table.put("Each time you scroll your own Followers list to the end, compares it with the last time and lists who's gone. Nothing extra is asked of Instagram, and the list stays on your phone.",
+                "M\u1ed7i khi b\u1ea1n cu\u1ed9n danh s\u00e1ch Ng\u01b0\u1eddi theo d\u00f5i c\u1ee7a m\u00ecnh xu\u1ed1ng cu\u1ed1i, \u1ee9ng d\u1ee5ng s\u1ebd so s\u00e1nh v\u1edbi l\u1ea7n tr\u01b0\u1edbc v\u00e0 li\u1ec7t k\u00ea ai \u0111\u00e3 h\u1ee7y theo d\u00f5i. D\u1eef li\u1ec7u ho\u00e0n to\u00e0n x\u1eed l\u00fd n\u1ed9i b\u1ed9 tr\u00ean \u0111i\u1ec7n tho\u1ea1i c\u1ee7a b\u1ea1n.");
+        table.put("Each video saves at %1$s or the closest quality below it. A video with nothing that low saves at the closest quality above.",
+                "M\u1ed7i video s\u1ebd l\u01b0u \u1edf m\u1ee9c %1$s ho\u1eb7c m\u1ee9c g\u1ea7n nh\u1ea5t b\u00ean d\u01b0\u1edbi. N\u1ebfu kh\u00f4ng c\u00f3 m\u1ee9c th\u1ea5p h\u01a1n, video s\u1ebd l\u01b0u \u1edf m\u1ee9c g\u1ea7n nh\u1ea5t b\u00ean tr\u00ean.");
+        table.put("Each video saves at its lowest quality, for the smallest file.",
+                "M\u1ed7i video s\u1ebd \u0111\u01b0\u1ee3c l\u01b0u \u1edf ch\u1ea5t l\u01b0\u1ee3ng th\u1ea5p nh\u1ea5t \u0111\u1ec3 t\u1ec7p c\u00f3 dung l\u01b0\u1ee3ng nh\u1ecf nh\u1ea5t.");
+        table.put("Each video saves at the best quality Instagram offers for it.",
+                "M\u1ed7i video s\u1ebd \u0111\u01b0\u1ee3c l\u01b0u \u1edf ch\u1ea5t l\u01b0\u1ee3ng cao nh\u1ea5t m\u00e0 Instagram cung c\u1ea5p.");
+        table.put("Empties Home on purpose, so you see the stories row and nothing under it. Profiles, Explore and Reels still show posts. Pull down on Home to refresh after changing it.",
+                "Ch\u1ee7 \u0111\u1ed9ng l\u00e0m tr\u1ed1ng b\u1ea3ng tin Trang ch\u1ee7, b\u1ea1n s\u1ebd ch\u1ec9 th\u1ea5y h\u00e0ng tin v\u00e0 kh\u00f4ng c\u00f3 b\u00e0i vi\u1ebft n\u00e0o ph\u00eda d\u01b0\u1edbi. Trang c\u00e1 nh\u00e2n, Kh\u00e1m ph\u00e1 v\u00e0 Reels v\u1eabn hi\u1ec7n b\u00e0i b\u00ecnh th\u01b0\u1eddng. K\u00e9o xu\u1ed1ng \u0111\u1ec3 l\u00e0m m\u1edbi sau khi thay \u0111\u1ed5i.");
+        table.put("Empties the activity log that a diagnostic report would include.",
+                "X\u00f3a nh\u1eadt k\u00fd ho\u1ea1t \u0111\u1ed9ng c\u00f3 trong b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n.");
+        table.put("Enter your PIN",
+                "Nh\u1eadp m\u00e3 PIN c\u1ee7a b\u1ea1n");
+    }
+
+    private static void fillVi5(Map<String, String> table) {
+        table.put("Every button in the message box shows. Untick the ones you don't use. The text box and Send always stay.",
+                "Hi\u1ec3n th\u1ecb c\u00e1c n\u00fat trong khung tin nh\u1eafn. B\u1ecf t\u00edch c\u00e1c n\u00fat b\u1ea1n kh\u00f4ng d\u00f9ng. Khung nh\u1eadp v\u0103n b\u1ea3n v\u00e0 n\u00fat G\u1eedi lu\u00f4n \u0111\u01b0\u1ee3c gi\u1eef l\u1ea1i.");
+        table.put("Every button under the people on the share sheet shows. Untick the ones you don't use.",
+                "M\u1ecdi n\u00fat ch\u1ee9c n\u0103ng d\u01b0\u1edbi danh s\u00e1ch ng\u01b0\u1eddi nh\u1eadn tr\u00ean b\u1ea3ng chia s\u1ebb \u0111\u1ec1u hi\u1ec3n th\u1ecb. B\u1ecf t\u00edch c\u00e1c n\u00fat b\u1ea1n kh\u00f4ng mu\u1ed1n d\u00f9ng.");
+        table.put("Every switch but Debug logging acts as if it were off, and what was set when you patched stays in. Your settings stay as they are.",
+                "M\u1ecdi c\u00f4ng t\u1eafc ngo\u1ea1i tr\u1eeb Ghi nh\u1eadt k\u00fd g\u1ee1 l\u1ed7i s\u1ebd ho\u1ea1t \u0111\u1ed9ng nh\u01b0 th\u1ec3 \u0111ang t\u1eaft, c\u00f2n c\u00e1c t\u00ednh n\u0103ng b\u1eadt l\u00fac v\u00e1 v\u1eabn gi\u1eef nguy\u00ean. C\u00e0i \u0111\u1eb7t c\u1ee7a b\u1ea1n kh\u00f4ng thay \u0111\u1ed5i.");
+        table.put("Every tab shows on profiles. Untick the ones you don't want. The grid of posts always stays.",
+                "M\u1ecdi tab \u0111\u1ec1u hi\u1ec3n th\u1ecb tr\u00ean trang c\u00e1 nh\u00e2n. B\u1ecf t\u00edch c\u00e1c tab b\u1ea1n mu\u1ed1n \u1ea9n. L\u01b0\u1edbi b\u00e0i vi\u1ebft lu\u00f4n \u0111\u01b0\u1ee3c gi\u1eef l\u1ea1i.");
+        table.put("Everywhere",
+                "M\u1ecdi n\u01a1i");
+        table.put("Everywhere but Reels",
+                "M\u1ecdi n\u01a1i tr\u1eeb Reels");
+        table.put("Example without post details",
+                "V\u00ed d\u1ee5 khi kh\u00f4ng c\u00f3 chi ti\u1ebft b\u00e0i vi\u1ebft");
+        table.put("Explore",
+                "Kh\u00e1m ph\u00e1");
+        table.put("Export HushGram settings",
+                "Xu\u1ea5t c\u00e0i \u0111\u1eb7t TADa");
+        table.put("Export diagnostic report",
+                "Xu\u1ea5t b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n");
+        table.put("Exporting HushGram settings...",
+                "\u0110ang xu\u1ea5t c\u00e0i \u0111\u1eb7t TADa...");
+        table.put("Facebook",
+                "Facebook");
+        table.put("Feed",
+                "B\u1ea3ng tin");
+        table.put("Feed videos and stories wait for your tap. Reels play as you swipe to them.",
+                "Video tr\u00ean b\u1ea3ng tin v\u00e0 tin ch\u1edd ch\u1ea1m \u0111\u1ec3 ph\u00e1t. Reels s\u1ebd t\u1ef1 ph\u00e1t khi vu\u1ed1t t\u1edbi.");
+        table.put("Feed videos, reels and stories all wait for your tap.",
+                "Video tr\u00ean b\u1ea3ng tin, reels v\u00e0 tin \u0111\u1ec1u ch\u1edd ch\u1ea1m \u0111\u1ec3 ph\u00e1t.");
+        table.put("File name",
+                "T\u00ean t\u1ec7p");
+        table.put("File name set to %1$s.",
+                "\u0110\u00e3 \u0111\u1eb7t t\u00ean t\u1ec7p th\u00e0nh %1$s.");
+        table.put("Find the reel",
+                "T\u00ecm reel");
+        table.put("Find the reel you came from",
+                "T\u00ecm reel b\u1ea1n v\u1eeba xem");
+        table.put("Fingers",
+                "S\u1ed1 l\u01b0\u1ee3ng ng\u00f3n tay");
+        table.put("Folder name",
+                "T\u00ean th\u01b0 m\u1ee5c");
+        table.put("Folder per account",
+                "Th\u01b0 m\u1ee5c ri\u00eang cho t\u1eebng t\u00e0i kho\u1ea3n");
+        table.put("Folder set to %1$s.",
+                "\u0110\u00e3 \u0111\u1eb7t th\u01b0 m\u1ee5c th\u00e0nh %1$s.");
+        table.put("Follow label",
+                "Nh\u00e3n tr\u1ea1ng th\u00e1i theo d\u00f5i");
+        table.put("Following each other",
+                "\u0110ang theo d\u00f5i l\u1eabn nhau");
+        table.put("Follows you",
+                "Theo d\u00f5i b\u1ea1n");
+        table.put("Font",
+                "Ph\u00f4ng ch\u1eef");
+        table.put("Font saved. Restart Instagram to see it.",
+                "\u0110\u00e3 l\u01b0u ph\u00f4ng ch\u1eef. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("For WhatsApp, video editors such as CapCut and InShot, or a gallery or player that plays saves without sound. May lower quality.",
+                "H\u1ed7 tr\u1ee3 WhatsApp, tr\u00ecnh ch\u1ec9nh s\u1eeda video nh\u01b0 CapCut, InShot, ho\u1eb7c th\u01b0 vi\u1ec7n \u1ea3nh/tr\u00ecnh ph\u00e1t kh\u00f4ng c\u00f3 ti\u1ebfng khi xem video \u0111\u00e3 l\u01b0u. C\u00f3 th\u1ec3 l\u00e0m gi\u1ea3m nh\u1eb9 ch\u1ea5t l\u01b0\u1ee3ng.");
+        table.put("Forgets everything Skip what's already saved remembers, for all your accounts. Your saved files stay.",
+                "X\u00f3a to\u00e0n b\u1ed9 danh s\u00e1ch ghi nh\u1edb \u0111\u00e3 t\u1ea3i xu\u1ed1ng tr\u00ean t\u1ea5t c\u1ea3 t\u00e0i kho\u1ea3n. C\u00e1c t\u1ec7p \u0111\u00e3 t\u1ea3i trong m\u00e1y v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Forgets the saved Followers lists and everyone listed above, for all your accounts.",
+                "X\u00f3a to\u00e0n b\u1ed9 danh s\u00e1ch ng\u01b0\u1eddi theo d\u00f5i \u0111\u00e3 l\u01b0u v\u00e0 danh s\u00e1ch ng\u01b0\u1eddi h\u1ee7y theo d\u00f5i tr\u00ean t\u1ea5t c\u1ea3 t\u00e0i kho\u1ea3n.");
+        table.put("Forgot PIN?",
+                "Qu\u00ean m\u00e3 PIN?");
+        table.put("Freed %1$s.",
+                "\u0110\u00e3 gi\u1ea3i ph\u00f3ng %1$s.");
+        table.put("Freed %1$s. The videos go the next time Instagram starts.",
+                "\u0110\u00e3 gi\u1ea3i ph\u00f3ng %1$s. C\u00e1c video \u0111\u1ec7m s\u1ebd \u0111\u01b0\u1ee3c d\u1ecdn d\u1eb9p trong l\u1ea7n kh\u1edfi \u0111\u1ed9ng ti\u1ebfp theo.");
+        table.put("From the next start, every switch but Debug logging acts as if it were off. Changes made when you patched stay in, and your choices stay saved.",
+                "T\u1eeb l\u1ea7n kh\u1edfi \u0111\u1ed9ng ti\u1ebfp theo, m\u1ecdi c\u00f4ng t\u1eafc ngo\u1ea1i tr\u1eeb Ghi nh\u1eadt k\u00fd g\u1ee1 l\u1ed7i s\u1ebd ho\u1ea1t \u0111\u1ed9ng nh\u01b0 th\u1ec3 \u0111ang t\u1eaft. C\u00e1c thay \u0111\u1ed5i l\u00fac v\u00e1 v\u1eabn \u0111\u01b0\u1ee3c gi\u1eef nguy\u00ean v\u00e0 c\u00e0i \u0111\u1eb7t c\u1ee7a b\u1ea1n v\u1eabn \u0111\u01b0\u1ee3c l\u01b0u.");
+        table.put("Frosted",
+                "K\u00ednh m\u1edd");
+        table.put("Full report saved to %1$s",
+                "B\u00e1o c\u00e1o \u0111\u1ea7y \u0111\u1ee7 \u0111\u00e3 \u0111\u01b0\u1ee3c l\u01b0u v\u00e0o %1$s");
+        table.put("Full resolution photos",
+                "\u1ea2nh \u0111\u1ed9 ph\u00e2n gi\u1ea3i \u0111\u1ea7y \u0111\u1ee7");
+        table.put("Full screen Home",
+                "Xem Trang ch\u1ee7 to\u00e0n m\u00e0n h\u00ecnh");
+        table.put("Full screen Reels",
+                "Xem Reels to\u00e0n m\u00e0n h\u00ecnh");
+        table.put("Full screen Reels and Home hide only the navigation bar at the bottom. The status bar stays.",
+                "Ch\u1ebf \u0111\u1ed9 to\u00e0n m\u00e0n h\u00ecnh s\u1ebd ch\u1ec9 \u1ea9n thanh \u0111i\u1ec1u h\u01b0\u1edbng ph\u00eda d\u01b0\u1edbi, thanh tr\u1ea1ng th\u00e1i v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Full screen Reels and Home hide only the status bar at the top. The navigation bar stays.",
+                "Ch\u1ebf \u0111\u1ed9 to\u00e0n m\u00e0n h\u00ecnh s\u1ebd ch\u1ec9 \u1ea9n thanh tr\u1ea1ng th\u00e1i ph\u00eda tr\u00ean, thanh \u0111i\u1ec1u h\u01b0\u1edbng v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Full screen Reels and Home hide the status bar and the navigation bar.",
+                "Ch\u1ebf \u0111\u1ed9 to\u00e0n m\u00e0n h\u00ecnh cho Reels v\u00e0 Trang ch\u1ee7 s\u1ebd \u1ea9n c\u1ea3 thanh tr\u1ea1ng th\u00e1i v\u00e0 thanh \u0111i\u1ec1u h\u01b0\u1edbng.");
+        table.put("Full tick",
+                "Rung \u0111\u1ea7y \u0111\u1ee7");
+        table.put("Fully round",
+                "Bo tr\u00f2n ho\u00e0n to\u00e0n (vi\u00ean thu\u1ed1c)");
+        table.put("GPL-3.0, with the notices of the projects this is built on",
+                "GPL-3.0, c\u00f9ng th\u00f4ng b\u00e1o c\u1ee7a c\u00e1c d\u1ef1 \u00e1n n\u1ec1n t\u1ea3ng");
+        table.put("Gallery",
+                "B\u1ed9 s\u01b0u t\u1eadp");
+        table.put("Ghost mode",
+                "Ch\u1ebf \u0111\u1ed9 \u1ea9n danh");
+        table.put("Ghost mode button on Home's header",
+                "N\u00fat Ch\u1ebf \u0111\u1ed9 \u1ea9n danh tr\u00ean \u0111\u1ea7u Trang ch\u1ee7");
+        table.put("Ghost mode is off, and so is each of its switches.",
+                "Ch\u1ebf \u0111\u1ed9 \u1ea9n danh \u0111ang t\u1eaft, m\u1ecdi t\u00f9y ch\u1ecdn con c\u0169ng \u0111\u00e3 t\u1eaft.");
+        table.put("Ghost mode is on, and so is each of its switches.",
+                "Ch\u1ebf \u0111\u1ed9 \u1ea9n danh \u0111ang b\u1eadt, m\u1ecdi t\u00f9y ch\u1ecdn con c\u0169ng \u0111\u00e3 b\u1eadt.");
+        table.put("Ghost mode needs at least one switch to turn.",
+                "Ch\u1ebf \u0111\u1ed9 \u1ea9n danh c\u1ea7n \u00edt nh\u1ea5t m\u1ed9t c\u00f4ng t\u1eafc \u0111\u01b0\u1ee3c ch\u1ecdn \u0111\u1ec3 ho\u1ea1t \u0111\u1ed9ng.");
+        table.put("Gives Search and your messages a plain search bar and removes Meta AI's buttons, follow-up bar and inbox row. Restart Instagram to see the change.",
+                "\u0110\u1ed5i thanh t\u00ecm ki\u1ebfm v\u00e0 tin nh\u1eafn th\u00e0nh thanh t\u00ecm ki\u1ebfm th\u00f4ng th\u01b0\u1eddng, x\u00f3a n\u00fat Meta AI, thanh g\u1ee3i \u00fd v\u00e0 h\u00e0ng tr\u00f2 chuy\u1ec7n c\u1ee7a Meta AI. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Gives reels the seek bar of a video in a chat, a thin gray line that turns white as it plays, with a big round white handle. The time shows above it. Drag it to seek. When Bigger seek bar is on too, this look wins. It also keeps the bar on short reels.",
+                "\u0110\u1ed5i thanh tua c\u1ee7a reels th\u00e0nh d\u1ea1ng \u0111\u01b0\u1eddng k\u1ebb x\u00e1m m\u1ecfng chuy\u1ec3n tr\u1eafng khi ph\u00e1t, c\u00f3 n\u00fat k\u00e9o tr\u00f2n l\u1edbn gi\u1ed1ng video trong tin nh\u1eafn. Gi\u1eef thanh tua tr\u00ean c\u1ea3 video ng\u1eafn.");
+        table.put("Glass tab bar",
+                "Thanh tab d\u1ea1ng k\u00ednh trong su\u1ed1t (Glassmorphism)");
+        table.put("Gold",
+                "V\u00e0ng kim");
+        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later HushGram builds need Change version code too, or they won't install over this one.",
+                "Google Play s\u1ebd kh\u00f4ng g\u1ee3i \u00fd c\u1eadp nh\u1eadt b\u1ea3n ch\u00ednh th\u1ee9c t\u1eeb Meta \u0111\u00e8 l\u00ean b\u1ea3n n\u00e0y. \u0110\u1ec3 quay v\u1ec1 Instagram g\u1ed1c, h\u00e3y g\u1ee1 c\u00e0i \u0111\u1eb7t b\u1ea3n n\u00e0y tr\u01b0\u1edbc (s\u1ebd x\u00f3a d\u1eef li\u1ec7u tr\u00ean m\u00e1y). C\u00e1c b\u1ea3n d\u1ef1ng TADa sau n\u00e0y c\u0169ng c\u1ea7n b\u1eadt t\u00f9y ch\u1ecdn n\u00e0y \u0111\u1ec3 c\u00f3 th\u1ec3 c\u00e0i \u0111\u00e8.");
+        table.put("Google's emoji everywhere",
+                "D\u00f9ng bi\u1ec3u t\u01b0\u1ee3ng c\u1ea3m x\u00fac Google \u1edf m\u1ecdi n\u01a1i");
+        table.put("Gray out stories you've watched",
+                "L\u00e0m m\u1edd tin \u0111\u00e3 xem");
+        table.put("Green",
+                "Xanh l\u00e1");
+    }
+
+    private static void fillVi6(Map<String, String> table) {
+        table.put("Group Instagram's notifications so they don't pile up.",
+                "G\u1ed9p th\u00f4ng b\u00e1o c\u1ee7a Instagram \u0111\u1ec3 trung t\u00e2m th\u00f4ng b\u00e1o kh\u00f4ng b\u1ecb tr\u00e0n.");
+        table.put("Group by type",
+                "Nh\u00f3m theo lo\u1ea1i");
+        table.put("Group notifications",
+                "G\u1ed9p nh\u00f3m th\u00f4ng b\u00e1o");
+        table.put("HDR photos and reels stop brightening the screen above everything else. They show at the same brightness as the rest of Instagram.",
+                "\u1ea2nh v\u00e0 reels chu\u1ea9n HDR s\u1ebd kh\u00f4ng t\u1ef1 \u0111\u1ed9ng l\u00e0m ch\u00f3i s\u00e1ng m\u00e0n h\u00ecnh n\u1eefa. Ch\u00fang s\u1ebd hi\u1ec3n th\u1ecb \u1edf m\u1ee9c \u0111\u1ed9 s\u00e1ng th\u00f4ng th\u01b0\u1eddng c\u1ee7a Instagram.");
+        table.put("Half a second",
+                "0,5 gi\u00e2y");
+        table.put("Haptic style",
+                "Ki\u1ec3u rung ph\u1ea3n h\u1ed3i");
+        table.put("Haptics on the tab bar",
+                "Rung ph\u1ea3n h\u1ed3i tr\u00ean thanh tab");
+        table.put("Hidden accounts",
+                "T\u00e0i kho\u1ea3n \u0111\u00e3 \u1ea9n");
+        table.put("Hidden chats",
+                "\u0110o\u1ea1n chat \u0111\u00e3 \u1ea9n");
+        table.put("Hidden sounds",
+                "\u00c2m thanh \u0111\u00e3 \u1ea9n");
+        table.put("Hidden. Tap to show it again.",
+                "\u0110ang \u1ea9n. Ch\u1ea1m \u0111\u1ec3 hi\u1ec3n th\u1ecb l\u1ea1i.");
+        table.put("Hide 'Are you interested?' bubbles",
+                "\u1ea8n bong b\u00f3ng \"B\u1ea1n c\u00f3 quan t\u00e2m kh\u00f4ng?\"");
+        table.put("Hide AI-labeled reels",
+                "\u1ea8n Reels \u0111\u01b0\u1ee3c g\u1eafn nh\u00e3n AI");
+        table.put("Hide About this reel",
+                "\u1ea8n \"Gi\u1edbi thi\u1ec7u v\u1ec1 th\u01b0\u1edbc phim n\u00e0y\"");
+        table.put("Hide Add Yours cards between stories",
+                "\u1ea8n th\u1ebb \"L\u01b0\u1ee3t tham gia c\u1ee7a b\u1ea1n\"");
+        table.put("Hide Ask Meta AI in About this reel",
+                "\u1ea8n \"H\u1ecfi Meta AI\" trong Gi\u1edbi thi\u1ec7u v\u1ec1 th\u01b0\u1edbc phim n\u00e0y");
+        table.put("Hide Blend on reels",
+                "\u1ea8n t\u00ednh n\u0103ng Blend tr\u00ean Reels");
+        table.put("Hide Complete your profile",
+                "\u1ea8n \"Ho\u00e0n thi\u1ec7n trang c\u00e1 nh\u00e2n\"");
+        table.put("Hide Create on Home's header",
+                "\u1ea8n n\u00fat T\u1ea1o (+) tr\u00ean \u0111\u1ea7u Trang ch\u1ee7");
+        table.put("Hide Featured in notifications",
+                "\u1ea8n m\u1ee5c \"N\u1ed5i b\u1eadt\" trong th\u00f4ng b\u00e1o");
+        table.put("Hide Follow on posts",
+                "\u1ea8n n\u00fat Theo d\u00f5i tr\u00ean b\u00e0i vi\u1ebft");
+        table.put("Hide Follow on stories",
+                "\u1ea8n n\u00fat Theo d\u00f5i tr\u00ean tin");
+        table.put("Hide Instants",
+                "\u1ea8n t\u00ednh n\u0103ng Instants");
+        table.put("Hide Messages on Home's header",
+                "\u1ea8n n\u00fat Tin nh\u1eafn tr\u00ean \u0111\u1ea7u Trang ch\u1ee7");
+        table.put("Hide Meta AI in search and Home's bar",
+                "\u1ea8n Meta AI trong t\u00ecm ki\u1ebfm v\u00e0 thanh Trang ch\u1ee7");
+        table.put("Hide Meta AI in the share sheet",
+                "\u1ea8n Meta AI tr\u00ean b\u1ea3ng chia s\u1ebb");
+        table.put("Hide Meta AI posts",
+                "\u1ea8n b\u00e0i vi\u1ebft c\u1ee7a Meta AI");
+        table.put("Hide Notes on profile pictures",
+                "\u1ea8n Ghi ch\u00fa tr\u00ean \u1ea3nh \u0111\u1ea1i di\u1ec7n");
+        table.put("Hide People you don't follow back",
+                "\u1ea8n \"Ng\u01b0\u1eddi b\u1ea1n ch\u01b0a theo d\u00f5i l\u1ea1i\"");
+        table.put("Hide Reels in the feed",
+                "\u1ea8n Reels tr\u00ean b\u1ea3ng tin");
+        table.put("Hide Share profile",
+                "\u1ea8n n\u00fat Chia s\u1ebb trang c\u00e1 nh\u00e2n");
+        table.put("Hide Suggested for you between stories",
+                "\u1ea8n \"G\u1ee3i \u00fd cho b\u1ea1n\" gi\u1eefa c\u00e1c tin");
+        table.put("Hide Suggested for you on follow lists",
+                "\u1ea8n G\u1ee3i \u00fd cho b\u1ea1n trong danh s\u00e1ch theo d\u00f5i");
+        table.put("Hide Threads posts",
+                "\u1ea8n b\u00e0i vi\u1ebft Threads");
+        table.put("Hide Your algorithm on reels",
+                "\u1ea8n n\u00fat \"Thu\u1eadt to\u00e1n c\u1ee7a b\u1ea1n\" tr\u00ean Reels");
+        table.put("Hide ads",
+                "\u1ea8n qu\u1ea3ng c\u00e1o");
+        table.put("Hide ads and share less about yourself with Instagram.",
+                "\u1ea8n qu\u1ea3ng c\u00e1o v\u00e0 chia s\u1ebb \u00edt th\u00f4ng tin c\u00e1 nh\u00e2n h\u01a1n v\u1edbi Instagram.");
+        table.put("Hide carousels",
+                "\u1ea8n b\u00e0i vi\u1ebft nhi\u1ec1u \u1ea3nh/video");
+        table.put("Hide comments",
+                "\u1ea8n b\u00ecnh lu\u1eadn");
+        table.put("Hide friends' activity and comment previews",
+                "\u1ea8n ho\u1ea1t \u0111\u1ed9ng c\u1ee7a b\u1ea1n b\u00e8 v\u00e0 xem tr\u01b0\u1edbc b\u00ecnh lu\u1eadn");
+        table.put("Hide group buttons",
+                "\u1ea8n n\u00fat nh\u00f3m trong chia s\u1ebb");
+        table.put("Hide highlights",
+                "\u1ea8n tin n\u1ed5i b\u1eadt (Highlights)");
+        table.put("Hide memories and recaps",
+                "\u1ea8n k\u1ef7 ni\u1ec7m v\u00e0 t\u00f3m t\u1eaft");
+        table.put("Hide notifications on Home's header",
+                "\u1ea8n n\u00fat Th\u00f4ng b\u00e1o (tr\u00e1i tim) tr\u00ean \u0111\u1ea7u Trang ch\u1ee7");
+        table.put("Hide paid partnership Reels",
+                "\u1ea8n Reels h\u1ee3p t\u00e1c tr\u1ea3 ph\u00ed");
+        table.put("Hide photos",
+                "\u1ea8n b\u00e0i vi\u1ebft \u1ea3nh");
+        table.put("Hide posts from this account",
+                "\u1ea8n b\u00e0i vi\u1ebft t\u1eeb t\u00e0i kho\u1ea3n n\u00e0y");
+        table.put("Hide posts you've liked",
+                "\u1ea8n b\u00e0i vi\u1ebft b\u1ea1n \u0111\u00e3 th\u00edch");
+        table.put("Hide promotion buttons on reels",
+                "\u1ea8n c\u00e1c n\u00fat qu\u1ea3ng b\u00e1 tr\u00ean Reels");
+        table.put("Hide reels by caption words",
+                "\u1ea8n Reels theo t\u1eeb kh\u00f3a trong ch\u00fa th\u00edch");
+        table.put("Hide reels by sound",
+                "\u1ea8n Reels theo \u00e2m thanh/nh\u1ea1c");
+        table.put("Hide shopping",
+                "\u1ea8n m\u1ee5c mua s\u1eafm");
+        table.put("Hide single chats. A hidden chat leaves your inbox and its notifications don't post until you show it here again.",
+                "\u1ea8n t\u1eebng cu\u1ed9c tr\u00f2 chuy\u1ec7n ri\u00eang l\u1ebb. Cu\u1ed9c tr\u00f2 chuy\u1ec7n b\u1ecb \u1ea9n s\u1ebd bi\u1ebfn m\u1ea5t kh\u1ecfi h\u1ed9p th\u01b0 v\u00e0 kh\u00f4ng hi\u1ec7n th\u00f4ng b\u00e1o cho \u0111\u1ebfn khi b\u1ea1n b\u1ecf \u1ea9n t\u1ea1i \u0111\u00e2y.");
+        table.put("Hide story rewinds",
+                "\u1ea8n tin nh\u1edb l\u1ea1i (Rewind)");
+        table.put("Hide suggested accounts",
+                "\u1ea8n t\u00e0i kho\u1ea3n g\u1ee3i \u00fd");
+        table.put("Hide suggested accounts in Messages",
+                "\u1ea8n t\u00e0i kho\u1ea3n g\u1ee3i \u00fd trong Tin nh\u1eafn");
+        table.put("Hide suggested accounts in search",
+                "\u1ea8n t\u00e0i kho\u1ea3n g\u1ee3i \u00fd trong t\u00ecm ki\u1ebfm");
+        table.put("Hide suggested people",
+                "\u1ea8n g\u1ee3i \u00fd k\u1ebft n\u1ed1i");
+        table.put("Hide suggested posts",
+                "\u1ea8n b\u00e0i vi\u1ebft g\u1ee3i \u00fd");
+        table.put("Hide suggested stories",
+                "\u1ea8n tin g\u1ee3i \u00fd");
+    }
+
+    private static void fillVi7(Map<String, String> table) {
+        table.put("Hide suggestions in notifications",
+                "\u1ea8n th\u00f4ng b\u00e1o g\u1ee3i \u00fd");
+        table.put("Hide surveys",
+                "\u1ea8n kh\u1ea3o s\u00e1t");
+        table.put("Hide that you're typing",
+                "\u1ea8n tr\u1ea1ng th\u00e1i \u0111ang so\u1ea1n tin");
+        table.put("Hide the Create button",
+                "\u1ea8n n\u00fat T\u1ea1o b\u00e0i vi\u1ebft (+)");
+        table.put("Hide the Create button on reels",
+                "\u1ea8n n\u00fat T\u1ea1o tr\u00ean Reels");
+        table.put("Hide the Create tab",
+                "\u1ea8n tab T\u1ea1o b\u00e0i vi\u1ebft (+)");
+        table.put("Hide the Explore grid",
+                "\u1ea8n l\u01b0\u1edbi Kh\u00e1m ph\u00e1");
+        table.put("Hide the Follow button",
+                "\u1ea8n n\u00fat Theo d\u00f5i");
+        table.put("Hide the Home tab",
+                "\u1ea8n tab Trang ch\u1ee7");
+        table.put("Hide the HushGram row in Instagram's menu",
+                "\u1ea8n m\u1ee5c TADa trong menu c\u1ee7a Instagram");
+        table.put("Hide the Muse button on your profile",
+                "\u1ea8n n\u00fat Muse tr\u00ean trang c\u00e1 nh\u00e2n");
+        table.put("Hide the Muse card",
+                "\u1ea8n th\u1ebb Muse");
+        table.put("Hide the Music for you card",
+                "\u1ea8n th\u1ebb \"Nh\u1ea1c d\u00e0nh cho b\u1ea1n\"");
+        table.put("Hide the Profile tab",
+                "\u1ea8n tab Trang c\u00e1 nh\u00e2n");
+        table.put("Hide the Reels tab",
+                "\u1ea8n tab Reels");
+        table.put("Hide the Repost button",
+                "\u1ea8n n\u00fat \u0110\u0103ng l\u1ea1i");
+        table.put("Hide the Save button on reels",
+                "\u1ea8n n\u00fat L\u01b0u tr\u00ean Reels");
+        table.put("Hide the Search tab",
+                "\u1ea8n tab T\u00ecm ki\u1ebfm");
+        table.put("Hide the Share button",
+                "\u1ea8n n\u00fat Chia s\u1ebb");
+        table.put("Hide the Stories tray",
+                "\u1ea8n h\u00e0ng Tin (Stories)");
+        table.put("Hide the Threads button",
+                "\u1ea8n n\u00fat Threads");
+        table.put("Hide the call buttons in chats",
+                "\u1ea8n n\u00fat g\u1ecdi trong \u0111o\u1ea1n chat");
+        table.put("Hide the comment bar on all reels",
+                "\u1ea8n thanh b\u00ecnh lu\u1eadn tr\u00ean m\u1ecdi reel");
+        table.put("Hide the comment bar on reposted reels",
+                "\u1ea8n thanh b\u00ecnh lu\u1eadn tr\u00ean reel \u0111\u01b0\u1ee3c \u0111\u0103ng l\u1ea1i");
+        table.put("Hide the emoji row",
+                "\u1ea8n h\u00e0ng bi\u1ec3u t\u01b0\u1ee3ng c\u1ea3m x\u00fac");
+        table.put("Hide the home feed",
+                "\u1ea8n b\u1ea3ng tin Trang ch\u1ee7");
+        table.put("Hide the notes row",
+                "\u1ea8n h\u00e0ng ghi ch\u00fa");
+        table.put("Hide the reply bar on reels from chats",
+                "\u1ea8n thanh tr\u1ea3 l\u1eddi tr\u00ean reel m\u1edf t\u1eeb tin nh\u1eafn");
+        table.put("Hide the search bar in Messages",
+                "\u1ea8n thanh t\u00ecm ki\u1ebfm trong Tin nh\u1eafn");
+        table.put("Hide the tab bar as you scroll",
+                "\u1ea8n thanh tab khi cu\u1ed9n m\u00e0n h\u00ecnh");
+        table.put("Hide the tab bar on Reels",
+                "\u1ea8n thanh tab khi xem Reels");
+        table.put("Hide the top bar on the Reels tab",
+                "\u1ea8n thanh tr\u00ean c\u00f9ng c\u1ee7a tab Reels");
+        table.put("Hide their posts",
+                "\u1ea8n b\u00e0i vi\u1ebft c\u1ee7a h\u1ecd");
+        table.put("Hide this sound",
+                "\u1ea8n \u00e2m thanh n\u00e0y");
+        table.put("Hide videos",
+                "\u1ea8n b\u00e0i vi\u1ebft video");
+        table.put("Hide your active status",
+                "\u1ea8n tr\u1ea1ng th\u00e1i ho\u1ea1t \u0111\u1ed9ng");
+        table.put("Hides Meta AI's videos, chats and pictures of you that Instagram puts in your home feed.",
+                "\u1ea8n video, \u0111o\u1ea1n chat v\u00e0 h\u00ecnh \u1ea3nh c\u1ee7a Meta AI tr\u00ean b\u1ea3ng tin ch\u00ednh.");
+        table.put("Hides ads, suggested accounts and posts, surveys and promotions.",
+                "\u1ea8n s\u1ea1ch qu\u1ea3ng c\u00e1o, t\u00e0i kho\u1ea3n g\u1ee3i \u00fd, b\u00e0i vi\u1ebft g\u1ee3i \u00fd, kh\u1ea3o s\u00e1t v\u00e0 n\u1ed9i dung ti\u1ebfp th\u1ecb.");
+        table.put("Hides posts and reels from accounts you don't follow, marked Suggested for you. Posts from accounts you follow stay.",
+                "\u1ea8n c\u00e1c b\u00e0i vi\u1ebft v\u00e0 reels t\u1eeb t\u00e0i kho\u1ea3n b\u1ea1n kh\u00f4ng theo d\u00f5i (c\u00f3 nh\u00e3n G\u1ee3i \u00fd cho b\u1ea1n). B\u00e0i vi\u1ebft t\u1eeb ng\u01b0\u1eddi b\u1ea1n theo d\u00f5i v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Hides sponsored posts, reels and stories. No empty gap is left where an ad would have been.",
+                "\u1ea8n b\u00e0i vi\u1ebft, reel v\u00e0 tin \u0111\u01b0\u1ee3c t\u00e0i tr\u1ee3. Kh\u00f4ng \u0111\u1ec3 l\u1ea1i kho\u1ea3ng tr\u1ed1ng t\u1ea1i v\u1ecb tr\u00ed qu\u1ea3ng c\u00e1o.");
+        table.put("Hides stories from accounts you don't follow, and accounts Instagram suggests, in the row at the top of Home. Stories from accounts you follow stay.",
+                "\u1ea8n tin t\u1eeb c\u00e1c t\u00e0i kho\u1ea3n b\u1ea1n ch\u01b0a theo d\u00f5i v\u00e0 t\u00e0i kho\u1ea3n \u0111\u01b0\u1ee3c g\u1ee3i \u00fd tr\u00ean h\u00e0ng tin \u1edf Trang ch\u1ee7. Tin t\u1eeb ng\u01b0\u1eddi b\u1ea1n theo d\u00f5i v\u1eabn hi\u1ec3n th\u1ecb.");
+        table.put("Hides the bubble under a post that asks 'Are you interested in this post?' with Not interested and Interested buttons. Nothing is answered for you.",
+                "\u1ea8n bong b\u00f3ng d\u01b0\u1edbi b\u00e0i vi\u1ebft h\u1ecfi \"B\u1ea1n c\u00f3 quan t\u00e2m \u0111\u1ebfn b\u00e0i vi\u1ebft n\u00e0y kh\u00f4ng?\" v\u1edbi c\u00e1c n\u00fat Kh\u00f4ng quan t\u00e2m v\u00e0 Quan t\u00e2m.");
+        table.put("Hides the buttons that push Edits, templates, Meta AI and Ray-Ban Meta glasses. Live badges and state-controlled media labels stay.",
+                "\u1ea8n c\u00e1c n\u00fat qu\u1ea3ng b\u00e1 Ch\u1ec9nh s\u1eeda, M\u1eabu, Meta AI v\u00e0 k\u00ednh Ray-Ban Meta. Huy hi\u1ec7u Tr\u1ef1c ti\u1ebfp v\u00e0 nh\u00e3n truy\u1ec1n th\u00f4ng v\u1eabn gi\u1eef l\u1ea1i.");
+        table.put("Hides the cards between posts that ask you to rate what you saw.",
+                "\u1ea8n c\u00e1c th\u1ebb xu\u1ea5t hi\u1ec7n gi\u1eefa c\u00e1c b\u00e0i vi\u1ebft y\u00eau c\u1ea7u b\u1ea1n \u0111\u00e1nh gi\u00e1 n\u1ed9i dung \u0111\u00e3 xem.");
+        table.put("Hides the grid of posts and reels under the Search tab's bar. Search, recent searches and results stay.",
+                "\u1ea8n l\u01b0\u1edbi b\u00e0i vi\u1ebft v\u00e0 reels d\u01b0\u1edbi thanh c\u1ee7a tab T\u00ecm ki\u1ebfm. Khung t\u00ecm ki\u1ebfm, l\u1ecbch s\u1eed t\u00ecm ki\u1ebfm g\u1ea7n \u0111\u00e2y v\u00e0 k\u1ebft qu\u1ea3 t\u00ecm ki\u1ebfm v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Hides the posts, accounts and communities from Threads that Instagram mixes into your feed.",
+                "\u1ea8n b\u00e0i vi\u1ebft, t\u00e0i kho\u1ea3n v\u00e0 c\u1ed9ng \u0111\u1ed3ng Threads \u0111\u01b0\u1ee3c ch\u00e8n v\u00e0o b\u1ea3ng tin Instagram.");
+        table.put("Hides the rewind cards, which bring back old highlights, from the row of stories at the top of Home.",
+                "\u1ea8n c\u00e1c th\u1ebb nh\u1eafc l\u1ea1i k\u1ef7 ni\u1ec7m v\u00e0 tin n\u1ed5i b\u1eadt c\u0169 kh\u1ecfi h\u00e0ng tin \u1edf \u0111\u1ea7u Trang ch\u1ee7.");
+        table.put("Hides the rows of accounts, shops and hashtags Instagram suggests you follow.",
+                "\u1ea8n c\u00e1c h\u00e0ng t\u00e0i kho\u1ea3n, c\u1eeda h\u00e0ng v\u00e0 hashtag m\u00e0 Instagram g\u1ee3i \u00fd b\u1ea1n theo d\u00f5i.");
+        table.put("Hides the rows of products to shop and live shopping that Instagram puts between posts, and the shop tiles in Explore. Posts with tagged products don't show the shopping bag.",
+                "\u1ea8n c\u00e1c h\u00e0ng s\u1ea3n ph\u1ea9m mua s\u1eafm v\u00e0 mua s\u1eafm tr\u1ef1c ti\u1ebfp gi\u1eefa c\u00e1c b\u00e0i vi\u1ebft, c\u00f9ng c\u00e1c \u00f4 mua s\u1eafm trong m\u1ee5c Kh\u00e1m ph\u00e1. B\u00e0i vi\u1ebft c\u00f3 g\u1eafn th\u1ebb s\u1ea3n ph\u1ea9m s\u1ebd kh\u00f4ng hi\u1ec7n bi\u1ec3u t\u01b0\u1ee3ng t\u00fai mua h\u00e0ng.");
+        table.put("Hides the status bar and the navigation bar while Home shows. Swipe in from the edge to bring them back for a moment.",
+                "\u1ea8n thanh tr\u1ea1ng th\u00e1i v\u00e0 thanh \u0111i\u1ec1u h\u01b0\u1edbng khi \u1edf Trang ch\u1ee7.");
+        table.put("Hides the status bar and the navigation bar while Reels shows. Swipe in from the edge to bring them back for a moment. Back and the keyboard work as usual.",
+                "\u1ea8n ho\u00e0n to\u00e0n thanh tr\u1ea1ng th\u00e1i v\u00e0 thanh \u0111i\u1ec1u h\u01b0\u1edbng khi xem Reels \u0111\u1ec3 \u0111\u1eafm ch\u00ecm v\u00e0o n\u1ed9i dung video.");
+        table.put("Hides your seen receipts, typing and active status. Allows screenshots and stops link tracking and usage reports.",
+                "\u1ea8n th\u00f4ng b\u00e1o \u0111\u00e3 xem, tr\u1ea1ng th\u00e1i \u0111ang so\u1ea1n tin v\u00e0 \u0111ang ho\u1ea1t \u0111\u1ed9ng. Cho ph\u00e9p ch\u1ee5p m\u00e0n h\u00ecnh v\u00e0 ch\u1eb7n theo d\u00f5i li\u00ean k\u1ebft.");
+        table.put("Hiding reels with %1$s",
+                "\u0110ang \u1ea9n reels c\u00f3 \u00e2m thanh %1$s");
+        table.put("Highest",
+                "Cao nh\u1ea5t");
+        table.put("Hold time",
+                "Th\u1eddi gian gi\u1eef");
+        table.put("Hold to download",
+                "Nh\u1ea5n gi\u1eef \u0111\u1ec3 t\u1ea3i xu\u1ed1ng");
+        table.put("Hold two fingers still on a feed post's picture or video, or on a reel, and it saves what's under them, the same as Download in the menu. Instagram's one-finger long press stays as it was. Needs Download feed videos or photos, and Download on reels for reels.",
+                "Nh\u1ea5n gi\u1eef \u0111\u1ed3ng th\u1eddi hai ng\u00f3n tay l\u00ean \u1ea3nh ho\u1eb7c video tr\u00ean b\u1ea3ng tin/reels \u0111\u1ec3 t\u1ea3i n\u1ed9i dung xu\u1ed1ng. Thao t\u00e1c nh\u1ea5n gi\u1eef m\u1ed9t ng\u00f3n tay c\u1ee7a Instagram v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Home",
+                "Trang ch\u1ee7");
+        table.put("Home feed picker",
+                "B\u1ed9 ch\u1ecdn b\u1ea3ng tin");
+        table.put("Home, Reels and the other tabs run down behind the pill, so the glass has real content to blur.",
+                "N\u1ed9i dung Trang ch\u1ee7, Reels v\u00e0 c\u00e1c tab kh\u00e1c s\u1ebd cu\u1ed9n qua ph\u00eda sau thanh tab \u0111\u1ec3 t\u1ea1o hi\u1ec7u \u1ee9ng m\u1edd nh\u00f2e k\u00ednh th\u1ef1c s\u1ef1.");
+    }
+
+    private static void fillVi8(Map<String, String> table) {
+        table.put("How far a photo or video you're saving has got, with a button to cancel it",
+                "Ti\u1ebfn tr\u00ecnh l\u01b0u \u1ea3nh ho\u1eb7c video k\u00e8m n\u00fat h\u1ee7y");
+        table.put("How long until the story expires, like 18h 14m left. Older stories show the date and time.",
+                "Th\u1eddi gian c\u00f2n l\u1ea1i tr\u01b0\u1edbc khi tin h\u1ebft h\u1ea1n, v\u00ed d\u1ee5: c\u00f2n 18h 14p. Tin c\u0169 h\u01a1n s\u1ebd hi\u1ec3n th\u1ecb ng\u00e0y v\u00e0 gi\u1edd.");
+        table.put("How the time shows",
+                "C\u00e1ch hi\u1ec3n th\u1ecb th\u1eddi gian");
+        table.put("How you open HushGram, and how this screen is laid out.",
+                "C\u00e1ch m\u1edf TADa v\u00e0 b\u1ed1 c\u1ee5c c\u1ee7a m\u00e0n h\u00ecnh c\u00e0i \u0111\u1eb7t n\u00e0y.");
+        table.put("HushGram %1$s on Instagram %2$s",
+                "TADa %1$s tr\u00ean Instagram %2$s");
+        table.put("HushGram PIN",
+                "M\u00e3 PIN TADa");
+        table.put("HushGram is on",
+                "TADa \u0111ang b\u1eadt");
+        table.put("HushGram is paused",
+                "TADa \u0111ang t\u1ea1m d\u1eebng");
+        table.put("HushGram launch screen",
+                "M\u00e0n h\u00ecnh kh\u1edfi \u0111\u1ed9ng TADa");
+        table.put("HushGram paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in HushGram settings.",
+                "TADa \u0111\u00e3 t\u1ef1 \u0111\u1ed9ng t\u1ea1m d\u1eebng v\u00ec Instagram li\u00ean t\u1ee5c b\u1ecb \u0111\u00f3ng khi kh\u1edfi \u0111\u1ed9ng. C\u00e1c t\u00ednh n\u0103ng s\u1ebd t\u1eaft cho \u0111\u1ebfn khi b\u1ea1n b\u1eadt l\u1ea1i trong C\u00e0i \u0111\u1eb7t TADa.");
+        table.put("HushGram pauses when Instagram restarts.",
+                "TADa s\u1ebd t\u1ea1m d\u1eebng khi Instagram kh\u1edfi \u0111\u1ed9ng l\u1ea1i.");
+        table.put("HushGram remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
+                "TADa ghi nh\u1edb v\u1ecb tr\u00ed d\u1eebng tr\u00ean t\u1ed1i \u0111a 200 video trong v\u00f2ng 30 ng\u00e0y. Ch\u1ea1m \u0111\u1ec3 x\u00f3a danh s\u00e1ch n\u00e0y kh\u1ecfi thi\u1ebft b\u1ecb.");
+        table.put("HushGram saves",
+                "T\u1ea3i xu\u1ed1ng b\u1edfi TADa");
+        table.put("HushGram settings",
+                "C\u00e0i \u0111\u1eb7t TADa");
+        table.put("HushGram settings are locked",
+                "C\u00e0i \u0111\u1eb7t TADa \u0111\u00e3 b\u1ecb kh\u00f3a");
+        table.put("HushGram settings couldn't open",
+                "Kh\u00f4ng th\u1ec3 m\u1edf c\u00e0i \u0111\u1eb7t TADa");
+        table.put("HushGram settings exported.",
+                "\u0110\u00e3 xu\u1ea5t c\u00e0i \u0111\u1eb7t TADa th\u00e0nh c\u00f4ng.");
+        table.put("HushGram turns back on when Instagram restarts.",
+                "TADa s\u1ebd b\u1eadt l\u1ea1i khi Instagram kh\u1edfi \u0111\u1ed9ng l\u1ea1i.");
+        table.put("Import HushGram settings",
+                "Nh\u1eadp c\u00e0i \u0111\u1eb7t TADa");
+        table.put("Imported %1$d settings. Skipped %2$d that this version doesn't know.",
+                "\u0110\u00e3 nh\u1eadp %1$d c\u00e0i \u0111\u1eb7t. B\u1ecf qua %2$d c\u00e0i \u0111\u1eb7t ch\u01b0a h\u1ed7 tr\u1ee3.");
+        table.put("Instagram accepts this build",
+                "Instagram ch\u1ea5p nh\u1eadn b\u1ea3n d\u1ef1ng n\u00e0y");
+        table.put("Instagram blue",
+                "Xanh lam Instagram");
+        table.put("Instagram can't read your phone's advertising ID or tell Android's ad services which ads you saw or tapped. The permissions for them are gone from this build.",
+                "Instagram kh\u00f4ng th\u1ec3 \u0111\u1ecdc ID qu\u1ea3ng c\u00e1o c\u1ee7a \u0111i\u1ec7n tho\u1ea1i ho\u1eb7c g\u1eedi th\u00f4ng tin qu\u1ea3ng c\u00e1o b\u1ea1n \u0111\u00e3 xem hay nh\u1ea5p v\u00e0o cho Android. C\u00e1c quy\u1ec1n n\u00e0y \u0111\u00e3 b\u1ecb x\u00f3a kh\u1ecfi b\u1ea3n d\u1ef1ng.");
+        table.put("Instagram crashed or froze within a minute of starting three times in a row, so HushGram paused itself.",
+                "Instagram b\u1ecb d\u1eebng \u0111\u1ed9t ng\u1ed9t ho\u1eb7c treo 3 l\u1ea7n li\u00ean ti\u1ebfp trong v\u00f2ng 1 ph\u00fat sau khi m\u1edf, n\u00ean TADa \u0111\u00e3 t\u1ef1 \u0111\u1ed9ng t\u1ea1m d\u1eebng.");
+        table.put("Instagram doesn't notice when you take a screenshot, so whoever sent you a disappearing photo or video isn't told. Your screenshots save as usual.",
+                "Instagram s\u1ebd kh\u00f4ng ph\u00e1t hi\u1ec7n khi b\u1ea1n ch\u1ee5p \u1ea3nh m\u00e0n h\u00ecnh, ng\u01b0\u1eddi g\u1eedi \u1ea3nh/video xem m\u1ed9t l\u1ea7n s\u1ebd kh\u00f4ng nh\u1eadn \u0111\u01b0\u1ee3c th\u00f4ng b\u00e1o. \u1ea2nh ch\u1ee5p m\u00e0n h\u00ecnh l\u01b0u nh\u01b0 b\u00ecnh th\u01b0\u1eddng.");
+        table.put("Instagram is locked",
+                "Instagram \u0111\u00e3 b\u1ecb kh\u00f3a");
+        table.put("Instagram isn't told which stories you watch, so you stay off their viewer lists. Replying or reacting still shows you, and stories you've watched keep showing as new.",
+                "Instagram s\u1ebd kh\u00f4ng \u0111\u01b0\u1ee3c th\u00f4ng b\u00e1o v\u1ec1 tin b\u1ea1n \u0111\u00e3 xem, b\u1ea1n s\u1ebd kh\u00f4ng xu\u1ea5t hi\u1ec7n trong danh s\u00e1ch ng\u01b0\u1eddi xem. Tr\u1ea3 l\u1eddi ho\u1eb7c th\u1ea3 c\u1ea3m x\u00fac v\u1eabn s\u1ebd hi\u1ec3n th\u1ecb t\u00ean b\u1ea1n.");
+        table.put("Instagram locks as soon as you leave it or the screen turns off.",
+                "Instagram s\u1ebd kh\u00f3a ngay khi b\u1ea1n tho\u00e1t \u1ee9ng d\u1ee5ng ho\u1eb7c khi m\u00e0n h\u00ecnh t\u1eaft.");
+        table.put("Instagram locks once you've been away from it for %1$s.",
+                "Instagram s\u1ebd kh\u00f3a sau khi b\u1ea1n r\u1eddi \u1ee9ng d\u1ee5ng %1$s.");
+        table.put("Instagram logo on Home",
+                "Gi\u1eef logo Instagram \u1edf Trang ch\u1ee7");
+        table.put("Instagram opens on %1$s when you start it from its icon. A notification or a link still opens what it's for. If that tab isn't on your bar, it opens on Home. Restart Instagram to see the change.",
+                "Instagram s\u1ebd lu\u00f4n m\u1edf tab %1$s khi b\u1ea1n kh\u1edfi \u0111\u1ed9ng t\u1eeb bi\u1ec3u t\u01b0\u1ee3ng \u1ee9ng d\u1ee5ng. N\u1ebfu tab \u0111\u00f3 b\u1ecb \u1ea9n, app s\u1ebd m\u1edf Trang ch\u1ee7. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Instagram opens on Home when you start it from its icon, even if you left it on Reels. A notification or a link still opens what it's for. Restart Instagram to see the change.",
+                "Instagram lu\u00f4n m\u1edf Trang ch\u1ee7 khi b\u1ea1n kh\u1edfi \u0111\u1ed9ng t\u1eeb bi\u1ec3u t\u01b0\u1ee3ng \u1ee9ng d\u1ee5ng, ngay c\u1ea3 khi l\u1ea7n tr\u01b0\u1edbc b\u1ea1n \u0111ang \u1edf Reels. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Instagram opens the way it always has, which can be Reels if you left it there.",
+                "Instagram m\u1edf theo c\u00e1ch th\u00f4ng th\u01b0\u1eddng (c\u00f3 th\u1ec3 l\u00e0 Reels n\u1ebfu b\u1ea1n tho\u00e1t ra t\u1eeb Reels).");
+        table.put("Instagram picks the quality as each video plays, from your connection.",
+                "Instagram t\u1ef1 ch\u1ecdn ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t d\u1ef1a tr\u00ean t\u1ed1c \u0111\u1ed9 k\u1ebft n\u1ed1i m\u1ea1ng c\u1ee7a b\u1ea1n.");
+        table.put("Instagram sets an alarm to wake your phone and send its usage events five minutes later. This stops that alarm. The events go the next time you use the app.",
+                "Instagram \u0111\u1eb7t b\u00e1o th\u1ee9c \u0111\u1ec3 \u0111\u00e1nh th\u1ee9c m\u00e1y g\u1eedi s\u1ef1 ki\u1ec7n ph\u00e2n t\u00edch s\u1eed d\u1ee5ng sau m\u1ed7i 5 ph\u00fat. T\u00f9y ch\u1ecdn n\u00e0y s\u1ebd ch\u1eb7n b\u00e1o th\u1ee9c \u0111\u00f3 v\u00e0 ch\u1ec9 g\u1eedi khi b\u1ea1n m\u1edf \u1ee9ng d\u1ee5ng.");
+        table.put("Instagram stops showing the screen that says this version is too old. A patched build doesn't update on its own, so this keeps it usable.",
+                "Instagram ng\u1eebng hi\u1ec3n th\u1ecb m\u00e0n h\u00ecnh th\u00f4ng b\u00e1o phi\u00ean b\u1ea3n qu\u00e1 c\u0169. B\u1ea3n v\u00e1 kh\u00f4ng t\u1ef1 c\u1eadp nh\u1eadt, n\u00ean t\u00ednh n\u0103ng n\u00e0y gi\u00fap \u1ee9ng d\u1ee5ng ti\u1ebfp t\u1ee5c ho\u1ea1t \u0111\u1ed9ng.");
+        table.put("Instagram wakes your phone every minute or two, screen off included, only to note that it is still running. This stops that. Messages, notifications and everything you see are unaffected.",
+                "Instagram th\u01b0\u1eddng xuy\u00ean \u0111\u00e1nh th\u1ee9c m\u00e1y m\u1ed7i 1-2 ph\u00fat (k\u1ec3 c\u1ea3 khi t\u1eaft m\u00e0n h\u00ecnh) ch\u1ec9 \u0111\u1ec3 b\u00e1o m\u00e1y ch\u1ee7 r\u1eb1ng \u1ee9ng d\u1ee5ng v\u1eabn \u0111ang ch\u1ea1y. T\u00f9y ch\u1ecdn n\u00e0y s\u1ebd ch\u1eb7n l\u1ea1i, gi\u00fap ti\u1ebft ki\u1ec7m pin \u0111\u00e1ng k\u1ec3.");
+        table.put("Instagram's Settings and activity screen leaves out the HushGram row while another way here opens HushGram. With every other way off, the row comes back.",
+                "M\u00e0n h\u00ecnh C\u00e0i \u0111\u1eb7t v\u00e0 ho\u1ea1t \u0111\u1ed9ng c\u1ee7a Instagram s\u1ebd \u1ea9n m\u1ee5c TADa khi \u0111\u00e3 c\u00f3 c\u00e1ch kh\u00e1c m\u1edf \u0111\u01b0\u1ee3c TADa. N\u1ebfu t\u1eaft t\u1ea5t c\u1ea3 c\u00e1c c\u00e1ch kh\u00e1c, m\u1ee5c n\u00e0y s\u1ebd xu\u1ea5t hi\u1ec7n l\u1ea1i.");
+        table.put("Instagram's colors",
+                "M\u00e0u m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram");
+        table.put("Instagram's dark mode uses pure black instead of its near-black gray, and so do the menus that slide up from the bottom. Buttons keep their own grays.",
+                "Ch\u1ebf \u0111\u1ed9 t\u1ed1i c\u1ee7a Instagram s\u1ebd chuy\u1ec3n sang m\u00e0u \u0111en tuy\u1ec1n (#000000) thay v\u00ec m\u00e0u x\u00e1m \u0111\u1eadm, bao g\u1ed3m c\u1ea3 c\u00e1c menu tr\u01b0\u1ee3t t\u1eeb d\u01b0\u1edbi l\u00ean. Gi\u00fap ti\u1ebft ki\u1ec7m pin m\u00e0n h\u00ecnh OLED.");
+        table.put("Instagram's default",
+                "M\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram");
+        table.put("Instagram's font",
+                "Ph\u00f4ng ch\u1eef m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram");
+        table.put("Instagram's own checks of who signed the app keep passing on this patched build.",
+                "V\u01b0\u1ee3t qua ki\u1ec3m tra ch\u1eef k\u00fd \u1ee9ng d\u1ee5ng c\u1ee7a Instagram tr\u00ean b\u1ea3n \u0111\u00e3 v\u00e1.");
+        table.put("Instagram's own font. You can also pick your phone's font or a .ttf or .otf file. Restart Instagram to see a change.",
+                "Ph\u00f4ng ch\u1eef g\u1ed1c c\u1ee7a Instagram. B\u1ea1n c\u0169ng c\u00f3 th\u1ec3 ch\u1ecdn d\u00f9ng ph\u00f4ng ch\u1eef c\u1ee7a h\u1ec7 th\u1ed1ng ho\u1eb7c t\u1ec7p .ttf/.otf t\u00f9y ch\u1ec9nh. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Instagram's seek bar stays under every reel, short ones too, with the time played and the reel's length above it. Ads keep Instagram's own rules.",
+                "Thanh tua video c\u1ee7a Instagram s\u1ebd lu\u00f4n hi\u1ec3n th\u1ecb d\u01b0\u1edbi m\u1ecdi reel (c\u1ea3 video ng\u1eafn), k\u00e8m th\u1eddi gian \u0111\u00e3 ph\u00e1t v\u00e0 \u0111\u1ed9 d\u00e0i video ph\u00eda tr\u00ean. Qu\u1ea3ng c\u00e1o gi\u1eef quy t\u1eafc m\u1eb7c \u0111\u1ecbnh.");
+        table.put("Instagram's size",
+                "K\u00edch th\u01b0\u1edbc m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram");
+        table.put("Instagram's text uses the font file you picked. Pick it again to change the file. Restart Instagram to see a change.",
+                "Instagram s\u1ebd s\u1eed d\u1ee5ng t\u1ec7p ph\u00f4ng ch\u1eef b\u1ea1n \u0111\u00e3 ch\u1ecdn. Ch\u1ecdn l\u1ea1i \u0111\u1ec3 \u0111\u1ed5i t\u1ec7p ph\u00f4ng kh\u00e1c. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Instagram's text uses your phone's font. Restart Instagram to see a change.",
+                "V\u0103n b\u1ea3n trong Instagram s\u1ebd s\u1eed d\u1ee5ng ph\u00f4ng ch\u1eef c\u1ee7a \u0111i\u1ec7n tho\u1ea1i. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Joining the picture and sound",
+                "\u0110ang gh\u00e9p h\u00ecnh \u1ea3nh v\u00e0 \u00e2m thanh");
+        table.put("KakaoTalk",
+                "KakaoTalk");
+        table.put("Keep Instagram's saved photos and videos from filling your phone.",
+                "Ng\u0103n \u1ea3nh v\u00e0 video \u0111\u1ec7m c\u1ee7a Instagram l\u00e0m \u0111\u1ea7y b\u1ed9 nh\u1edb \u0111i\u1ec7n tho\u1ea1i.");
+        table.put("Keep a seek bar",
+                "Gi\u1eef thanh tua video");
+        table.put("Keep auto scroll on",
+                "Duy tr\u00ec t\u1ef1 \u0111\u1ed9ng cu\u1ed9n");
+        table.put("Keep chats unread here",
+                "Gi\u1eef tin nh\u1eafn ch\u01b0a \u0111\u1ecdc tr\u00ean thi\u1ebft b\u1ecb n\u00e0y");
+        table.put("Keep clear mode on",
+                "Duy tr\u00ec ch\u1ebf \u0111\u1ed9 to\u00e0n c\u1ea3nh (Clear mode)");
+        table.put("Keep in chat",
+                "Gi\u1eef l\u1ea1i trong \u0111o\u1ea1n chat");
+        table.put("Keep reels muted on the volume keys",
+                "Kh\u00f4ng t\u1ef1 b\u1eadt ti\u1ebfng reel khi b\u1ea5m ph\u00edm \u00e2m l\u01b0\u1ee3ng");
+        table.put("Keep the pill full size",
+                "Gi\u1eef thanh tab k\u00edch th\u01b0\u1edbc \u0111\u1ea7y \u0111\u1ee7");
+        table.put("Keep the reel speed",
+                "Gi\u1eef t\u1ed1c \u0111\u1ed9 ph\u00e1t Reels");
+        table.put("Keep the zoom open",
+                "Gi\u1eef ch\u1ebf \u0111\u1ed9 ph\u00f3ng to");
+    }
+
+    private static void fillVi9(Map<String, String> table) {
+        table.put("Keep your chats private and your inbox clear of extras.",
+                "B\u1ea3o v\u1ec7 s\u1ef1 ri\u00eang t\u01b0 cho c\u00e1c cu\u1ed9c tr\u00f2 chuy\u1ec7n v\u00e0 d\u1ecdn s\u1ea1ch h\u1ed9p th\u01b0.");
+        table.put("Keeps Instagram's Music for you card from turning up between the stories you watch. The stories themselves stay.",
+                "Ng\u0103n th\u1ebb Nh\u1ea1c d\u00e0nh cho b\u1ea1n xu\u1ea5t hi\u1ec7n xen gi\u1eefa c\u00e1c tin b\u1ea1n \u0111ang xem. B\u1ea3n th\u00e2n c\u00e1c tin v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Keeps Instagram's logo at the top of Home in place of the feed's name. Tap it to switch feeds. Needs Start Home on Following. Restart Instagram to see the change.",
+                "Gi\u1eef logo Instagram \u1edf \u0111\u1ea7u Trang ch\u1ee7 thay v\u00ec hi\u1ec3n th\u1ecb t\u00ean b\u1ea3ng tin. Ch\u1ea1m v\u00e0o logo \u0111\u1ec3 chuy\u1ec3n \u0111\u1ed5i b\u1ea3ng tin. C\u1ea7n b\u1eadt M\u1edf Trang ch\u1ee7 \u1edf m\u1ee5c \u0110ang theo d\u00f5i.");
+        table.put("LINE",
+                "LINE");
+        table.put("Large",
+                "L\u1edbn");
+        table.put("Last carousel save",
+                "L\u1ea7n l\u01b0u b\u00e0i vi\u1ebft nhi\u1ec1u \u1ea3nh/video g\u1ea7n nh\u1ea5t");
+        table.put("Last seen in full on %1$s.",
+                "\u0110\u1ea7y \u0111\u1ee7 l\u1ea7n cu\u1ed1i v\u00e0o %1$s.");
+        table.put("Layout",
+                "Giao di\u1ec7n v\u00e0 b\u1ed1 c\u1ee5c");
+        table.put("Leaves New group out of the share sheet, and the button that sends to the people you picked as a group. Send separately stays, and you can still start a group from your messages.",
+                "\u1ea8n n\u00fat T\u1ea1o nh\u00f3m m\u1edbi kh\u1ecfi b\u1ea3ng chia s\u1ebb v\u00e0 n\u00fat g\u1eedi nh\u00f3m cho c\u00e1c ng\u01b0\u1eddi nh\u1eadn \u0111\u00e3 ch\u1ecdn. N\u00fat G\u1eedi ri\u00eang v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Leaves out posts on Home whose caption holds a word or phrase from the list too. Pull down on Home to refresh after changing it.",
+                "\u1ea8n c\u1ea3 c\u00e1c b\u00e0i vi\u1ebft tr\u00ean Trang ch\u1ee7 c\u00f3 ch\u00fa th\u00edch ch\u1ee9a t\u1eeb ho\u1eb7c c\u1ee5m t\u1eeb trong danh s\u00e1ch ch\u1eb7n. K\u00e9o xu\u1ed1ng \u0111\u1ec3 l\u00e0m m\u1edbi sau khi thay \u0111\u1ed5i.");
+        table.put("Leaves out reels in the Reels tab whose caption holds a word or phrase from the list below. A reel you open yourself still plays.",
+                "\u1ea8n c\u00e1c video trong tab Reels c\u00f3 ch\u00fa th\u00edch ch\u1ee9a t\u1eeb ho\u1eb7c c\u1ee5m t\u1eeb trong danh s\u00e1ch ch\u1eb7n b\u00ean d\u01b0\u1edbi.");
+        table.put("Leaves out reels that carry Instagram's own AI label. A reel without that label stays, even if AI made it.",
+                "\u1ea8n c\u00e1c video reel c\u00f3 g\u1eafn nh\u00e3n T\u1ea1o b\u1eb1ng AI c\u1ee7a Instagram.");
+        table.put("Leaves out reels with a Paid partnership label, and reels Instagram marks as boosted. Ads have their own switch.",
+                "\u1ea8n c\u00e1c reel c\u00f3 nh\u00e3n H\u1ee3p t\u00e1c tr\u1ea3 ph\u00ed v\u00e0 reel \u0111\u01b0\u1ee3c qu\u1ea3ng b\u00e1. Qu\u1ea3ng c\u00e1o c\u00f3 c\u00f4ng t\u1eafc ri\u00eang.");
+        table.put("Leaves out the Add Yours cards, like Popular Add Yours and Join a trending Add Yours, that Instagram puts between the stories you tap through. The stories themselves stay.",
+                "\u1ea8n c\u00e1c th\u1ebb nh\u01b0 L\u01b0\u1ee3t tham gia ph\u1ed5 bi\u1ebfn ho\u1eb7c Tham gia xu h\u01b0\u1edbng xu\u1ea5t hi\u1ec7n xen gi\u1eefa c\u00e1c tin. C\u00e1c tin v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Leaves out the Suggested for you cards of accounts to follow that Instagram puts between the stories you tap through. The stories themselves stay.",
+                "\u1ea8n c\u00e1c th\u1ebb g\u1ee3i \u00fd t\u00e0i kho\u1ea3n theo d\u00f5i xu\u1ea5t hi\u1ec7n xen k\u1ebd gi\u1eefa c\u00e1c tin khi b\u1ea1n xem. B\u1ea3n th\u00e2n c\u00e1c tin v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Leaves the Suggested for you accounts out of what shows when you tap the search bar. Recent searches stay.",
+                "\u1ea8n c\u00e1c t\u00e0i kho\u1ea3n G\u1ee3i \u00fd cho b\u1ea1n khi ch\u1ea1m v\u00e0o thanh t\u00ecm ki\u1ebfm. L\u1ecbch s\u1eed t\u00ecm ki\u1ebfm g\u1ea7n \u0111\u00e2y v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Leaves the Suggested for you section off the bottom of the followers and following lists. Every account in the list stays.",
+                "\u1ea8n ph\u1ea7n G\u1ee3i \u00fd cho b\u1ea1n \u1edf cu\u1ed1i danh s\u00e1ch ng\u01b0\u1eddi theo d\u00f5i v\u00e0 \u0111ang theo d\u00f5i. M\u1ecdi t\u00e0i kho\u1ea3n trong danh s\u00e1ch v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Left off profiles: %1$s. The grid of posts stays.",
+                "\u0110\u00e3 \u1ea9n kh\u1ecfi trang c\u00e1 nh\u00e2n: %1$s. L\u01b0\u1edbi b\u00e0i vi\u1ebft v\u1eabn hi\u1ec3n th\u1ecb.");
+        table.put("Left off the message box: %1$s. The text box and Send stay.",
+                "\u0110\u00e3 \u1ea9n kh\u1ecfi khung tin nh\u1eafn: %1$s. Khung v\u0103n b\u1ea3n v\u00e0 n\u00fat G\u1eedi v\u1eabn hi\u1ec3n th\u1ecb.");
+        table.put("Left off the share sheet: %1$s.",
+                "\u0110\u00e3 \u1ea9n kh\u1ecfi b\u1ea3ng chia s\u1ebb: %1$s.");
+        table.put("Left out by your download switches",
+                "B\u1ecb b\u1ecf qua do c\u00e0i \u0111\u1eb7t t\u1ea3i xu\u1ed1ng c\u1ee7a b\u1ea1n");
+        table.put("Licenses",
+                "Gi\u1ea5y ph\u00e9p");
+        table.put("Like animation",
+                "Ho\u1ea1t \u1ea3nh th\u1ea3 tim");
+        table.put("Like or unlike this post?",
+                "Th\u00edch ho\u1eb7c b\u1ecf th\u00edch b\u00e0i vi\u1ebft n\u00e0y?");
+        table.put("Link expired. Reopen the item and try again.",
+                "Li\u00ean k\u1ebft \u0111\u00e3 h\u1ebft h\u1ea1n. H\u00e3y m\u1edf l\u1ea1i n\u1ed9i dung v\u00e0 th\u1eed l\u1ea1i.");
+        table.put("Links keep instagram.com.",
+                "Li\u00ean k\u1ebft gi\u1eef nguy\u00ean t\u00ean mi\u1ec1n instagram.com.");
+        table.put("Links to instagram.com go out on %1$s.",
+                "Li\u00ean k\u1ebft instagram.com s\u1ebd \u0111\u01b0\u1ee3c chuy\u1ec3n th\u00e0nh %1$s khi chia s\u1ebb.");
+        table.put("Links to instagram.com that you copy or share go out on this domain instead, for a site that shows Instagram posts and reels in chat apps. Type the domain alone, like example.com. Leave it blank to keep instagram.com.",
+                "Li\u00ean k\u1ebft instagram.com b\u1ea1n sao ch\u00e9p ho\u1eb7c chia s\u1ebb s\u1ebd d\u00f9ng t\u00ean mi\u1ec1n n\u00e0y thay th\u1ebf (gi\u00fap xem tr\u01b0\u1edbc \u1ea3nh/video tr\u00ean c\u00e1c \u1ee9ng d\u1ee5ng chat nh\u01b0 Telegram/Discord). Nh\u1eadp t\u00ean mi\u1ec1n (v\u00ed d\u1ee5: ddinstagram.com), \u0111\u1ec3 tr\u1ed1ng \u0111\u1ec3 gi\u1eef nguy\u00ean instagram.com.");
+        table.put("Liquid glass look",
+                "Giao di\u1ec7n k\u00ednh ch\u1ea5t l\u1ecfng (Liquid glass)");
+        table.put("Lists every recent search under the search bar, not just the first few. See all and the x on each row work as before.",
+                "Hi\u1ec3n th\u1ecb \u0111\u1ea7y \u0111\u1ee7 m\u1ecdi t\u00ecm ki\u1ebfm g\u1ea7n \u0111\u00e2y b\u00ean d\u01b0\u1edbi thanh t\u00ecm ki\u1ebfm thay v\u00ec ch\u1ec9 hi\u1ec3n th\u1ecb m\u1ed9t v\u00e0i m\u1ee5c \u0111\u1ea7u ti\u00ean.");
+        table.put("Lives you watch don't put you on the host's viewer list, so they aren't told you're there. Commenting or reacting still shows you. The viewer count you see stops updating, and a live that ends can keep looking live until you leave it.",
+                "Khi xem ph\u00e1t tr\u1ef1c ti\u1ebfp, t\u00ean b\u1ea1n s\u1ebd kh\u00f4ng xu\u1ea5t hi\u1ec7n trong danh s\u00e1ch ng\u01b0\u1eddi xem c\u1ee7a ch\u1ee7 ph\u00f2ng. Tuy nhi\u00ean n\u1ebfu b\u1ea1n b\u00ecnh lu\u1eadn ho\u1eb7c th\u1ea3 c\u1ea3m x\u00fac th\u00ec t\u00ean b\u1ea1n v\u1eabn s\u1ebd hi\u1ec3n th\u1ecb.");
+        table.put("Loading the picture...",
+                "\u0110ang t\u1ea3i h\u00ecnh \u1ea3nh...");
+        table.put("Loads photos in your feed, carousels and opened posts at the largest size Instagram offers. This can use more data.",
+                "T\u1ea3i \u1ea3nh tr\u00ean b\u1ea3ng tin, b\u00e0i nhi\u1ec1u \u1ea3nh/video v\u00e0 b\u00e0i vi\u1ebft \u0111\u00e3 m\u1edf \u1edf k\u00edch th\u01b0\u1edbc l\u1edbn nh\u1ea5t m\u00e0 Instagram h\u1ed7 tr\u1ee3. T\u00f9y ch\u1ecdn n\u00e0y c\u00f3 th\u1ec3 t\u1ed1n nhi\u1ec1u d\u1eef li\u1ec7u h\u01a1n.");
+        table.put("Loads smaller photos and starts videos, reels and stories at the lowest quality. Grid thumbnails stay as they are. It takes priority over Full resolution photos and the quality above.",
+                "T\u1ea3i \u1ea3nh k\u00edch th\u01b0\u1edbc nh\u1ecf h\u01a1n v\u00e0 ph\u00e1t video, reels, tin \u1edf ch\u1ea5t l\u01b0\u1ee3ng th\u1ea5p nh\u1ea5t. \u1ea2nh thu nh\u1ecf d\u1ea1ng l\u01b0\u1edbi gi\u1eef nguy\u00ean. \u01afu ti\u00ean h\u01a1n t\u00ednh n\u0103ng \u1ea2nh \u0111\u1ed9 ph\u00e2n gi\u1ea3i \u0111\u1ea7y \u0111\u1ee7.");
+        table.put("Lock a reel at 2x (hold its edge, then slide down) and the next reels play at 2x too. Slide the lock off, or hold the edge and let go, to go back to normal speed.",
+                "Kh\u00f3a reel \u1edf t\u1ed1c \u0111\u1ed9 2x (gi\u1eef m\u00e9p m\u00e0n h\u00ecnh r\u1ed3i tr\u01b0\u1ee3t xu\u1ed1ng) v\u00e0 c\u00e1c reel ti\u1ebfp theo c\u0169ng s\u1ebd ph\u00e1t \u1edf t\u1ed1c \u0111\u1ed9 2x. Tr\u01b0\u1ee3t m\u1edf kh\u00f3a ho\u1eb7c gi\u1eef m\u00e9p m\u00e0n h\u00ecnh r\u1ed3i th\u1ea3 ra \u0111\u1ec3 v\u1ec1 t\u1ed1c \u0111\u1ed9 b\u00ecnh th\u01b0\u1eddng.");
+        table.put("Lock again",
+                "Kh\u00f3a l\u1ea1i");
+        table.put("Lock all of Instagram",
+                "Kh\u00f3a to\u00e0n b\u1ed9 Instagram");
+        table.put("Lock single chats. A locked chat asks for your fingerprint, face or screen lock each time you open it, and its notifications say only that a message came.",
+                "Kh\u00f3a t\u1eebng cu\u1ed9c tr\u00f2 chuy\u1ec7n ri\u00eang l\u1ebb. Cu\u1ed9c tr\u00f2 chuy\u1ec7n \u0111\u00e3 kh\u00f3a y\u00eau c\u1ea7u qu\u00e9t v\u00e2n tay, khu\u00f4n m\u1eb7t ho\u1eb7c m\u00e3 kh\u00f3a m\u1ed7i khi m\u1edf.");
+        table.put("Lock your messages",
+                "Kh\u00f3a tin nh\u1eafn c\u1ee7a b\u1ea1n");
+        table.put("Locked chats",
+                "\u0110o\u1ea1n chat \u0111\u00e3 kh\u00f3a");
+        table.put("Long press %1$s to open HushGram instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
+                "Nh\u1ea5n gi\u1eef %1$s \u0111\u1ec3 m\u1edf TADa thay cho thao t\u00e1c m\u1eb7c \u0111\u1ecbnh c\u1ee7a tab \u0111\u00f3. C\u00e1c l\u1ea7n ch\u1ea1m th\u00f4ng th\u01b0\u1eddng v\u00e0 tab kh\u00e1c kh\u00f4ng \u0111\u1ed5i. Ch\u1ec9 d\u00f9ng \u0111\u01b0\u1ee3c c\u00e1c tab m\u00e0 t\u00e0i kho\u1ea3n c\u1ee7a b\u1ea1n hi\u1ec3n th\u1ecb.");
+        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens HushGram, that comes first.",
+                "Nh\u1ea5n gi\u1eef tab %1$s \u0111\u1ec3 ch\u1ecdn nhanh ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t video. C\u1ea7n b\u1eadt Ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t m\u1eb7c \u0111\u1ecbnh. N\u1ebfu tab tr\u00f9ng v\u1edbi tab m\u1edf TADa, m\u1edf TADa s\u1ebd \u0111\u01b0\u1ee3c \u01b0u ti\u00ean.");
+        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens HushGram or picks the playback quality, that comes first.",
+                "Nh\u1ea5n gi\u1eef tab %1$s \u0111\u1ec3 b\u1eadt/t\u1eaft nhanh Ch\u1ebf \u0111\u1ed9 \u1ea9n danh. N\u1ebfu tab tr\u00f9ng v\u1edbi tab m\u1edf TADa ho\u1eb7c ch\u1ecdn ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t, t\u00f9y ch\u1ecdn \u0111\u00f3 s\u1ebd \u0111\u01b0\u1ee3c \u01b0u ti\u00ean.");
+        table.put("Long press a photo to zoom",
+                "Nh\u1ea5n gi\u1eef \u1ea3nh \u0111\u1ec3 ph\u00f3ng to");
+        table.put("Loop a story",
+                "L\u1eb7p l\u1ea1i tin");
+        table.put("Makes the seek bar thicker, with a round white handle and the time above it, over a soft dark fade so it shows on any video. Drag it to seek. It also keeps the bar on short reels.",
+                "L\u00e0m thanh tua d\u00e0y h\u01a1n v\u1edbi n\u00fat tr\u00f2n m\u00e0u tr\u1eafng v\u00e0 th\u1eddi gian hi\u1ec3n th\u1ecb ph\u00eda tr\u00ean tr\u00ean n\u1ec1n m\u1edd t\u1ed1i, gi\u00fap b\u1ea1n d\u1ec5 nh\u00ecn th\u1ea5y tr\u00ean m\u1ecdi video. C\u0169ng hi\u1ec3n th\u1ecb tr\u00ean c\u1ea3 video ng\u1eafn.");
+        table.put("Mark as seen",
+                "\u0110\u00e1nh d\u1ea5u \u0111\u00e3 xem");
+        table.put("Mark as seen button",
+                "N\u00fat \u0111\u00e1nh d\u1ea5u \u0111\u00e3 xem");
+        table.put("Mark who doesn't follow you back",
+                "\u0110\u00e1nh d\u1ea5u ai kh\u00f4ng theo d\u00f5i l\u1ea1i b\u1ea1n");
+        table.put("Marked as read",
+                "\u0110\u00e3 \u0111\u00e1nh d\u1ea5u l\u00e0 \u0111\u00e3 \u0111\u1ecdc");
+        table.put("Marked as seen and sent",
+                "\u0110\u00e3 \u0111\u00e1nh d\u1ea5u \u0111\u00e3 xem v\u00e0 g\u1eedi th\u00f4ng b\u00e1o");
+        table.put("Marked as seen. Tap again to undo.",
+                "\u0110\u00e3 \u0111\u00e1nh d\u1ea5u \u0111\u00e3 xem. Ch\u1ea1m l\u1ea1i \u0111\u1ec3 ho\u00e0n t\u00e1c.");
+        table.put("Media ID %1$s",
+                "ID \u0111a ph\u01b0\u01a1ng ti\u1ec7n: %1$s");
+        table.put("Media link",
+                "Li\u00ean k\u1ebft \u0111a ph\u01b0\u01a1ng ti\u1ec7n");
+        table.put("Media link copied",
+                "\u0110\u00e3 sao ch\u00e9p li\u00ean k\u1ebft \u0111a ph\u01b0\u01a1ng ti\u1ec7n");
+        table.put("Media link is the %1$d \u00d7 %2$d file",
+                "Li\u00ean k\u1ebft l\u00e0 t\u1ec7p k\u00edch th\u01b0\u1edbc %1$d \u00d7 %2$d");
+        table.put("Mentioned in this story",
+                "\u0110\u01b0\u1ee3c nh\u1eafc \u0111\u1ebfn trong tin n\u00e0y");
+        table.put("Messages",
+                "Tin nh\u1eafn");
+        table.put("Messages button on Home's header",
+                "N\u00fat Tin nh\u1eafn tr\u00ean \u0111\u1ea7u Trang ch\u1ee7");
+        table.put("Messenger",
+                "Messenger");
+    }
+
+    private static void fillVi10(Map<String, String> table) {
+        table.put("Meta AI",
+                "Meta AI");
+        table.put("More",
+                "Nhi\u1ec1u h\u01a1n");
+        table.put("Move on when a reel ends",
+                "T\u1ef1 chuy\u1ec3n ti\u1ebfp khi h\u1ebft reel");
+        table.put("Mute",
+                "B\u1eadt/T\u1eaft \u00e2m thanh");
+        table.put("Name saves by account and post time",
+                "\u0110\u1eb7t t\u00ean t\u1ec7p theo t\u00e0i kho\u1ea3n v\u00e0 ng\u00e0y gi\u1edd \u0111\u0103ng");
+        table.put("Names each photo and video for the account that posted it and when, like username_20261005_143012, so an account's saves sort by date. A carousel page gets its number on the end. Takes the place of the video file name. A save that doesn't know who posted or when keeps its usual name.",
+                "\u0110\u1eb7t t\u00ean \u1ea3nh v\u00e0 video theo t\u00ean t\u00e0i kho\u1ea3n v\u00e0 th\u1eddi gian \u0111\u0103ng (v\u00ed d\u1ee5: username_20261005_143012) \u0111\u1ec3 d\u1ec5 d\u00e0ng s\u1eafp x\u1ebfp theo ng\u00e0y th\u00e1ng.");
+        table.put("Never",
+                "Kh\u00f4ng bao gi\u1edd");
+        table.put("Never. Pick a time and the pill slides away once a reel has played that long without a touch. Restart Instagram after changing it.",
+                "Kh\u00f4ng bao gi\u1edd. Ch\u1ecdn m\u1ed9t kho\u1ea3ng th\u1eddi gian \u0111\u1ec3 thanh tab t\u1ef1 \u0111\u1ed9ng tr\u01b0\u1ee3t \u1ea9n khi xem reel m\u00e0 kh\u00f4ng ch\u1ea1m v\u00e0o m\u00e0n h\u00ecnh.");
+        table.put("New PIN",
+                "M\u00e3 PIN m\u1edbi");
+        table.put("New message",
+                "Tin nh\u1eafn m\u1edbi");
+        table.put("No Play Store updates",
+                "Ch\u1eb7n c\u1eadp nh\u1eadt t\u1eeb Play Store");
+        table.put("No accounts are hidden yet. Add a username to take that account's posts out of Home and Following.",
+                "Ch\u01b0a c\u00f3 t\u00e0i kho\u1ea3n n\u00e0o b\u1ecb \u1ea9n. Th\u00eam t\u00ean ng\u01b0\u1eddi d\u00f9ng \u0111\u1ec3 \u1ea9n b\u00e0i vi\u1ebft c\u1ee7a t\u00e0i kho\u1ea3n \u0111\u00f3 kh\u1ecfi Trang ch\u1ee7 v\u00e0 m\u1ee5c \u0110ang theo d\u00f5i.");
+        table.put("No app on this phone can open the link. The address is %1$s.",
+                "Kh\u00f4ng c\u00f3 \u1ee9ng d\u1ee5ng n\u00e0o m\u1edf \u0111\u01b0\u1ee3c li\u00ean k\u1ebft. \u0110\u1ecba ch\u1ec9 l\u00e0 %1$s.");
+        table.put("No app on this phone can play this video",
+                "Kh\u00f4ng c\u00f3 \u1ee9ng d\u1ee5ng n\u00e0o tr\u00ean \u0111i\u1ec7n tho\u1ea1i n\u00e0y c\u00f3 th\u1ec3 ph\u00e1t video n\u00e0y");
+        table.put("No direct link for this one",
+                "N\u1ed9i dung n\u00e0y kh\u00f4ng c\u00f3 li\u00ean k\u1ebft tr\u1ef1c ti\u1ebfp");
+        table.put("No matching settings",
+                "Kh\u00f4ng t\u00ecm th\u1ea5y c\u00e0i \u0111\u1eb7t ph\u00f9 h\u1ee3p");
+        table.put("No one has left since then.",
+                "Kh\u00f4ng c\u00f3 ai h\u1ee7y theo d\u00f5i t\u1eeb th\u1eddi \u0111i\u1ec3m \u0111\u00f3.");
+        table.put("No other way into HushGram is on, so the row stays in Instagram's menu.",
+                "Kh\u00f4ng c\u00f2n c\u00e1ch n\u00e0o kh\u00e1c \u0111\u1ec3 m\u1edf TADa \u0111ang b\u1eadt, n\u00ean m\u1ee5c n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c gi\u1eef l\u1ea1i trong menu c\u1ee7a Instagram.");
+        table.put("No pages chosen",
+                "Ch\u01b0a ch\u1ecdn trang n\u00e0o");
+        table.put("No place set. Until there is one, Instagram is told 0, 0 while Spoof location is on.",
+                "Ch\u01b0a thi\u1ebft l\u1eadp v\u1ecb tr\u00ed. Khi b\u1eadt Gi\u1ea3 l\u1eadp v\u1ecb tr\u00ed, v\u1ecb tr\u00ed s\u1ebd \u0111\u01b0\u1ee3c g\u1eedi l\u00e0 0, 0 cho \u0111\u1ebfn khi b\u1ea1n nh\u1eadp v\u1ecb tr\u00ed.");
+        table.put("No settings import to undo.",
+                "Kh\u00f4ng c\u00f3 thao t\u00e1c nh\u1eadp c\u00e0i \u0111\u1eb7t n\u00e0o \u0111\u1ec3 ho\u00e0n t\u00e1c.");
+        table.put("No sounds are hidden yet. Turn on Hide reels by sound, then tap the music icon beside a reel.",
+                "Ch\u01b0a c\u00f3 \u00e2m thanh n\u00e0o b\u1ecb \u1ea9n. B\u1eadt \"\u1ea8n Reels theo \u00e2m thanh/nh\u1ea1c\", sau \u0111\u00f3 ch\u1ea1m v\u00e0o bi\u1ec3u t\u01b0\u1ee3ng n\u1ed1t nh\u1ea1c c\u1ea1nh reel \u0111\u1ec3 \u1ea9n.");
+        table.put("No words yet",
+                "Ch\u01b0a c\u00f3 t\u1eeb kh\u00f3a n\u00e0o");
+        table.put("Nobody outside Meta knows what gets an account suspended. A patched Instagram can't pass Google's check that it came from the Play Store, and no patch changes that. If you'd rather not risk your account, try a spare one first. Installing updates over the top with the same signing key keeps Instagram's data and your sign-in. On a rooted phone, a Root Mount install keeps the sign-in you already have.",
+                "Kh\u00f4ng ai ngo\u00e0i Meta bi\u1ebft l\u00fd do t\u00e0i kho\u1ea3n b\u1ecb t\u1ea1m kh\u00f3a. B\u1ea3n Instagram \u0111\u00e3 v\u00e1 kh\u00f4ng th\u1ec3 v\u01b0\u1ee3t qua ki\u1ec3m tra Play Store c\u1ee7a Google. N\u1ebfu kh\u00f4ng mu\u1ed1n r\u1ee7i ro t\u00e0i kho\u1ea3n, h\u00e3y d\u00f9ng th\u1eed t\u00e0i kho\u1ea3n ph\u1ee5 tr\u01b0\u1edbc. C\u00e0i \u0111\u00e8 b\u1ea3n c\u1eadp nh\u1eadt c\u00f9ng kh\u00f3a k\u00fd s\u1ebd gi\u1eef nguy\u00ean d\u1eef li\u1ec7u v\u00e0 \u0111\u0103ng nh\u1eadp. Tr\u00ean m\u00e1y root, c\u00e0i Root Mount s\u1ebd gi\u1eef phi\u00ean \u0111\u0103ng nh\u1eadp hi\u1ec7n t\u1ea1i.");
+        table.put("Not interested",
+                "Kh\u00f4ng quan t\u00e2m");
+        table.put("Not interested button on reels",
+                "N\u00fat \"Kh\u00f4ng quan t\u00e2m\" tr\u00ean Reels");
+        table.put("Not saved: %1$d posts are already waiting",
+                "Kh\u00f4ng th\u1ec3 l\u01b0u: \u0111\u00e3 c\u00f3 %1$d b\u00e0i vi\u1ebft \u0111ang ch\u1edd trong h\u00e0ng \u0111\u1ee3i");
+        table.put("Not saved: a carousel can have at most %1$d pages",
+                "Kh\u00f4ng th\u1ec3 l\u01b0u: b\u00e0i vi\u1ebft nhi\u1ec1u \u1ea3nh/video ch\u1ec9 c\u00f3 th\u1ec3 c\u00f3 t\u1ed1i \u0111a %1$d m\u1ee5c");
+        table.put("Not saved: that isn't an Instagram photo or video",
+                "Kh\u00f4ng th\u1ec3 l\u01b0u: \u0111\u00e2y kh\u00f4ng ph\u1ea3i l\u00e0 \u1ea3nh ho\u1eb7c video c\u1ee7a Instagram");
+        table.put("Not saved: the account changed",
+                "Kh\u00f4ng th\u1ec3 l\u01b0u: t\u00e0i kho\u1ea3n \u0111\u00e3 thay \u0111\u1ed5i");
+        table.put("Not saved: the file is over 512 MB",
+                "Kh\u00f4ng th\u1ec3 l\u01b0u: t\u1ec7p l\u1edbn h\u01a1n 512 MB");
+        table.put("Not saved: the screen closed",
+                "Kh\u00f4ng th\u1ec3 l\u01b0u: m\u00e0n h\u00ecnh \u0111\u00e3 b\u1ecb \u0111\u00f3ng");
+        table.put("Nothing in the row of stories at the top of Home loads, your own story included, and highlights on profiles stay empty too. Saves data. A story ring on a profile or in a chat still opens its stories.",
+                "Kh\u00f4ng t\u1ea3i b\u1ea5t k\u1ef3 tin n\u00e0o tr\u00ean h\u00e0ng tin \u1edf Trang ch\u1ee7 (k\u1ec3 c\u1ea3 tin c\u1ee7a b\u1ea1n) v\u00e0 ph\u1ea7n tin n\u1ed5i b\u1eadt c\u0169ng s\u1ebd \u0111\u1ec3 tr\u1ed1ng. Ti\u1ebft ki\u1ec7m d\u1eef li\u1ec7u m\u1ea1ng t\u1ed1i \u0111a.");
+        table.put("Nothing to compare yet. With Recent unfollowers on, open your own Followers list and scroll to the end. The next time you do, anyone missing shows here.",
+                "Ch\u01b0a c\u00f3 d\u1eef li\u1ec7u \u0111\u1ec3 so s\u00e1nh. H\u00e3y m\u1edf danh s\u00e1ch Ng\u01b0\u1eddi theo d\u00f5i c\u1ee7a b\u1ea1n v\u00e0 cu\u1ed9n xu\u1ed1ng d\u01b0\u1edbi c\u00f9ng. Trong nh\u1eefng l\u1ea7n ti\u1ebfp theo, ng\u01b0\u1eddi h\u1ee7y theo d\u00f5i s\u1ebd hi\u1ec7n t\u1ea1i \u0111\u00e2y.");
+        table.put("Nothing to download on this post",
+                "B\u00e0i vi\u1ebft n\u00e0y kh\u00f4ng c\u00f3 n\u1ed9i dung \u0111\u1ec3 t\u1ea3i");
+        table.put("Notifications",
+                "Th\u00f4ng b\u00e1o");
+        table.put("OK",
+                "OK");
+        table.put("Off",
+                "T\u1eaft");
+        table.put("Off. It can fade a reel's buttons while the screen sits untouched, so they don't burn into an OLED screen.",
+                "\u0110ang t\u1eaft. T\u00ednh n\u0103ng n\u00e0y gi\u00fap l\u00e0m m\u1edd c\u00e1c n\u00fat c\u1ee7a reel khi kh\u00f4ng ch\u1ea1m \u0111\u1ec3 tr\u00e1nh l\u01b0u \u1ea3nh m\u00e0n h\u00ecnh OLED.");
+        table.put("On Reels, the pill slides away after %1$d seconds without a touch. Tap the bottom edge of the screen, change tab or press Back to bring it back. Restart Instagram after changing it.",
+                "Trong tab Reels, thanh tab s\u1ebd tr\u01b0\u1ee3t \u1ea9n sau %1$d gi\u00e2y kh\u00f4ng ch\u1ea1m. Ch\u1ea1m v\u00e0o m\u00e9p d\u01b0\u1edbi ho\u1eb7c b\u1ea5m Quay l\u1ea1i \u0111\u1ec3 hi\u1ec7n l\u1ea1i thanh tab.");
+        table.put("On a carousel, the download icon saves all of its pages at once instead of asking.",
+                "Khi nh\u1ea5n bi\u1ec3u t\u01b0\u1ee3ng t\u1ea3i xu\u1ed1ng tr\u00ean b\u00e0i vi\u1ebft nhi\u1ec1u \u1ea3nh/video, \u1ee9ng d\u1ee5ng s\u1ebd l\u01b0u t\u1ea5t c\u1ea3 c\u00e1c trang c\u00f9ng l\u00fac m\u00e0 kh\u00f4ng hi\u1ec7n h\u1ed9p tho\u1ea1i h\u1ecfi.");
+        table.put("On a phone under 1440 pixels wide, asks Instagram for photos sized for a wider screen. This uses more data. Restart Instagram to see the change.",
+                "Tr\u00ean \u0111i\u1ec7n tho\u1ea1i c\u00f3 chi\u1ec1u r\u1ed9ng d\u01b0\u1edbi 1440 pixel, y\u00eau c\u1ea7u Instagram g\u1eedi \u1ea3nh c\u00f3 \u0111\u1ed9 ph\u00e2n gi\u1ea3i l\u1edbn h\u01a1n d\u00e0nh cho m\u00e0n h\u00ecnh r\u1ed9ng. T\u00ednh n\u0103ng n\u00e0y t\u1ed1n nhi\u1ec1u d\u1eef li\u1ec7u h\u01a1n. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("On comments",
+                "Tr\u00ean b\u00ecnh lu\u1eadn");
+        table.put("On messages",
+                "Tr\u00ean tin nh\u1eafn");
+        table.put("On posts",
+                "Tr\u00ean b\u00e0i vi\u1ebft");
+        table.put("On reels",
+                "Tr\u00ean Reels");
+        table.put("On the Reels screen, the buttons, caption and bars fade when you leave them alone, and the screen moves a step every 2 minutes. Touching one of them brings them back.",
+                "C\u00e1c n\u00fat b\u1ea5m v\u00e0 thanh giao di\u1ec7n s\u1ebd t\u1ef1 l\u00e0m m\u1edd khi kh\u00f4ng ch\u1ea1m, \u0111\u1ed3ng th\u1eddi m\u00e0n h\u00ecnh s\u1ebd d\u1ecbch chuy\u1ec3n nh\u1eb9 sau m\u1ed7i 2 ph\u00fat \u0111\u1ec3 ch\u1ed1ng l\u01b0u \u1ea3nh v\u0129nh vi\u1ec5n tr\u00ean m\u00e0n h\u00ecnh OLED.");
+        table.put("On the Reels screen, the buttons, caption and bars fade when you leave them alone. Touching one of them brings them back.",
+                "Tr\u00ean m\u00e0n h\u00ecnh Reels, c\u00e1c n\u00fat b\u1ea5m, ch\u00fa th\u00edch v\u00e0 thanh \u0111i\u1ec1u h\u01b0\u1edbng s\u1ebd t\u1ef1 \u0111\u1ed9ng m\u1edd \u0111i khi b\u1ea1n kh\u00f4ng ch\u1ea1m v\u00e0o m\u00e0n h\u00ecnh \u0111\u1ec3 b\u1ea3o v\u1ec7 m\u00e0n h\u00ecnh AMOLED.");
+        table.put("On this Instagram build it covers %1$d of %2$d routes. The diagnostic report lists the rest.",
+                "Tr\u00ean b\u1ea3n Instagram n\u00e0y t\u00ednh n\u0103ng h\u1ed7 tr\u1ee3 %1$d tr\u00ean %2$d tuy\u1ebfn \u0111\u01b0\u1eddng d\u1eabn. B\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n li\u1ec7t k\u00ea ph\u1ea7n c\u00f2n l\u1ea1i.");
+        table.put("On your own Following list, adds Doesn't follow you after the name of each account that doesn't follow you back. Nothing shows until Instagram has checked.",
+                "Tr\u00ean danh s\u00e1ch \u0110ang theo d\u00f5i c\u1ee7a b\u1ea1n, th\u00eam nh\u00e3n Kh\u00f4ng theo d\u00f5i b\u1ea1n sau t\u00ean m\u1ed7i t\u00e0i kho\u1ea3n kh\u00f4ng theo d\u00f5i l\u1ea1i. Nh\u00e3n xu\u1ea5t hi\u1ec7n sau khi ki\u1ec3m tra xong.");
+        table.put("On your own Following list, moves the accounts that don't follow you back to the top and keeps Instagram's order within each group. Accounts Instagram hasn't checked yet stay below.",
+                "Trong danh s\u00e1ch \u0110ang theo d\u00f5i c\u1ee7a b\u1ea1n, \u0111\u01b0a c\u00e1c t\u00e0i kho\u1ea3n kh\u00f4ng theo d\u00f5i l\u1ea1i l\u00ean \u0111\u1ea7u danh s\u00e1ch. C\u00e1c t\u00e0i kho\u1ea3n ch\u01b0a ki\u1ec3m tra s\u1ebd n\u1eb1m \u1edf d\u01b0\u1edbi.");
+        table.put("Once Burn-in guard fades the buttons, they stay faded on Reels whatever you tap or swipe, the next reel too. They still work. Leaving Reels brings them back.",
+                "Khi t\u00ednh n\u0103ng Ch\u1ed1ng l\u01b0u \u1ea3nh l\u00e0m m\u1edd c\u00e1c n\u00fat, ch\u00fang s\u1ebd ti\u1ebfp t\u1ee5c m\u1edd tr\u00ean Reels d\u00f9 b\u1ea1n ch\u1ea1m hay vu\u1ed1t. R\u1eddi kh\u1ecfi Reels giao di\u1ec7n s\u1ebd b\u00ecnh th\u01b0\u1eddng l\u1ea1i.");
+        table.put("Once you turn on Instagram's auto scroll in Reels, it stays on after a restart or after you leave Reels, until you turn it off.",
+                "Khi b\u1ea1n b\u1eadt t\u1ef1 \u0111\u1ed9ng cu\u1ed9n trong Reels, t\u00ednh n\u0103ng n\u00e0y s\u1ebd ti\u1ebfp t\u1ee5c b\u1eadt sau khi kh\u1edfi \u0111\u1ed9ng l\u1ea1i ho\u1eb7c khi r\u1eddi Reels cho \u0111\u1ebfn khi b\u1ea1n t\u1eaft.");
+        table.put("Only accounts you follow",
+                "Ch\u1ec9 t\u00e0i kho\u1ea3n b\u1ea1n theo d\u00f5i");
+        table.put("Only in Reels",
+                "Ch\u1ec9 trong Reels");
+        table.put("Only on mobile data",
+                "Ch\u1ec9 khi d\u00f9ng d\u1eef li\u1ec7u di \u0111\u1ed9ng");
+        table.put("Only the newest 50 are shown.",
+                "Ch\u1ec9 hi\u1ec3n th\u1ecb t\u1ed1i \u0111a 50 ng\u01b0\u1eddi m\u1edbi nh\u1ea5t.");
+        table.put("Only the time the story was posted, like 3:45 PM. Stories posted before today show the date and time.",
+                "Ch\u1ec9 hi\u1ec3n th\u1ecb gi\u1edd \u0111\u0103ng tin, v\u00ed d\u1ee5: 15:45. Tin \u0111\u0103ng tr\u01b0\u1edbc h\u00f4m nay s\u1ebd hi\u1ec3n th\u1ecb ng\u00e0y v\u00e0 gi\u1edd.");
+        table.put("Open a chat in Instagram, then come back here to hide it.",
+                "H\u00e3y m\u1edf m\u1ed9t cu\u1ed9c tr\u00f2 chuy\u1ec7n trong Instagram, sau \u0111\u00f3 quay l\u1ea1i \u0111\u00e2y \u0111\u1ec3 \u1ea9n.");
+        table.put("Open a chat in Instagram, then come back here to lock it.",
+                "H\u00e3y m\u1edf m\u1ed9t cu\u1ed9c tr\u00f2 chuy\u1ec7n trong Instagram, sau \u0111\u00f3 quay l\u1ea1i \u0111\u00e2y \u0111\u1ec3 kh\u00f3a cu\u1ed9c tr\u00f2 chuy\u1ec7n \u0111\u00f3.");
+    }
+
+    private static void fillVi11(Map<String, String> table) {
+        table.put("Open a creator's profile from a reel, then their Reels tab, and it scrolls to that reel and outlines it for a moment. A photo reel is found in their posts. Stop looking ends the search where it is.",
+                "Khi m\u1edf trang c\u00e1 nh\u00e2n c\u1ee7a ng\u01b0\u1eddi s\u00e1ng t\u1ea1o t\u1eeb m\u1ed9t reel v\u00e0 v\u00e0o tab Reels c\u1ee7a h\u1ecd, trang s\u1ebd t\u1ef1 cu\u1ed9n \u0111\u1ebfn \u0111\u00fang reel \u0111\u00f3 v\u00e0 l\u00e0m n\u1ed5i b\u1eadt vi\u1ec1n trong ch\u1ed1c l\u00e1t. B\u1ea5m D\u1eebng t\u00ecm ki\u1ebfm \u0111\u1ec3 k\u1ebft th\u00fac.");
+        table.put("Open app info",
+                "M\u1edf th\u00f4ng tin \u1ee9ng d\u1ee5ng");
+        table.put("Open categories as pages",
+                "M\u1edf t\u1eebng danh m\u1ee5c d\u1ea1ng trang ri\u00eang");
+        table.put("Open comments without the keyboard",
+                "M\u1edf b\u00ecnh lu\u1eadn kh\u00f4ng b\u1eadt b\u00e0n ph\u00edm");
+        table.put("Open in another player",
+                "M\u1edf b\u1eb1ng tr\u00ecnh ph\u00e1t kh\u00e1c");
+        table.put("Open links in external browser",
+                "M\u1edf li\u00ean k\u1ebft b\u1eb1ng tr\u00ecnh duy\u1ec7t ngo\u00e0i");
+        table.put("Open settings from the logo",
+                "M\u1edf c\u00e0i \u0111\u1eb7t t\u1eeb logo");
+        table.put("Open settings with a long press on your profile's menu",
+                "Nh\u1ea5n gi\u1eef n\u00fat menu trang c\u00e1 nh\u00e2n \u0111\u1ec3 m\u1edf c\u00e0i \u0111\u1eb7t");
+        table.put("Open settings with a tab long press",
+                "Nh\u1ea5n gi\u1eef tab \u0111\u1ec3 m\u1edf c\u00e0i \u0111\u1eb7t");
+        table.put("Open with",
+                "M\u1edf b\u1eb1ng");
+        table.put("Opening a chat doesn't tell people you've seen their messages, and you still see when they've seen yours. To let one chat know, long press it in your messages and tap Mark as read.",
+                "M\u1edf cu\u1ed9c tr\u00f2 chuy\u1ec7n s\u1ebd kh\u00f4ng b\u00e1o cho \u0111\u1ed1i ph\u01b0\u01a1ng bi\u1ebft b\u1ea1n \u0111\u00e3 xem tin nh\u1eafn, nh\u01b0ng b\u1ea1n v\u1eabn bi\u1ebft khi n\u00e0o h\u1ecd xem tin nh\u1eafn c\u1ee7a b\u1ea1n. \u0110\u1ec3 g\u1eedi th\u00f4ng b\u00e1o \u0111\u00e3 \u0111\u1ecdc cho m\u1ed9t cu\u1ed9c tr\u00f2 chuy\u1ec7n, h\u00e3y nh\u1ea5n gi\u1eef cu\u1ed9c tr\u00f2 chuy\u1ec7n \u0111\u00f3 v\u00e0 ch\u1ecdn \u0110\u00e1nh d\u1ea5u l\u00e0 \u0111\u00e3 \u0111\u1ecdc.");
+        table.put("Opening someone's profile takes you on to their posts as a scrolling list of full posts. Go Back for the grid. Your own profile keeps its grid.",
+                "Khi m\u1edf trang c\u00e1 nh\u00e2n c\u1ee7a ng\u01b0\u1eddi kh\u00e1c, b\u00e0i vi\u1ebft s\u1ebd hi\u1ec3n th\u1ecb th\u00e0nh danh s\u00e1ch cu\u1ed9n \u0111\u1ea7y \u0111\u1ee7 thay v\u00ec l\u01b0\u1edbi \u00f4 vu\u00f4ng. Nh\u1ea5n Quay l\u1ea1i \u0111\u1ec3 xem d\u1ea1ng l\u01b0\u1edbi. Trang c\u00e1 nh\u00e2n c\u1ee7a b\u1ea1n v\u1eabn gi\u1eef d\u1ea1ng l\u01b0\u1edbi.");
+        table.put("Opens Home on posts from accounts you follow instead of For you. Tap the top of Home to switch. Restart Instagram to see the change.",
+                "M\u1edf Trang ch\u1ee7 \u1edf ch\u1ebf \u0111\u1ed9 \u0110ang theo d\u00f5i thay v\u00ec D\u00e0nh cho b\u1ea1n. Ch\u1ea1m v\u00e0o \u0111\u1ea7u Trang ch\u1ee7 \u0111\u1ec3 chuy\u1ec3n \u0111\u1ed5i. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Opens a GitHub report with your versions and settings filled in. Add what happened.",
+                "M\u1edf trang b\u00e1o c\u00e1o s\u1ef1 c\u1ed1 tr\u00ean GitHub v\u1edbi th\u00f4ng tin phi\u00ean b\u1ea3n v\u00e0 c\u00e0i \u0111\u1eb7t \u0111\u01b0\u1ee3c \u0111i\u1ec1n s\u1eb5n.");
+        table.put("Orange",
+                "Cam");
+        table.put("PIN",
+                "M\u00e3 PIN");
+        table.put("PIN saved.",
+                "\u0110\u00e3 l\u01b0u m\u00e3 PIN.");
+        table.put("Page %1$d of %2$d",
+                "M\u1ee5c %1$d tr\u00ean %2$d");
+        table.put("Page %1$d, photo",
+                "Trang %1$d, \u1ea3nh");
+        table.put("Page %1$d, video",
+                "Trang %1$d, video");
+        table.put("Pause",
+                "T\u1ea1m d\u1eebng");
+        table.put("Pause HushGram",
+                "T\u1ea1m d\u1eebng TADa");
+        table.put("Pause and diagnostics",
+                "T\u1ea1m d\u1eebng v\u00e0 ch\u1ea9n \u0111o\u00e1n");
+        table.put("People don't see Active now for you while you use Instagram, and you still see when they're active. It takes effect the next time you come back to Instagram.",
+                "Ng\u01b0\u1eddi kh\u00e1c s\u1ebd kh\u00f4ng th\u1ea5y b\u1ea1n \u0110ang ho\u1ea1t \u0111\u1ed9ng khi b\u1ea1n d\u00f9ng Instagram, nh\u01b0ng b\u1ea1n v\u1eabn th\u1ea5y th\u1eddi gian ho\u1ea1t \u0111\u1ed9ng c\u1ee7a h\u1ecd. C\u00f3 hi\u1ec7u l\u1ef1c t\u1eeb l\u1ea7n m\u1edf Instagram ti\u1ebfp theo.");
+        table.put("People you're chatting with don't see the typing dots while you write, and you still see theirs.",
+                "Ng\u01b0\u1eddi tr\u00f2 chuy\u1ec7n c\u00f9ng s\u1ebd kh\u00f4ng th\u1ea5y bi\u1ec3u t\u01b0\u1ee3ng d\u1ea5u ba ch\u1ea5m khi b\u1ea1n \u0111ang g\u00f5 ph\u00edm, nh\u01b0ng b\u1ea1n v\u1eabn th\u1ea5y tr\u1ea1ng th\u00e1i g\u00f5 ph\u00edm c\u1ee7a h\u1ecd.");
+        table.put("Phone lock",
+                "Kh\u00f3a c\u1ee7a \u0111i\u1ec7n tho\u1ea1i (V\u00e2n tay/Khu\u00f4n m\u1eb7t/M\u00e3 m\u00e1y)");
+        table.put("Photos and videos sent as view once or replayable stay in the chat so you can open them again. Open the chat again to update ones already loaded.",
+                "\u1ea2nh v\u00e0 video g\u1eedi d\u01b0\u1edbi d\u1ea1ng xem m\u1ed9t l\u1ea7n ho\u1eb7c cho ph\u00e9p ph\u00e1t l\u1ea1i s\u1ebd \u0111\u01b0\u1ee3c gi\u1eef l\u1ea1i trong \u0111o\u1ea1n chat \u0111\u1ec3 b\u1ea1n m\u1edf l\u1ea1i b\u1ea5t k\u1ef3 l\u00fac n\u00e0o.");
+        table.put("Pick an animation. Until you do, the heart stays Instagram's.",
+                "Ch\u1ecdn m\u1ed9t ho\u1ea1t \u1ea3nh. Khi ch\u01b0a ch\u1ecdn, tr\u00e1i tim s\u1ebd d\u00f9ng hi\u1ec7u \u1ee9ng m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram.");
+        table.put("Pick the playback quality with a tab long press",
+                "Nh\u1ea5n gi\u1eef tab \u0111\u1ec3 ch\u1ecdn ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t");
+        table.put("Pick your tabs, their order and how the bar looks.",
+                "Ch\u1ecdn tab hi\u1ec3n th\u1ecb, s\u1eafp x\u1ebfp th\u1ee9 t\u1ef1 v\u00e0 ki\u1ec3u d\u00e1ng thanh tab.");
+        table.put("Pink",
+                "H\u1ed3ng");
+        table.put("Place",
+                "\u0110\u1ecba \u0111i\u1ec3m");
+        table.put("Playback",
+                "Ph\u00e1t l\u1ea1i");
+        table.put("Playback quality",
+                "Ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t");
+        table.put("Playback quality: %1$s. The next video you open uses it.",
+                "Ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t: %1$s. \u00c1p d\u1ee5ng cho video ti\u1ebfp theo b\u1ea1n m\u1edf.");
+        table.put("Posted %1$s",
+                "\u0110\u00e3 \u0111\u0103ng l\u00fac %1$s");
+        table.put("Posts from @%1$s are hidden",
+                "\u0110\u00e3 \u1ea9n b\u00e0i vi\u1ebft t\u1eeb @%1$s");
+        table.put("Posts from @%1$s are hidden from Home and Following",
+                "\u0110\u00e3 \u1ea9n b\u00e0i vi\u1ebft t\u1eeb @%1$s kh\u1ecfi Trang ch\u1ee7 v\u00e0 \u0110ang theo d\u00f5i");
+        table.put("Posts from @%1$s show again",
+                "Hi\u1ec3n th\u1ecb l\u1ea1i b\u00e0i vi\u1ebft t\u1eeb @%1$s");
+        table.put("Preparing diagnostic report...",
+                "\u0110ang chu\u1ea9n b\u1ecb b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n...");
+        table.put("Press and hold a photo in a feed to see it twice as big around your finger, and slide to look around. Let go to close it. While this is on, it takes the place of Instagram's own long press on a photo.",
+                "Nh\u1ea5n v\u00e0 gi\u1eef \u1ea3nh tr\u00ean b\u1ea3ng tin \u0111\u1ec3 ph\u00f3ng to g\u1ea5p \u0111\u00f4i ngay d\u01b0\u1edbi ng\u00f3n tay c\u1ee7a b\u1ea1n, tr\u01b0\u1ee3t ng\u00f3n tay \u0111\u1ec3 xem xung quanh. Nh\u1ea3 tay ra \u0111\u1ec3 tr\u1edf v\u1ec1 b\u00ecnh th\u01b0\u1eddng.");
+        table.put("Privacy",
+                "Quy\u1ec1n ri\u00eang t\u01b0 t\u1ed1i \u0111a");
+        table.put("Profile",
+                "Trang c\u00e1 nh\u00e2n");
+        table.put("Profile picture",
+                "\u1ea2nh \u0111\u1ea1i di\u1ec7n");
+        table.put("Profiles",
+                "Trang c\u00e1 nh\u00e2n");
+        table.put("Pure black dark mode",
+                "Ch\u1ebf \u0111\u1ed9 t\u1ed1i AMOLED (\u0110en tuy\u1ec1n)");
+        table.put("Purple",
+                "T\u00edm");
+        table.put("Put a finger on the tab bar and slide it sideways. A highlight follows your finger, and letting go opens the tab under it. Taps and long presses on a tab work as before. It works with or without Glass tab bar. Restart Instagram after changing it.",
+                "\u0110\u1eb7t ng\u00f3n tay l\u00ean thanh tab v\u00e0 tr\u01b0\u1ee3t ngang: \u0111i\u1ec3m s\u00e1ng s\u1ebd di chuy\u1ec3n theo ng\u00f3n tay b\u1ea1n, nh\u1ea3 tay ra s\u1ebd m\u1edf tab ngay t\u1ea1i v\u1ecb tr\u00ed \u0111\u00f3.");
+        table.put("Put accounts that don't follow you back first",
+                "\u0110\u01b0a t\u00e0i kho\u1ea3n kh\u00f4ng theo d\u00f5i l\u1ea1i l\u00ean \u0111\u1ea7u");
+        table.put("Puts Activity, the screen the heart opens, on the tab bar before Profile. Tab order can move it, and Hide notifications on Home's header takes the heart away. Restart Instagram to see the change.",
+                "Hi\u1ec3n th\u1ecb tab Ho\u1ea1t \u0111\u1ed9ng (bi\u1ec3u t\u01b0\u1ee3ng tr\u00e1i tim) tr\u00ean thanh tab tr\u01b0\u1edbc Trang c\u00e1 nh\u00e2n. Th\u1ee9 t\u1ef1 tab c\u00f3 th\u1ec3 di chuy\u1ec3n v\u1ecb tr\u00ed. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Puts HushGram settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
+                "Th\u00eam l\u1ed1i t\u1eaft C\u00e0i \u0111\u1eb7t TADa v\u00e0o menu khi b\u1ea1n nh\u1ea5n gi\u1eef bi\u1ec3u t\u01b0\u1ee3ng Instagram \u1edf m\u00e0n h\u00ecnh ch\u00ednh.");
+        table.put("Puts Instagram's logo in the middle of the top of Home, even with header buttons hidden or added. A feed's name shown there is centered too. Restart Instagram to see the change.",
+                "C\u0103n logo Instagram v\u00e0o ch\u00ednh gi\u1eefa ph\u00eda tr\u00ean Trang ch\u1ee7, t\u1ea1o giao di\u1ec7n c\u00e2n \u0111\u1ed1i v\u00e0 cao c\u1ea5p. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Puts Messages on the tab bar, before Profile, if Instagram left it off yours. Tab order can move it. Restart Instagram to see the change.",
+                "Hi\u1ec3n th\u1ecb tab Tin nh\u1eafn tr\u00ean thanh tab, tr\u01b0\u1edbc Trang c\u00e1 nh\u00e2n. Th\u1ee9 t\u1ef1 tab c\u00f3 th\u1ec3 di chuy\u1ec3n v\u1ecb tr\u00ed. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Puts Reels back on the tab bar if Instagram left it off yours. Hide the Reels tab wins if both are on. Restart Instagram to see the change.",
+                "Hi\u1ec3n th\u1ecb l\u1ea1i tab Reels tr\u00ean thanh tab n\u1ebfu t\u00e0i kho\u1ea3n c\u1ee7a b\u1ea1n b\u1ecb \u1ea9n. N\u1ebfu b\u1eadt c\u1ea3 \u1ea8n tab Reels th\u00ec t\u00ednh n\u0103ng \u1ea9n s\u1ebd \u0111\u01b0\u1ee3c \u01b0u ti\u00ean. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Puts a Block icon beside someone else's reel. A tap opens Instagram's own block screen for that account, so you still confirm it there.",
+                "Th\u00eam bi\u1ec3u t\u01b0\u1ee3ng Ch\u1eb7n b\u00ean c\u1ea1nh reel c\u1ee7a ng\u01b0\u1eddi kh\u00e1c \u0111\u1ec3 m\u1edf nhanh m\u00e0n h\u00ecnh x\u00e1c nh\u1eadn ch\u1eb7n t\u00e0i kho\u1ea3n \u0111\u00f3.");
+        table.put("Puts a Not interested icon beside a reel, so one tap does what Not interested in its menu does.",
+                "Th\u00eam bi\u1ec3u t\u01b0\u1ee3ng Kh\u00f4ng quan t\u00e2m b\u00ean c\u1ea1nh reel \u0111\u1ec3 b\u1ea1n \u0111\u00e1nh d\u1ea5u nhanh ch\u1ec9 v\u1edbi m\u1ed9t ch\u1ea1m thay v\u00ec m\u1edf menu.");
+        table.put("Puts a download icon in the row under a post, left of Save, so one tap saves it without opening the menu. On a carousel it asks for this page or all of them.",
+                "Th\u00eam bi\u1ec3u t\u01b0\u1ee3ng t\u1ea3i xu\u1ed1ng v\u00e0o h\u00e0ng n\u00fat d\u01b0\u1edbi b\u00e0i vi\u1ebft (b\u00ean tr\u00e1i n\u00fat L\u01b0u), gi\u00fap t\u1ea3i v\u1ec1 nhanh trong 1 l\u1ea7n ch\u1ea1m m\u00e0 kh\u00f4ng c\u1ea7n m\u1edf menu.");
+        table.put("Puts a download icon under Save beside a reel, so one tap saves it the way Download in its menu does. Needs Download on reels.",
+                "Th\u00eam bi\u1ec3u t\u01b0\u1ee3ng t\u1ea3i xu\u1ed1ng b\u00ean d\u01b0\u1edbi n\u00fat L\u01b0u c\u1ea1nh m\u1ed7i reel \u0111\u1ec3 t\u1ea3i nhanh trong 1 ch\u1ea1m. Y\u00eau c\u1ea7u b\u1eadt T\u1ea3i xu\u1ed1ng tr\u00ean Reels.");
+        table.put("Puts a music icon beside a reel. Tap it and the Reels tab skips other reels using that sound. Tap it again to bring them back.",
+                "Th\u00eam bi\u1ec3u t\u01b0\u1ee3ng n\u1ed1t nh\u1ea1c b\u00ean c\u1ea1nh reel. Ch\u1ea1m v\u00e0o \u0111\u00f3 \u0111\u1ec3 tab Reels t\u1ef1 \u0111\u1ed9ng b\u1ecf qua c\u00e1c video s\u1eed d\u1ee5ng \u00e2m thanh n\u00e0y.");
+        table.put("Puts every notification from Instagram in one group that shows how many it holds, so they don't fill your notification shade. Tapping one still opens it.",
+                "G\u1ed9p t\u1ea5t c\u1ea3 th\u00f4ng b\u00e1o t\u1eeb Instagram v\u00e0o m\u1ed9t nh\u00f3m g\u1ecdn g\u00e0ng hi\u1ec3n th\u1ecb s\u1ed1 l\u01b0\u1ee3ng \u0111\u1ec3 kh\u00f4ng chi\u1ebfm di\u1ec7n t\u00edch trung t\u00e2m th\u00f4ng b\u00e1o. Ch\u1ea1m v\u00e0o th\u00f4ng b\u00e1o v\u1eabn m\u1edf b\u00ecnh th\u01b0\u1eddng.");
+    }
+
+    private static void fillVi12(Map<String, String> table) {
+        table.put("Puts every switch back the way it started. Your locks stay as they are.",
+                "\u0110\u01b0a t\u1ea5t c\u1ea3 c\u00e1c c\u00f4ng t\u1eafc c\u00e0i \u0111\u1eb7t v\u1ec1 tr\u1ea1ng th\u00e1i ban \u0111\u1ea7u. C\u00e1c c\u00e0i \u0111\u1eb7t kh\u00f3a c\u1ee7a b\u1ea1n v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Puts the answer in a chip under the profile's posts, followers and following counts instead, and says Following each other when you follow them too.",
+                "Hi\u1ec3n th\u1ecb tr\u1ea1ng th\u00e1i theo d\u00f5i d\u01b0\u1edbi d\u1ea1ng nh\u00e3n tr\u00f2n nh\u1ecf b\u00ean d\u01b0\u1edbi s\u1ed1 l\u01b0\u1ee3ng b\u00e0i vi\u1ebft, ng\u01b0\u1eddi theo d\u00f5i v\u00e0 \u0111ang theo d\u00f5i. Hi\u1ec7n \"\u0110ang theo d\u00f5i l\u1eabn nhau\" n\u1ebfu c\u1ea3 hai c\u00f9ng theo d\u00f5i nhau.");
+        table.put("Puts the title in the middle of the bar at the top of other screens, like notifications, as far as the buttons beside it allow. The buttons stay where they are.",
+                "C\u0103n gi\u1eefa ti\u00eau \u0111\u1ec1 \u1edf thanh tr\u00ean c\u00f9ng c\u1ee7a c\u00e1c m\u00e0n h\u00ecnh kh\u00e1c (nh\u01b0 m\u00e0n h\u00ecnh th\u00f4ng b\u00e1o).");
+        table.put("Puts the username in the middle of the bar at the top of a profile, yours and other people's. The buttons stay where they are.",
+                "C\u0103n gi\u1eefa t\u00ean ng\u01b0\u1eddi d\u00f9ng tr\u00ean thanh tr\u00ean c\u00f9ng c\u1ee7a trang c\u00e1 nh\u00e2n c\u1ee7a b\u1ea1n v\u00e0 c\u1ee7a ng\u01b0\u1eddi kh\u00e1c.");
+        table.put("QR code",
+                "M\u00e3 QR");
+        table.put("Queued. It starts once the post before it is saved.",
+                "\u0110\u00e3 th\u00eam v\u00e0o h\u00e0ng \u0111\u1ee3i. S\u1ebd t\u1ea3i khi b\u00e0i vi\u1ebft tr\u01b0\u1edbc l\u01b0u xong.");
+        table.put("Quick setups",
+                "Thi\u1ebft l\u1eadp nhanh");
+        table.put("Quick setups hidden. Bring it back from %1$s.",
+                "\u0110\u00e3 \u1ea9n Thi\u1ebft l\u1eadp nhanh. B\u1ea1n c\u00f3 th\u1ec3 b\u1eadt l\u1ea1i t\u1eeb %1$s.");
+        table.put("Quick setups on the home page",
+                "Thi\u1ebft l\u1eadp nhanh \u1edf Trang c\u00e0i \u0111\u1eb7t ch\u00ednh");
+        table.put("Quiet",
+                "Ch\u1ebf \u0111\u1ed9 y\u00ean t\u0129nh");
+        table.put("Read messages without the seen receipt",
+                "\u0110\u1ecdc tin nh\u1eafn kh\u00f4ng g\u1eedi th\u00f4ng b\u00e1o \u0111\u00e3 xem");
+        table.put("Reading the list\u2026",
+                "\u0110ang \u0111\u1ecdc danh s\u00e1ch\u2026");
+        table.put("Recent unfollowers",
+                "Ai \u0111\u00e3 h\u1ee7y theo d\u00f5i g\u1ea7n \u0111\u00e2y");
+        table.put("Record patch activity and show errors for a bug report. Leave off during normal use.",
+                "Ghi l\u1ea1i ho\u1ea1t \u0111\u1ed9ng b\u1ea3n v\u00e1 v\u00e0 hi\u1ec3n th\u1ecb l\u1ed7i \u0111\u1ec3 b\u00e1o c\u00e1o s\u1ef1 c\u1ed1. N\u00ean t\u1eaft trong qu\u00e1 tr\u00ecnh s\u1eed d\u1ee5ng b\u00ecnh th\u01b0\u1eddng.");
+        table.put("Red",
+                "\u0110\u1ecf");
+        table.put("Reels",
+                "Reels");
+        table.put("Reels wait for your tap. Feed videos and stories play as Instagram plays them.",
+                "Reels ch\u1edd ch\u1ea1m \u0111\u1ec3 ph\u00e1t. Video tr\u00ean b\u1ea3ng tin v\u00e0 tin ph\u00e1t b\u00ecnh th\u01b0\u1eddng.");
+        table.put("Refresh",
+                "L\u00e0m m\u1edbi");
+        table.put("Refresh this list?",
+                "L\u00e0m m\u1edbi danh s\u00e1ch n\u00e0y?");
+        table.put("Remembered playback positions restored.",
+                "\u0110\u00e3 kh\u00f4i ph\u1ee5c c\u00e1c v\u1ecb tr\u00ed ph\u00e1t \u0111\u00e3 ghi nh\u1edb.");
+        table.put("Remembers what you save while it's on, so a post, carousel page, reel or story isn't saved twice. Save all skips the pages you already have. Download again within 30 seconds to save another copy. A file you deleted or moved saves again.",
+                "Ghi nh\u1edb c\u00e1c n\u1ed9i dung b\u1ea1n \u0111\u00e3 t\u1ea3i xu\u1ed1ng \u0111\u1ec3 tr\u00e1nh l\u01b0u tr\u00f9ng l\u1eb7p. T\u00ednh n\u0103ng L\u01b0u t\u1ea5t c\u1ea3 s\u1ebd t\u1ef1 b\u1ecf qua c\u00e1c trang b\u1ea1n \u0111\u00e3 c\u00f3. T\u1ea3i l\u1ea1i trong 30 gi\u00e2y \u0111\u1ec3 t\u1ea3i th\u00eam b\u1ea3n sao.");
+        table.put("Remove build expired popup",
+                "X\u00f3a th\u00f4ng b\u00e1o b\u1ea3n d\u1ef1ng h\u1ebft h\u1ea1n");
+        table.put("Remove the empty space at the bottom",
+                "X\u00f3a kho\u1ea3ng tr\u1ed1ng d\u01b0\u1edbi c\u00f9ng");
+        table.put("Removes For you from the choices at the top of Home, so it stays on Following or Favorites. Needs Start Home on Following. Restart Instagram to see the change.",
+                "\u1ea8n m\u1ee5c D\u00e0nh cho b\u1ea1n kh\u1ecfi danh s\u00e1ch ch\u1ecdn \u1edf \u0111\u1ea7u Trang ch\u1ee7, ch\u1ec9 gi\u1eef l\u1ea1i \u0110ang theo d\u00f5i ho\u1eb7c Y\u00eau th\u00edch. C\u1ea7n b\u1eadt M\u1edf Trang ch\u1ee7 \u1edf m\u1ee5c \u0110ang theo d\u00f5i. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Removes Meta AI from the row at the bottom of the share sheet. Some accounts see it as Muse.",
+                "X\u00f3a Meta AI kh\u1ecfi h\u00e0ng d\u01b0\u1edbi c\u00f9ng c\u1ee7a b\u1ea3ng chia s\u1ebb. M\u1ed9t s\u1ed1 t\u00e0i kho\u1ea3n c\u00f3 th\u1ec3 hi\u1ec3n th\u1ecb d\u01b0\u1edbi t\u00ean Muse.");
+        table.put("Removes every post with more than one photo or video from Home, even from accounts you follow. Pull down on Home to refresh after changing it.",
+                "\u1ea8n m\u1ecdi b\u00e0i vi\u1ebft c\u00f3 nhi\u1ec1u h\u01a1n m\u1ed9t \u1ea3nh ho\u1eb7c video kh\u1ecfi Trang ch\u1ee7, k\u1ec3 c\u1ea3 t\u1eeb t\u00e0i kho\u1ea3n b\u1ea1n theo d\u00f5i. K\u00e9o xu\u1ed1ng \u1edf Trang ch\u1ee7 \u0111\u1ec3 t\u1ea3i l\u1ea1i.");
+        table.put("Removes every single-photo post from Home, even from accounts you follow. Pull down on Home to refresh after changing it.",
+                "\u1ea8n m\u1ecdi b\u00e0i vi\u1ebft ch\u1ec9 c\u00f3 m\u1ed9t \u1ea3nh kh\u1ecfi Trang ch\u1ee7, k\u1ec3 c\u1ea3 t\u1eeb t\u00e0i kho\u1ea3n b\u1ea1n \u0111ang theo d\u00f5i. K\u00e9o xu\u1ed1ng \u1edf Trang ch\u1ee7 \u0111\u1ec3 t\u1ea3i l\u1ea1i sau khi b\u1eadt.");
+        table.put("Removes every single-video post and reel from Home, even from accounts you follow. Pull down on Home to refresh after changing it.",
+                "\u1ea8n m\u1ecdi b\u00e0i vi\u1ebft m\u1ed9t video v\u00e0 reel kh\u1ecfi Trang ch\u1ee7, k\u1ec3 c\u1ea3 t\u1eeb t\u00e0i kho\u1ea3n b\u1ea1n theo d\u00f5i. K\u00e9o xu\u1ed1ng \u1edf Trang ch\u1ee7 \u0111\u1ec3 t\u1ea3i l\u1ea1i sau khi b\u1eadt.");
+        table.put("Removes posts you've already liked from Home and Following. A post you like now stays until you pull down on Home to refresh.",
+                "\u1ea8n c\u00e1c b\u00e0i vi\u1ebft b\u1ea1n \u0111\u00e3 b\u1ea5m th\u00edch kh\u1ecfi Trang ch\u1ee7 v\u00e0 m\u1ee5c \u0110ang theo d\u00f5i. B\u00e0i vi\u1ebft b\u1ea1n v\u1eeba th\u00edch s\u1ebd bi\u1ebfn m\u1ea5t sau khi k\u00e9o xu\u1ed1ng l\u00e0m m\u1edbi.");
+        table.put("Removes the Blend invite button from reels. Everything else on a reel stays.",
+                "X\u00f3a n\u00fat l\u1eddi m\u1eddi Blend kh\u1ecfi reels. M\u1ecdi th\u1ee9 kh\u00e1c tr\u00ean reel v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Removes the Meet Muse card, with its Try Muse button, from Home and your profile. Your other cards stay.",
+                "X\u00f3a th\u1ebb L\u00e0m quen v\u1edbi Muse c\u00f9ng n\u00fat D\u00f9ng th\u1eed Muse kh\u1ecfi Trang ch\u1ee7 v\u00e0 trang c\u00e1 nh\u00e2n c\u1ee7a b\u1ea1n.");
+        table.put("Removes the Muse button from the top bar of your profile. Your username and the menu stay.",
+                "X\u00f3a n\u00fat Muse kh\u1ecfi thanh tr\u00ean c\u00f9ng c\u1ee7a trang c\u00e1 nh\u00e2n. T\u00ean ng\u01b0\u1eddi d\u00f9ng v\u00e0 menu v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Removes the empty gap under Instagram's tab bar that appears when your phone hides its navigation bar or Instagram is in a pop-up window. Restart Instagram to see the change.",
+                "X\u00f3a kho\u1ea3ng tr\u1ed1ng v\u00f4 \u00edch d\u01b0\u1edbi thanh tab xu\u1ea5t hi\u1ec7n khi \u0111i\u1ec7n tho\u1ea1i \u1ea9n thanh \u0111i\u1ec1u h\u01b0\u1edbng ho\u1eb7c khi m\u1edf Instagram d\u1ea1ng c\u1eeda s\u1ed5 n\u1ed5i. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Removes the stack of Instants (quick photos from friends) from your messages. Restart Instagram to see the change.",
+                "\u1ea8n m\u1ee5c Instants (\u1ea3nh nhanh t\u1eeb b\u1ea1n b\u00e8) kh\u1ecfi tin nh\u1eafn c\u1ee7a b\u1ea1n. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng thay \u0111\u1ed5i.");
+        table.put("Removes the summary, Sources and Ask Meta AI box from a reel's more menu. In your feed the audio row goes too. Other options stay.",
+                "X\u00f3a ph\u1ea7n t\u00f3m t\u1eaft, Ngu\u1ed3n v\u00e0 h\u1ed9p H\u1ecfi Meta AI kh\u1ecfi menu kh\u00e1c c\u1ee7a reel. Tr\u00ean b\u1ea3ng tin, h\u00e0ng \u00e2m thanh c\u0169ng \u0111\u01b0\u1ee3c \u1ea9n. C\u00e1c t\u00f9y ch\u1ecdn kh\u00e1c gi\u1eef nguy\u00ean.");
+        table.put("Removes tracking tags from links you copy or share, and opens bio links without Instagram's click tracker. The link still opens the same post, reel or profile.",
+                "X\u00f3a c\u00e1c th\u1ebb theo d\u00f5i kh\u1ecfi li\u00ean k\u1ebft b\u1ea1n sao ch\u00e9p ho\u1eb7c chia s\u1ebb, \u0111\u1ed3ng th\u1eddi m\u1edf li\u00ean k\u1ebft ti\u1ec3u s\u1eed m\u00e0 kh\u00f4ng qua theo d\u00f5i nh\u1ea5p chu\u1ed9t c\u1ee7a Instagram. Li\u00ean k\u1ebft v\u1eabn d\u1eabn \u0111\u1ebfn \u0111\u00fang b\u00e0i vi\u1ebft, reel ho\u1eb7c trang c\u00e1 nh\u00e2n.");
+        table.put("Reopen the media and save again.",
+                "H\u00e3y m\u1edf l\u1ea1i n\u1ed9i dung v\u00e0 l\u01b0u l\u1ea1i.");
+        table.put("Reply to author",
+                "Tr\u1ea3 l\u1eddi t\u00e1c gi\u1ea3");
+        table.put("Report a problem",
+                "B\u00e1o c\u00e1o s\u1ef1 c\u1ed1");
+        table.put("Reposts",
+                "B\u00e0i \u0111\u0103ng l\u1ea1i");
+        table.put("Reset",
+                "\u0110\u1eb7t l\u1ea1i");
+        table.put("Restart Instagram to apply these choices.",
+                "Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng c\u00e1c thay \u0111\u1ed5i n\u00e0y.");
+        table.put("Restart Instagram to bring Search back to your tab bar.",
+                "Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u0111\u01b0a T\u00ecm ki\u1ebfm tr\u1edf l\u1ea1i thanh tab.");
+        table.put("Restart Instagram to put Messages on your tab bar.",
+                "Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u0111\u01b0a Tin nh\u1eafn xu\u1ed1ng thanh tab.");
+        table.put("Restored %1$d settings. Kept %2$d newer choices.",
+                "\u0110\u00e3 kh\u00f4i ph\u1ee5c %1$d c\u00e0i \u0111\u1eb7t. Gi\u1eef l\u1ea1i %2$d t\u00f9y ch\u1ecdn m\u1edbi h\u01a1n.");
+        table.put("Resume long videos",
+                "Ti\u1ebfp t\u1ee5c ph\u00e1t video d\u00e0i");
+        table.put("Retry",
+                "Th\u1eed l\u1ea1i");
+        table.put("Right away",
+                "Ngay l\u1eadp t\u1ee9c");
+        table.put("Ring color",
+                "M\u00e0u vi\u1ec1n tin");
+        table.put("Ring size",
+                "K\u00edch th\u01b0\u1edbc vi\u1ec1n");
+        table.put("Round handle on the seek bar",
+                "N\u00fat tr\u00f2n tr\u00ean thanh tua video");
+        table.put("Rounded corners on posts",
+                "Bo tr\u00f2n g\u00f3c b\u00e0i vi\u1ebft");
+        table.put("Rounder",
+                "Bo tr\u00f2n nhi\u1ec1u");
+        table.put("Rounds the corners of a post's photo, video and carousel pages in Home and Following. Posts you scroll to after a change show it. Stories, profiles, Explore and Reels stay as they were.",
+                "Bo tr\u00f2n c\u00e1c g\u00f3c c\u1ee7a \u1ea3nh v\u00e0 video b\u00e0i vi\u1ebft tr\u00ean Trang ch\u1ee7 v\u00e0 m\u1ee5c \u0110ang theo d\u00f5i, t\u1ea1o giao di\u1ec7n m\u1ec1m m\u1ea1i, hi\u1ec7n \u0111\u1ea1i.");
+        table.put("Rounds the pill and its highlight and puts Search in a glass circle of its own. Scrolling a list down shrinks the bar to the tab you're on and Search, unless Hide the tab bar as you scroll is on. Restart Instagram after changing it.",
+                "Bo tr\u00f2n thanh tab v\u00e0 \u0111\u1eb7t \u00f4 T\u00ecm ki\u1ebfm trong v\u00f2ng tr\u00f2n k\u00ednh ri\u00eang. Cu\u1ed9n danh s\u00e1ch xu\u1ed1ng s\u1ebd thu g\u1ecdn thanh tab l\u1ea1i.");
+        table.put("SMS",
+                "SMS");
+        table.put("Sanitize sharing links",
+                "L\u00e0m s\u1ea1ch li\u00ean k\u1ebft chia s\u1ebb");
+        table.put("Save",
+                "L\u01b0u");
+        table.put("Save all",
+                "L\u01b0u t\u1ea5t c\u1ea3");
+        table.put("Save canceled",
+                "\u0110\u00e3 h\u1ee7y l\u01b0u");
+    }
+
+    private static void fillVi13(Map<String, String> table) {
+        table.put("Save comment photo",
+                "L\u01b0u \u1ea3nh trong b\u00ecnh lu\u1eadn");
+        table.put("Save every page without asking",
+                "T\u1ef1 \u0111\u1ed9ng l\u01b0u t\u1ea5t c\u1ea3 c\u00e1c trang kh\u00f4ng c\u1ea7n h\u1ecfi");
+        table.put("Save folder",
+                "Th\u01b0 m\u1ee5c l\u01b0u");
+        table.put("Save full report",
+                "L\u01b0u b\u00e1o c\u00e1o \u0111\u1ea7y \u0111\u1ee7");
+        table.put("Save photos, videos and more, and choose where they go.",
+                "L\u01b0u \u1ea3nh, video v\u00e0 qu\u1ea3n l\u00fd th\u01b0 m\u1ee5c t\u1ea3i xu\u1ed1ng.");
+        table.put("Save profile picture",
+                "L\u01b0u \u1ea3nh \u0111\u1ea1i di\u1ec7n");
+        table.put("Save the full report in %1$s.",
+                "L\u01b0u b\u00e1o c\u00e1o \u0111\u1ea7y \u0111\u1ee7 v\u00e0o %1$s.");
+        table.put("Save videos other apps can open",
+                "L\u01b0u video \u0111\u1ec3 c\u00e1c \u1ee9ng d\u1ee5ng kh\u00e1c m\u1edf \u0111\u01b0\u1ee3c");
+        table.put("Save your HushGram choices to a file, or bring them back.",
+                "L\u01b0u c\u00e1c t\u00f9y ch\u1ecdn TADa c\u1ee7a b\u1ea1n v\u00e0o m\u1ed9t t\u1ec7p ho\u1eb7c kh\u00f4i ph\u1ee5c l\u1ea1i.");
+        table.put("Saved",
+                "\u0110\u00e3 l\u01b0u");
+        table.put("Saved %1$d. Failed %2$d. Skipped %3$d.",
+                "\u0110\u00e3 l\u01b0u %1$d. L\u1ed7i %2$d. B\u1ecf qua %3$d.");
+        table.put("Saved tab on your profile",
+                "Tab \u0110\u00e3 l\u01b0u tr\u00ean trang c\u00e1 nh\u00e2n");
+        table.put("Saved to %1$s",
+                "\u0110\u00e3 l\u01b0u v\u00e0o %1$s");
+        table.put("Saved to %1$s in lower quality than on Instagram",
+                "\u0110\u00e3 l\u01b0u v\u00e0o %1$s \u1edf ch\u1ea5t l\u01b0\u1ee3ng th\u1ea5p h\u01a1n Instagram");
+        table.put("Saved to the gallery",
+                "\u0110\u00e3 l\u01b0u v\u00e0o b\u1ed9 s\u01b0u t\u1eadp");
+        table.put("Saved to the gallery in lower quality than on Instagram",
+                "\u0110\u00e3 l\u01b0u v\u00e0o b\u1ed9 s\u01b0u t\u1eadp \u1edf ch\u1ea5t l\u01b0\u1ee3ng th\u1ea5p h\u01a1n Instagram");
+        table.put("Saved. Restart Instagram to apply this change.",
+                "\u0110\u00e3 l\u01b0u. H\u00e3y kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng thay \u0111\u1ed5i n\u00e0y.");
+        table.put("Saves videos other apps can open, at full size. A video Instagram only has as VP9 or AV1 is converted to H.264 on your phone instead of saved smaller. Slower, and videos over 3 minutes stay smaller.",
+                "L\u01b0u video m\u00e0 c\u00e1c \u1ee9ng d\u1ee5ng kh\u00e1c c\u00f3 th\u1ec3 m\u1edf \u1edf \u0111\u1ed9 ph\u00e2n gi\u1ea3i g\u1ed1c. Video \u0111\u1ecbnh d\u1ea1ng VP9 ho\u1eb7c AV1 s\u1ebd \u0111\u01b0\u1ee3c chuy\u1ec3n sang H.264 tr\u1ef1c ti\u1ebfp tr\u00ean \u0111i\u1ec7n tho\u1ea1i. Qu\u00e1 tr\u00ecnh l\u01b0u s\u1ebd l\u00e2u h\u01a1n m\u1ed9t ch\u00fat, v\u00e0 video d\u00e0i tr\u00ean 3 ph\u00fat s\u1ebd gi\u1eef k\u00edch th\u01b0\u1edbc nh\u1ecf h\u01a1n.");
+        table.put("Saving a carousel",
+                "\u0110ang l\u01b0u b\u00e0i vi\u1ebft nhi\u1ec1u \u1ea3nh/video");
+        table.put("Saving a photo",
+                "\u0110ang l\u01b0u \u1ea3nh");
+        table.put("Saving a video",
+                "\u0110ang l\u01b0u video");
+        table.put("Saving a voice message",
+                "\u0110ang l\u01b0u tin nh\u1eafn tho\u1ea1i");
+        table.put("Saving diagnostic report...",
+                "\u0110ang l\u01b0u b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n...");
+        table.put("Saving...",
+                "\u0110ang l\u01b0u...");
+        table.put("Saving... You can cancel from Downloads in HushGram settings.",
+                "\u0110ang l\u01b0u... B\u1ea1n c\u00f3 th\u1ec3 h\u1ee7y trong m\u1ee5c T\u1ea3i xu\u1ed1ng \u1edf C\u00e0i \u0111\u1eb7t TADa.");
+        table.put("Screenshots and screen recordings work wherever Instagram blocks them, like disappearing photos and videos. Turn on Don't report screenshots too if the sender shouldn't hear about it.",
+                "Cho ph\u00e9p ch\u1ee5p \u1ea3nh v\u00e0 quay video m\u00e0n h\u00ecnh \u1edf nh\u1eefng n\u01a1i Instagram ng\u0103n ch\u1eb7n, v\u00ed d\u1ee5 \u1ea3nh/video t\u1ef1 h\u1ee7y. H\u00e3y b\u1eadt th\u00eam \"Kh\u00f4ng b\u00e1o c\u00e1o khi ch\u1ee5p \u1ea3nh m\u00e0n h\u00ecnh\" n\u1ebfu kh\u00f4ng mu\u1ed1n ng\u01b0\u1eddi g\u1eedi bi\u1ebft.");
+        table.put("Scrolling a list down leaves the liquid pill as it is, every tab in place. Restart Instagram after changing it.",
+                "Cu\u1ed9n danh s\u00e1ch xu\u1ed1ng s\u1ebd gi\u1eef nguy\u00ean k\u00edch th\u01b0\u1edbc thanh tab d\u1ea1ng vi\u00ean thu\u1ed1c, kh\u00f4ng thu nh\u1ecf. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Scrolling a list down slides the pill out of the way. Scrolling up, reaching the top, or changing tab brings it back. Restart Instagram after changing it.",
+                "Khi cu\u1ed9n m\u00e0n h\u00ecnh xu\u1ed1ng, thanh tab s\u1ebd t\u1ef1 \u0111\u1ed9ng tr\u01b0\u1ee3t \u1ea9n \u0111i \u0111\u1ec3 m\u1edf r\u1ed9ng kh\u00f4ng gian hi\u1ec3n th\u1ecb. Cu\u1ed9n l\u00ean ho\u1eb7c \u0111\u1ed5i tab s\u1ebd hi\u1ec7n l\u1ea1i.");
+        table.put("Search",
+                "T\u00ecm ki\u1ebfm");
+        table.put("Search button on Home's header",
+                "N\u00fat T\u00ecm ki\u1ebfm tr\u00ean \u0111\u1ea7u Trang ch\u1ee7");
+        table.put("Search isn't on your tab bar, so this button can't open it here.",
+                "Tab T\u00ecm ki\u1ebfm kh\u00f4ng c\u00f3 tr\u00ean thanh tab, n\u00ean n\u00fat n\u00e0y kh\u00f4ng th\u1ec3 m\u1edf t\u1ea1i \u0111\u00e2y.");
+        table.put("Search settings",
+                "T\u00ecm ki\u1ebfm c\u00e0i \u0111\u1eb7t");
+        table.put("See who a story mentions",
+                "Xem ng\u01b0\u1eddi \u0111\u01b0\u1ee3c nh\u1eafc \u0111\u1ebfn trong tin");
+        table.put("See who follows you back, and clear extras off profiles.",
+                "Xem ai theo d\u00f5i l\u1ea1i b\u1ea1n v\u00e0 d\u1ecdn g\u1ecdn trang c\u00e1 nh\u00e2n.");
+        table.put("Seek bar like DM videos",
+                "Thanh tua gi\u1ed1ng video trong tin nh\u1eafn");
+        table.put("Send downloads to another app",
+                "G\u1eedi li\u00ean k\u1ebft t\u1ea3i sang \u1ee9ng d\u1ee5ng kh\u00e1c");
+        table.put("Send to",
+                "G\u1eedi \u0111\u1ebfn");
+        table.put("Set a PIN",
+                "Thi\u1ebft l\u1eadp m\u00e3 PIN");
+        table.put("Set a screen lock on your phone so HushGram can lock Instagram.",
+                "H\u00e3y c\u00e0i \u0111\u1eb7t kh\u00f3a m\u00e0n h\u00ecnh tr\u00ean \u0111i\u1ec7n tho\u1ea1i \u0111\u1ec3 TADa c\u00f3 th\u1ec3 kh\u00f3a Instagram.");
+        table.put("Set a screen lock on your phone so HushGram can lock your messages.",
+                "H\u00e3y c\u00e0i \u0111\u1eb7t kh\u00f3a m\u00e0n h\u00ecnh tr\u00ean \u0111i\u1ec7n tho\u1ea1i \u0111\u1ec3 TADa c\u00f3 th\u1ec3 kh\u00f3a tin nh\u1eafn c\u1ee7a b\u1ea1n.");
+        table.put("Set or change the 4 to 8 digit PIN. It stays on this phone and isn't in a backup.",
+                "Thi\u1ebft l\u1eadp ho\u1eb7c \u0111\u1ed5i m\u00e3 PIN t\u1eeb 4 \u0111\u1ebfn 8 ch\u1eef s\u1ed1. M\u00e3 PIN ch\u1ec9 l\u01b0u tr\u00ean \u0111i\u1ec7n tho\u1ea1i n\u00e0y.");
+        table.put("Set when you patched",
+                "\u0110\u00e3 thi\u1ebft l\u1eadp khi v\u00e1");
+        table.put("Settings backup",
+                "Sao l\u01b0u & Kh\u00f4i ph\u1ee5c c\u00e0i \u0111\u1eb7t");
+        table.put("Settings couldn't open",
+                "Kh\u00f4ng th\u1ec3 m\u1edf c\u00e0i \u0111\u1eb7t");
+        table.put("Settings couldn't refresh completely. Reopen settings and try again.",
+                "C\u00e0i \u0111\u1eb7t kh\u00f4ng th\u1ec3 l\u00e0m m\u1edbi ho\u00e0n to\u00e0n. H\u00e3y m\u1edf l\u1ea1i c\u00e0i \u0111\u1eb7t v\u00e0 th\u1eed l\u1ea1i.");
+        table.put("Settings entry",
+                "L\u1ed1i v\u00e0o c\u00e0i \u0111\u1eb7t");
+        table.put("Settings export canceled.",
+                "\u0110\u00e3 h\u1ee7y xu\u1ea5t c\u00e0i \u0111\u1eb7t.");
+        table.put("Settings restored.",
+                "\u0110\u00e3 kh\u00f4i ph\u1ee5c c\u00e0i \u0111\u1eb7t.");
+        table.put("Settings shortcut on the app icon",
+                "L\u1ed1i t\u1eaft C\u00e0i \u0111\u1eb7t tr\u00ean bi\u1ec3u t\u01b0\u1ee3ng \u1ee9ng d\u1ee5ng");
+        table.put("Settings shows a list of its categories, and a tap opens one on its own page. Search still looks through all of them.",
+                "M\u00e0n h\u00ecnh C\u00e0i \u0111\u1eb7t s\u1ebd hi\u1ec3n th\u1ecb danh s\u00e1ch c\u00e1c m\u1ee5c l\u1edbn, ch\u1ea1m v\u00e0o m\u1ee5c n\u00e0o s\u1ebd m\u1edf m\u1ed9t trang ri\u00eang cho m\u1ee5c \u0111\u00f3. T\u00ecm ki\u1ebfm v\u1eabn qu\u00e9t qua t\u1ea5t c\u1ea3 c\u00e1c m\u1ee5c.");
+        table.put("Share to",
+                "Chia s\u1ebb l\u00ean...");
+        table.put("Sharing",
+                "Chia s\u1ebb");
+        table.put("Sharing domain",
+                "T\u00ean mi\u1ec1n chuy\u1ec3n \u0111\u1ed5i li\u00ean k\u1ebft");
+        table.put("Short tick",
+                "Rung kh\u1ebd ng\u1eafn");
+        table.put("Show a post's exact time",
+                "Hi\u1ec7n th\u1eddi gian \u0111\u0103ng ch\u00ednh x\u00e1c c\u1ee7a b\u00e0i vi\u1ebft");
+        table.put("Show a reel's exact time",
+                "Hi\u1ec7n th\u1eddi gian \u0111\u0103ng ch\u00ednh x\u00e1c c\u1ee7a reel");
+        table.put("Show a story's exact time",
+                "Hi\u1ec7n th\u1eddi gian ch\u00ednh x\u00e1c c\u1ee7a tin");
+        table.put("Show all",
+                "Hi\u1ec7n t\u1ea5t c\u1ea3");
+        table.put("Show all recent searches",
+                "Hi\u1ec7n t\u1ea5t c\u1ea3 t\u00ecm ki\u1ebfm g\u1ea7n \u0111\u00e2y");
+        table.put("Show all settings as a list",
+                "Hi\u1ec7n t\u1ea5t c\u1ea3 c\u00e0i \u0111\u1eb7t d\u1ea1ng danh s\u00e1ch");
+    }
+
+    private static void fillVi14(Map<String, String> table) {
+        table.put("Show and reorder tabs",
+                "Hi\u1ec7n v\u00e0 s\u1eafp x\u1ebfp th\u1ee9 t\u1ef1 tab");
+        table.put("Show content behind the tab bar",
+                "Hi\u1ec7n n\u1ed9i dung ph\u00eda sau thanh tab");
+        table.put("Show how long ago a reel was posted",
+                "Hi\u1ec7n th\u1eddi gian \u0111\u0103ng c\u1ee7a reel theo d\u1ea1ng t\u01b0\u01a1ng \u0111\u1ed1i");
+        table.put("Show if a profile follows you",
+                "Hi\u1ec3n th\u1ecb ng\u01b0\u1eddi n\u00e0y c\u00f3 theo d\u00f5i b\u1ea1n kh\u00f4ng");
+        table.put("Show it as a chip",
+                "Hi\u1ec3n th\u1ecb d\u01b0\u1edbi d\u1ea1ng nh\u00e3n th\u1ebb (chip)");
+        table.put("Show like counts the poster hid",
+                "Hi\u1ec7n s\u1ed1 l\u01b0\u1ee3t th\u00edch b\u1ecb ng\u01b0\u1eddi \u0111\u0103ng \u1ea9n");
+        table.put("Show profile posts as a list",
+                "Hi\u1ec7n b\u00e0i vi\u1ebft trang c\u00e1 nh\u00e2n d\u1ea1ng danh s\u00e1ch");
+        table.put("Show seconds in a reel's time",
+                "Hi\u1ec7n gi\u00e2y trong th\u1eddi gian c\u1ee7a reel");
+        table.put("Show settings by category",
+                "Hi\u1ec7n c\u00e0i \u0111\u1eb7t theo t\u1eebng danh m\u1ee5c");
+        table.put("Show the Activity tab",
+                "Hi\u1ec7n tab Th\u00f4ng b\u00e1o ho\u1ea1t \u0111\u1ed9ng");
+        table.put("Show the Messages tab",
+                "Hi\u1ec7n tab Tin nh\u1eafn");
+        table.put("Show the Reels tab",
+                "Hi\u1ec7n tab Reels");
+        table.put("Show when someone was last active",
+                "Hi\u1ec7n th\u1eddi gian ho\u1ea1t \u0111\u1ed9ng l\u1ea7n cu\u1ed1i ch\u00ednh x\u00e1c");
+        table.put("Showing reels with %1$s again",
+                "Hi\u1ec3n th\u1ecb l\u1ea1i reels c\u00f3 \u00e2m thanh %1$s");
+        table.put("Shown. Tap to hide it.",
+                "\u0110ang hi\u1ec3n th\u1ecb. Ch\u1ea1m \u0111\u1ec3 \u1ea9n.");
+        table.put("Shows HushGram's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
+                "Hi\u1ec3n th\u1ecb logo TADa thay v\u00ec Instagram tr\u00ean m\u00e0n h\u00ecnh kh\u1edfi \u0111\u1ed9ng (Android 13 tr\u1edf l\u00ean). C\u00f3 hi\u1ec7u l\u1ef1c t\u1eeb l\u1ea7n m\u1edf ti\u1ebfp theo.");
+        table.put("Shows every emoji in Google's style instead of your phone's own. Restart Instagram to see the change.",
+                "Hi\u1ec3n th\u1ecb t\u1ea5t c\u1ea3 bi\u1ec3u t\u01b0\u1ee3ng c\u1ea3m x\u00fac theo phong c\u00e1ch Google Noto Emoji thay v\u00ec ph\u00f4ng ch\u1eef m\u1eb7c \u0111\u1ecbnh c\u1ee7a m\u00e1y. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Shows how many likes a post or reel has when its owner hid the count, but only when Instagram still sends the number. If it doesn't, nothing changes. Posts you load after a change show it.",
+                "Hi\u1ec3n th\u1ecb s\u1ed1 l\u01b0\u1ee3t th\u00edch th\u1ef1c t\u1ebf c\u1ee7a b\u00e0i vi\u1ebft ho\u1eb7c reel khi ng\u01b0\u1eddi \u0111\u0103ng \u0111\u00e3 \u1ea9n \u0111i (ch\u1ec9 ho\u1ea1t \u0111\u1ed9ng n\u1ebfu Instagram v\u1eabn g\u1eedi s\u1ed1 li\u1ec7u v\u1ec1 m\u00e1y).");
+        table.put("Shows the date and time a reel was posted under the author's name, like Oct 2, 3:45 PM. A change shows from the next reel.",
+                "Hi\u1ec3n th\u1ecb ng\u00e0y gi\u1edd \u0111\u0103ng reel ngay d\u01b0\u1edbi t\u00ean t\u00e1c gi\u1ea3 (v\u00ed d\u1ee5: 2 thg 10, 15:45). \u00c1p d\u1ee5ng t\u1eeb reel ti\u1ebfp theo b\u1ea1n xem.");
+        table.put("Shows the days, hours and minutes since it went up on a line under the time, like 1d 2h 5m ago.",
+                "Hi\u1ec3n th\u1ecb s\u1ed1 ng\u00e0y, gi\u1edd v\u00e0 ph\u00fat k\u1ec3 t\u1eeb khi \u0111\u0103ng \u1edf d\u00f2ng ph\u00eda d\u01b0\u1edbi th\u1eddi gian, v\u00ed d\u1ee5: 1 ng\u00e0y 2 gi\u1edd 5 ph\u00fat tr\u01b0\u1edbc.");
+        table.put("Shows when a post and its comments went up, like Oct 2, 3:45 PM, instead of how long ago. Posts you load after a change show it.",
+                "Hi\u1ec3n th\u1ecb th\u1eddi gian \u0111\u0103ng b\u00e0i vi\u1ebft v\u00e0 b\u00ecnh lu\u1eadn theo ng\u00e0y gi\u1edd ch\u00ednh x\u00e1c (v\u00ed d\u1ee5: 2 thg 10, 15:45) thay v\u00ec th\u1eddi gian \u01b0\u1edbc t\u00ednh.");
+        table.put("Size %1$d \u00d7 %2$d",
+                "K\u00edch th\u01b0\u1edbc: %1$d \u00d7 %2$d");
+        table.put("Skip what's already saved",
+                "B\u1ecf qua n\u1ed9i dung \u0111\u00e3 l\u01b0u");
+        table.put("Slide across the tabs",
+                "Tr\u01b0\u1ee3t ngang qua c\u00e1c tab");
+        table.put("Small",
+                "Nh\u1ecf");
+        table.put("Small, under the picture",
+                "Nh\u1ecf, d\u01b0\u1edbi \u1ea3nh \u0111\u1ea1i di\u1ec7n");
+        table.put("Smallest",
+                "Nh\u1ecf nh\u1ea5t");
+        table.put("Snapchat",
+                "Snapchat");
+        table.put("Soft tick",
+                "Rung \u00eam \u00e1i");
+        table.put("Some changes apply when Instagram restarts. Tap to restart it now.",
+                "M\u1ed9t s\u1ed1 thay \u0111\u1ed5i s\u1ebd c\u00f3 hi\u1ec7u l\u1ef1c sau khi Instagram kh\u1edfi \u0111\u1ed9ng l\u1ea1i. Ch\u1ea1m v\u00e0o \u0111\u00e2y \u0111\u1ec3 kh\u1edfi \u0111\u1ed9ng l\u1ea1i ngay.");
+        table.put("Source code and issues",
+                "M\u00e3 ngu\u1ed3n v\u00e0 b\u00e1o c\u00e1o s\u1ef1 c\u1ed1");
+        table.put("Space under the tab bar",
+                "Kho\u1ea3ng \u0111\u1ec7m d\u01b0\u1edbi thanh tab");
+        table.put("Spoof location",
+                "Gi\u1ea3 l\u1eadp v\u1ecb tr\u00ed");
+        table.put("Standard",
+                "Ti\u00eau chu\u1ea9n");
+        table.put("Start Home on Following",
+                "M\u1edf Trang ch\u1ee7 \u1edf m\u1ee5c \u0110ang theo d\u00f5i");
+        table.put("Start a video call?",
+                "B\u1eaft \u0111\u1ea7u cu\u1ed9c g\u1ecdi video?");
+        table.put("Start a voice call?",
+                "B\u1eaft \u0111\u1ea7u cu\u1ed9c g\u1ecdi tho\u1ea1i?");
+        table.put("Start feed videos with sound",
+                "Video tr\u00ean b\u1ea3ng tin lu\u00f4n ph\u00e1t k\u00e8m \u00e2m thanh");
+        table.put("Start stories with sound",
+                "M\u1edf tin lu\u00f4n c\u00f3 s\u1eb5n \u00e2m thanh");
+        table.put("Start tab",
+                "Tab m\u1edf \u0111\u1ea7u khi v\u00e0o app");
+        table.put("Stay dim when I tap",
+                "Ti\u1ebfp t\u1ee5c m\u1edd khi ch\u1ea1m");
+        table.put("Stays in while paused",
+                "Gi\u1eef nguy\u00ean khi t\u1ea1m d\u1eebng");
+        table.put("Stickers",
+                "Nh\u00e3n d\u00e1n");
+        table.put("Stop Instagram from saying this version is too old.",
+                "Ng\u0103n Instagram th\u00f4ng b\u00e1o phi\u00ean b\u1ea3n \u1ee9ng d\u1ee5ng qu\u00e1 c\u0169.");
+        table.put("Stop Reels scrolling",
+                "D\u1eebng cu\u1ed9n Reels");
+        table.put("Stop Story auto-advance",
+                "D\u1eebng t\u1ef1 \u0111\u1ed9ng chuy\u1ec3n tin");
+        table.put("Stop after 20 reels",
+                "D\u1eebng sau m\u1ed7i 20 reel");
+        table.put("Stop background work Instagram doesn't need.",
+                "Ch\u1eb7n c\u00e1c ti\u1ebfn tr\u00ecnh ch\u1ea1y ng\u1ea7m hao pin kh\u00f4ng c\u1ea7n thi\u1ebft.");
+        table.put("Stop loading stories and highlights",
+                "Ch\u1eb7n t\u1ea3i tin v\u00e0 tin n\u1ed5i b\u1eadt");
+        table.put("Stop looking",
+                "D\u1eebng t\u00ecm ki\u1ebfm");
+        table.put("Stop swipe to create",
+                "Ch\u1eb7n vu\u1ed1t \u0111\u1ec3 t\u1ea1o b\u00e0i vi\u1ebft/m\u1edf camera");
+        table.put("Stop swipe up to reply",
+                "Ch\u1eb7n vu\u1ed1t l\u00ean \u0111\u1ec3 tr\u1ea3 l\u1eddi tin");
+        table.put("Stop swiping between tabs",
+                "Ch\u1eb7n vu\u1ed1t chuy\u1ec3n tab");
+        table.put("Stop the analytics upload alarm",
+                "Ch\u1eb7n b\u00e1o th\u1ee9c t\u1ea3i l\u00ean d\u1eef li\u1ec7u ph\u00e2n t\u00edch");
+        table.put("Stop the background heartbeat",
+                "Ch\u1eb7n t\u00edn hi\u1ec7u n\u1ec1n (Heartbeat)");
+        table.put("Stops people seeing that you opened their view once photos and videos. They still disappear after you view them. This is a test feature and starts off.",
+                "Ng\u0103n ng\u01b0\u1eddi g\u1eedi bi\u1ebft b\u1ea1n \u0111\u00e3 m\u1edf \u1ea3nh/video xem m\u1ed9t l\u1ea7n c\u1ee7a h\u1ecd. \u1ea2nh/video v\u1eabn s\u1ebd bi\u1ebfn m\u1ea5t sau khi b\u1ea1n xem xong. T\u00ednh n\u0103ng th\u1eed nghi\u1ec7m, m\u1eb7c \u0111\u1ecbnh t\u1eaft.");
+        table.put("Stops telling Instagram which reels you watched or how far you got. Instagram uses that to pick your Reels. Watched reels may come back.",
+                "Ng\u1eebng g\u1eedi cho Instagram th\u00f4ng tin b\u1ea1n \u0111\u00e3 xem reel n\u00e0o v\u00e0 \u0111\u00e3 xem \u0111\u1ebfn \u0111\u00e2u. Instagram d\u00f9ng d\u1eef li\u1ec7u n\u00e0y \u0111\u1ec3 g\u1ee3i \u00fd Reels, v\u00ec v\u1eady c\u00e1c reel \u0111\u00e3 xem c\u00f3 th\u1ec3 xu\u1ea5t hi\u1ec7n l\u1ea1i.");
+        table.put("Storage",
+                "B\u1ed9 nh\u1edb l\u01b0u tr\u1eef");
+        table.put("Stories",
+                "Tin");
+        table.put("Stories open with their sound on, the same as tapping Instagram's speaker. Your phone's ringer and volume still count, so on silent or with the volume down, stories stay quiet.",
+                "Tin s\u1ebd t\u1ef1 \u0111\u1ed9ng ph\u00e1t \u00e2m thanh ngay khi m\u1edf m\u00e0 kh\u00f4ng c\u1ea7n b\u1ea1n ch\u1ea1m v\u00e0o bi\u1ec3u t\u01b0\u1ee3ng loa.");
+    }
+
+    private static void fillVi15(Map<String, String> table) {
+        table.put("Story ring size",
+                "K\u00edch th\u01b0\u1edbc vi\u1ec1n tin");
+        table.put("Support HushGram",
+                "\u1ee6ng h\u1ed9 TADa");
+        table.put("Swipe left to open the profile",
+                "Vu\u1ed1t sang tr\u00e1i \u0111\u1ec3 m\u1edf trang c\u00e1 nh\u00e2n");
+        table.put("Switches Ghost mode turns",
+                "C\u00e1c c\u00f4ng t\u1eafc Ch\u1ebf \u0111\u1ed9 \u1ea9n danh \u0111i\u1ec1u khi\u1ec3n");
+        table.put("System tick",
+                "Rung m\u1eb7c \u0111\u1ecbnh c\u1ee7a h\u1ec7 th\u1ed1ng");
+        table.put("Tab bar",
+                "Thanh tab");
+        table.put("Tab bar corners",
+                "\u0110\u1ed9 bo g\u00f3c thanh tab");
+        table.put("Tab bar height",
+                "Chi\u1ec1u cao thanh tab");
+        table.put("Tab bar opacity",
+                "\u0110\u1ed9 m\u1edd \u0111\u1ee5c c\u1ee7a thanh tab");
+        table.put("Tab long presses keep Instagram's own action. Choose one to open HushGram instead.",
+                "Nh\u1ea5n gi\u1eef tab gi\u1eef h\u00e0nh \u0111\u1ed9ng m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram. Ch\u1ecdn m\u1ed9t tab \u0111\u1ec3 m\u1edf TADa thay th\u1ebf.");
+        table.put("Tab long presses keep Instagram's own action. Choose one to pick the playback quality instead.",
+                "Nh\u1ea5n gi\u1eef tab gi\u1eef h\u00e0nh \u0111\u1ed9ng m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram. Ch\u1ecdn m\u1ed9t tab \u0111\u1ec3 ch\u1ecdn ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t video thay th\u1ebf.");
+        table.put("Tab long presses keep Instagram's own action. Choose one to turn Ghost mode on or off instead.",
+                "Nh\u1ea5n gi\u1eef tab gi\u1eef h\u00e0nh \u0111\u1ed9ng m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram. Ch\u1ecdn m\u1ed9t tab \u0111\u1ec3 b\u1eadt ho\u1eb7c t\u1eaft Ch\u1ebf \u0111\u1ed9 \u1ea9n danh thay th\u1ebf.");
+        table.put("Tab order",
+                "Th\u1ee9 t\u1ef1 c\u00e1c tab");
+        table.put("Tabs go in this order: %1$s. Restart Instagram to see the change.",
+                "C\u00e1c tab hi\u1ec3n th\u1ecb theo th\u1ee9 t\u1ef1: %1$s. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Tabs on profiles",
+                "C\u00e1c tab tr\u00ean trang c\u00e1 nh\u00e2n");
+        table.put("Tagged",
+                "\u0110\u01b0\u1ee3c g\u1eafn th\u1ebb");
+        table.put("Take Meta AI out of search, your feed, reels and profiles.",
+                "X\u00f3a b\u1ecf Meta AI kh\u1ecfi t\u00ecm ki\u1ebfm, b\u1ea3ng tin, reels v\u00e0 trang c\u00e1 nh\u00e2n.");
+        table.put("Take buttons you don't use off posts and the share sheet.",
+                "\u1ea8n c\u00e1c n\u00fat kh\u00f4ng c\u1ea7n thi\u1ebft kh\u1ecfi b\u00e0i vi\u1ebft v\u00e0 b\u1ea3ng chia s\u1ebb.");
+        table.put("Takes Create off the tab bar and closes up the gap. Restart Instagram to see the change.",
+                "\u1ea8n tab T\u1ea1o b\u00e0i vi\u1ebft kh\u1ecfi thanh tab v\u00e0 kh\u00e9p k\u00edn kho\u1ea3ng tr\u1ed1ng. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Takes Home off the tab bar. Your Start tab opens wherever Home would, so pick one other than Home that's on the bar, or Home stays. Restart Instagram to see the change.",
+                "\u1ea8n tab Trang ch\u1ee7 kh\u1ecfi thanh tab. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Takes Instagram's Messages button off the top of Home, for when Messages is on your tab bar too. Restart Instagram to see the change.",
+                "\u1ea8n bi\u1ec3u t\u01b0\u1ee3ng Tin nh\u1eafn \u1edf g\u00f3c tr\u00ean Trang ch\u1ee7 (th\u00edch h\u1ee3p khi b\u1ea1n \u0111\u00e3 \u0111\u01b0a tab Tin nh\u1eafn xu\u1ed1ng thanh \u0111\u00e1y). Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Takes Profile off the tab bar. Your profile still opens from other places in the app. Restart Instagram to see the change.",
+                "\u1ea8n tab Trang c\u00e1 nh\u00e2n kh\u1ecfi thanh tab. B\u1ea1n v\u1eabn c\u00f3 th\u1ec3 m\u1edf trang c\u00e1 nh\u00e2n t\u1eeb c\u00e1c v\u1ecb tr\u00ed kh\u00e1c trong \u1ee9ng d\u1ee5ng.");
+        table.put("Takes Reels off the tab bar. Reels in your feed and reels people send you still open. Restart Instagram to see the change.",
+                "\u1ea8n tab Reels kh\u1ecfi thanh tab ph\u00eda d\u01b0\u1edbi. Reels tr\u00ean b\u1ea3ng tin v\u00e0 reels b\u1ea1n b\u00e8 g\u1eedi v\u1eabn m\u1edf b\u00ecnh th\u01b0\u1eddng. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Takes Repost and its count off posts and reels, so nothing gets reposted to your followers by mistake. Share still sends a post or reel to someone.",
+                "\u1ea8n n\u00fat \u0110\u0103ng l\u1ea1i v\u00e0 s\u1ed1 l\u01b0\u1ee3t \u0111\u0103ng l\u1ea1i kh\u1ecfi b\u00e0i vi\u1ebft v\u00e0 reels \u0111\u1ec3 tr\u00e1nh v\u00f4 t\u00ecnh \u0111\u0103ng l\u1ea1i cho ng\u01b0\u1eddi theo d\u00f5i. N\u00fat Chia s\u1ebb v\u1eabn ho\u1ea1t \u0111\u1ed9ng b\u00ecnh th\u01b0\u1eddng.");
+        table.put("Takes Search off the tab bar and closes up the gap. Restart Instagram to see the change.",
+                "\u1ea8n tab T\u00ecm ki\u1ebfm kh\u1ecfi thanh tab v\u00e0 kh\u00e9p k\u00edn kho\u1ea3ng tr\u1ed1ng. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Takes Suggested for you and the Discover people button off profiles, yours included. Bios, counts, posts and follower lists stay.",
+                "\u1ea8n ph\u1ea7n G\u1ee3i \u00fd cho b\u1ea1n v\u00e0 n\u00fat Kh\u00e1m ph\u00e1 m\u1ecdi ng\u01b0\u1eddi kh\u1ecfi trang c\u00e1 nh\u00e2n. Ti\u1ec3u s\u1eed, s\u1ed1 li\u1ec7u, b\u00e0i vi\u1ebft v\u00e0 danh s\u00e1ch ng\u01b0\u1eddi theo d\u00f5i v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Takes away the row at the top of the Reels tab, with the Reels title, the camera button and anything else Instagram puts there. Reels you open from a profile, a post or a chat keep theirs. The camera still opens from Home.",
+                "\u1ea8n to\u00e0n b\u1ed9 h\u00e0ng ph\u00eda tr\u00ean c\u1ee7a tab Reels (ti\u00eau \u0111\u1ec1 Reels, n\u00fat m\u00e1y \u1ea3nh, v.v.). Reels m\u1edf t\u1eeb trang c\u00e1 nh\u00e2n, b\u00e0i vi\u1ebft ho\u1eb7c \u0111o\u1ea1n chat v\u1eabn gi\u1eef thanh n\u00e0y.");
+        table.put("Takes posts by the accounts you pick out of Home and Following. Each account you sign in to keeps its own list.",
+                "\u1ea8n b\u00e0i vi\u1ebft c\u1ee7a c\u00e1c t\u00e0i kho\u1ea3n b\u1ea1n ch\u1ecdn kh\u1ecfi Trang ch\u1ee7 v\u00e0 m\u1ee5c \u0110ang theo d\u00f5i. M\u1ed7i t\u00e0i kho\u1ea3n \u0111\u0103ng nh\u1eadp c\u00f3 danh s\u00e1ch ri\u00eang.");
+        table.put("Takes rows that only suggest something off your notifications, like a thread from an account you don't follow or someone you might know. Likes, comments, mentions and new followers stay.",
+                "\u1ea8n c\u00e1c th\u00f4ng b\u00e1o mang t\u00ednh g\u1ee3i \u00fd, ch\u1eb3ng h\u1ea1n nh\u01b0 b\u00e0i vi\u1ebft t\u1eeb ng\u01b0\u1eddi b\u1ea1n ch\u01b0a theo d\u00f5i ho\u1eb7c ng\u01b0\u1eddi b\u1ea1n c\u00f3 th\u1ec3 bi\u1ebft. Th\u00f4ng b\u00e1o th\u00edch, b\u00ecnh lu\u1eadn, nh\u1eafc t\u00ean v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Takes the Comment button and the comment count off the posts in your feed.",
+                "\u1ea8n n\u00fat B\u00ecnh lu\u1eadn v\u00e0 s\u1ed1 l\u01b0\u1ee3ng b\u00ecnh lu\u1eadn kh\u1ecfi c\u00e1c b\u00e0i vi\u1ebft tr\u00ean b\u1ea3ng tin c\u1ee7a b\u1ea1n.");
+        table.put("Takes the Complete your profile cards, like Add bio and Find people to follow, off your own profile. Your bio, counts and posts stay.",
+                "\u1ea8n c\u00e1c th\u1ebb Ho\u00e0n thi\u1ec7n trang c\u00e1 nh\u00e2n (nh\u01b0 Th\u00eam ti\u1ec3u s\u1eed, T\u00ecm ng\u01b0\u1eddi \u0111\u1ec3 theo d\u00f5i) kh\u1ecfi trang c\u00e1 nh\u00e2n c\u1ee7a b\u1ea1n.");
+        table.put("Takes the Featured section off the top of your notifications, the posts and threads Instagram picks to show you there. Everything under it stays.",
+                "\u1ea8n ph\u1ea7n N\u1ed5i b\u1eadt \u1edf \u0111\u1ea7u m\u00e0n h\u00ecnh th\u00f4ng b\u00e1o. M\u1ecdi th\u00f4ng b\u00e1o kh\u00e1c b\u00ean d\u01b0\u1edbi v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Takes the Follow and Subscribe buttons off the top of posts in your feed. The name, time and menu stay.",
+                "\u1ea8n n\u00fat Theo d\u00f5i v\u00e0 \u0110\u0103ng k\u00fd ph\u00eda tr\u00ean b\u00e0i vi\u1ebft trong b\u1ea3ng tin. T\u00ean, th\u1eddi gian v\u00e0 menu b\u00e0i vi\u1ebft v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Takes the Follow button off the top of stories from accounts you don't follow. The name, time and menu stay.",
+                "\u1ea8n n\u00fat Theo d\u00f5i \u1edf g\u00f3c tr\u00ean c\u1ee7a tin t\u1eeb nh\u1eefng ng\u01b0\u1eddi b\u1ea1n ch\u01b0a theo d\u00f5i.");
+        table.put("Takes the Notes bubble off profile pictures, yours included. Notes in Messages stay as they are.",
+                "\u1ea8n bong b\u00f3ng Ghi ch\u00fa nh\u1ecf hi\u1ec3n th\u1ecb tr\u00ean \u1ea3nh \u0111\u1ea1i di\u1ec7n c\u1ee7a m\u1ecdi ng\u01b0\u1eddi.");
+        table.put("Takes the People you don't follow back section off the bottom of your notifications. Notifications about new followers stay.",
+                "\u1ea8n ph\u1ea7n Ng\u01b0\u1eddi b\u1ea1n ch\u01b0a theo d\u00f5i l\u1ea1i \u1edf cu\u1ed1i th\u00f4ng b\u00e1o. Th\u00f4ng b\u00e1o v\u1ec1 ng\u01b0\u1eddi theo d\u00f5i m\u1edbi v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Takes the Save button out of the column of buttons beside a reel, and the count under it. Posts in your feed keep theirs.",
+                "\u1ea8n n\u00fat L\u01b0u v\u00e0 s\u1ed1 l\u01b0\u1ee3t l\u01b0u kh\u1ecfi c\u1ed9t n\u00fat b\u1ea5m c\u1ea1nh reel. B\u00e0i vi\u1ebft tr\u00ean b\u1ea3ng tin v\u1eabn gi\u1eef n\u00fat L\u01b0u.");
+        table.put("Takes the Share button and its count off the posts in your feed and off reels.",
+                "\u1ea8n n\u00fat Chia s\u1ebb v\u00e0 s\u1ed1 l\u01b0\u1ee3t chia s\u1ebb tr\u00ean b\u00e0i vi\u1ebft b\u1ea3ng tin v\u00e0 tr\u00ean reels.");
+        table.put("Takes the Share profile button off your profile, and Edit profile stretches to fill the space.",
+                "\u1ea8n n\u00fat Chia s\u1ebb trang c\u00e1 nh\u00e2n tr\u00ean trang c\u00e1 nh\u00e2n c\u1ee7a b\u1ea1n, n\u00fat Ch\u1ec9nh s\u1eeda trang c\u00e1 nh\u00e2n s\u1ebd m\u1edf r\u1ed9ng v\u1eeba v\u1eb7n.");
+        table.put("Takes the Threads button off the top of profiles, yours included. The menu and the other buttons stay where they were.",
+                "\u1ea8n n\u00fat bi\u1ec3u t\u01b0\u1ee3ng Threads \u1edf \u0111\u1ea7u trang c\u00e1 nh\u00e2n. Menu v\u00e0 c\u00e1c n\u00fat kh\u00e1c v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Takes the Your algorithm button off the top of the Reels tab and closes up the gap. The rest of the bar stays.",
+                "\u1ea8n n\u00fat Thu\u1eadt to\u00e1n c\u1ee7a b\u1ea1n \u1edf \u0111\u1ea7u tab Reels v\u00e0 thu g\u1ecdn kho\u1ea3ng tr\u1ed1ng.");
+        table.put("Takes the accounts Instagram suggests off the bottom of your messages. Your chats and follow requests stay. Restart Instagram to see the change.",
+                "\u1ea8n danh s\u00e1ch t\u00e0i kho\u1ea3n g\u1ee3i \u00fd \u1edf cu\u1ed1i h\u1ed9p th\u01b0 tin nh\u1eafn. Cu\u1ed9c tr\u00f2 chuy\u1ec7n v\u00e0 y\u00eau c\u1ea7u theo d\u00f5i v\u1eabn gi\u1eef nguy\u00ean. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Takes the heart off the top of Home and closes up the gap. Alerts still arrive. Restart Instagram to see the change.",
+                "\u1ea8n bi\u1ec3u t\u01b0\u1ee3ng tr\u00e1i tim \u1edf \u0111\u1ea7u Trang ch\u1ee7. Th\u00f4ng b\u00e1o \u0111\u1ea9y v\u1eabn nh\u1eadn b\u00ecnh th\u01b0\u1eddng. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Takes the memories, recaps, follow anniversaries and birthday cards Instagram makes out of the row of stories at the top of Home. Stories people post stay.",
+                "\u1ea8n c\u00e1c th\u1ebb k\u1ef7 ni\u1ec7m, t\u00f3m t\u1eaft, k\u1ef7 ni\u1ec7m ng\u00e0y theo d\u00f5i v\u00e0 thi\u1ec7p sinh nh\u1eadt t\u1ef1 \u0111\u1ed9ng kh\u1ecfi h\u00e0ng tin \u1edf \u0111\u1ea7u Trang ch\u1ee7. Tin do ng\u01b0\u1eddi d\u00f9ng \u0111\u0103ng v\u1eabn hi\u1ec3n th\u1ecb.");
+        table.put("Takes the plus button off the top of Home and closes up the gap. The Create tab and swiping to create are separate. Restart Instagram to see the change.",
+                "\u1ea8n n\u00fat d\u1ea5u c\u1ed9ng \u1edf \u0111\u1ea7u Trang ch\u1ee7 v\u00e0 thu g\u1ecdn kho\u1ea3ng tr\u1ed1ng. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Takes the plus button that opens the camera off the top of reels, on the Reels tab and everywhere else, and closes up the gap. The rest of the bar stays.",
+                "\u1ea8n n\u00fat d\u1ea5u c\u1ed9ng m\u1edf m\u00e1y \u1ea3nh \u1edf \u0111\u1ea7u c\u00e1c video reel (trong tab Reels v\u00e0 c\u00e1c n\u01a1i kh\u00e1c).");
+        table.put("Takes the plus for new posts off the top of your own profile. The other buttons stay where they were.",
+                "\u1ea8n bi\u1ec3u t\u01b0\u1ee3ng d\u1ea5u c\u1ed9ng t\u1ea1o b\u00e0i vi\u1ebft m\u1edbi \u1edf \u0111\u1ea7u trang c\u00e1 nh\u00e2n c\u1ee7a b\u1ea1n.");
+        table.put("Takes the row of notes off the top of your messages, the Map bubble in it too. Your chats, search and requests stay.",
+                "\u1ea8n h\u00e0ng ghi ch\u00fa \u1edf \u0111\u1ea7u danh s\u00e1ch tin nh\u1eafn, bao g\u1ed3m c\u1ea3 bong b\u00f3ng B\u1ea3n \u0111\u1ed3. \u0110o\u1ea1n chat, t\u00ecm ki\u1ebfm v\u00e0 tin nh\u1eafn \u0111ang ch\u1edd v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Takes the row of quick emoji off above the comment box. The box itself stays.",
+                "\u1ea8n h\u00e0ng bi\u1ec3u t\u01b0\u1ee3ng c\u1ea3m x\u00fac nhanh ph\u00eda tr\u00ean khung b\u00ecnh lu\u1eadn.");
+        table.put("Takes the row of story highlights off profiles, yours included. Bios, counts and posts stay, and so does Add to highlight on your stories.",
+                "\u1ea8n h\u00e0ng tin n\u1ed5i b\u1eadt tr\u00ean trang c\u00e1 nh\u00e2n c\u1ee7a m\u1ecdi ng\u01b0\u1eddi v\u00e0 c\u1ee7a b\u1ea1n. Ti\u1ec3u s\u1eed, s\u1ed1 li\u1ec7u v\u00e0 b\u00e0i vi\u1ebft v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Takes the search bar and its Filter button off the top of your messages, the Meta AI bar too. Your chats, notes and requests stay.",
+                "\u1ea8n thanh t\u00ecm ki\u1ebfm v\u00e0 n\u00fat B\u1ed9 l\u1ecdc \u1edf \u0111\u1ea7u tin nh\u1eafn, c\u00f9ng v\u1edbi thanh Meta AI. \u0110o\u1ea1n chat, ghi ch\u00fa v\u00e0 tin nh\u1eafn \u0111ang ch\u1edd v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("Takes the voice and video call buttons off the top of a chat. The name keeps its room. Turn it off and they're back the next time a chat opens.",
+                "\u1ea8n bi\u1ec3u t\u01b0\u1ee3ng g\u1ecdi tho\u1ea1i v\u00e0 g\u1ecdi video \u1edf \u0111\u1ea7u cu\u1ed9c tr\u00f2 chuy\u1ec7n \u0111\u1ec3 tr\u00e1nh l\u1ee1 tay g\u1ecdi nh\u1ea7m.");
+        table.put("Takes the whole row of stories off the top of Home, Your story included. Stories still open from a profile or a message.",
+                "\u1ea8n to\u00e0n b\u1ed9 h\u00e0ng tin \u1edf \u0111\u1ea7u Trang ch\u1ee7, bao g\u1ed3m c\u1ea3 Tin c\u1ee7a b\u1ea1n. Tin v\u1eabn c\u00f3 th\u1ec3 m\u1edf t\u1eeb trang c\u00e1 nh\u00e2n ho\u1eb7c tin nh\u1eafn.");
+        table.put("Tall",
+                "Cao");
+        table.put("Tap a feed video to pause it",
+                "Ch\u1ea1m v\u00e0o video b\u1ea3ng tin \u0111\u1ec3 t\u1ea1m d\u1eebng");
+        table.put("Tap the video playing in a feed to pause it in place instead of opening it in Reels, and tap it again to play it. Ads keep Instagram's own tap.",
+                "Ch\u1ea1m v\u00e0o video \u0111ang ph\u00e1t tr\u00ean b\u1ea3ng tin \u0111\u1ec3 t\u1ea1m d\u1eebng ngay t\u1ea1i ch\u1ed7 thay v\u00ec nh\u1ea3y v\u00e0o ch\u1ebf \u0111\u1ed9 xem Reels. Ch\u1ea1m l\u1ea7n n\u1eefa \u0111\u1ec3 ph\u00e1t ti\u1ebfp.");
+        table.put("Tap to hide this.",
+                "Ch\u1ea1m \u0111\u1ec3 \u1ea9n th\u00f4ng b\u00e1o n\u00e0y.");
+        table.put("Tap to play",
+                "Ch\u1ea1m \u0111\u1ec3 ph\u00e1t");
+        table.put("Tap to turn it back on.",
+                "Ch\u1ea1m \u0111\u1ec3 b\u1eadt l\u1ea1i.");
+        table.put("Tapping a call button in a chat asks first, so a stray tap doesn't ring anyone. Call starts it, Cancel doesn't.",
+                "Ch\u1ea1m v\u00e0o n\u00fat g\u1ecdi trong \u0111o\u1ea1n chat s\u1ebd h\u1ecfi x\u00e1c nh\u1eadn tr\u01b0\u1edbc \u0111\u1ec3 tr\u00e1nh l\u1ee1 tay g\u1ecdi nh\u1ea7m. B\u1ea5m G\u1ecdi \u0111\u1ec3 b\u1eaft \u0111\u1ea7u, H\u1ee7y \u0111\u1ec3 \u0111\u00f3ng.");
+    }
+
+    private static void fillVi16(Map<String, String> table) {
+        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
+                "Ch\u1ea1m v\u00e0o video, ch\u1ea1m hai l\u1ea7n \u0111\u1ec3 th\u00edch, nh\u1ea5n L\u01b0u ho\u1eb7c T\u1ea3i xu\u1ed1ng s\u1ebd kh\u00f4ng t\u00ednh l\u00e0 thao t\u00e1c ch\u1ea1m \u0111\u00e1nh th\u1ee9c, c\u00e1c n\u00fat v\u1eabn s\u1ebd gi\u1eef tr\u1ea1ng th\u00e1i l\u00e0m m\u1edd.");
+        table.put("Teal",
+                "Xanh m\u00f2ng k\u00e9t");
+        table.put("Tells Instagram your phone is at %1$s.",
+                "B\u00e1o cho Instagram bi\u1ebft \u0111i\u1ec7n tho\u1ea1i c\u1ee7a b\u1ea1n \u0111ang \u1edf %1$s.");
+        table.put("Tells Instagram your phone is at the place set below, for the location sticker, nearby places and maps. Photos keep their own places.",
+                "G\u1eedi v\u1ecb tr\u00ed gi\u1ea3 b\u00ean d\u01b0\u1edbi cho Instagram \u0111\u1ec3 d\u00f9ng trong nh\u00e3n d\u00e1n v\u1ecb tr\u00ed, \u0111\u1ecba \u0111i\u1ec3m l\u00e2n c\u1eadn v\u00e0 b\u1ea3n \u0111\u1ed3. \u1ea2nh gi\u1eef nguy\u00ean v\u1ecb tr\u00ed g\u1ed1c.");
+        table.put("That file isn't a font HushGram can use. Your font hasn't changed.",
+                "T\u1ec7p \u0111\u00f3 kh\u00f4ng ph\u1ea3i l\u00e0 ph\u00f4ng ch\u1eef TADa c\u00f3 th\u1ec3 d\u00f9ng. Ph\u00f4ng ch\u1eef ch\u01b0a b\u1ecb thay \u0111\u1ed5i.");
+        table.put("That isn't a domain. Type one like example.com, or leave it blank.",
+                "T\u00ean mi\u1ec1n kh\u00f4ng h\u1ee3p l\u1ec7. H\u00e3y nh\u1eadp \u0111\u1ecbnh d\u1ea1ng nh\u01b0 example.com ho\u1eb7c \u0111\u1ec3 tr\u1ed1ng.");
+        table.put("That isn't a place. Type a latitude and a longitude with a comma between them.",
+                "\u0110\u1ecbnh d\u1ea1ng kh\u00f4ng h\u1ee3p l\u1ec7. H\u00e3y nh\u1eadp v\u0129 \u0111\u1ed9 v\u00e0 kinh \u0111\u1ed9 c\u00e1ch nhau b\u1eb1ng d\u1ea5u ph\u1ea9y.");
+        table.put("That's %1$d reels. Swiping in Reels is off until Instagram has been in the background for %2$d minutes.",
+                "B\u1ea1n \u0111\u00e3 xem %1$d reel. Thao t\u00e1c vu\u1ed1t trong Reels s\u1ebd t\u1ea1m d\u1eebng cho \u0111\u1ebfn khi Instagram ch\u1ea1y ng\u1ea7m %2$d ph\u00fat.");
+        table.put("That's a trial reel, so it isn't on their profile",
+                "\u0110\u00e2y l\u00e0 reel th\u1eed nghi\u1ec7m n\u00ean kh\u00f4ng xu\u1ea5t hi\u1ec7n tr\u00ean trang c\u00e1 nh\u00e2n c\u1ee7a h\u1ecd");
+        table.put("The Add a comment bar under every reel, including the ones in the Reels tab. The comment button still opens the comments.",
+                "\u1ea8n thanh Th\u00eam b\u00ecnh lu\u1eadn d\u01b0\u1edbi m\u1ecdi reel, bao g\u1ed3m c\u1ea3 c\u00e1c reel trong tab Reels. N\u00fat b\u00ecnh lu\u1eadn v\u1eabn ho\u1ea1t \u0111\u1ed9ng b\u00ecnh th\u01b0\u1eddng.");
+        table.put("The Add comment bar under a reel you open from a profile's reposts. The comment button still opens the comments.",
+                "\u1ea8n thanh Th\u00eam b\u00ecnh lu\u1eadn ph\u00eda d\u01b0\u1edbi reel khi b\u1ea1n m\u1edf t\u1eeb m\u1ee5c b\u00e0i \u0111\u0103ng l\u1ea1i c\u1ee7a trang c\u00e1 nh\u00e2n. N\u00fat b\u00ecnh lu\u1eadn v\u1eabn m\u1edf danh s\u00e1ch b\u00ecnh lu\u1eadn b\u00ecnh th\u01b0\u1eddng.");
+        table.put("The Follow button beside a reel's author. Their profile still has one.",
+                "\u1ea8n n\u00fat Theo d\u00f5i b\u00ean c\u1ea1nh t\u00ean t\u00e1c gi\u1ea3 c\u1ee7a reel. Trang c\u00e1 nh\u00e2n c\u1ee7a h\u1ecd v\u1eabn c\u00f3 n\u00fat n\u00e0y.");
+        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets HushGram's settings. A saved settings backup brings the rest back, but not the PIN.",
+                "M\u00e3 PIN kh\u00f4ng th\u1ec3 kh\u00f4i ph\u1ee5c. \u0110\u1ec3 x\u00f3a m\u00e3 PIN, h\u00e3y v\u00e0o C\u00e0i \u0111\u1eb7t \u1ee9ng d\u1ee5ng c\u1ee7a Android v\u00e0 x\u00f3a d\u1eef li\u1ec7u Instagram (thao t\u00e1c n\u00e0y s\u1ebd \u0111\u0103ng xu\u1ea5t v\u00e0 \u0111\u1eb7t l\u1ea1i c\u00e0i \u0111\u1eb7t TADa).");
+        table.put("The PINs don't match.",
+                "M\u00e3 PIN x\u00e1c nh\u1eadn kh\u00f4ng kh\u1edbp.");
+        table.put("The Reply to box under a reel you open from a chat, with its reactions and plus button. The chat's own message box stays.",
+                "\u1ea8n \u00f4 Tr\u1ea3 l\u1eddi d\u01b0\u1edbi reel khi b\u1ea1n m\u1edf video t\u1eeb cu\u1ed9c tr\u00f2 chuy\u1ec7n. Khung nh\u1eafn tin c\u1ee7a cu\u1ed9c tr\u00f2 chuy\u1ec7n v\u1eabn gi\u1eef nguy\u00ean.");
+        table.put("The bubbles of friends who liked or commented, the Followed by and Liked by lines with their faces, the comment shown under a reel and the row of friends who saw it. Comments are still a tap away.",
+                "\u1ea8n bong b\u00f3ng avatar b\u1ea1n b\u00e8 \u0111\u00e3 th\u00edch ho\u1eb7c b\u00ecnh lu\u1eadn, d\u00f2ng \u0110\u01b0\u1ee3c theo d\u00f5i b\u1edfi v\u00e0 \u0110\u01b0\u1ee3c th\u00edch b\u1edfi, b\u00ecnh lu\u1eadn xem tr\u01b0\u1edbc b\u00ean d\u01b0\u1edbi reel v\u00e0 danh s\u00e1ch b\u1ea1n b\u00e8 \u0111\u00e3 xem. B\u1ea1n v\u1eabn c\u00f3 th\u1ec3 ch\u1ea1m \u0111\u1ec3 m\u1edf b\u00ecnh lu\u1eadn.");
+        table.put("The cards of people and creators to follow that Instagram puts between reels. Every reel still plays.",
+                "C\u00e1c th\u1ebb g\u1ee3i \u00fd ng\u01b0\u1eddi s\u00e1ng t\u1ea1o n\u1ed9i dung ch\u00e8n gi\u1eefa c\u00e1c reels. M\u1ecdi video reel v\u1eabn ph\u00e1t b\u00ecnh th\u01b0\u1eddng.");
+        table.put("The chip sits under the posts, followers and following counts.",
+                "Nh\u00e3n hi\u1ec3n th\u1ecb b\u00ean d\u01b0\u1edbi s\u1ed1 l\u01b0\u1ee3ng b\u00e0i vi\u1ebft, ng\u01b0\u1eddi theo d\u00f5i v\u00e0 \u0111ang theo d\u00f5i.");
+        table.put("The date and time the story was posted, like Oct 2, 3:45 PM.",
+                "Ng\u00e0y v\u00e0 gi\u1edd \u0111\u0103ng tin, v\u00ed d\u1ee5: 2 thg 10, 15:45.");
+        table.put("The diagnostic report couldn't be saved yet. Try again in a moment.",
+                "Ch\u01b0a th\u1ec3 l\u01b0u b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n. Vui l\u00f2ng th\u1eed l\u1ea1i sau.");
+        table.put("The diagnostic report couldn't be saved. Try again.",
+                "Kh\u00f4ng th\u1ec3 l\u01b0u b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n. Vui l\u00f2ng th\u1eed l\u1ea1i.");
+        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn HushGram back on.",
+                "Kh\u00f4ng th\u1ec3 x\u00f3a t\u1ec7p %1$s. H\u00e3y x\u00f3a t\u1ec7p kh\u1ecfi %2$s \u0111\u1ec3 b\u1eadt l\u1ea1i TADa.");
+        table.put("The first video on Home plays with its sound on, the same as tapping its speaker. Your phone's ringer and volume still count, so on silent or with the volume down, it stays quiet.",
+                "Video \u0111\u1ea7u ti\u00ean tr\u00ean Trang ch\u1ee7 s\u1ebd t\u1ef1 \u0111\u1ed9ng ph\u00e1t k\u00e8m \u00e2m thanh m\u00e0 kh\u00f4ng c\u1ea7n ch\u1ea1m v\u00e0o loa.");
+        table.put("The heart plays %1$s when you double tap a post.",
+                "Tr\u00e1i tim s\u1ebd ph\u00e1t ho\u1ea1t \u1ea3nh %1$s khi b\u1ea1n ch\u1ea1m hai l\u1ea7n v\u00e0o b\u00e0i vi\u1ebft.");
+        table.put("The heart that pops up when you double tap a post plays the animation you pick below. They're animations Instagram made for its Rings creators.",
+                "Tr\u00e1i tim xu\u1ea5t hi\u1ec7n khi ch\u1ea1m hai l\u1ea7n v\u00e0o b\u00e0i vi\u1ebft s\u1ebd ph\u00e1t ho\u1ea1t \u1ea3nh b\u1ea1n ch\u1ecdn b\u00ean d\u01b0\u1edbi (c\u00e1c ho\u1ea1t \u1ea3nh do Instagram thi\u1ebft k\u1ebf cho ng\u01b0\u1eddi s\u00e1ng t\u1ea1o Rings).");
+        table.put("The last way into these settings stays on.",
+                "Ph\u01b0\u01a1ng th\u1ee9c m\u1edf c\u00e0i \u0111\u1eb7t cu\u1ed1i c\u00f9ng c\u00f2n b\u1eadt s\u1ebd kh\u00f4ng th\u1ec3 t\u1eaft.");
+        table.put("The latitude and the longitude in degrees, with a comma between them, like 40.758, -73.9855. North and east are positive, south and west negative. A map app shows both when you press and hold a spot.",
+                "V\u0129 \u0111\u1ed9 v\u00e0 kinh \u0111\u1ed9 t\u00ednh b\u1eb1ng \u0111\u1ed9, ph\u00e2n c\u00e1ch b\u1eb1ng d\u1ea5u ph\u1ea9y, v\u00ed d\u1ee5: 21.0285, 105.8542. B\u1eafc v\u00e0 \u0110\u00f4ng l\u00e0 d\u01b0\u01a1ng, Nam v\u00e0 T\u00e2y l\u00e0 \u00e2m. Nh\u1ea5n gi\u1eef v\u1ecb tr\u00ed tr\u00ean \u1ee9ng d\u1ee5ng b\u1ea3n \u0111\u1ed3 \u0111\u1ec3 l\u1ea5y t\u1ecda \u0111\u1ed9.");
+        table.put("The navigation bar only",
+                "Ch\u1ec9 thanh \u0111i\u1ec1u h\u01b0\u1edbng (\u1edf d\u01b0\u1edbi)");
+        table.put("The rings are %1$s of the size Instagram picks for your screen.",
+                "Vi\u1ec1n hi\u1ec3n th\u1ecb \u1edf m\u1ee9c %1$s so v\u1edbi k\u00edch th\u01b0\u1edbc m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram.");
+        table.put("The rings are the size Instagram picks for your screen.",
+                "Vi\u1ec1n c\u00f3 k\u00edch th\u01b0\u1edbc do Instagram t\u1ef1 ch\u1ecdn cho m\u00e0n h\u00ecnh c\u1ee7a b\u1ea1n.");
+        table.put("The rows of suggested reels between posts in your home feed. A reel someone you follow posts stays.",
+                "\u1ea8n c\u00e1c h\u00e0ng reel \u0111\u01b0\u1ee3c g\u1ee3i \u00fd n\u1eb1m gi\u1eefa c\u00e1c b\u00e0i vi\u1ebft tr\u00ean b\u1ea3ng tin ch\u00ednh. Reel do ng\u01b0\u1eddi b\u1ea1n theo d\u00f5i \u0111\u0103ng v\u1eabn \u0111\u01b0\u1ee3c gi\u1eef nguy\u00ean.");
+        table.put("The same Download on a photo post, and on a carousel showing a photo. Saves the largest size Instagram has.",
+                "Th\u00eam n\u00fat T\u1ea3i xu\u1ed1ng v\u00e0o b\u00e0i vi\u1ebft \u1ea3nh v\u00e0 b\u00e0i vi\u1ebft nhi\u1ec1u \u1ea3nh. L\u01b0u \u1ea3nh \u1edf k\u00edch th\u01b0\u1edbc l\u1edbn nh\u1ea5t m\u00e0 Instagram c\u00f3.");
+        table.put("The setting couldn't finish updating. Its saved value is shown.",
+                "C\u00e0i \u0111\u1eb7t ch\u01b0a c\u1eadp nh\u1eadt xong. Gi\u00e1 tr\u1ecb \u0111\u00e3 l\u01b0u \u0111ang \u0111\u01b0\u1ee3c hi\u1ec3n th\u1ecb.");
+        table.put("The sounds you hid with the music icon. Uncheck one to see its reels again.",
+                "Danh s\u00e1ch c\u00e1c \u00e2m thanh b\u1ea1n \u0111\u00e3 \u1ea9n. B\u1ecf t\u00edch m\u1ed9t m\u1ee5c \u0111\u1ec3 xem l\u1ea1i c\u00e1c reel s\u1eed d\u1ee5ng \u00e2m thanh \u0111\u00f3.");
+        table.put("The status bar only",
+                "Ch\u1ec9 thanh tr\u1ea1ng th\u00e1i (\u1edf tr\u00ean)");
+        table.put("The tab bar keeps Instagram's order.",
+                "Thanh tab gi\u1eef nguy\u00ean th\u1ee9 t\u1ef1 m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram.");
+        table.put("The zoom stays up after you let go. Drag to look around, pinch to zoom from 1x to 4x, and tap or press Back to close it.",
+                "H\u00ecnh \u1ea3nh ph\u00f3ng to v\u1eabn hi\u1ec3n th\u1ecb sau khi th\u1ea3 ng\u00f3n tay. B\u1ea1n c\u00f3 th\u1ec3 ch\u1ee5m 2 ng\u00f3n tay \u0111\u1ec3 ph\u00f3ng to t\u1eeb 1x \u0111\u1ebfn 4x, b\u1ea5m Quay l\u1ea1i \u0111\u1ec3 \u0111\u00f3ng.");
+        table.put("There's no diagnostic data to clear.",
+                "Kh\u00f4ng c\u00f3 d\u1eef li\u1ec7u ch\u1ea9n \u0111o\u00e1n \u0111\u1ec3 x\u00f3a.");
+        table.put("There's no diagnostic data to put back.",
+                "Kh\u00f4ng c\u00f3 d\u1eef li\u1ec7u ch\u1ea9n \u0111o\u00e1n \u0111\u1ec3 kh\u00f4i ph\u1ee5c.");
+        table.put("This chat is locked",
+                "\u0110o\u1ea1n chat n\u00e0y \u0111\u00e3 b\u1ecb kh\u00f3a");
+        table.put("This phone has no file picker. Your settings haven't changed.",
+                "\u0110i\u1ec7n tho\u1ea1i n\u00e0y kh\u00f4ng c\u00f3 tr\u00ecnh ch\u1ecdn t\u1ec7p. C\u00e0i \u0111\u1eb7t c\u1ee7a b\u1ea1n ch\u01b0a thay \u0111\u1ed5i.");
+        table.put("This video has no file another player can open",
+                "Video n\u00e0y kh\u00f4ng c\u00f3 \u0111\u1ecbnh d\u1ea1ng t\u1ec7p m\u00e0 tr\u00ecnh ph\u00e1t kh\u00e1c m\u1edf \u0111\u01b0\u1ee3c");
+        table.put("Threads",
+                "Threads");
+        table.put("Three fingers",
+                "Ba ng\u00f3n tay");
+        table.put("Tidy up the Search tab and what it remembers.",
+                "L\u00e0m g\u1ecdn tab T\u00ecm ki\u1ebfm v\u00e0 l\u1ecbch s\u1eed t\u00ecm ki\u1ebfm.");
+        table.put("Time left",
+                "Th\u1eddi gian c\u00f2n l\u1ea1i");
+        table.put("Time posted",
+                "Th\u1eddi gian \u0111\u0103ng");
+        table.put("To open Messages here, turn on Show the Messages tab and restart.",
+                "\u0110\u1ec3 m\u1edf Tin nh\u1eafn t\u1ea1i \u0111\u00e2y, h\u00e3y b\u1eadt \"Hi\u1ec7n tab Tin nh\u1eafn\" v\u00e0 kh\u1edfi \u0111\u1ed9ng l\u1ea1i.");
+        table.put("To open Search here, turn off Hide the Search tab and restart.",
+                "\u0110\u1ec3 m\u1edf T\u00ecm ki\u1ebfm t\u1ea1i \u0111\u00e2y, h\u00e3y t\u1eaft \"\u1ea8n tab T\u00ecm ki\u1ebfm\" v\u00e0 kh\u1edfi \u0111\u1ed9ng l\u1ea1i.");
+        table.put("Too many tries. Wait %1$d seconds.",
+                "Th\u1eed sai qu\u00e1 nhi\u1ec1u l\u1ea7n. Vui l\u00f2ng \u0111\u1ee3i %1$d gi\u00e2y.");
+        table.put("Try again, or go back to Instagram.",
+                "Th\u1eed l\u1ea1i ho\u1eb7c quay l\u1ea1i Instagram.");
+        table.put("Try another word. Settings only appear for patches included in this install.",
+                "H\u00e3y th\u1eed t\u1eeb kh\u00f3a kh\u00e1c. C\u00e0i \u0111\u1eb7t ch\u1ec9 xu\u1ea5t hi\u1ec7n cho c\u00e1c b\u1ea3n v\u00e1 c\u00f3 trong l\u1ea7n c\u00e0i \u0111\u1eb7t n\u00e0y.");
+        table.put("Turn Ghost mode on or off with a tab long press",
+                "Nh\u1ea5n gi\u1eef tab \u0111\u1ec3 b\u1eadt/t\u1eaft Ch\u1ebf \u0111\u1ed9 \u1ea9n danh");
+        table.put("Turn off HDR brightness boosts",
+                "T\u1eaft t\u1ef1 \u0111\u1ed9ng t\u0103ng s\u00e1ng HDR");
+        table.put("Turn off double tap to like",
+                "T\u1eaft ch\u1ea1m hai l\u1ea7n \u0111\u1ec3 th\u00edch");
+        table.put("Turn on Change the like animation to use this choice.",
+                "B\u1eadt \"Thay \u0111\u1ed5i ho\u1ea1t \u1ea3nh th\u1ea3 tim\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
+        table.put("Turn on Default playback quality to use this choice.",
+                "B\u1eadt \"Ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t m\u1eb7c \u0111\u1ecbnh\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
+        table.put("Turn on Full screen Reels or Full screen Home to use this choice.",
+                "B\u1eadt \"Xem Reels to\u00e0n m\u00e0n h\u00ecnh\" ho\u1eb7c \"Xem Trang ch\u1ee7 to\u00e0n m\u00e0n h\u00ecnh\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
+        table.put("Turn on Instagram's clear mode on a reel and the next reels open in it too. Leave clear mode yourself and the next reels show their buttons again.",
+                "Khi b\u1ea1n b\u1eadt ch\u1ebf \u0111\u1ed9 to\u00e0n c\u1ea3nh (Clear mode) tr\u00ean m\u1ed9t reel, c\u00e1c reel ti\u1ebfp theo c\u0169ng s\u1ebd t\u1ef1 \u0111\u1ed9ng m\u1edf \u1edf ch\u1ebf \u0111\u1ed9 to\u00e0n c\u1ea3nh cho \u0111\u1ebfn khi b\u1ea1n t\u1eaft.");
+        table.put("Turn on Show a story's exact time to use this choice.",
+                "B\u1eadt \"Hi\u1ec7n th\u1eddi gian ch\u00ednh x\u00e1c c\u1ee7a tin\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
+    }
+
+    private static void fillVi17(Map<String, String> table) {
+        table.put("Turn on Show it as a chip to use this choice.",
+                "B\u1eadt \"Hi\u1ec3n th\u1ecb d\u01b0\u1edbi d\u1ea1ng nh\u00e3n th\u1ebb\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
+        table.put("Turn on Start Home on Following to use this choice.",
+                "B\u1eadt \"M\u1edf Trang ch\u1ee7 \u1edf m\u1ee5c \u0110ang theo d\u00f5i\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
+        table.put("Turn on Story ring size to use this choice.",
+                "B\u1eadt \"K\u00edch th\u01b0\u1edbc vi\u1ec1n tin\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
+        table.put("Turn on Tap to play to use this choice.",
+                "B\u1eadt \"Ch\u1ea1m \u0111\u1ec3 ph\u00e1t\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
+        table.put("Turn on a set of switches in one tap, or put every switch back the way it started. Press and hold to hide this row.",
+                "B\u1eadt nhanh m\u1ed9t nh\u00f3m t\u00ednh n\u0103ng ch\u1ec9 b\u1eb1ng m\u1ed9t ch\u1ea1m ho\u1eb7c \u0111\u01b0a m\u1ecdi th\u1ee9 v\u1ec1 m\u1eb7c \u0111\u1ecbnh ban \u0111\u1ea7u. Nh\u1ea5n gi\u1eef \u0111\u1ec3 \u1ea9n d\u00f2ng n\u00e0y.");
+        table.put("Turns Instagram's blue, on Follow buttons, links and the like, into the color you pick below. Restart Instagram to see the change.",
+                "\u0110\u1ed5i m\u00e0u xanh lam m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram (tr\u00ean n\u00fat Theo d\u00f5i, li\u00ean k\u1ebft, v.v.) th\u00e0nh m\u00e0u b\u1ea1n ch\u1ecdn b\u00ean d\u01b0\u1edbi. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Turns the switches that keep what you do to yourself on or off in one go, like View stories anonymously and Hide that you're typing. Each one keeps its own switch.",
+                "B\u1eadt ho\u1eb7c t\u1eaft nhanh t\u1ea5t c\u1ea3 c\u00e1c t\u00ednh n\u0103ng ri\u00eang t\u01b0 trong m\u1ed9t l\u1ea7n ch\u1ea1m (nh\u01b0 Xem tin \u1ea9n danh, \u1ea8n \u0111ang so\u1ea1n tin). M\u1ed7i t\u00ednh n\u0103ng v\u1eabn c\u00f3 th\u1ec3 \u0111i\u1ec1u ch\u1ec9nh ri\u00eang l\u1ebb.");
+        table.put("Two fingers",
+                "Hai ng\u00f3n tay");
+        table.put("Under a name in your messages and in a chat, the exact time they were last on, like Active at 3:42 PM, replaces Active 3h ago. Active now stays as it is.",
+                "Hi\u1ec3n th\u1ecb th\u1eddi gian ho\u1ea1t \u0111\u1ed9ng c\u1ee5 th\u1ec3 (v\u00ed d\u1ee5: Ho\u1ea1t \u0111\u1ed9ng l\u00fac 15:42) thay v\u00ec \u01b0\u1edbc t\u00ednh chung chung nh\u01b0 Ho\u1ea1t \u0111\u1ed9ng 3 gi\u1edd tr\u01b0\u1edbc. Tr\u1ea1ng th\u00e1i \u0110ang ho\u1ea1t \u0111\u1ed9ng gi\u1eef nguy\u00ean.");
+        table.put("Under the counts",
+                "B\u00ean d\u01b0\u1edbi s\u1ed1 li\u1ec7u");
+        table.put("Undo cleared positions",
+                "Ho\u00e0n t\u00e1c x\u00f3a v\u1ecb tr\u00ed \u0111\u00e3 ph\u00e1t");
+        table.put("Undo couldn't fully restore the settings. Check the shown values. Undo has been used up.",
+                "Ho\u00e0n t\u00e1c kh\u00f4ng th\u1ec3 kh\u00f4i ph\u1ee5c ho\u00e0n to\u00e0n c\u00e0i \u0111\u1eb7t. H\u00e3y ki\u1ec3m tra c\u00e1c gi\u00e1 tr\u1ecb hi\u1ec3n th\u1ecb.");
+        table.put("Undo has expired.",
+                "\u0110\u00e3 h\u1ebft th\u1eddi gian ho\u00e0n t\u00e1c.");
+        table.put("Undo is available until %1$s.",
+                "C\u00f3 th\u1ec3 ho\u00e0n t\u00e1c cho \u0111\u1ebfn %1$s.");
+        table.put("Undo is available until %1$s. Restarting Instagram discards Undo.",
+                "C\u00f3 th\u1ec3 ho\u00e0n t\u00e1c cho \u0111\u1ebfn %1$s. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram s\u1ebd h\u1ee7y quy\u1ec1n ho\u00e0n t\u00e1c.");
+        table.put("Undo settings import",
+                "Ho\u00e0n t\u00e1c nh\u1eadp c\u00e0i \u0111\u1eb7t");
+        table.put("Unfollower list cleared.",
+                "\u0110\u00e3 x\u00f3a danh s\u00e1ch ng\u01b0\u1eddi h\u1ee7y theo d\u00f5i.");
+        table.put("Unlock",
+                "M\u1edf kh\u00f3a");
+        table.put("Unlock Instagram",
+                "M\u1edf kh\u00f3a Instagram");
+        table.put("Unlock this chat",
+                "M\u1edf kh\u00f3a \u0111o\u1ea1n chat n\u00e0y");
+        table.put("Unlock with",
+                "M\u1edf kh\u00f3a b\u1eb1ng");
+        table.put("Unlock your messages",
+                "M\u1edf kh\u00f3a tin nh\u1eafn c\u1ee7a b\u1ea1n");
+        table.put("Up to %1$s",
+                "L\u00ean \u0111\u1ebfn %1$s");
+        table.put("Updates",
+                "C\u1eadp nh\u1eadt");
+        table.put("Updating remembered positions...",
+                "\u0110ang c\u1eadp nh\u1eadt c\u00e1c v\u1ecb tr\u00ed \u0111\u00e3 ghi nh\u1edb...");
+        table.put("Upload stories at full quality",
+                "T\u1ea3i l\u00ean tin \u1edf ch\u1ea5t l\u01b0\u1ee3ng g\u1ed1c");
+        table.put("Use 4 to 8 digits.",
+                "S\u1eed d\u1ee5ng t\u1eeb 4 \u0111\u1ebfn 8 ch\u1eef s\u1ed1.");
+        table.put("Use the system photo picker",
+                "D\u00f9ng tr\u00ecnh ch\u1ecdn \u1ea3nh c\u1ee7a h\u1ec7 th\u1ed1ng");
+        table.put("Username",
+                "T\u00ean ng\u01b0\u1eddi d\u00f9ng");
+        table.put("Username copied",
+                "\u0110\u00e3 sao ch\u00e9p t\u00ean ng\u01b0\u1eddi d\u00f9ng");
+        table.put("Version",
+                "Phi\u00ean b\u1ea3n");
+        table.put("Version %1$s for Instagram %2$s",
+                "Phi\u00ean b\u1ea3n %1$s cho Instagram %2$s");
+        table.put("Video file name",
+                "T\u00ean t\u1ec7p video");
+        table.put("Video stories you post are sent up to 1080 pixels wide instead of 720, as they are with Instagram's own Upload at highest quality setting on. Photo stories stay as they are.",
+                "Tin video b\u1ea1n \u0111\u0103ng s\u1ebd \u0111\u01b0\u1ee3c g\u1eedi \u1edf \u0111\u1ed9 ph\u00e2n gi\u1ea3i chi\u1ec1u r\u1ed9ng l\u00ean \u0111\u1ebfn 1080 pixel thay v\u00ec 720, t\u01b0\u01a1ng t\u1ef1 khi b\u1eadt T\u1ea3i l\u00ean \u1edf ch\u1ea5t l\u01b0\u1ee3ng cao nh\u1ea5t c\u1ee7a Instagram. Tin \u1ea3nh gi\u1eef nguy\u00ean.");
+        table.put("Videos and reels over two minutes pick up where you left off. Seek to start elsewhere. Live videos and ads start as usual.",
+                "Video v\u00e0 reels d\u00e0i h\u01a1n 2 ph\u00fat s\u1ebd ph\u00e1t ti\u1ebfp t\u1eeb \u0111o\u1ea1n b\u1ea1n d\u1eebng l\u1ea1i tr\u01b0\u1edbc \u0111\u00f3. Tua \u0111\u1ec3 b\u1eaft \u0111\u1ea7u t\u1eeb \u0111i\u1ec3m kh\u00e1c. Video tr\u1ef1c ti\u1ebfp v\u00e0 qu\u1ea3ng c\u00e1o v\u1eabn b\u1eaft \u0111\u1ea7u t\u1eeb \u0111\u1ea7u.");
+        table.put("Videos are named %1$s. Photos are always named %2$s followed by the date and time.",
+                "Video \u0111\u01b0\u1ee3c \u0111\u1eb7t t\u00ean theo %1$s. \u1ea2nh lu\u00f4n \u0111\u01b0\u1ee3c \u0111\u1eb7t t\u00ean l\u00e0 %2$s k\u00e8m ng\u00e0y gi\u1edd.");
+        table.put("Videos go to %1$s and photos to %2$s.",
+                "Video l\u01b0u v\u00e0o %1$s v\u00e0 \u1ea3nh l\u01b0u v\u00e0o %2$s.");
+        table.put("Videos play at the best quality up to %1$s that Instagram offers for each, or the closest above.",
+                "Video s\u1ebd ph\u00e1t \u1edf ch\u1ea5t l\u01b0\u1ee3ng t\u1ed1t nh\u1ea5t l\u00ean \u0111\u1ebfn %1$s m\u00e0 Instagram cung c\u1ea5p, ho\u1eb7c m\u1ee9c g\u1ea7n nh\u1ea5t b\u00ean tr\u00ean.");
+        table.put("Videos play at the highest quality Instagram offers for each.",
+                "Video s\u1ebd ph\u00e1t \u1edf ch\u1ea5t l\u01b0\u1ee3ng cao nh\u1ea5t m\u00e0 Instagram cung c\u1ea5p.");
+        table.put("Videos play at the lowest quality Instagram offers for each.",
+                "Video s\u1ebd ph\u00e1t \u1edf ch\u1ea5t l\u01b0\u1ee3ng th\u1ea5p nh\u1ea5t m\u00e0 Instagram cung c\u1ea5p.");
+        table.put("Videos wait for your tap where the choice below says. Feed videos show a play button, as they do when you use less mobile data.",
+                "Video s\u1ebd ch\u1edd b\u1ea1n ch\u1ea1m m\u1edbi ph\u00e1t t\u1ea1i c\u00e1c v\u1ecb tr\u00ed \u0111\u01b0\u1ee3c ch\u1ecdn b\u00ean d\u01b0\u1edbi. Video tr\u00ean b\u1ea3ng tin s\u1ebd hi\u1ec7n n\u00fat ph\u00e1t, t\u01b0\u01a1ng t\u1ef1 ch\u1ebf \u0111\u1ed9 ti\u1ebft ki\u1ec7m d\u1eef li\u1ec7u.");
+        table.put("Videos, reels and stories play at the quality below, starting with the next one you open.",
+                "Video, reels v\u00e0 tin s\u1ebd ph\u00e1t \u1edf ch\u1ea5t l\u01b0\u1ee3ng b\u00ean d\u01b0\u1edbi, \u00e1p d\u1ee5ng t\u1eeb video ti\u1ebfp theo b\u1ea1n m\u1edf.");
+        table.put("View DM photos and videos anonymously",
+                "Xem \u1ea3nh v\u00e0 video t\u1ef1 h\u1ee7y trong tin nh\u1eafn \u1ea9n danh");
+        table.put("View live anonymously",
+                "Xem ph\u00e1t tr\u1ef1c ti\u1ebfp \u1ea9n danh");
+        table.put("View profile picture",
+                "Xem \u1ea3nh \u0111\u1ea1i di\u1ec7n");
+        table.put("View stories anonymously",
+                "Xem tin \u1ea9n danh");
+        table.put("Voice message",
+                "Tin nh\u1eafn tho\u1ea1i");
+        table.put("Volume up still raises the phone's volume, but a muted reel stays muted until you unmute it.",
+                "B\u1ea5m ph\u00edm t\u0103ng \u00e2m l\u01b0\u1ee3ng v\u1eabn t\u0103ng \u00e2m l\u01b0\u1ee3ng c\u1ee7a m\u00e1y, nh\u01b0ng reel \u0111ang t\u1eaft ti\u1ebfng v\u1eabn s\u1ebd gi\u1eef im l\u1eb7ng cho \u0111\u1ebfn khi b\u1ea1n t\u1ef1 m\u1edf ti\u1ebfng.");
+        table.put("Wait after auto scroll",
+                "Ch\u1edd ch\u1ea1m sau khi t\u1ef1 \u0111\u1ed9ng cu\u1ed9n");
+        table.put("Wait for a tap to find it",
+                "Ch\u1edd ch\u1ea1m \u0111\u1ec3 t\u00ecm ki\u1ebfm");
+        table.put("Watch on TV",
+                "Xem tr\u00ean TV");
+        table.put("Web links you tap open in your usual browser, without Instagram's click tracker. Instagram pages and ads still open in the app.",
+                "Li\u00ean k\u1ebft web b\u1ea1n nh\u1ea5n v\u00e0o s\u1ebd m\u1edf b\u1eb1ng tr\u00ecnh duy\u1ec7t m\u1eb7c \u0111\u1ecbnh m\u00e0 kh\u00f4ng b\u1ecb theo d\u00f5i nh\u1ea5p chu\u1ed9t c\u1ee7a Instagram. C\u00e1c trang Instagram v\u00e0 qu\u1ea3ng c\u00e1o v\u1eabn m\u1edf trong \u1ee9ng d\u1ee5ng.");
+        table.put("What you open from search stays out of Recent, in the app and on Instagram's side. Searches already there stay until you clear them.",
+                "Nh\u1eefng g\u00ec b\u1ea1n m\u1edf t\u1eeb k\u1ebft qu\u1ea3 t\u00ecm ki\u1ebfm s\u1ebd kh\u00f4ng l\u01b0u v\u00e0o m\u1ee5c G\u1ea7n \u0111\u00e2y, c\u1ea3 trong \u1ee9ng d\u1ee5ng l\u1eabn m\u00e1y ch\u1ee7 Instagram.");
+        table.put("WhatsApp",
+                "WhatsApp");
+        table.put("WhatsApp status",
+                "Tr\u1ea1ng th\u00e1i WhatsApp");
+        table.put("When Instagram has more than 500 MB of saved photos and videos, deletes the photos as you leave it and the videos the next time it starts. Your sign-in, drafts and settings stay.",
+                "Khi Instagram t\u00edch t\u1ee5 h\u01a1n 500 MB \u1ea3nh v\u00e0 video \u0111\u1ec7m, t\u1ef1 \u0111\u1ed9ng d\u1ecdn \u1ea3nh khi b\u1ea1n tho\u00e1t \u1ee9ng d\u1ee5ng v\u00e0 d\u1ecdn video trong l\u1ea7n m\u1edf ti\u1ebfp theo. Phi\u00ean \u0111\u0103ng nh\u1eadp, b\u1ea3n nh\u00e1p v\u00e0 c\u00e0i \u0111\u1eb7t v\u1eabn an to\u00e0n.");
+        table.put("When a comment starts with @names, like most replies do, Copy leaves them out. The comment in Instagram stays the same.",
+                "Khi b\u00ecnh lu\u1eadn b\u1eaft \u0111\u1ea7u b\u1eb1ng c\u00e1c @t\u00ean nh\u1eafc \u0111\u1ebfn, t\u00f9y ch\u1ecdn Sao ch\u00e9p s\u1ebd t\u1ef1 \u0111\u1ed9ng l\u01b0\u1ee3c b\u1ecf ch\u00fang.");
+        table.put("When a reel ends, Reels moves on to the next one instead of playing it again. It uses Instagram's own auto scroll, even on accounts where Instagram doesn't offer it. While it's on, Instagram's own Auto scroll switch can't turn it off. Restart Instagram to see the change.",
+                "Khi m\u1ed9t reel ph\u00e1t xong, \u1ee9ng d\u1ee5ng s\u1ebd t\u1ef1 chuy\u1ec3n sang reel ti\u1ebfp theo thay v\u00ec ph\u00e1t l\u1ea1i. S\u1eed d\u1ee5ng c\u01a1 ch\u1ebf cu\u1ed9n t\u1ef1 \u0111\u1ed9ng c\u1ee7a Instagram. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("When the reel isn't on the first screen, the profile shows a Find the reel button instead of scrolling on its own.",
+                "Khi reel kh\u00f4ng n\u1eb1m \u1edf trang \u0111\u1ea7u ti\u00ean, trang c\u00e1 nh\u00e2n s\u1ebd hi\u1ec7n n\u00fat T\u00ecm reel thay v\u00ec t\u1ef1 \u0111\u1ed9ng cu\u1ed9n.");
+        table.put("Where videos wait",
+                "V\u1ecb tr\u00ed video ch\u1edd ph\u00e1t");
+    }
+
+    private static void fillVi18(Map<String, String> table) {
+        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
+                "Khi xem \u1ea9n danh, tin b\u1ea1n \u0111\u00e3 xem s\u1ebd chuy\u1ec3n sang m\u00e0u x\u00e1m v\u00e0 chuy\u1ec3n v\u1ec1 cu\u1ed1i h\u00e0ng (ch\u1ec9 tr\u00ean thi\u1ebft b\u1ecb n\u00e0y). Instagram v\u1eabn kh\u00f4ng nh\u1eadn \u0111\u01b0\u1ee3c th\u00f4ng tin b\u1ea1n \u0111\u00e3 xem.");
+        table.put("Who unfollowed you",
+                "Nh\u1eefng ng\u01b0\u1eddi \u0111\u00e3 h\u1ee7y theo d\u00f5i b\u1ea1n");
+        table.put("Wi-Fi stays as it is. Turn this off to save data on every network.",
+                "K\u1ebft n\u1ed1i Wi-Fi gi\u1eef nguy\u00ean. T\u1eaft t\u00f9y ch\u1ecdn n\u00e0y \u0111\u1ec3 ti\u1ebft ki\u1ec7m d\u1eef li\u1ec7u tr\u00ean m\u1ecdi lo\u1ea1i m\u1ea1ng.");
+        table.put("Words or phrases, with a comma or a new line between them. Capital letters don't matter, and a hashtag works too.",
+                "Nh\u1eadp c\u00e1c t\u1eeb ho\u1eb7c c\u1ee5m t\u1eeb c\u00e1ch nhau b\u1eb1ng d\u1ea5u ph\u1ea9y ho\u1eb7c d\u00f2ng m\u1edbi. Kh\u00f4ng ph\u00e2n bi\u1ec7t ch\u1eef hoa ch\u1eef th\u01b0\u1eddng, h\u1ed7 tr\u1ee3 c\u1ea3 hashtag.");
+        table.put("Writes the account that posted, the post date and a link to the post into a saved photo's details, the EXIF a gallery or exiftool reads. JPEG photos only, and only what the save knows. The picture itself is unchanged.",
+                "Ghi th\u00f4ng tin t\u00e0i kho\u1ea3n \u0111\u0103ng, ng\u00e0y \u0111\u0103ng v\u00e0 li\u00ean k\u1ebft v\u00e0o th\u00f4ng tin chi ti\u1ebft (EXIF) c\u1ee7a \u1ea3nh \u0111\u00e3 l\u01b0u. Ch\u1ec9 \u00e1p d\u1ee5ng cho \u1ea3nh JPEG. B\u1ea3n th\u00e2n h\u00ecnh \u1ea3nh kh\u00f4ng b\u1ecb thay \u0111\u1ed5i.");
+        table.put("Wrong PIN. Try again.",
+                "Sai m\u00e3 PIN. Vui l\u00f2ng th\u1eed l\u1ea1i.");
+        table.put("X",
+                "X (Twitter)");
+        table.put("You cleared the remembered playback positions.",
+                "B\u1ea1n \u0111\u00e3 x\u00f3a c\u00e1c v\u1ecb tr\u00ed ph\u00e1t \u0111\u00e3 ghi nh\u1edb.");
+        table.put("You paused HushGram.",
+                "B\u1ea1n \u0111\u00e3 t\u1ea1m d\u1eebng TADa.");
+        table.put("Your fingerprint, face or screen lock unlocks your messages.",
+                "D\u00f9ng v\u00e2n tay, khu\u00f4n m\u1eb7t ho\u1eb7c kh\u00f3a m\u00e0n h\u00ecnh c\u1ee7a m\u00e1y \u0111\u1ec3 m\u1edf kh\u00f3a tin nh\u1eafn.");
+        table.put("Your inbox and chats stay covered until your fingerprint, face or screen lock says it's you. Message notifications say only that a message came.",
+                "H\u1ed9p th\u01b0 v\u00e0 c\u00e1c cu\u1ed9c tr\u00f2 chuy\u1ec7n s\u1ebd \u0111\u01b0\u1ee3c b\u1ea3o v\u1ec7 cho \u0111\u1ebfn khi b\u1ea1n m\u1edf kh\u00f3a b\u1eb1ng v\u00e2n tay, khu\u00f4n m\u1eb7t ho\u1eb7c m\u00e3 kh\u00f3a. Th\u00f4ng b\u00e1o tin nh\u1eafn s\u1ebd ch\u1ec9 hi\u1ec7n l\u00e0 c\u00f3 tin nh\u1eafn m\u1edbi.");
+        table.put("Your messages are locked",
+                "Tin nh\u1eafn c\u1ee7a b\u1ea1n \u0111\u00e3 b\u1ecb kh\u00f3a");
+        table.put("Your phone's font",
+                "Ph\u00f4ng ch\u1eef c\u1ee7a \u0111i\u1ec7n tho\u1ea1i");
+        table.put("Your version, the source code and licenses.",
+                "Phi\u00ean b\u1ea3n c\u1ee7a b\u1ea1n, m\u00e3 ngu\u1ed3n v\u00e0 gi\u1ea5y ph\u00e9p m\u00e3 ngu\u1ed3n m\u1edf.");
+        table.put("Zoomed photo",
+                "\u1ea2nh \u0111\u00e3 ph\u00f3ng to");
+        table.put("the pure black dark mode",
+                "ch\u1ebf \u0111\u1ed9 t\u1ed1i \u0111en tuy\u1ec1n");
+        table.put("the raised version code",
+                "m\u00e3 phi\u00ean b\u1ea3n n\u00e2ng cao");
+        table.put("the re-signed build fix",
+                "b\u1ea3n v\u00e1 ch\u1eef k\u00fd \u1ee9ng d\u1ee5ng");
+        table.put("the removed advertising ID permissions",
+                "c\u00e1c quy\u1ec1n ID qu\u1ea3ng c\u00e1o \u0111\u00e3 b\u1ecb x\u00f3a");
+        table.put("the start-up fix for x86 devices",
+                "b\u1ea3n s\u1eeda l\u1ed7i kh\u1edfi \u0111\u1ed9ng cho thi\u1ebft b\u1ecb x86");
+        table.put("this sound",
+                "\u00e2m thanh n\u00e0y");
     }
 }

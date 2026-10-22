@@ -33,9 +33,9 @@ internal object SettingsStateFingerprint : Fingerprint(
 
 /** Preserve a marked settings dialog on both the traced and untraced creation paths. */
 internal fun BytecodePatchContext.preserveSettingsState() {
-    val method = uniqueMethod("HushGram settings", "host state removal", SettingsStateFingerprint)
+    val method = uniqueMethod("TADa settings", "host state removal", SettingsStateFingerprint)
     if (method.definingClass !in superclassChain(MAIN_ACTIVITY).toList()) {
-        throw PatchException("HushGram settings: state removal is outside the main activity hierarchy")
+        throw PatchException("TADa settings: state removal is outside the main activity hierarchy")
     }
     val flow = ControlFlow.of(method)
     val code = flow.instructions
@@ -43,7 +43,7 @@ internal fun BytecodePatchContext.preserveSettingsState() {
         code[index].opcode in setOf(Opcode.INVOKE_VIRTUAL, Opcode.INVOKE_VIRTUAL_RANGE) &&
             (code[index] as? ReferenceInstruction)?.reference.toString() == REMOVE
     }
-    if (calls.size != 2) throw PatchException("HushGram settings: expected two framework state removals, found ${calls.size}")
+    if (calls.size != 2) throw PatchException("TADa settings: expected two framework state removals, found ${calls.size}")
 
     // At joins, retain only origins shared by every incoming path. Exception edges carry the
     // state before the throwing instruction, so a failed write cannot prove a new value.
@@ -81,9 +81,9 @@ internal fun BytecodePatchContext.preserveSettingsState() {
             is FiveRegisterInstruction -> listOf(call.registerC, call.registerD).takeIf { call.registerCount == 2 }
             is RegisterRangeInstruction -> listOf(call.startRegister, call.startRegister + 1).takeIf { call.registerCount == 2 }
             else -> null
-        } ?: throw PatchException("HushGram settings: unsupported framework removal registers")
+        } ?: throw PatchException("TADa settings: unsupported framework removal registers")
         if (before[at]?.get(registers[0]) != "bundle" || before[at]?.get(registers[1]) != "key") {
-            throw PatchException("HushGram settings: removal does not use the saved bundle and framework key on every path")
+            throw PatchException("TADa settings: removal does not use the saved bundle and framework key on every path")
         }
         if (call is RegisterRangeInstruction) {
             "invoke-static/range { v${registers[0]} .. v${registers[1]} }, $REMOVE_FRAMEWORK_STATE"

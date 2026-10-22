@@ -72,7 +72,7 @@ private const val STRING = "Ljava/lang/String;"
 val storyMentionsPatch = bytecodePatch(
     name = "See who a story mentions",
     description = "Adds a small label in a story's header showing how many accounts it mentions. Tap it for a " +
-        "list and tap an account to open their profile. Starts off. Turn it on in HushGram settings > Stories.",
+        "list and tap an account to open their profile. Starts off. Turn it on in TADa settings > Stories.",
 ) {
     category("Stories")
     dependsOn(settingsPatch, instagramExtensionPatch)

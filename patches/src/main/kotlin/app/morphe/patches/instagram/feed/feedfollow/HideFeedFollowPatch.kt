@@ -27,7 +27,7 @@ internal const val FEED_FOLLOW_STATUS = "feedFollow"
 val hideFeedFollowPatch = bytecodePatch(
     name = "Hide Follow on feed posts",
     description = "Takes the Follow and Subscribe buttons off the top of posts in your feed. The name, time and menu " +
-        "stay. Starts off. Turn it on in HushGram settings > Feed.",
+        "stay. Starts off. Turn it on in TADa settings > Feed.",
 ) {
     category("Interface")
     dependsOn(settingsPatch, instagramExtensionPatch)

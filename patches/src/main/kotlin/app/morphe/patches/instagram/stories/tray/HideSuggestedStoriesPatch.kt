@@ -91,7 +91,7 @@ internal val MADE_REELS = listOf(
 val hideSuggestedStoriesPatch = bytecodePatch(
     name = "Hide suggested stories",
     description = "Removes stories from accounts you don't follow from the row at the top of Home. More switches " +
-        "hide rewinds and memories, or the whole row. Starts on. Turn it off in HushGram settings > Stories.",
+        "hide rewinds and memories, or the whole row. Starts on. Turn it off in TADa settings > Stories.",
 ) {
     category("Stories")
     dependsOn(settingsPatch, instagramExtensionPatch)

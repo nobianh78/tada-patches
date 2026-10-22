@@ -38,7 +38,7 @@ val hideCaptionWordReelsPatch = bytecodePatch(
     name = "Hide reels by caption words",
     description = "Leaves out reels whose caption holds a word or phrase from your list, and Home's posts too " +
         "with Also on Home. Starts off. " +
-        "Turn it on and type the words in HushGram settings > Reels.",
+        "Turn it on and type the words in TADa settings > Reels.",
 ) {
     category("Reels")
     dependsOn(settingsPatch, instagramExtensionPatch)

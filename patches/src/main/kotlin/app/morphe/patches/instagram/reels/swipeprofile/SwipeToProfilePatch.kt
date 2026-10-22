@@ -80,7 +80,7 @@ private val MOVES = setOf(Opcode.MOVE, Opcode.MOVE_FROM16, Opcode.MOVE_16)
 val swipeToProfilePatch = bytecodePatch(
     name = "Swipe left to open the profile",
     description = "Makes a left swipe on a reel open the profile of the person who posted it, like Instagram used " +
-        "to. Tap Friends at the top to reach your friends' reels. Starts off. Turn it on in HushGram settings > Reels.",
+        "to. Tap Friends at the top to reach your friends' reels. Starts off. Turn it on in TADa settings > Reels.",
     default = false,
 ) {
     category("Reels")

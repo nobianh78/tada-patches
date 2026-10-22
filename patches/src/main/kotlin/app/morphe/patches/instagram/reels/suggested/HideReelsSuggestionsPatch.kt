@@ -72,7 +72,7 @@ private const val STRING = "Ljava/lang/String;"
 val hideReelsSuggestionsPatch = bytecodePatch(
     name = "Hide suggested accounts in Reels",
     description = "Leaves out the cards of accounts to follow that Instagram puts between reels. Every reel still " +
-        "plays. Starts off. Turn it on in HushGram settings > Reels.",
+        "plays. Starts off. Turn it on in TADa settings > Reels.",
 ) {
     category("Reels")
     dependsOn(settingsPatch, instagramExtensionPatch)

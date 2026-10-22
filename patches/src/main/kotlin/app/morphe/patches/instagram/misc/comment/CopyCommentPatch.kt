@@ -16,7 +16,7 @@ import app.morphe.patches.shared.compat.AppCompatibilities
 val copyCommentPatch = bytecodePatch(
     name = "Copy comment",
     description = "Adds Copy and Copy username to the menu you get on a comment, so you can copy its text or the " +
-        "commenter's username. Starts off. Turn it on in HushGram settings > Comments.",
+        "commenter's username. Starts off. Turn it on in TADa settings > Comments.",
     default = true,
 ) {
     category("Interaction")

@@ -62,7 +62,7 @@ private const val GET_INT = "getInt"
 val uploadStoriesAtFullQualityPatch = bytecodePatch(
     name = "Upload stories at full quality",
     description = "Sends the video stories you post at up to 1080 pixels wide instead of 720, as Instagram does with " +
-        "its own Upload at highest quality setting on. Starts off. Turn it on in HushGram settings > Stories.",
+        "its own Upload at highest quality setting on. Starts off. Turn it on in TADa settings > Stories.",
     default = true,
 ) {
     category("Stories")

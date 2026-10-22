@@ -65,7 +65,7 @@ private fun refuse(detail: String): Nothing = throw PatchException("$PATCH: $det
 val startFeedVideosWithSoundPatch = bytecodePatch(
     name = "Start feed videos with sound",
     description = "Starts the first video on Home with its sound on, the same as tapping the video's speaker. Your " +
-        "phone's ringer and volume still count. Starts off. Turn it on in HushGram settings > Feed.",
+        "phone's ringer and volume still count. Starts off. Turn it on in TADa settings > Feed.",
 ) {
     category("Feed")
     dependsOn(settingsPatch, instagramExtensionPatch)

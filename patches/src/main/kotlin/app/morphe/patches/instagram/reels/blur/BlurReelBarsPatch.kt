@@ -56,7 +56,7 @@ private fun refuse(detail: String): Nothing = throw PatchException("$PATCH: $det
 val blurReelBarsPatch = bytecodePatch(
     name = "Blur the bars around Reels",
     description = "Shows a blurred copy of a reel above and below it, or beside it, where Instagram would leave " +
-        "black bars. Starts off. Turn it on in HushGram settings > Reels.",
+        "black bars. Starts off. Turn it on in TADa settings > Reels.",
 ) {
     category("Reels")
     dependsOn(settingsPatch, instagramExtensionPatch)

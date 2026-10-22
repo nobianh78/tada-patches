@@ -23,7 +23,7 @@ import app.morphe.patches.shared.compat.AppCompatibilities
 val savedOnProfilePatch = bytecodePatch(
     name = "Saved on your profile",
     description = "Adds a bookmark to the tabs on your own profile, beside posts, reels and tagged, that opens " +
-        "Saved. Starts off. Turn it on in HushGram settings > Profiles, then restart Instagram.",
+        "Saved. Starts off. Turn it on in TADa settings > Profiles, then restart Instagram.",
 ) {
     category("Profiles")
     dependsOn(settingsPatch, instagramExtensionPatch)

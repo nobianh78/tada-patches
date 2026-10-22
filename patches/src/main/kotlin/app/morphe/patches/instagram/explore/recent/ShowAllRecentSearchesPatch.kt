@@ -45,7 +45,7 @@ private const val MATH_MIN = "Ljava/lang/Math;->min(II)I"
 val showAllRecentSearchesPatch = bytecodePatch(
     name = "Show all recent searches",
     description = "Lists every recent search under the search bar instead of the first few. See all and the x on " +
-        "each row work as before. Starts off. Turn it on in HushGram settings > Explore.",
+        "each row work as before. Starts off. Turn it on in TADa settings > Explore.",
     default = true,
 ) {
     category("Interface")

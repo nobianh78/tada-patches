@@ -58,7 +58,7 @@ private const val REELS_VIEWER_CONFIG = "Lcom/instagram/clips/intf/ClipsViewerCo
 val hideShareButtonPatch = bytecodePatch(
     name = "Hide the Share button",
     description = "Takes the Share button and its count off posts in your feed and off reels. Starts off. Turn it " +
-        "on in HushGram settings > Sharing.",
+        "on in TADa settings > Sharing.",
     default = true,
 ) {
     category("Interaction")

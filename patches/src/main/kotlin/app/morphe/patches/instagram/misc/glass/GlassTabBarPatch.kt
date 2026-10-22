@@ -28,7 +28,7 @@ val glassTabBarPatch = bytecodePatch(
     name = "Glass tab bar",
     description = "Draws the tab bar as a floating, rounded pill of frosted glass that blurs what's behind it " +
         "(Android 12 and newer), with a highlight on the tab you're on. Content can optionally run down behind it. " +
-        "Starts off. Turn it on in HushGram settings > Tab bar, then restart Instagram.",
+        "Starts off. Turn it on in TADa settings > Tab bar, then restart Instagram.",
 ) {
     category("Interface")
     dependsOn(settingsPatch, instagramExtensionPatch, barHeightsPatch)

@@ -71,7 +71,7 @@ val stopReelsScrollingPatch = bytecodePatch(
     name = "Stop Reels scrolling",
     description = "Stops a swipe in Reels from moving to the next reel, so you stay on the one you opened. A " +
         "second switch lets you watch 20 reels, then stops swiping for 15 minutes. Starts off. Turn it on in " +
-        "HushGram settings > Reels.",
+        "TADa settings > Reels.",
     default = true,
 ) {
     category("Reels")
