@@ -52,7 +52,7 @@ public final class L10nTranslations {
     }
 
     private static Map<String, String> buildDe() {
-        Map<String, String> table = new HashMap<>(2202);
+        Map<String, String> table = new HashMap<>(2200);
         fillDe0(table);
         fillDe1(table);
         fillDe2(table);
@@ -156,7 +156,7 @@ public final class L10nTranslations {
                 "Doppeltippen auf einen Beitrag oder ein Reel vergibt kein \u201eGef\u00e4llt mir\u201c mehr und zeigt kein Herz. Einmal tippen und der \u201eGef\u00e4llt mir\u201c-Button funktionieren wie bisher.");
         table.put("A double tap on a reel doesn't like it. Turn this off to keep double tap to like on reels.",
                 "Doppeltippen auf ein Reel vergibt kein \u201eGef\u00e4llt mir\u201c. Schalte das aus, um Reels weiter per Doppeltippen zu liken.");
-        table.put("A file named %1$s in %2$s paused HushGram.",
+        table.put("A file named %1$s in %2$s paused TADa.",
                 "Eine Datei namens %1$s in %2$s hat HushGram pausiert.");
         table.put("A finished story stays on screen until you tap or swipe. Turn this off for Instagram's timing.",
                 "Eine abgelaufene Story bleibt stehen, bis du tippst oder wischst. Schalte das aus, um Instagrams Timing zu nutzen.");
@@ -172,7 +172,7 @@ public final class L10nTranslations {
                 "Etwas mehr");
         table.put("A long press on the Instagram logo at the top of Home opens these settings. Off, the long press goes back to Instagram.",
                 "Langes Dr\u00fccken des Instagram-Logos oben auf der Startseite \u00f6ffnet diese Einstellungen. Aus geh\u00f6rt das lange Dr\u00fccken wieder Instagram.");
-        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens HushGram. A tap still opens Instagram's menu, and other profiles stay the same.",
+        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens TADa. A tap still opens Instagram's menu, and other profiles stay the same.",
                 "Langes Dr\u00fccken auf die Men\u00fctaste, die drei Striche oben rechts in deinem eigenen Profil, \u00f6ffnet HushGram. Ein Tippen \u00f6ffnet weiter Instagrams Men\u00fc, und andere Profile bleiben, wie sie sind.");
         table.put("A reel Instagram's auto scroll moves to waits for your tap too. Off, auto scroll plays reel after reel.",
                 "Ein Reel, zu dem Instagrams automatisches Scrollen wechselt, wartet ebenfalls auf deinen Tipp. Aus spielt das automatische Scrollen ein Reel nach dem anderen ab.");
@@ -517,7 +517,7 @@ public final class L10nTranslations {
                 "Eckengr\u00f6\u00dfe");
         table.put("Couldn't change every Ghost mode switch. Check them below.",
                 "Nicht jeder Schalter des Ghost-Modus lie\u00df sich \u00e4ndern. Pr\u00fcfe sie unten.");
-        table.put("Couldn't change every Ghost mode switch. Open HushGram settings to check them.",
+        table.put("Couldn't change every Ghost mode switch. Open TADa settings to check them.",
                 "Nicht jeder Schalter des Ghost-Modus lie\u00df sich \u00e4ndern. Pr\u00fcfe sie in den HushGram-Einstellungen.");
         table.put("Couldn't clear the download history. Try again.",
                 "Der Download-Verlauf konnte nicht gel\u00f6scht werden. Versuch es noch einmal.");
@@ -535,7 +535,7 @@ public final class L10nTranslations {
                 "Medienlink konnte nicht kopiert werden");
         table.put("Couldn't copy the username",
                 "Benutzername konnte nicht kopiert werden");
-        table.put("Couldn't export HushGram settings. Try another file.",
+        table.put("Couldn't export TADa settings. Try another file.",
                 "HushGram-Einstellungen konnten nicht exportiert werden. Versuche eine andere Datei.");
         table.put("Couldn't find the reel you came from",
                 "Das Reel, von dem du kamst, wurde nicht gefunden");
@@ -543,7 +543,7 @@ public final class L10nTranslations {
                 "Dieses Konto konnte nicht ausgeblendet werden");
         table.put("Couldn't hide this notice. Try again.",
                 "Dieser Hinweis konnte nicht ausgeblendet werden. Versuche es noch einmal.");
-        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in HushGram settings > Layout.",
+        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in TADa settings > Layout.",
                 "Deine Schriftdatei lie\u00df sich nicht laden, darum siehst du die Schriftart von Instagram. W\u00e4hle sie erneut unter HushGram-Einstellungen > Layout.");
         table.put("Couldn't mark as read",
                 "Konnte nicht als gelesen markiert werden");
@@ -559,7 +559,7 @@ public final class L10nTranslations {
                 "Die Einstellungen konnten weder gespeichert noch vollst\u00e4ndig wiederhergestellt werden. Pr\u00fcfe die angezeigten Werte und versuche R\u00fcckg\u00e4ngig.");
         table.put("Couldn't save the PIN.",
                 "Die PIN konnte nicht gespeichert werden.");
-        table.put("Couldn't save the playback quality. Open HushGram settings to set it.",
+        table.put("Couldn't save the playback quality. Open TADa settings to set it.",
                 "Die Wiedergabequalit\u00e4t konnte nicht gespeichert werden. \u00d6ffne die HushGram-Einstellungen, um sie dort zu setzen.");
         table.put("Couldn't save the settings. The previous values were restored.",
                 "Die Einstellungen konnten nicht gespeichert werden. Die vorherigen Werte wurden wiederhergestellt.");
@@ -570,7 +570,7 @@ public final class L10nTranslations {
     private static void fillDe4(Map<String, String> table) {
         table.put("Couldn't start the report export. Try again shortly.",
                 "Der Export des Berichts lie\u00df sich nicht starten. Versuche es gleich noch einmal.");
-        table.put("Couldn't turn HushGram back on. Try again.",
+        table.put("Couldn't turn TADa back on. Try again.",
                 "HushGram lie\u00df sich nicht wieder einschalten. Versuche es noch einmal.");
         table.put("Couldn't update the remembered playback positions.",
                 "Die gespeicherten Wiedergabepositionen konnten nicht aktualisiert werden.");
@@ -707,11 +707,11 @@ public final class L10nTranslations {
                 "Beispiel ohne Beitragsdetails");
         table.put("Explore",
                 "Entdecken");
-        table.put("Export HushGram settings",
+        table.put("Export TADa settings",
                 "HushGram-Einstellungen exportieren");
         table.put("Export diagnostic report",
                 "Diagnosebericht exportieren");
-        table.put("Exporting HushGram settings...",
+        table.put("Exporting TADa settings...",
                 "HushGram-Einstellungen werden exportiert...");
         table.put("Facebook",
                 "Facebook");
@@ -803,7 +803,7 @@ public final class L10nTranslations {
                 "Glas-Tab-Leiste");
         table.put("Gold",
                 "Gold");
-        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later HushGram builds need Change version code too, or they won't install over this one.",
+        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later TADa builds need Change version code too, or they won't install over this one.",
                 "Google Play bietet Metas Updates f\u00fcr diesen Build nicht an. Um zum normalen Instagram zur\u00fcckzukehren, deinstalliere zuerst diesen, was die Daten von Instagram auf diesem Handy l\u00f6scht. Sp\u00e4tere HushGram-Builds brauchen ebenfalls \u201eChange version code\u201c, sonst lassen sie sich nicht \u00fcber diesen installieren.");
         table.put("Google's emoji everywhere",
                 "\u00dcberall Googles Emojis");
@@ -955,8 +955,6 @@ public final class L10nTranslations {
                 "Folgen-Button ausblenden");
         table.put("Hide the Home tab",
                 "Den Startseite-Tab ausblenden");
-        table.put("Hide the HushGram row in Instagram's menu",
-                "HushGram-Zeile in Instagrams Men\u00fc ausblenden");
         table.put("Hide the Muse button on your profile",
                 "Muse-Schaltfl\u00e4che auf deinem Profil ausblenden");
         table.put("Hide the Muse card",
@@ -977,6 +975,8 @@ public final class L10nTranslations {
                 "Teilen-Button ausblenden");
         table.put("Hide the Stories tray",
                 "Stories-Leiste ausblenden");
+        table.put("Hide the TADa row in Instagram's menu",
+                "HushGram-Zeile in Instagrams Men\u00fc ausblenden");
         table.put("Hide the Threads button",
                 "Threads-Schaltfl\u00e4che ausblenden");
         table.put("Hide the call buttons in chats",
@@ -1066,37 +1066,9 @@ public final class L10nTranslations {
                 "Wie lange die Story noch zu sehen ist, etwa noch 18 Std. 14 Min. \u00c4ltere Stories zeigen Datum und Uhrzeit.");
         table.put("How the time shows",
                 "So wird die Zeit angezeigt");
-        table.put("How you open HushGram, and how this screen is laid out.",
+        table.put("How you open TADa, and how this screen is laid out.",
                 "Wie du HushGram \u00f6ffnest und wie dieser Bildschirm aufgebaut ist.");
-        table.put("HushGram %1$s on Instagram %2$s",
-                "HushGram %1$s auf Instagram %2$s");
-        table.put("HushGram PIN",
-                "HushGram-PIN");
-        table.put("HushGram is on",
-                "HushGram ist aktiv");
-        table.put("HushGram is paused",
-                "HushGram ist pausiert");
-        table.put("HushGram launch screen",
-                "HushGram-Startbildschirm");
-        table.put("HushGram paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in HushGram settings.",
-                "HushGram hat sich selbst pausiert, weil Instagram beim Start immer wieder abgest\u00fcrzt ist. Seine Schalter bleiben aus, bis du es in den HushGram-Einstellungen wieder einschaltest.");
-        table.put("HushGram pauses when Instagram restarts.",
-                "HushGram pausiert, sobald Instagram neu startet.");
-        table.put("HushGram remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
-                "HushGram merkt sich 30 Tage lang, wo du in bis zu 200 Videos aufgeh\u00f6rt hast. Tippe, um sie von diesem Ger\u00e4t zu l\u00f6schen.");
-        table.put("HushGram saves",
-                "Speichern mit HushGram");
-        table.put("HushGram settings",
-                "HushGram-Einstellungen");
-        table.put("HushGram settings are locked",
-                "HushGram-Einstellungen sind gesperrt");
-        table.put("HushGram settings couldn't open",
-                "HushGram-Einstellungen lie\u00dfen sich nicht \u00f6ffnen");
-        table.put("HushGram settings exported.",
-                "HushGram-Einstellungen exportiert.");
-        table.put("HushGram turns back on when Instagram restarts.",
-                "HushGram ist wieder aktiv, sobald Instagram neu startet.");
-        table.put("Import HushGram settings",
+        table.put("Import TADa settings",
                 "HushGram-Einstellungen importieren");
         table.put("Imported %1$d settings. Skipped %2$d that this version doesn't know.",
                 "%1$d Einstellungen importiert. %2$d \u00fcbersprungen, die diese Version nicht kennt.");
@@ -1106,7 +1078,7 @@ public final class L10nTranslations {
                 "Instagram-Blau");
         table.put("Instagram can't read your phone's advertising ID or tell Android's ad services which ads you saw or tapped. The permissions for them are gone from this build.",
                 "Instagram kann die Werbe-ID deines Telefons nicht lesen und den Werbediensten von Android nicht mitteilen, welche Anzeigen du gesehen oder angetippt hast. Die Berechtigungen daf\u00fcr fehlen in diesem Build.");
-        table.put("Instagram crashed or froze within a minute of starting three times in a row, so HushGram paused itself.",
+        table.put("Instagram crashed or froze within a minute of starting three times in a row, so TADa paused itself.",
                 "Instagram ist dreimal hintereinander innerhalb einer Minute nach dem Start abgest\u00fcrzt oder h\u00e4ngen geblieben, deshalb hat sich HushGram selbst pausiert.");
         table.put("Instagram doesn't notice when you take a screenshot, so whoever sent you a disappearing photo or video isn't told. Your screenshots save as usual.",
                 "Instagram bemerkt nicht, wenn du einen Screenshot machst, also erf\u00e4hrt niemand davon, der dir ein verschwindendes Foto oder Video geschickt hat. Deine Screenshots werden wie gewohnt gespeichert.");
@@ -1134,7 +1106,7 @@ public final class L10nTranslations {
                 "Instagram zeigt den Bildschirm nicht mehr an, der meldet, dass diese Version zu alt ist. Ein gepatchter Build aktualisiert sich nicht von selbst, so bleibt er nutzbar.");
         table.put("Instagram wakes your phone every minute or two, screen off included, only to note that it is still running. This stops that. Messages, notifications and everything you see are unaffected.",
                 "Instagram weckt dein Handy jede oder jede zweite Minute, auch bei ausgeschaltetem Bildschirm, nur um zu vermerken, dass es noch l\u00e4uft. Das h\u00f6rt damit auf. Nachrichten, Benachrichtigungen und alles, was du siehst, bleiben unver\u00e4ndert.");
-        table.put("Instagram's Settings and activity screen leaves out the HushGram row while another way here opens HushGram. With every other way off, the row comes back.",
+        table.put("Instagram's Settings and activity screen leaves out the TADa row while another way here opens TADa. With every other way off, the row comes back.",
                 "Solange ein anderer Weg HushGram \u00f6ffnet, fehlt die HushGram-Zeile auf Instagrams Seite Einstellungen und Aktivit\u00e4t. Sind alle anderen Wege aus, ist die Zeile wieder da.");
         table.put("Instagram's colors",
                 "Farben von Instagram");
@@ -1180,9 +1152,6 @@ public final class L10nTranslations {
                 "Reel-Geschwindigkeit beibehalten");
         table.put("Keep the zoom open",
                 "Zoom ge\u00f6ffnet lassen");
-    }
-
-    private static void fillDe9(Map<String, String> table) {
         table.put("Keep your chats private and your inbox clear of extras.",
                 "Halte deine Chats privat und dein Postfach frei von Extras.");
         table.put("Keeps Instagram's Music for you card from turning up between the stories you watch. The stories themselves stay.",
@@ -1211,6 +1180,9 @@ public final class L10nTranslations {
                 "L\u00e4sst Reels mit dem Hinweis \u201eBezahlte Partnerschaft\u201c weg, und Reels, die Instagram als beworben markiert. Werbung hat einen eigenen Schalter.");
         table.put("Leaves out the Add Yours cards, like Popular Add Yours and Join a trending Add Yours, that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "L\u00e4sst die \u201eDu bist dran\u201c-Karten weg, etwa beliebte oder angesagte Aufrufe zum Mitmachen, die Instagram zwischen die Stories setzt, durch die du tippst. Die Stories selbst bleiben.");
+    }
+
+    private static void fillDe9(Map<String, String> table) {
         table.put("Leaves out the Suggested for you cards of accounts to follow that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "L\u00e4sst die Karten \u201eVorschl\u00e4ge f\u00fcr dich\u201c mit Konten zum Folgen weg, die Instagram zwischen die Stories setzt, durch die du tippst. Die Stories selbst bleiben.");
         table.put("Leaves the Suggested for you accounts out of what shows when you tap the search bar. Recent searches stay.",
@@ -1263,11 +1235,11 @@ public final class L10nTranslations {
                 "Nachrichten sperren");
         table.put("Locked chats",
                 "Gesperrte Chats");
-        table.put("Long press %1$s to open HushGram instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
+        table.put("Long press %1$s to open TADa instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
                 "Dr\u00fccke lange auf %1$s, um HushGram statt der \u00fcblichen Tab-Aktion zu \u00f6ffnen. Normales Tippen und andere Tabs bleiben gleich. Nur Tabs, die dein Konto anzeigt, k\u00f6nnen verwendet werden.");
-        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens HushGram, that comes first.",
+        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens TADa, that comes first.",
                 "Dr\u00fccke lange auf %1$s, um statt der \u00fcblichen Tab-Aktion die Wiedergabequalit\u00e4t zu w\u00e4hlen. Normales Tippen und andere Tabs bleiben wie sie sind. Standard-Wiedergabequalit\u00e4t muss an sein. \u00d6ffnet derselbe Tab HushGram, hat das Vorrang.");
-        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens HushGram or picks the playback quality, that comes first.",
+        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens TADa or picks the playback quality, that comes first.",
                 "Dr\u00fccke lange auf %1$s, um statt der \u00fcblichen Tab-Aktion den Ghost-Modus ein- oder auszuschalten, und eine kurze Meldung sagt, ob er jetzt an oder aus ist. Normales Tippen und andere Tabs bleiben wie sie sind. \u00d6ffnet derselbe Tab HushGram oder w\u00e4hlt er die Wiedergabequalit\u00e4t, hat das Vorrang.");
         table.put("Long press a photo to zoom",
                 "Foto lange dr\u00fccken zum Zoomen");
@@ -1303,9 +1275,6 @@ public final class L10nTranslations {
                 "Nachrichten-Taste oben auf der Startseite");
         table.put("Messenger",
                 "Messenger");
-    }
-
-    private static void fillDe10(Map<String, String> table) {
         table.put("Meta AI",
                 "Meta AI");
         table.put("More",
@@ -1334,13 +1303,16 @@ public final class L10nTranslations {
                 "Keine App auf diesem Handy kann den Link \u00f6ffnen. Die Adresse ist %1$s.");
         table.put("No app on this phone can play this video",
                 "Keine App auf diesem Telefon kann dieses Video abspielen");
+    }
+
+    private static void fillDe10(Map<String, String> table) {
         table.put("No direct link for this one",
                 "Daf\u00fcr gibt es keinen direkten Link");
         table.put("No matching settings",
                 "Keine passenden Einstellungen");
         table.put("No one has left since then.",
                 "Seitdem ist niemand gegangen.");
-        table.put("No other way into HushGram is on, so the row stays in Instagram's menu.",
+        table.put("No other way into TADa is on, so the row stays in Instagram's menu.",
                 "Kein anderer Weg zu HushGram ist eingeschaltet, deshalb bleibt die Zeile in Instagrams Men\u00fc.");
         table.put("No pages chosen",
                 "Keine Seiten ausgew\u00e4hlt");
@@ -1426,9 +1398,6 @@ public final class L10nTranslations {
                 "\u00d6ffne einen Chat in Instagram und komm dann hierher zur\u00fcck, um ihn zu verstecken.");
         table.put("Open a chat in Instagram, then come back here to lock it.",
                 "\u00d6ffne einen Chat in Instagram und komm dann hierher zur\u00fcck, um ihn zu sperren.");
-    }
-
-    private static void fillDe11(Map<String, String> table) {
         table.put("Open a creator's profile from a reel, then their Reels tab, and it scrolls to that reel and outlines it for a moment. A photo reel is found in their posts. Stop looking ends the search where it is.",
                 "\u00d6ffne aus einem Reel das Profil des Creators und dann seinen Reels-Tab, und der Tab scrollt zu diesem Reel und rahmt es kurz ein. Ein Foto-Reel wird in seinen Beitr\u00e4gen gefunden. \u201eSuche beenden\u201c beendet die Suche dort, wo sie gerade ist.");
         table.put("Open app info",
@@ -1457,6 +1426,9 @@ public final class L10nTranslations {
                 "\u00d6ffnet die Startseite mit Beitr\u00e4gen von Konten, denen du folgst, statt mit \u201eF\u00fcr dich\u201c. Tippe oben auf der Startseite, um zu wechseln. Starte Instagram neu, um die \u00c4nderung zu sehen.");
         table.put("Opens a GitHub report with your versions and settings filled in. Add what happened.",
                 "\u00d6ffnet einen GitHub-Bericht, in dem deine Versionen und Einstellungen schon stehen. Schreib dazu, was passiert ist.");
+    }
+
+    private static void fillDe11(Map<String, String> table) {
         table.put("Orange",
                 "Orange");
         table.put("PIN",
@@ -1471,7 +1443,7 @@ public final class L10nTranslations {
                 "Seite %1$d, Video");
         table.put("Pause",
                 "Pausieren");
-        table.put("Pause HushGram",
+        table.put("Pause TADa",
                 "HushGram pausieren");
         table.put("Pause and diagnostics",
                 "Pause und Diagnose");
@@ -1529,14 +1501,14 @@ public final class L10nTranslations {
                 "Konten, die dir nicht zur\u00fcckfolgen, zuerst zeigen");
         table.put("Puts Activity, the screen the heart opens, on the tab bar before Profile. Tab order can move it, and Hide notifications on Home's header takes the heart away. Restart Instagram to see the change.",
                 "Setzt Aktivit\u00e4t, den Bildschirm hinter dem Herz, vor Profil in die Tab-Leiste. Mit Tab-Reihenfolge kannst du es verschieben, und Benachrichtigungen oben auf der Startseite ausblenden nimmt das Herz weg. Starte Instagram neu, um die \u00c4nderung zu sehen.");
-        table.put("Puts HushGram settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
-                "Zeigt die HushGram-Einstellungen im Men\u00fc, das beim langen Dr\u00fccken des Instagram-Symbols erscheint. Aus verschwinden sie aus diesem Men\u00fc.");
         table.put("Puts Instagram's logo in the middle of the top of Home, even with header buttons hidden or added. A feed's name shown there is centered too. Restart Instagram to see the change.",
                 "Setzt das Instagram-Logo oben auf der Startseite in die Mitte, auch wenn Tasten dort ausgeblendet oder hinzugef\u00fcgt sind. Ein dort angezeigter Feed-Name wird ebenfalls zentriert. Starte Instagram neu, um die \u00c4nderung zu sehen.");
         table.put("Puts Messages on the tab bar, before Profile, if Instagram left it off yours. Tab order can move it. Restart Instagram to see the change.",
                 "Setzt Nachrichten vor Profil in die Tab-Leiste, falls Instagram es bei dir weggelassen hat. Mit Tab-Reihenfolge kannst du es verschieben. Starte Instagram neu, um die \u00c4nderung zu sehen.");
         table.put("Puts Reels back on the tab bar if Instagram left it off yours. Hide the Reels tab wins if both are on. Restart Instagram to see the change.",
                 "Setzt Reels zur\u00fcck in die Tab-Leiste, falls Instagram es bei dir weggelassen hat. Reels-Tab ausblenden hat Vorrang, wenn beide an sind. Starte Instagram neu, um die \u00c4nderung zu sehen.");
+        table.put("Puts TADa settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
+                "Zeigt die HushGram-Einstellungen im Men\u00fc, das beim langen Dr\u00fccken des Instagram-Symbols erscheint. Aus verschwinden sie aus diesem Men\u00fc.");
         table.put("Puts a Block icon beside someone else's reel. A tap opens Instagram's own block screen for that account, so you still confirm it there.",
                 "Setzt ein \u201eBlockieren\u201c-Symbol neben das Reel eines anderen Kontos. Ein Tippen \u00f6ffnet Instagrams eigenen Blockieren-Bildschirm f\u00fcr dieses Konto, dort best\u00e4tigst du es noch.");
         table.put("Puts a Not interested icon beside a reel, so one tap does what Not interested in its menu does.",
@@ -1549,9 +1521,6 @@ public final class L10nTranslations {
                 "Setzt ein Musiksymbol neben ein Reel. Tippst du darauf, \u00fcberspringt der Reels-Tab andere Reels mit diesem Sound. Tippst du erneut, kommen sie zur\u00fcck.");
         table.put("Puts every notification from Instagram in one group that shows how many it holds, so they don't fill your notification shade. Tapping one still opens it.",
                 "Legt jede Benachrichtigung von Instagram in eine Gruppe, die zeigt, wie viele sie enth\u00e4lt, damit sie deine Benachrichtigungsleiste nicht f\u00fcllen. Ein Tippen \u00f6ffnet sie weiterhin.");
-    }
-
-    private static void fillDe12(Map<String, String> table) {
         table.put("Puts every switch back the way it started. Your locks stay as they are.",
                 "Setzt alle Schalter auf ihren Ausgangszustand zur\u00fcck. Deine Sperren bleiben, wie sie sind.");
         table.put("Puts the answer in a chip under the profile's posts, followers and following counts instead, and says Following each other when you follow them too.",
@@ -1580,6 +1549,9 @@ public final class L10nTranslations {
                 "K\u00fcrzlich entfolgt");
         table.put("Record patch activity and show errors for a bug report. Leave off during normal use.",
                 "Zeichnet Patch-Aktivit\u00e4t auf und zeigt Fehler f\u00fcr einen Fehlerbericht. Im Alltag ausgeschaltet lassen.");
+    }
+
+    private static void fillDe12(Map<String, String> table) {
         table.put("Red",
                 "Rot");
         table.put("Reels",
@@ -1672,9 +1644,6 @@ public final class L10nTranslations {
                 "Alle speichern");
         table.put("Save canceled",
                 "Speichern abgebrochen");
-    }
-
-    private static void fillDe13(Map<String, String> table) {
         table.put("Save comment photo",
                 "Kommentarfoto speichern");
         table.put("Save every page without asking",
@@ -1691,7 +1660,7 @@ public final class L10nTranslations {
                 "Vollst\u00e4ndigen Bericht unter %1$s speichern.");
         table.put("Save videos other apps can open",
                 "Videos speichern, die andere Apps \u00f6ffnen k\u00f6nnen");
-        table.put("Save your HushGram choices to a file, or bring them back.",
+        table.put("Save your TADa choices to a file, or bring them back.",
                 "Speichere deine HushGram-Auswahl in einer Datei oder hol sie zur\u00fcck.");
         table.put("Saved",
                 "Gespeichert");
@@ -1703,6 +1672,9 @@ public final class L10nTranslations {
                 "Gespeichert unter %1$s");
         table.put("Saved to %1$s in lower quality than on Instagram",
                 "Gespeichert unter %1$s, in geringerer Qualit\u00e4t als auf Instagram");
+    }
+
+    private static void fillDe13(Map<String, String> table) {
         table.put("Saved to the gallery",
                 "In der Galerie gespeichert");
         table.put("Saved to the gallery in lower quality than on Instagram",
@@ -1723,7 +1695,7 @@ public final class L10nTranslations {
                 "Diagnosebericht wird gespeichert...");
         table.put("Saving...",
                 "Wird gespeichert \u2026");
-        table.put("Saving... You can cancel from Downloads in HushGram settings.",
+        table.put("Saving... You can cancel from Downloads in TADa settings.",
                 "Speichern... Abbrechen kannst du unter \u201eDownloads\u201c in den HushGram-Einstellungen.");
         table.put("Screenshots and screen recordings work wherever Instagram blocks them, like disappearing photos and videos. Turn on Don't report screenshots too if the sender shouldn't hear about it.",
                 "Screenshots und Bildschirmaufnahmen funktionieren \u00fcberall, wo Instagram sie sperrt, etwa bei verschwindenden Fotos und Videos. Schalte auch \u201eScreenshots nicht melden\u201c ein, wenn der Absender nichts davon erfahren soll.");
@@ -1751,9 +1723,9 @@ public final class L10nTranslations {
                 "Senden an");
         table.put("Set a PIN",
                 "PIN festlegen");
-        table.put("Set a screen lock on your phone so HushGram can lock Instagram.",
+        table.put("Set a screen lock on your phone so TADa can lock Instagram.",
                 "Richte eine Displaysperre auf deinem Handy ein, damit HushGram Instagram sperren kann.");
-        table.put("Set a screen lock on your phone so HushGram can lock your messages.",
+        table.put("Set a screen lock on your phone so TADa can lock your messages.",
                 "Richte eine Displaysperre auf deinem Handy ein, damit HushGram deine Nachrichten sperren kann.");
         table.put("Set or change the 4 to 8 digit PIN. It stays on this phone and isn't in a backup.",
                 "Lege die PIN mit 4 bis 8 Ziffern fest oder \u00e4ndere sie. Sie bleibt auf diesem Handy und ist in keinem Backup.");
@@ -1795,9 +1767,6 @@ public final class L10nTranslations {
                 "Alle letzten Suchen anzeigen");
         table.put("Show all settings as a list",
                 "Alle Einstellungen als Liste anzeigen");
-    }
-
-    private static void fillDe14(Map<String, String> table) {
         table.put("Show and reorder tabs",
                 "Tabs zeigen und ordnen");
         table.put("Show content behind the tab bar",
@@ -1826,9 +1795,12 @@ public final class L10nTranslations {
                 "Genaue Zeit der letzten Aktivit\u00e4t anzeigen");
         table.put("Showing reels with %1$s again",
                 "Reels mit %1$s werden wieder gezeigt");
+    }
+
+    private static void fillDe14(Map<String, String> table) {
         table.put("Shown. Tap to hide it.",
                 "Angezeigt. Tippe, um sie auszublenden.");
-        table.put("Shows HushGram's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
+        table.put("Shows TADa's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
                 "Zeigt auf dem Bildschirm, den du beim Start von Instagram siehst, das Logo von HushGram statt dem von Instagram, ab Android 13. Es erscheint ab dem n\u00e4chsten Start.");
         table.put("Shows every emoji in Google's style instead of your phone's own. Restart Instagram to see the change.",
                 "Zeigt alle Emojis im Stil von Google statt im Stil deines Handys. Starte Instagram neu, um die \u00c4nderung zu sehen.");
@@ -1918,12 +1890,9 @@ public final class L10nTranslations {
                 "Stories");
         table.put("Stories open with their sound on, the same as tapping Instagram's speaker. Your phone's ringer and volume still count, so on silent or with the volume down, stories stay quiet.",
                 "Stories \u00f6ffnen sich mit eingeschaltetem Ton, so als h\u00e4ttest du auf den Lautsprecher von Instagram getippt. Klingelton und Lautst\u00e4rke deines Telefons z\u00e4hlen weiterhin, also bleiben Stories bei lautlos oder leiser Lautst\u00e4rke stumm.");
-    }
-
-    private static void fillDe15(Map<String, String> table) {
         table.put("Story ring size",
                 "Gr\u00f6\u00dfe der Story-Ringe");
-        table.put("Support HushGram",
+        table.put("Support TADa",
                 "HushGram unterst\u00fctzen");
         table.put("Swipe left to open the profile",
                 "Nach links wischen, um das Profil zu \u00f6ffnen");
@@ -1931,6 +1900,35 @@ public final class L10nTranslations {
                 "Schalter, die der Ghost-Modus umlegt");
         table.put("System tick",
                 "System-Tick");
+        table.put("TADa %1$s on Instagram %2$s",
+                "HushGram %1$s auf Instagram %2$s");
+        table.put("TADa PIN",
+                "HushGram-PIN");
+        table.put("TADa is on",
+                "HushGram ist aktiv");
+        table.put("TADa is paused",
+                "HushGram ist pausiert");
+        table.put("TADa launch screen",
+                "HushGram-Startbildschirm");
+        table.put("TADa paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in TADa settings.",
+                "HushGram hat sich selbst pausiert, weil Instagram beim Start immer wieder abgest\u00fcrzt ist. Seine Schalter bleiben aus, bis du es in den HushGram-Einstellungen wieder einschaltest.");
+        table.put("TADa pauses when Instagram restarts.",
+                "HushGram pausiert, sobald Instagram neu startet.");
+        table.put("TADa remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
+                "HushGram merkt sich 30 Tage lang, wo du in bis zu 200 Videos aufgeh\u00f6rt hast. Tippe, um sie von diesem Ger\u00e4t zu l\u00f6schen.");
+        table.put("TADa saves",
+                "Speichern mit HushGram");
+    }
+
+    private static void fillDe15(Map<String, String> table) {
+        table.put("TADa settings are locked",
+                "HushGram-Einstellungen sind gesperrt");
+        table.put("TADa settings couldn't open",
+                "HushGram-Einstellungen lie\u00dfen sich nicht \u00f6ffnen");
+        table.put("TADa settings exported.",
+                "HushGram-Einstellungen exportiert.");
+        table.put("TADa turns back on when Instagram restarts.",
+                "HushGram ist wieder aktiv, sobald Instagram neu startet.");
         table.put("Tab bar",
                 "Tab-Leiste");
         table.put("Tab bar corners",
@@ -1939,7 +1937,7 @@ public final class L10nTranslations {
                 "H\u00f6he der Tab-Leiste");
         table.put("Tab bar opacity",
                 "Deckkraft der Tab-Leiste");
-        table.put("Tab long presses keep Instagram's own action. Choose one to open HushGram instead.",
+        table.put("Tab long presses keep Instagram's own action. Choose one to open TADa instead.",
                 "Langes Dr\u00fccken auf Tabs f\u00fchrt weiter die Instagram-Aktion aus. W\u00e4hle einen Tab, um stattdessen HushGram zu \u00f6ffnen.");
         table.put("Tab long presses keep Instagram's own action. Choose one to pick the playback quality instead.",
                 "Langes Dr\u00fccken auf Tabs f\u00fchrt weiter die Instagram-Aktion aus. W\u00e4hle einen Tab, um stattdessen die Wiedergabequalit\u00e4t zu w\u00e4hlen.");
@@ -2041,18 +2039,18 @@ public final class L10nTranslations {
                 "Zum Wiedereinschalten tippen.");
         table.put("Tapping a call button in a chat asks first, so a stray tap doesn't ring anyone. Call starts it, Cancel doesn't.",
                 "Ein Tippen auf einen Anruf-Button in einem Chat fragt erst nach, damit ein versehentliches Tippen niemanden anruft. Anrufen startet ihn, Abbrechen nicht.");
+        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
+                "Tippen aufs Video, Doppeltippen zum Liken sowie Speichern und Herunterladen z\u00e4hlen nicht als Ber\u00fchrung, die Schaltfl\u00e4chen bleiben also blass.");
     }
 
     private static void fillDe16(Map<String, String> table) {
-        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
-                "Tippen aufs Video, Doppeltippen zum Liken sowie Speichern und Herunterladen z\u00e4hlen nicht als Ber\u00fchrung, die Schaltfl\u00e4chen bleiben also blass.");
         table.put("Teal",
                 "Petrol");
         table.put("Tells Instagram your phone is at %1$s.",
                 "Teilt Instagram mit, dass sich dein Handy bei %1$s befindet.");
         table.put("Tells Instagram your phone is at the place set below, for the location sticker, nearby places and maps. Photos keep their own places.",
                 "Teilt Instagram mit, dass sich dein Handy am unten festgelegten Ort befindet, f\u00fcr den Standort-Sticker, Orte in der N\u00e4he und Karten. Fotos behalten ihre eigenen Orte.");
-        table.put("That file isn't a font HushGram can use. Your font hasn't changed.",
+        table.put("That file isn't a font TADa can use. Your font hasn't changed.",
                 "Diese Datei ist keine Schriftart, die HushGram nutzen kann. Deine Schriftart wurde nicht ge\u00e4ndert.");
         table.put("That isn't a domain. Type one like example.com, or leave it blank.",
                 "Das ist keine Domain. Gib eine wie example.com ein oder lass das Feld leer.");
@@ -2068,7 +2066,7 @@ public final class L10nTranslations {
                 "Die Leiste Kommentar hinzuf\u00fcgen unter einem Reel, das du aus den erneut geteilten Beitr\u00e4gen eines Profils \u00f6ffnest. Der Kommentar-Button \u00f6ffnet die Kommentare weiterhin.");
         table.put("The Follow button beside a reel's author. Their profile still has one.",
                 "Der Folgen-Button neben dem Namen der Person, die das Reel gepostet hat. Auf ihrem Profil gibt es ihn weiterhin.");
-        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets HushGram's settings. A saved settings backup brings the rest back, but not the PIN.",
+        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets TADa's settings. A saved settings backup brings the rest back, but not the PIN.",
                 "Die PIN l\u00e4sst sich nicht wiederherstellen. Zum Entfernen l\u00f6schst du den Instagram-Speicher in den Android-App-Einstellungen. Dabei wirst du abgemeldet und die HushGram-Einstellungen werden zur\u00fcckgesetzt. Ein gespeichertes Einstellungs-Backup bringt den Rest zur\u00fcck, aber nicht die PIN.");
         table.put("The PINs don't match.",
                 "Die PINs stimmen nicht \u00fcberein.");
@@ -2086,7 +2084,7 @@ public final class L10nTranslations {
                 "Der Diagnosebericht lie\u00df sich noch nicht speichern. Versuche es gleich noch einmal.");
         table.put("The diagnostic report couldn't be saved. Try again.",
                 "Der Diagnosebericht lie\u00df sich nicht speichern. Versuche es noch einmal.");
-        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn HushGram back on.",
+        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn TADa back on.",
                 "Die Datei %1$s lie\u00df sich nicht entfernen. L\u00f6sche sie aus %2$s, um HushGram wieder einzuschalten.");
         table.put("The first video on Home plays with its sound on, the same as tapping its speaker. Your phone's ringer and volume still count, so on silent or with the volume down, it stays quiet.",
                 "Das erste Video auf der Startseite spielt mit eingeschaltetem Ton, so als h\u00e4ttest du auf seinen Lautsprecher getippt. Klingelton und Lautst\u00e4rke deines Telefons z\u00e4hlen weiterhin, also bleibt es bei lautlos oder leiser Lautst\u00e4rke stumm.");
@@ -2164,11 +2162,11 @@ public final class L10nTranslations {
                 "Schalte bei einem Reel Instagrams klaren Modus ein, dann \u00f6ffnen sich auch die n\u00e4chsten Reels darin. Verl\u00e4sst du den klaren Modus selbst, zeigen die n\u00e4chsten Reels ihre Buttons wieder.");
         table.put("Turn on Show a story's exact time to use this choice.",
                 "Aktiviere \u201eGenaue Zeit einer Story anzeigen\u201c, um diese Auswahl zu nutzen.");
+        table.put("Turn on Show it as a chip to use this choice.",
+                "Aktiviere \u201eAls Chip anzeigen\u201c, um diese Auswahl zu nutzen.");
     }
 
     private static void fillDe17(Map<String, String> table) {
-        table.put("Turn on Show it as a chip to use this choice.",
-                "Aktiviere \u201eAls Chip anzeigen\u201c, um diese Auswahl zu nutzen.");
         table.put("Turn on Start Home on Following to use this choice.",
                 "Aktiviere \u201eStartseite mit Gefolgt \u00f6ffnen\u201c, um diese Auswahl zu nutzen.");
         table.put("Turn on Story ring size to use this choice.",
@@ -2287,11 +2285,11 @@ public final class L10nTranslations {
                 "Ist das Reel nicht auf dem ersten Bildschirm, zeigt das Profil eine Schaltfl\u00e4che \u201eReel finden\u201c, statt selbst zu scrollen.");
         table.put("Where videos wait",
                 "Wo Videos warten");
+        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
+                "W\u00e4hrend du Stories anonym ansiehst, wird eine angesehene Story grau und r\u00fcckt ans Ende der Reihe, nur auf diesem Handy. Instagram erf\u00e4hrt weiterhin nicht, dass du sie angesehen hast.");
     }
 
     private static void fillDe18(Map<String, String> table) {
-        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
-                "W\u00e4hrend du Stories anonym ansiehst, wird eine angesehene Story grau und r\u00fcckt ans Ende der Reihe, nur auf diesem Handy. Instagram erf\u00e4hrt weiterhin nicht, dass du sie angesehen hast.");
         table.put("Who unfollowed you",
                 "Wer dir entfolgt ist");
         table.put("Wi-Fi stays as it is. Turn this off to save data on every network.",
@@ -2306,7 +2304,7 @@ public final class L10nTranslations {
                 "X");
         table.put("You cleared the remembered playback positions.",
                 "Du hast die gespeicherten Wiedergabepositionen gel\u00f6scht.");
-        table.put("You paused HushGram.",
+        table.put("You paused TADa.",
                 "Du hast HushGram pausiert.");
         table.put("Your fingerprint, face or screen lock unlocks your messages.",
                 "Fingerabdruck, Gesicht oder Bildschirmsperre deines Handys entsperrt deine Nachrichten.");
@@ -2335,7 +2333,7 @@ public final class L10nTranslations {
     }
 
     private static Map<String, String> buildEs() {
-        Map<String, String> table = new HashMap<>(2202);
+        Map<String, String> table = new HashMap<>(2200);
         fillEs0(table);
         fillEs1(table);
         fillEs2(table);
@@ -2439,7 +2437,7 @@ public final class L10nTranslations {
                 "Tocar dos veces una publicaci\u00f3n o un reel ya no le da Me gusta ni muestra un coraz\u00f3n. Un toque y el bot\u00f3n Me gusta funcionan como antes.");
         table.put("A double tap on a reel doesn't like it. Turn this off to keep double tap to like on reels.",
                 "Tocar dos veces un reel no le da Me gusta. Desact\u00edvalo para seguir dando Me gusta a los reels con un doble toque.");
-        table.put("A file named %1$s in %2$s paused HushGram.",
+        table.put("A file named %1$s in %2$s paused TADa.",
                 "Un archivo llamado %1$s en %2$s paus\u00f3 HushGram.");
         table.put("A finished story stays on screen until you tap or swipe. Turn this off for Instagram's timing.",
                 "Una historia terminada se queda en pantalla hasta que tocas o deslizas. Desact\u00edvalo para usar los tiempos de Instagram.");
@@ -2455,7 +2453,7 @@ public final class L10nTranslations {
                 "Un poco m\u00e1s");
         table.put("A long press on the Instagram logo at the top of Home opens these settings. Off, the long press goes back to Instagram.",
                 "Mantener pulsado el logotipo de Instagram, arriba en Inicio, abre esta configuraci\u00f3n. Si lo desactivas, esa pulsaci\u00f3n vuelve a ser de Instagram.");
-        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens HushGram. A tap still opens Instagram's menu, and other profiles stay the same.",
+        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens TADa. A tap still opens Instagram's menu, and other profiles stay the same.",
                 "Mantener pulsado el bot\u00f3n de men\u00fa, las tres l\u00edneas arriba a la derecha de tu propio perfil, abre HushGram. Un toque sigue abriendo el men\u00fa de Instagram, y los dem\u00e1s perfiles no cambian.");
         table.put("A reel Instagram's auto scroll moves to waits for your tap too. Off, auto scroll plays reel after reel.",
                 "Un reel al que pasa el desplazamiento autom\u00e1tico de Instagram tambi\u00e9n espera a que lo toques. Desactivado, el desplazamiento autom\u00e1tico reproduce un reel tras otro.");
@@ -2800,7 +2798,7 @@ public final class L10nTranslations {
                 "Tama\u00f1o de las esquinas");
         table.put("Couldn't change every Ghost mode switch. Check them below.",
                 "No se pudo cambiar cada interruptor del modo fantasma. Rev\u00edsalos abajo.");
-        table.put("Couldn't change every Ghost mode switch. Open HushGram settings to check them.",
+        table.put("Couldn't change every Ghost mode switch. Open TADa settings to check them.",
                 "No se pudo cambiar cada interruptor del modo fantasma. Rev\u00edsalos en los ajustes de HushGram.");
         table.put("Couldn't clear the download history. Try again.",
                 "No se pudo borrar el historial de descargas. Int\u00e9ntalo de nuevo.");
@@ -2818,7 +2816,7 @@ public final class L10nTranslations {
                 "No se pudo copiar el enlace del contenido");
         table.put("Couldn't copy the username",
                 "No se pudo copiar el nombre de usuario");
-        table.put("Couldn't export HushGram settings. Try another file.",
+        table.put("Couldn't export TADa settings. Try another file.",
                 "No se pudieron exportar los ajustes de HushGram. Prueba otro archivo.");
         table.put("Couldn't find the reel you came from",
                 "No se encontr\u00f3 el reel del que viniste");
@@ -2826,7 +2824,7 @@ public final class L10nTranslations {
                 "No se pudo ocultar esta cuenta");
         table.put("Couldn't hide this notice. Try again.",
                 "No se pudo ocultar este aviso. Int\u00e9ntalo de nuevo.");
-        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in HushGram settings > Layout.",
+        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in TADa settings > Layout.",
                 "No se pudo cargar tu archivo de fuente, as\u00ed que se muestra la fuente de Instagram. El\u00edgelo de nuevo en Configuraci\u00f3n de HushGram > Dise\u00f1o.");
         table.put("Couldn't mark as read",
                 "No se pudo marcar como le\u00eddo");
@@ -2842,7 +2840,7 @@ public final class L10nTranslations {
                 "No se pudieron guardar ni restaurar todos los ajustes. Revisa los valores que se muestran e intenta deshacer.");
         table.put("Couldn't save the PIN.",
                 "No se pudo guardar el PIN.");
-        table.put("Couldn't save the playback quality. Open HushGram settings to set it.",
+        table.put("Couldn't save the playback quality. Open TADa settings to set it.",
                 "No se pudo guardar la calidad de reproducci\u00f3n. Abre los ajustes de HushGram para elegirla.");
         table.put("Couldn't save the settings. The previous values were restored.",
                 "No se pudieron guardar los ajustes. Se restauraron los valores anteriores.");
@@ -2853,7 +2851,7 @@ public final class L10nTranslations {
     private static void fillEs4(Map<String, String> table) {
         table.put("Couldn't start the report export. Try again shortly.",
                 "No se pudo iniciar la exportaci\u00f3n del informe. Int\u00e9ntalo de nuevo en breve.");
-        table.put("Couldn't turn HushGram back on. Try again.",
+        table.put("Couldn't turn TADa back on. Try again.",
                 "No se pudo volver a activar HushGram. Int\u00e9ntalo de nuevo.");
         table.put("Couldn't update the remembered playback positions.",
                 "No se pudieron actualizar las posiciones de reproducci\u00f3n guardadas.");
@@ -2990,11 +2988,11 @@ public final class L10nTranslations {
                 "Ejemplo sin datos de la publicaci\u00f3n");
         table.put("Explore",
                 "Explorar");
-        table.put("Export HushGram settings",
+        table.put("Export TADa settings",
                 "Exportar los ajustes de HushGram");
         table.put("Export diagnostic report",
                 "Exportar informe de diagn\u00f3stico");
-        table.put("Exporting HushGram settings...",
+        table.put("Exporting TADa settings...",
                 "Exportando los ajustes de HushGram...");
         table.put("Facebook",
                 "Facebook");
@@ -3086,7 +3084,7 @@ public final class L10nTranslations {
                 "Barra de pesta\u00f1as de cristal");
         table.put("Gold",
                 "Dorado");
-        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later HushGram builds need Change version code too, or they won't install over this one.",
+        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later TADa builds need Change version code too, or they won't install over this one.",
                 "Google Play no ofrecer\u00e1 las actualizaciones de Meta sobre esta versi\u00f3n. Para volver al Instagram normal, desinstala primero esta, lo que borra los datos de Instagram en este tel\u00e9fono. Las pr\u00f3ximas versiones de HushGram tambi\u00e9n necesitan Change version code, o no se instalar\u00e1n sobre esta.");
         table.put("Google's emoji everywhere",
                 "Emojis de Google en todas partes");
@@ -3238,8 +3236,6 @@ public final class L10nTranslations {
                 "Ocultar el bot\u00f3n Seguir");
         table.put("Hide the Home tab",
                 "Ocultar la pesta\u00f1a de Inicio");
-        table.put("Hide the HushGram row in Instagram's menu",
-                "Ocultar la fila de HushGram en el men\u00fa de Instagram");
         table.put("Hide the Muse button on your profile",
                 "Ocultar el bot\u00f3n de Muse en tu perfil");
         table.put("Hide the Muse card",
@@ -3260,6 +3256,8 @@ public final class L10nTranslations {
                 "Ocultar el bot\u00f3n Compartir");
         table.put("Hide the Stories tray",
                 "Ocultar la fila de historias");
+        table.put("Hide the TADa row in Instagram's menu",
+                "Ocultar la fila de HushGram en el men\u00fa de Instagram");
         table.put("Hide the Threads button",
                 "Ocultar el bot\u00f3n de Threads");
         table.put("Hide the call buttons in chats",
@@ -3349,37 +3347,9 @@ public final class L10nTranslations {
                 "Cu\u00e1nto falta para que la historia caduque, como quedan 18 h 14 min. Las historias m\u00e1s antiguas muestran la fecha y la hora.");
         table.put("How the time shows",
                 "C\u00f3mo se muestra la hora");
-        table.put("How you open HushGram, and how this screen is laid out.",
+        table.put("How you open TADa, and how this screen is laid out.",
                 "C\u00f3mo abres HushGram y c\u00f3mo se organiza esta pantalla.");
-        table.put("HushGram %1$s on Instagram %2$s",
-                "HushGram %1$s en Instagram %2$s");
-        table.put("HushGram PIN",
-                "PIN de HushGram");
-        table.put("HushGram is on",
-                "HushGram est\u00e1 activado");
-        table.put("HushGram is paused",
-                "HushGram est\u00e1 en pausa");
-        table.put("HushGram launch screen",
-                "Pantalla de inicio de HushGram");
-        table.put("HushGram paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in HushGram settings.",
-                "HushGram se paus\u00f3 solo porque Instagram fallaba una y otra vez al iniciarse. Sus interruptores siguen desactivados hasta que lo vuelvas a activar en la Configuraci\u00f3n de HushGram.");
-        table.put("HushGram pauses when Instagram restarts.",
-                "HushGram se pausa cuando Instagram se reinicie.");
-        table.put("HushGram remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
-                "HushGram recuerda d\u00f3nde te quedaste en hasta 200 videos durante 30 d\u00edas. Toca para borrarlos de este dispositivo.");
-        table.put("HushGram saves",
-                "Descargas de HushGram");
-        table.put("HushGram settings",
-                "Configuraci\u00f3n de HushGram");
-        table.put("HushGram settings are locked",
-                "La configuraci\u00f3n de HushGram est\u00e1 bloqueada");
-        table.put("HushGram settings couldn't open",
-                "No se pudo abrir la configuraci\u00f3n de HushGram");
-        table.put("HushGram settings exported.",
-                "Se exportaron los ajustes de HushGram.");
-        table.put("HushGram turns back on when Instagram restarts.",
-                "HushGram vuelve a activarse cuando Instagram se reinicie.");
-        table.put("Import HushGram settings",
+        table.put("Import TADa settings",
                 "Importar los ajustes de HushGram");
         table.put("Imported %1$d settings. Skipped %2$d that this version doesn't know.",
                 "Se importaron %1$d ajustes. Se omitieron %2$d que esta versi\u00f3n no conoce.");
@@ -3389,7 +3359,7 @@ public final class L10nTranslations {
                 "Azul de Instagram");
         table.put("Instagram can't read your phone's advertising ID or tell Android's ad services which ads you saw or tapped. The permissions for them are gone from this build.",
                 "Instagram no puede leer el ID de publicidad de tu tel\u00e9fono ni decir a los servicios de publicidad de Android qu\u00e9 anuncios viste o tocaste. Los permisos para ello ya no est\u00e1n en esta versi\u00f3n.");
-        table.put("Instagram crashed or froze within a minute of starting three times in a row, so HushGram paused itself.",
+        table.put("Instagram crashed or froze within a minute of starting three times in a row, so TADa paused itself.",
                 "Tres veces seguidas, Instagram fall\u00f3 o se congel\u00f3 durante el primer minuto tras iniciarse, as\u00ed que HushGram se paus\u00f3 solo.");
         table.put("Instagram doesn't notice when you take a screenshot, so whoever sent you a disappearing photo or video isn't told. Your screenshots save as usual.",
                 "Instagram no detecta cuando haces una captura de pantalla, as\u00ed que quien te envi\u00f3 una foto o un video temporal no recibe aviso. Tus capturas se guardan como siempre.");
@@ -3417,7 +3387,7 @@ public final class L10nTranslations {
                 "Instagram deja de mostrar la pantalla que dice que esta versi\u00f3n es demasiado antigua. Una versi\u00f3n parcheada no se actualiza sola, as\u00ed que esto la mantiene usable.");
         table.put("Instagram wakes your phone every minute or two, screen off included, only to note that it is still running. This stops that. Messages, notifications and everything you see are unaffected.",
                 "Instagram despierta tu tel\u00e9fono cada minuto o dos, tambi\u00e9n con la pantalla apagada, solo para anotar que sigue funcionando. Esto lo detiene. Los mensajes, las notificaciones y todo lo que ves no cambian.");
-        table.put("Instagram's Settings and activity screen leaves out the HushGram row while another way here opens HushGram. With every other way off, the row comes back.",
+        table.put("Instagram's Settings and activity screen leaves out the TADa row while another way here opens TADa. With every other way off, the row comes back.",
                 "Mientras otra forma de llegar aqu\u00ed abra HushGram, la pantalla Configuraci\u00f3n y actividad de Instagram no muestra la fila de HushGram. Con todas las dem\u00e1s formas desactivadas, la fila vuelve.");
         table.put("Instagram's colors",
                 "Colores de Instagram");
@@ -3463,9 +3433,6 @@ public final class L10nTranslations {
                 "Mantener la velocidad del reel");
         table.put("Keep the zoom open",
                 "Mantener el zoom abierto");
-    }
-
-    private static void fillEs9(Map<String, String> table) {
         table.put("Keep your chats private and your inbox clear of extras.",
                 "Mant\u00e9n tus chats privados y tu bandeja de entrada sin extras.");
         table.put("Keeps Instagram's Music for you card from turning up between the stories you watch. The stories themselves stay.",
@@ -3494,6 +3461,9 @@ public final class L10nTranslations {
                 "Omite los reels con la etiqueta Colaboraci\u00f3n pagada y los que Instagram marca como promocionados. Los anuncios tienen su propio interruptor.");
         table.put("Leaves out the Add Yours cards, like Popular Add Yours and Join a trending Add Yours, that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "Quita las tarjetas de Te toca, como las populares o las que son tendencia para unirte, que Instagram pone entre las historias que vas pasando. Las historias en s\u00ed se quedan.");
+    }
+
+    private static void fillEs9(Map<String, String> table) {
         table.put("Leaves out the Suggested for you cards of accounts to follow that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "Quita las tarjetas de Sugerencias para ti con cuentas para seguir que Instagram pone entre las historias que vas pasando. Las historias en s\u00ed se quedan.");
         table.put("Leaves the Suggested for you accounts out of what shows when you tap the search bar. Recent searches stay.",
@@ -3546,11 +3516,11 @@ public final class L10nTranslations {
                 "Bloquear tus mensajes");
         table.put("Locked chats",
                 "Chats bloqueados");
-        table.put("Long press %1$s to open HushGram instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
+        table.put("Long press %1$s to open TADa instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
                 "Mant\u00e9n pulsado %1$s para abrir HushGram en lugar de la acci\u00f3n habitual de esa pesta\u00f1a. Los toques normales y las otras pesta\u00f1as siguen igual. Solo se pueden usar las pesta\u00f1as que muestra tu cuenta.");
-        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens HushGram, that comes first.",
+        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens TADa, that comes first.",
                 "Mant\u00e9n pulsado %1$s para elegir la calidad de reproducci\u00f3n en lugar de la acci\u00f3n habitual de esa pesta\u00f1a. Los toques normales y las dem\u00e1s pesta\u00f1as no cambian. Hace falta tener activada la Calidad de reproducci\u00f3n predeterminada. Si la misma pesta\u00f1a abre HushGram, eso va primero.");
-        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens HushGram or picks the playback quality, that comes first.",
+        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens TADa or picks the playback quality, that comes first.",
                 "Mant\u00e9n pulsado %1$s para activar o desactivar el modo fantasma en lugar de la acci\u00f3n habitual de esa pesta\u00f1a, y un aviso te dice c\u00f3mo qued\u00f3. Los toques normales y las dem\u00e1s pesta\u00f1as no cambian. Si la misma pesta\u00f1a abre HushGram o elige la calidad de reproducci\u00f3n, eso va primero.");
         table.put("Long press a photo to zoom",
                 "Mant\u00e9n pulsada una foto para hacer zoom");
@@ -3586,9 +3556,6 @@ public final class L10nTranslations {
                 "Bot\u00f3n de Mensajes en el encabezado de Inicio");
         table.put("Messenger",
                 "Messenger");
-    }
-
-    private static void fillEs10(Map<String, String> table) {
         table.put("Meta AI",
                 "Meta AI");
         table.put("More",
@@ -3617,13 +3584,16 @@ public final class L10nTranslations {
                 "Ninguna app de este tel\u00e9fono puede abrir el enlace. La direcci\u00f3n es %1$s.");
         table.put("No app on this phone can play this video",
                 "Ninguna app de este tel\u00e9fono puede reproducir este video");
+    }
+
+    private static void fillEs10(Map<String, String> table) {
         table.put("No direct link for this one",
                 "No hay enlace directo para este");
         table.put("No matching settings",
                 "No hay ajustes coincidentes");
         table.put("No one has left since then.",
                 "Nadie se ha ido desde entonces.");
-        table.put("No other way into HushGram is on, so the row stays in Instagram's menu.",
+        table.put("No other way into TADa is on, so the row stays in Instagram's menu.",
                 "No hay otra forma de abrir HushGram activada, as\u00ed que la fila se queda en el men\u00fa de Instagram.");
         table.put("No pages chosen",
                 "No has elegido ninguna p\u00e1gina");
@@ -3709,9 +3679,6 @@ public final class L10nTranslations {
                 "Abre un chat en Instagram y vuelve aqu\u00ed para ocultarlo.");
         table.put("Open a chat in Instagram, then come back here to lock it.",
                 "Abre un chat en Instagram y vuelve aqu\u00ed para bloquearlo.");
-    }
-
-    private static void fillEs11(Map<String, String> table) {
         table.put("Open a creator's profile from a reel, then their Reels tab, and it scrolls to that reel and outlines it for a moment. A photo reel is found in their posts. Stop looking ends the search where it is.",
                 "Abre el perfil de un creador desde un reel y luego su pesta\u00f1a de Reels, y se desplaza hasta ese reel y lo resalta un momento. Un reel de foto se encuentra en sus publicaciones. Dejar de buscar termina la b\u00fasqueda donde est\u00e9.");
         table.put("Open app info",
@@ -3740,6 +3707,9 @@ public final class L10nTranslations {
                 "Abre Inicio con las publicaciones de las cuentas que sigues en lugar de Para ti. Toca la parte de arriba de Inicio para cambiar. Reinicia Instagram para ver el cambio.");
         table.put("Opens a GitHub report with your versions and settings filled in. Add what happened.",
                 "Abre un informe en GitHub con tus versiones y ajustes ya rellenados. A\u00f1ade lo que pas\u00f3.");
+    }
+
+    private static void fillEs11(Map<String, String> table) {
         table.put("Orange",
                 "Naranja");
         table.put("PIN",
@@ -3754,7 +3724,7 @@ public final class L10nTranslations {
                 "P\u00e1gina %1$d, v\u00eddeo");
         table.put("Pause",
                 "Pausar");
-        table.put("Pause HushGram",
+        table.put("Pause TADa",
                 "Pausar HushGram");
         table.put("Pause and diagnostics",
                 "Pausa y diagn\u00f3stico");
@@ -3812,14 +3782,14 @@ public final class L10nTranslations {
                 "Poner primero las cuentas que no te siguen");
         table.put("Puts Activity, the screen the heart opens, on the tab bar before Profile. Tab order can move it, and Hide notifications on Home's header takes the heart away. Restart Instagram to see the change.",
                 "Pone Actividad, la pantalla que abre el coraz\u00f3n, en la barra de pesta\u00f1as antes de Perfil. Puedes moverla con Orden de las pesta\u00f1as, y Ocultar notificaciones en el encabezado de Inicio quita el coraz\u00f3n. Reinicia Instagram para ver el cambio.");
-        table.put("Puts HushGram settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
-                "Pone la configuraci\u00f3n de HushGram en el men\u00fa que aparece al mantener pulsado el icono de Instagram. Si lo desactivas, sale de ese men\u00fa.");
         table.put("Puts Instagram's logo in the middle of the top of Home, even with header buttons hidden or added. A feed's name shown there is centered too. Restart Instagram to see the change.",
                 "Pone el logo de Instagram en el centro de la parte superior de Inicio, aunque haya botones del encabezado ocultos o a\u00f1adidos. El nombre de un feed que aparezca ah\u00ed tambi\u00e9n se centra. Reinicia Instagram para ver el cambio.");
         table.put("Puts Messages on the tab bar, before Profile, if Instagram left it off yours. Tab order can move it. Restart Instagram to see the change.",
                 "Pone Mensajes en la barra de pesta\u00f1as, antes de Perfil, si Instagram no lo incluy\u00f3 en la tuya. Puedes moverlo con Orden de las pesta\u00f1as. Reinicia Instagram para ver el cambio.");
         table.put("Puts Reels back on the tab bar if Instagram left it off yours. Hide the Reels tab wins if both are on. Restart Instagram to see the change.",
                 "Vuelve a poner Reels en la barra de pesta\u00f1as si Instagram lo dej\u00f3 fuera de la tuya. Ocultar la pesta\u00f1a Reels tiene prioridad si ambos est\u00e1n activados. Reinicia Instagram para ver el cambio.");
+        table.put("Puts TADa settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
+                "Pone la configuraci\u00f3n de HushGram en el men\u00fa que aparece al mantener pulsado el icono de Instagram. Si lo desactivas, sale de ese men\u00fa.");
         table.put("Puts a Block icon beside someone else's reel. A tap opens Instagram's own block screen for that account, so you still confirm it there.",
                 "Pone un icono de Bloquear junto al reel de otra persona. Un toque abre la pantalla de bloqueo de Instagram para esa cuenta, as\u00ed que todav\u00eda lo confirmas ah\u00ed.");
         table.put("Puts a Not interested icon beside a reel, so one tap does what Not interested in its menu does.",
@@ -3832,9 +3802,6 @@ public final class L10nTranslations {
                 "Pone un icono de m\u00fasica junto a un reel. T\u00f3calo y la pesta\u00f1a Reels se salta otros reels con ese sonido. T\u00f3calo de nuevo para que vuelvan.");
         table.put("Puts every notification from Instagram in one group that shows how many it holds, so they don't fill your notification shade. Tapping one still opens it.",
                 "Pone cada notificaci\u00f3n de Instagram en un grupo que muestra cu\u00e1ntas contiene, para que no llenen tu panel de notificaciones. Al tocar una, se sigue abriendo.");
-    }
-
-    private static void fillEs12(Map<String, String> table) {
         table.put("Puts every switch back the way it started. Your locks stay as they are.",
                 "Devuelve todos los interruptores a como estaban al principio. Tus bloqueos se quedan como est\u00e1n.");
         table.put("Puts the answer in a chip under the profile's posts, followers and following counts instead, and says Following each other when you follow them too.",
@@ -3863,6 +3830,9 @@ public final class L10nTranslations {
                 "Dejaron de seguirte");
         table.put("Record patch activity and show errors for a bug report. Leave off during normal use.",
                 "Registra la actividad de los parches y muestra errores para un informe. D\u00e9jalo desactivado en el uso normal.");
+    }
+
+    private static void fillEs12(Map<String, String> table) {
         table.put("Red",
                 "Rojo");
         table.put("Reels",
@@ -3955,9 +3925,6 @@ public final class L10nTranslations {
                 "Guardar todo");
         table.put("Save canceled",
                 "Se cancel\u00f3 el guardado");
-    }
-
-    private static void fillEs13(Map<String, String> table) {
         table.put("Save comment photo",
                 "Guardar foto del comentario");
         table.put("Save every page without asking",
@@ -3974,7 +3941,7 @@ public final class L10nTranslations {
                 "Guarda el informe completo en %1$s.");
         table.put("Save videos other apps can open",
                 "Guardar videos que otras apps puedan abrir");
-        table.put("Save your HushGram choices to a file, or bring them back.",
+        table.put("Save your TADa choices to a file, or bring them back.",
                 "Guarda tus opciones de HushGram en un archivo o recup\u00e9ralas.");
         table.put("Saved",
                 "Guardado");
@@ -3986,6 +3953,9 @@ public final class L10nTranslations {
                 "Se guard\u00f3 en %1$s");
         table.put("Saved to %1$s in lower quality than on Instagram",
                 "Se guard\u00f3 en %1$s con menos calidad que en Instagram");
+    }
+
+    private static void fillEs13(Map<String, String> table) {
         table.put("Saved to the gallery",
                 "Se guard\u00f3 en la galer\u00eda");
         table.put("Saved to the gallery in lower quality than on Instagram",
@@ -4006,7 +3976,7 @@ public final class L10nTranslations {
                 "Guardando el informe de diagn\u00f3stico...");
         table.put("Saving...",
                 "Guardando...");
-        table.put("Saving... You can cancel from Downloads in HushGram settings.",
+        table.put("Saving... You can cancel from Downloads in TADa settings.",
                 "Guardando... Puedes cancelar desde Descargas en los ajustes de HushGram.");
         table.put("Screenshots and screen recordings work wherever Instagram blocks them, like disappearing photos and videos. Turn on Don't report screenshots too if the sender shouldn't hear about it.",
                 "Las capturas y grabaciones de pantalla funcionan donde Instagram las bloquea, como en fotos y videos temporales. Activa tambi\u00e9n No avisar de capturas de pantalla si el remitente no debe enterarse.");
@@ -4034,9 +4004,9 @@ public final class L10nTranslations {
                 "Enviar a");
         table.put("Set a PIN",
                 "Pon un PIN");
-        table.put("Set a screen lock on your phone so HushGram can lock Instagram.",
+        table.put("Set a screen lock on your phone so TADa can lock Instagram.",
                 "Configura un bloqueo de pantalla en tu tel\u00e9fono para que HushGram pueda bloquear Instagram.");
-        table.put("Set a screen lock on your phone so HushGram can lock your messages.",
+        table.put("Set a screen lock on your phone so TADa can lock your messages.",
                 "Configura un bloqueo de pantalla en tu tel\u00e9fono para que HushGram pueda bloquear tus mensajes.");
         table.put("Set or change the 4 to 8 digit PIN. It stays on this phone and isn't in a backup.",
                 "Pon o cambia el PIN de 4 a 8 d\u00edgitos. Se queda en este tel\u00e9fono y no va en una copia de seguridad.");
@@ -4078,9 +4048,6 @@ public final class L10nTranslations {
                 "Mostrar todas las b\u00fasquedas recientes");
         table.put("Show all settings as a list",
                 "Mostrar todos los ajustes como lista");
-    }
-
-    private static void fillEs14(Map<String, String> table) {
         table.put("Show and reorder tabs",
                 "Mostrar y reordenar pesta\u00f1as");
         table.put("Show content behind the tab bar",
@@ -4109,9 +4076,12 @@ public final class L10nTranslations {
                 "Mostrar la hora exacta de la \u00faltima actividad");
         table.put("Showing reels with %1$s again",
                 "Volviendo a mostrar reels con %1$s");
+    }
+
+    private static void fillEs14(Map<String, String> table) {
         table.put("Shown. Tap to hide it.",
                 "Visible. Toca para ocultarla.");
-        table.put("Shows HushGram's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
+        table.put("Shows TADa's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
                 "Muestra el logotipo de HushGram en lugar del de Instagram en la pantalla que ves mientras Instagram se inicia, en Android 13 y versiones posteriores. Se ver\u00e1 a partir del pr\u00f3ximo inicio.");
         table.put("Shows every emoji in Google's style instead of your phone's own. Restart Instagram to see the change.",
                 "Muestra todos los emojis con el estilo de Google en lugar del de tu tel\u00e9fono. Reinicia Instagram para ver el cambio.");
@@ -4201,12 +4171,9 @@ public final class L10nTranslations {
                 "Historias");
         table.put("Stories open with their sound on, the same as tapping Instagram's speaker. Your phone's ringer and volume still count, so on silent or with the volume down, stories stay quiet.",
                 "Las historias se abren con el sonido activado, igual que al tocar el altavoz de Instagram. El timbre y el volumen del tel\u00e9fono siguen contando, as\u00ed que en silencio o con el volumen bajado las historias se quedan mudas.");
-    }
-
-    private static void fillEs15(Map<String, String> table) {
         table.put("Story ring size",
                 "Tama\u00f1o de los anillos de historias");
-        table.put("Support HushGram",
+        table.put("Support TADa",
                 "Apoya HushGram");
         table.put("Swipe left to open the profile",
                 "Deslizar a la izquierda para abrir el perfil");
@@ -4214,6 +4181,35 @@ public final class L10nTranslations {
                 "Interruptores que cambia el modo fantasma");
         table.put("System tick",
                 "Toque del sistema");
+        table.put("TADa %1$s on Instagram %2$s",
+                "HushGram %1$s en Instagram %2$s");
+        table.put("TADa PIN",
+                "PIN de HushGram");
+        table.put("TADa is on",
+                "HushGram est\u00e1 activado");
+        table.put("TADa is paused",
+                "HushGram est\u00e1 en pausa");
+        table.put("TADa launch screen",
+                "Pantalla de inicio de HushGram");
+        table.put("TADa paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in TADa settings.",
+                "HushGram se paus\u00f3 solo porque Instagram fallaba una y otra vez al iniciarse. Sus interruptores siguen desactivados hasta que lo vuelvas a activar en la Configuraci\u00f3n de HushGram.");
+        table.put("TADa pauses when Instagram restarts.",
+                "HushGram se pausa cuando Instagram se reinicie.");
+        table.put("TADa remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
+                "HushGram recuerda d\u00f3nde te quedaste en hasta 200 videos durante 30 d\u00edas. Toca para borrarlos de este dispositivo.");
+        table.put("TADa saves",
+                "Descargas de HushGram");
+    }
+
+    private static void fillEs15(Map<String, String> table) {
+        table.put("TADa settings are locked",
+                "La configuraci\u00f3n de HushGram est\u00e1 bloqueada");
+        table.put("TADa settings couldn't open",
+                "No se pudo abrir la configuraci\u00f3n de HushGram");
+        table.put("TADa settings exported.",
+                "Se exportaron los ajustes de HushGram.");
+        table.put("TADa turns back on when Instagram restarts.",
+                "HushGram vuelve a activarse cuando Instagram se reinicie.");
         table.put("Tab bar",
                 "Barra de pesta\u00f1as");
         table.put("Tab bar corners",
@@ -4222,7 +4218,7 @@ public final class L10nTranslations {
                 "Altura de la barra de pesta\u00f1as");
         table.put("Tab bar opacity",
                 "Opacidad de la barra de pesta\u00f1as");
-        table.put("Tab long presses keep Instagram's own action. Choose one to open HushGram instead.",
+        table.put("Tab long presses keep Instagram's own action. Choose one to open TADa instead.",
                 "Mantener pulsadas las pesta\u00f1as conserva la acci\u00f3n de Instagram. Elige una para abrir HushGram en su lugar.");
         table.put("Tab long presses keep Instagram's own action. Choose one to pick the playback quality instead.",
                 "Mantener pulsadas las pesta\u00f1as conserva la acci\u00f3n de Instagram. Elige una para elegir la calidad de reproducci\u00f3n en su lugar.");
@@ -4324,18 +4320,18 @@ public final class L10nTranslations {
                 "Toca para volver a activarlo.");
         table.put("Tapping a call button in a chat asks first, so a stray tap doesn't ring anyone. Call starts it, Cancel doesn't.",
                 "Tocar un bot\u00f3n de llamada en un chat pregunta primero, para que un toque sin querer no llame a nadie. Llamar la inicia, Cancelar no.");
+        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
+                "Tocar el video, tocarlo dos veces para dar me gusta, Guardar y Descargar no cuentan como un toque, as\u00ed que los botones siguen atenuados.");
     }
 
     private static void fillEs16(Map<String, String> table) {
-        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
-                "Tocar el video, tocarlo dos veces para dar me gusta, Guardar y Descargar no cuentan como un toque, as\u00ed que los botones siguen atenuados.");
         table.put("Teal",
                 "Verde azulado");
         table.put("Tells Instagram your phone is at %1$s.",
                 "Le dice a Instagram que tu tel\u00e9fono est\u00e1 en %1$s.");
         table.put("Tells Instagram your phone is at the place set below, for the location sticker, nearby places and maps. Photos keep their own places.",
                 "Le dice a Instagram que tu tel\u00e9fono est\u00e1 en el lugar indicado abajo, para la pegatina de ubicaci\u00f3n, los lugares cercanos y los mapas. Las fotos conservan sus propios lugares.");
-        table.put("That file isn't a font HushGram can use. Your font hasn't changed.",
+        table.put("That file isn't a font TADa can use. Your font hasn't changed.",
                 "Ese archivo no es una fuente que HushGram pueda usar. Tu fuente no ha cambiado.");
         table.put("That isn't a domain. Type one like example.com, or leave it blank.",
                 "Eso no es un dominio. Escribe uno como example.com o d\u00e9jalo en blanco.");
@@ -4351,7 +4347,7 @@ public final class L10nTranslations {
                 "La barra A\u00f1adir comentario bajo un reel que abres desde las publicaciones compartidas de nuevo de un perfil. El bot\u00f3n de comentarios sigue abriendo los comentarios.");
         table.put("The Follow button beside a reel's author. Their profile still has one.",
                 "El bot\u00f3n Seguir junto al autor de un reel. Su perfil lo sigue teniendo.");
-        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets HushGram's settings. A saved settings backup brings the rest back, but not the PIN.",
+        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets TADa's settings. A saved settings backup brings the rest back, but not the PIN.",
                 "El PIN no se puede recuperar. Para quitarlo, borra el almacenamiento de Instagram en los ajustes de apps de Android. Eso cierra tu sesi\u00f3n y restablece los ajustes de HushGram. Una copia de seguridad de los ajustes recupera el resto, pero no el PIN.");
         table.put("The PINs don't match.",
                 "Los PIN no coinciden.");
@@ -4369,7 +4365,7 @@ public final class L10nTranslations {
                 "Todav\u00eda no se pudo guardar el informe de diagn\u00f3stico. Int\u00e9ntalo de nuevo en un momento.");
         table.put("The diagnostic report couldn't be saved. Try again.",
                 "No se pudo guardar el informe de diagn\u00f3stico. Int\u00e9ntalo de nuevo.");
-        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn HushGram back on.",
+        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn TADa back on.",
                 "No se pudo eliminar el archivo %1$s. B\u00f3rralo de %2$s para volver a activar HushGram.");
         table.put("The first video on Home plays with its sound on, the same as tapping its speaker. Your phone's ringer and volume still count, so on silent or with the volume down, it stays quiet.",
                 "El primer video de Inicio se reproduce con el sonido activado, igual que al tocar su altavoz. El timbre y el volumen del tel\u00e9fono siguen contando, as\u00ed que en silencio o con el volumen bajado se queda mudo.");
@@ -4447,11 +4443,11 @@ public final class L10nTranslations {
                 "Activa el modo limpio de Instagram en un reel y los siguientes reels tambi\u00e9n se abren as\u00ed. Sal del modo limpio t\u00fa mismo y los siguientes reels vuelven a mostrar sus botones.");
         table.put("Turn on Show a story's exact time to use this choice.",
                 "Activa \u00abMostrar la hora exacta de una historia\u00bb para usar esta opci\u00f3n.");
+        table.put("Turn on Show it as a chip to use this choice.",
+                "Activa \u00abMostrarlo como chip\u00bb para usar esta opci\u00f3n.");
     }
 
     private static void fillEs17(Map<String, String> table) {
-        table.put("Turn on Show it as a chip to use this choice.",
-                "Activa \u00abMostrarlo como chip\u00bb para usar esta opci\u00f3n.");
         table.put("Turn on Start Home on Following to use this choice.",
                 "Activa \u00abAbrir Inicio en Siguiendo\u00bb para usar esta opci\u00f3n.");
         table.put("Turn on Story ring size to use this choice.",
@@ -4570,11 +4566,11 @@ public final class L10nTranslations {
                 "Si el reel no est\u00e1 en la primera pantalla, el perfil muestra un bot\u00f3n Buscar el reel en lugar de desplazarse solo.");
         table.put("Where videos wait",
                 "D\u00f3nde esperan los videos");
+        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
+                "Mientras ves de forma an\u00f3nima, una historia que ya viste se pone en gris y pasa al final de la fila, solo en este tel\u00e9fono. Instagram sigue sin saber que la viste.");
     }
 
     private static void fillEs18(Map<String, String> table) {
-        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
-                "Mientras ves de forma an\u00f3nima, una historia que ya viste se pone en gris y pasa al final de la fila, solo en este tel\u00e9fono. Instagram sigue sin saber que la viste.");
         table.put("Who unfollowed you",
                 "Qui\u00e9n dej\u00f3 de seguirte");
         table.put("Wi-Fi stays as it is. Turn this off to save data on every network.",
@@ -4589,7 +4585,7 @@ public final class L10nTranslations {
                 "X");
         table.put("You cleared the remembered playback positions.",
                 "Borraste las posiciones de reproducci\u00f3n guardadas.");
-        table.put("You paused HushGram.",
+        table.put("You paused TADa.",
                 "Pausaste HushGram.");
         table.put("Your fingerprint, face or screen lock unlocks your messages.",
                 "La huella, la cara o el bloqueo de pantalla de tu tel\u00e9fono desbloquea tus mensajes.");
@@ -4618,7 +4614,7 @@ public final class L10nTranslations {
     }
 
     private static Map<String, String> buildIn() {
-        Map<String, String> table = new HashMap<>(2202);
+        Map<String, String> table = new HashMap<>(2200);
         fillIn0(table);
         fillIn1(table);
         fillIn2(table);
@@ -4722,7 +4718,7 @@ public final class L10nTranslations {
                 "Mengetuk dua kali postingan atau reel tidak lagi menyukainya atau menampilkan hati. Satu ketukan dan tombol Suka tetap berfungsi seperti biasa.");
         table.put("A double tap on a reel doesn't like it. Turn this off to keep double tap to like on reels.",
                 "Mengetuk dua kali reel tidak menyukainya. Matikan ini agar tetap bisa menyukai reel dengan ketuk dua kali.");
-        table.put("A file named %1$s in %2$s paused HushGram.",
+        table.put("A file named %1$s in %2$s paused TADa.",
                 "File bernama %1$s di %2$s menjeda HushGram.");
         table.put("A finished story stays on screen until you tap or swipe. Turn this off for Instagram's timing.",
                 "Cerita yang sudah selesai tetap di layar sampai Anda mengetuk atau menggeser. Matikan ini untuk memakai waktu Instagram.");
@@ -4738,7 +4734,7 @@ public final class L10nTranslations {
                 "Sedikit lebih banyak");
         table.put("A long press on the Instagram logo at the top of Home opens these settings. Off, the long press goes back to Instagram.",
                 "Menekan lama logo Instagram di bagian atas Beranda membuka pengaturan ini. Jika dimatikan, tekan lama itu kembali menjadi milik Instagram.");
-        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens HushGram. A tap still opens Instagram's menu, and other profiles stay the same.",
+        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens TADa. A tap still opens Instagram's menu, and other profiles stay the same.",
                 "Menekan lama tombol menu, tiga garis di kanan atas profilmu sendiri, membuka HushGram. Mengetuknya tetap membuka menu Instagram, dan profil lain tetap sama.");
         table.put("A reel Instagram's auto scroll moves to waits for your tap too. Off, auto scroll plays reel after reel.",
                 "Reel yang dituju gulir otomatis Instagram juga menunggu ketukanmu. Jika mati, gulir otomatis memutar reel satu demi satu.");
@@ -5083,7 +5079,7 @@ public final class L10nTranslations {
                 "Ukuran sudut");
         table.put("Couldn't change every Ghost mode switch. Check them below.",
                 "Tidak semua sakelar Mode hantu bisa diubah. Periksa di bawah.");
-        table.put("Couldn't change every Ghost mode switch. Open HushGram settings to check them.",
+        table.put("Couldn't change every Ghost mode switch. Open TADa settings to check them.",
                 "Tidak semua sakelar Mode hantu bisa diubah. Periksa di pengaturan HushGram.");
         table.put("Couldn't clear the download history. Try again.",
                 "Tidak bisa menghapus riwayat unduhan. Coba lagi.");
@@ -5101,7 +5097,7 @@ public final class L10nTranslations {
                 "Tidak dapat menyalin tautan media");
         table.put("Couldn't copy the username",
                 "Tidak dapat menyalin nama pengguna");
-        table.put("Couldn't export HushGram settings. Try another file.",
+        table.put("Couldn't export TADa settings. Try another file.",
                 "Pengaturan HushGram tidak dapat diekspor. Coba file lain.");
         table.put("Couldn't find the reel you came from",
                 "Reel asal Anda tidak ditemukan");
@@ -5109,7 +5105,7 @@ public final class L10nTranslations {
                 "Tidak bisa menyembunyikan akun ini");
         table.put("Couldn't hide this notice. Try again.",
                 "Pemberitahuan ini tidak dapat disembunyikan. Coba lagi.");
-        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in HushGram settings > Layout.",
+        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in TADa settings > Layout.",
                 "File fontmu tidak bisa dimuat, jadi font Instagram yang ditampilkan. Pilih lagi di Pengaturan HushGram > Tata letak.");
         table.put("Couldn't mark as read",
                 "Tidak dapat menandai sudah dibaca");
@@ -5125,7 +5121,7 @@ public final class L10nTranslations {
                 "Pengaturan tidak dapat disimpan atau dipulihkan sepenuhnya. Periksa nilai yang ditampilkan dan coba batalkan.");
         table.put("Couldn't save the PIN.",
                 "PIN tidak bisa disimpan.");
-        table.put("Couldn't save the playback quality. Open HushGram settings to set it.",
+        table.put("Couldn't save the playback quality. Open TADa settings to set it.",
                 "Kualitas pemutaran tidak bisa disimpan. Buka pengaturan HushGram untuk mengaturnya.");
         table.put("Couldn't save the settings. The previous values were restored.",
                 "Pengaturan tidak dapat disimpan. Nilai sebelumnya dipulihkan.");
@@ -5136,7 +5132,7 @@ public final class L10nTranslations {
     private static void fillIn4(Map<String, String> table) {
         table.put("Couldn't start the report export. Try again shortly.",
                 "Ekspor laporan tidak dapat dimulai. Coba lagi dalam beberapa saat.");
-        table.put("Couldn't turn HushGram back on. Try again.",
+        table.put("Couldn't turn TADa back on. Try again.",
                 "HushGram tidak dapat diaktifkan lagi. Coba lagi.");
         table.put("Couldn't update the remembered playback positions.",
                 "Tidak dapat memperbarui posisi pemutaran tersimpan.");
@@ -5273,11 +5269,11 @@ public final class L10nTranslations {
                 "Contoh tanpa detail postingan");
         table.put("Explore",
                 "Jelajahi");
-        table.put("Export HushGram settings",
+        table.put("Export TADa settings",
                 "Ekspor pengaturan HushGram");
         table.put("Export diagnostic report",
                 "Ekspor laporan diagnostik");
-        table.put("Exporting HushGram settings...",
+        table.put("Exporting TADa settings...",
                 "Mengekspor pengaturan HushGram...");
         table.put("Facebook",
                 "Facebook");
@@ -5369,7 +5365,7 @@ public final class L10nTranslations {
                 "Bilah tab kaca");
         table.put("Gold",
                 "Emas");
-        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later HushGram builds need Change version code too, or they won't install over this one.",
+        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later TADa builds need Change version code too, or they won't install over this one.",
                 "Google Play tidak akan menawarkan pembaruan Meta untuk build ini. Untuk kembali ke Instagram biasa, copot dulu yang ini, yang menghapus data Instagram di ponsel ini. Build HushGram berikutnya juga perlu Change version code, kalau tidak tidak bisa dipasang di atas yang ini.");
         table.put("Google's emoji everywhere",
                 "Emoji Google di mana saja");
@@ -5521,8 +5517,6 @@ public final class L10nTranslations {
                 "Sembunyikan tombol Ikuti");
         table.put("Hide the Home tab",
                 "Sembunyikan tab Beranda");
-        table.put("Hide the HushGram row in Instagram's menu",
-                "Sembunyikan baris HushGram di menu Instagram");
         table.put("Hide the Muse button on your profile",
                 "Sembunyikan tombol Muse di profilmu");
         table.put("Hide the Muse card",
@@ -5543,6 +5537,8 @@ public final class L10nTranslations {
                 "Sembunyikan tombol Bagikan");
         table.put("Hide the Stories tray",
                 "Sembunyikan baris Cerita");
+        table.put("Hide the TADa row in Instagram's menu",
+                "Sembunyikan baris HushGram di menu Instagram");
         table.put("Hide the Threads button",
                 "Sembunyikan tombol Threads");
         table.put("Hide the call buttons in chats",
@@ -5632,37 +5628,9 @@ public final class L10nTranslations {
                 "Berapa lama lagi cerita berakhir, misalnya sisa 18 j 14 m. Cerita yang lebih lama menampilkan tanggal dan jam.");
         table.put("How the time shows",
                 "Cara waktu ditampilkan");
-        table.put("How you open HushGram, and how this screen is laid out.",
+        table.put("How you open TADa, and how this screen is laid out.",
                 "Cara kamu membuka HushGram dan tata letak layar ini.");
-        table.put("HushGram %1$s on Instagram %2$s",
-                "HushGram %1$s di Instagram %2$s");
-        table.put("HushGram PIN",
-                "PIN HushGram");
-        table.put("HushGram is on",
-                "HushGram aktif");
-        table.put("HushGram is paused",
-                "HushGram dijeda");
-        table.put("HushGram launch screen",
-                "Layar pembuka HushGram");
-        table.put("HushGram paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in HushGram settings.",
-                "HushGram menjeda dirinya sendiri karena Instagram terus berhenti mendadak saat dibuka. Sakelarnya tetap nonaktif sampai Anda mengaktifkannya lagi di Pengaturan HushGram.");
-        table.put("HushGram pauses when Instagram restarts.",
-                "HushGram dijeda saat Instagram dimulai ulang.");
-        table.put("HushGram remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
-                "HushGram mengingat di mana kamu berhenti pada hingga 200 video selama 30 hari. Ketuk untuk menghapusnya dari perangkat ini.");
-        table.put("HushGram saves",
-                "Penyimpanan HushGram");
-        table.put("HushGram settings",
-                "Pengaturan HushGram");
-        table.put("HushGram settings are locked",
-                "Pengaturan HushGram terkunci");
-        table.put("HushGram settings couldn't open",
-                "Pengaturan HushGram tidak dapat dibuka");
-        table.put("HushGram settings exported.",
-                "Pengaturan HushGram diekspor.");
-        table.put("HushGram turns back on when Instagram restarts.",
-                "HushGram aktif lagi saat Instagram dimulai ulang.");
-        table.put("Import HushGram settings",
+        table.put("Import TADa settings",
                 "Impor pengaturan HushGram");
         table.put("Imported %1$d settings. Skipped %2$d that this version doesn't know.",
                 "%1$d pengaturan diimpor. %2$d dilewati karena tidak dikenal versi ini.");
@@ -5672,7 +5640,7 @@ public final class L10nTranslations {
                 "Biru Instagram");
         table.put("Instagram can't read your phone's advertising ID or tell Android's ad services which ads you saw or tapped. The permissions for them are gone from this build.",
                 "Instagram tidak dapat membaca ID iklan ponselmu atau memberi tahu layanan iklan Android iklan mana yang kamu lihat atau ketuk. Izin untuk itu sudah dihapus dari build ini.");
-        table.put("Instagram crashed or froze within a minute of starting three times in a row, so HushGram paused itself.",
+        table.put("Instagram crashed or froze within a minute of starting three times in a row, so TADa paused itself.",
                 "Instagram berhenti mendadak atau macet dalam satu menit setelah dibuka, tiga kali berturut-turut, jadi HushGram menjeda dirinya sendiri.");
         table.put("Instagram doesn't notice when you take a screenshot, so whoever sent you a disappearing photo or video isn't told. Your screenshots save as usual.",
                 "Instagram tidak tahu saat Anda mengambil tangkapan layar, jadi pengirim foto atau video sementara tidak diberi tahu. Tangkapan layar Anda tersimpan seperti biasa.");
@@ -5700,7 +5668,7 @@ public final class L10nTranslations {
                 "Instagram berhenti menampilkan layar yang menyatakan versi ini terlalu lama. Build yang ditambal tidak memperbarui dirinya sendiri, jadi ini membuatnya tetap bisa dipakai.");
         table.put("Instagram wakes your phone every minute or two, screen off included, only to note that it is still running. This stops that. Messages, notifications and everything you see are unaffected.",
                 "Instagram membangunkan ponselmu setiap satu atau dua menit, termasuk saat layar mati, hanya untuk mencatat bahwa ia masih berjalan. Ini menghentikannya. Pesan, notifikasi, dan semua yang kamu lihat tidak terpengaruh.");
-        table.put("Instagram's Settings and activity screen leaves out the HushGram row while another way here opens HushGram. With every other way off, the row comes back.",
+        table.put("Instagram's Settings and activity screen leaves out the TADa row while another way here opens TADa. With every other way off, the row comes back.",
                 "Selama cara lain ke sini membuka HushGram, layar Pengaturan dan aktivitas Instagram tidak menampilkan baris HushGram. Jika semua cara lain dimatikan, barisnya kembali.");
         table.put("Instagram's colors",
                 "Warna Instagram");
@@ -5746,9 +5714,6 @@ public final class L10nTranslations {
                 "Pertahankan kecepatan reel");
         table.put("Keep the zoom open",
                 "Biarkan zoom tetap terbuka");
-    }
-
-    private static void fillIn9(Map<String, String> table) {
         table.put("Keep your chats private and your inbox clear of extras.",
                 "Jaga obrolanmu tetap pribadi dan kotak masukmu bebas dari tambahan.");
         table.put("Keeps Instagram's Music for you card from turning up between the stories you watch. The stories themselves stay.",
@@ -5777,6 +5742,9 @@ public final class L10nTranslations {
                 "Melewati reel berlabel Kemitraan berbayar, dan reel yang ditandai Instagram sebagai dipromosikan. Iklan punya tombolnya sendiri.");
         table.put("Leaves out the Add Yours cards, like Popular Add Yours and Join a trending Add Yours, that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "Menghapus kartu Add Yours, seperti Add Yours populer dan ajakan ikut Add Yours yang sedang tren, yang diselipkan Instagram di antara cerita yang kamu ketuk. Ceritanya sendiri tetap ada.");
+    }
+
+    private static void fillIn9(Map<String, String> table) {
         table.put("Leaves out the Suggested for you cards of accounts to follow that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "Menghapus kartu Disarankan untuk kamu berisi akun untuk diikuti yang diselipkan Instagram di antara cerita yang kamu ketuk. Ceritanya sendiri tetap ada.");
         table.put("Leaves the Suggested for you accounts out of what shows when you tap the search bar. Recent searches stay.",
@@ -5829,11 +5797,11 @@ public final class L10nTranslations {
                 "Kunci pesan Anda");
         table.put("Locked chats",
                 "Obrolan terkunci");
-        table.put("Long press %1$s to open HushGram instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
+        table.put("Long press %1$s to open TADa instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
                 "Tekan lama %1$s untuk membuka HushGram menggantikan tindakan biasa tab itu. Ketukan biasa dan tab lainnya tetap sama. Hanya tab yang ditampilkan akunmu yang dapat digunakan.");
-        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens HushGram, that comes first.",
+        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens TADa, that comes first.",
                 "Tekan lama %1$s untuk memilih kualitas pemutaran menggantikan tindakan biasa tab itu. Ketukan biasa dan tab lain tetap sama. Kualitas pemutaran default harus aktif. Jika tab yang sama membuka HushGram, itu yang didahulukan.");
-        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens HushGram or picks the playback quality, that comes first.",
+        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens TADa or picks the playback quality, that comes first.",
                 "Tekan lama %1$s untuk menyalakan atau mematikan Mode hantu menggantikan tindakan biasa tab itu, dan pesan singkat memberi tahu hasilnya. Ketukan biasa dan tab lain tetap sama. Jika tab yang sama membuka HushGram atau memilih kualitas pemutaran, itu yang didahulukan.");
         table.put("Long press a photo to zoom",
                 "Tekan lama foto untuk memperbesar");
@@ -5869,9 +5837,6 @@ public final class L10nTranslations {
                 "Tombol Pesan di header Beranda");
         table.put("Messenger",
                 "Messenger");
-    }
-
-    private static void fillIn10(Map<String, String> table) {
         table.put("Meta AI",
                 "Meta AI");
         table.put("More",
@@ -5900,13 +5865,16 @@ public final class L10nTranslations {
                 "Tidak ada aplikasi di ponsel ini yang dapat membuka tautan ini. Alamatnya %1$s.");
         table.put("No app on this phone can play this video",
                 "Tidak ada aplikasi di ponsel ini yang dapat memutar video ini");
+    }
+
+    private static void fillIn10(Map<String, String> table) {
         table.put("No direct link for this one",
                 "Tidak ada tautan langsung untuk yang ini");
         table.put("No matching settings",
                 "Tidak ada pengaturan yang cocok");
         table.put("No one has left since then.",
                 "Belum ada yang pergi sejak itu.");
-        table.put("No other way into HushGram is on, so the row stays in Instagram's menu.",
+        table.put("No other way into TADa is on, so the row stays in Instagram's menu.",
                 "Tidak ada cara lain untuk membuka HushGram yang menyala, jadi barisnya tetap ada di menu Instagram.");
         table.put("No pages chosen",
                 "Tidak ada halaman yang dipilih");
@@ -5992,9 +5960,6 @@ public final class L10nTranslations {
                 "Buka chat di Instagram, lalu kembali ke sini untuk menyembunyikannya.");
         table.put("Open a chat in Instagram, then come back here to lock it.",
                 "Buka obrolan di Instagram, lalu kembali ke sini untuk menguncinya.");
-    }
-
-    private static void fillIn11(Map<String, String> table) {
         table.put("Open a creator's profile from a reel, then their Reels tab, and it scrolls to that reel and outlines it for a moment. A photo reel is found in their posts. Stop looking ends the search where it is.",
                 "Buka profil kreator dari sebuah reel, lalu tab Reels-nya, dan tab itu bergulir ke reel tersebut dan menandainya sebentar. Reel foto ditemukan di postingannya. Berhenti mencari menghentikan pencarian di posisinya saat itu.");
         table.put("Open app info",
@@ -6023,6 +5988,9 @@ public final class L10nTranslations {
                 "Membuka Beranda dengan postingan dari akun yang kamu ikuti, bukan Untuk Anda. Ketuk bagian atas Beranda untuk berganti. Mulai ulang Instagram untuk melihat perubahannya.");
         table.put("Opens a GitHub report with your versions and settings filled in. Add what happened.",
                 "Membuka laporan GitHub yang sudah berisi versi dan pengaturanmu. Tambahkan apa yang terjadi.");
+    }
+
+    private static void fillIn11(Map<String, String> table) {
         table.put("Orange",
                 "Oranye");
         table.put("PIN",
@@ -6037,7 +6005,7 @@ public final class L10nTranslations {
                 "Halaman %1$d, video");
         table.put("Pause",
                 "Jeda");
-        table.put("Pause HushGram",
+        table.put("Pause TADa",
                 "Jeda HushGram");
         table.put("Pause and diagnostics",
                 "Jeda dan diagnostik");
@@ -6095,14 +6063,14 @@ public final class L10nTranslations {
                 "Tampilkan akun yang tidak mengikuti balik kamu lebih dulu");
         table.put("Puts Activity, the screen the heart opens, on the tab bar before Profile. Tab order can move it, and Hide notifications on Home's header takes the heart away. Restart Instagram to see the change.",
                 "Menambahkan Aktivitas, layar yang dibuka ikon hati, ke bilah tab sebelum Profil. Urutan tab bisa memindahkannya, dan Sembunyikan notifikasi di header Beranda menghilangkan ikon hati. Mulai ulang Instagram untuk melihat perubahannya.");
-        table.put("Puts HushGram settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
-                "Menaruh Pengaturan HushGram di menu yang muncul saat ikon Instagram ditekan lama. Jika dimatikan, pintasan itu hilang dari menu tersebut.");
         table.put("Puts Instagram's logo in the middle of the top of Home, even with header buttons hidden or added. A feed's name shown there is centered too. Restart Instagram to see the change.",
                 "Menempatkan logo Instagram di tengah bagian atas Beranda, meski tombol header disembunyikan atau ditambahkan. Nama feed yang tampil di sana juga ditengahkan. Mulai ulang Instagram untuk melihat perubahannya.");
         table.put("Puts Messages on the tab bar, before Profile, if Instagram left it off yours. Tab order can move it. Restart Instagram to see the change.",
                 "Menambahkan Pesan ke bilah tab, sebelum Profil, jika Instagram tidak menampilkannya di akun Anda. Urutan tab bisa memindahkannya. Mulai ulang Instagram untuk melihat perubahannya.");
         table.put("Puts Reels back on the tab bar if Instagram left it off yours. Hide the Reels tab wins if both are on. Restart Instagram to see the change.",
                 "Mengembalikan Reels ke bilah tab jika Instagram tidak menampilkannya di akun Anda. Sembunyikan tab Reels lebih diutamakan jika keduanya aktif. Mulai ulang Instagram untuk melihat perubahannya.");
+        table.put("Puts TADa settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
+                "Menaruh Pengaturan HushGram di menu yang muncul saat ikon Instagram ditekan lama. Jika dimatikan, pintasan itu hilang dari menu tersebut.");
         table.put("Puts a Block icon beside someone else's reel. A tap opens Instagram's own block screen for that account, so you still confirm it there.",
                 "Menaruh ikon Blokir di samping reel orang lain. Satu ketukan membuka layar blokir milik Instagram untuk akun itu, jadi kamu tetap mengonfirmasinya di sana.");
         table.put("Puts a Not interested icon beside a reel, so one tap does what Not interested in its menu does.",
@@ -6115,9 +6083,6 @@ public final class L10nTranslations {
                 "Menaruh ikon musik di samping reel. Ketuk dan tab Reels melewati reel lain yang memakai suara itu. Ketuk lagi untuk memunculkannya kembali.");
         table.put("Puts every notification from Instagram in one group that shows how many it holds, so they don't fill your notification shade. Tapping one still opens it.",
                 "Memasukkan setiap notifikasi dari Instagram ke satu grup yang menunjukkan jumlah isinya, agar tidak memenuhi panel notifikasi Anda. Mengetuk salah satunya tetap membukanya.");
-    }
-
-    private static void fillIn12(Map<String, String> table) {
         table.put("Puts every switch back the way it started. Your locks stay as they are.",
                 "Mengembalikan semua sakelar seperti semula. Kuncimu tetap seperti apa adanya.");
         table.put("Puts the answer in a chip under the profile's posts, followers and following counts instead, and says Following each other when you follow them too.",
@@ -6146,6 +6111,9 @@ public final class L10nTranslations {
                 "Berhenti mengikuti baru-baru ini");
         table.put("Record patch activity and show errors for a bug report. Leave off during normal use.",
                 "Catat aktivitas patch dan tampilkan kesalahan untuk laporan bug. Matikan saat penggunaan biasa.");
+    }
+
+    private static void fillIn12(Map<String, String> table) {
         table.put("Red",
                 "Merah");
         table.put("Reels",
@@ -6238,9 +6206,6 @@ public final class L10nTranslations {
                 "Simpan semua");
         table.put("Save canceled",
                 "Penyimpanan dibatalkan");
-    }
-
-    private static void fillIn13(Map<String, String> table) {
         table.put("Save comment photo",
                 "Simpan foto komentar");
         table.put("Save every page without asking",
@@ -6257,7 +6222,7 @@ public final class L10nTranslations {
                 "Simpan laporan lengkap di %1$s.");
         table.put("Save videos other apps can open",
                 "Simpan video yang bisa dibuka aplikasi lain");
-        table.put("Save your HushGram choices to a file, or bring them back.",
+        table.put("Save your TADa choices to a file, or bring them back.",
                 "Simpan pilihan HushGram kamu ke file, atau pulihkan kembali.");
         table.put("Saved",
                 "Tersimpan");
@@ -6269,6 +6234,9 @@ public final class L10nTranslations {
                 "Disimpan ke %1$s");
         table.put("Saved to %1$s in lower quality than on Instagram",
                 "Disimpan ke %1$s dengan kualitas lebih rendah daripada di Instagram");
+    }
+
+    private static void fillIn13(Map<String, String> table) {
         table.put("Saved to the gallery",
                 "Disimpan ke galeri");
         table.put("Saved to the gallery in lower quality than on Instagram",
@@ -6289,7 +6257,7 @@ public final class L10nTranslations {
                 "Menyimpan laporan diagnostik...");
         table.put("Saving...",
                 "Menyimpan...");
-        table.put("Saving... You can cancel from Downloads in HushGram settings.",
+        table.put("Saving... You can cancel from Downloads in TADa settings.",
                 "Menyimpan... Kamu bisa membatalkan dari Unduhan di pengaturan HushGram.");
         table.put("Screenshots and screen recordings work wherever Instagram blocks them, like disappearing photos and videos. Turn on Don't report screenshots too if the sender shouldn't hear about it.",
                 "Tangkapan layar dan rekaman layar berfungsi di mana pun Instagram memblokirnya, seperti foto dan video sementara. Aktifkan juga Jangan laporkan tangkapan layar jika pengirim tidak boleh tahu.");
@@ -6317,9 +6285,9 @@ public final class L10nTranslations {
                 "Kirim ke");
         table.put("Set a PIN",
                 "Atur PIN");
-        table.put("Set a screen lock on your phone so HushGram can lock Instagram.",
+        table.put("Set a screen lock on your phone so TADa can lock Instagram.",
                 "Atur kunci layar di ponsel Anda agar HushGram bisa mengunci Instagram.");
-        table.put("Set a screen lock on your phone so HushGram can lock your messages.",
+        table.put("Set a screen lock on your phone so TADa can lock your messages.",
                 "Atur kunci layar di ponsel Anda agar HushGram bisa mengunci pesan Anda.");
         table.put("Set or change the 4 to 8 digit PIN. It stays on this phone and isn't in a backup.",
                 "Atur atau ubah PIN 4 sampai 8 angka. PIN tetap di ponsel ini dan tidak ikut dalam cadangan.");
@@ -6361,9 +6329,6 @@ public final class L10nTranslations {
                 "Tampilkan semua pencarian terbaru");
         table.put("Show all settings as a list",
                 "Tampilkan semua pengaturan sebagai daftar");
-    }
-
-    private static void fillIn14(Map<String, String> table) {
         table.put("Show and reorder tabs",
                 "Tampilkan dan atur ulang tab");
         table.put("Show content behind the tab bar",
@@ -6392,9 +6357,12 @@ public final class L10nTranslations {
                 "Tampilkan waktu persis terakhir aktif");
         table.put("Showing reels with %1$s again",
                 "Menampilkan lagi reel dengan %1$s");
+    }
+
+    private static void fillIn14(Map<String, String> table) {
         table.put("Shown. Tap to hide it.",
                 "Ditampilkan. Ketuk untuk menyembunyikannya.");
-        table.put("Shows HushGram's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
+        table.put("Shows TADa's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
                 "Menampilkan logo HushGram, bukan logo Instagram, di layar yang kamu lihat saat Instagram dimulai, di Android 13 dan yang lebih baru. Logo ini muncul mulai dari pembukaan berikutnya.");
         table.put("Shows every emoji in Google's style instead of your phone's own. Restart Instagram to see the change.",
                 "Menampilkan semua emoji dengan gaya Google, bukan gaya bawaan ponselmu. Mulai ulang Instagram untuk melihat perubahannya.");
@@ -6484,12 +6452,9 @@ public final class L10nTranslations {
                 "Cerita");
         table.put("Stories open with their sound on, the same as tapping Instagram's speaker. Your phone's ringer and volume still count, so on silent or with the volume down, stories stay quiet.",
                 "Cerita terbuka dengan suara menyala, sama seperti mengetuk speaker Instagram. Mode dering dan volume ponsel tetap berlaku, jadi saat senyap atau volume dimatikan, cerita tetap tanpa suara.");
-    }
-
-    private static void fillIn15(Map<String, String> table) {
         table.put("Story ring size",
                 "Ukuran lingkaran cerita");
-        table.put("Support HushGram",
+        table.put("Support TADa",
                 "Dukung HushGram");
         table.put("Swipe left to open the profile",
                 "Geser ke kiri untuk membuka profil");
@@ -6497,6 +6462,35 @@ public final class L10nTranslations {
                 "Sakelar yang diubah Mode hantu");
         table.put("System tick",
                 "Ketukan sistem");
+        table.put("TADa %1$s on Instagram %2$s",
+                "HushGram %1$s di Instagram %2$s");
+        table.put("TADa PIN",
+                "PIN HushGram");
+        table.put("TADa is on",
+                "HushGram aktif");
+        table.put("TADa is paused",
+                "HushGram dijeda");
+        table.put("TADa launch screen",
+                "Layar pembuka HushGram");
+        table.put("TADa paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in TADa settings.",
+                "HushGram menjeda dirinya sendiri karena Instagram terus berhenti mendadak saat dibuka. Sakelarnya tetap nonaktif sampai Anda mengaktifkannya lagi di Pengaturan HushGram.");
+        table.put("TADa pauses when Instagram restarts.",
+                "HushGram dijeda saat Instagram dimulai ulang.");
+        table.put("TADa remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
+                "HushGram mengingat di mana kamu berhenti pada hingga 200 video selama 30 hari. Ketuk untuk menghapusnya dari perangkat ini.");
+        table.put("TADa saves",
+                "Penyimpanan HushGram");
+    }
+
+    private static void fillIn15(Map<String, String> table) {
+        table.put("TADa settings are locked",
+                "Pengaturan HushGram terkunci");
+        table.put("TADa settings couldn't open",
+                "Pengaturan HushGram tidak dapat dibuka");
+        table.put("TADa settings exported.",
+                "Pengaturan HushGram diekspor.");
+        table.put("TADa turns back on when Instagram restarts.",
+                "HushGram aktif lagi saat Instagram dimulai ulang.");
         table.put("Tab bar",
                 "Bilah tab");
         table.put("Tab bar corners",
@@ -6505,7 +6499,7 @@ public final class L10nTranslations {
                 "Tinggi bilah tab");
         table.put("Tab bar opacity",
                 "Opasitas bilah tab");
-        table.put("Tab long presses keep Instagram's own action. Choose one to open HushGram instead.",
+        table.put("Tab long presses keep Instagram's own action. Choose one to open TADa instead.",
                 "Menekan lama tab tetap menjalankan tindakan Instagram. Pilih satu tab untuk membuka HushGram sebagai gantinya.");
         table.put("Tab long presses keep Instagram's own action. Choose one to pick the playback quality instead.",
                 "Menekan lama tab tetap menjalankan tindakan Instagram. Pilih satu tab untuk memilih kualitas pemutaran sebagai gantinya.");
@@ -6607,18 +6601,18 @@ public final class L10nTranslations {
                 "Ketuk untuk mengaktifkan HushGram lagi.");
         table.put("Tapping a call button in a chat asks first, so a stray tap doesn't ring anyone. Call starts it, Cancel doesn't.",
                 "Mengetuk tombol panggilan di chat akan bertanya dulu, jadi ketukan tak sengaja tidak menelepon siapa pun. Telepon memulainya, Batal tidak.");
+        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
+                "Mengetuk video, mengetuk dua kali untuk menyukai, serta Simpan dan Unduh tidak dihitung sebagai sentuhan, jadi tombol tetap pudar.");
     }
 
     private static void fillIn16(Map<String, String> table) {
-        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
-                "Mengetuk video, mengetuk dua kali untuk menyukai, serta Simpan dan Unduh tidak dihitung sebagai sentuhan, jadi tombol tetap pudar.");
         table.put("Teal",
                 "Hijau kebiruan");
         table.put("Tells Instagram your phone is at %1$s.",
                 "Memberi tahu Instagram bahwa ponselmu ada di %1$s.");
         table.put("Tells Instagram your phone is at the place set below, for the location sticker, nearby places and maps. Photos keep their own places.",
                 "Memberi tahu Instagram bahwa ponselmu ada di tempat yang diatur di bawah, untuk stiker lokasi, tempat terdekat, dan peta. Foto tetap memakai lokasinya sendiri.");
-        table.put("That file isn't a font HushGram can use. Your font hasn't changed.",
+        table.put("That file isn't a font TADa can use. Your font hasn't changed.",
                 "File itu bukan font yang bisa dipakai HushGram. Fontmu tidak berubah.");
         table.put("That isn't a domain. Type one like example.com, or leave it blank.",
                 "Itu bukan domain. Ketik domain seperti example.com, atau biarkan kosong.");
@@ -6634,7 +6628,7 @@ public final class L10nTranslations {
                 "Bilah Tambahkan komentar di bawah reel yang Anda buka dari postingan ulang di profil. Tombol komentar tetap membuka komentar.");
         table.put("The Follow button beside a reel's author. Their profile still has one.",
                 "Tombol Ikuti di samping pembuat reel. Profilnya tetap punya tombol itu.");
-        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets HushGram's settings. A saved settings backup brings the rest back, but not the PIN.",
+        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets TADa's settings. A saved settings backup brings the rest back, but not the PIN.",
                 "PIN tidak bisa dipulihkan. Untuk menghapusnya, hapus penyimpanan Instagram di pengaturan aplikasi Android. Kamu akan keluar dari akun dan pengaturan HushGram kembali ke awal. Cadangan pengaturan yang tersimpan mengembalikan sisanya, tapi tidak dengan PIN.");
         table.put("The PINs don't match.",
                 "PIN tidak sama.");
@@ -6652,7 +6646,7 @@ public final class L10nTranslations {
                 "Laporan diagnostik belum dapat disimpan. Coba lagi dalam beberapa saat.");
         table.put("The diagnostic report couldn't be saved. Try again.",
                 "Laporan diagnostik tidak dapat disimpan. Coba lagi.");
-        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn HushGram back on.",
+        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn TADa back on.",
                 "File %1$s tidak dapat dihapus. Hapus file itu dari %2$s untuk mengaktifkan HushGram lagi.");
         table.put("The first video on Home plays with its sound on, the same as tapping its speaker. Your phone's ringer and volume still count, so on silent or with the volume down, it stays quiet.",
                 "Video pertama di Beranda diputar dengan suara menyala, sama seperti mengetuk speakernya. Mode dering dan volume ponsel tetap berlaku, jadi saat senyap atau volume dimatikan, video tetap tanpa suara.");
@@ -6730,11 +6724,11 @@ public final class L10nTranslations {
                 "Aktifkan mode bersih Instagram di sebuah reel dan reels berikutnya juga terbuka dalam mode itu. Keluar sendiri dari mode bersih dan reels berikutnya menampilkan tombolnya lagi.");
         table.put("Turn on Show a story's exact time to use this choice.",
                 "Aktifkan Tampilkan waktu pasti cerita untuk menggunakan pilihan ini.");
+        table.put("Turn on Show it as a chip to use this choice.",
+                "Aktifkan Tampilkan sebagai chip untuk menggunakan pilihan ini.");
     }
 
     private static void fillIn17(Map<String, String> table) {
-        table.put("Turn on Show it as a chip to use this choice.",
-                "Aktifkan Tampilkan sebagai chip untuk menggunakan pilihan ini.");
         table.put("Turn on Start Home on Following to use this choice.",
                 "Aktifkan Mulai Beranda di Mengikuti untuk menggunakan pilihan ini.");
         table.put("Turn on Story ring size to use this choice.",
@@ -6853,11 +6847,11 @@ public final class L10nTranslations {
                 "Jika reel tidak ada di layar pertama, profil menampilkan tombol Cari reel alih-alih menggulir sendiri.");
         table.put("Where videos wait",
                 "Tempat video menunggu");
+        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
+                "Saat kamu melihat secara anonim, cerita yang sudah kamu tonton berubah abu-abu dan pindah ke ujung baris, hanya di ponsel ini. Instagram tetap tidak diberi tahu bahwa kamu menontonnya.");
     }
 
     private static void fillIn18(Map<String, String> table) {
-        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
-                "Saat kamu melihat secara anonim, cerita yang sudah kamu tonton berubah abu-abu dan pindah ke ujung baris, hanya di ponsel ini. Instagram tetap tidak diberi tahu bahwa kamu menontonnya.");
         table.put("Who unfollowed you",
                 "Siapa yang berhenti mengikutimu");
         table.put("Wi-Fi stays as it is. Turn this off to save data on every network.",
@@ -6872,7 +6866,7 @@ public final class L10nTranslations {
                 "X");
         table.put("You cleared the remembered playback positions.",
                 "Kamu menghapus posisi pemutaran tersimpan.");
-        table.put("You paused HushGram.",
+        table.put("You paused TADa.",
                 "Anda menjeda HushGram.");
         table.put("Your fingerprint, face or screen lock unlocks your messages.",
                 "Sidik jari, wajah, atau kunci layar ponselmu membuka kunci pesanmu.");
@@ -6901,7 +6895,7 @@ public final class L10nTranslations {
     }
 
     private static Map<String, String> buildIt() {
-        Map<String, String> table = new HashMap<>(2202);
+        Map<String, String> table = new HashMap<>(2200);
         fillIt0(table);
         fillIt1(table);
         fillIt2(table);
@@ -7005,7 +6999,7 @@ public final class L10nTranslations {
                 "Un doppio tocco su un post o un reel non mette pi\u00f9 Mi piace e non mostra un cuore. Un tocco singolo e il pulsante Mi piace funzionano come prima.");
         table.put("A double tap on a reel doesn't like it. Turn this off to keep double tap to like on reels.",
                 "Un doppio tocco su un reel non mette Mi piace. Disattiva per mantenere il doppio tocco per il Mi piace sui reel.");
-        table.put("A file named %1$s in %2$s paused HushGram.",
+        table.put("A file named %1$s in %2$s paused TADa.",
                 "Un file chiamato %1$s in %2$s ha messo in pausa HushGram.");
         table.put("A finished story stays on screen until you tap or swipe. Turn this off for Instagram's timing.",
                 "Una storia finita resta sullo schermo finch\u00e9 non tocchi o scorri. Disattiva per usare i tempi di Instagram.");
@@ -7021,7 +7015,7 @@ public final class L10nTranslations {
                 "Un po' di pi\u00f9");
         table.put("A long press on the Instagram logo at the top of Home opens these settings. Off, the long press goes back to Instagram.",
                 "Una pressione lunga sul logo di Instagram in cima alla Home apre queste impostazioni. Disattivata, la pressione lunga torna a Instagram.");
-        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens HushGram. A tap still opens Instagram's menu, and other profiles stay the same.",
+        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens TADa. A tap still opens Instagram's menu, and other profiles stay the same.",
                 "Una pressione lunga sul pulsante del menu, le tre linee in alto a destra nel tuo profilo, apre HushGram. Un tocco apre comunque il menu di Instagram, e gli altri profili restano uguali.");
         table.put("A reel Instagram's auto scroll moves to waits for your tap too. Off, auto scroll plays reel after reel.",
                 "Anche un reel a cui passa lo scorrimento automatico di Instagram aspetta il tuo tocco. Disattivato, lo scorrimento automatico riproduce un reel dopo l'altro.");
@@ -7366,7 +7360,7 @@ public final class L10nTranslations {
                 "Dimensione degli angoli");
         table.put("Couldn't change every Ghost mode switch. Check them below.",
                 "Impossibile cambiare tutti gli interruttori della modalit\u00e0 Ghost. Controllali qui sotto.");
-        table.put("Couldn't change every Ghost mode switch. Open HushGram settings to check them.",
+        table.put("Couldn't change every Ghost mode switch. Open TADa settings to check them.",
                 "Impossibile cambiare tutti gli interruttori della modalit\u00e0 Ghost. Apri le impostazioni di HushGram per controllarli.");
         table.put("Couldn't clear the download history. Try again.",
                 "Impossibile cancellare la cronologia dei download. Riprova.");
@@ -7384,7 +7378,7 @@ public final class L10nTranslations {
                 "Impossibile copiare il link del media");
         table.put("Couldn't copy the username",
                 "Impossibile copiare il nome utente");
-        table.put("Couldn't export HushGram settings. Try another file.",
+        table.put("Couldn't export TADa settings. Try another file.",
                 "Impossibile esportare le impostazioni di HushGram. Prova con un altro file.");
         table.put("Couldn't find the reel you came from",
                 "Impossibile trovare il reel da cui arrivi");
@@ -7392,7 +7386,7 @@ public final class L10nTranslations {
                 "Impossibile nascondere questo account");
         table.put("Couldn't hide this notice. Try again.",
                 "Impossibile nascondere questo avviso. Riprova.");
-        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in HushGram settings > Layout.",
+        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in TADa settings > Layout.",
                 "Impossibile caricare il file del carattere, quindi si vede il carattere di Instagram. Sceglilo di nuovo in Impostazioni di HushGram > Layout.");
         table.put("Couldn't mark as read",
                 "Impossibile segnare come letto");
@@ -7408,7 +7402,7 @@ public final class L10nTranslations {
                 "Impossibile salvare o ripristinare del tutto le impostazioni. Controlla i valori mostrati e prova Annulla.");
         table.put("Couldn't save the PIN.",
                 "Impossibile salvare il PIN.");
-        table.put("Couldn't save the playback quality. Open HushGram settings to set it.",
+        table.put("Couldn't save the playback quality. Open TADa settings to set it.",
                 "Impossibile salvare la qualit\u00e0 di riproduzione. Apri le impostazioni di HushGram per impostarla.");
         table.put("Couldn't save the settings. The previous values were restored.",
                 "Impossibile salvare le impostazioni. I valori precedenti sono stati ripristinati.");
@@ -7419,7 +7413,7 @@ public final class L10nTranslations {
     private static void fillIt4(Map<String, String> table) {
         table.put("Couldn't start the report export. Try again shortly.",
                 "Impossibile avviare l'esportazione del report. Riprova tra poco.");
-        table.put("Couldn't turn HushGram back on. Try again.",
+        table.put("Couldn't turn TADa back on. Try again.",
                 "Impossibile riattivare HushGram. Riprova.");
         table.put("Couldn't update the remembered playback positions.",
                 "Impossibile aggiornare le posizioni di riproduzione memorizzate.");
@@ -7556,11 +7550,11 @@ public final class L10nTranslations {
                 "Esempio senza dettagli del post");
         table.put("Explore",
                 "Esplora");
-        table.put("Export HushGram settings",
+        table.put("Export TADa settings",
                 "Esporta le impostazioni di HushGram");
         table.put("Export diagnostic report",
                 "Esporta report diagnostico");
-        table.put("Exporting HushGram settings...",
+        table.put("Exporting TADa settings...",
                 "Esportazione delle impostazioni di HushGram...");
         table.put("Facebook",
                 "Facebook");
@@ -7652,7 +7646,7 @@ public final class L10nTranslations {
                 "Barra delle schede di vetro");
         table.put("Gold",
                 "Oro");
-        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later HushGram builds need Change version code too, or they won't install over this one.",
+        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later TADa builds need Change version code too, or they won't install over this one.",
                 "Google Play non offrir\u00e0 gli aggiornamenti di Meta su questa build. Per tornare al normale Instagram, disinstalla prima questo, il che cancella i dati di Instagram su questo telefono. Anche le build future di HushGram richiedono Cambia il codice versione, altrimenti non si installeranno sopra questa.");
         table.put("Google's emoji everywhere",
                 "Emoji di Google ovunque");
@@ -7804,8 +7798,6 @@ public final class L10nTranslations {
                 "Nascondi il pulsante Segui");
         table.put("Hide the Home tab",
                 "Nascondi la scheda Home");
-        table.put("Hide the HushGram row in Instagram's menu",
-                "Nascondi la riga HushGram nel menu di Instagram");
         table.put("Hide the Muse button on your profile",
                 "Nascondi il pulsante Muse sul tuo profilo");
         table.put("Hide the Muse card",
@@ -7826,6 +7818,8 @@ public final class L10nTranslations {
                 "Nascondi il pulsante Condividi");
         table.put("Hide the Stories tray",
                 "Nascondi la barra delle storie");
+        table.put("Hide the TADa row in Instagram's menu",
+                "Nascondi la riga HushGram nel menu di Instagram");
         table.put("Hide the Threads button",
                 "Nascondi il pulsante Threads");
         table.put("Hide the call buttons in chats",
@@ -7915,37 +7909,9 @@ public final class L10nTranslations {
                 "Quanto manca alla scadenza della storia, come 18h 14m rimasti. Le storie pi\u00f9 vecchie mostrano la data e l'ora.");
         table.put("How the time shows",
                 "Come mostrare l'ora");
-        table.put("How you open HushGram, and how this screen is laid out.",
+        table.put("How you open TADa, and how this screen is laid out.",
                 "Come apri HushGram e come \u00e8 organizzata questa schermata.");
-        table.put("HushGram %1$s on Instagram %2$s",
-                "HushGram %1$s su Instagram %2$s");
-        table.put("HushGram PIN",
-                "PIN di HushGram");
-        table.put("HushGram is on",
-                "HushGram \u00e8 attivo");
-        table.put("HushGram is paused",
-                "HushGram \u00e8 in pausa");
-        table.put("HushGram launch screen",
-                "Schermata di avvio di HushGram");
-        table.put("HushGram paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in HushGram settings.",
-                "HushGram si \u00e8 messo in pausa da solo perch\u00e9 Instagram continuava a bloccarsi all'avvio. I suoi interruttori restano off finch\u00e9 non lo riattivi nelle impostazioni di HushGram.");
-        table.put("HushGram pauses when Instagram restarts.",
-                "HushGram va in pausa quando Instagram si riavvia.");
-        table.put("HushGram remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
-                "HushGram ricorda dove ti sei fermato in un massimo di 200 video per 30 giorni. Tocca per cancellarli da questo dispositivo.");
-        table.put("HushGram saves",
-                "Salvataggi di HushGram");
-        table.put("HushGram settings",
-                "Impostazioni di HushGram");
-        table.put("HushGram settings are locked",
-                "Le impostazioni di HushGram sono bloccate");
-        table.put("HushGram settings couldn't open",
-                "Impossibile aprire le impostazioni di HushGram");
-        table.put("HushGram settings exported.",
-                "Impostazioni di HushGram esportate.");
-        table.put("HushGram turns back on when Instagram restarts.",
-                "HushGram si riattiva quando Instagram si riavvia.");
-        table.put("Import HushGram settings",
+        table.put("Import TADa settings",
                 "Importa le impostazioni di HushGram");
         table.put("Imported %1$d settings. Skipped %2$d that this version doesn't know.",
                 "Importate %1$d impostazioni. Saltate %2$d che questa versione non conosce.");
@@ -7955,7 +7921,7 @@ public final class L10nTranslations {
                 "Blu Instagram");
         table.put("Instagram can't read your phone's advertising ID or tell Android's ad services which ads you saw or tapped. The permissions for them are gone from this build.",
                 "Instagram non pu\u00f2 leggere l'ID pubblicitario del telefono n\u00e9 dire ai servizi pubblicitari di Android quali annunci hai visto o toccato. I permessi per farlo sono stati tolti da questa build.");
-        table.put("Instagram crashed or froze within a minute of starting three times in a row, so HushGram paused itself.",
+        table.put("Instagram crashed or froze within a minute of starting three times in a row, so TADa paused itself.",
                 "Instagram si \u00e8 chiuso o bloccato entro un minuto dall'avvio tre volte di fila, quindi HushGram si \u00e8 messo in pausa da solo.");
         table.put("Instagram doesn't notice when you take a screenshot, so whoever sent you a disappearing photo or video isn't told. Your screenshots save as usual.",
                 "Instagram non si accorge quando fai uno screenshot, quindi chi ti ha inviato una foto o un video a scomparsa non viene avvisato. I tuoi screenshot si salvano come al solito.");
@@ -7983,7 +7949,7 @@ public final class L10nTranslations {
                 "Instagram smette di mostrare la schermata che dice che questa versione \u00e8 troppo vecchia. Una build con patch non si aggiorna da sola, quindi cos\u00ec resta utilizzabile.");
         table.put("Instagram wakes your phone every minute or two, screen off included, only to note that it is still running. This stops that. Messages, notifications and everything you see are unaffected.",
                 "Instagram sveglia il telefono ogni minuto o due, anche a schermo spento, solo per segnalare che \u00e8 ancora in esecuzione. Questo lo ferma. Messaggi, notifiche e tutto ci\u00f2 che vedi non cambiano.");
-        table.put("Instagram's Settings and activity screen leaves out the HushGram row while another way here opens HushGram. With every other way off, the row comes back.",
+        table.put("Instagram's Settings and activity screen leaves out the TADa row while another way here opens TADa. With every other way off, the row comes back.",
                 "Finch\u00e9 un altro modo per arrivare qui apre HushGram, la schermata Impostazioni e attivit\u00e0 di Instagram esclude la riga HushGram. Con tutti gli altri modi disattivati, la riga torna.");
         table.put("Instagram's colors",
                 "Colori di Instagram");
@@ -8029,9 +7995,6 @@ public final class L10nTranslations {
                 "Mantieni la velocit\u00e0 dei reel");
         table.put("Keep the zoom open",
                 "Mantieni lo zoom aperto");
-    }
-
-    private static void fillIt9(Map<String, String> table) {
         table.put("Keep your chats private and your inbox clear of extras.",
                 "Tieni private le tue chat e libera la posta in arrivo dagli extra.");
         table.put("Keeps Instagram's Music for you card from turning up between the stories you watch. The stories themselves stay.",
@@ -8060,6 +8023,9 @@ public final class L10nTranslations {
                 "Esclude i reel con l'etichetta Partnership a pagamento e i reel che Instagram segna come sponsorizzati. Gli annunci hanno un interruttore a parte.");
         table.put("Leaves out the Add Yours cards, like Popular Add Yours and Join a trending Add Yours, that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "Esclude le schede Tocca a te, come quelle popolari o di tendenza a cui unirsi, che Instagram mette tra le storie che scorri. Le storie restano.");
+    }
+
+    private static void fillIt9(Map<String, String> table) {
         table.put("Leaves out the Suggested for you cards of accounts to follow that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "Esclude le schede Suggeriti per te di account da seguire che Instagram mette tra le storie che scorri. Le storie restano.");
         table.put("Leaves the Suggested for you accounts out of what shows when you tap the search bar. Recent searches stay.",
@@ -8112,11 +8078,11 @@ public final class L10nTranslations {
                 "Blocca i tuoi messaggi");
         table.put("Locked chats",
                 "Chat bloccate");
-        table.put("Long press %1$s to open HushGram instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
+        table.put("Long press %1$s to open TADa instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
                 "Tieni premuto %1$s per aprire HushGram al posto dell'azione abituale di quella scheda. I tocchi normali e le altre schede restano uguali. Si possono usare solo le schede che il tuo account mostra.");
-        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens HushGram, that comes first.",
+        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens TADa, that comes first.",
                 "Tieni premuto %1$s per scegliere la qualit\u00e0 di riproduzione al posto dell'azione abituale di quella scheda. I tocchi normali e le altre schede restano uguali. Richiede Qualit\u00e0 di riproduzione predefinita attiva. Se la stessa scheda apre HushGram, quello ha la precedenza.");
-        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens HushGram or picks the playback quality, that comes first.",
+        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens TADa or picks the playback quality, that comes first.",
                 "Tieni premuto %1$s per attivare o disattivare la modalit\u00e0 Ghost al posto dell'azione abituale di quella scheda, e un avviso ti dice com'\u00e8 andata. I tocchi normali e le altre schede restano uguali. Se la stessa scheda apre HushGram o sceglie la qualit\u00e0 di riproduzione, quello ha la precedenza.");
         table.put("Long press a photo to zoom",
                 "Pressione lunga su una foto per ingrandirla");
@@ -8152,9 +8118,6 @@ public final class L10nTranslations {
                 "Pulsante Messaggi nell'intestazione della Home");
         table.put("Messenger",
                 "Messenger");
-    }
-
-    private static void fillIt10(Map<String, String> table) {
         table.put("Meta AI",
                 "Meta AI");
         table.put("More",
@@ -8183,13 +8146,16 @@ public final class L10nTranslations {
                 "Nessuna app su questo telefono pu\u00f2 aprire il link. L'indirizzo \u00e8 %1$s.");
         table.put("No app on this phone can play this video",
                 "Nessuna app su questo telefono pu\u00f2 riprodurre questo video");
+    }
+
+    private static void fillIt10(Map<String, String> table) {
         table.put("No direct link for this one",
                 "Nessun link diretto per questo");
         table.put("No matching settings",
                 "Nessuna impostazione corrispondente");
         table.put("No one has left since then.",
                 "Da allora nessuno se n'\u00e8 andato.");
-        table.put("No other way into HushGram is on, so the row stays in Instagram's menu.",
+        table.put("No other way into TADa is on, so the row stays in Instagram's menu.",
                 "Nessun altro modo per aprire HushGram \u00e8 attivo, quindi la riga resta nel menu di Instagram.");
         table.put("No pages chosen",
                 "Nessuna pagina scelta");
@@ -8275,9 +8241,6 @@ public final class L10nTranslations {
                 "Apri una chat in Instagram, poi torna qui per nasconderla.");
         table.put("Open a chat in Instagram, then come back here to lock it.",
                 "Apri una chat in Instagram, poi torna qui per bloccarla.");
-    }
-
-    private static void fillIt11(Map<String, String> table) {
         table.put("Open a creator's profile from a reel, then their Reels tab, and it scrolls to that reel and outlines it for a moment. A photo reel is found in their posts. Stop looking ends the search where it is.",
                 "Apri il profilo di un creator da un reel, poi la sua scheda Reel, e scorre fino a quel reel e lo evidenzia per un momento. Un reel di foto viene trovato tra i suoi post. Smetti di cercare termina la ricerca dov'\u00e8.");
         table.put("Open app info",
@@ -8306,6 +8269,9 @@ public final class L10nTranslations {
                 "Apre la Home sui post degli account che segui invece di Per te. Tocca la parte alta della Home per cambiare. Riavvia Instagram per vedere la modifica.");
         table.put("Opens a GitHub report with your versions and settings filled in. Add what happened.",
                 "Apre una segnalazione su GitHub con le tue versioni e impostazioni gi\u00e0 compilate. Aggiungi cos'\u00e8 successo.");
+    }
+
+    private static void fillIt11(Map<String, String> table) {
         table.put("Orange",
                 "Arancione");
         table.put("PIN",
@@ -8320,7 +8286,7 @@ public final class L10nTranslations {
                 "Pagina %1$d, video");
         table.put("Pause",
                 "Pausa");
-        table.put("Pause HushGram",
+        table.put("Pause TADa",
                 "Metti in pausa HushGram");
         table.put("Pause and diagnostics",
                 "Pausa e diagnostica");
@@ -8378,14 +8344,14 @@ public final class L10nTranslations {
                 "Metti prima gli account che non ti seguono a loro volta");
         table.put("Puts Activity, the screen the heart opens, on the tab bar before Profile. Tab order can move it, and Hide notifications on Home's header takes the heart away. Restart Instagram to see the change.",
                 "Mette Attivit\u00e0, la schermata che apre il cuore, nella barra delle schede prima di Profilo. L'ordine delle schede pu\u00f2 spostarla, e Nascondi le notifiche nell'intestazione della Home toglie il cuore. Riavvia Instagram per vedere la modifica.");
-        table.put("Puts HushGram settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
-                "Mette le impostazioni di HushGram nel menu che compare tenendo premuta l'icona di Instagram. Disattivata, esce da quel menu.");
         table.put("Puts Instagram's logo in the middle of the top of Home, even with header buttons hidden or added. A feed's name shown there is centered too. Restart Instagram to see the change.",
                 "Mette il logo di Instagram al centro della parte alta della Home, anche con i pulsanti dell'intestazione nascosti o aggiunti. Anche il nome di un feed mostrato l\u00ec viene centrato. Riavvia Instagram per vedere la modifica.");
         table.put("Puts Messages on the tab bar, before Profile, if Instagram left it off yours. Tab order can move it. Restart Instagram to see the change.",
                 "Mette Messaggi nella barra delle schede, prima di Profilo, se Instagram l'ha tolta dalla tua. L'ordine delle schede pu\u00f2 spostarla. Riavvia Instagram per vedere la modifica.");
         table.put("Puts Reels back on the tab bar if Instagram left it off yours. Hide the Reels tab wins if both are on. Restart Instagram to see the change.",
                 "Rimette i reel nella barra delle schede se Instagram li ha tolti dalla tua. Nascondi la scheda Reel ha la precedenza se entrambe sono attive. Riavvia Instagram per vedere la modifica.");
+        table.put("Puts TADa settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
+                "Mette le impostazioni di HushGram nel menu che compare tenendo premuta l'icona di Instagram. Disattivata, esce da quel menu.");
         table.put("Puts a Block icon beside someone else's reel. A tap opens Instagram's own block screen for that account, so you still confirm it there.",
                 "Mette un'icona Blocca accanto al reel di un altro account. Un tocco apre la schermata di blocco di Instagram per quell'account, quindi confermi comunque l\u00ec.");
         table.put("Puts a Not interested icon beside a reel, so one tap does what Not interested in its menu does.",
@@ -8398,9 +8364,6 @@ public final class L10nTranslations {
                 "Mette un'icona musicale accanto a un reel. Toccala e la scheda Reels salta gli altri reel con quell'audio. Toccala di nuovo per farli tornare.");
         table.put("Puts every notification from Instagram in one group that shows how many it holds, so they don't fill your notification shade. Tapping one still opens it.",
                 "Mette tutte le notifiche di Instagram in un unico gruppo che mostra quante ne contiene, cos\u00ec non riempiono il pannello delle notifiche. Toccandone una si apre comunque.");
-    }
-
-    private static void fillIt12(Map<String, String> table) {
         table.put("Puts every switch back the way it started. Your locks stay as they are.",
                 "Rimette ogni interruttore come all'inizio. I tuoi blocchi restano come sono.");
         table.put("Puts the answer in a chip under the profile's posts, followers and following counts instead, and says Following each other when you follow them too.",
@@ -8429,6 +8392,9 @@ public final class L10nTranslations {
                 "Smesso di seguirti di recente");
         table.put("Record patch activity and show errors for a bug report. Leave off during normal use.",
                 "Registra l'attivit\u00e0 delle patch e mostra gli errori per una segnalazione di bug. Lascia disattivato durante l'uso normale.");
+    }
+
+    private static void fillIt12(Map<String, String> table) {
         table.put("Red",
                 "Rosso");
         table.put("Reels",
@@ -8521,9 +8487,6 @@ public final class L10nTranslations {
                 "Salva tutto");
         table.put("Save canceled",
                 "Salvataggio annullato");
-    }
-
-    private static void fillIt13(Map<String, String> table) {
         table.put("Save comment photo",
                 "Salva la foto del commento");
         table.put("Save every page without asking",
@@ -8540,7 +8503,7 @@ public final class L10nTranslations {
                 "Salva il report completo in %1$s.");
         table.put("Save videos other apps can open",
                 "Salva video apribili da altre app");
-        table.put("Save your HushGram choices to a file, or bring them back.",
+        table.put("Save your TADa choices to a file, or bring them back.",
                 "Salva le tue scelte di HushGram in un file, oppure ripristinale.");
         table.put("Saved",
                 "Salvati");
@@ -8552,6 +8515,9 @@ public final class L10nTranslations {
                 "Salvato in %1$s");
         table.put("Saved to %1$s in lower quality than on Instagram",
                 "Salvato in %1$s a qualit\u00e0 inferiore rispetto a Instagram");
+    }
+
+    private static void fillIt13(Map<String, String> table) {
         table.put("Saved to the gallery",
                 "Salvato nella galleria");
         table.put("Saved to the gallery in lower quality than on Instagram",
@@ -8572,7 +8538,7 @@ public final class L10nTranslations {
                 "Salvataggio del report diagnostico...");
         table.put("Saving...",
                 "Salvataggio...");
-        table.put("Saving... You can cancel from Downloads in HushGram settings.",
+        table.put("Saving... You can cancel from Downloads in TADa settings.",
                 "Salvataggio... Puoi annullare da Download nelle impostazioni di HushGram.");
         table.put("Screenshots and screen recordings work wherever Instagram blocks them, like disappearing photos and videos. Turn on Don't report screenshots too if the sender shouldn't hear about it.",
                 "Screenshot e registrazioni dello schermo funzionano dove Instagram li blocca, come foto e video a scomparsa. Attiva anche Non segnalare gli screenshot se chi li ha inviati non deve saperlo.");
@@ -8600,9 +8566,9 @@ public final class L10nTranslations {
                 "Invia a");
         table.put("Set a PIN",
                 "Imposta un PIN");
-        table.put("Set a screen lock on your phone so HushGram can lock Instagram.",
+        table.put("Set a screen lock on your phone so TADa can lock Instagram.",
                 "Imposta un blocco schermo sul telefono cos\u00ec HushGram pu\u00f2 bloccare Instagram.");
-        table.put("Set a screen lock on your phone so HushGram can lock your messages.",
+        table.put("Set a screen lock on your phone so TADa can lock your messages.",
                 "Imposta un blocco schermo sul telefono cos\u00ec HushGram pu\u00f2 bloccare i tuoi messaggi.");
         table.put("Set or change the 4 to 8 digit PIN. It stays on this phone and isn't in a backup.",
                 "Imposta o cambia il PIN da 4 a 8 cifre. Resta su questo telefono e non \u00e8 in un backup.");
@@ -8644,9 +8610,6 @@ public final class L10nTranslations {
                 "Mostra tutte le ricerche recenti");
         table.put("Show all settings as a list",
                 "Mostra tutte le impostazioni come elenco");
-    }
-
-    private static void fillIt14(Map<String, String> table) {
         table.put("Show and reorder tabs",
                 "Mostra e riordina le schede");
         table.put("Show content behind the tab bar",
@@ -8675,9 +8638,12 @@ public final class L10nTranslations {
                 "Mostra quando qualcuno \u00e8 stato attivo l'ultima volta");
         table.put("Showing reels with %1$s again",
                 "Mostro di nuovo i reel con %1$s");
+    }
+
+    private static void fillIt14(Map<String, String> table) {
         table.put("Shown. Tap to hide it.",
                 "Visibile. Tocca per nasconderla.");
-        table.put("Shows HushGram's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
+        table.put("Shows TADa's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
                 "Mostra il logo di HushGram invece di quello di Instagram sulla schermata che vedi mentre Instagram si avvia, su Android 13 e successivi. Si vede dal prossimo avvio.");
         table.put("Shows every emoji in Google's style instead of your phone's own. Restart Instagram to see the change.",
                 "Mostra tutte le emoji nello stile di Google invece di quello del tuo telefono. Riavvia Instagram per vedere la modifica.");
@@ -8767,12 +8733,9 @@ public final class L10nTranslations {
                 "Storie");
         table.put("Stories open with their sound on, the same as tapping Instagram's speaker. Your phone's ringer and volume still count, so on silent or with the volume down, stories stay quiet.",
                 "Le storie si aprono con l'audio attivo, come toccando l'altoparlante di Instagram. La suoneria e il volume del telefono contano comunque, quindi in silenzioso o con il volume basso le storie restano mute.");
-    }
-
-    private static void fillIt15(Map<String, String> table) {
         table.put("Story ring size",
                 "Dimensione dei cerchi delle storie");
-        table.put("Support HushGram",
+        table.put("Support TADa",
                 "Supporta HushGram");
         table.put("Swipe left to open the profile",
                 "Scorri a sinistra per aprire il profilo");
@@ -8780,6 +8743,35 @@ public final class L10nTranslations {
                 "Interruttori che la modalit\u00e0 Ghost cambia");
         table.put("System tick",
                 "Tic di sistema");
+        table.put("TADa %1$s on Instagram %2$s",
+                "HushGram %1$s su Instagram %2$s");
+        table.put("TADa PIN",
+                "PIN di HushGram");
+        table.put("TADa is on",
+                "HushGram \u00e8 attivo");
+        table.put("TADa is paused",
+                "HushGram \u00e8 in pausa");
+        table.put("TADa launch screen",
+                "Schermata di avvio di HushGram");
+        table.put("TADa paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in TADa settings.",
+                "HushGram si \u00e8 messo in pausa da solo perch\u00e9 Instagram continuava a bloccarsi all'avvio. I suoi interruttori restano off finch\u00e9 non lo riattivi nelle impostazioni di HushGram.");
+        table.put("TADa pauses when Instagram restarts.",
+                "HushGram va in pausa quando Instagram si riavvia.");
+        table.put("TADa remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
+                "HushGram ricorda dove ti sei fermato in un massimo di 200 video per 30 giorni. Tocca per cancellarli da questo dispositivo.");
+        table.put("TADa saves",
+                "Salvataggi di HushGram");
+    }
+
+    private static void fillIt15(Map<String, String> table) {
+        table.put("TADa settings are locked",
+                "Le impostazioni di HushGram sono bloccate");
+        table.put("TADa settings couldn't open",
+                "Impossibile aprire le impostazioni di HushGram");
+        table.put("TADa settings exported.",
+                "Impostazioni di HushGram esportate.");
+        table.put("TADa turns back on when Instagram restarts.",
+                "HushGram si riattiva quando Instagram si riavvia.");
         table.put("Tab bar",
                 "Barra delle schede");
         table.put("Tab bar corners",
@@ -8788,7 +8780,7 @@ public final class L10nTranslations {
                 "Altezza della barra delle schede");
         table.put("Tab bar opacity",
                 "Opacit\u00e0 della barra delle schede");
-        table.put("Tab long presses keep Instagram's own action. Choose one to open HushGram instead.",
+        table.put("Tab long presses keep Instagram's own action. Choose one to open TADa instead.",
                 "Le pressioni lunghe sulle schede mantengono l'azione di Instagram. Scegline una per aprire invece HushGram.");
         table.put("Tab long presses keep Instagram's own action. Choose one to pick the playback quality instead.",
                 "Le pressioni lunghe sulle schede mantengono l'azione di Instagram. Scegline una per scegliere invece la qualit\u00e0 di riproduzione.");
@@ -8890,18 +8882,18 @@ public final class L10nTranslations {
                 "Tocca per riattivarlo.");
         table.put("Tapping a call button in a chat asks first, so a stray tap doesn't ring anyone. Call starts it, Cancel doesn't.",
                 "Toccare un pulsante di chiamata in una chat chiede prima, cos\u00ec un tocco accidentale non fa squillare nessuno. Chiama la avvia, Annulla no.");
+        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
+                "Toccare il video, toccarlo due volte per mettere mi piace, Salva e Scarica non contano come un tocco, quindi i pulsanti restano sfumati.");
     }
 
     private static void fillIt16(Map<String, String> table) {
-        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
-                "Toccare il video, toccarlo due volte per mettere mi piace, Salva e Scarica non contano come un tocco, quindi i pulsanti restano sfumati.");
         table.put("Teal",
                 "Verde acqua");
         table.put("Tells Instagram your phone is at %1$s.",
                 "Dice a Instagram che il tuo telefono si trova a %1$s.");
         table.put("Tells Instagram your phone is at the place set below, for the location sticker, nearby places and maps. Photos keep their own places.",
                 "Dice a Instagram che il tuo telefono si trova nel luogo impostato sotto, per l'adesivo della posizione, i luoghi vicini e le mappe. Le foto mantengono i propri luoghi.");
-        table.put("That file isn't a font HushGram can use. Your font hasn't changed.",
+        table.put("That file isn't a font TADa can use. Your font hasn't changed.",
                 "Quel file non \u00e8 un carattere che HushGram pu\u00f2 usare. Il tuo carattere non \u00e8 cambiato.");
         table.put("That isn't a domain. Type one like example.com, or leave it blank.",
                 "Non \u00e8 un dominio. Scrivine uno come example.com, oppure lascia vuoto.");
@@ -8917,7 +8909,7 @@ public final class L10nTranslations {
                 "La barra Aggiungi un commento sotto un reel che apri dai repost di un profilo. Il pulsante dei commenti apre comunque i commenti.");
         table.put("The Follow button beside a reel's author. Their profile still has one.",
                 "Il pulsante Segui accanto all'autore di un reel. Il suo profilo ne ha comunque uno.");
-        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets HushGram's settings. A saved settings backup brings the rest back, but not the PIN.",
+        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets TADa's settings. A saved settings backup brings the rest back, but not the PIN.",
                 "Il PIN non si pu\u00f2 recuperare. Per rimuoverlo, svuota l'archiviazione di Instagram nelle impostazioni app di Android. Questo ti fa uscire dall'account e reimposta le impostazioni di HushGram. Un backup delle impostazioni salvato riporta il resto, ma non il PIN.");
         table.put("The PINs don't match.",
                 "I PIN non coincidono.");
@@ -8935,7 +8927,7 @@ public final class L10nTranslations {
                 "Impossibile salvare ancora il report diagnostico. Riprova tra un attimo.");
         table.put("The diagnostic report couldn't be saved. Try again.",
                 "Impossibile salvare il report diagnostico. Riprova.");
-        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn HushGram back on.",
+        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn TADa back on.",
                 "Impossibile rimuovere il file %1$s. Eliminalo da %2$s per riattivare HushGram.");
         table.put("The first video on Home plays with its sound on, the same as tapping its speaker. Your phone's ringer and volume still count, so on silent or with the volume down, it stays quiet.",
                 "Il primo video nella Home parte con l'audio attivo, come toccando il suo altoparlante. La suoneria e il volume del telefono contano comunque, quindi in silenzioso o con il volume basso resta muto.");
@@ -9013,11 +9005,11 @@ public final class L10nTranslations {
                 "Attiva la modalit\u00e0 pulita di Instagram su un reel e anche i reel successivi si aprono cos\u00ec. Esci tu dalla modalit\u00e0 pulita e i reel successivi mostrano di nuovo i loro pulsanti.");
         table.put("Turn on Show a story's exact time to use this choice.",
                 "Attiva Mostra l'ora esatta di una storia per usare questa scelta.");
+        table.put("Turn on Show it as a chip to use this choice.",
+                "Attiva Mostralo come chip per usare questa scelta.");
     }
 
     private static void fillIt17(Map<String, String> table) {
-        table.put("Turn on Show it as a chip to use this choice.",
-                "Attiva Mostralo come chip per usare questa scelta.");
         table.put("Turn on Start Home on Following to use this choice.",
                 "Attiva Apri la Home su Seguiti per usare questa scelta.");
         table.put("Turn on Story ring size to use this choice.",
@@ -9136,11 +9128,11 @@ public final class L10nTranslations {
                 "Quando il reel non \u00e8 nella prima schermata, il profilo mostra un pulsante Trova il reel invece di scorrere da solo.");
         table.put("Where videos wait",
                 "Dove aspettano i video");
+        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
+                "Mentre guardi in modo anonimo, una storia che hai visto diventa grigia e passa in fondo alla fila, solo su questo telefono. Instagram non viene comunque informato che l'hai vista.");
     }
 
     private static void fillIt18(Map<String, String> table) {
-        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
-                "Mentre guardi in modo anonimo, una storia che hai visto diventa grigia e passa in fondo alla fila, solo su questo telefono. Instagram non viene comunque informato che l'hai vista.");
         table.put("Who unfollowed you",
                 "Chi ha smesso di seguirti");
         table.put("Wi-Fi stays as it is. Turn this off to save data on every network.",
@@ -9155,7 +9147,7 @@ public final class L10nTranslations {
                 "X");
         table.put("You cleared the remembered playback positions.",
                 "Hai cancellato le posizioni di riproduzione memorizzate.");
-        table.put("You paused HushGram.",
+        table.put("You paused TADa.",
                 "Hai messo in pausa HushGram.");
         table.put("Your fingerprint, face or screen lock unlocks your messages.",
                 "La tua impronta, il tuo volto o il blocco schermo sbloccano i tuoi messaggi.");
@@ -9184,7 +9176,7 @@ public final class L10nTranslations {
     }
 
     private static Map<String, String> buildKo() {
-        Map<String, String> table = new HashMap<>(2202);
+        Map<String, String> table = new HashMap<>(2200);
         fillKo0(table);
         fillKo1(table);
         fillKo2(table);
@@ -9288,7 +9280,7 @@ public final class L10nTranslations {
                 "\uac8c\uc2dc\ubb3c\uc774\ub098 \ub9b4\uc2a4\ub97c \ub450 \ubc88 \ud0ed\ud574\ub3c4 \ub354 \uc774\uc0c1 \uc88b\uc544\uc694\uac00 \ud45c\uc2dc\ub418\uc9c0 \uc54a\uc73c\uba70 \ud558\ud2b8 \ud45c\uc2dc\ub3c4 \ub098\ud0c0\ub098\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \ud55c \ubc88 \ud0ed\ud558\uac70\ub098 \uc88b\uc544\uc694 \ubc84\ud2bc\uc744 \ub204\ub974\ub294 \uae30\ub2a5\uc740 \uc774\uc804\uacfc \ub3d9\uc77c\ud558\uac8c \uc791\ub3d9\ud569\ub2c8\ub2e4");
         table.put("A double tap on a reel doesn't like it. Turn this off to keep double tap to like on reels.",
                 "\ub9b4\uc2a4\ub97c \ub450 \ubc88 \ud0ed\ud574\ub3c4 \uc88b\uc544\uc694\uac00 \ud45c\uc2dc\ub418\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \ub9b4\uc2a4\ub97c \ub450 \ubc88 \ud0ed\ud558\uc5ec \uc88b\uc544\uc694\ub97c \ud45c\uc2dc\ud558\ub294 \uae30\ub2a5\uc744 \uc720\uc9c0\ud558\ub824\uba74 \uc774 \uc635\uc158\uc744 \ube44\ud65c\uc131\ud654\ud558\uc138\uc694");
-        table.put("A file named %1$s in %2$s paused HushGram.",
+        table.put("A file named %1$s in %2$s paused TADa.",
                 "%2$s\uc5d0 \uc788\ub294 %1$s \ud30c\uc77c \ub54c\ubb38\uc5d0 HushGram\uc774 \uc77c\uc2dc \uc815\uc9c0\ub418\uc5c8\uc2b5\ub2c8\ub2e4");
         table.put("A finished story stays on screen until you tap or swipe. Turn this off for Instagram's timing.",
                 "\uc644\ub8cc\ub41c \uc2a4\ud1a0\ub9ac\uac00 \ud0ed\ud558\uac70\ub098 \uc2a4\uc640\uc774\ud504\ud560 \ub54c\uae4c\uc9c0 \ud654\uba74\uc5d0 \uacc4\uc18d \ud45c\uc2dc\ub429\ub2c8\ub2e4. Instagram\uc758 \uae30\ubcf8 \uc2dc\uac04 \uc124\uc815\uc744 \uc0ac\uc6a9\ud558\ub824\uba74 \uc774 \uae30\ub2a5\uc744 \ube44\ud65c\uc131\ud654\ud558\uc138\uc694");
@@ -9304,7 +9296,7 @@ public final class L10nTranslations {
                 "\uc870\uae08 \ub354");
         table.put("A long press on the Instagram logo at the top of Home opens these settings. Off, the long press goes back to Instagram.",
                 "\ud648 \uc0c1\ub2e8\uc758 Instagram \ub85c\uace0\ub97c \uae38\uac8c \ud0ed\ud558\uba74 \uc774 \uc124\uc815\uc774 \uc5f4\ub9bd\ub2c8\ub2e4. \ub044\uba74 \uae38\uac8c \ud0ed\ud558\uae30\uac00 \ub2e4\uc2dc Instagram\uc73c\ub85c \ub3cc\uc544\uac11\ub2c8\ub2e4.");
-        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens HushGram. A tap still opens Instagram's menu, and other profiles stay the same.",
+        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens TADa. A tap still opens Instagram's menu, and other profiles stay the same.",
                 "\ub0b4 \ud504\ub85c\ud544 \uc624\ub978\ucabd \uc704\uc5d0 \uc788\ub294 \uc138 \uc904 \uba54\ub274 \ubc84\ud2bc\uc744 \uae38\uac8c \ud0ed\ud558\uba74 HushGram\uc774 \uc5f4\ub9bd\ub2c8\ub2e4. \ud0ed\ud558\uba74 \uc5ec\uc804\ud788 Instagram \uba54\ub274\uac00 \uc5f4\ub9ac\uace0, \ub2e4\ub978 \ud504\ub85c\ud544\uc740 \uadf8\ub300\ub85c\uc785\ub2c8\ub2e4.");
         table.put("A reel Instagram's auto scroll moves to waits for your tap too. Off, auto scroll plays reel after reel.",
                 "Instagram \uc790\ub3d9 \uc2a4\ud06c\ub864\ub85c \ub118\uc5b4\uac04 \ub9b4\uc2a4\ub3c4 \ud0ed\ud560 \ub54c\uae4c\uc9c0 \uae30\ub2e4\ub9bd\ub2c8\ub2e4. \ub044\uba74 \uc790\ub3d9 \uc2a4\ud06c\ub864\uc774 \ub9b4\uc2a4\ub97c \ucc28\ub840\ub85c \uc7ac\uc0dd\ud569\ub2c8\ub2e4.");
@@ -9649,7 +9641,7 @@ public final class L10nTranslations {
                 "\ubaa8\uc11c\ub9ac \ud06c\uae30");
         table.put("Couldn't change every Ghost mode switch. Check them below.",
                 "\uace0\uc2a4\ud2b8 \ubaa8\ub4dc \uc2a4\uc704\uce58\ub97c \ubaa8\ub450 \ubc14\uafb8\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4. \uc544\ub798\uc5d0\uc11c \ud655\uc778\ud558\uc138\uc694.");
-        table.put("Couldn't change every Ghost mode switch. Open HushGram settings to check them.",
+        table.put("Couldn't change every Ghost mode switch. Open TADa settings to check them.",
                 "\uace0\uc2a4\ud2b8 \ubaa8\ub4dc \uc2a4\uc704\uce58\ub97c \ubaa8\ub450 \ubc14\uafb8\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4. HushGram \uc124\uc815\uc5d0\uc11c \ud655\uc778\ud558\uc138\uc694.");
         table.put("Couldn't clear the download history. Try again.",
                 "\ub2e4\uc6b4\ub85c\ub4dc \uae30\ub85d\uc744 \uc9c0\uc6b0\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4. \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc138\uc694.");
@@ -9667,7 +9659,7 @@ public final class L10nTranslations {
                 "\ubbf8\ub514\uc5b4 \ub9c1\ud06c\ub97c \ubcf5\uc0ac\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4");
         table.put("Couldn't copy the username",
                 "\uc0ac\uc6a9\uc790 \uc774\ub984\uc744 \ubcf5\uc0ac\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4");
-        table.put("Couldn't export HushGram settings. Try another file.",
+        table.put("Couldn't export TADa settings. Try another file.",
                 "HushGram \uc124\uc815\uc744 \ub0b4\ubcf4\ub0bc \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \ub2e4\ub978 \ud30c\uc77c\uc744 \uc0ac\uc6a9\ud574 \ubcf4\uc138\uc694");
         table.put("Couldn't find the reel you came from",
                 "\ubcf4\ub358 \ub9b4\uc2a4\ub97c \ucc3e\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4");
@@ -9675,7 +9667,7 @@ public final class L10nTranslations {
                 "\uc774 \uacc4\uc815\uc744 \uc228\uae38 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4");
         table.put("Couldn't hide this notice. Try again.",
                 "\uc774 \uc54c\ub9bc\uc744 \uc228\uae38 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc138\uc694");
-        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in HushGram settings > Layout.",
+        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in TADa settings > Layout.",
                 "\uae00\uaf34 \ud30c\uc77c\uc744 \ubd88\ub7ec\uc624\uc9c0 \ubabb\ud574 Instagram \uae00\uaf34\uc774 \ud45c\uc2dc\ub429\ub2c8\ub2e4. HushGram \uc124\uc815 > \ub808\uc774\uc544\uc6c3\uc5d0\uc11c \ub2e4\uc2dc \uc120\ud0dd\ud558\uc138\uc694.");
         table.put("Couldn't mark as read",
                 "\uc77d\uc74c\uc73c\ub85c \ud45c\uc2dc\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4");
@@ -9691,7 +9683,7 @@ public final class L10nTranslations {
                 "\uc124\uc815\uc744 \uc800\uc7a5\ud558\uac70\ub098 \uc644\uc804\ud788 \ubcf5\uc6d0\ud558\uc9c0 \ubabb\ud558\uc600\uc2b5\ub2c8\ub2e4. \ud45c\uc2dc\ub41c \uac12\uc744 \ud655\uc778\ud558\uace0 \uc2e4\ud589 \ucde8\uc18c\ub97c \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc138\uc694");
         table.put("Couldn't save the PIN.",
                 "PIN\uc744 \uc800\uc7a5\ud558\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4.");
-        table.put("Couldn't save the playback quality. Open HushGram settings to set it.",
+        table.put("Couldn't save the playback quality. Open TADa settings to set it.",
                 "\uc7ac\uc0dd \ud654\uc9c8\uc744 \uc800\uc7a5\ud558\uc9c0 \ubabb\ud588\uc2b5\ub2c8\ub2e4. HushGram \uc124\uc815\uc5d0\uc11c \uc9c1\uc811 \uc9c0\uc815\ud558\uc138\uc694.");
         table.put("Couldn't save the settings. The previous values were restored.",
                 "\uc124\uc815\uc744 \uc800\uc7a5\ud558\uc9c0 \ubabb\ud558\uc600\uc2b5\ub2c8\ub2e4. \uc774\uc804 \uac12\uc73c\ub85c \ubcf5\uc6d0\ud558\uc600\uc2b5\ub2c8\ub2e4");
@@ -9702,7 +9694,7 @@ public final class L10nTranslations {
     private static void fillKo4(Map<String, String> table) {
         table.put("Couldn't start the report export. Try again shortly.",
                 "\ubcf4\uace0\uc11c \ub0b4\ubcf4\ub0b4\uae30\ub97c \uc2dc\uc791\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \uc7a0\uc2dc \ud6c4 \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc138\uc694");
-        table.put("Couldn't turn HushGram back on. Try again.",
+        table.put("Couldn't turn TADa back on. Try again.",
                 "HushGram\uc744 \ub2e4\uc2dc \ud65c\uc131\ud654\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc138\uc694");
         table.put("Couldn't update the remembered playback positions.",
                 "\uc800\uc7a5\ub41c \uc7ac\uc0dd \uc704\uce58\ub97c \uc5c5\ub370\uc774\ud2b8\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4");
@@ -9839,11 +9831,11 @@ public final class L10nTranslations {
                 "\uac8c\uc2dc\ubb3c \uc138\ubd80 \uc815\ubcf4\uac00 \uc5c6\ub294 \uc608\uc2dc");
         table.put("Explore",
                 "\ud0d0\uc0c9");
-        table.put("Export HushGram settings",
+        table.put("Export TADa settings",
                 "HushGram \uc124\uc815 \ub0b4\ubcf4\ub0b4\uae30");
         table.put("Export diagnostic report",
                 "\uc9c4\ub2e8 \ubcf4\uace0\uc11c \ub0b4\ubcf4\ub0b4\uae30");
-        table.put("Exporting HushGram settings...",
+        table.put("Exporting TADa settings...",
                 "HushGram \uc124\uc815 \ub0b4\ubcf4\ub0b4\ub294 \uc911...");
         table.put("Facebook",
                 "Facebook");
@@ -9935,7 +9927,7 @@ public final class L10nTranslations {
                 "\uc720\ub9ac \ud0ed \ubc14");
         table.put("Gold",
                 "\uae08\uc0c9");
-        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later HushGram builds need Change version code too, or they won't install over this one.",
+        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later TADa builds need Change version code too, or they won't install over this one.",
                 "Google Play\uac00 \uc774 \ube4c\ub4dc \uc704\uc5d0 Meta\uc758 \uc5c5\ub370\uc774\ud2b8\ub97c \uc81c\uc548\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \uc77c\ubc18 Instagram\uc73c\ub85c \ub3cc\uc544\uac00\ub824\uba74 \uba3c\uc800 \uc774 \uc571\uc744 \uc0ad\uc81c\ud574\uc57c \ud558\uba70, \uc774 \ud734\ub300\ud3f0\uc758 Instagram \ub370\uc774\ud130\uac00 \uc9c0\uc6cc\uc9d1\ub2c8\ub2e4. \uc774\ud6c4\uc758 HushGram \ube4c\ub4dc\uc5d0\ub3c4 Change version code\uac00 \ud544\uc694\ud558\uba70, \uc5c6\uc73c\uba74 \uc774 \ube4c\ub4dc \uc704\uc5d0 \uc124\uce58\ub418\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.");
         table.put("Google's emoji everywhere",
                 "\ubaa8\ub4e0 \uacf3\uc5d0 Google \uc774\ubaa8\ud2f0\ucf58");
@@ -10087,8 +10079,6 @@ public final class L10nTranslations {
                 "\ud314\ub85c\uc6b0 \ubc84\ud2bc \uc228\uae30\uae30");
         table.put("Hide the Home tab",
                 "\ud648 \ud0ed \uc228\uae30\uae30");
-        table.put("Hide the HushGram row in Instagram's menu",
-                "Instagram \uba54\ub274\uc5d0\uc11c HushGram \ud56d\ubaa9 \uc228\uae30\uae30");
         table.put("Hide the Muse button on your profile",
                 "\ub0b4 \ud504\ub85c\ud544\uc5d0\uc11c Muse \ubc84\ud2bc \uc228\uae30\uae30");
         table.put("Hide the Muse card",
@@ -10109,6 +10099,8 @@ public final class L10nTranslations {
                 "\uacf5\uc720 \ubc84\ud2bc \uc228\uae30\uae30");
         table.put("Hide the Stories tray",
                 "\uc2a4\ud1a0\ub9ac \uc120\ubc18 \uc228\uae30\uae30");
+        table.put("Hide the TADa row in Instagram's menu",
+                "Instagram \uba54\ub274\uc5d0\uc11c HushGram \ud56d\ubaa9 \uc228\uae30\uae30");
         table.put("Hide the Threads button",
                 "Threads \ubc84\ud2bc \uc228\uae30\uae30");
         table.put("Hide the call buttons in chats",
@@ -10198,37 +10190,9 @@ public final class L10nTranslations {
                 "\uc2a4\ud1a0\ub9ac\uac00 \uc0ac\ub77c\uc9c0\uae30\uae4c\uc9c0 \ub0a8\uc740 \uc2dc\uac04\uc785\ub2c8\ub2e4. \uc608: 18\uc2dc\uac04 14\ubd84 \ub0a8\uc74c. \ub354 \uc624\ub798\ub41c \uc2a4\ud1a0\ub9ac\ub294 \ub0a0\uc9dc\uc640 \uc2dc\uac04\uc774 \ud45c\uc2dc\ub429\ub2c8\ub2e4");
         table.put("How the time shows",
                 "\uc2dc\uac04 \ud45c\uc2dc \ubc29\uc2dd");
-        table.put("How you open HushGram, and how this screen is laid out.",
+        table.put("How you open TADa, and how this screen is laid out.",
                 "HushGram\uc744 \uc5ec\ub294 \ubc29\ubc95\uacfc \uc774 \ud654\uba74\uc758 \uad6c\uc131\uc744 \uc815\ud569\ub2c8\ub2e4.");
-        table.put("HushGram %1$s on Instagram %2$s",
-                "Instagram %2$s\uc758 HushGram %1$s");
-        table.put("HushGram PIN",
-                "HushGram PIN");
-        table.put("HushGram is on",
-                "HushGram \uc2e4\ud589 \uc911");
-        table.put("HushGram is paused",
-                "HushGram \uc77c\uc2dc \uc815\uc9c0\ub428");
-        table.put("HushGram launch screen",
-                "HushGram \uc2dc\uc791 \ud654\uba74");
-        table.put("HushGram paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in HushGram settings.",
-                "Instagram\uc774 \uc2dc\uc791\ud560 \ub54c \uacc4\uc18d \ucda9\ub3cc\ud574\uc11c HushGram\uc774 \uc2a4\uc2a4\ub85c \uc77c\uc2dc \uc815\uc9c0\ub418\uc5c8\uc2b5\ub2c8\ub2e4. HushGram \uc124\uc815\uc5d0\uc11c \ub2e4\uc2dc \ucf24 \ub54c\uae4c\uc9c0 \uc2a4\uc704\uce58\ub294 \uaebc\uc9c4 \uc0c1\ud0dc\ub85c \uc720\uc9c0\ub429\ub2c8\ub2e4.");
-        table.put("HushGram pauses when Instagram restarts.",
-                "Instagram\uc744 \ub2e4\uc2dc \uc2dc\uc791\ud558\uba74 HushGram\uc774 \uc77c\uc2dc \uc815\uc9c0\ub429\ub2c8\ub2e4");
-        table.put("HushGram remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
-                "HushGram\uc740 \ucd5c\ub300 200\uac1c \ub3d9\uc601\uc0c1\uc5d0\uc11c \uba48\ucd98 \uc704\uce58\ub97c 30\uc77c \ub3d9\uc548 \uae30\uc5b5\ud569\ub2c8\ub2e4. \ud0ed\ud558\uba74 \uc774 \uae30\uae30\uc5d0\uc11c \uc9c0\uc6c1\ub2c8\ub2e4.");
-        table.put("HushGram saves",
-                "HushGram \uc800\uc7a5");
-        table.put("HushGram settings",
-                "HushGram \uc124\uc815");
-        table.put("HushGram settings are locked",
-                "HushGram \uc124\uc815\uc774 \uc7a0\uaca8 \uc788\uc2b5\ub2c8\ub2e4");
-        table.put("HushGram settings couldn't open",
-                "HushGram \uc124\uc815\uc744 \uc5f4 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4");
-        table.put("HushGram settings exported.",
-                "HushGram \uc124\uc815\uc744 \ub0b4\ubcf4\ub0c8\uc2b5\ub2c8\ub2e4");
-        table.put("HushGram turns back on when Instagram restarts.",
-                "Instagram\uc744 \ub2e4\uc2dc \uc2dc\uc791\ud558\uba74 HushGram\uc774 \ub2e4\uc2dc \uc2e4\ud589\ub429\ub2c8\ub2e4");
-        table.put("Import HushGram settings",
+        table.put("Import TADa settings",
                 "HushGram \uc124\uc815 \uac00\uc838\uc624\uae30");
         table.put("Imported %1$d settings. Skipped %2$d that this version doesn't know.",
                 "\uc124\uc815 %1$d\uac1c\ub97c \uac00\uc838\uc654\uc2b5\ub2c8\ub2e4. \uc774 \ubc84\uc804\uc774 \ubaa8\ub974\ub294 %2$d\uac1c\ub294 \uac74\ub108\ub6f0\uc5c8\uc2b5\ub2c8\ub2e4.");
@@ -10238,7 +10202,7 @@ public final class L10nTranslations {
                 "Instagram \ud30c\ub780\uc0c9");
         table.put("Instagram can't read your phone's advertising ID or tell Android's ad services which ads you saw or tapped. The permissions for them are gone from this build.",
                 "Instagram\uc740 \ud734\ub300\uc804\ud654\uc758 \uad11\uace0 ID\ub97c \uc77d\uac70\ub098 Android\uc758 \uad11\uace0 \uc11c\ube44\uc2a4\uc5d0 \uc5b4\ub5a4 \uad11\uace0\ub97c \ubcf4\uac70\ub098 \ud0ed\ud588\ub294\uc9c0 \uc804\ub2ec\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \ud574\ub2f9 \uae30\ub2a5\uc5d0 \ud544\uc694\ud55c \uad8c\ud55c\uc774 \uc774 \ube4c\ub4dc\uc5d0\uc11c \uc81c\uac70\ub418\uc5c8\uc2b5\ub2c8\ub2e4");
-        table.put("Instagram crashed or froze within a minute of starting three times in a row, so HushGram paused itself.",
+        table.put("Instagram crashed or froze within a minute of starting three times in a row, so TADa paused itself.",
                 "Instagram\uc774 \uc2dc\uc791\ud55c \uc9c0 1\ubd84 \uc774\ub0b4\uc5d0 \uc5f0\uc18d\uc73c\ub85c \uc138 \ubc88 \ucda9\ub3cc\ud558\uac70\ub098 \uba48\ucdb0\uc11c HushGram\uc774 \uc77c\uc2dc\uc801\uc73c\ub85c \uc791\ub3d9\uc744 \uc815\uc9c0\ud558\uc600\uc2b5\ub2c8\ub2e4");
         table.put("Instagram doesn't notice when you take a screenshot, so whoever sent you a disappearing photo or video isn't told. Your screenshots save as usual.",
                 "\uc2a4\ud06c\ub9b0\uc0f7\uc744 \ucc0d\uc5b4\ub3c4 Instagram\uc774 \uc54c\uc544\ucc44\uc9c0 \ubabb\ud558\ubbc0\ub85c \uc0ac\ub77c\uc9c0\ub294 \uc0ac\uc9c4\uc774\ub098 \ub3d9\uc601\uc0c1\uc744 \ubcf4\ub0b8 \uc0ac\ub78c\uc5d0\uac8c \uc54c\ub9bc\uc774 \uac00\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \uc2a4\ud06c\ub9b0\uc0f7\uc740 \ud3c9\uc18c\ucc98\ub7fc \uc800\uc7a5\ub429\ub2c8\ub2e4.");
@@ -10266,7 +10230,7 @@ public final class L10nTranslations {
                 "Instagram\uc5d0\uc11c \uc774 \ubc84\uc804\uc774 \ub9cc\ub8cc\ub418\uc5c8\ub2e4\ub77c\ub294 \ud654\uba74\uc774 \ub354 \uc774\uc0c1 \ud45c\uc2dc\ub418\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \ud328\uce58\ub41c \ube4c\ub4dc\ub294 \uc790\ub3d9\uc73c\ub85c \uc5c5\ub370\uc774\ud2b8\ub418\uc9c0 \uc54a\uc73c\ubbc0\ub85c, \uc774 \uc124\uc815\uc744 \ud1b5\ud574 \uacc4\uc18d \uc0ac\uc6a9\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4");
         table.put("Instagram wakes your phone every minute or two, screen off included, only to note that it is still running. This stops that. Messages, notifications and everything you see are unaffected.",
                 "Instagram\uc740 \ud654\uba74\uc774 \uaebc\uc838 \uc788\uc744 \ub54c\ub3c4 1~2\ubd84\ub9c8\ub2e4 \ud734\ub300\ud3f0\uc744 \uae68\uc6cc \uc544\uc9c1 \uc2e4\ud589 \uc911\uc774\ub77c\uace0 \uae30\ub85d\ub9cc \ud569\ub2c8\ub2e4. \uc774\ub97c \uba48\ucda5\ub2c8\ub2e4. \uba54\uc2dc\uc9c0, \uc54c\ub9bc, \ud654\uba74\uc5d0 \ubcf4\uc774\ub294 \ubaa8\ub4e0 \uac83\uc740 \uadf8\ub300\ub85c\uc785\ub2c8\ub2e4.");
-        table.put("Instagram's Settings and activity screen leaves out the HushGram row while another way here opens HushGram. With every other way off, the row comes back.",
+        table.put("Instagram's Settings and activity screen leaves out the TADa row while another way here opens TADa. With every other way off, the row comes back.",
                 "\ub2e4\ub978 \ubc29\ubc95\uc73c\ub85c HushGram\uc744 \uc5ec\ub294 \ub3d9\uc548\uc5d0\ub294 Instagram\uc758 \uc124\uc815 \ubc0f \ud65c\ub3d9 \ud654\uba74\uc5d0 HushGram \ud56d\ubaa9\uc774 \ud45c\uc2dc\ub418\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \ub2e4\ub978 \ubc29\ubc95\uc744 \ubaa8\ub450 \ub044\uba74 \ud56d\ubaa9\uc774 \ub2e4\uc2dc \ub098\ud0c0\ub0a9\ub2c8\ub2e4.");
         table.put("Instagram's colors",
                 "Instagram \uc0c9\uc0c1");
@@ -10312,9 +10276,6 @@ public final class L10nTranslations {
                 "\ub9b4\uc2a4 \uc18d\ub3c4 \uc720\uc9c0");
         table.put("Keep the zoom open",
                 "\ud655\ub300 \ud654\uba74 \uc720\uc9c0");
-    }
-
-    private static void fillKo9(Map<String, String> table) {
         table.put("Keep your chats private and your inbox clear of extras.",
                 "\ucc44\ud305\uc744 \ube44\uacf5\uac1c\ub85c \uc720\uc9c0\ud558\uace0 \ubc1b\uc740 \uba54\uc2dc\uc9c0\ud568\uc758 \uad70\ub354\ub354\uae30\ub97c \uc5c6\uc571\ub2c8\ub2e4.");
         table.put("Keeps Instagram's Music for you card from turning up between the stories you watch. The stories themselves stay.",
@@ -10343,6 +10304,9 @@ public final class L10nTranslations {
                 "\uc720\ub8cc \uad11\uace0 \ud30c\ud2b8\ub108\uc2ed \ub77c\ubca8\uc774 \uc788\ub294 \ub9b4\uc2a4\uc640 Instagram\uc774 \ud64d\ubcf4\ub428\uc73c\ub85c \ud45c\uc2dc\ud55c \ub9b4\uc2a4\ub97c \uc81c\uc678\ud569\ub2c8\ub2e4. \uad11\uace0\ub294 \ubcc4\ub3c4\uc758 \uc2a4\uc704\uce58\uac00 \uc788\uc2b5\ub2c8\ub2e4.");
         table.put("Leaves out the Add Yours cards, like Popular Add Yours and Join a trending Add Yours, that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "\ub118\uaca8 \ubcf4\ub294 \uc2a4\ud1a0\ub9ac \uc0ac\uc774\uc5d0 \uc778\uc2a4\ud0c0\uadf8\ub7a8\uc774 \ub123\ub294 \uc778\uae30 'Add Yours'\ub098 \ud2b8\ub80c\ub4dc 'Add Yours' \ucc38\uc5ec \uac19\uc740 'Add Yours' \uce74\ub4dc\ub97c \uc228\uae41\ub2c8\ub2e4. \uc2a4\ud1a0\ub9ac\ub294 \uadf8\ub300\ub85c \ub0a8\uc2b5\ub2c8\ub2e4.");
+    }
+
+    private static void fillKo9(Map<String, String> table) {
         table.put("Leaves out the Suggested for you cards of accounts to follow that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "\ub118\uaca8 \ubcf4\ub294 \uc2a4\ud1a0\ub9ac \uc0ac\uc774\uc5d0 \uc778\uc2a4\ud0c0\uadf8\ub7a8\uc774 \ub123\ub294 \ud314\ub85c\uc6b0\ud560 '\ucd94\ucc9c \uacc4\uc815' \uce74\ub4dc\ub97c \uc228\uae41\ub2c8\ub2e4. \uc2a4\ud1a0\ub9ac\ub294 \uadf8\ub300\ub85c \ub0a8\uc2b5\ub2c8\ub2e4.");
         table.put("Leaves the Suggested for you accounts out of what shows when you tap the search bar. Recent searches stay.",
@@ -10395,11 +10359,11 @@ public final class L10nTranslations {
                 "\uba54\uc2dc\uc9c0 \uc7a0\uadf8\uae30");
         table.put("Locked chats",
                 "\uc7a0\uae34 \ucc44\ud305");
-        table.put("Long press %1$s to open HushGram instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
+        table.put("Long press %1$s to open TADa instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
                 "%1$s \ud0ed\uc744 \uae38\uac8c \ud0ed\ud558\uba74 \ud574\ub2f9 \ud0ed\uc758 \uae30\ubcf8 \ub3d9\uc791 \ub300\uc2e0 HushGram\uc774 \uc5f4\ub9bd\ub2c8\ub2e4. \uc77c\ubc18 \ud0ed \ub3d9\uc791\uacfc \ub2e4\ub978 \ud0ed\uc740 \uadf8\ub300\ub85c \uc720\uc9c0\ub429\ub2c8\ub2e4. \uacc4\uc815\uc5d0 \ud45c\uc2dc\ub418\ub294 \ud0ed\ub9cc \uc0ac\uc6a9\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.");
-        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens HushGram, that comes first.",
+        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens TADa, that comes first.",
                 "%1$s \ud0ed\uc744 \uae38\uac8c \ud0ed\ud558\uba74 \ud574\ub2f9 \ud0ed\uc758 \uae30\ubcf8 \ub3d9\uc791 \ub300\uc2e0 \uc7ac\uc0dd \ud654\uc9c8\uc744 \uc120\ud0dd\ud569\ub2c8\ub2e4. \uc77c\ubc18 \ud0ed\uacfc \ub2e4\ub978 \ud0ed\uc740 \uadf8\ub300\ub85c\uc785\ub2c8\ub2e4. \uae30\ubcf8 \uc7ac\uc0dd \ud654\uc9c8\uc774 \ucf1c\uc838 \uc788\uc5b4\uc57c \ud569\ub2c8\ub2e4. \uac19\uc740 \ud0ed\uc774 HushGram\uc744 \uc5ec\ub294 \uacbd\uc6b0 \uadf8\ucabd\uc774 \uc6b0\uc120\ud569\ub2c8\ub2e4.");
-        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens HushGram or picks the playback quality, that comes first.",
+        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens TADa or picks the playback quality, that comes first.",
                 "%1$s \ud0ed\uc744 \uae38\uac8c \ud0ed\ud558\uba74 \ud574\ub2f9 \ud0ed\uc758 \uae30\ubcf8 \ub3d9\uc791 \ub300\uc2e0 \uace0\uc2a4\ud2b8 \ubaa8\ub4dc\ub97c \ucf1c\uac70\ub098 \ub044\uace0, \uc9e7\uc740 \uba54\uc2dc\uc9c0\ub85c \uc5b4\ub290 \ucabd\uc73c\ub85c \ubc14\ub00c\uc5c8\ub294\uc9c0 \uc54c\ub824 \uc90d\ub2c8\ub2e4. \uc77c\ubc18 \ud0ed\uacfc \ub2e4\ub978 \ud0ed\uc740 \uadf8\ub300\ub85c\uc785\ub2c8\ub2e4. \uac19\uc740 \ud0ed\uc774 HushGram\uc744 \uc5f4\uac70\ub098 \uc7ac\uc0dd \ud654\uc9c8\uc744 \uc120\ud0dd\ud558\ub294 \uacbd\uc6b0 \uadf8\ucabd\uc774 \uc6b0\uc120\ud569\ub2c8\ub2e4.");
         table.put("Long press a photo to zoom",
                 "\uc0ac\uc9c4\uc744 \uae38\uac8c \ub20c\ub7ec \ud655\ub300");
@@ -10435,9 +10399,6 @@ public final class L10nTranslations {
                 "\ud648 \uc0c1\ub2e8\uc758 \uba54\uc2dc\uc9c0 \ubc84\ud2bc");
         table.put("Messenger",
                 "Messenger");
-    }
-
-    private static void fillKo10(Map<String, String> table) {
         table.put("Meta AI",
                 "Meta AI");
         table.put("More",
@@ -10466,13 +10427,16 @@ public final class L10nTranslations {
                 "\uc774 \ub9c1\ud06c\ub97c \uc5f4 \uc218 \uc788\ub294 \uc571\uc774 \uc5c6\uc2b5\ub2c8\ub2e4. \uc8fc\uc18c\ub294 %1$s\uc785\ub2c8\ub2e4");
         table.put("No app on this phone can play this video",
                 "\uc774 \ud734\ub300\uc804\ud654\uc5d0\ub294 \uc774 \ub3d9\uc601\uc0c1\uc744 \uc7ac\uc0dd\ud560 \uc218 \uc788\ub294 \uc571\uc774 \uc5c6\uc2b5\ub2c8\ub2e4");
+    }
+
+    private static void fillKo10(Map<String, String> table) {
         table.put("No direct link for this one",
                 "\uc774 \ud56d\ubaa9\uc5d0\ub294 \uc9c1\uc811 \ub9c1\ud06c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4");
         table.put("No matching settings",
                 "\uc77c\uce58\ud558\ub294 \uc124\uc815\uc774 \uc5c6\uc2b5\ub2c8\ub2e4");
         table.put("No one has left since then.",
                 "\uadf8 \uc774\ud6c4\ub85c \ub5a0\ub09c \uc0ac\ub78c\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.");
-        table.put("No other way into HushGram is on, so the row stays in Instagram's menu.",
+        table.put("No other way into TADa is on, so the row stays in Instagram's menu.",
                 "HushGram\uc744 \uc5ec\ub294 \ub2e4\ub978 \ubc29\ubc95\uc774 \ucf1c\uc838 \uc788\uc9c0 \uc54a\uc73c\ubbc0\ub85c \ud56d\ubaa9\uc774 Instagram \uba54\ub274\uc5d0 \ub0a8\uc2b5\ub2c8\ub2e4.");
         table.put("No pages chosen",
                 "\uc120\ud0dd\ud55c \ud398\uc774\uc9c0\uac00 \uc5c6\uc2b5\ub2c8\ub2e4");
@@ -10558,9 +10522,6 @@ public final class L10nTranslations {
                 "Instagram\uc5d0\uc11c \ucc44\ud305\uc744 \uc5f0 \ub2e4\uc74c \uc774\uacf3\uc73c\ub85c \ub3cc\uc544\uc640 \uc228\uae30\uc138\uc694.");
         table.put("Open a chat in Instagram, then come back here to lock it.",
                 "Instagram\uc5d0\uc11c \ucc44\ud305\uc744 \uc5f0 \ub2e4\uc74c \uc5ec\uae30\ub85c \ub3cc\uc544\uc640 \uc7a0\uadf8\uc138\uc694.");
-    }
-
-    private static void fillKo11(Map<String, String> table) {
         table.put("Open a creator's profile from a reel, then their Reels tab, and it scrolls to that reel and outlines it for a moment. A photo reel is found in their posts. Stop looking ends the search where it is.",
                 "\ub9b4\uc2a4\uc5d0\uc11c \ud06c\ub9ac\uc5d0\uc774\ud130\uc758 \ud504\ub85c\ud544\uc744 \uc5f0 \ub2e4\uc74c \ub9b4\uc2a4 \ud0ed\uc744 \uc5f4\uba74 \uadf8 \ub9b4\uc2a4\ub85c \uc2a4\ud06c\ub864\ud558\uace0 \uc7a0\uae50 \ud14c\ub450\ub9ac\ub97c \ud45c\uc2dc\ud569\ub2c8\ub2e4. \uc0ac\uc9c4 \ub9b4\uc2a4\ub294 \uac8c\uc2dc\ubb3c\uc5d0\uc11c \ucc3e\uc2b5\ub2c8\ub2e4. \ucc3e\uae30 \uc911\uc9c0\ub97c \ub204\ub974\uba74 \uadf8 \uc790\ub9ac\uc5d0\uc11c \ucc3e\uae30\ub97c \uba48\ucda5\ub2c8\ub2e4.");
         table.put("Open app info",
@@ -10589,6 +10550,9 @@ public final class L10nTranslations {
                 "\ud648\uc744 \ucd94\ucc9c \ub300\uc2e0 \ud314\ub85c\uc6b0\ud558\ub294 \uacc4\uc815\uc758 \uac8c\uc2dc\ubb3c\ub85c \uc5fd\ub2c8\ub2e4. \ud648 \uc0c1\ub2e8\uc744 \ud0ed\ud558\uba74 \uc804\ud658\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ubcc0\uacbd \uc0ac\ud56d\uc744 \ubcf4\ub824\uba74 Instagram\uc744 \ub2e4\uc2dc \uc2dc\uc791\ud558\uc138\uc694.");
         table.put("Opens a GitHub report with your versions and settings filled in. Add what happened.",
                 "\ubc84\uc804\uacfc \uc124\uc815\uc774 \ubbf8\ub9ac \ucc44\uc6cc\uc9c4 GitHub \uc2e0\uace0\ub97c \uc5fd\ub2c8\ub2e4. \ubb34\uc2a8 \uc77c\uc774 \uc788\uc5c8\ub294\uc9c0 \uc801\uc5b4 \uc8fc\uc138\uc694.");
+    }
+
+    private static void fillKo11(Map<String, String> table) {
         table.put("Orange",
                 "\uc8fc\ud669\uc0c9");
         table.put("PIN",
@@ -10603,7 +10567,7 @@ public final class L10nTranslations {
                 "%1$d\ud398\uc774\uc9c0, \ub3d9\uc601\uc0c1");
         table.put("Pause",
                 "\uc77c\uc2dc\uc815\uc9c0");
-        table.put("Pause HushGram",
+        table.put("Pause TADa",
                 "HushGram \uc77c\uc2dc \uc815\uc9c0");
         table.put("Pause and diagnostics",
                 "\uc77c\uc2dc \uc815\uc9c0 \ubc0f \uc9c4\ub2e8");
@@ -10661,14 +10625,14 @@ public final class L10nTranslations {
                 "\ub098\ub97c \ud314\ub85c\uc6b0\ud558\uc9c0 \uc54a\ub294 \uacc4\uc815\uc744 \uba3c\uc800 \ud45c\uc2dc");
         table.put("Puts Activity, the screen the heart opens, on the tab bar before Profile. Tab order can move it, and Hide notifications on Home's header takes the heart away. Restart Instagram to see the change.",
                 "\ud558\ud2b8\ub97c \ub204\ub974\uba74 \uc5f4\ub9ac\ub294 \ud65c\ub3d9 \ud654\uba74\uc744 \ud0ed \ubc14\uc758 \ud504\ub85c\ud544 \uc55e\uc5d0 \ub123\uc2b5\ub2c8\ub2e4. \ud0ed \uc21c\uc11c\uc5d0\uc11c \uc62e\uae38 \uc218 \uc788\uace0, \ud648 \uc0c1\ub2e8\uc758 \uc54c\ub9bc \uc228\uae30\uae30\ub85c \ud558\ud2b8\ub97c \uc5c6\uc568 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ubcc0\uacbd \uc0ac\ud56d\uc744 \ubcf4\ub824\uba74 Instagram\uc744 \ub2e4\uc2dc \uc2dc\uc791\ud558\uc138\uc694.");
-        table.put("Puts HushGram settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
-                "Instagram \uc544\uc774\ucf58\uc744 \uae38\uac8c \ud0ed\ud558\uba74 \ub098\uc624\ub294 \uba54\ub274\uc5d0 HushGram \uc124\uc815\uc744 \ub123\uc2b5\ub2c8\ub2e4. \ub044\uba74 \uadf8 \uba54\ub274\uc5d0\uc11c \ube60\uc9d1\ub2c8\ub2e4.");
         table.put("Puts Instagram's logo in the middle of the top of Home, even with header buttons hidden or added. A feed's name shown there is centered too. Restart Instagram to see the change.",
                 "\ud5e4\ub354 \ubc84\ud2bc\uc744 \uc228\uae30\uac70\ub098 \ucd94\uac00\ud574\ub3c4 Instagram \ub85c\uace0\ub97c \ud648 \uc0c1\ub2e8 \uac00\uc6b4\ub370\uc5d0 \ub461\ub2c8\ub2e4. \uadf8 \uc790\ub9ac\uc5d0 \ud45c\uc2dc\ub418\ub294 \ud53c\ub4dc \uc774\ub984\ub3c4 \uac00\uc6b4\ub370\uc5d0 \ub193\uc785\ub2c8\ub2e4. \ubcc0\uacbd \uc0ac\ud56d\uc744 \ubcf4\ub824\uba74 Instagram\uc744 \ub2e4\uc2dc \uc2dc\uc791\ud558\uc138\uc694.");
         table.put("Puts Messages on the tab bar, before Profile, if Instagram left it off yours. Tab order can move it. Restart Instagram to see the change.",
                 "Instagram\uc774 \ub0b4 \ud0ed \ubc14\uc5d0\uc11c \uba54\uc2dc\uc9c0\ub97c \ube90\ub2e4\uba74 \ud504\ub85c\ud544 \uc55e\uc5d0 \ub123\uc2b5\ub2c8\ub2e4. \ud0ed \uc21c\uc11c\uc5d0\uc11c \uc62e\uae38 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \ubcc0\uacbd \uc0ac\ud56d\uc744 \ubcf4\ub824\uba74 Instagram\uc744 \ub2e4\uc2dc \uc2dc\uc791\ud558\uc138\uc694.");
         table.put("Puts Reels back on the tab bar if Instagram left it off yours. Hide the Reels tab wins if both are on. Restart Instagram to see the change.",
                 "\uc778\uc2a4\ud0c0\uadf8\ub7a8\uc774 \ub0b4 \ud0ed \ubc14\uc5d0\uc11c \ub9b4\uc2a4\ub97c \ube90\ub2e4\uba74 \ub2e4\uc2dc \ub123\uc2b5\ub2c8\ub2e4. \ub458 \ub2e4 \ucf1c\uc838 \uc788\uc73c\uba74 \ub9b4\uc2a4 \ud0ed \uc228\uae30\uae30\uac00 \uc6b0\uc120\ud569\ub2c8\ub2e4. \ubcc0\uacbd \ub0b4\uc6a9\uc744 \ubcf4\ub824\uba74 \uc778\uc2a4\ud0c0\uadf8\ub7a8\uc744 \ub2e4\uc2dc \uc2dc\uc791\ud558\uc138\uc694.");
+        table.put("Puts TADa settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
+                "Instagram \uc544\uc774\ucf58\uc744 \uae38\uac8c \ud0ed\ud558\uba74 \ub098\uc624\ub294 \uba54\ub274\uc5d0 HushGram \uc124\uc815\uc744 \ub123\uc2b5\ub2c8\ub2e4. \ub044\uba74 \uadf8 \uba54\ub274\uc5d0\uc11c \ube60\uc9d1\ub2c8\ub2e4.");
         table.put("Puts a Block icon beside someone else's reel. A tap opens Instagram's own block screen for that account, so you still confirm it there.",
                 "\ub2e4\ub978 \uc0ac\ub78c\uc758 \ub9b4\uc2a4 \uc606\uc5d0 \ucc28\ub2e8 \uc544\uc774\ucf58\uc744 \ub461\ub2c8\ub2e4. \ud0ed\ud558\uba74 \uadf8 \uacc4\uc815\uc5d0 \ub300\ud55c Instagram \uc790\uccb4 \ucc28\ub2e8 \ud654\uba74\uc774 \uc5f4\ub9ac\ubbc0\ub85c \uadf8\uacf3\uc5d0\uc11c \ud55c \ubc88 \ub354 \ud655\uc778\ud569\ub2c8\ub2e4.");
         table.put("Puts a Not interested icon beside a reel, so one tap does what Not interested in its menu does.",
@@ -10681,9 +10645,6 @@ public final class L10nTranslations {
                 "\ub9b4\uc2a4 \uc606\uc5d0 \uc74c\uc545 \uc544\uc774\ucf58\uc744 \ub461\ub2c8\ub2e4. \ud0ed\ud558\uba74 \ub9b4\uc2a4 \ud0ed\uc5d0\uc11c \uadf8 \uc0ac\uc6b4\ub4dc\ub97c \uc4f0\ub294 \ub2e4\ub978 \ub9b4\uc2a4\ub97c \uac74\ub108\ub701\ub2c8\ub2e4. \ub2e4\uc2dc \ud0ed\ud558\uba74 \ub3cc\uc544\uc635\ub2c8\ub2e4.");
         table.put("Puts every notification from Instagram in one group that shows how many it holds, so they don't fill your notification shade. Tapping one still opens it.",
                 "Instagram\uc758 \ubaa8\ub4e0 \uc54c\ub9bc\uc744 \uac1c\uc218\uac00 \ud45c\uc2dc\ub418\ub294 \ud558\ub098\uc758 \uadf8\ub8f9\uc5d0 \ub123\uc5b4 \uc54c\ub9bc \ucc3d\uc744 \ucc44\uc6b0\uc9c0 \uc54a\uac8c \ud569\ub2c8\ub2e4. \uc54c\ub9bc\uc744 \ub204\ub974\uba74 \uadf8\ub300\ub85c \uc5f4\ub9bd\ub2c8\ub2e4.");
-    }
-
-    private static void fillKo12(Map<String, String> table) {
         table.put("Puts every switch back the way it started. Your locks stay as they are.",
                 "\ubaa8\ub4e0 \uc2a4\uc704\uce58\ub97c \ucc98\uc74c \uc0c1\ud0dc\ub85c \ub418\ub3cc\ub9bd\ub2c8\ub2e4. \uc7a0\uae08\uc740 \uadf8\ub300\ub85c \uc720\uc9c0\ub429\ub2c8\ub2e4.");
         table.put("Puts the answer in a chip under the profile's posts, followers and following counts instead, and says Following each other when you follow them too.",
@@ -10712,6 +10673,9 @@ public final class L10nTranslations {
                 "\ucd5c\uadfc \uc5b8\ud314\ub85c\uc6b0");
         table.put("Record patch activity and show errors for a bug report. Leave off during normal use.",
                 "\ud328\uce58 \uc791\uc5c5\uc744 \uae30\ub85d\ud558\uace0 \ubc84\uadf8 \uc2e0\uace0\ub97c \uc704\ud55c \uc624\ub958\ub97c \ud45c\uc2dc\ud569\ub2c8\ub2e4. \uc77c\ubc18\uc801\uc73c\ub85c \uc0ac\uc6a9\ud560 \ub54c\ub294 \ube44\ud65c\uc131\ud654\ud558\uc138\uc694");
+    }
+
+    private static void fillKo12(Map<String, String> table) {
         table.put("Red",
                 "\ube68\uac04\uc0c9");
         table.put("Reels",
@@ -10804,9 +10768,6 @@ public final class L10nTranslations {
                 "\ubaa8\ub450 \uc800\uc7a5");
         table.put("Save canceled",
                 "\uc800\uc7a5\uc774 \ucde8\uc18c\ub428");
-    }
-
-    private static void fillKo13(Map<String, String> table) {
         table.put("Save comment photo",
                 "\ub313\uae00 \uc0ac\uc9c4 \uc800\uc7a5");
         table.put("Save every page without asking",
@@ -10823,7 +10784,7 @@ public final class L10nTranslations {
                 "\uc804\uccb4 \ubcf4\uace0\uc11c\ub97c %1$s\uc5d0 \uc800\uc7a5\ud569\ub2c8\ub2e4");
         table.put("Save videos other apps can open",
                 "\ub2e4\ub978 \uc571\uc5d0\uc11c \uc5f4 \uc218 \uc788\ub3c4\ub85d \ub3d9\uc601\uc0c1 \uc800\uc7a5");
-        table.put("Save your HushGram choices to a file, or bring them back.",
+        table.put("Save your TADa choices to a file, or bring them back.",
                 "HushGram \uc124\uc815\uc744 \ud30c\uc77c\ub85c \uc800\uc7a5\ud558\uac70\ub098 \ub2e4\uc2dc \ubd88\ub7ec\uc635\ub2c8\ub2e4.");
         table.put("Saved",
                 "\uc800\uc7a5\ub428");
@@ -10835,6 +10796,9 @@ public final class L10nTranslations {
                 "%1$s\uc5d0 \uc800\uc7a5\ub428");
         table.put("Saved to %1$s in lower quality than on Instagram",
                 "Instagram\ubcf4\ub2e4 \ub0ae\uc740 \ud654\uc9c8\ub85c %1$s\uc5d0 \uc800\uc7a5\ub428");
+    }
+
+    private static void fillKo13(Map<String, String> table) {
         table.put("Saved to the gallery",
                 "\uac24\ub7ec\ub9ac\uc5d0 \uc800\uc7a5\ub428");
         table.put("Saved to the gallery in lower quality than on Instagram",
@@ -10855,7 +10819,7 @@ public final class L10nTranslations {
                 "\uc9c4\ub2e8 \ubcf4\uace0\uc11c\ub97c \uc800\uc7a5\ud558\ub294 \uc911...");
         table.put("Saving...",
                 "\uc800\uc7a5\ud558\ub294 \uc911\u2026");
-        table.put("Saving... You can cancel from Downloads in HushGram settings.",
+        table.put("Saving... You can cancel from Downloads in TADa settings.",
                 "\uc800\uc7a5 \uc911... HushGram \uc124\uc815\uc758 \ub2e4\uc6b4\ub85c\ub4dc\uc5d0\uc11c \ucde8\uc18c\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.");
         table.put("Screenshots and screen recordings work wherever Instagram blocks them, like disappearing photos and videos. Turn on Don't report screenshots too if the sender shouldn't hear about it.",
                 "\uc0ac\ub77c\uc9c0\ub294 \uc0ac\uc9c4\uacfc \ub3d9\uc601\uc0c1\ucc98\ub7fc Instagram\uc774 \ub9c9\ub294 \uacf3\uc5d0\uc11c\ub3c4 \uc2a4\ud06c\ub9b0\uc0f7\uacfc \ud654\uba74 \ub179\ud654\uac00 \ub429\ub2c8\ub2e4. \ubcf4\ub0b8 \uc0ac\ub78c\uc774 \uc54c\uba74 \uc548 \ub41c\ub2e4\uba74 \uc2a4\ud06c\ub9b0\uc0f7 \uc54c\ub9ac\uc9c0 \uc54a\uae30\ub3c4 \ucf1c\uc138\uc694.");
@@ -10883,9 +10847,9 @@ public final class L10nTranslations {
                 "\ubcf4\ub0bc \uc571");
         table.put("Set a PIN",
                 "PIN \uc124\uc815");
-        table.put("Set a screen lock on your phone so HushGram can lock Instagram.",
+        table.put("Set a screen lock on your phone so TADa can lock Instagram.",
                 "HushGram\uc774 Instagram\uc744 \uc7a0\uae00 \uc218 \uc788\ub3c4\ub85d \ud734\ub300\ud3f0\uc5d0 \ud654\uba74 \uc7a0\uae08\uc744 \uc124\uc815\ud558\uc138\uc694.");
-        table.put("Set a screen lock on your phone so HushGram can lock your messages.",
+        table.put("Set a screen lock on your phone so TADa can lock your messages.",
                 "HushGram\uc774 \uba54\uc2dc\uc9c0\ub97c \uc7a0\uae00 \uc218 \uc788\ub3c4\ub85d \ud734\ub300\ud3f0\uc5d0 \ud654\uba74 \uc7a0\uae08\uc744 \uc124\uc815\ud558\uc138\uc694.");
         table.put("Set or change the 4 to 8 digit PIN. It stays on this phone and isn't in a backup.",
                 "4~8\uc790\ub9ac PIN\uc744 \uc815\ud558\uac70\ub098 \ubc14\uafc9\ub2c8\ub2e4. \uc774 \ud734\ub300\ud3f0\uc5d0\ub9cc \uc800\uc7a5\ub418\uace0 \ubc31\uc5c5\uc5d0\ub294 \ub4e4\uc5b4\uac00\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.");
@@ -10927,9 +10891,6 @@ public final class L10nTranslations {
                 "\ucd5c\uadfc \uac80\uc0c9 \ubaa8\ub450 \ud45c\uc2dc");
         table.put("Show all settings as a list",
                 "\ubaa8\ub4e0 \uc124\uc815\uc744 \ubaa9\ub85d\uc73c\ub85c \ubcf4\uae30");
-    }
-
-    private static void fillKo14(Map<String, String> table) {
         table.put("Show and reorder tabs",
                 "\ud0ed \ud45c\uc2dc \ubc0f \uc21c\uc11c \ubcc0\uacbd");
         table.put("Show content behind the tab bar",
@@ -10958,9 +10919,12 @@ public final class L10nTranslations {
                 "\ub9c8\uc9c0\ub9c9 \ud65c\ub3d9 \uc2dc\uac04\uc744 \uc815\ud655\ud788 \ud45c\uc2dc");
         table.put("Showing reels with %1$s again",
                 "%1$s \uc0ac\uc6b4\ub4dc\uc758 \ub9b4\uc2a4\ub97c \ub2e4\uc2dc \ud45c\uc2dc\ud569\ub2c8\ub2e4");
+    }
+
+    private static void fillKo14(Map<String, String> table) {
         table.put("Shown. Tap to hide it.",
                 "\ud45c\uc2dc \uc911\uc785\ub2c8\ub2e4. \ud0ed\ud558\uba74 \uc228\uae41\ub2c8\ub2e4.");
-        table.put("Shows HushGram's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
+        table.put("Shows TADa's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
                 "Instagram\uc774 \uc2dc\uc791\ub418\ub294 \ub3d9\uc548 \ubcf4\uc774\ub294 \ud654\uba74\uc5d0 Instagram \ub85c\uace0 \ub300\uc2e0 HushGram \ub85c\uace0\ub97c \ud45c\uc2dc\ud569\ub2c8\ub2e4. Android 13 \uc774\uc0c1\uc5d0\uc11c \uc791\ub3d9\ud558\uba70, \ub2e4\uc74c \uc2dc\uc791\ubd80\ud130 \uc801\uc6a9\ub429\ub2c8\ub2e4.");
         table.put("Shows every emoji in Google's style instead of your phone's own. Restart Instagram to see the change.",
                 "\ubaa8\ub4e0 \uc774\ubaa8\uc9c0\ub97c \ud734\ub300\ud3f0 \uae30\ubcf8 \uc2a4\ud0c0\uc77c \ub300\uc2e0 Google \uc2a4\ud0c0\uc77c\ub85c \ud45c\uc2dc\ud569\ub2c8\ub2e4. \ubcc0\uacbd \uc0ac\ud56d\uc744 \ubcf4\ub824\uba74 Instagram\uc744 \ub2e4\uc2dc \uc2dc\uc791\ud558\uc138\uc694.");
@@ -11050,12 +11014,9 @@ public final class L10nTranslations {
                 "\uc2a4\ud1a0\ub9ac");
         table.put("Stories open with their sound on, the same as tapping Instagram's speaker. Your phone's ringer and volume still count, so on silent or with the volume down, stories stay quiet.",
                 "\uc2a4\ud1a0\ub9ac\uac00 Instagram\uc758 \uc2a4\ud53c\ucee4\ub97c \ub204\ub978 \uac83\ucc98\ub7fc \uc18c\ub9ac\uac00 \ucf1c\uc9c4 \ucc44\ub85c \uc5f4\ub9bd\ub2c8\ub2e4. \ud734\ub300\uc804\ud654\uc758 \ubca8\uc18c\ub9ac \ubaa8\ub4dc\uc640 \ubcfc\ub968\uc740 \uadf8\ub300\ub85c \uc801\uc6a9\ub418\ubbc0\ub85c \ubb34\uc74c\uc774\uac70\ub098 \ubcfc\ub968\uc774 \uaebc\uc838 \uc788\uc73c\uba74 \uc2a4\ud1a0\ub9ac\ub294 \uc870\uc6a9\ud55c \uc0c1\ud0dc\ub85c \uc720\uc9c0\ub429\ub2c8\ub2e4.");
-    }
-
-    private static void fillKo15(Map<String, String> table) {
         table.put("Story ring size",
                 "\uc2a4\ud1a0\ub9ac \ub9c1 \uc0ac\uc774\uc988");
-        table.put("Support HushGram",
+        table.put("Support TADa",
                 "HushGram \ud6c4\uc6d0\ud558\uae30");
         table.put("Swipe left to open the profile",
                 "\uc67c\ucabd\uc73c\ub85c \uc2a4\uc640\uc774\ud504\ud574 \ud504\ub85c\ud544 \uc5f4\uae30");
@@ -11063,6 +11024,35 @@ public final class L10nTranslations {
                 "\uace0\uc2a4\ud2b8 \ubaa8\ub4dc\uac00 \ubc14\uafb8\ub294 \uc2a4\uc704\uce58");
         table.put("System tick",
                 "\uc2dc\uc2a4\ud15c \ud2f1");
+        table.put("TADa %1$s on Instagram %2$s",
+                "Instagram %2$s\uc758 HushGram %1$s");
+        table.put("TADa PIN",
+                "HushGram PIN");
+        table.put("TADa is on",
+                "HushGram \uc2e4\ud589 \uc911");
+        table.put("TADa is paused",
+                "HushGram \uc77c\uc2dc \uc815\uc9c0\ub428");
+        table.put("TADa launch screen",
+                "HushGram \uc2dc\uc791 \ud654\uba74");
+        table.put("TADa paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in TADa settings.",
+                "Instagram\uc774 \uc2dc\uc791\ud560 \ub54c \uacc4\uc18d \ucda9\ub3cc\ud574\uc11c HushGram\uc774 \uc2a4\uc2a4\ub85c \uc77c\uc2dc \uc815\uc9c0\ub418\uc5c8\uc2b5\ub2c8\ub2e4. HushGram \uc124\uc815\uc5d0\uc11c \ub2e4\uc2dc \ucf24 \ub54c\uae4c\uc9c0 \uc2a4\uc704\uce58\ub294 \uaebc\uc9c4 \uc0c1\ud0dc\ub85c \uc720\uc9c0\ub429\ub2c8\ub2e4.");
+        table.put("TADa pauses when Instagram restarts.",
+                "Instagram\uc744 \ub2e4\uc2dc \uc2dc\uc791\ud558\uba74 HushGram\uc774 \uc77c\uc2dc \uc815\uc9c0\ub429\ub2c8\ub2e4");
+        table.put("TADa remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
+                "HushGram\uc740 \ucd5c\ub300 200\uac1c \ub3d9\uc601\uc0c1\uc5d0\uc11c \uba48\ucd98 \uc704\uce58\ub97c 30\uc77c \ub3d9\uc548 \uae30\uc5b5\ud569\ub2c8\ub2e4. \ud0ed\ud558\uba74 \uc774 \uae30\uae30\uc5d0\uc11c \uc9c0\uc6c1\ub2c8\ub2e4.");
+        table.put("TADa saves",
+                "HushGram \uc800\uc7a5");
+    }
+
+    private static void fillKo15(Map<String, String> table) {
+        table.put("TADa settings are locked",
+                "HushGram \uc124\uc815\uc774 \uc7a0\uaca8 \uc788\uc2b5\ub2c8\ub2e4");
+        table.put("TADa settings couldn't open",
+                "HushGram \uc124\uc815\uc744 \uc5f4 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4");
+        table.put("TADa settings exported.",
+                "HushGram \uc124\uc815\uc744 \ub0b4\ubcf4\ub0c8\uc2b5\ub2c8\ub2e4");
+        table.put("TADa turns back on when Instagram restarts.",
+                "Instagram\uc744 \ub2e4\uc2dc \uc2dc\uc791\ud558\uba74 HushGram\uc774 \ub2e4\uc2dc \uc2e4\ud589\ub429\ub2c8\ub2e4");
         table.put("Tab bar",
                 "\ud0ed \ubc14");
         table.put("Tab bar corners",
@@ -11071,7 +11061,7 @@ public final class L10nTranslations {
                 "\ud0ed \ubc14 \ub192\uc774");
         table.put("Tab bar opacity",
                 "\ud0ed \ubc14 \ubd88\ud22c\uba85\ub3c4");
-        table.put("Tab long presses keep Instagram's own action. Choose one to open HushGram instead.",
+        table.put("Tab long presses keep Instagram's own action. Choose one to open TADa instead.",
                 "\ud0ed\uc744 \uae38\uac8c \ud0ed\ud558\uba74 Instagram\uc758 \uae30\ubcf8 \ub3d9\uc791\uc774 \uc2e4\ud589\ub429\ub2c8\ub2e4. HushGram\uc744 \ub300\uc2e0 \uc5f4 \ud0ed\uc744 \ud558\ub098 \uc120\ud0dd\ud558\uc138\uc694");
         table.put("Tab long presses keep Instagram's own action. Choose one to pick the playback quality instead.",
                 "\ud0ed\uc744 \uae38\uac8c \ud0ed\ud558\uba74 Instagram\uc758 \uae30\ubcf8 \ub3d9\uc791\uc774 \uc2e4\ud589\ub429\ub2c8\ub2e4. \uc7ac\uc0dd \ud654\uc9c8\uc744 \ub300\uc2e0 \uc120\ud0dd\ud560 \ud0ed\uc744 \ud558\ub098 \uace0\ub974\uc138\uc694.");
@@ -11173,18 +11163,18 @@ public final class L10nTranslations {
                 "\ud0ed\ud558\uc5ec \uc774\uac83\uc744 \ub2e4\uc2dc \ud65c\uc131\ud654\ud558\uc138\uc694");
         table.put("Tapping a call button in a chat asks first, so a stray tap doesn't ring anyone. Call starts it, Cancel doesn't.",
                 "\ucc44\ud305\uc5d0\uc11c \ud1b5\ud654 \ubc84\ud2bc\uc744 \ub204\ub974\uba74 \uba3c\uc800 \ubb3c\uc5b4\ubcf4\ubbc0\ub85c \uc2e4\uc218\ub85c \ub20c\ub7ec\ub3c4 \uc544\ubb34\uc5d0\uac8c\ub3c4 \uc804\ud654\uac00 \uac78\ub9ac\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \ud1b5\ud654\ub97c \ub204\ub974\uba74 \uc2dc\uc791\ub418\uace0, \ucde8\uc18c\ub97c \ub204\ub974\uba74 \uc2dc\uc791\ub418\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.");
+        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
+                "\ub3d9\uc601\uc0c1 \ud0ed, \ub450 \ubc88 \ud0ed\ud574\uc11c \uc88b\uc544\uc694, \uc800\uc7a5\uacfc \ub2e4\uc6b4\ub85c\ub4dc\ub294 \ud130\uce58\ub85c \uce58\uc9c0 \uc54a\uc73c\ubbc0\ub85c \ubc84\ud2bc\uc774 \ud750\ub9b0 \ucc44\ub85c \uc788\uc2b5\ub2c8\ub2e4.");
     }
 
     private static void fillKo16(Map<String, String> table) {
-        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
-                "\ub3d9\uc601\uc0c1 \ud0ed, \ub450 \ubc88 \ud0ed\ud574\uc11c \uc88b\uc544\uc694, \uc800\uc7a5\uacfc \ub2e4\uc6b4\ub85c\ub4dc\ub294 \ud130\uce58\ub85c \uce58\uc9c0 \uc54a\uc73c\ubbc0\ub85c \ubc84\ud2bc\uc774 \ud750\ub9b0 \ucc44\ub85c \uc788\uc2b5\ub2c8\ub2e4.");
         table.put("Teal",
                 "\uccad\ub85d\uc0c9");
         table.put("Tells Instagram your phone is at %1$s.",
                 "Instagram\uc5d0 \ub0b4 \ud734\ub300\ud3f0\uc774 %1$s\uc5d0 \uc788\ub2e4\uace0 \uc54c\ub9bd\ub2c8\ub2e4.");
         table.put("Tells Instagram your phone is at the place set below, for the location sticker, nearby places and maps. Photos keep their own places.",
                 "Instagram\uc5d0 \ub0b4 \ud734\ub300\ud3f0\uc774 \uc544\ub798\uc5d0 \uc124\uc815\ud55c \uc7a5\uc18c\uc5d0 \uc788\ub2e4\uace0 \uc54c\ub9bd\ub2c8\ub2e4. \uc704\uce58 \uc2a4\ud2f0\ucee4, \uadfc\ucc98 \uc7a5\uc18c, \uc9c0\ub3c4\uc5d0 \uc801\uc6a9\ub418\uba70 \uc0ac\uc9c4\uc740 \uc790\uccb4 \uc704\uce58\ub97c \uc720\uc9c0\ud569\ub2c8\ub2e4.");
-        table.put("That file isn't a font HushGram can use. Your font hasn't changed.",
+        table.put("That file isn't a font TADa can use. Your font hasn't changed.",
                 "\uc774 \ud30c\uc77c\uc740 HushGram\uc774 \uc0ac\uc6a9\ud560 \uc218 \uc788\ub294 \uae00\uaf34\uc774 \uc544\ub2d9\ub2c8\ub2e4. \uae00\uaf34\uc740 \ubc14\ub00c\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4.");
         table.put("That isn't a domain. Type one like example.com, or leave it blank.",
                 "\uc62c\ubc14\ub978 \ub3c4\uba54\uc778\uc774 \uc544\ub2d9\ub2c8\ub2e4. example.com\ucc98\ub7fc \uc785\ub825\ud558\uac70\ub098 \ube44\uc6cc \ub450\uc138\uc694.");
@@ -11200,7 +11190,7 @@ public final class L10nTranslations {
                 "\ud504\ub85c\ud544\uc758 \ub2e4\uc2dc \uac8c\uc2dc\ud55c \ud56d\ubaa9\uc5d0\uc11c \uc5f0 \ub9b4\uc2a4 \uc544\ub798\uc758 \ub313\uae00 \ub2ec\uae30 \ucc3d\uc785\ub2c8\ub2e4. \ub313\uae00 \ubc84\ud2bc\uc740 \uacc4\uc18d \ub313\uae00\uc744 \uc5fd\ub2c8\ub2e4.");
         table.put("The Follow button beside a reel's author. Their profile still has one.",
                 "\ub9b4\uc2a4 \uc791\uc131\uc790 \uc774\ub984 \uc606\uc5d0 \ud45c\uc2dc\ub418\ub294 \ud314\ub85c\uc6b0 \ubc84\ud2bc\uc744 \uc228\uae41\ub2c8\ub2e4. \uc791\uc131\uc790 \ud504\ub85c\ud544\uc5d0\ub294 \ud314\ub85c\uc6b0 \ubc84\ud2bc\uc774 \uadf8\ub300\ub85c \ud45c\uc2dc\ub429\ub2c8\ub2e4");
-        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets HushGram's settings. A saved settings backup brings the rest back, but not the PIN.",
+        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets TADa's settings. A saved settings backup brings the rest back, but not the PIN.",
                 "PIN\uc740 \ubcf5\uad6c\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \uc5c6\uc560\ub824\uba74 Android \uc571 \uc124\uc815\uc5d0\uc11c Instagram \uc800\uc7a5\uc18c\ub97c \uc9c0\uc6b0\uc138\uc694. \ub85c\uadf8\uc544\uc6c3\ub418\uace0 HushGram \uc124\uc815\uc774 \ucd08\uae30\ud654\ub429\ub2c8\ub2e4. \uc800\uc7a5\ud574 \ub454 \uc124\uc815 \ubc31\uc5c5\uc73c\ub85c \ub098\uba38\uc9c0\ub294 \ub418\ub3cc\ub9b4 \uc218 \uc788\uc9c0\ub9cc PIN\uc740 \ub3cc\uc544\uc624\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.");
         table.put("The PINs don't match.",
                 "PIN\uc774 \uc11c\ub85c \ub2e4\ub985\ub2c8\ub2e4.");
@@ -11218,7 +11208,7 @@ public final class L10nTranslations {
                 "\uc544\uc9c1 \uc9c4\ub2e8 \ubcf4\uace0\uc11c\ub97c \uc800\uc7a5\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \uc7a0\uc2dc \ud6c4 \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc138\uc694");
         table.put("The diagnostic report couldn't be saved. Try again.",
                 "\uc9c4\ub2e8 \ubcf4\uace0\uc11c\ub97c \uc800\uc7a5\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc138\uc694");
-        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn HushGram back on.",
+        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn TADa back on.",
                 "%1$s \ud30c\uc77c\uc744 \uc0ad\uc81c\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. HushGram\uc744 \ub2e4\uc2dc \ud65c\uc131\ud654\ud558\ub824\uba74 %2$s\uc5d0\uc11c \ud574\ub2f9 \ud30c\uc77c\uc744 \uc0ad\uc81c\ud558\uc138\uc694");
         table.put("The first video on Home plays with its sound on, the same as tapping its speaker. Your phone's ringer and volume still count, so on silent or with the volume down, it stays quiet.",
                 "\ud648\uc758 \uccab \ubc88\uc9f8 \ub3d9\uc601\uc0c1\uc774 \uc2a4\ud53c\ucee4\ub97c \ub204\ub978 \uac83\ucc98\ub7fc \uc18c\ub9ac\uac00 \ucf1c\uc9c4 \ucc44\ub85c \uc7ac\uc0dd\ub429\ub2c8\ub2e4. \ud734\ub300\uc804\ud654\uc758 \ubca8\uc18c\ub9ac \ubaa8\ub4dc\uc640 \ubcfc\ub968\uc740 \uadf8\ub300\ub85c \uc801\uc6a9\ub418\ubbc0\ub85c \ubb34\uc74c\uc774\uac70\ub098 \ubcfc\ub968\uc774 \uaebc\uc838 \uc788\uc73c\uba74 \uc870\uc6a9\ud55c \uc0c1\ud0dc\ub85c \uc720\uc9c0\ub429\ub2c8\ub2e4.");
@@ -11296,11 +11286,11 @@ public final class L10nTranslations {
                 "\ub9b4\uc2a4\uc5d0\uc11c Instagram\uc758 \ud074\ub9ac\uc5b4 \ubaa8\ub4dc\ub97c \ucf1c\uba74 \ub2e4\uc74c \ub9b4\uc2a4\ub3c4 \ud074\ub9ac\uc5b4 \ubaa8\ub4dc\ub85c \uc5f4\ub9bd\ub2c8\ub2e4. \ud074\ub9ac\uc5b4 \ubaa8\ub4dc\ub97c \uc9c1\uc811 \ub044\uba74 \ub2e4\uc74c \ub9b4\uc2a4\uc5d0\ub294 \ubc84\ud2bc\uc774 \ub2e4\uc2dc \ud45c\uc2dc\ub429\ub2c8\ub2e4.");
         table.put("Turn on Show a story's exact time to use this choice.",
                 "\uc774 \uc635\uc158\uc744 \uc0ac\uc6a9\ud558\ub824\uba74 \u2018\uc2a4\ud1a0\ub9ac \uc815\ud655\ud55c \uc2dc\uac04 \ud45c\uc2dc\u2019\ub97c \ucf1c\uc138\uc694");
+        table.put("Turn on Show it as a chip to use this choice.",
+                "\uc774 \uc635\uc158\uc744 \uc0ac\uc6a9\ud558\ub824\uba74 \u2018\uce69\uc73c\ub85c \ud45c\uc2dc\u2019\ub97c \ucf1c\uc138\uc694");
     }
 
     private static void fillKo17(Map<String, String> table) {
-        table.put("Turn on Show it as a chip to use this choice.",
-                "\uc774 \uc635\uc158\uc744 \uc0ac\uc6a9\ud558\ub824\uba74 \u2018\uce69\uc73c\ub85c \ud45c\uc2dc\u2019\ub97c \ucf1c\uc138\uc694");
         table.put("Turn on Start Home on Following to use this choice.",
                 "\uc774 \uc635\uc158\uc744 \uc0ac\uc6a9\ud558\ub824\uba74 \u2018\ud314\ub85c\uc789\uc5d0\uc11c \ud648 \uc2dc\uc791\u2019\uc744 \ud65c\uc131\ud654\ud558\uc138\uc694");
         table.put("Turn on Story ring size to use this choice.",
@@ -11419,11 +11409,11 @@ public final class L10nTranslations {
                 "\ub9b4\uc2a4\uac00 \uccab \ud654\uba74\uc5d0 \uc5c6\uc73c\uba74 \ud504\ub85c\ud544\uc774 \uc9c1\uc811 \uc2a4\ud06c\ub864\ud558\ub294 \ub300\uc2e0 \ub9b4\uc2a4 \ucc3e\uae30 \ubc84\ud2bc\uc744 \ud45c\uc2dc\ud569\ub2c8\ub2e4.");
         table.put("Where videos wait",
                 "\ub3d9\uc601\uc0c1\uc774 \ub300\uae30\ud558\ub294 \uacf3");
+        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
+                "\uc2a4\ud1a0\ub9ac\ub97c \ubab0\ub798 \ubcf4\ub294 \ub3d9\uc548 \uc774\ubbf8 \ubcf8 \uc2a4\ud1a0\ub9ac\uac00 \ud68c\uc0c9\uc73c\ub85c \ubc14\ub00c\uace0 \uc904\uc758 \ub9e8 \ub05d\uc73c\ub85c \uc774\ub3d9\ud569\ub2c8\ub2e4. \uc774 \ubcc0\ud654\ub294 \uc774 \ud734\ub300\ud3f0\uc5d0\uc11c\ub9cc \ubcf4\uc774\uba70, Instagram\uc5d0\ub294 \uc5ec\uc804\ud788 \uc2dc\uccad \uc0ac\uc2e4\uc774 \uc804\ub2ec\ub418\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4");
     }
 
     private static void fillKo18(Map<String, String> table) {
-        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
-                "\uc2a4\ud1a0\ub9ac\ub97c \ubab0\ub798 \ubcf4\ub294 \ub3d9\uc548 \uc774\ubbf8 \ubcf8 \uc2a4\ud1a0\ub9ac\uac00 \ud68c\uc0c9\uc73c\ub85c \ubc14\ub00c\uace0 \uc904\uc758 \ub9e8 \ub05d\uc73c\ub85c \uc774\ub3d9\ud569\ub2c8\ub2e4. \uc774 \ubcc0\ud654\ub294 \uc774 \ud734\ub300\ud3f0\uc5d0\uc11c\ub9cc \ubcf4\uc774\uba70, Instagram\uc5d0\ub294 \uc5ec\uc804\ud788 \uc2dc\uccad \uc0ac\uc2e4\uc774 \uc804\ub2ec\ub418\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4");
         table.put("Who unfollowed you",
                 "\ub098\ub97c \uc5b8\ud314\ub85c\uc6b0\ud55c \uc0ac\ub78c");
         table.put("Wi-Fi stays as it is. Turn this off to save data on every network.",
@@ -11438,7 +11428,7 @@ public final class L10nTranslations {
                 "X");
         table.put("You cleared the remembered playback positions.",
                 "\uc800\uc7a5\ub41c \uc7ac\uc0dd \uc704\uce58\ub97c \uc0ad\uc81c\ud558\uc600\uc2b5\ub2c8\ub2e4");
-        table.put("You paused HushGram.",
+        table.put("You paused TADa.",
                 "HushGram\uc774 \uc77c\uc2dc \uc815\uc9c0\ub418\uc5c8\uc2b5\ub2c8\ub2e4");
         table.put("Your fingerprint, face or screen lock unlocks your messages.",
                 "\ud734\ub300\ud3f0\uc758 \uc9c0\ubb38, \uc5bc\uad74 \ub610\ub294 \ud654\uba74 \uc7a0\uae08\uc73c\ub85c \uba54\uc2dc\uc9c0 \uc7a0\uae08\uc744 \ud489\ub2c8\ub2e4.");
@@ -11467,7 +11457,7 @@ public final class L10nTranslations {
     }
 
     private static Map<String, String> buildPt_rBR() {
-        Map<String, String> table = new HashMap<>(2202);
+        Map<String, String> table = new HashMap<>(2200);
         fillPt_rBR0(table);
         fillPt_rBR1(table);
         fillPt_rBR2(table);
@@ -11571,7 +11561,7 @@ public final class L10nTranslations {
                 "Tocar duas vezes em uma publica\u00e7\u00e3o ou reel n\u00e3o curte mais nem mostra um cora\u00e7\u00e3o. Um toque e o bot\u00e3o Curtir funcionam como antes.");
         table.put("A double tap on a reel doesn't like it. Turn this off to keep double tap to like on reels.",
                 "Tocar duas vezes em um reel n\u00e3o curte. Desative para continuar curtindo reels com toque duplo.");
-        table.put("A file named %1$s in %2$s paused HushGram.",
+        table.put("A file named %1$s in %2$s paused TADa.",
                 "Um arquivo chamado %1$s em %2$s pausou o HushGram.");
         table.put("A finished story stays on screen until you tap or swipe. Turn this off for Instagram's timing.",
                 "Um story que terminou fica na tela at\u00e9 voc\u00ea tocar ou deslizar. Desative para usar o tempo do Instagram.");
@@ -11587,7 +11577,7 @@ public final class L10nTranslations {
                 "Um pouco mais");
         table.put("A long press on the Instagram logo at the top of Home opens these settings. Off, the long press goes back to Instagram.",
                 "Tocar e segurar o logotipo do Instagram, no topo da P\u00e1gina inicial, abre estas configura\u00e7\u00f5es. Desligado, o toque longo volta a ser do Instagram.");
-        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens HushGram. A tap still opens Instagram's menu, and other profiles stay the same.",
+        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens TADa. A tap still opens Instagram's menu, and other profiles stay the same.",
                 "Manter pressionado o bot\u00e3o de menu, as tr\u00eas linhas no canto superior direito do seu pr\u00f3prio perfil, abre o HushGram. Um toque continua abrindo o menu do Instagram, e os outros perfis ficam como est\u00e3o.");
         table.put("A reel Instagram's auto scroll moves to waits for your tap too. Off, auto scroll plays reel after reel.",
                 "Um reel para o qual a rolagem autom\u00e1tica do Instagram passa tamb\u00e9m espera seu toque. Desligado, a rolagem autom\u00e1tica toca um reel ap\u00f3s o outro.");
@@ -11932,7 +11922,7 @@ public final class L10nTranslations {
                 "Tamanho dos cantos");
         table.put("Couldn't change every Ghost mode switch. Check them below.",
                 "N\u00e3o deu para mudar todas as chaves do modo fantasma. Confira abaixo.");
-        table.put("Couldn't change every Ghost mode switch. Open HushGram settings to check them.",
+        table.put("Couldn't change every Ghost mode switch. Open TADa settings to check them.",
                 "N\u00e3o deu para mudar todas as chaves do modo fantasma. Confira nas configura\u00e7\u00f5es do HushGram.");
         table.put("Couldn't clear the download history. Try again.",
                 "N\u00e3o foi poss\u00edvel apagar o hist\u00f3rico de downloads. Tente de novo.");
@@ -11950,7 +11940,7 @@ public final class L10nTranslations {
                 "N\u00e3o foi poss\u00edvel copiar o link da m\u00eddia");
         table.put("Couldn't copy the username",
                 "N\u00e3o foi poss\u00edvel copiar o nome de usu\u00e1rio");
-        table.put("Couldn't export HushGram settings. Try another file.",
+        table.put("Couldn't export TADa settings. Try another file.",
                 "N\u00e3o foi poss\u00edvel exportar as configura\u00e7\u00f5es do HushGram. Tente outro arquivo.");
         table.put("Couldn't find the reel you came from",
                 "N\u00e3o foi poss\u00edvel encontrar o reel de onde voc\u00ea veio");
@@ -11958,7 +11948,7 @@ public final class L10nTranslations {
                 "N\u00e3o foi poss\u00edvel ocultar esta conta");
         table.put("Couldn't hide this notice. Try again.",
                 "N\u00e3o foi poss\u00edvel ocultar este aviso. Tente novamente.");
-        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in HushGram settings > Layout.",
+        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in TADa settings > Layout.",
                 "N\u00e3o foi poss\u00edvel carregar seu arquivo de fonte, ent\u00e3o a fonte do Instagram aparece. Escolha de novo em Configura\u00e7\u00f5es do HushGram > Layout.");
         table.put("Couldn't mark as read",
                 "N\u00e3o foi poss\u00edvel marcar como lida");
@@ -11974,7 +11964,7 @@ public final class L10nTranslations {
                 "N\u00e3o foi poss\u00edvel salvar ou restaurar todas as configura\u00e7\u00f5es. Confira os valores exibidos e tente desfazer.");
         table.put("Couldn't save the PIN.",
                 "N\u00e3o deu para salvar o PIN.");
-        table.put("Couldn't save the playback quality. Open HushGram settings to set it.",
+        table.put("Couldn't save the playback quality. Open TADa settings to set it.",
                 "N\u00e3o foi poss\u00edvel salvar a qualidade de reprodu\u00e7\u00e3o. Abra as configura\u00e7\u00f5es do HushGram para defini-la.");
         table.put("Couldn't save the settings. The previous values were restored.",
                 "N\u00e3o foi poss\u00edvel salvar as configura\u00e7\u00f5es. Os valores anteriores foram restaurados.");
@@ -11985,7 +11975,7 @@ public final class L10nTranslations {
     private static void fillPt_rBR4(Map<String, String> table) {
         table.put("Couldn't start the report export. Try again shortly.",
                 "N\u00e3o foi poss\u00edvel iniciar a exporta\u00e7\u00e3o do relat\u00f3rio. Tente de novo daqui a pouco.");
-        table.put("Couldn't turn HushGram back on. Try again.",
+        table.put("Couldn't turn TADa back on. Try again.",
                 "N\u00e3o foi poss\u00edvel reativar o HushGram. Tente novamente.");
         table.put("Couldn't update the remembered playback positions.",
                 "N\u00e3o foi poss\u00edvel atualizar as posi\u00e7\u00f5es de reprodu\u00e7\u00e3o salvas.");
@@ -12122,11 +12112,11 @@ public final class L10nTranslations {
                 "Exemplo sem detalhes da publica\u00e7\u00e3o");
         table.put("Explore",
                 "Explorar");
-        table.put("Export HushGram settings",
+        table.put("Export TADa settings",
                 "Exportar configura\u00e7\u00f5es do HushGram");
         table.put("Export diagnostic report",
                 "Exportar relat\u00f3rio de diagn\u00f3stico");
-        table.put("Exporting HushGram settings...",
+        table.put("Exporting TADa settings...",
                 "Exportando as configura\u00e7\u00f5es do HushGram...");
         table.put("Facebook",
                 "Facebook");
@@ -12218,7 +12208,7 @@ public final class L10nTranslations {
                 "Barra de abas de vidro");
         table.put("Gold",
                 "Dourado");
-        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later HushGram builds need Change version code too, or they won't install over this one.",
+        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later TADa builds need Change version code too, or they won't install over this one.",
                 "O Google Play n\u00e3o vai oferecer as atualiza\u00e7\u00f5es da Meta sobre esta vers\u00e3o. Para voltar ao Instagram normal, desinstale esta primeiro, o que apaga os dados do Instagram neste celular. As pr\u00f3ximas vers\u00f5es do HushGram tamb\u00e9m precisam de Change version code, ou n\u00e3o ser\u00e3o instaladas por cima desta.");
         table.put("Google's emoji everywhere",
                 "Emojis do Google em todo lugar");
@@ -12370,8 +12360,6 @@ public final class L10nTranslations {
                 "Ocultar o bot\u00e3o Seguir");
         table.put("Hide the Home tab",
                 "Ocultar a aba In\u00edcio");
-        table.put("Hide the HushGram row in Instagram's menu",
-                "Ocultar a linha do HushGram no menu do Instagram");
         table.put("Hide the Muse button on your profile",
                 "Ocultar o bot\u00e3o do Muse no seu perfil");
         table.put("Hide the Muse card",
@@ -12392,6 +12380,8 @@ public final class L10nTranslations {
                 "Ocultar o bot\u00e3o Compartilhar");
         table.put("Hide the Stories tray",
                 "Ocultar a fileira de stories");
+        table.put("Hide the TADa row in Instagram's menu",
+                "Ocultar a linha do HushGram no menu do Instagram");
         table.put("Hide the Threads button",
                 "Ocultar o bot\u00e3o do Threads");
         table.put("Hide the call buttons in chats",
@@ -12481,37 +12471,9 @@ public final class L10nTranslations {
                 "Mostra quanto tempo falta para o story expirar, por exemplo, \u201c18 h 14 min\u201d. Para stories mais antigos, mostra a data e o hor\u00e1rio da publica\u00e7\u00e3o.");
         table.put("How the time shows",
                 "Como o hor\u00e1rio aparece");
-        table.put("How you open HushGram, and how this screen is laid out.",
+        table.put("How you open TADa, and how this screen is laid out.",
                 "Como voc\u00ea abre o HushGram e como esta tela \u00e9 organizada.");
-        table.put("HushGram %1$s on Instagram %2$s",
-                "HushGram %1$s no Instagram %2$s");
-        table.put("HushGram PIN",
-                "PIN do HushGram");
-        table.put("HushGram is on",
-                "O HushGram est\u00e1 ativo");
-        table.put("HushGram is paused",
-                "O HushGram est\u00e1 pausado");
-        table.put("HushGram launch screen",
-                "Tela de abertura do HushGram");
-        table.put("HushGram paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in HushGram settings.",
-                "O HushGram foi pausado automaticamente porque o Instagram fechava com erro ao iniciar. As op\u00e7\u00f5es dele ficam desativadas at\u00e9 voc\u00ea reativ\u00e1-lo nas Configura\u00e7\u00f5es do HushGram.");
-        table.put("HushGram pauses when Instagram restarts.",
-                "O HushGram ser\u00e1 pausado quando o Instagram for reiniciado.");
-        table.put("HushGram remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
-                "O HushGram lembra onde voc\u00ea parou em at\u00e9 200 v\u00eddeos por 30 dias. Toque para apag\u00e1-los deste dispositivo.");
-        table.put("HushGram saves",
-                "Salvamentos do HushGram");
-        table.put("HushGram settings",
-                "Configura\u00e7\u00f5es do HushGram");
-        table.put("HushGram settings are locked",
-                "As configura\u00e7\u00f5es do HushGram est\u00e3o bloqueadas");
-        table.put("HushGram settings couldn't open",
-                "N\u00e3o foi poss\u00edvel abrir as configura\u00e7\u00f5es do HushGram");
-        table.put("HushGram settings exported.",
-                "Configura\u00e7\u00f5es do HushGram exportadas.");
-        table.put("HushGram turns back on when Instagram restarts.",
-                "O HushGram ser\u00e1 reativado quando o Instagram for reiniciado.");
-        table.put("Import HushGram settings",
+        table.put("Import TADa settings",
                 "Importar configura\u00e7\u00f5es do HushGram");
         table.put("Imported %1$d settings. Skipped %2$d that this version doesn't know.",
                 "%1$d configura\u00e7\u00f5es importadas. %2$d ignoradas porque esta vers\u00e3o n\u00e3o as conhece.");
@@ -12521,7 +12483,7 @@ public final class L10nTranslations {
                 "Azul do Instagram");
         table.put("Instagram can't read your phone's advertising ID or tell Android's ad services which ads you saw or tapped. The permissions for them are gone from this build.",
                 "O Instagram n\u00e3o consegue ler o ID de publicidade do seu celular nem informar aos servi\u00e7os de an\u00fancios do Android quais an\u00fancios voc\u00ea viu ou tocou. As permiss\u00f5es para isso foram removidas desta vers\u00e3o.");
-        table.put("Instagram crashed or froze within a minute of starting three times in a row, so HushGram paused itself.",
+        table.put("Instagram crashed or froze within a minute of starting three times in a row, so TADa paused itself.",
                 "O Instagram fechou com erro ou travou no primeiro minuto ap\u00f3s iniciar, tr\u00eas vezes seguidas, ent\u00e3o o HushGram foi pausado automaticamente.");
         table.put("Instagram doesn't notice when you take a screenshot, so whoever sent you a disappearing photo or video isn't told. Your screenshots save as usual.",
                 "O Instagram n\u00e3o percebe quando voc\u00ea faz uma captura de tela, ent\u00e3o quem te mandou uma foto ou v\u00eddeo tempor\u00e1rio n\u00e3o \u00e9 avisado. Suas capturas s\u00e3o salvas normalmente.");
@@ -12549,7 +12511,7 @@ public final class L10nTranslations {
                 "Impede que o Instagram mostre o aviso de que a vers\u00e3o est\u00e1 desatualizada. Como uma vers\u00e3o modificada n\u00e3o recebe atualiza\u00e7\u00f5es automaticamente, isso ajuda a continuar usando-a.");
         table.put("Instagram wakes your phone every minute or two, screen off included, only to note that it is still running. This stops that. Messages, notifications and everything you see are unaffected.",
                 "O Instagram acorda seu telefone a cada minuto ou dois, inclusive com a tela apagada, s\u00f3 para anotar que ainda est\u00e1 em execu\u00e7\u00e3o. Isso para essa atividade. Mensagens, notifica\u00e7\u00f5es e tudo o que voc\u00ea v\u00ea n\u00e3o mudam.");
-        table.put("Instagram's Settings and activity screen leaves out the HushGram row while another way here opens HushGram. With every other way off, the row comes back.",
+        table.put("Instagram's Settings and activity screen leaves out the TADa row while another way here opens TADa. With every other way off, the row comes back.",
                 "Enquanto outra forma de chegar aqui abrir o HushGram, a tela Configura\u00e7\u00f5es e atividade do Instagram n\u00e3o mostra a linha do HushGram. Com todas as outras formas desligadas, a linha volta.");
         table.put("Instagram's colors",
                 "Cores do Instagram");
@@ -12595,9 +12557,6 @@ public final class L10nTranslations {
                 "Manter a velocidade do reel");
         table.put("Keep the zoom open",
                 "Manter o zoom aberto");
-    }
-
-    private static void fillPt_rBR9(Map<String, String> table) {
         table.put("Keep your chats private and your inbox clear of extras.",
                 "Mantenha suas conversas privadas e sua caixa de entrada sem extras.");
         table.put("Keeps Instagram's Music for you card from turning up between the stories you watch. The stories themselves stay.",
@@ -12626,6 +12585,9 @@ public final class L10nTranslations {
                 "Deixa de fora os reels com o r\u00f3tulo Parceria paga e os que o Instagram marca como impulsionados. Os an\u00fancios t\u00eam uma chave pr\u00f3pria.");
         table.put("Leaves out the Add Yours cards, like Popular Add Yours and Join a trending Add Yours, that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "Tira os cards de Sua vez, como os populares ou os em alta para participar, que o Instagram coloca entre os stories que voc\u00ea passa. Os stories em si continuam.");
+    }
+
+    private static void fillPt_rBR9(Map<String, String> table) {
         table.put("Leaves out the Suggested for you cards of accounts to follow that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "Tira os cards de Sugest\u00f5es para voc\u00ea com contas para seguir que o Instagram coloca entre os stories que voc\u00ea passa. Os stories em si continuam.");
         table.put("Leaves the Suggested for you accounts out of what shows when you tap the search bar. Recent searches stay.",
@@ -12678,11 +12640,11 @@ public final class L10nTranslations {
                 "Bloquear suas mensagens");
         table.put("Locked chats",
                 "Conversas bloqueadas");
-        table.put("Long press %1$s to open HushGram instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
+        table.put("Long press %1$s to open TADa instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
                 "Mantenha %1$s pressionado para abrir o HushGram no lugar da a\u00e7\u00e3o normal dessa aba. Os toques normais e as outras abas continuam iguais. S\u00f3 \u00e9 poss\u00edvel usar as abas que sua conta mostra.");
-        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens HushGram, that comes first.",
+        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens TADa, that comes first.",
                 "Mantenha %1$s pressionado para escolher a qualidade de reprodu\u00e7\u00e3o no lugar da a\u00e7\u00e3o normal dessa aba. Os toques normais e as outras abas ficam como est\u00e3o. \u00c9 preciso que a Qualidade de reprodu\u00e7\u00e3o padr\u00e3o esteja ativada. Se a mesma aba abrir o HushGram, isso vem primeiro.");
-        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens HushGram or picks the playback quality, that comes first.",
+        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens TADa or picks the playback quality, that comes first.",
                 "Mantenha %1$s pressionado para ativar ou desativar o modo fantasma no lugar da a\u00e7\u00e3o normal dessa aba, e um aviso mostra como ficou. Os toques normais e as outras abas ficam como est\u00e3o. Se a mesma aba abrir o HushGram ou escolher a qualidade de reprodu\u00e7\u00e3o, isso vem primeiro.");
         table.put("Long press a photo to zoom",
                 "Toque e segure uma foto para ampliar");
@@ -12718,9 +12680,6 @@ public final class L10nTranslations {
                 "Bot\u00e3o de Mensagens no cabe\u00e7alho da P\u00e1gina inicial");
         table.put("Messenger",
                 "Messenger");
-    }
-
-    private static void fillPt_rBR10(Map<String, String> table) {
         table.put("Meta AI",
                 "Meta AI");
         table.put("More",
@@ -12749,13 +12708,16 @@ public final class L10nTranslations {
                 "Nenhum aplicativo neste dispositivo consegue abrir o link. O endere\u00e7o \u00e9 %1$s.");
         table.put("No app on this phone can play this video",
                 "Nenhum app deste celular consegue reproduzir este v\u00eddeo");
+    }
+
+    private static void fillPt_rBR10(Map<String, String> table) {
         table.put("No direct link for this one",
                 "N\u00e3o h\u00e1 link direto para este");
         table.put("No matching settings",
                 "Nenhuma configura\u00e7\u00e3o correspondente");
         table.put("No one has left since then.",
                 "Ningu\u00e9m saiu desde ent\u00e3o.");
-        table.put("No other way into HushGram is on, so the row stays in Instagram's menu.",
+        table.put("No other way into TADa is on, so the row stays in Instagram's menu.",
                 "Nenhuma outra forma de abrir o HushGram est\u00e1 ligada, ent\u00e3o a linha fica no menu do Instagram.");
         table.put("No pages chosen",
                 "Nenhuma p\u00e1gina escolhida");
@@ -12841,9 +12803,6 @@ public final class L10nTranslations {
                 "Abra um chat no Instagram e volte aqui para ocult\u00e1-lo.");
         table.put("Open a chat in Instagram, then come back here to lock it.",
                 "Abra uma conversa no Instagram e volte aqui para bloque\u00e1-la.");
-    }
-
-    private static void fillPt_rBR11(Map<String, String> table) {
         table.put("Open a creator's profile from a reel, then their Reels tab, and it scrolls to that reel and outlines it for a moment. A photo reel is found in their posts. Stop looking ends the search where it is.",
                 "Abra o perfil de um criador a partir de um reel e depois a aba Reels dele, e ela rola at\u00e9 esse reel e o destaca por um momento. Um reel de foto \u00e9 encontrado nas publica\u00e7\u00f5es dele. Parar de procurar encerra a busca onde ela estiver.");
         table.put("Open app info",
@@ -12872,6 +12831,9 @@ public final class L10nTranslations {
                 "Abre o In\u00edcio com os posts de contas que voc\u00ea segue, em vez de Para voc\u00ea. Toque no topo do In\u00edcio para alternar. Reinicie o Instagram para ver a mudan\u00e7a.");
         table.put("Opens a GitHub report with your versions and settings filled in. Add what happened.",
                 "Abre um relat\u00f3rio no GitHub com suas vers\u00f5es e configura\u00e7\u00f5es j\u00e1 preenchidas. Conte o que aconteceu.");
+    }
+
+    private static void fillPt_rBR11(Map<String, String> table) {
         table.put("Orange",
                 "Laranja");
         table.put("PIN",
@@ -12886,7 +12848,7 @@ public final class L10nTranslations {
                 "P\u00e1gina %1$d, v\u00eddeo");
         table.put("Pause",
                 "Pausar");
-        table.put("Pause HushGram",
+        table.put("Pause TADa",
                 "Pausar o HushGram");
         table.put("Pause and diagnostics",
                 "Pausa e diagn\u00f3stico");
@@ -12944,14 +12906,14 @@ public final class L10nTranslations {
                 "Mostrar primeiro as contas que n\u00e3o seguem voc\u00ea de volta");
         table.put("Puts Activity, the screen the heart opens, on the tab bar before Profile. Tab order can move it, and Hide notifications on Home's header takes the heart away. Restart Instagram to see the change.",
                 "Coloca Atividade, a tela que o cora\u00e7\u00e3o abre, na barra de abas antes do Perfil. Ordem das abas pode mov\u00ea-la, e Ocultar notifica\u00e7\u00f5es no cabe\u00e7alho da P\u00e1gina inicial tira o cora\u00e7\u00e3o. Reinicie o Instagram para ver a mudan\u00e7a.");
-        table.put("Puts HushGram settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
-                "Coloca as Configura\u00e7\u00f5es do HushGram no menu que aparece ao segurar o \u00edcone do Instagram. Desligado, o atalho sai desse menu.");
         table.put("Puts Instagram's logo in the middle of the top of Home, even with header buttons hidden or added. A feed's name shown there is centered too. Restart Instagram to see the change.",
                 "Coloca o logo do Instagram no meio do topo da P\u00e1gina inicial, mesmo com bot\u00f5es do cabe\u00e7alho ocultos ou adicionados. O nome de um feed mostrado ali tamb\u00e9m fica centralizado. Reinicie o Instagram para ver a mudan\u00e7a.");
         table.put("Puts Messages on the tab bar, before Profile, if Instagram left it off yours. Tab order can move it. Restart Instagram to see the change.",
                 "Coloca Mensagens na barra de abas, antes do Perfil, se o Instagram a deixou de fora da sua. Ordem das abas pode mov\u00ea-la. Reinicie o Instagram para ver a mudan\u00e7a.");
         table.put("Puts Reels back on the tab bar if Instagram left it off yours. Hide the Reels tab wins if both are on. Restart Instagram to see the change.",
                 "Coloca o Reels de volta na barra de abas se o Instagram o deixou de fora da sua. Ocultar a aba Reels tem prioridade se as duas estiverem ativadas. Reinicie o Instagram para ver a mudan\u00e7a.");
+        table.put("Puts TADa settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
+                "Coloca as Configura\u00e7\u00f5es do HushGram no menu que aparece ao segurar o \u00edcone do Instagram. Desligado, o atalho sai desse menu.");
         table.put("Puts a Block icon beside someone else's reel. A tap opens Instagram's own block screen for that account, so you still confirm it there.",
                 "Coloca um \u00edcone de Bloquear ao lado do reel de outra pessoa. Um toque abre a tela de bloqueio do pr\u00f3prio Instagram para essa conta, ent\u00e3o voc\u00ea ainda confirma l\u00e1.");
         table.put("Puts a Not interested icon beside a reel, so one tap does what Not interested in its menu does.",
@@ -12964,9 +12926,6 @@ public final class L10nTranslations {
                 "Coloca um \u00edcone de m\u00fasica ao lado de um reel. Toque nele e a aba Reels pula outros reels com esse som. Toque de novo para traz\u00ea-los de volta.");
         table.put("Puts every notification from Instagram in one group that shows how many it holds, so they don't fill your notification shade. Tapping one still opens it.",
                 "Coloca cada notifica\u00e7\u00e3o do Instagram em um grupo que mostra quantas ele tem, para elas n\u00e3o encherem sua aba de notifica\u00e7\u00f5es. Tocar em uma ainda abre a notifica\u00e7\u00e3o.");
-    }
-
-    private static void fillPt_rBR12(Map<String, String> table) {
         table.put("Puts every switch back the way it started. Your locks stay as they are.",
                 "Volta todas as op\u00e7\u00f5es ao estado inicial. Seus bloqueios ficam como est\u00e3o.");
         table.put("Puts the answer in a chip under the profile's posts, followers and following counts instead, and says Following each other when you follow them too.",
@@ -12995,6 +12954,9 @@ public final class L10nTranslations {
                 "Deixaram de seguir voc\u00ea");
         table.put("Record patch activity and show errors for a bug report. Leave off during normal use.",
                 "Registra a atividade dos patches e mostra os erros para um relat\u00f3rio de erro. Mantenha desativado durante o uso normal.");
+    }
+
+    private static void fillPt_rBR12(Map<String, String> table) {
         table.put("Red",
                 "Vermelho");
         table.put("Reels",
@@ -13087,9 +13049,6 @@ public final class L10nTranslations {
                 "Salvar tudo");
         table.put("Save canceled",
                 "Salvamento cancelado");
-    }
-
-    private static void fillPt_rBR13(Map<String, String> table) {
         table.put("Save comment photo",
                 "Salvar foto do coment\u00e1rio");
         table.put("Save every page without asking",
@@ -13106,7 +13065,7 @@ public final class L10nTranslations {
                 "Salve o relat\u00f3rio completo em %1$s.");
         table.put("Save videos other apps can open",
                 "Salvar v\u00eddeos que outros apps conseguem abrir");
-        table.put("Save your HushGram choices to a file, or bring them back.",
+        table.put("Save your TADa choices to a file, or bring them back.",
                 "Salve suas escolhas do HushGram em um arquivo ou traga-as de volta.");
         table.put("Saved",
                 "Salvos");
@@ -13118,6 +13077,9 @@ public final class L10nTranslations {
                 "Salvo em %1$s");
         table.put("Saved to %1$s in lower quality than on Instagram",
                 "Salvo em %1$s com qualidade menor que no Instagram");
+    }
+
+    private static void fillPt_rBR13(Map<String, String> table) {
         table.put("Saved to the gallery",
                 "Salvo na galeria");
         table.put("Saved to the gallery in lower quality than on Instagram",
@@ -13138,7 +13100,7 @@ public final class L10nTranslations {
                 "Salvando relat\u00f3rio de diagn\u00f3stico...");
         table.put("Saving...",
                 "Salvando...");
-        table.put("Saving... You can cancel from Downloads in HushGram settings.",
+        table.put("Saving... You can cancel from Downloads in TADa settings.",
                 "Salvando... Voc\u00ea pode cancelar em Downloads nas configura\u00e7\u00f5es do HushGram.");
         table.put("Screenshots and screen recordings work wherever Instagram blocks them, like disappearing photos and videos. Turn on Don't report screenshots too if the sender shouldn't hear about it.",
                 "Capturas e grava\u00e7\u00f5es de tela funcionam onde o Instagram as bloqueia, como em fotos e v\u00eddeos tempor\u00e1rios. Ative tamb\u00e9m N\u00e3o avisar sobre capturas de tela se quem enviou n\u00e3o deve ficar sabendo.");
@@ -13166,9 +13128,9 @@ public final class L10nTranslations {
                 "Enviar para");
         table.put("Set a PIN",
                 "Definir um PIN");
-        table.put("Set a screen lock on your phone so HushGram can lock Instagram.",
+        table.put("Set a screen lock on your phone so TADa can lock Instagram.",
                 "Configure um bloqueio de tela no seu celular para o HushGram poder bloquear o Instagram.");
-        table.put("Set a screen lock on your phone so HushGram can lock your messages.",
+        table.put("Set a screen lock on your phone so TADa can lock your messages.",
                 "Configure um bloqueio de tela no seu celular para o HushGram poder bloquear suas mensagens.");
         table.put("Set or change the 4 to 8 digit PIN. It stays on this phone and isn't in a backup.",
                 "Defina ou troque o PIN de 4 a 8 d\u00edgitos. Ele fica s\u00f3 neste celular e n\u00e3o vai para o backup.");
@@ -13210,9 +13172,6 @@ public final class L10nTranslations {
                 "Mostrar todas as pesquisas recentes");
         table.put("Show all settings as a list",
                 "Mostrar todas as configura\u00e7\u00f5es como lista");
-    }
-
-    private static void fillPt_rBR14(Map<String, String> table) {
         table.put("Show and reorder tabs",
                 "Mostrar e reordenar abas");
         table.put("Show content behind the tab bar",
@@ -13241,9 +13200,12 @@ public final class L10nTranslations {
                 "Mostrar a hora exata da \u00faltima atividade");
         table.put("Showing reels with %1$s again",
                 "Mostrando de novo reels com %1$s");
+    }
+
+    private static void fillPt_rBR14(Map<String, String> table) {
         table.put("Shown. Tap to hide it.",
                 "Vis\u00edvel. Toque para ocultar.");
-        table.put("Shows HushGram's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
+        table.put("Shows TADa's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
                 "Mostra o logotipo do HushGram em vez do logotipo do Instagram na tela que aparece enquanto o Instagram abre, no Android 13 ou mais recente. Ele aparece a partir da pr\u00f3xima abertura.");
         table.put("Shows every emoji in Google's style instead of your phone's own. Restart Instagram to see the change.",
                 "Mostra todos os emojis no estilo do Google em vez do estilo do seu celular. Reinicie o Instagram para ver a mudan\u00e7a.");
@@ -13333,12 +13295,9 @@ public final class L10nTranslations {
                 "Stories");
         table.put("Stories open with their sound on, the same as tapping Instagram's speaker. Your phone's ringer and volume still count, so on silent or with the volume down, stories stay quiet.",
                 "Os stories abrem com o som ligado, igual a tocar no alto-falante do Instagram. O toque e o volume do celular continuam valendo, ent\u00e3o no silencioso ou com o volume zerado, os stories ficam mudos.");
-    }
-
-    private static void fillPt_rBR15(Map<String, String> table) {
         table.put("Story ring size",
                 "Tamanho dos an\u00e9is dos stories");
-        table.put("Support HushGram",
+        table.put("Support TADa",
                 "Apoie o HushGram");
         table.put("Swipe left to open the profile",
                 "Deslizar para a esquerda para abrir o perfil");
@@ -13346,6 +13305,35 @@ public final class L10nTranslations {
                 "Chaves que o modo fantasma muda");
         table.put("System tick",
                 "Toque do sistema");
+        table.put("TADa %1$s on Instagram %2$s",
+                "HushGram %1$s no Instagram %2$s");
+        table.put("TADa PIN",
+                "PIN do HushGram");
+        table.put("TADa is on",
+                "O HushGram est\u00e1 ativo");
+        table.put("TADa is paused",
+                "O HushGram est\u00e1 pausado");
+        table.put("TADa launch screen",
+                "Tela de abertura do HushGram");
+        table.put("TADa paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in TADa settings.",
+                "O HushGram foi pausado automaticamente porque o Instagram fechava com erro ao iniciar. As op\u00e7\u00f5es dele ficam desativadas at\u00e9 voc\u00ea reativ\u00e1-lo nas Configura\u00e7\u00f5es do HushGram.");
+        table.put("TADa pauses when Instagram restarts.",
+                "O HushGram ser\u00e1 pausado quando o Instagram for reiniciado.");
+        table.put("TADa remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
+                "O HushGram lembra onde voc\u00ea parou em at\u00e9 200 v\u00eddeos por 30 dias. Toque para apag\u00e1-los deste dispositivo.");
+        table.put("TADa saves",
+                "Salvamentos do HushGram");
+    }
+
+    private static void fillPt_rBR15(Map<String, String> table) {
+        table.put("TADa settings are locked",
+                "As configura\u00e7\u00f5es do HushGram est\u00e3o bloqueadas");
+        table.put("TADa settings couldn't open",
+                "N\u00e3o foi poss\u00edvel abrir as configura\u00e7\u00f5es do HushGram");
+        table.put("TADa settings exported.",
+                "Configura\u00e7\u00f5es do HushGram exportadas.");
+        table.put("TADa turns back on when Instagram restarts.",
+                "O HushGram ser\u00e1 reativado quando o Instagram for reiniciado.");
         table.put("Tab bar",
                 "Barra de abas");
         table.put("Tab bar corners",
@@ -13354,7 +13342,7 @@ public final class L10nTranslations {
                 "Altura da barra de abas");
         table.put("Tab bar opacity",
                 "Opacidade da barra de abas");
-        table.put("Tab long presses keep Instagram's own action. Choose one to open HushGram instead.",
+        table.put("Tab long presses keep Instagram's own action. Choose one to open TADa instead.",
                 "Manter uma aba pressionada continua usando a a\u00e7\u00e3o do Instagram. Escolha uma para abrir o HushGram no lugar dela.");
         table.put("Tab long presses keep Instagram's own action. Choose one to pick the playback quality instead.",
                 "Manter uma aba pressionada continua usando a a\u00e7\u00e3o do Instagram. Escolha uma para escolher a qualidade de reprodu\u00e7\u00e3o no lugar dela.");
@@ -13456,18 +13444,18 @@ public final class L10nTranslations {
                 "Toque para reativar.");
         table.put("Tapping a call button in a chat asks first, so a stray tap doesn't ring anyone. Call starts it, Cancel doesn't.",
                 "Tocar em um bot\u00e3o de chamada em uma conversa pergunta antes, para que um toque sem querer n\u00e3o ligue para ningu\u00e9m. Ligar inicia a chamada, Cancelar n\u00e3o.");
+        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
+                "Tocar no v\u00eddeo, tocar duas vezes para curtir, Salvar e Baixar n\u00e3o contam como toque, ent\u00e3o os bot\u00f5es continuam fracos.");
     }
 
     private static void fillPt_rBR16(Map<String, String> table) {
-        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
-                "Tocar no v\u00eddeo, tocar duas vezes para curtir, Salvar e Baixar n\u00e3o contam como toque, ent\u00e3o os bot\u00f5es continuam fracos.");
         table.put("Teal",
                 "Azul-petr\u00f3leo");
         table.put("Tells Instagram your phone is at %1$s.",
                 "Diz ao Instagram que seu celular est\u00e1 em %1$s.");
         table.put("Tells Instagram your phone is at the place set below, for the location sticker, nearby places and maps. Photos keep their own places.",
                 "Diz ao Instagram que seu celular est\u00e1 no lugar definido abaixo, para o adesivo de localiza\u00e7\u00e3o, lugares pr\u00f3ximos e mapas. As fotos mant\u00eam seus pr\u00f3prios lugares.");
-        table.put("That file isn't a font HushGram can use. Your font hasn't changed.",
+        table.put("That file isn't a font TADa can use. Your font hasn't changed.",
                 "Esse arquivo n\u00e3o \u00e9 uma fonte que o HushGram consiga usar. Sua fonte n\u00e3o mudou.");
         table.put("That isn't a domain. Type one like example.com, or leave it blank.",
                 "Isso n\u00e3o \u00e9 um dom\u00ednio. Digite um como example.com ou deixe em branco.");
@@ -13483,7 +13471,7 @@ public final class L10nTranslations {
                 "A barra Adicionar coment\u00e1rio abaixo de um reel que voc\u00ea abre a partir dos reposts de um perfil. O bot\u00e3o de coment\u00e1rios continua abrindo os coment\u00e1rios.");
         table.put("The Follow button beside a reel's author. Their profile still has one.",
                 "O bot\u00e3o Seguir ao lado de quem postou o reel. O perfil da pessoa continua com ele.");
-        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets HushGram's settings. A saved settings backup brings the rest back, but not the PIN.",
+        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets TADa's settings. A saved settings backup brings the rest back, but not the PIN.",
                 "O PIN n\u00e3o pode ser recuperado. Para remov\u00ea-lo, limpe o armazenamento do Instagram nas configura\u00e7\u00f5es de apps do Android. Isso desconecta voc\u00ea e redefine as configura\u00e7\u00f5es do HushGram. Um backup das configura\u00e7\u00f5es traz o resto de volta, mas n\u00e3o o PIN.");
         table.put("The PINs don't match.",
                 "Os PINs n\u00e3o s\u00e3o iguais.");
@@ -13501,7 +13489,7 @@ public final class L10nTranslations {
                 "O relat\u00f3rio de diagn\u00f3stico ainda n\u00e3o p\u00f4de ser salvo. Tente de novo em instantes.");
         table.put("The diagnostic report couldn't be saved. Try again.",
                 "N\u00e3o foi poss\u00edvel salvar o relat\u00f3rio de diagn\u00f3stico. Tente de novo.");
-        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn HushGram back on.",
+        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn TADa back on.",
                 "N\u00e3o foi poss\u00edvel remover o arquivo %1$s. Exclua-o de %2$s para reativar o HushGram.");
         table.put("The first video on Home plays with its sound on, the same as tapping its speaker. Your phone's ringer and volume still count, so on silent or with the volume down, it stays quiet.",
                 "O primeiro v\u00eddeo do In\u00edcio toca com o som ligado, igual a tocar no alto-falante dele. O toque e o volume do celular continuam valendo, ent\u00e3o no silencioso ou com o volume zerado, ele fica mudo.");
@@ -13579,11 +13567,11 @@ public final class L10nTranslations {
                 "Ative o modo limpo do Instagram em um reel e os pr\u00f3ximos reels tamb\u00e9m abrem nele. Saia do modo limpo voc\u00ea mesmo e os pr\u00f3ximos reels voltam a mostrar os bot\u00f5es.");
         table.put("Turn on Show a story's exact time to use this choice.",
                 "Ative Mostrar o hor\u00e1rio exato de um story para usar esta op\u00e7\u00e3o.");
+        table.put("Turn on Show it as a chip to use this choice.",
+                "Ative Mostrar como chip para usar esta op\u00e7\u00e3o.");
     }
 
     private static void fillPt_rBR17(Map<String, String> table) {
-        table.put("Turn on Show it as a chip to use this choice.",
-                "Ative Mostrar como chip para usar esta op\u00e7\u00e3o.");
         table.put("Turn on Start Home on Following to use this choice.",
                 "Ative Iniciar a p\u00e1gina inicial em Seguindo para usar esta op\u00e7\u00e3o.");
         table.put("Turn on Story ring size to use this choice.",
@@ -13702,11 +13690,11 @@ public final class L10nTranslations {
                 "Quando o reel n\u00e3o est\u00e1 na primeira tela, o perfil mostra um bot\u00e3o Encontrar o reel em vez de rolar sozinho.");
         table.put("Where videos wait",
                 "Onde os v\u00eddeos esperam");
+        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
+                "Enquanto voc\u00ea visualiza stories anonimamente, os que j\u00e1 foram vistos ficam acinzentados e v\u00e3o para o fim da lista, somente neste celular. O Instagram n\u00e3o recebe a informa\u00e7\u00e3o de que voc\u00ea os visualizou.");
     }
 
     private static void fillPt_rBR18(Map<String, String> table) {
-        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
-                "Enquanto voc\u00ea visualiza stories anonimamente, os que j\u00e1 foram vistos ficam acinzentados e v\u00e3o para o fim da lista, somente neste celular. O Instagram n\u00e3o recebe a informa\u00e7\u00e3o de que voc\u00ea os visualizou.");
         table.put("Who unfollowed you",
                 "Quem deixou de seguir voc\u00ea");
         table.put("Wi-Fi stays as it is. Turn this off to save data on every network.",
@@ -13721,7 +13709,7 @@ public final class L10nTranslations {
                 "X");
         table.put("You cleared the remembered playback positions.",
                 "Voc\u00ea apagou as posi\u00e7\u00f5es de reprodu\u00e7\u00e3o salvas.");
-        table.put("You paused HushGram.",
+        table.put("You paused TADa.",
                 "Voc\u00ea pausou o HushGram.");
         table.put("Your fingerprint, face or screen lock unlocks your messages.",
                 "A digital, o rosto ou o bloqueio de tela do celular desbloqueia suas mensagens.");
@@ -13750,7 +13738,7 @@ public final class L10nTranslations {
     }
 
     private static Map<String, String> buildTr() {
-        Map<String, String> table = new HashMap<>(2202);
+        Map<String, String> table = new HashMap<>(2200);
         fillTr0(table);
         fillTr1(table);
         fillTr2(table);
@@ -13854,7 +13842,7 @@ public final class L10nTranslations {
                 "Bir g\u00f6nderiye veya reel'e \u00e7ift dokunmak art\u0131k onu be\u011fenmez ve kalp g\u00f6stermez. Tek dokunu\u015f ve Be\u011fen d\u00fc\u011fmesi eskisi gibi \u00e7al\u0131\u015f\u0131r.");
         table.put("A double tap on a reel doesn't like it. Turn this off to keep double tap to like on reels.",
                 "Bir reel'e \u00e7ift dokunmak onu be\u011fenmez. Reel'leri \u00e7ift dokunarak be\u011fenmeye devam etmek i\u00e7in bunu kapat.");
-        table.put("A file named %1$s in %2$s paused HushGram.",
+        table.put("A file named %1$s in %2$s paused TADa.",
                 "%2$s i\u00e7indeki %1$s adl\u0131 bir dosya HushGram'u duraklatt\u0131.");
         table.put("A finished story stays on screen until you tap or swipe. Turn this off for Instagram's timing.",
                 "Biten bir hikaye, dokunana veya kayd\u0131rana kadar ekranda kal\u0131r. Instagram'\u0131n zamanlamas\u0131 i\u00e7in bunu kapat.");
@@ -13870,7 +13858,7 @@ public final class L10nTranslations {
                 "Biraz daha");
         table.put("A long press on the Instagram logo at the top of Home opens these settings. Off, the long press goes back to Instagram.",
                 "Ana sayfan\u0131n \u00fcst\u00fcndeki Instagram logosuna bas\u0131l\u0131 tutmak bu ayarlar\u0131 a\u00e7ar. Kapal\u0131yken bas\u0131l\u0131 tutma yeniden Instagram'a ait olur.");
-        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens HushGram. A tap still opens Instagram's menu, and other profiles stay the same.",
+        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens TADa. A tap still opens Instagram's menu, and other profiles stay the same.",
                 "Kendi profilinin sa\u011f \u00fcst\u00fcndeki \u00fc\u00e7 \u00e7izgili men\u00fc d\u00fc\u011fmesine uzun basmak HushGram'\u0131 a\u00e7ar. Dokunmak yine Instagram'\u0131n men\u00fcs\u00fcn\u00fc a\u00e7ar ve di\u011fer profiller ayn\u0131 kal\u0131r.");
         table.put("A reel Instagram's auto scroll moves to waits for your tap too. Off, auto scroll plays reel after reel.",
                 "Instagram'\u0131n otomatik kayd\u0131rmas\u0131n\u0131n ge\u00e7ti\u011fi reel de dokunman\u0131 bekler. Kapal\u0131yken otomatik kayd\u0131rma reelleri art arda oynat\u0131r.");
@@ -14215,7 +14203,7 @@ public final class L10nTranslations {
                 "K\u00f6\u015fe boyutu");
         table.put("Couldn't change every Ghost mode switch. Check them below.",
                 "Hayalet modu anahtarlar\u0131n\u0131n hepsi de\u011fi\u015ftirilemedi. A\u015fa\u011f\u0131dan kontrol et.");
-        table.put("Couldn't change every Ghost mode switch. Open HushGram settings to check them.",
+        table.put("Couldn't change every Ghost mode switch. Open TADa settings to check them.",
                 "Hayalet modu anahtarlar\u0131n\u0131n hepsi de\u011fi\u015ftirilemedi. HushGram ayarlar\u0131ndan kontrol et.");
         table.put("Couldn't clear the download history. Try again.",
                 "\u0130ndirme ge\u00e7mi\u015fi silinemedi. Tekrar dene.");
@@ -14233,7 +14221,7 @@ public final class L10nTranslations {
                 "Medya ba\u011flant\u0131s\u0131 kopyalanamad\u0131");
         table.put("Couldn't copy the username",
                 "Kullan\u0131c\u0131 ad\u0131 kopyalanamad\u0131");
-        table.put("Couldn't export HushGram settings. Try another file.",
+        table.put("Couldn't export TADa settings. Try another file.",
                 "HushGram ayarlar\u0131 d\u0131\u015fa aktar\u0131lamad\u0131. Ba\u015fka bir dosya deneyin.");
         table.put("Couldn't find the reel you came from",
                 "Geldi\u011fin reel bulunamad\u0131");
@@ -14241,7 +14229,7 @@ public final class L10nTranslations {
                 "Bu hesap gizlenemedi");
         table.put("Couldn't hide this notice. Try again.",
                 "Bu bildirim gizlenemedi. Tekrar dene.");
-        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in HushGram settings > Layout.",
+        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in TADa settings > Layout.",
                 "Yaz\u0131 tipi dosyan y\u00fcklenemedi, bu y\u00fczden Instagram'\u0131n yaz\u0131 tipi g\u00f6steriliyor. HushGram ayarlar\u0131 > D\u00fczen b\u00f6l\u00fcm\u00fcnden yeniden se\u00e7.");
         table.put("Couldn't mark as read",
                 "Okundu olarak i\u015faretlenemedi");
@@ -14257,7 +14245,7 @@ public final class L10nTranslations {
                 "Ayarlar kaydedilemedi veya tamamen geri y\u00fcklenemedi. G\u00f6sterilen de\u011ferleri kontrol edip geri almay\u0131 deneyin.");
         table.put("Couldn't save the PIN.",
                 "PIN kaydedilemedi.");
-        table.put("Couldn't save the playback quality. Open HushGram settings to set it.",
+        table.put("Couldn't save the playback quality. Open TADa settings to set it.",
                 "Oynatma kalitesi kaydedilemedi. Ayarlamak i\u00e7in HushGram ayarlar\u0131n\u0131 a\u00e7.");
         table.put("Couldn't save the settings. The previous values were restored.",
                 "Ayarlar kaydedilemedi. \u00d6nceki de\u011ferler geri y\u00fcklendi.");
@@ -14268,7 +14256,7 @@ public final class L10nTranslations {
     private static void fillTr4(Map<String, String> table) {
         table.put("Couldn't start the report export. Try again shortly.",
                 "Rapor d\u0131\u015fa aktar\u0131m\u0131 ba\u015flat\u0131lamad\u0131. Birazdan tekrar dene.");
-        table.put("Couldn't turn HushGram back on. Try again.",
+        table.put("Couldn't turn TADa back on. Try again.",
                 "HushGram yeniden a\u00e7\u0131lamad\u0131. Tekrar dene.");
         table.put("Couldn't update the remembered playback positions.",
                 "Kaydedilen oynatma konumlar\u0131 g\u00fcncellenemedi.");
@@ -14405,11 +14393,11 @@ public final class L10nTranslations {
                 "G\u00f6nderi ayr\u0131nt\u0131lar\u0131 olmadan \u00f6rnek");
         table.put("Explore",
                 "Ke\u015ffet");
-        table.put("Export HushGram settings",
+        table.put("Export TADa settings",
                 "HushGram ayarlar\u0131n\u0131 d\u0131\u015fa aktar");
         table.put("Export diagnostic report",
                 "Tan\u0131lama raporunu d\u0131\u015fa aktar");
-        table.put("Exporting HushGram settings...",
+        table.put("Exporting TADa settings...",
                 "HushGram ayarlar\u0131 d\u0131\u015fa aktar\u0131l\u0131yor...");
         table.put("Facebook",
                 "Facebook");
@@ -14501,7 +14489,7 @@ public final class L10nTranslations {
                 "Cam sekme \u00e7ubu\u011fu");
         table.put("Gold",
                 "Alt\u0131n");
-        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later HushGram builds need Change version code too, or they won't install over this one.",
+        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later TADa builds need Change version code too, or they won't install over this one.",
                 "Google Play bu s\u00fcr\u00fcm\u00fcn \u00fczerine Meta g\u00fcncellemeleri sunmaz. Normal Instagram'a d\u00f6nmek i\u00e7in \u00f6nce bunu kald\u0131r. Bu i\u015flem Instagram'\u0131n bu telefondaki verilerini siler. Sonraki HushGram s\u00fcr\u00fcmlerinin de Change version code'a ihtiyac\u0131 var, yoksa bunun \u00fczerine kurulmazlar.");
         table.put("Google's emoji everywhere",
                 "Her yerde Google emojileri");
@@ -14653,8 +14641,6 @@ public final class L10nTranslations {
                 "Takip Et d\u00fc\u011fmesini gizle");
         table.put("Hide the Home tab",
                 "Ana Sayfa sekmesini gizle");
-        table.put("Hide the HushGram row in Instagram's menu",
-                "Instagram men\u00fcs\u00fcndeki HushGram sat\u0131r\u0131n\u0131 gizle");
         table.put("Hide the Muse button on your profile",
                 "Profilinde Muse d\u00fc\u011fmesini gizle");
         table.put("Hide the Muse card",
@@ -14675,6 +14661,8 @@ public final class L10nTranslations {
                 "Payla\u015f d\u00fc\u011fmesini gizle");
         table.put("Hide the Stories tray",
                 "Hikaye s\u0131ras\u0131n\u0131 gizle");
+        table.put("Hide the TADa row in Instagram's menu",
+                "Instagram men\u00fcs\u00fcndeki HushGram sat\u0131r\u0131n\u0131 gizle");
         table.put("Hide the Threads button",
                 "Threads d\u00fc\u011fmesini gizle");
         table.put("Hide the call buttons in chats",
@@ -14764,37 +14752,9 @@ public final class L10nTranslations {
                 "Hikayenin s\u00fcresinin dolmas\u0131na ne kadar kald\u0131\u011f\u0131, \u00f6rne\u011fin 18 sa 14 dk kald\u0131. Daha eski hikayeler tarih ve saati g\u00f6sterir.");
         table.put("How the time shows",
                 "Zaman\u0131n g\u00f6sterilme \u015fekli");
-        table.put("How you open HushGram, and how this screen is laid out.",
+        table.put("How you open TADa, and how this screen is laid out.",
                 "HushGram'\u0131 nas\u0131l a\u00e7t\u0131\u011f\u0131n ve bu ekran\u0131n d\u00fczeni.");
-        table.put("HushGram %1$s on Instagram %2$s",
-                "Instagram %2$s \u00fczerinde HushGram %1$s");
-        table.put("HushGram PIN",
-                "HushGram PIN'i");
-        table.put("HushGram is on",
-                "HushGram a\u00e7\u0131k");
-        table.put("HushGram is paused",
-                "HushGram duraklat\u0131ld\u0131");
-        table.put("HushGram launch screen",
-                "HushGram a\u00e7\u0131l\u0131\u015f ekran\u0131");
-        table.put("HushGram paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in HushGram settings.",
-                "Instagram a\u00e7\u0131l\u0131rken s\u00fcrekli \u00e7\u00f6kt\u00fc\u011f\u00fc i\u00e7in HushGram kendini duraklatt\u0131. HushGram ayarlar\u0131ndan yeniden a\u00e7ana kadar anahtarlar\u0131 kapal\u0131 kal\u0131r.");
-        table.put("HushGram pauses when Instagram restarts.",
-                "HushGram, Instagram yeniden ba\u015flad\u0131\u011f\u0131nda duraklat\u0131l\u0131r.");
-        table.put("HushGram remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
-                "HushGram, en fazla 200 videoda nerede kald\u0131\u011f\u0131n\u0131 30 g\u00fcn boyunca hat\u0131rlar. Bu cihazdan silmek i\u00e7in dokun.");
-        table.put("HushGram saves",
-                "HushGram kaydetme i\u015flemleri");
-        table.put("HushGram settings",
-                "HushGram ayarlar\u0131");
-        table.put("HushGram settings are locked",
-                "HushGram ayarlar\u0131 kilitli");
-        table.put("HushGram settings couldn't open",
-                "HushGram ayarlar\u0131 a\u00e7\u0131lamad\u0131");
-        table.put("HushGram settings exported.",
-                "HushGram ayarlar\u0131 d\u0131\u015fa aktar\u0131ld\u0131.");
-        table.put("HushGram turns back on when Instagram restarts.",
-                "HushGram, Instagram yeniden ba\u015flad\u0131\u011f\u0131nda tekrar a\u00e7\u0131l\u0131r.");
-        table.put("Import HushGram settings",
+        table.put("Import TADa settings",
                 "HushGram ayarlar\u0131n\u0131 i\u00e7e aktar");
         table.put("Imported %1$d settings. Skipped %2$d that this version doesn't know.",
                 "%1$d ayar i\u00e7e aktar\u0131ld\u0131. Bu s\u00fcr\u00fcm\u00fcn tan\u0131mad\u0131\u011f\u0131 %2$d tanesi atland\u0131.");
@@ -14804,7 +14764,7 @@ public final class L10nTranslations {
                 "Instagram mavisi");
         table.put("Instagram can't read your phone's advertising ID or tell Android's ad services which ads you saw or tapped. The permissions for them are gone from this build.",
                 "Instagram telefonunun reklam kimli\u011fini okuyamaz ve Android'in reklam hizmetlerine hangi reklamlar\u0131 g\u00f6rd\u00fc\u011f\u00fcn\u00fc veya dokundu\u011funu bildiremez. Bunlar i\u00e7in gereken izinler bu s\u00fcr\u00fcmden kald\u0131r\u0131ld\u0131.");
-        table.put("Instagram crashed or froze within a minute of starting three times in a row, so HushGram paused itself.",
+        table.put("Instagram crashed or froze within a minute of starting three times in a row, so TADa paused itself.",
                 "Instagram a\u00e7\u0131ld\u0131ktan sonraki bir dakika i\u00e7inde \u00fcst \u00fcste \u00fc\u00e7 kez \u00e7\u00f6kt\u00fc veya dondu, bu y\u00fczden HushGram kendini duraklatt\u0131.");
         table.put("Instagram doesn't notice when you take a screenshot, so whoever sent you a disappearing photo or video isn't told. Your screenshots save as usual.",
                 "Ekran g\u00f6r\u00fcnt\u00fcs\u00fc ald\u0131\u011f\u0131nda Instagram bunu fark etmez, b\u00f6ylece sana kaybolan bir foto\u011fraf veya video g\u00f6nderen ki\u015fiye haber verilmez. Ekran g\u00f6r\u00fcnt\u00fclerin her zamanki gibi kaydedilir.");
@@ -14832,7 +14792,7 @@ public final class L10nTranslations {
                 "Instagram bu s\u00fcr\u00fcm\u00fcn \u00e7ok eski oldu\u011funu s\u00f6yleyen ekran\u0131 art\u0131k g\u00f6stermez. Yamalanm\u0131\u015f bir s\u00fcr\u00fcm kendi kendine g\u00fcncellenmez, bu y\u00fczden bu onu kullan\u0131labilir tutar.");
         table.put("Instagram wakes your phone every minute or two, screen off included, only to note that it is still running. This stops that. Messages, notifications and everything you see are unaffected.",
                 "Instagram, ekran kapal\u0131yken bile her bir iki dakikada bir telefonunu yaln\u0131zca h\u00e2l\u00e2 \u00e7al\u0131\u015ft\u0131\u011f\u0131n\u0131 not etmek i\u00e7in uyand\u0131r\u0131r. Bu, bunu durdurur. Mesajlar, bildirimler ve g\u00f6rd\u00fc\u011f\u00fcn her \u015fey etkilenmez.");
-        table.put("Instagram's Settings and activity screen leaves out the HushGram row while another way here opens HushGram. With every other way off, the row comes back.",
+        table.put("Instagram's Settings and activity screen leaves out the TADa row while another way here opens TADa. With every other way off, the row comes back.",
                 "Buraya gelen ba\u015fka bir yol HushGram'\u0131 a\u00e7t\u0131\u011f\u0131 s\u00fcrece Instagram'\u0131n Ayarlar ve hareketler ekran\u0131nda HushGram sat\u0131r\u0131 g\u00f6sterilmez. Di\u011fer b\u00fct\u00fcn yollar kapal\u0131yken sat\u0131r geri gelir.");
         table.put("Instagram's colors",
                 "Instagram renkleri");
@@ -14878,9 +14838,6 @@ public final class L10nTranslations {
                 "Reel h\u0131z\u0131n\u0131 koru");
         table.put("Keep the zoom open",
                 "Yak\u0131nla\u015ft\u0131rmay\u0131 a\u00e7\u0131k tut");
-    }
-
-    private static void fillTr9(Map<String, String> table) {
         table.put("Keep your chats private and your inbox clear of extras.",
                 "Sohbetlerini gizli, gelen kutunu da fazlal\u0131klardan uzak tut.");
         table.put("Keeps Instagram's Music for you card from turning up between the stories you watch. The stories themselves stay.",
@@ -14909,6 +14866,9 @@ public final class L10nTranslations {
                 "\u00dccretli ortakl\u0131k etiketi ta\u015f\u0131yan reel'leri ve Instagram'\u0131n \u00f6ne \u00e7\u0131kar\u0131lm\u0131\u015f olarak i\u015faretledi\u011fi reel'leri d\u0131\u015far\u0131da b\u0131rak\u0131r. Reklamlar\u0131n kendi anahtar\u0131 var.");
         table.put("Leaves out the Add Yours cards, like Popular Add Yours and Join a trending Add Yours, that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "Instagram'\u0131n, dokunarak ge\u00e7ti\u011fin hikayelerin aras\u0131na koydu\u011fu pop\u00fcler ve trend S\u0131ra sende kartlar\u0131n\u0131 kald\u0131r\u0131r. Hikayelerin kendisi kal\u0131r.");
+    }
+
+    private static void fillTr9(Map<String, String> table) {
         table.put("Leaves out the Suggested for you cards of accounts to follow that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "Instagram'\u0131n, dokunarak ge\u00e7ti\u011fin hikayelerin aras\u0131na koydu\u011fu takip edilecek hesap kartlar\u0131n\u0131 kald\u0131r\u0131r. Hikayelerin kendisi kal\u0131r.");
         table.put("Leaves the Suggested for you accounts out of what shows when you tap the search bar. Recent searches stay.",
@@ -14961,11 +14921,11 @@ public final class L10nTranslations {
                 "Mesajlar\u0131n\u0131 kilitle");
         table.put("Locked chats",
                 "Kilitli sohbetler");
-        table.put("Long press %1$s to open HushGram instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
+        table.put("Long press %1$s to open TADa instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
                 "Sekmenin normal i\u015flemi yerine HushGram a\u00e7mak i\u00e7in %1$s \u00fczerine uzun bas. Normal dokunu\u015flar ve di\u011fer sekmeler ayn\u0131 kal\u0131r. Yaln\u0131zca hesab\u0131n\u0131n g\u00f6sterdi\u011fi sekmeler kullan\u0131labilir.");
-        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens HushGram, that comes first.",
+        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens TADa, that comes first.",
                 "Sekmenin normal i\u015flemi yerine oynatma kalitesini se\u00e7mek i\u00e7in %1$s \u00fczerine uzun bas. Normal dokunu\u015flar ve di\u011fer sekmeler ayn\u0131 kal\u0131r. Varsay\u0131lan oynatma kalitesi a\u00e7\u0131k olmal\u0131. Ayn\u0131 sekme HushGram'\u0131 a\u00e7\u0131yorsa o \u00f6ncelikli olur.");
-        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens HushGram or picks the playback quality, that comes first.",
+        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens TADa or picks the playback quality, that comes first.",
                 "Sekmenin normal i\u015flemi yerine Hayalet modunu a\u00e7\u0131p kapatmak i\u00e7in %1$s \u00fczerine uzun bas, k\u0131sa bir bildirim hangi y\u00f6ne gitti\u011fini s\u00f6yler. Normal dokunu\u015flar ve di\u011fer sekmeler ayn\u0131 kal\u0131r. Ayn\u0131 sekme HushGram'\u0131 a\u00e7\u0131yor ya da oynatma kalitesini se\u00e7iyorsa o \u00f6ncelikli olur.");
         table.put("Long press a photo to zoom",
                 "Yak\u0131nla\u015ft\u0131rmak i\u00e7in foto\u011frafa uzun bas");
@@ -15001,9 +14961,6 @@ public final class L10nTranslations {
                 "Ana sayfa \u00fcst\u00fcnde Mesajlar d\u00fc\u011fmesi");
         table.put("Messenger",
                 "Messenger");
-    }
-
-    private static void fillTr10(Map<String, String> table) {
         table.put("Meta AI",
                 "Meta AI");
         table.put("More",
@@ -15032,13 +14989,16 @@ public final class L10nTranslations {
                 "Bu telefondaki hi\u00e7bir uygulama ba\u011flant\u0131y\u0131 a\u00e7am\u0131yor. Adres: %1$s.");
         table.put("No app on this phone can play this video",
                 "Bu telefonda bu videoyu oynatabilecek bir uygulama yok");
+    }
+
+    private static void fillTr10(Map<String, String> table) {
         table.put("No direct link for this one",
                 "Bunun i\u00e7in do\u011frudan ba\u011flant\u0131 yok");
         table.put("No matching settings",
                 "E\u015fle\u015fen ayar yok");
         table.put("No one has left since then.",
                 "O zamandan beri kimse gitmedi.");
-        table.put("No other way into HushGram is on, so the row stays in Instagram's menu.",
+        table.put("No other way into TADa is on, so the row stays in Instagram's menu.",
                 "HushGram'\u0131 a\u00e7an ba\u015fka bir yol a\u00e7\u0131k de\u011fil, bu y\u00fczden sat\u0131r Instagram'\u0131n men\u00fcs\u00fcnde kal\u0131r.");
         table.put("No pages chosen",
                 "Hi\u00e7 sayfa se\u00e7ilmedi");
@@ -15124,9 +15084,6 @@ public final class L10nTranslations {
                 "Instagram'da bir sohbet a\u00e7\u0131n, sonra gizlemek i\u00e7in buraya d\u00f6n\u00fcn.");
         table.put("Open a chat in Instagram, then come back here to lock it.",
                 "Instagram'da bir sohbet a\u00e7, sonra kilitlemek i\u00e7in buraya d\u00f6n.");
-    }
-
-    private static void fillTr11(Map<String, String> table) {
         table.put("Open a creator's profile from a reel, then their Reels tab, and it scrolls to that reel and outlines it for a moment. A photo reel is found in their posts. Stop looking ends the search where it is.",
                 "Bir reel'den i\u00e7erik \u00fcreticinin profilini, ard\u0131ndan Reels sekmesini a\u00e7, sekme o reel'e kayar ve onu k\u0131sa bir s\u00fcre \u00e7er\u00e7eveler. Foto\u011frafl\u0131 bir reel g\u00f6nderilerinde bulunur. Aramay\u0131 durdur d\u00fc\u011fmesi aramay\u0131 oldu\u011fu yerde bitirir.");
         table.put("Open app info",
@@ -15155,6 +15112,9 @@ public final class L10nTranslations {
                 "Ana Sayfa'y\u0131 Senin i\u00e7in yerine takip etti\u011fin hesaplar\u0131n g\u00f6nderileriyle a\u00e7ar. Ge\u00e7i\u015f yapmak i\u00e7in Ana Sayfa'n\u0131n \u00fcst\u00fcne dokun. De\u011fi\u015fikli\u011fi g\u00f6rmek i\u00e7in Instagram'\u0131 yeniden ba\u015flat.");
         table.put("Opens a GitHub report with your versions and settings filled in. Add what happened.",
                 "S\u00fcr\u00fcmlerin ve ayarlar\u0131n \u00f6nceden doldurulmu\u015f bir GitHub raporu a\u00e7ar. Ne oldu\u011funu ekle.");
+    }
+
+    private static void fillTr11(Map<String, String> table) {
         table.put("Orange",
                 "Turuncu");
         table.put("PIN",
@@ -15169,7 +15129,7 @@ public final class L10nTranslations {
                 "Sayfa %1$d, video");
         table.put("Pause",
                 "Duraklat");
-        table.put("Pause HushGram",
+        table.put("Pause TADa",
                 "HushGram'u duraklat");
         table.put("Pause and diagnostics",
                 "Duraklatma ve tan\u0131lama");
@@ -15227,14 +15187,14 @@ public final class L10nTranslations {
                 "Seni geri takip etmeyen hesaplar\u0131 ba\u015fa al");
         table.put("Puts Activity, the screen the heart opens, on the tab bar before Profile. Tab order can move it, and Hide notifications on Home's header takes the heart away. Restart Instagram to see the change.",
                 "Kalbin a\u00e7t\u0131\u011f\u0131 Hareketler ekran\u0131n\u0131 sekme \u00e7ubu\u011funda Profil'in \u00f6n\u00fcne koyar. Sekme s\u0131ras\u0131 ile yerini de\u011fi\u015ftirebilirsin, Ana sayfa \u00fcst\u00fcndeki bildirimleri gizle de kalbi kald\u0131r\u0131r. De\u011fi\u015fikli\u011fi g\u00f6rmek i\u00e7in Instagram'\u0131 yeniden ba\u015flat.");
-        table.put("Puts HushGram settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
-                "Instagram simgesine bas\u0131l\u0131 tutunca a\u00e7\u0131lan men\u00fcye HushGram ayarlar\u0131n\u0131 koyar. Kapal\u0131yken bu men\u00fcden \u00e7\u0131kar.");
         table.put("Puts Instagram's logo in the middle of the top of Home, even with header buttons hidden or added. A feed's name shown there is centered too. Restart Instagram to see the change.",
                 "\u00dcstteki d\u00fc\u011fmeler gizlenmi\u015f ya da eklenmi\u015f olsa bile Instagram logosunu Ana sayfan\u0131n \u00fcst\u00fcnde ortaya koyar. Orada g\u00f6sterilen ak\u0131\u015f ad\u0131 da ortalan\u0131r. De\u011fi\u015fikli\u011fi g\u00f6rmek i\u00e7in Instagram'\u0131 yeniden ba\u015flat.");
         table.put("Puts Messages on the tab bar, before Profile, if Instagram left it off yours. Tab order can move it. Restart Instagram to see the change.",
                 "Instagram seninkinde Mesajlar'\u0131 \u00e7ubu\u011fa koymad\u0131ysa Profil'in \u00f6n\u00fcne koyar. Sekme s\u0131ras\u0131 ile yerini de\u011fi\u015ftirebilirsin. De\u011fi\u015fikli\u011fi g\u00f6rmek i\u00e7in Instagram'\u0131 yeniden ba\u015flat.");
         table.put("Puts Reels back on the tab bar if Instagram left it off yours. Hide the Reels tab wins if both are on. Restart Instagram to see the change.",
                 "Instagram seninkinde Reels'i \u00e7ubu\u011fa koymad\u0131ysa geri koyar. \u0130kisi de a\u00e7\u0131ksa Reels sekmesini gizle ge\u00e7erli olur. De\u011fi\u015fikli\u011fi g\u00f6rmek i\u00e7in Instagram'\u0131 yeniden ba\u015flat.");
+        table.put("Puts TADa settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
+                "Instagram simgesine bas\u0131l\u0131 tutunca a\u00e7\u0131lan men\u00fcye HushGram ayarlar\u0131n\u0131 koyar. Kapal\u0131yken bu men\u00fcden \u00e7\u0131kar.");
         table.put("Puts a Block icon beside someone else's reel. A tap opens Instagram's own block screen for that account, so you still confirm it there.",
                 "Ba\u015fka birinin reel'inin yan\u0131na bir Engelle simgesi koyar. Dokunu\u015f o hesap i\u00e7in Instagram'\u0131n kendi engelleme ekran\u0131n\u0131 a\u00e7ar, yani yine orada onaylars\u0131n.");
         table.put("Puts a Not interested icon beside a reel, so one tap does what Not interested in its menu does.",
@@ -15247,9 +15207,6 @@ public final class L10nTranslations {
                 "Bir reel'in yan\u0131na m\u00fczik simgesi koyar. Dokundu\u011funda Reels sekmesi o sesi kullanan di\u011fer reel'leri atlar. Geri getirmek i\u00e7in yeniden dokun.");
         table.put("Puts every notification from Instagram in one group that shows how many it holds, so they don't fill your notification shade. Tapping one still opens it.",
                 "Instagram'\u0131n her bildirimini ka\u00e7 tane i\u00e7erdi\u011fini g\u00f6steren tek bir gruba koyar, b\u00f6ylece bildirim panelini doldurmazlar. Birine dokunmak yine onu a\u00e7ar.");
-    }
-
-    private static void fillTr12(Map<String, String> table) {
         table.put("Puts every switch back the way it started. Your locks stay as they are.",
                 "T\u00fcm anahtarlar\u0131 ba\u015flang\u0131\u00e7taki h\u00e2line d\u00f6nd\u00fcr\u00fcr. Kilitlerin oldu\u011fu gibi kal\u0131r.");
         table.put("Puts the answer in a chip under the profile's posts, followers and following counts instead, and says Following each other when you follow them too.",
@@ -15278,6 +15235,9 @@ public final class L10nTranslations {
                 "Son takipten \u00e7\u0131kanlar");
         table.put("Record patch activity and show errors for a bug report. Leave off during normal use.",
                 "Hata raporu i\u00e7in yama etkinli\u011fini kaydeder ve hatalar\u0131 g\u00f6sterir. Normal kullan\u0131mda kapal\u0131 b\u0131rak\u0131n.");
+    }
+
+    private static void fillTr12(Map<String, String> table) {
         table.put("Red",
                 "K\u0131rm\u0131z\u0131");
         table.put("Reels",
@@ -15370,9 +15330,6 @@ public final class L10nTranslations {
                 "T\u00fcm\u00fcn\u00fc kaydet");
         table.put("Save canceled",
                 "Kaydetme iptal edildi");
-    }
-
-    private static void fillTr13(Map<String, String> table) {
         table.put("Save comment photo",
                 "Yorum foto\u011fraf\u0131n\u0131 kaydet");
         table.put("Save every page without asking",
@@ -15389,7 +15346,7 @@ public final class L10nTranslations {
                 "Tam raporu %1$s konumuna kaydeder.");
         table.put("Save videos other apps can open",
                 "Videolar\u0131 di\u011fer uygulamalar\u0131n a\u00e7abilece\u011fi bi\u00e7imde kaydet");
-        table.put("Save your HushGram choices to a file, or bring them back.",
+        table.put("Save your TADa choices to a file, or bring them back.",
                 "HushGram se\u00e7imlerini bir dosyaya kaydet ya da geri getir.");
         table.put("Saved",
                 "Kaydedilenler");
@@ -15401,6 +15358,9 @@ public final class L10nTranslations {
                 "\u015euraya kaydedildi: %1$s");
         table.put("Saved to %1$s in lower quality than on Instagram",
                 "\u015euraya Instagram'dakinden d\u00fc\u015f\u00fck kalitede kaydedildi: %1$s");
+    }
+
+    private static void fillTr13(Map<String, String> table) {
         table.put("Saved to the gallery",
                 "Galeriye kaydedildi");
         table.put("Saved to the gallery in lower quality than on Instagram",
@@ -15421,7 +15381,7 @@ public final class L10nTranslations {
                 "Tan\u0131lama raporu kaydediliyor...");
         table.put("Saving...",
                 "Kaydediliyor...");
-        table.put("Saving... You can cancel from Downloads in HushGram settings.",
+        table.put("Saving... You can cancel from Downloads in TADa settings.",
                 "Kaydediliyor... HushGram ayarlar\u0131ndaki \u0130ndirmeler b\u00f6l\u00fcm\u00fcnden iptal edebilirsin.");
         table.put("Screenshots and screen recordings work wherever Instagram blocks them, like disappearing photos and videos. Turn on Don't report screenshots too if the sender shouldn't hear about it.",
                 "Ekran g\u00f6r\u00fcnt\u00fcleri ve ekran kay\u0131tlar\u0131, kaybolan foto\u011fraf ve videolar gibi Instagram'\u0131n engelledi\u011fi her yerde \u00e7al\u0131\u015f\u0131r. G\u00f6nderen bunu duymamal\u0131ysa Ekran g\u00f6r\u00fcnt\u00fclerini bildirme'yi de a\u00e7.");
@@ -15449,9 +15409,9 @@ public final class L10nTranslations {
                 "G\u00f6nderilecek uygulama");
         table.put("Set a PIN",
                 "PIN belirle");
-        table.put("Set a screen lock on your phone so HushGram can lock Instagram.",
+        table.put("Set a screen lock on your phone so TADa can lock Instagram.",
                 "HushGram'\u0131n Instagram'\u0131 kilitleyebilmesi i\u00e7in telefonunda bir ekran kilidi ayarla.");
-        table.put("Set a screen lock on your phone so HushGram can lock your messages.",
+        table.put("Set a screen lock on your phone so TADa can lock your messages.",
                 "HushGram'\u0131n mesajlar\u0131n\u0131 kilitleyebilmesi i\u00e7in telefonunda bir ekran kilidi ayarla.");
         table.put("Set or change the 4 to 8 digit PIN. It stays on this phone and isn't in a backup.",
                 "4 ile 8 haneli PIN'i belirle veya de\u011fi\u015ftir. Bu telefonda kal\u0131r, yede\u011fe girmez.");
@@ -15493,9 +15453,6 @@ public final class L10nTranslations {
                 "T\u00fcm son aramalar\u0131 g\u00f6ster");
         table.put("Show all settings as a list",
                 "T\u00fcm ayarlar\u0131 liste olarak g\u00f6ster");
-    }
-
-    private static void fillTr14(Map<String, String> table) {
         table.put("Show and reorder tabs",
                 "Sekmeleri g\u00f6ster ve s\u0131rala");
         table.put("Show content behind the tab bar",
@@ -15524,9 +15481,12 @@ public final class L10nTranslations {
                 "Son aktif olma saatini tam g\u00f6ster");
         table.put("Showing reels with %1$s again",
                 "%1$s kullanan reel'ler yeniden g\u00f6steriliyor");
+    }
+
+    private static void fillTr14(Map<String, String> table) {
         table.put("Shown. Tap to hide it.",
                 "G\u00f6steriliyor. Gizlemek i\u00e7in dokun.");
-        table.put("Shows HushGram's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
+        table.put("Shows TADa's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
                 "Instagram a\u00e7\u0131l\u0131rken g\u00f6rd\u00fc\u011f\u00fcn ekranda Instagram'\u0131n logosu yerine HushGram'\u0131n logosunu g\u00f6sterir. Android 13 ve sonras\u0131nda \u00e7al\u0131\u015f\u0131r. Bir sonraki a\u00e7\u0131l\u0131\u015ftan itibaren g\u00f6r\u00fcn\u00fcr.");
         table.put("Shows every emoji in Google's style instead of your phone's own. Restart Instagram to see the change.",
                 "T\u00fcm emojileri telefonunun kendi stili yerine Google stilinde g\u00f6sterir. De\u011fi\u015fikli\u011fi g\u00f6rmek i\u00e7in Instagram'\u0131 yeniden ba\u015flat.");
@@ -15616,12 +15576,9 @@ public final class L10nTranslations {
                 "Hikayeler");
         table.put("Stories open with their sound on, the same as tapping Instagram's speaker. Your phone's ringer and volume still count, so on silent or with the volume down, stories stay quiet.",
                 "Hikayeler, Instagram'\u0131n hoparl\u00f6r\u00fcne dokunmu\u015f gibi sesi a\u00e7\u0131k olarak a\u00e7\u0131l\u0131r. Telefonunuzun zil modu ve ses d\u00fczeyi yine ge\u00e7erlidir, bu y\u00fczden sessizde veya ses kapal\u0131yken hikayeler sessiz kal\u0131r.");
-    }
-
-    private static void fillTr15(Map<String, String> table) {
         table.put("Story ring size",
                 "Hik\u00e2ye halkas\u0131 boyutu");
-        table.put("Support HushGram",
+        table.put("Support TADa",
                 "HushGram'\u0131 destekle");
         table.put("Swipe left to open the profile",
                 "Profili a\u00e7mak i\u00e7in sola kayd\u0131r");
@@ -15629,6 +15586,35 @@ public final class L10nTranslations {
                 "Hayalet modunun de\u011fi\u015ftirdi\u011fi anahtarlar");
         table.put("System tick",
                 "Sistem t\u0131k\u0131");
+        table.put("TADa %1$s on Instagram %2$s",
+                "Instagram %2$s \u00fczerinde HushGram %1$s");
+        table.put("TADa PIN",
+                "HushGram PIN'i");
+        table.put("TADa is on",
+                "HushGram a\u00e7\u0131k");
+        table.put("TADa is paused",
+                "HushGram duraklat\u0131ld\u0131");
+        table.put("TADa launch screen",
+                "HushGram a\u00e7\u0131l\u0131\u015f ekran\u0131");
+        table.put("TADa paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in TADa settings.",
+                "Instagram a\u00e7\u0131l\u0131rken s\u00fcrekli \u00e7\u00f6kt\u00fc\u011f\u00fc i\u00e7in HushGram kendini duraklatt\u0131. HushGram ayarlar\u0131ndan yeniden a\u00e7ana kadar anahtarlar\u0131 kapal\u0131 kal\u0131r.");
+        table.put("TADa pauses when Instagram restarts.",
+                "HushGram, Instagram yeniden ba\u015flad\u0131\u011f\u0131nda duraklat\u0131l\u0131r.");
+        table.put("TADa remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
+                "HushGram, en fazla 200 videoda nerede kald\u0131\u011f\u0131n\u0131 30 g\u00fcn boyunca hat\u0131rlar. Bu cihazdan silmek i\u00e7in dokun.");
+        table.put("TADa saves",
+                "HushGram kaydetme i\u015flemleri");
+    }
+
+    private static void fillTr15(Map<String, String> table) {
+        table.put("TADa settings are locked",
+                "HushGram ayarlar\u0131 kilitli");
+        table.put("TADa settings couldn't open",
+                "HushGram ayarlar\u0131 a\u00e7\u0131lamad\u0131");
+        table.put("TADa settings exported.",
+                "HushGram ayarlar\u0131 d\u0131\u015fa aktar\u0131ld\u0131.");
+        table.put("TADa turns back on when Instagram restarts.",
+                "HushGram, Instagram yeniden ba\u015flad\u0131\u011f\u0131nda tekrar a\u00e7\u0131l\u0131r.");
         table.put("Tab bar",
                 "Sekme \u00e7ubu\u011fu");
         table.put("Tab bar corners",
@@ -15637,7 +15623,7 @@ public final class L10nTranslations {
                 "Sekme \u00e7ubu\u011fu y\u00fcksekli\u011fi");
         table.put("Tab bar opacity",
                 "Sekme \u00e7ubu\u011fu opakl\u0131\u011f\u0131");
-        table.put("Tab long presses keep Instagram's own action. Choose one to open HushGram instead.",
+        table.put("Tab long presses keep Instagram's own action. Choose one to open TADa instead.",
                 "Sekmelere uzun basmak Instagram i\u015flemini korur. Bunun yerine HushGram a\u00e7mak i\u00e7in bir sekme se\u00e7.");
         table.put("Tab long presses keep Instagram's own action. Choose one to pick the playback quality instead.",
                 "Sekmelere uzun basmak Instagram i\u015flemini korur. Bunun yerine oynatma kalitesini se\u00e7mek i\u00e7in bir sekme se\u00e7.");
@@ -15739,18 +15725,18 @@ public final class L10nTranslations {
                 "Yeniden a\u00e7mak i\u00e7in dokun.");
         table.put("Tapping a call button in a chat asks first, so a stray tap doesn't ring anyone. Call starts it, Cancel doesn't.",
                 "Bir sohbette arama d\u00fc\u011fmesine dokunmak \u00f6nce sorar, b\u00f6ylece yanl\u0131\u015fl\u0131kla bir dokunu\u015f kimseyi aramaz. Ara ba\u015flat\u0131r, \u0130ptal ba\u015flatmaz.");
+        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
+                "Videoya dokunmak, be\u011fenmek i\u00e7in iki kez dokunmak, Kaydet ve \u0130ndir dokunu\u015f say\u0131lmaz, bu y\u00fczden d\u00fc\u011fmeler soluk kal\u0131r.");
     }
 
     private static void fillTr16(Map<String, String> table) {
-        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
-                "Videoya dokunmak, be\u011fenmek i\u00e7in iki kez dokunmak, Kaydet ve \u0130ndir dokunu\u015f say\u0131lmaz, bu y\u00fczden d\u00fc\u011fmeler soluk kal\u0131r.");
         table.put("Teal",
                 "Camg\u00f6be\u011fi");
         table.put("Tells Instagram your phone is at %1$s.",
                 "Instagram'a telefonunun %1$s konumunda oldu\u011funu s\u00f6yler.");
         table.put("Tells Instagram your phone is at the place set below, for the location sticker, nearby places and maps. Photos keep their own places.",
                 "Instagram'a telefonunun a\u015fa\u011f\u0131da belirlenen yerde oldu\u011funu s\u00f6yler. Konum \u00e7\u0131kartmas\u0131, yak\u0131ndaki yerler ve haritalar i\u00e7in ge\u00e7erlidir. Foto\u011fraflar kendi konumlar\u0131n\u0131 korur.");
-        table.put("That file isn't a font HushGram can use. Your font hasn't changed.",
+        table.put("That file isn't a font TADa can use. Your font hasn't changed.",
                 "Bu dosya HushGram'\u0131n kullanabilece\u011fi bir yaz\u0131 tipi de\u011fil. Yaz\u0131 tipin de\u011fi\u015fmedi.");
         table.put("That isn't a domain. Type one like example.com, or leave it blank.",
                 "Bu bir alan ad\u0131 de\u011fil. example.com gibi bir tane yaz veya bo\u015f b\u0131rak.");
@@ -15766,7 +15752,7 @@ public final class L10nTranslations {
                 "Bir profilin yeniden payla\u015f\u0131mlar\u0131ndan a\u00e7t\u0131\u011f\u0131n reels'in alt\u0131ndaki Yorum ekle \u00e7ubu\u011fu. Yorum d\u00fc\u011fmesi yorumlar\u0131 a\u00e7maya devam eder.");
         table.put("The Follow button beside a reel's author. Their profile still has one.",
                 "Bir reelin sahibinin yan\u0131ndaki Takip Et d\u00fc\u011fmesi. Profilinde h\u00e2l\u00e2 var.");
-        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets HushGram's settings. A saved settings backup brings the rest back, but not the PIN.",
+        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets TADa's settings. A saved settings backup brings the rest back, but not the PIN.",
                 "PIN geri al\u0131namaz. Kald\u0131rmak i\u00e7in Android uygulama ayarlar\u0131nda Instagram'\u0131n depolamas\u0131n\u0131 temizle. Bu, oturumunu kapat\u0131r ve HushGram ayarlar\u0131n\u0131 s\u0131f\u0131rlar. Kay\u0131tl\u0131 bir ayar yede\u011fi geri kalan\u0131 getirir, ama PIN'i getirmez.");
         table.put("The PINs don't match.",
                 "PIN'ler e\u015fle\u015fmiyor.");
@@ -15784,7 +15770,7 @@ public final class L10nTranslations {
                 "Tan\u0131lama raporu hen\u00fcz kaydedilemedi. Birazdan tekrar dene.");
         table.put("The diagnostic report couldn't be saved. Try again.",
                 "Tan\u0131lama raporu kaydedilemedi. Tekrar dene.");
-        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn HushGram back on.",
+        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn TADa back on.",
                 "%1$s dosyas\u0131 kald\u0131r\u0131lamad\u0131. HushGram'u yeniden a\u00e7mak i\u00e7in onu %2$s i\u00e7inden sil.");
         table.put("The first video on Home plays with its sound on, the same as tapping its speaker. Your phone's ringer and volume still count, so on silent or with the volume down, it stays quiet.",
                 "Ana Sayfa'daki ilk video, hoparl\u00f6r\u00fcne dokunmu\u015f gibi sesi a\u00e7\u0131k olarak oynar. Telefonunuzun zil modu ve ses d\u00fczeyi yine ge\u00e7erlidir, bu y\u00fczden sessizde veya ses kapal\u0131yken video sessiz kal\u0131r.");
@@ -15862,11 +15848,11 @@ public final class L10nTranslations {
                 "Bir reel'de Instagram'\u0131n temiz modunu a\u00e7, sonraki reels'ler de bu modda a\u00e7\u0131l\u0131r. Temiz moddan kendin \u00e7\u0131karsan sonraki reels'ler d\u00fc\u011fmelerini yeniden g\u00f6sterir.");
         table.put("Turn on Show a story's exact time to use this choice.",
                 "Bu se\u00e7imi kullanmak i\u00e7in Hikayenin tam zaman\u0131n\u0131 g\u00f6ster se\u00e7ene\u011fini a\u00e7\u0131n.");
+        table.put("Turn on Show it as a chip to use this choice.",
+                "Bu se\u00e7imi kullanmak i\u00e7in \u00c7ip olarak g\u00f6ster se\u00e7ene\u011fini a\u00e7\u0131n.");
     }
 
     private static void fillTr17(Map<String, String> table) {
-        table.put("Turn on Show it as a chip to use this choice.",
-                "Bu se\u00e7imi kullanmak i\u00e7in \u00c7ip olarak g\u00f6ster se\u00e7ene\u011fini a\u00e7\u0131n.");
         table.put("Turn on Start Home on Following to use this choice.",
                 "Bu se\u00e7imi kullanmak i\u00e7in Ana sayfay\u0131 Takip edilenler ile ba\u015flat se\u00e7ene\u011fini a\u00e7\u0131n.");
         table.put("Turn on Story ring size to use this choice.",
@@ -15985,11 +15971,11 @@ public final class L10nTranslations {
                 "Reel ilk ekranda de\u011filse profil kendi kayd\u0131rmak yerine bir Reel'i bul d\u00fc\u011fmesi g\u00f6sterir.");
         table.put("Where videos wait",
                 "Videolar\u0131n bekledi\u011fi yer");
+        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
+                "Anonim izlerken izledi\u011fin bir hikaye griye d\u00f6ner ve s\u0131ran\u0131n sonuna ge\u00e7er, yaln\u0131zca bu telefonda. Instagram yine de onu izledi\u011fini \u00f6\u011frenmez.");
     }
 
     private static void fillTr18(Map<String, String> table) {
-        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
-                "Anonim izlerken izledi\u011fin bir hikaye griye d\u00f6ner ve s\u0131ran\u0131n sonuna ge\u00e7er, yaln\u0131zca bu telefonda. Instagram yine de onu izledi\u011fini \u00f6\u011frenmez.");
         table.put("Who unfollowed you",
                 "Seni takipten \u00e7\u0131kanlar");
         table.put("Wi-Fi stays as it is. Turn this off to save data on every network.",
@@ -16004,7 +15990,7 @@ public final class L10nTranslations {
                 "X");
         table.put("You cleared the remembered playback positions.",
                 "Kaydedilen oynatma konumlar\u0131n\u0131 sildiniz.");
-        table.put("You paused HushGram.",
+        table.put("You paused TADa.",
                 "HushGram'u duraklatt\u0131n.");
         table.put("Your fingerprint, face or screen lock unlocks your messages.",
                 "Telefonunun parmak izi, y\u00fcz veya ekran kilidi mesajlar\u0131n\u0131n kilidini a\u00e7ar.");
@@ -16033,7 +16019,7 @@ public final class L10nTranslations {
     }
 
     private static Map<String, String> buildVi() {
-        Map<String, String> table = new HashMap<>(2202);
+        Map<String, String> table = new HashMap<>(2200);
         fillVi0(table);
         fillVi1(table);
         fillVi2(table);
@@ -16137,7 +16123,7 @@ public final class L10nTranslations {
                 "Ch\u1ea1m hai l\u1ea7n v\u00e0o b\u00e0i vi\u1ebft ho\u1eb7c reel s\u1ebd kh\u00f4ng c\u00f2n th\u1ea3 tim n\u1eefa. Ch\u1ea1m m\u1ed9t l\u1ea7n v\u00e0 n\u00fat Th\u00edch v\u1eabn ho\u1ea1t \u0111\u1ed9ng b\u00ecnh th\u01b0\u1eddng.");
         table.put("A double tap on a reel doesn't like it. Turn this off to keep double tap to like on reels.",
                 "Ch\u1ea1m hai l\u1ea7n v\u00e0o reel s\u1ebd kh\u00f4ng th\u00edch reel \u0111\u00f3. T\u1eaft t\u00f9y ch\u1ecdn n\u00e0y \u0111\u1ec3 gi\u1eef ch\u1ea1m hai l\u1ea7n \u0111\u1ec3 th\u00edch.");
-        table.put("A file named %1$s in %2$s paused HushGram.",
+        table.put("A file named %1$s in %2$s paused TADa.",
                 "T\u1ec7p c\u00f3 t\u00ean %1$s trong %2$s \u0111\u00e3 t\u1ea1m d\u1eebng TADa.");
         table.put("A finished story stays on screen until you tap or swipe. Turn this off for Instagram's timing.",
                 "Tin \u0111\u00e3 xem xong v\u1eabn gi\u1eef tr\u00ean m\u00e0n h\u00ecnh cho \u0111\u1ebfn khi b\u1ea1n ch\u1ea1m ho\u1eb7c vu\u1ed1t. T\u1eaft t\u00f9y ch\u1ecdn n\u00e0y \u0111\u1ec3 d\u00f9ng th\u1eddi gian t\u1ef1 \u0111\u1ed9ng m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram.");
@@ -16153,7 +16139,7 @@ public final class L10nTranslations {
                 "Th\u00eam m\u1ed9t ch\u00fat");
         table.put("A long press on the Instagram logo at the top of Home opens these settings. Off, the long press goes back to Instagram.",
                 "Nh\u1ea5n gi\u1eef logo Instagram \u1edf \u0111\u1ea7u Trang ch\u1ee7 \u0111\u1ec3 m\u1edf c\u00e0i \u0111\u1eb7t TADa n\u00e0y.");
-        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens HushGram. A tap still opens Instagram's menu, and other profiles stay the same.",
+        table.put("A long press on the menu button, the three lines at the top right of your own profile, opens TADa. A tap still opens Instagram's menu, and other profiles stay the same.",
                 "Nh\u1ea5n gi\u1eef n\u00fat menu (ba d\u1ea5u g\u1ea1ch ngang \u1edf g\u00f3c tr\u00ean b\u00ean ph\u1ea3i trang c\u00e1 nh\u00e2n c\u1ee7a b\u1ea1n) \u0111\u1ec3 m\u1edf TADa. Ch\u1ea1m th\u00f4ng th\u01b0\u1eddng v\u1eabn m\u1edf menu Instagram.");
         table.put("A reel Instagram's auto scroll moves to waits for your tap too. Off, auto scroll plays reel after reel.",
                 "Reel \u0111\u01b0\u1ee3c t\u1ef1 \u0111\u1ed9ng cu\u1ed9n t\u1edbi c\u0169ng s\u1ebd ch\u1edd b\u1ea1n ch\u1ea1m m\u1edbi ph\u00e1t ti\u1ebfp. Khi t\u1eaft, video s\u1ebd ph\u00e1t li\u00ean t\u1ee5c t\u1ef1 \u0111\u1ed9ng.");
@@ -16498,7 +16484,7 @@ public final class L10nTranslations {
                 "K\u00edch th\u01b0\u1edbc bo g\u00f3c");
         table.put("Couldn't change every Ghost mode switch. Check them below.",
                 "Kh\u00f4ng th\u1ec3 thay \u0111\u1ed5i t\u1ea5t c\u1ea3 c\u00e1c c\u00f4ng t\u1eafc c\u1ee7a Ch\u1ebf \u0111\u1ed9 \u1ea9n danh. Vui l\u00f2ng ki\u1ec3m tra l\u1ea1i b\u00ean d\u01b0\u1edbi.");
-        table.put("Couldn't change every Ghost mode switch. Open HushGram settings to check them.",
+        table.put("Couldn't change every Ghost mode switch. Open TADa settings to check them.",
                 "Kh\u00f4ng th\u1ec3 thay \u0111\u1ed5i t\u1ea5t c\u1ea3 c\u00e1c c\u00f4ng t\u1eafc c\u1ee7a Ch\u1ebf \u0111\u1ed9 \u1ea9n danh. H\u00e3y m\u1edf C\u00e0i \u0111\u1eb7t TADa \u0111\u1ec3 ki\u1ec3m tra.");
         table.put("Couldn't clear the download history. Try again.",
                 "Kh\u00f4ng th\u1ec3 x\u00f3a l\u1ecbch s\u1eed t\u1ea3i xu\u1ed1ng. Vui l\u00f2ng th\u1eed l\u1ea1i.");
@@ -16516,7 +16502,7 @@ public final class L10nTranslations {
                 "Kh\u00f4ng th\u1ec3 sao ch\u00e9p li\u00ean k\u1ebft \u0111a ph\u01b0\u01a1ng ti\u1ec7n");
         table.put("Couldn't copy the username",
                 "Kh\u00f4ng th\u1ec3 sao ch\u00e9p t\u00ean ng\u01b0\u1eddi d\u00f9ng");
-        table.put("Couldn't export HushGram settings. Try another file.",
+        table.put("Couldn't export TADa settings. Try another file.",
                 "Kh\u00f4ng th\u1ec3 xu\u1ea5t c\u00e0i \u0111\u1eb7t TADa. Vui l\u00f2ng th\u1eed ch\u1ecdn t\u1ec7p kh\u00e1c.");
         table.put("Couldn't find the reel you came from",
                 "Kh\u00f4ng t\u00ecm th\u1ea5y reel b\u1ea1n v\u1eeba xem");
@@ -16524,7 +16510,7 @@ public final class L10nTranslations {
                 "Kh\u00f4ng th\u1ec3 \u1ea9n t\u00e0i kho\u1ea3n n\u00e0y");
         table.put("Couldn't hide this notice. Try again.",
                 "Kh\u00f4ng th\u1ec3 \u1ea9n th\u00f4ng b\u00e1o n\u00e0y. Vui l\u00f2ng th\u1eed l\u1ea1i.");
-        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in HushGram settings > Layout.",
+        table.put("Couldn't load your font file, so Instagram's font shows. Pick it again in TADa settings > Layout.",
                 "Kh\u00f4ng th\u1ec3 t\u1ea3i t\u1ec7p ph\u00f4ng ch\u1eef c\u1ee7a b\u1ea1n, \u0111ang d\u00f9ng ph\u00f4ng ch\u1eef m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram. Vui l\u00f2ng ch\u1ecdn l\u1ea1i trong C\u00e0i \u0111\u1eb7t TADa > Giao di\u1ec7n v\u00e0 b\u1ed1 c\u1ee5c.");
         table.put("Couldn't mark as read",
                 "Kh\u00f4ng th\u1ec3 \u0111\u00e1nh d\u1ea5u l\u00e0 \u0111\u00e3 \u0111\u1ecdc");
@@ -16540,7 +16526,7 @@ public final class L10nTranslations {
                 "Kh\u00f4ng th\u1ec3 l\u01b0u ho\u1eb7c kh\u00f4i ph\u1ee5c ho\u00e0n to\u00e0n c\u00e0i \u0111\u1eb7t. H\u00e3y ki\u1ec3m tra l\u1ea1i gi\u00e1 tr\u1ecb hi\u1ec3n th\u1ecb.");
         table.put("Couldn't save the PIN.",
                 "Kh\u00f4ng th\u1ec3 l\u01b0u m\u00e3 PIN.");
-        table.put("Couldn't save the playback quality. Open HushGram settings to set it.",
+        table.put("Couldn't save the playback quality. Open TADa settings to set it.",
                 "Kh\u00f4ng th\u1ec3 l\u01b0u ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t. H\u00e3y m\u1edf C\u00e0i \u0111\u1eb7t TADa \u0111\u1ec3 thi\u1ebft l\u1eadp.");
         table.put("Couldn't save the settings. The previous values were restored.",
                 "Kh\u00f4ng th\u1ec3 l\u01b0u c\u00e0i \u0111\u1eb7t. C\u00e1c gi\u00e1 tr\u1ecb tr\u01b0\u1edbc \u0111\u00f3 \u0111\u00e3 \u0111\u01b0\u1ee3c kh\u00f4i ph\u1ee5c.");
@@ -16551,7 +16537,7 @@ public final class L10nTranslations {
     private static void fillVi4(Map<String, String> table) {
         table.put("Couldn't start the report export. Try again shortly.",
                 "Kh\u00f4ng th\u1ec3 b\u1eaft \u0111\u1ea7u xu\u1ea5t b\u00e1o c\u00e1o. Vui l\u00f2ng th\u1eed l\u1ea1i sau gi\u00e2y l\u00e1t.");
-        table.put("Couldn't turn HushGram back on. Try again.",
+        table.put("Couldn't turn TADa back on. Try again.",
                 "Kh\u00f4ng th\u1ec3 b\u1eadt l\u1ea1i TADa. Vui l\u00f2ng th\u1eed l\u1ea1i.");
         table.put("Couldn't update the remembered playback positions.",
                 "Kh\u00f4ng th\u1ec3 c\u1eadp nh\u1eadt c\u00e1c v\u1ecb tr\u00ed ph\u00e1t \u0111\u00e3 ghi nh\u1edb.");
@@ -16688,11 +16674,11 @@ public final class L10nTranslations {
                 "V\u00ed d\u1ee5 khi kh\u00f4ng c\u00f3 chi ti\u1ebft b\u00e0i vi\u1ebft");
         table.put("Explore",
                 "Kh\u00e1m ph\u00e1");
-        table.put("Export HushGram settings",
+        table.put("Export TADa settings",
                 "Xu\u1ea5t c\u00e0i \u0111\u1eb7t TADa");
         table.put("Export diagnostic report",
                 "Xu\u1ea5t b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n");
-        table.put("Exporting HushGram settings...",
+        table.put("Exporting TADa settings...",
                 "\u0110ang xu\u1ea5t c\u00e0i \u0111\u1eb7t TADa...");
         table.put("Facebook",
                 "Facebook");
@@ -16784,7 +16770,7 @@ public final class L10nTranslations {
                 "Thanh tab d\u1ea1ng k\u00ednh trong su\u1ed1t (Glassmorphism)");
         table.put("Gold",
                 "V\u00e0ng kim");
-        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later HushGram builds need Change version code too, or they won't install over this one.",
+        table.put("Google Play won't offer Meta's updates over this build. To go back to the normal Instagram, uninstall this one first, which deletes Instagram's data on this phone. Later TADa builds need Change version code too, or they won't install over this one.",
                 "Google Play s\u1ebd kh\u00f4ng g\u1ee3i \u00fd c\u1eadp nh\u1eadt b\u1ea3n ch\u00ednh th\u1ee9c t\u1eeb Meta \u0111\u00e8 l\u00ean b\u1ea3n n\u00e0y. \u0110\u1ec3 quay v\u1ec1 Instagram g\u1ed1c, h\u00e3y g\u1ee1 c\u00e0i \u0111\u1eb7t b\u1ea3n n\u00e0y tr\u01b0\u1edbc (s\u1ebd x\u00f3a d\u1eef li\u1ec7u tr\u00ean m\u00e1y). C\u00e1c b\u1ea3n d\u1ef1ng TADa sau n\u00e0y c\u0169ng c\u1ea7n b\u1eadt t\u00f9y ch\u1ecdn n\u00e0y \u0111\u1ec3 c\u00f3 th\u1ec3 c\u00e0i \u0111\u00e8.");
         table.put("Google's emoji everywhere",
                 "D\u00f9ng bi\u1ec3u t\u01b0\u1ee3ng c\u1ea3m x\u00fac Google \u1edf m\u1ecdi n\u01a1i");
@@ -16936,8 +16922,6 @@ public final class L10nTranslations {
                 "\u1ea8n n\u00fat Theo d\u00f5i");
         table.put("Hide the Home tab",
                 "\u1ea8n tab Trang ch\u1ee7");
-        table.put("Hide the HushGram row in Instagram's menu",
-                "\u1ea8n m\u1ee5c TADa trong menu c\u1ee7a Instagram");
         table.put("Hide the Muse button on your profile",
                 "\u1ea8n n\u00fat Muse tr\u00ean trang c\u00e1 nh\u00e2n");
         table.put("Hide the Muse card",
@@ -16958,6 +16942,8 @@ public final class L10nTranslations {
                 "\u1ea8n n\u00fat Chia s\u1ebb");
         table.put("Hide the Stories tray",
                 "\u1ea8n h\u00e0ng Tin (Stories)");
+        table.put("Hide the TADa row in Instagram's menu",
+                "\u1ea8n m\u1ee5c TADa trong menu c\u1ee7a Instagram");
         table.put("Hide the Threads button",
                 "\u1ea8n n\u00fat Threads");
         table.put("Hide the call buttons in chats",
@@ -17047,37 +17033,9 @@ public final class L10nTranslations {
                 "Th\u1eddi gian c\u00f2n l\u1ea1i tr\u01b0\u1edbc khi tin h\u1ebft h\u1ea1n, v\u00ed d\u1ee5: c\u00f2n 18h 14p. Tin c\u0169 h\u01a1n s\u1ebd hi\u1ec3n th\u1ecb ng\u00e0y v\u00e0 gi\u1edd.");
         table.put("How the time shows",
                 "C\u00e1ch hi\u1ec3n th\u1ecb th\u1eddi gian");
-        table.put("How you open HushGram, and how this screen is laid out.",
+        table.put("How you open TADa, and how this screen is laid out.",
                 "C\u00e1ch m\u1edf TADa v\u00e0 b\u1ed1 c\u1ee5c c\u1ee7a m\u00e0n h\u00ecnh c\u00e0i \u0111\u1eb7t n\u00e0y.");
-        table.put("HushGram %1$s on Instagram %2$s",
-                "TADa %1$s tr\u00ean Instagram %2$s");
-        table.put("HushGram PIN",
-                "M\u00e3 PIN TADa");
-        table.put("HushGram is on",
-                "TADa \u0111ang b\u1eadt");
-        table.put("HushGram is paused",
-                "TADa \u0111ang t\u1ea1m d\u1eebng");
-        table.put("HushGram launch screen",
-                "M\u00e0n h\u00ecnh kh\u1edfi \u0111\u1ed9ng TADa");
-        table.put("HushGram paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in HushGram settings.",
-                "TADa \u0111\u00e3 t\u1ef1 \u0111\u1ed9ng t\u1ea1m d\u1eebng v\u00ec Instagram li\u00ean t\u1ee5c b\u1ecb \u0111\u00f3ng khi kh\u1edfi \u0111\u1ed9ng. C\u00e1c t\u00ednh n\u0103ng s\u1ebd t\u1eaft cho \u0111\u1ebfn khi b\u1ea1n b\u1eadt l\u1ea1i trong C\u00e0i \u0111\u1eb7t TADa.");
-        table.put("HushGram pauses when Instagram restarts.",
-                "TADa s\u1ebd t\u1ea1m d\u1eebng khi Instagram kh\u1edfi \u0111\u1ed9ng l\u1ea1i.");
-        table.put("HushGram remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
-                "TADa ghi nh\u1edb v\u1ecb tr\u00ed d\u1eebng tr\u00ean t\u1ed1i \u0111a 200 video trong v\u00f2ng 30 ng\u00e0y. Ch\u1ea1m \u0111\u1ec3 x\u00f3a danh s\u00e1ch n\u00e0y kh\u1ecfi thi\u1ebft b\u1ecb.");
-        table.put("HushGram saves",
-                "T\u1ea3i xu\u1ed1ng b\u1edfi TADa");
-        table.put("HushGram settings",
-                "C\u00e0i \u0111\u1eb7t TADa");
-        table.put("HushGram settings are locked",
-                "C\u00e0i \u0111\u1eb7t TADa \u0111\u00e3 b\u1ecb kh\u00f3a");
-        table.put("HushGram settings couldn't open",
-                "Kh\u00f4ng th\u1ec3 m\u1edf c\u00e0i \u0111\u1eb7t TADa");
-        table.put("HushGram settings exported.",
-                "\u0110\u00e3 xu\u1ea5t c\u00e0i \u0111\u1eb7t TADa th\u00e0nh c\u00f4ng.");
-        table.put("HushGram turns back on when Instagram restarts.",
-                "TADa s\u1ebd b\u1eadt l\u1ea1i khi Instagram kh\u1edfi \u0111\u1ed9ng l\u1ea1i.");
-        table.put("Import HushGram settings",
+        table.put("Import TADa settings",
                 "Nh\u1eadp c\u00e0i \u0111\u1eb7t TADa");
         table.put("Imported %1$d settings. Skipped %2$d that this version doesn't know.",
                 "\u0110\u00e3 nh\u1eadp %1$d c\u00e0i \u0111\u1eb7t. B\u1ecf qua %2$d c\u00e0i \u0111\u1eb7t ch\u01b0a h\u1ed7 tr\u1ee3.");
@@ -17087,7 +17045,7 @@ public final class L10nTranslations {
                 "Xanh lam Instagram");
         table.put("Instagram can't read your phone's advertising ID or tell Android's ad services which ads you saw or tapped. The permissions for them are gone from this build.",
                 "Instagram kh\u00f4ng th\u1ec3 \u0111\u1ecdc ID qu\u1ea3ng c\u00e1o c\u1ee7a \u0111i\u1ec7n tho\u1ea1i ho\u1eb7c g\u1eedi th\u00f4ng tin qu\u1ea3ng c\u00e1o b\u1ea1n \u0111\u00e3 xem hay nh\u1ea5p v\u00e0o cho Android. C\u00e1c quy\u1ec1n n\u00e0y \u0111\u00e3 b\u1ecb x\u00f3a kh\u1ecfi b\u1ea3n d\u1ef1ng.");
-        table.put("Instagram crashed or froze within a minute of starting three times in a row, so HushGram paused itself.",
+        table.put("Instagram crashed or froze within a minute of starting three times in a row, so TADa paused itself.",
                 "Instagram b\u1ecb d\u1eebng \u0111\u1ed9t ng\u1ed9t ho\u1eb7c treo 3 l\u1ea7n li\u00ean ti\u1ebfp trong v\u00f2ng 1 ph\u00fat sau khi m\u1edf, n\u00ean TADa \u0111\u00e3 t\u1ef1 \u0111\u1ed9ng t\u1ea1m d\u1eebng.");
         table.put("Instagram doesn't notice when you take a screenshot, so whoever sent you a disappearing photo or video isn't told. Your screenshots save as usual.",
                 "Instagram s\u1ebd kh\u00f4ng ph\u00e1t hi\u1ec7n khi b\u1ea1n ch\u1ee5p \u1ea3nh m\u00e0n h\u00ecnh, ng\u01b0\u1eddi g\u1eedi \u1ea3nh/video xem m\u1ed9t l\u1ea7n s\u1ebd kh\u00f4ng nh\u1eadn \u0111\u01b0\u1ee3c th\u00f4ng b\u00e1o. \u1ea2nh ch\u1ee5p m\u00e0n h\u00ecnh l\u01b0u nh\u01b0 b\u00ecnh th\u01b0\u1eddng.");
@@ -17115,7 +17073,7 @@ public final class L10nTranslations {
                 "Instagram ng\u1eebng hi\u1ec3n th\u1ecb m\u00e0n h\u00ecnh th\u00f4ng b\u00e1o phi\u00ean b\u1ea3n qu\u00e1 c\u0169. B\u1ea3n v\u00e1 kh\u00f4ng t\u1ef1 c\u1eadp nh\u1eadt, n\u00ean t\u00ednh n\u0103ng n\u00e0y gi\u00fap \u1ee9ng d\u1ee5ng ti\u1ebfp t\u1ee5c ho\u1ea1t \u0111\u1ed9ng.");
         table.put("Instagram wakes your phone every minute or two, screen off included, only to note that it is still running. This stops that. Messages, notifications and everything you see are unaffected.",
                 "Instagram th\u01b0\u1eddng xuy\u00ean \u0111\u00e1nh th\u1ee9c m\u00e1y m\u1ed7i 1-2 ph\u00fat (k\u1ec3 c\u1ea3 khi t\u1eaft m\u00e0n h\u00ecnh) ch\u1ec9 \u0111\u1ec3 b\u00e1o m\u00e1y ch\u1ee7 r\u1eb1ng \u1ee9ng d\u1ee5ng v\u1eabn \u0111ang ch\u1ea1y. T\u00f9y ch\u1ecdn n\u00e0y s\u1ebd ch\u1eb7n l\u1ea1i, gi\u00fap ti\u1ebft ki\u1ec7m pin \u0111\u00e1ng k\u1ec3.");
-        table.put("Instagram's Settings and activity screen leaves out the HushGram row while another way here opens HushGram. With every other way off, the row comes back.",
+        table.put("Instagram's Settings and activity screen leaves out the TADa row while another way here opens TADa. With every other way off, the row comes back.",
                 "M\u00e0n h\u00ecnh C\u00e0i \u0111\u1eb7t v\u00e0 ho\u1ea1t \u0111\u1ed9ng c\u1ee7a Instagram s\u1ebd \u1ea9n m\u1ee5c TADa khi \u0111\u00e3 c\u00f3 c\u00e1ch kh\u00e1c m\u1edf \u0111\u01b0\u1ee3c TADa. N\u1ebfu t\u1eaft t\u1ea5t c\u1ea3 c\u00e1c c\u00e1ch kh\u00e1c, m\u1ee5c n\u00e0y s\u1ebd xu\u1ea5t hi\u1ec7n l\u1ea1i.");
         table.put("Instagram's colors",
                 "M\u00e0u m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram");
@@ -17161,9 +17119,6 @@ public final class L10nTranslations {
                 "Gi\u1eef t\u1ed1c \u0111\u1ed9 ph\u00e1t Reels");
         table.put("Keep the zoom open",
                 "Gi\u1eef ch\u1ebf \u0111\u1ed9 ph\u00f3ng to");
-    }
-
-    private static void fillVi9(Map<String, String> table) {
         table.put("Keep your chats private and your inbox clear of extras.",
                 "B\u1ea3o v\u1ec7 s\u1ef1 ri\u00eang t\u01b0 cho c\u00e1c cu\u1ed9c tr\u00f2 chuy\u1ec7n v\u00e0 d\u1ecdn s\u1ea1ch h\u1ed9p th\u01b0.");
         table.put("Keeps Instagram's Music for you card from turning up between the stories you watch. The stories themselves stay.",
@@ -17192,6 +17147,9 @@ public final class L10nTranslations {
                 "\u1ea8n c\u00e1c reel c\u00f3 nh\u00e3n H\u1ee3p t\u00e1c tr\u1ea3 ph\u00ed v\u00e0 reel \u0111\u01b0\u1ee3c qu\u1ea3ng b\u00e1. Qu\u1ea3ng c\u00e1o c\u00f3 c\u00f4ng t\u1eafc ri\u00eang.");
         table.put("Leaves out the Add Yours cards, like Popular Add Yours and Join a trending Add Yours, that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "\u1ea8n c\u00e1c th\u1ebb nh\u01b0 L\u01b0\u1ee3t tham gia ph\u1ed5 bi\u1ebfn ho\u1eb7c Tham gia xu h\u01b0\u1edbng xu\u1ea5t hi\u1ec7n xen gi\u1eefa c\u00e1c tin. C\u00e1c tin v\u1eabn gi\u1eef nguy\u00ean.");
+    }
+
+    private static void fillVi9(Map<String, String> table) {
         table.put("Leaves out the Suggested for you cards of accounts to follow that Instagram puts between the stories you tap through. The stories themselves stay.",
                 "\u1ea8n c\u00e1c th\u1ebb g\u1ee3i \u00fd t\u00e0i kho\u1ea3n theo d\u00f5i xu\u1ea5t hi\u1ec7n xen k\u1ebd gi\u1eefa c\u00e1c tin khi b\u1ea1n xem. B\u1ea3n th\u00e2n c\u00e1c tin v\u1eabn gi\u1eef nguy\u00ean.");
         table.put("Leaves the Suggested for you accounts out of what shows when you tap the search bar. Recent searches stay.",
@@ -17244,11 +17202,11 @@ public final class L10nTranslations {
                 "Kh\u00f3a tin nh\u1eafn c\u1ee7a b\u1ea1n");
         table.put("Locked chats",
                 "\u0110o\u1ea1n chat \u0111\u00e3 kh\u00f3a");
-        table.put("Long press %1$s to open HushGram instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
+        table.put("Long press %1$s to open TADa instead of that tab's usual action. Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
                 "Nh\u1ea5n gi\u1eef %1$s \u0111\u1ec3 m\u1edf TADa thay cho thao t\u00e1c m\u1eb7c \u0111\u1ecbnh c\u1ee7a tab \u0111\u00f3. C\u00e1c l\u1ea7n ch\u1ea1m th\u00f4ng th\u01b0\u1eddng v\u00e0 tab kh\u00e1c kh\u00f4ng \u0111\u1ed5i. Ch\u1ec9 d\u00f9ng \u0111\u01b0\u1ee3c c\u00e1c tab m\u00e0 t\u00e0i kho\u1ea3n c\u1ee7a b\u1ea1n hi\u1ec3n th\u1ecb.");
-        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens HushGram, that comes first.",
+        table.put("Long press %1$s to pick the playback quality instead of that tab's usual action. Normal taps and other tabs stay the same. Needs Default playback quality on. If the same tab opens TADa, that comes first.",
                 "Nh\u1ea5n gi\u1eef tab %1$s \u0111\u1ec3 ch\u1ecdn nhanh ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t video. C\u1ea7n b\u1eadt Ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t m\u1eb7c \u0111\u1ecbnh. N\u1ebfu tab tr\u00f9ng v\u1edbi tab m\u1edf TADa, m\u1edf TADa s\u1ebd \u0111\u01b0\u1ee3c \u01b0u ti\u00ean.");
-        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens HushGram or picks the playback quality, that comes first.",
+        table.put("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a toast says which way it went. Normal taps and other tabs stay the same. If the same tab opens TADa or picks the playback quality, that comes first.",
                 "Nh\u1ea5n gi\u1eef tab %1$s \u0111\u1ec3 b\u1eadt/t\u1eaft nhanh Ch\u1ebf \u0111\u1ed9 \u1ea9n danh. N\u1ebfu tab tr\u00f9ng v\u1edbi tab m\u1edf TADa ho\u1eb7c ch\u1ecdn ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t, t\u00f9y ch\u1ecdn \u0111\u00f3 s\u1ebd \u0111\u01b0\u1ee3c \u01b0u ti\u00ean.");
         table.put("Long press a photo to zoom",
                 "Nh\u1ea5n gi\u1eef \u1ea3nh \u0111\u1ec3 ph\u00f3ng to");
@@ -17284,9 +17242,6 @@ public final class L10nTranslations {
                 "N\u00fat Tin nh\u1eafn tr\u00ean \u0111\u1ea7u Trang ch\u1ee7");
         table.put("Messenger",
                 "Messenger");
-    }
-
-    private static void fillVi10(Map<String, String> table) {
         table.put("Meta AI",
                 "Meta AI");
         table.put("More",
@@ -17315,13 +17270,16 @@ public final class L10nTranslations {
                 "Kh\u00f4ng c\u00f3 \u1ee9ng d\u1ee5ng n\u00e0o m\u1edf \u0111\u01b0\u1ee3c li\u00ean k\u1ebft. \u0110\u1ecba ch\u1ec9 l\u00e0 %1$s.");
         table.put("No app on this phone can play this video",
                 "Kh\u00f4ng c\u00f3 \u1ee9ng d\u1ee5ng n\u00e0o tr\u00ean \u0111i\u1ec7n tho\u1ea1i n\u00e0y c\u00f3 th\u1ec3 ph\u00e1t video n\u00e0y");
+    }
+
+    private static void fillVi10(Map<String, String> table) {
         table.put("No direct link for this one",
                 "N\u1ed9i dung n\u00e0y kh\u00f4ng c\u00f3 li\u00ean k\u1ebft tr\u1ef1c ti\u1ebfp");
         table.put("No matching settings",
                 "Kh\u00f4ng t\u00ecm th\u1ea5y c\u00e0i \u0111\u1eb7t ph\u00f9 h\u1ee3p");
         table.put("No one has left since then.",
                 "Kh\u00f4ng c\u00f3 ai h\u1ee7y theo d\u00f5i t\u1eeb th\u1eddi \u0111i\u1ec3m \u0111\u00f3.");
-        table.put("No other way into HushGram is on, so the row stays in Instagram's menu.",
+        table.put("No other way into TADa is on, so the row stays in Instagram's menu.",
                 "Kh\u00f4ng c\u00f2n c\u00e1ch n\u00e0o kh\u00e1c \u0111\u1ec3 m\u1edf TADa \u0111ang b\u1eadt, n\u00ean m\u1ee5c n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c gi\u1eef l\u1ea1i trong menu c\u1ee7a Instagram.");
         table.put("No pages chosen",
                 "Ch\u01b0a ch\u1ecdn trang n\u00e0o");
@@ -17407,9 +17365,6 @@ public final class L10nTranslations {
                 "H\u00e3y m\u1edf m\u1ed9t cu\u1ed9c tr\u00f2 chuy\u1ec7n trong Instagram, sau \u0111\u00f3 quay l\u1ea1i \u0111\u00e2y \u0111\u1ec3 \u1ea9n.");
         table.put("Open a chat in Instagram, then come back here to lock it.",
                 "H\u00e3y m\u1edf m\u1ed9t cu\u1ed9c tr\u00f2 chuy\u1ec7n trong Instagram, sau \u0111\u00f3 quay l\u1ea1i \u0111\u00e2y \u0111\u1ec3 kh\u00f3a cu\u1ed9c tr\u00f2 chuy\u1ec7n \u0111\u00f3.");
-    }
-
-    private static void fillVi11(Map<String, String> table) {
         table.put("Open a creator's profile from a reel, then their Reels tab, and it scrolls to that reel and outlines it for a moment. A photo reel is found in their posts. Stop looking ends the search where it is.",
                 "Khi m\u1edf trang c\u00e1 nh\u00e2n c\u1ee7a ng\u01b0\u1eddi s\u00e1ng t\u1ea1o t\u1eeb m\u1ed9t reel v\u00e0 v\u00e0o tab Reels c\u1ee7a h\u1ecd, trang s\u1ebd t\u1ef1 cu\u1ed9n \u0111\u1ebfn \u0111\u00fang reel \u0111\u00f3 v\u00e0 l\u00e0m n\u1ed5i b\u1eadt vi\u1ec1n trong ch\u1ed1c l\u00e1t. B\u1ea5m D\u1eebng t\u00ecm ki\u1ebfm \u0111\u1ec3 k\u1ebft th\u00fac.");
         table.put("Open app info",
@@ -17438,6 +17393,9 @@ public final class L10nTranslations {
                 "M\u1edf Trang ch\u1ee7 \u1edf ch\u1ebf \u0111\u1ed9 \u0110ang theo d\u00f5i thay v\u00ec D\u00e0nh cho b\u1ea1n. Ch\u1ea1m v\u00e0o \u0111\u1ea7u Trang ch\u1ee7 \u0111\u1ec3 chuy\u1ec3n \u0111\u1ed5i. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
         table.put("Opens a GitHub report with your versions and settings filled in. Add what happened.",
                 "M\u1edf trang b\u00e1o c\u00e1o s\u1ef1 c\u1ed1 tr\u00ean GitHub v\u1edbi th\u00f4ng tin phi\u00ean b\u1ea3n v\u00e0 c\u00e0i \u0111\u1eb7t \u0111\u01b0\u1ee3c \u0111i\u1ec1n s\u1eb5n.");
+    }
+
+    private static void fillVi11(Map<String, String> table) {
         table.put("Orange",
                 "Cam");
         table.put("PIN",
@@ -17452,7 +17410,7 @@ public final class L10nTranslations {
                 "Trang %1$d, video");
         table.put("Pause",
                 "T\u1ea1m d\u1eebng");
-        table.put("Pause HushGram",
+        table.put("Pause TADa",
                 "T\u1ea1m d\u1eebng TADa");
         table.put("Pause and diagnostics",
                 "T\u1ea1m d\u1eebng v\u00e0 ch\u1ea9n \u0111o\u00e1n");
@@ -17510,14 +17468,14 @@ public final class L10nTranslations {
                 "\u0110\u01b0a t\u00e0i kho\u1ea3n kh\u00f4ng theo d\u00f5i l\u1ea1i l\u00ean \u0111\u1ea7u");
         table.put("Puts Activity, the screen the heart opens, on the tab bar before Profile. Tab order can move it, and Hide notifications on Home's header takes the heart away. Restart Instagram to see the change.",
                 "Hi\u1ec3n th\u1ecb tab Ho\u1ea1t \u0111\u1ed9ng (bi\u1ec3u t\u01b0\u1ee3ng tr\u00e1i tim) tr\u00ean thanh tab tr\u01b0\u1edbc Trang c\u00e1 nh\u00e2n. Th\u1ee9 t\u1ef1 tab c\u00f3 th\u1ec3 di chuy\u1ec3n v\u1ecb tr\u00ed. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
-        table.put("Puts HushGram settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
-                "Th\u00eam l\u1ed1i t\u1eaft C\u00e0i \u0111\u1eb7t TADa v\u00e0o menu khi b\u1ea1n nh\u1ea5n gi\u1eef bi\u1ec3u t\u01b0\u1ee3ng Instagram \u1edf m\u00e0n h\u00ecnh ch\u00ednh.");
         table.put("Puts Instagram's logo in the middle of the top of Home, even with header buttons hidden or added. A feed's name shown there is centered too. Restart Instagram to see the change.",
                 "C\u0103n logo Instagram v\u00e0o ch\u00ednh gi\u1eefa ph\u00eda tr\u00ean Trang ch\u1ee7, t\u1ea1o giao di\u1ec7n c\u00e2n \u0111\u1ed1i v\u00e0 cao c\u1ea5p. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
         table.put("Puts Messages on the tab bar, before Profile, if Instagram left it off yours. Tab order can move it. Restart Instagram to see the change.",
                 "Hi\u1ec3n th\u1ecb tab Tin nh\u1eafn tr\u00ean thanh tab, tr\u01b0\u1edbc Trang c\u00e1 nh\u00e2n. Th\u1ee9 t\u1ef1 tab c\u00f3 th\u1ec3 di chuy\u1ec3n v\u1ecb tr\u00ed. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
         table.put("Puts Reels back on the tab bar if Instagram left it off yours. Hide the Reels tab wins if both are on. Restart Instagram to see the change.",
                 "Hi\u1ec3n th\u1ecb l\u1ea1i tab Reels tr\u00ean thanh tab n\u1ebfu t\u00e0i kho\u1ea3n c\u1ee7a b\u1ea1n b\u1ecb \u1ea9n. N\u1ebfu b\u1eadt c\u1ea3 \u1ea8n tab Reels th\u00ec t\u00ednh n\u0103ng \u1ea9n s\u1ebd \u0111\u01b0\u1ee3c \u01b0u ti\u00ean. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
+        table.put("Puts TADa settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.",
+                "Th\u00eam l\u1ed1i t\u1eaft C\u00e0i \u0111\u1eb7t TADa v\u00e0o menu khi b\u1ea1n nh\u1ea5n gi\u1eef bi\u1ec3u t\u01b0\u1ee3ng Instagram \u1edf m\u00e0n h\u00ecnh ch\u00ednh.");
         table.put("Puts a Block icon beside someone else's reel. A tap opens Instagram's own block screen for that account, so you still confirm it there.",
                 "Th\u00eam bi\u1ec3u t\u01b0\u1ee3ng Ch\u1eb7n b\u00ean c\u1ea1nh reel c\u1ee7a ng\u01b0\u1eddi kh\u00e1c \u0111\u1ec3 m\u1edf nhanh m\u00e0n h\u00ecnh x\u00e1c nh\u1eadn ch\u1eb7n t\u00e0i kho\u1ea3n \u0111\u00f3.");
         table.put("Puts a Not interested icon beside a reel, so one tap does what Not interested in its menu does.",
@@ -17530,9 +17488,6 @@ public final class L10nTranslations {
                 "Th\u00eam bi\u1ec3u t\u01b0\u1ee3ng n\u1ed1t nh\u1ea1c b\u00ean c\u1ea1nh reel. Ch\u1ea1m v\u00e0o \u0111\u00f3 \u0111\u1ec3 tab Reels t\u1ef1 \u0111\u1ed9ng b\u1ecf qua c\u00e1c video s\u1eed d\u1ee5ng \u00e2m thanh n\u00e0y.");
         table.put("Puts every notification from Instagram in one group that shows how many it holds, so they don't fill your notification shade. Tapping one still opens it.",
                 "G\u1ed9p t\u1ea5t c\u1ea3 th\u00f4ng b\u00e1o t\u1eeb Instagram v\u00e0o m\u1ed9t nh\u00f3m g\u1ecdn g\u00e0ng hi\u1ec3n th\u1ecb s\u1ed1 l\u01b0\u1ee3ng \u0111\u1ec3 kh\u00f4ng chi\u1ebfm di\u1ec7n t\u00edch trung t\u00e2m th\u00f4ng b\u00e1o. Ch\u1ea1m v\u00e0o th\u00f4ng b\u00e1o v\u1eabn m\u1edf b\u00ecnh th\u01b0\u1eddng.");
-    }
-
-    private static void fillVi12(Map<String, String> table) {
         table.put("Puts every switch back the way it started. Your locks stay as they are.",
                 "\u0110\u01b0a t\u1ea5t c\u1ea3 c\u00e1c c\u00f4ng t\u1eafc c\u00e0i \u0111\u1eb7t v\u1ec1 tr\u1ea1ng th\u00e1i ban \u0111\u1ea7u. C\u00e1c c\u00e0i \u0111\u1eb7t kh\u00f3a c\u1ee7a b\u1ea1n v\u1eabn gi\u1eef nguy\u00ean.");
         table.put("Puts the answer in a chip under the profile's posts, followers and following counts instead, and says Following each other when you follow them too.",
@@ -17561,6 +17516,9 @@ public final class L10nTranslations {
                 "Ai \u0111\u00e3 h\u1ee7y theo d\u00f5i g\u1ea7n \u0111\u00e2y");
         table.put("Record patch activity and show errors for a bug report. Leave off during normal use.",
                 "Ghi l\u1ea1i ho\u1ea1t \u0111\u1ed9ng b\u1ea3n v\u00e1 v\u00e0 hi\u1ec3n th\u1ecb l\u1ed7i \u0111\u1ec3 b\u00e1o c\u00e1o s\u1ef1 c\u1ed1. N\u00ean t\u1eaft trong qu\u00e1 tr\u00ecnh s\u1eed d\u1ee5ng b\u00ecnh th\u01b0\u1eddng.");
+    }
+
+    private static void fillVi12(Map<String, String> table) {
         table.put("Red",
                 "\u0110\u1ecf");
         table.put("Reels",
@@ -17653,9 +17611,6 @@ public final class L10nTranslations {
                 "L\u01b0u t\u1ea5t c\u1ea3");
         table.put("Save canceled",
                 "\u0110\u00e3 h\u1ee7y l\u01b0u");
-    }
-
-    private static void fillVi13(Map<String, String> table) {
         table.put("Save comment photo",
                 "L\u01b0u \u1ea3nh trong b\u00ecnh lu\u1eadn");
         table.put("Save every page without asking",
@@ -17672,7 +17627,7 @@ public final class L10nTranslations {
                 "L\u01b0u b\u00e1o c\u00e1o \u0111\u1ea7y \u0111\u1ee7 v\u00e0o %1$s.");
         table.put("Save videos other apps can open",
                 "L\u01b0u video \u0111\u1ec3 c\u00e1c \u1ee9ng d\u1ee5ng kh\u00e1c m\u1edf \u0111\u01b0\u1ee3c");
-        table.put("Save your HushGram choices to a file, or bring them back.",
+        table.put("Save your TADa choices to a file, or bring them back.",
                 "L\u01b0u c\u00e1c t\u00f9y ch\u1ecdn TADa c\u1ee7a b\u1ea1n v\u00e0o m\u1ed9t t\u1ec7p ho\u1eb7c kh\u00f4i ph\u1ee5c l\u1ea1i.");
         table.put("Saved",
                 "\u0110\u00e3 l\u01b0u");
@@ -17684,6 +17639,9 @@ public final class L10nTranslations {
                 "\u0110\u00e3 l\u01b0u v\u00e0o %1$s");
         table.put("Saved to %1$s in lower quality than on Instagram",
                 "\u0110\u00e3 l\u01b0u v\u00e0o %1$s \u1edf ch\u1ea5t l\u01b0\u1ee3ng th\u1ea5p h\u01a1n Instagram");
+    }
+
+    private static void fillVi13(Map<String, String> table) {
         table.put("Saved to the gallery",
                 "\u0110\u00e3 l\u01b0u v\u00e0o b\u1ed9 s\u01b0u t\u1eadp");
         table.put("Saved to the gallery in lower quality than on Instagram",
@@ -17704,7 +17662,7 @@ public final class L10nTranslations {
                 "\u0110ang l\u01b0u b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n...");
         table.put("Saving...",
                 "\u0110ang l\u01b0u...");
-        table.put("Saving... You can cancel from Downloads in HushGram settings.",
+        table.put("Saving... You can cancel from Downloads in TADa settings.",
                 "\u0110ang l\u01b0u... B\u1ea1n c\u00f3 th\u1ec3 h\u1ee7y trong m\u1ee5c T\u1ea3i xu\u1ed1ng \u1edf C\u00e0i \u0111\u1eb7t TADa.");
         table.put("Screenshots and screen recordings work wherever Instagram blocks them, like disappearing photos and videos. Turn on Don't report screenshots too if the sender shouldn't hear about it.",
                 "Cho ph\u00e9p ch\u1ee5p \u1ea3nh v\u00e0 quay video m\u00e0n h\u00ecnh \u1edf nh\u1eefng n\u01a1i Instagram ng\u0103n ch\u1eb7n, v\u00ed d\u1ee5 \u1ea3nh/video t\u1ef1 h\u1ee7y. H\u00e3y b\u1eadt th\u00eam \"Kh\u00f4ng b\u00e1o c\u00e1o khi ch\u1ee5p \u1ea3nh m\u00e0n h\u00ecnh\" n\u1ebfu kh\u00f4ng mu\u1ed1n ng\u01b0\u1eddi g\u1eedi bi\u1ebft.");
@@ -17732,9 +17690,9 @@ public final class L10nTranslations {
                 "G\u1eedi \u0111\u1ebfn");
         table.put("Set a PIN",
                 "Thi\u1ebft l\u1eadp m\u00e3 PIN");
-        table.put("Set a screen lock on your phone so HushGram can lock Instagram.",
+        table.put("Set a screen lock on your phone so TADa can lock Instagram.",
                 "H\u00e3y c\u00e0i \u0111\u1eb7t kh\u00f3a m\u00e0n h\u00ecnh tr\u00ean \u0111i\u1ec7n tho\u1ea1i \u0111\u1ec3 TADa c\u00f3 th\u1ec3 kh\u00f3a Instagram.");
-        table.put("Set a screen lock on your phone so HushGram can lock your messages.",
+        table.put("Set a screen lock on your phone so TADa can lock your messages.",
                 "H\u00e3y c\u00e0i \u0111\u1eb7t kh\u00f3a m\u00e0n h\u00ecnh tr\u00ean \u0111i\u1ec7n tho\u1ea1i \u0111\u1ec3 TADa c\u00f3 th\u1ec3 kh\u00f3a tin nh\u1eafn c\u1ee7a b\u1ea1n.");
         table.put("Set or change the 4 to 8 digit PIN. It stays on this phone and isn't in a backup.",
                 "Thi\u1ebft l\u1eadp ho\u1eb7c \u0111\u1ed5i m\u00e3 PIN t\u1eeb 4 \u0111\u1ebfn 8 ch\u1eef s\u1ed1. M\u00e3 PIN ch\u1ec9 l\u01b0u tr\u00ean \u0111i\u1ec7n tho\u1ea1i n\u00e0y.");
@@ -17776,9 +17734,6 @@ public final class L10nTranslations {
                 "Hi\u1ec7n t\u1ea5t c\u1ea3 t\u00ecm ki\u1ebfm g\u1ea7n \u0111\u00e2y");
         table.put("Show all settings as a list",
                 "Hi\u1ec7n t\u1ea5t c\u1ea3 c\u00e0i \u0111\u1eb7t d\u1ea1ng danh s\u00e1ch");
-    }
-
-    private static void fillVi14(Map<String, String> table) {
         table.put("Show and reorder tabs",
                 "Hi\u1ec7n v\u00e0 s\u1eafp x\u1ebfp th\u1ee9 t\u1ef1 tab");
         table.put("Show content behind the tab bar",
@@ -17807,9 +17762,12 @@ public final class L10nTranslations {
                 "Hi\u1ec7n th\u1eddi gian ho\u1ea1t \u0111\u1ed9ng l\u1ea7n cu\u1ed1i ch\u00ednh x\u00e1c");
         table.put("Showing reels with %1$s again",
                 "Hi\u1ec3n th\u1ecb l\u1ea1i reels c\u00f3 \u00e2m thanh %1$s");
+    }
+
+    private static void fillVi14(Map<String, String> table) {
         table.put("Shown. Tap to hide it.",
                 "\u0110ang hi\u1ec3n th\u1ecb. Ch\u1ea1m \u0111\u1ec3 \u1ea9n.");
-        table.put("Shows HushGram's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
+        table.put("Shows TADa's logo instead of Instagram's on the screen you see while Instagram starts, on Android 13 and newer. It shows from the next start.",
                 "Hi\u1ec3n th\u1ecb logo TADa thay v\u00ec Instagram tr\u00ean m\u00e0n h\u00ecnh kh\u1edfi \u0111\u1ed9ng (Android 13 tr\u1edf l\u00ean). C\u00f3 hi\u1ec7u l\u1ef1c t\u1eeb l\u1ea7n m\u1edf ti\u1ebfp theo.");
         table.put("Shows every emoji in Google's style instead of your phone's own. Restart Instagram to see the change.",
                 "Hi\u1ec3n th\u1ecb t\u1ea5t c\u1ea3 bi\u1ec3u t\u01b0\u1ee3ng c\u1ea3m x\u00fac theo phong c\u00e1ch Google Noto Emoji thay v\u00ec ph\u00f4ng ch\u1eef m\u1eb7c \u0111\u1ecbnh c\u1ee7a m\u00e1y. Kh\u1edfi \u0111\u1ed9ng l\u1ea1i Instagram \u0111\u1ec3 \u00e1p d\u1ee5ng.");
@@ -17899,12 +17857,9 @@ public final class L10nTranslations {
                 "Tin");
         table.put("Stories open with their sound on, the same as tapping Instagram's speaker. Your phone's ringer and volume still count, so on silent or with the volume down, stories stay quiet.",
                 "Tin s\u1ebd t\u1ef1 \u0111\u1ed9ng ph\u00e1t \u00e2m thanh ngay khi m\u1edf m\u00e0 kh\u00f4ng c\u1ea7n b\u1ea1n ch\u1ea1m v\u00e0o bi\u1ec3u t\u01b0\u1ee3ng loa.");
-    }
-
-    private static void fillVi15(Map<String, String> table) {
         table.put("Story ring size",
                 "K\u00edch th\u01b0\u1edbc vi\u1ec1n tin");
-        table.put("Support HushGram",
+        table.put("Support TADa",
                 "\u1ee6ng h\u1ed9 TADa");
         table.put("Swipe left to open the profile",
                 "Vu\u1ed1t sang tr\u00e1i \u0111\u1ec3 m\u1edf trang c\u00e1 nh\u00e2n");
@@ -17912,6 +17867,35 @@ public final class L10nTranslations {
                 "C\u00e1c c\u00f4ng t\u1eafc Ch\u1ebf \u0111\u1ed9 \u1ea9n danh \u0111i\u1ec1u khi\u1ec3n");
         table.put("System tick",
                 "Rung m\u1eb7c \u0111\u1ecbnh c\u1ee7a h\u1ec7 th\u1ed1ng");
+        table.put("TADa %1$s on Instagram %2$s",
+                "TADa %1$s tr\u00ean Instagram %2$s");
+        table.put("TADa PIN",
+                "M\u00e3 PIN TADa");
+        table.put("TADa is on",
+                "TADa \u0111ang b\u1eadt");
+        table.put("TADa is paused",
+                "TADa \u0111ang t\u1ea1m d\u1eebng");
+        table.put("TADa launch screen",
+                "M\u00e0n h\u00ecnh kh\u1edfi \u0111\u1ed9ng TADa");
+        table.put("TADa paused itself because Instagram kept crashing as it started. Its switches stay off until you turn it back on in TADa settings.",
+                "TADa \u0111\u00e3 t\u1ef1 \u0111\u1ed9ng t\u1ea1m d\u1eebng v\u00ec Instagram li\u00ean t\u1ee5c b\u1ecb \u0111\u00f3ng khi kh\u1edfi \u0111\u1ed9ng. C\u00e1c t\u00ednh n\u0103ng s\u1ebd t\u1eaft cho \u0111\u1ebfn khi b\u1ea1n b\u1eadt l\u1ea1i trong C\u00e0i \u0111\u1eb7t TADa.");
+        table.put("TADa pauses when Instagram restarts.",
+                "TADa s\u1ebd t\u1ea1m d\u1eebng khi Instagram kh\u1edfi \u0111\u1ed9ng l\u1ea1i.");
+        table.put("TADa remembers where you stopped in up to 200 videos for 30 days. Tap to clear them from this device.",
+                "TADa ghi nh\u1edb v\u1ecb tr\u00ed d\u1eebng tr\u00ean t\u1ed1i \u0111a 200 video trong v\u00f2ng 30 ng\u00e0y. Ch\u1ea1m \u0111\u1ec3 x\u00f3a danh s\u00e1ch n\u00e0y kh\u1ecfi thi\u1ebft b\u1ecb.");
+        table.put("TADa saves",
+                "T\u1ea3i xu\u1ed1ng b\u1edfi TADa");
+    }
+
+    private static void fillVi15(Map<String, String> table) {
+        table.put("TADa settings are locked",
+                "C\u00e0i \u0111\u1eb7t TADa \u0111\u00e3 b\u1ecb kh\u00f3a");
+        table.put("TADa settings couldn't open",
+                "Kh\u00f4ng th\u1ec3 m\u1edf c\u00e0i \u0111\u1eb7t TADa");
+        table.put("TADa settings exported.",
+                "\u0110\u00e3 xu\u1ea5t c\u00e0i \u0111\u1eb7t TADa th\u00e0nh c\u00f4ng.");
+        table.put("TADa turns back on when Instagram restarts.",
+                "TADa s\u1ebd b\u1eadt l\u1ea1i khi Instagram kh\u1edfi \u0111\u1ed9ng l\u1ea1i.");
         table.put("Tab bar",
                 "Thanh tab");
         table.put("Tab bar corners",
@@ -17920,7 +17904,7 @@ public final class L10nTranslations {
                 "Chi\u1ec1u cao thanh tab");
         table.put("Tab bar opacity",
                 "\u0110\u1ed9 m\u1edd \u0111\u1ee5c c\u1ee7a thanh tab");
-        table.put("Tab long presses keep Instagram's own action. Choose one to open HushGram instead.",
+        table.put("Tab long presses keep Instagram's own action. Choose one to open TADa instead.",
                 "Nh\u1ea5n gi\u1eef tab gi\u1eef h\u00e0nh \u0111\u1ed9ng m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram. Ch\u1ecdn m\u1ed9t tab \u0111\u1ec3 m\u1edf TADa thay th\u1ebf.");
         table.put("Tab long presses keep Instagram's own action. Choose one to pick the playback quality instead.",
                 "Nh\u1ea5n gi\u1eef tab gi\u1eef h\u00e0nh \u0111\u1ed9ng m\u1eb7c \u0111\u1ecbnh c\u1ee7a Instagram. Ch\u1ecdn m\u1ed9t tab \u0111\u1ec3 ch\u1ecdn ch\u1ea5t l\u01b0\u1ee3ng ph\u00e1t video thay th\u1ebf.");
@@ -18022,18 +18006,18 @@ public final class L10nTranslations {
                 "Ch\u1ea1m \u0111\u1ec3 b\u1eadt l\u1ea1i.");
         table.put("Tapping a call button in a chat asks first, so a stray tap doesn't ring anyone. Call starts it, Cancel doesn't.",
                 "Ch\u1ea1m v\u00e0o n\u00fat g\u1ecdi trong \u0111o\u1ea1n chat s\u1ebd h\u1ecfi x\u00e1c nh\u1eadn tr\u01b0\u1edbc \u0111\u1ec3 tr\u00e1nh l\u1ee1 tay g\u1ecdi nh\u1ea7m. B\u1ea5m G\u1ecdi \u0111\u1ec3 b\u1eaft \u0111\u1ea7u, H\u1ee7y \u0111\u1ec3 \u0111\u00f3ng.");
+        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
+                "Ch\u1ea1m v\u00e0o video, ch\u1ea1m hai l\u1ea7n \u0111\u1ec3 th\u00edch, nh\u1ea5n L\u01b0u ho\u1eb7c T\u1ea3i xu\u1ed1ng s\u1ebd kh\u00f4ng t\u00ednh l\u00e0 thao t\u00e1c ch\u1ea1m \u0111\u00e1nh th\u1ee9c, c\u00e1c n\u00fat v\u1eabn s\u1ebd gi\u1eef tr\u1ea1ng th\u00e1i l\u00e0m m\u1edd.");
     }
 
     private static void fillVi16(Map<String, String> table) {
-        table.put("Tapping the video, double-tapping it to like, and Save and Download don't count as a touch, so the buttons stay faded.",
-                "Ch\u1ea1m v\u00e0o video, ch\u1ea1m hai l\u1ea7n \u0111\u1ec3 th\u00edch, nh\u1ea5n L\u01b0u ho\u1eb7c T\u1ea3i xu\u1ed1ng s\u1ebd kh\u00f4ng t\u00ednh l\u00e0 thao t\u00e1c ch\u1ea1m \u0111\u00e1nh th\u1ee9c, c\u00e1c n\u00fat v\u1eabn s\u1ebd gi\u1eef tr\u1ea1ng th\u00e1i l\u00e0m m\u1edd.");
         table.put("Teal",
                 "Xanh m\u00f2ng k\u00e9t");
         table.put("Tells Instagram your phone is at %1$s.",
                 "B\u00e1o cho Instagram bi\u1ebft \u0111i\u1ec7n tho\u1ea1i c\u1ee7a b\u1ea1n \u0111ang \u1edf %1$s.");
         table.put("Tells Instagram your phone is at the place set below, for the location sticker, nearby places and maps. Photos keep their own places.",
                 "G\u1eedi v\u1ecb tr\u00ed gi\u1ea3 b\u00ean d\u01b0\u1edbi cho Instagram \u0111\u1ec3 d\u00f9ng trong nh\u00e3n d\u00e1n v\u1ecb tr\u00ed, \u0111\u1ecba \u0111i\u1ec3m l\u00e2n c\u1eadn v\u00e0 b\u1ea3n \u0111\u1ed3. \u1ea2nh gi\u1eef nguy\u00ean v\u1ecb tr\u00ed g\u1ed1c.");
-        table.put("That file isn't a font HushGram can use. Your font hasn't changed.",
+        table.put("That file isn't a font TADa can use. Your font hasn't changed.",
                 "T\u1ec7p \u0111\u00f3 kh\u00f4ng ph\u1ea3i l\u00e0 ph\u00f4ng ch\u1eef TADa c\u00f3 th\u1ec3 d\u00f9ng. Ph\u00f4ng ch\u1eef ch\u01b0a b\u1ecb thay \u0111\u1ed5i.");
         table.put("That isn't a domain. Type one like example.com, or leave it blank.",
                 "T\u00ean mi\u1ec1n kh\u00f4ng h\u1ee3p l\u1ec7. H\u00e3y nh\u1eadp \u0111\u1ecbnh d\u1ea1ng nh\u01b0 example.com ho\u1eb7c \u0111\u1ec3 tr\u1ed1ng.");
@@ -18049,7 +18033,7 @@ public final class L10nTranslations {
                 "\u1ea8n thanh Th\u00eam b\u00ecnh lu\u1eadn ph\u00eda d\u01b0\u1edbi reel khi b\u1ea1n m\u1edf t\u1eeb m\u1ee5c b\u00e0i \u0111\u0103ng l\u1ea1i c\u1ee7a trang c\u00e1 nh\u00e2n. N\u00fat b\u00ecnh lu\u1eadn v\u1eabn m\u1edf danh s\u00e1ch b\u00ecnh lu\u1eadn b\u00ecnh th\u01b0\u1eddng.");
         table.put("The Follow button beside a reel's author. Their profile still has one.",
                 "\u1ea8n n\u00fat Theo d\u00f5i b\u00ean c\u1ea1nh t\u00ean t\u00e1c gi\u1ea3 c\u1ee7a reel. Trang c\u00e1 nh\u00e2n c\u1ee7a h\u1ecd v\u1eabn c\u00f3 n\u00fat n\u00e0y.");
-        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets HushGram's settings. A saved settings backup brings the rest back, but not the PIN.",
+        table.put("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's app settings. That signs you out and resets TADa's settings. A saved settings backup brings the rest back, but not the PIN.",
                 "M\u00e3 PIN kh\u00f4ng th\u1ec3 kh\u00f4i ph\u1ee5c. \u0110\u1ec3 x\u00f3a m\u00e3 PIN, h\u00e3y v\u00e0o C\u00e0i \u0111\u1eb7t \u1ee9ng d\u1ee5ng c\u1ee7a Android v\u00e0 x\u00f3a d\u1eef li\u1ec7u Instagram (thao t\u00e1c n\u00e0y s\u1ebd \u0111\u0103ng xu\u1ea5t v\u00e0 \u0111\u1eb7t l\u1ea1i c\u00e0i \u0111\u1eb7t TADa).");
         table.put("The PINs don't match.",
                 "M\u00e3 PIN x\u00e1c nh\u1eadn kh\u00f4ng kh\u1edbp.");
@@ -18067,7 +18051,7 @@ public final class L10nTranslations {
                 "Ch\u01b0a th\u1ec3 l\u01b0u b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n. Vui l\u00f2ng th\u1eed l\u1ea1i sau.");
         table.put("The diagnostic report couldn't be saved. Try again.",
                 "Kh\u00f4ng th\u1ec3 l\u01b0u b\u00e1o c\u00e1o ch\u1ea9n \u0111o\u00e1n. Vui l\u00f2ng th\u1eed l\u1ea1i.");
-        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn HushGram back on.",
+        table.put("The file %1$s couldn't be removed. Delete it from %2$s to turn TADa back on.",
                 "Kh\u00f4ng th\u1ec3 x\u00f3a t\u1ec7p %1$s. H\u00e3y x\u00f3a t\u1ec7p kh\u1ecfi %2$s \u0111\u1ec3 b\u1eadt l\u1ea1i TADa.");
         table.put("The first video on Home plays with its sound on, the same as tapping its speaker. Your phone's ringer and volume still count, so on silent or with the volume down, it stays quiet.",
                 "Video \u0111\u1ea7u ti\u00ean tr\u00ean Trang ch\u1ee7 s\u1ebd t\u1ef1 \u0111\u1ed9ng ph\u00e1t k\u00e8m \u00e2m thanh m\u00e0 kh\u00f4ng c\u1ea7n ch\u1ea1m v\u00e0o loa.");
@@ -18145,11 +18129,11 @@ public final class L10nTranslations {
                 "Khi b\u1ea1n b\u1eadt ch\u1ebf \u0111\u1ed9 to\u00e0n c\u1ea3nh (Clear mode) tr\u00ean m\u1ed9t reel, c\u00e1c reel ti\u1ebfp theo c\u0169ng s\u1ebd t\u1ef1 \u0111\u1ed9ng m\u1edf \u1edf ch\u1ebf \u0111\u1ed9 to\u00e0n c\u1ea3nh cho \u0111\u1ebfn khi b\u1ea1n t\u1eaft.");
         table.put("Turn on Show a story's exact time to use this choice.",
                 "B\u1eadt \"Hi\u1ec7n th\u1eddi gian ch\u00ednh x\u00e1c c\u1ee7a tin\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
+        table.put("Turn on Show it as a chip to use this choice.",
+                "B\u1eadt \"Hi\u1ec3n th\u1ecb d\u01b0\u1edbi d\u1ea1ng nh\u00e3n th\u1ebb\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
     }
 
     private static void fillVi17(Map<String, String> table) {
-        table.put("Turn on Show it as a chip to use this choice.",
-                "B\u1eadt \"Hi\u1ec3n th\u1ecb d\u01b0\u1edbi d\u1ea1ng nh\u00e3n th\u1ebb\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
         table.put("Turn on Start Home on Following to use this choice.",
                 "B\u1eadt \"M\u1edf Trang ch\u1ee7 \u1edf m\u1ee5c \u0110ang theo d\u00f5i\" \u0111\u1ec3 d\u00f9ng t\u00f9y ch\u1ecdn n\u00e0y.");
         table.put("Turn on Story ring size to use this choice.",
@@ -18268,11 +18252,11 @@ public final class L10nTranslations {
                 "Khi reel kh\u00f4ng n\u1eb1m \u1edf trang \u0111\u1ea7u ti\u00ean, trang c\u00e1 nh\u00e2n s\u1ebd hi\u1ec7n n\u00fat T\u00ecm reel thay v\u00ec t\u1ef1 \u0111\u1ed9ng cu\u1ed9n.");
         table.put("Where videos wait",
                 "V\u1ecb tr\u00ed video ch\u1edd ph\u00e1t");
+        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
+                "Khi xem \u1ea9n danh, tin b\u1ea1n \u0111\u00e3 xem s\u1ebd chuy\u1ec3n sang m\u00e0u x\u00e1m v\u00e0 chuy\u1ec3n v\u1ec1 cu\u1ed1i h\u00e0ng (ch\u1ec9 tr\u00ean thi\u1ebft b\u1ecb n\u00e0y). Instagram v\u1eabn kh\u00f4ng nh\u1eadn \u0111\u01b0\u1ee3c th\u00f4ng tin b\u1ea1n \u0111\u00e3 xem.");
     }
 
     private static void fillVi18(Map<String, String> table) {
-        table.put("While you view anonymously, a story you've watched turns gray and moves to the end of the row, on this phone only. Instagram still isn't told you watched it.",
-                "Khi xem \u1ea9n danh, tin b\u1ea1n \u0111\u00e3 xem s\u1ebd chuy\u1ec3n sang m\u00e0u x\u00e1m v\u00e0 chuy\u1ec3n v\u1ec1 cu\u1ed1i h\u00e0ng (ch\u1ec9 tr\u00ean thi\u1ebft b\u1ecb n\u00e0y). Instagram v\u1eabn kh\u00f4ng nh\u1eadn \u0111\u01b0\u1ee3c th\u00f4ng tin b\u1ea1n \u0111\u00e3 xem.");
         table.put("Who unfollowed you",
                 "Nh\u1eefng ng\u01b0\u1eddi \u0111\u00e3 h\u1ee7y theo d\u00f5i b\u1ea1n");
         table.put("Wi-Fi stays as it is. Turn this off to save data on every network.",
@@ -18287,7 +18271,7 @@ public final class L10nTranslations {
                 "X (Twitter)");
         table.put("You cleared the remembered playback positions.",
                 "B\u1ea1n \u0111\u00e3 x\u00f3a c\u00e1c v\u1ecb tr\u00ed ph\u00e1t \u0111\u00e3 ghi nh\u1edb.");
-        table.put("You paused HushGram.",
+        table.put("You paused TADa.",
                 "B\u1ea1n \u0111\u00e3 t\u1ea1m d\u1eebng TADa.");
         table.put("Your fingerprint, face or screen lock unlocks your messages.",
                 "D\u00f9ng v\u00e2n tay, khu\u00f4n m\u1eb7t ho\u1eb7c kh\u00f3a m\u00e0n h\u00ecnh c\u1ee7a m\u00e1y \u0111\u1ec3 m\u1edf kh\u00f3a tin nh\u1eafn.");

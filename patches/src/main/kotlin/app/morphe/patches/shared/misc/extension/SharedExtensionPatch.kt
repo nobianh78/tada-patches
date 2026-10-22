@@ -87,7 +87,7 @@ fun sharedExtensionPatch(
             val manifestValue = try {
                 getPatchesManifestEntry("Version")
             } catch (_: Exception) {
-                "2.0.13"
+                "2.0.14"
             }
             returnEarly(manifestValue)
             val buildIdentity = try {

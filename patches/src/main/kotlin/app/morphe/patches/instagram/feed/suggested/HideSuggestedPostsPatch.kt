@@ -70,7 +70,7 @@ val hideSuggestedPostsPatch = bytecodePatch(
         "Posts from accounts you follow stay. Extra switches can also hide the 'Are you interested in this post?' " +
         "question, all videos, photos, carousels, posts " +
         "you've liked or posts from accounts you pick. A post's menu has Hide posts from this account to add one " +
-        "to that list, and those posts leave Home on the next refresh. On by default. Turn it off in HushGram " +
+        "to that list, and those posts leave Home on the next refresh. On by default. Turn it off in TADa " +
         "settings > Feed.",
 ) {
     category("Feed")

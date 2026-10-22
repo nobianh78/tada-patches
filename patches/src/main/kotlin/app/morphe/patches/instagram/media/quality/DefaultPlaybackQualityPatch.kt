@@ -31,7 +31,7 @@ private const val OBJECT = "Ljava/lang/Object;"
 private const val STRING = "Ljava/lang/String;"
 
 /**
- * Videos, reels and video stories start at the quality picked in HushGram's settings. See
+ * Videos, reels and video stories start at the quality picked in TADa's settings. See
  * QualityAnchors.kt for how Instagram's player keeps to a quality, and the extension's
  * QualityChoice for when it keeps Instagram's own.
  *
@@ -43,7 +43,7 @@ private const val STRING = "Ljava/lang/String;"
 val defaultPlaybackQualityPatch = bytecodePatch(
     name = "Default playback quality",
     description = "Plays videos, reels and video stories at the quality you choose, instead of the one Instagram " +
-        "picks as it plays. Nothing changes until you pick a quality. On by default. Turn it off in HushGram " +
+        "picks as it plays. Nothing changes until you pick a quality. On by default. Turn it off in TADa " +
         "settings > Playback.",
     default = true,
 ) {

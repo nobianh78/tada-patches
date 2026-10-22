@@ -240,7 +240,7 @@ final class TabPicker {
         row.setMinimumHeight(dp(context, 52));
 
         CheckBox box = new CheckBox(context);
-        box.setText(HushgramPreferenceFragment.tabLabel(tab));
+        box.setText(TadaPreferenceFragment.tabLabel(tab));
         box.setTextSize(16);
         boolean fixed = fixed(tab);
         // A box that can't change reads in the summary's colour, so it doesn't look like the others.
@@ -255,7 +255,7 @@ final class TabPicker {
         handle.setTextSize(26);
         handle.setTextColor(colors.summary);
         handle.setGravity(Gravity.CENTER);
-        handle.setContentDescription(L10n.f("Drag to move %1$s", HushgramPreferenceFragment.tabLabel(tab)));
+        handle.setContentDescription(L10n.f("Drag to move %1$s", TadaPreferenceFragment.tabLabel(tab)));
         int side = dp(context, 48);
         row.addView(handle, new LinearLayout.LayoutParams(side, side));
         handle.setOnTouchListener(new Drag(list, row));

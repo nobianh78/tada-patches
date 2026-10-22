@@ -101,7 +101,7 @@ final class GhostMode {
         boolean on = !on(switches);
         for (BooleanSetting setting : switches) setting.save(on);
         Utils.showToastShort(message(switches, on,
-                L10n.t("Couldn't change every Ghost mode switch. Open HushGram settings to check them.")));
+                L10n.t("Couldn't change every Ghost mode switch. Open TADa settings to check them.")));
         return on;
     }
 

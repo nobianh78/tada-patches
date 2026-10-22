@@ -380,10 +380,10 @@ public final class SettingsEntry {
     static void sayWhyPaused() {
         try {
             if (HushgramPause.reason() != HushgramPause.Reason.CRASH_LOOP || !pauseSaid.compareAndSet(false, true)) return;
-            Utils.showToastLong(L10n.t("HushGram paused itself because Instagram kept crashing as it started. "
-                    + "Its switches stay off until you turn it back on in HushGram settings."));
+            Utils.showToastLong(L10n.t("TADa paused itself because Instagram kept crashing as it started. "
+                    + "Its switches stay off until you turn it back on in TADa settings."));
         } catch (Throwable failure) {
-            Logger.printException(() -> "Settings entry: could not say why HushGram is paused", failure);
+            Logger.printException(() -> "Settings entry: could not say why TADa is paused", failure);
         }
     }
 

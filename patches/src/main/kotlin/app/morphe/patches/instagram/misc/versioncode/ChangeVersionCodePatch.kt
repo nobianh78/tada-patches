@@ -52,7 +52,7 @@ private val versionCodeReadsPatch = bytecodePatch {
 val changeVersionCodePatch = resourcePatch(
     name = "Change version code",
     description = "Stops Google Play from offering Meta's updates over your patched Instagram. Going back to the " +
-        "normal Instagram later means uninstalling first, which deletes its data. Later HushGram builds need this " +
+        "normal Instagram later means uninstalling first, which deletes its data. Later TADa builds need this " +
         "patch too. Works as soon as you patch it in, with no switch.",
     default = false,
 ) {

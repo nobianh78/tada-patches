@@ -2,7 +2,7 @@
  * Copyright 2026 Hushfacebook contributors
  * https://github.com/SysAdminDoc/Hushfacebook
  *
- * Modified for HushGram (Instagram), 2026.
+ * Modified for TADa (Instagram), 2026.
  */
 package app.hushgram.extension.instagram.settings;
 
@@ -152,16 +152,16 @@ import app.hushgram.extension.shared.settings.preference.QuickSetups;
  * {@link L10n} in the phone's language; the product names and the address stay as they are.
  */
 @SuppressWarnings("deprecation")
-public final class HushgramPreferenceFragment extends AbstractPreferenceFragment {
+public final class TadaPreferenceFragment extends AbstractPreferenceFragment {
     /** The repository as a link, and as a person reads it. */
     static final String SOURCE_URL = "https://github.com/nobianh78/tada-patches";
     static final String SOURCE_ADDRESS = SOURCE_URL.substring(SOURCE_URL.indexOf("://") + 3);
-    /** Where Support HushGram goes: the maintainer's Ko-fi page. */
+    /** Where Support TADa goes: the maintainer's Ko-fi page. */
     static final String SUPPORT_URL = "https://ko-fi.com/X8K126YVER";
     static final String SUPPORT_ADDRESS = SUPPORT_URL.substring(SUPPORT_URL.indexOf("://") + 3);
-    /** The key of Support HushGram, the settings home's last row. */
+    /** The key of Support TADa, the settings home's last row. */
     static final String SUPPORT_ROW_KEY = "action_support_hushgram";
-    /** The row right above Support HushGram that opens a filled-in bug report on GitHub. */
+    /** The row right above Support TADa that opens a filled-in bug report on GitHub. */
     static final String REPORT_ROW_KEY = "action_report_problem";
     /** The row under Search that offers Quiet, Privacy and Back to defaults. */
     static final String QUICK_SETUPS_ROW_KEY = "action_quick_setups";
@@ -180,7 +180,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
     static final String LOCKED_CHATS_ROW = "hushgram_locked_chats_row";
     /** The row that lists the chats hidden one at a time. */
     static final String HIDDEN_CHATS_ROW = "hushgram_hidden_chats_row";
-    /** The row that sets or changes the HushGram PIN. */
+    /** The row that sets or changes the TADa PIN. */
     static final String CHANGE_PIN_ROW = "hushgram_change_pin_row";
     static final String HIDDEN_ACCOUNTS_ROW = "hushgram_hidden_accounts_row";
     static final String HIDDEN_SOUNDS_ROW = "hushgram_hidden_sounds_row";
@@ -191,7 +191,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
     /** The key of the line an open category's page starts with. */
     static final String INTRO_KEY = "hushgram_category_intro";
 
-    /** The first row, which says whether HushGram runs now and whether the next start changes that. */
+    /** The first row, which says whether TADa runs now and whether the next start changes that. */
     @Nullable
     private Preference statusCard;
     private boolean resumingFromOverview;
@@ -233,7 +233,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
     @Nullable private Row noSearchResults;
     /** The home page's last row, which opens the Ko-fi page in a browser. */
     @Nullable private Row support;
-    /** Report a problem, right above Support HushGram. */
+    /** Report a problem, right above Support TADa. */
     @Nullable private Row report;
     /** Quick setups, right under Search. */
     @Nullable private Row quickSetups;
@@ -474,7 +474,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         PatchFamily.registerDiagnostics();
         Set<PatchFamily> build = PatchFamily.inThisBuild();
         PreferenceCategory entry = category(screen, L10n.t("Settings entry"), SettingsIcons.SETTINGS,
-                L10n.t("How you open HushGram, and how this screen is laid out."));
+                L10n.t("How you open TADa, and how this screen is laid out."));
         entry.addPreference(navigationRow(context));
         entry.addPreference(profileMenuRow(context));
         // Each way in has a switch, and the last one still on stays on (HushFacebook#146).
@@ -488,7 +488,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         entry.addPreference(shortcut);
         entry.addPreference(toggle(context, Settings.SETTINGS_LOGO_PRESS, L10n.t("Open settings from the logo"),
                 wayInSummary(Settings.SETTINGS_LOGO_PRESS)));
-        entry.addPreference(toggle(context, Settings.HIDE_MENU_ROW, L10n.t("Hide the HushGram row in Instagram's menu"),
+        entry.addPreference(toggle(context, Settings.HIDE_MENU_ROW, L10n.t("Hide the TADa row in Instagram's menu"),
                 wayInSummary(Settings.HIDE_MENU_ROW)));
         entry.addPreference(toggle(context, Settings.CATEGORY_PAGES, L10n.t("Open categories as pages"),
                 L10n.t("Settings shows a list of its categories, and a tap opens one on its own page. "
@@ -1396,8 +1396,8 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
                 layout.addPreference(accentHueRow(context));
             }
             if (build.contains(PatchFamily.LAUNCH_SCREEN)) {
-                layout.addPreference(toggle(context, Settings.LAUNCH_SCREEN, L10n.t("HushGram launch screen"),
-                        L10n.t("Shows HushGram's logo instead of Instagram's on the screen you see while Instagram "
+                layout.addPreference(toggle(context, Settings.LAUNCH_SCREEN, L10n.t("TADa launch screen"),
+                        L10n.t("Shows TADa's logo instead of Instagram's on the screen you see while Instagram "
                                 + "starts, on Android 13 and newer. It shows from the next start.")));
             }
         }
@@ -1499,7 +1499,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
             SwitchPreference grouping = toggle(context, Settings.GROUP_NOTIFICATIONS, L10n.t("Group notifications"),
                     L10n.t("Puts every notification from Instagram in one group that shows how many it holds, so they "
                             + "don't fill your notification shade. Tapping one still opens it."));
-            // Turned off, HushGram's summaries come down at once. The notifications under them stay.
+            // Turned off, TADa's summaries come down at once. The notifications under them stay.
             grouping.setOnPreferenceChangeListener((row, value) -> {
                 if (Boolean.FALSE.equals(value)) NotificationGroups.switchedOff(row.getContext());
                 return true;
@@ -1684,24 +1684,24 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
                 patched.addPreference(mark(info(context, L10n.t("No Play Store updates"),
                         L10n.t("Google Play won't offer Meta's updates over this build. To go back to the normal "
                                 + "Instagram, uninstall this one first, which deletes Instagram's data on this "
-                                + "phone. Later HushGram builds need Change version code too, or they won't install "
+                                + "phone. Later TADa builds need Change version code too, or they won't install "
                                 + "over this one.")), SettingsIcons.UPDATES));
             }
         }
 
         PreferenceCategory backup = category(screen, L10n.t("Settings backup"), SettingsIcons.TOOLS,
-                L10n.t("Save your HushGram choices to a file, or bring them back."));
+                L10n.t("Save your TADa choices to a file, or bring them back."));
         exportConfiguration = new Row(context);
         exportConfiguration.setKey("hushgram_export_configuration");
         exportConfiguration.setPersistent(false);
-        exportConfiguration.setTitle(L10n.t("Export HushGram settings"));
+        exportConfiguration.setTitle(L10n.t("Export TADa settings"));
         exportConfiguration.setSummary(L10n.t("Choose a file for your installed patches' settings. Accounts and history stay on this device."));
         exportConfiguration.setOnPreferenceClickListener(p -> { pickConfiguration(false); return true; });
         backup.addPreference(mark(exportConfiguration, SettingsIcons.EXPORT));
         importConfiguration = new Row(context);
         importConfiguration.setKey("hushgram_import_configuration");
         importConfiguration.setPersistent(false);
-        importConfiguration.setTitle(L10n.t("Import HushGram settings"));
+        importConfiguration.setTitle(L10n.t("Import TADa settings"));
         importConfiguration.setSummary(L10n.t("Choose a settings file. All valid choices apply together, and ones "
                 + "this version doesn't know are skipped. The Undo row shows how long you can undo."));
         importConfiguration.setOnPreferenceClickListener(p -> { pickConfiguration(true); return true; });
@@ -1727,10 +1727,10 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         });
         backup.addPreference(mark(restoreQuick, SettingsIcons.TOOLS));
 
-        // Named for its rows: the screen's own title already says HushGram.
+        // Named for its rows: the screen's own title already says TADa.
         PreferenceCategory hushgram = category(screen, L10n.t("Pause and diagnostics"), SettingsIcons.PAUSE, null);
         recovery = hushgram;
-        hushgram.addPreference(mark(toggle(context, BaseSettings.PAUSED, L10n.t("Pause HushGram"),
+        hushgram.addPreference(mark(toggle(context, BaseSettings.PAUSED, L10n.t("Pause TADa"),
                 L10n.t("From the next start, every switch but Debug logging acts as if it were off. "
                         + "Changes made when you patched stay in, and your choices stay saved.")), SettingsIcons.PATCHED));
         // Debug logging also fills the exported report and turns on error toasts (Logger).
@@ -1752,7 +1752,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
 
         PreferenceCategory about = category(screen, L10n.t("About"), SettingsIcons.ABOUT,
                 L10n.t("Your version, the source code and licenses."));
-        about.addPreference(mark(info(context, L10n.t("Version"), L10n.f("HushGram %1$s on Instagram %2$s",
+        about.addPreference(mark(info(context, L10n.t("Version"), L10n.f("TADa %1$s on Instagram %2$s",
                 L10n.isolate(Utils.getPatchesReleaseVersion()), L10n.isolate(Utils.getAppVersionName()))
                 + "\n" + L10n.isolate(Utils.getSourceBuildIdentity())), SettingsIcons.ABOUT));
 
@@ -1799,7 +1799,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         });
         mark(quick, SettingsIcons.TOOLS);
 
-        // Outside every category, like Support HushGram below it. Every row counts toward the
+        // Outside every category, like Support TADa below it. Every row counts toward the
         // switches it lists, the ones a category page or a search keeps off the screen too.
         Row bug = report = new Row(context);
         bug.setKey(REPORT_ROW_KEY);
@@ -1818,7 +1818,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         Row donate = support = new Row(context);
         donate.setKey(SUPPORT_ROW_KEY);
         // Its name alone, with no line under it.
-        donate.setTitle(L10n.t("Support HushGram"));
+        donate.setTitle(L10n.t("Support TADa"));
         donate.setPersistent(false);
         // Native Preference.compareTo subtracts orders, so leave room for negative header orders.
         donate.setOrder(Integer.MAX_VALUE / 2);
@@ -2710,7 +2710,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         showConfiguration();
         Intent picker = new Intent(importing ? Intent.ACTION_OPEN_DOCUMENT : Intent.ACTION_CREATE_DOCUMENT)
                 .addCategory(Intent.CATEGORY_OPENABLE).setType("application/json");
-        if (!importing) picker.putExtra(Intent.EXTRA_TITLE, "HushGram-settings.json");
+        if (!importing) picker.putExtra(Intent.EXTRA_TITLE, "TADa-settings.json");
         try {
             startActivityForResult(picker, documentCode);
         } catch (ActivityNotFoundException | SecurityException failure) {
@@ -2796,7 +2796,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         Context context = getContext();
         if (context == null) return;
         if (uri == null || !"content".equals(uri.getScheme())) {
-            Utils.showToastLong(L10n.t("That file isn't a font HushGram can use. Your font hasn't changed."));
+            Utils.showToastLong(L10n.t("That file isn't a font TADa can use. Your font hasn't changed."));
             return;
         }
         Context application = context.getApplicationContext();
@@ -2821,7 +2821,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
      */
     private void fontKept(boolean kept) {
         if (!kept) {
-            Utils.showToastLong(L10n.t("That file isn't a font HushGram can use. Your font hasn't changed."));
+            Utils.showToastLong(L10n.t("That file isn't a font TADa can use. Your font hasn't changed."));
             return;
         }
         boolean chosen = Settings.FONT.savedValue() == FontChoice.FILE;
@@ -2836,10 +2836,10 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
 
     private void exportConfiguration(Uri uri) {
         String token = configurationExportToken;
-        if (!ExportStatus.CONFIGURATION.start(token, L10n.t("Exporting HushGram settings..."))) return;
+        if (!ExportStatus.CONFIGURATION.start(token, L10n.t("Exporting TADa settings..."))) return;
         Context context = getContext();
         if (context == null) {
-            ExportStatus.CONFIGURATION.finish(token, L10n.t("Couldn't export HushGram settings. Try another file."));
+            ExportStatus.CONFIGURATION.finish(token, L10n.t("Couldn't export TADa settings. Try another file."));
             return;
         }
         Context application = context.getApplicationContext();
@@ -2852,16 +2852,16 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
                     if (output == null) throw new java.io.IOException();
                     output.write(bytes);
                 }
-                ExportStatus.CONFIGURATION.finish(token, L10n.t("HushGram settings exported."));
-                Utils.showToastLong(L10n.t("HushGram settings exported."));
+                ExportStatus.CONFIGURATION.finish(token, L10n.t("TADa settings exported."));
+                Utils.showToastLong(L10n.t("TADa settings exported."));
             } catch (Exception failure) {
                 Logger.printInfo(() -> "Configuration export failed");
-                ExportStatus.CONFIGURATION.finish(token, L10n.t("Couldn't export HushGram settings. Try another file."));
-                Utils.showToastLong(L10n.t("Couldn't export HushGram settings. Try another file."));
+                ExportStatus.CONFIGURATION.finish(token, L10n.t("Couldn't export TADa settings. Try another file."));
+                Utils.showToastLong(L10n.t("Couldn't export TADa settings. Try another file."));
             } finally {
                 // An Error past the catch still ends the export, or every settings action stays busy until a restart.
-                if (ExportStatus.CONFIGURATION.finish(token, L10n.t("Couldn't export HushGram settings. Try another file."))) {
-                    Utils.showToastLong(L10n.t("Couldn't export HushGram settings. Try another file."));
+                if (ExportStatus.CONFIGURATION.finish(token, L10n.t("Couldn't export TADa settings. Try another file."))) {
+                    Utils.showToastLong(L10n.t("Couldn't export TADa settings. Try another file."));
                 }
             }
         })) {
@@ -2966,7 +2966,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
                 ? L10n.f("Undo is available until %1$s.",
                 DateFormat.getTimeInstance(DateFormat.MEDIUM, L10n.locale(row.getContext())).format(
                         new Date(System.currentTimeMillis() + Math.max(0, deadline - SystemClock.elapsedRealtime()))))
-                : L10n.t("HushGram remembers where you stopped in up to 200 videos for 30 days. Tap to clear them "
+                : L10n.t("TADa remembers where you stopped in up to 200 videos for 30 days. Tap to clear them "
                         + "from this device."));
         row.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override public boolean onPreferenceClick(Preference preference) {
@@ -3243,7 +3243,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
     }
 
     /**
-     * The first row: whether HushGram is on, and why not when it isn't. Paused by safe mode or the
+     * The first row: whether TADa is on, and why not when it isn't. Paused by safe mode or the
      * marker file, a tap turns it back on from the next start.
      */
     private Preference statusCard(Context context) {
@@ -3256,12 +3256,12 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
                 paused ? palette.summary : palette.heading));
         statusCard = card;
         if (!paused) {
-            card.setTitle(L10n.t("HushGram is on"));
+            card.setTitle(L10n.t("TADa is on"));
             card.setSelectable(false);
             showStatus(card, context);
             return card;
         }
-        card.setTitle(L10n.t("HushGram is paused"));
+        card.setTitle(L10n.t("TADa is paused"));
         showStatus(card, context);
         // A tap acts at once, taking the pause off the next start, and the card says so in words.
         card.actsAtOnce = true;
@@ -3313,7 +3313,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
             HushgramPause.Reason kept = null;
             try { kept = HushgramPause.turnBackOn(storage); }
             catch (RuntimeException failure) {
-                Logger.printInfo(() -> "HushGram pause recovery failed", failure);
+                Logger.printInfo(() -> "TADa pause recovery failed", failure);
             } finally {
                 HushgramPause.Reason still = kept;
                 Utils.runOnMainThread(() -> resumeFromOverviewFinished(still));
@@ -3341,14 +3341,14 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         if (still == HushgramPause.Reason.MARKER_FILE) {
             String file = L10n.isolate(HushgramPause.MARKER_FILE_NAME);
             String folder = L10n.isolate(markerFolder(context.getPackageName()));
-            String left = L10n.f("The file %1$s couldn't be removed. Delete it from %2$s to turn HushGram back on.",
+            String left = L10n.f("The file %1$s couldn't be removed. Delete it from %2$s to turn TADa back on.",
                     file, folder);
             statusCard.setSummary(left);
             Utils.showToastLong(left);
             return;
         }
         if (still != HushgramPause.Reason.NONE) {
-            Utils.showToastLong(L10n.t("Couldn't turn HushGram back on. Try again."));
+            Utils.showToastLong(L10n.t("Couldn't turn TADa back on. Try again."));
         }
         showStatus(statusCard, context);
         showRestart();
@@ -3364,12 +3364,12 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         if (!HushgramPause.isPaused()) {
             String version = L10n.f("Version %1$s for Instagram %2$s",
                     L10n.isolate(Utils.getPatchesReleaseVersion()), L10n.isolate(Utils.getAppVersionName()));
-            status = pausedNext ? version + " " + L10n.t("HushGram pauses when Instagram restarts.") : version;
+            status = pausedNext ? version + " " + L10n.t("TADa pauses when Instagram restarts.") : version;
         } else if (pausedNext) {
             status = pausedSummary(HushgramPause.reason(), context.getPackageName())
                     + " " + L10n.t("Tap to turn it back on.");
         } else {
-            status = L10n.t("HushGram turns back on when Instagram restarts.");
+            status = L10n.t("TADa turns back on when Instagram restarts.");
         }
         card.setSummary(status);
     }
@@ -3402,7 +3402,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
     /**
      * The shared fragment's "restart to apply" feedback while this page is up. When the screen shows
      * its Restart now bar (#146), the bar is what to tap, so a screen reader hears the message and
-     * no toast covers the page. Otherwise (HushGram paused now and at the next start too, so a
+     * no toast covers the page. Otherwise (TADa paused now and at the next start too, so a
      * restart would apply nothing) the toast still says it, since nothing on the screen does.
      */
     private final AbstractPreferenceFragment.RestartFeedbackPresenter restartFeedback = (shown, message) -> {
@@ -3423,7 +3423,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
     }
 
     /**
-     * Whether Restart now is offered. Pausing HushGram or turning it back on changes what the next
+     * Whether Restart now is offered. Pausing TADa or turning it back on changes what the next
      * start runs, so that alone offers it (#146: flipping Pause offered nothing to tap). While the
      * pause holds through the next start too, a restart applies nothing and the bar stays off.
      */
@@ -3444,14 +3444,14 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         switch (reason) {
             case CRASH_LOOP:
                 why = L10n.t("Instagram crashed or froze within a minute of starting three times in a row, so "
-                        + "HushGram paused itself.");
+                        + "TADa paused itself.");
                 break;
             case MARKER_FILE:
-                why = L10n.f("A file named %1$s in %2$s paused HushGram.",
+                why = L10n.f("A file named %1$s in %2$s paused TADa.",
                         L10n.isolate(HushgramPause.MARKER_FILE_NAME), L10n.isolate(markerFolder(packageName)));
                 break;
             default:
-                why = L10n.t("You paused HushGram.");
+                why = L10n.t("You paused TADa.");
                 break;
         }
         return why + " " + L10n.t("Every switch but Debug logging acts as if it were off, and what was set when you "
@@ -3559,7 +3559,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
     }
 
     /**
-     * What unlocks the messages: the phone's lock or a HushGram PIN. Choosing the PIN asks for one
+     * What unlocks the messages: the phone's lock or a TADa PIN. Choosing the PIN asks for one
      * first when none is set, and a change while the messages are locked asks the current lock, so
      * the choice can't be used to get around it.
      */
@@ -3569,7 +3569,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         row.setTitle(L10n.t("Unlock with"));
         row.setDialogTitle(L10n.t("Unlock with"));
         row.setNegativeButtonText(L10n.t("Cancel"));
-        row.setEntries(new CharSequence[]{L10n.t("Phone lock"), L10n.t("HushGram PIN")});
+        row.setEntries(new CharSequence[]{L10n.t("Phone lock"), L10n.t("TADa PIN")});
         row.setEntryValues(new CharSequence[]{UnlockWith.PHONE_LOCK.name(), UnlockWith.PIN.name()});
         row.setValue(Settings.UNLOCK_WITH.savedValue().name());
         row.setOnPreferenceChangeListener((preference, value) -> {
@@ -3592,12 +3592,12 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         return row;
     }
 
-    /** The row that sets or changes the HushGram PIN; changing it while locked asks the current lock first. */
+    /** The row that sets or changes the TADa PIN; changing it while locked asks the current lock first. */
     static Row changePinRow(Context context) {
         Row row = new Row(context);
         row.setKey(CHANGE_PIN_ROW);
         row.setPersistent(false);
-        row.setTitle(L10n.t("HushGram PIN"));
+        row.setTitle(L10n.t("TADa PIN"));
         row.setSummary(L10n.t("Set or change the 4 to 8 digit PIN. It stays on this phone and isn't in a backup."));
         row.setOnPreferenceClickListener(tapped -> {
             Activity activity = activityOf(tapped.getContext());
@@ -3720,7 +3720,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
      * The hidden chats of the account you're signed in to, each with a check, and the chat you
      * opened last on it above them when it isn't hidden. Checking one hides it at once; unchecking
      * one shows it again, on that account only. Paused, the list still shows what you chose, though
-     * Instagram shows every chat until HushGram is back on. None is offered while the account isn't
+     * Instagram shows every chat until TADa is back on. None is offered while the account isn't
      * known.
      */
     private void showHiddenChats() {
@@ -3942,25 +3942,25 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
 
     /**
      * What a way-in switch does, for the shortcut, the logo press and the menu row's hide switch.
-     * The hide switch says when it can't hide the row because nothing else opens HushGram.
+     * The hide switch says when it can't hide the row because nothing else opens TADa.
      */
     static String wayInSummary(Setting<?> setting) {
         if (setting == Settings.SETTINGS_SHORTCUT) {
-            return L10n.t("Puts HushGram settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.");
+            return L10n.t("Puts TADa settings in the menu you get by holding Instagram's icon. Off, it leaves that menu.");
         }
         if (setting == Settings.SETTINGS_LOGO_PRESS) {
             return L10n.t("A long press on the Instagram logo at the top of Home opens these settings. Off, the long "
                     + "press goes back to Instagram.");
         }
         if (Settings.HIDE_MENU_ROW.savedValue() && SettingsEntry.waysInOn() == 0) {
-            return L10n.t("No other way into HushGram is on, so the row stays in Instagram's menu.");
+            return L10n.t("No other way into TADa is on, so the row stays in Instagram's menu.");
         }
-        return L10n.t("Instagram's Settings and activity screen leaves out the HushGram row while another way here "
-                + "opens HushGram. With every other way off, the row comes back.");
+        return L10n.t("Instagram's Settings and activity screen leaves out the TADa row while another way here "
+                + "opens TADa. With every other way off, the row comes back.");
     }
 
     /**
-     * The switch for opening HushGram with a long press on your profile's menu button (#84). The
+     * The switch for opening TADa with a long press on your profile's menu button (#84). The
      * button already on screen takes the change once the setting has it, after this change's own
      * sync, so no restart.
      */
@@ -3968,7 +3968,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         SwitchPreference row = toggle(context, Settings.PROFILE_MENU_LONG_PRESS,
                 L10n.t("Open settings with a long press on your profile's menu"),
                 L10n.t("A long press on the menu button, the three lines at the top right of your own profile, "
-                        + "opens HushGram. A tap still opens Instagram's menu, and other profiles stay the same."));
+                        + "opens TADa. A tap still opens Instagram's menu, and other profiles stay the same."));
         row.setOnPreferenceChangeListener((preference, value) -> {
             Utils.runOnMainThread(ProfileMenuPress::applyChoice);
             return true;
@@ -5237,7 +5237,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
         if (resumingFromOverview && setting == BaseSettings.PAUSED) preference.setEnabled(false);
         if (setting == Settings.SETTINGS_SHORTCUT || setting == Settings.SETTINGS_LOGO_PRESS
                 || setting == Settings.HIDE_MENU_ROW) {
-            // The last way into HushGram still on stays on, greyed out under a line saying why.
+            // The last way into TADa still on stays on, greyed out under a line saying why.
             boolean last = SettingsEntry.isLastWayIn(setting);
             if (last) preference.setEnabled(false);
             preference.setSummary(last ? L10n.t("The last way into these settings stays on.") : wayInSummary(setting));
@@ -5512,7 +5512,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
 
     /**
      * "Videos are named IG_VID_{date}. Photos are always named IG_IMG_ followed by the date and
-     * time." for [template]. The photo prefix is HushGram's, not Instagram's, so it isn't called
+     * time." for [template]. The photo prefix is TADa's, not Instagram's, so it isn't called
      * Instagram's own naming.
      */
     static String fileNameSummary(String template) {
@@ -6155,7 +6155,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
      * shared page syncing it from the setting, or an import.
      */
     static final class NavigationRow extends ListPreference {
-        /** What the chosen tab's long press does: open HushGram, the quality picker (#93) or Ghost mode (#255). */
+        /** What the chosen tab's long press does: open TADa, the quality picker (#93) or Ghost mode (#255). */
         enum Use { SETTINGS, QUALITY, GHOST }
         private String summary;
         private final Use use;
@@ -6180,7 +6180,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
                         ? L10n.t("Tab long presses keep Instagram's own action. Choose one to turn Ghost mode on or off instead.")
                         : L10n.f("Long press %1$s to turn Ghost mode on or off instead of that tab's usual action, and a "
                                 + "toast says which way it went. Normal taps and other tabs stay the same. If the same tab "
-                                + "opens HushGram or picks the playback quality, that comes first.", navigationLabel(target));
+                                + "opens TADa or picks the playback quality, that comes first.", navigationLabel(target));
                 setSummary(summary);
                 return;
             }
@@ -6189,13 +6189,13 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
                         ? L10n.t("Tab long presses keep Instagram's own action. Choose one to pick the playback quality instead.")
                         : L10n.f("Long press %1$s to pick the playback quality instead of that tab's usual action. "
                                 + "Normal taps and other tabs stay the same. Needs Default playback quality on. "
-                                + "If the same tab opens HushGram, that comes first.", navigationLabel(target));
+                                + "If the same tab opens TADa, that comes first.", navigationLabel(target));
                 setSummary(summary);
                 return;
             }
             summary = target == NavigationTarget.OFF
-                    ? L10n.t("Tab long presses keep Instagram's own action. Choose one to open HushGram instead.")
-                    : L10n.f("Long press %1$s to open HushGram instead of that tab's usual action. "
+                    ? L10n.t("Tab long presses keep Instagram's own action. Choose one to open TADa instead.")
+                    : L10n.f("Long press %1$s to open TADa instead of that tab's usual action. "
                             + "Normal taps and other tabs stay the same. Only tabs your account shows can be used.",
                             navigationLabel(target));
             setSummary(summary);
@@ -7133,7 +7133,7 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
             Preference.OnPreferenceClickListener open = getOnPreferenceClickListener();
             setOnPreferenceClickListener(row -> {
                 Activity activity = getActivity();
-                if (row.isEnabled() && HushgramPreferenceFragment.this.getView() != null && activity != null
+                if (row.isEnabled() && TadaPreferenceFragment.this.getView() != null && activity != null
                         && !activity.isFinishing() && !activity.isDestroyed()) {
                     open.onPreferenceClick(row);
                 }
@@ -7316,6 +7316,6 @@ public final class HushgramPreferenceFragment extends AbstractPreferenceFragment
 
     @Override
     protected CharSequence initializationErrorTitle(@Nullable Context context) {
-        return L10n.t(context, "HushGram settings couldn't open");
+        return L10n.t(context, "TADa settings couldn't open");
     }
 }

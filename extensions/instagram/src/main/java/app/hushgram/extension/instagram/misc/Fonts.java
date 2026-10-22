@@ -286,7 +286,7 @@ public final class Fonts {
             } else if (choice == FontChoice.FILE) {
                 base = loadKept();
                 if (base == null) Utils.showToastLong(L10n.t(
-                        "Couldn't load your font file, so Instagram's font shows. Pick it again in HushGram settings > Layout."));
+                        "Couldn't load your font file, so Instagram's font shows. Pick it again in TADa settings > Layout."));
             }
             chosen = base;
             return base;

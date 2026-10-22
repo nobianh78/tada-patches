@@ -35,7 +35,7 @@ val stopHeartbeatPatch = bytecodePatch(
     name = "Stop background wake-ups",
     description = "Stops two alarms that wake your phone while Instagram is in the background. One goes off every " +
         "minute or two only to note that Instagram is still running, and the other wakes it five minutes later to " +
-        "upload usage events. Messages and notifications still arrive. Starts off. Turn it on in HushGram " +
+        "upload usage events. Messages and notifications still arrive. Starts off. Turn it on in TADa " +
         "settings > Battery.",
 ) {
     category("Fixes")

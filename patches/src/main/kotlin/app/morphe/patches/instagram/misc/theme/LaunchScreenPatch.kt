@@ -32,7 +32,7 @@ import org.w3c.dom.Element
 import java.io.File
 import javax.xml.parsers.DocumentBuilderFactory
 
-private const val PATCH = "HushGram launch screen"
+private const val PATCH = "TADa launch screen"
 
 /** The theme Instagram's launcher activities wear, whose Android 12 version names the launch screen's icon. */
 internal const val INSTAGRAM_LAUNCH_THEME = "Base.Theme.Launcher"
@@ -288,7 +288,7 @@ private fun Method.where(): String = "$definingClass->$name"
 @Suppress("unused")
 val launchScreenPatch = bytecodePatch(
     name = "TADa launch screen",
-    description = "Shows HushGram's logo instead of Instagram's on the screen you see while Instagram starts, on " +
+    description = "Shows TADa's logo instead of Instagram's on the screen you see while Instagram starts, on " +
         "Android 13 and newer. Starts off. Turn it on in TADa settings > Layout.",
     default = true,
 ) {

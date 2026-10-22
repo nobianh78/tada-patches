@@ -66,7 +66,7 @@ private val cloneManifestPatch = resourcePatch {
 val installNextToInstagramPatch = bytecodePatch(
     name = "Install next to Instagram",
     description = "Installs this build as a second Instagram beside your normal one, with its own data and sign-in. " +
-        "Pick its package name and app name in the patch's options, and whether its icon gets a HushGram badge. " +
+        "Pick its package name and app name in the patch's options, and whether its icon gets a TADa badge. " +
         "Works as soon as you patch it in, with no switch.",
     default = false,
 ) {
@@ -93,7 +93,7 @@ val installNextToInstagramPatch = bytecodePatch(
         key = "markIcon",
         default = false,
         title = "Mark the icon",
-        description = "Puts a small HushGram badge on the second Instagram's home screen icon, so the two are easy to " +
+        description = "Puts a small TADa badge on the second Instagram's home screen icon, so the two are easy to " +
             "tell apart. Instagram's other icons you can pick in its settings get it too.",
     )
 

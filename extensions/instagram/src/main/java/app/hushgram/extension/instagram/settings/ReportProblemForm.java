@@ -29,11 +29,11 @@ import app.hushgram.extension.shared.settings.preference.ReportProblem;
 @SuppressWarnings("deprecation") // Framework preferences, as the settings screen uses.
 final class ReportProblemForm {
     /** owner/name, read off the Source code link so the two can't drift apart. */
-    static final String REPOSITORY = HushgramPreferenceFragment.SOURCE_URL
-            .substring(HushgramPreferenceFragment.SOURCE_URL.indexOf("github.com/") + "github.com/".length());
+    static final String REPOSITORY = TadaPreferenceFragment.SOURCE_URL
+            .substring(TadaPreferenceFragment.SOURCE_URL.indexOf("github.com/") + "github.com/".length());
 
     /** Where the reports are, for a phone with no app that can open the link. */
-    static final String ISSUES_ADDRESS = HushgramPreferenceFragment.SOURCE_ADDRESS + "/issues";
+    static final String ISSUES_ADDRESS = TadaPreferenceFragment.SOURCE_ADDRESS + "/issues";
 
     /** The bug form and the ids of the fields filled in. A renamed id in the form has to change here too. */
     static final ReportProblem.Form FORM = new ReportProblem.Form(REPOSITORY, "bug_report.yml",
@@ -65,7 +65,7 @@ final class ReportProblemForm {
 
     /** The new bug report's address, with this install's facts and the switches on among [rows]. */
     static String issueUrl(Iterable<? extends Preference> rows) {
-        return ReportProblem.issueUrl(FORM, ReportProblem.facts("HushGram", "Instagram", switchesOn(rows)));
+        return ReportProblem.issueUrl(FORM, ReportProblem.facts("TADa", "Instagram", switchesOn(rows)));
     }
 
     /** Opens the report in a browser, in a task of its own, or says no app here can. */

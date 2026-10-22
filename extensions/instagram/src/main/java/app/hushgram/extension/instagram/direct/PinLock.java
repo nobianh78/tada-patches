@@ -345,7 +345,7 @@ public final class PinLock {
         AlertDialog dialog = builder(activity)
                 .setTitle(L10n.t("Forgot PIN?"))
                 .setMessage(L10n.t("The PIN can't be recovered. To remove it, clear Instagram's storage in Android's "
-                        + "app settings. That signs you out and resets HushGram's settings. A saved settings backup "
+                        + "app settings. That signs you out and resets TADa's settings. A saved settings backup "
                         + "brings the rest back, but not the PIN."))
                 .setPositiveButton(L10n.t("Open app info"), null)
                 .setNegativeButton(L10n.t("Cancel"), null)

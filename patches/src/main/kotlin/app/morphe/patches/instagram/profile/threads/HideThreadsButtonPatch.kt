@@ -108,7 +108,7 @@ private const val ITERATOR = "Ljava/util/List;->iterator()Ljava/util/Iterator;"
 val hideThreadsButtonPatch = bytecodePatch(
     name = "Hide the Threads button",
     description = "Takes the Threads button off the top of profiles, with switches for the Create button and Share " +
-        "profile on your own. The menu and the other buttons stay. Each starts off. Turn them on in HushGram " +
+        "profile on your own. The menu and the other buttons stay. Each starts off. Turn them on in TADa " +
         "settings > Profiles.",
     default = true,
 ) {

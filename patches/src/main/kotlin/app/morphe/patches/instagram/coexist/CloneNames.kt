@@ -11,8 +11,8 @@ internal const val PATCH = "Install next to Instagram"
 /** The package Meta ships Instagram under, which the second copy gives up. */
 internal const val INSTAGRAM = "com.instagram.android"
 
-internal const val DEFAULT_PACKAGE = "$INSTAGRAM.hush"
-internal const val DEFAULT_LABEL = "Instagram Clone"
+internal const val DEFAULT_PACKAGE = "$INSTAGRAM.tada"
+internal const val DEFAULT_LABEL = "TADa Instagram"
 
 /** The extension's answer to "which package is this", which the patch rewrites to the copy's. */
 internal const val OWN_PACKAGE_CLASS = "Lapp/hushgram/extension/instagram/misc/OwnPackage;"

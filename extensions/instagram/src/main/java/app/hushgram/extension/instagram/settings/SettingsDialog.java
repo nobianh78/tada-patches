@@ -254,7 +254,7 @@ public final class SettingsDialog extends DialogFragment {
         });
         bar.setOnClickListener(v -> {
             Fragment page = getChildFragmentManager().findFragmentById(CONTAINER_ID);
-            if (page instanceof HushgramPreferenceFragment) ((HushgramPreferenceFragment) page).restartNow();
+            if (page instanceof TadaPreferenceFragment) ((TadaPreferenceFragment) page).restartNow();
         });
         bar.setVisibility(View.GONE);
         return bar;
@@ -282,7 +282,7 @@ public final class SettingsDialog extends DialogFragment {
     /** Closes the settings page's open category, if one is open. Answers whether one was. */
     private boolean closeCategory() {
         Fragment page = getChildFragmentManager().findFragmentById(CONTAINER_ID);
-        return page instanceof HushgramPreferenceFragment && ((HushgramPreferenceFragment) page).closeCategory();
+        return page instanceof TadaPreferenceFragment && ((TadaPreferenceFragment) page).closeCategory();
     }
 
     @Override
@@ -370,7 +370,7 @@ public final class SettingsDialog extends DialogFragment {
         if (!MessagesLock.guardSettings(activity, window)) return;
         try {
             Fragment page = getChildFragmentManager().findFragmentById(CONTAINER_ID);
-            if (page instanceof HushgramPreferenceFragment) ((HushgramPreferenceFragment) page).closeDialogs();
+            if (page instanceof TadaPreferenceFragment) ((TadaPreferenceFragment) page).closeDialogs();
         } catch (Exception failure) {
             Logger.printException(() -> "Settings: could not close what was open over them", failure);
         }
@@ -451,7 +451,7 @@ public final class SettingsDialog extends DialogFragment {
             if (child == null) {
                 container.removeAllViews();
                 manager.beginTransaction()
-                        .replace(CONTAINER_ID, new HushgramPreferenceFragment())
+                        .replace(CONTAINER_ID, new TadaPreferenceFragment())
                         .commitNow();
             } else if (child.isDetached()) {
                 manager.beginTransaction().attach(child).commitNow();

@@ -45,7 +45,7 @@ final class QualityPicker {
             if (activity == null || activity.isFinishing() || activity.isDestroyed() || !offered()) return false;
             PlaybackQuality[] qualities = PlaybackQuality.values();
             CharSequence[] labels = new CharSequence[qualities.length];
-            for (int i = 0; i < qualities.length; i++) labels[i] = HushgramPreferenceFragment.playbackQualityLabel(qualities[i]);
+            for (int i = 0; i < qualities.length; i++) labels[i] = TadaPreferenceFragment.playbackQualityLabel(qualities[i]);
             int checked = Settings.PLAYBACK_QUALITY.savedValue().ordinal();
             AlertDialog dialog = new AlertDialog.Builder(activity)
                     .setTitle(L10n.t("Playback quality"))
@@ -67,11 +67,11 @@ final class QualityPicker {
     /** Saves [quality] as the playback quality and says so. */
     static void choose(PlaybackQuality quality) {
         try {
-            String label = HushgramPreferenceFragment.playbackQualityLabel(quality);
+            String label = TadaPreferenceFragment.playbackQualityLabel(quality);
             if (Settings.PLAYBACK_QUALITY.save(quality)) {
                 Utils.showToastShort(L10n.f("Playback quality: %1$s. The next video you open uses it.", label));
             } else {
-                Utils.showToastShort(L10n.t("Couldn't save the playback quality. Open HushGram settings to set it."));
+                Utils.showToastShort(L10n.t("Couldn't save the playback quality. Open TADa settings to set it."));
             }
         } catch (Throwable t) {
             Logger.printException(() -> "Quality picker: could not save the pick", t);

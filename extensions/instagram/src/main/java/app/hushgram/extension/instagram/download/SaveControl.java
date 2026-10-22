@@ -267,7 +267,7 @@ public final class SaveControl {
                 // The person switched this channel off in Instagram's notification settings.
                 return null;
             }
-            String name = L10n.t(application, "HushGram saves");
+            String name = L10n.t(application, "TADa saves");
             if (channel == null || !name.contentEquals(channel.getName())) {
                 // Creating it again renames it in the phone's current language and changes
                 // nothing the person set for it.

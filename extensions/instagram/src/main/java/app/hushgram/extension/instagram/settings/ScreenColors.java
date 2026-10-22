@@ -250,15 +250,15 @@ public final class ScreenColors {
         return (opensPage(above) && (opensPage(below) || closesPage(below))) || (closesPage(above) && closesPage(below));
     }
 
-    /** Report a problem and Support HushGram, which end the page. */
+    /** Report a problem and Support TADa, which end the page. */
     private static boolean closesPage(Preference preference) {
         String key = preference.getKey();
-        return HushgramPreferenceFragment.REPORT_ROW_KEY.equals(key) || HushgramPreferenceFragment.SUPPORT_ROW_KEY.equals(key);
+        return TadaPreferenceFragment.REPORT_ROW_KEY.equals(key) || TadaPreferenceFragment.SUPPORT_ROW_KEY.equals(key);
     }
 
     private static boolean opensPage(Preference preference) {
         String key = preference.getKey();
-        return key != null && key.startsWith(HushgramPreferenceFragment.CATEGORY_ROW_KEY);
+        return key != null && key.startsWith(TadaPreferenceFragment.CATEGORY_ROW_KEY);
     }
 
     /** Where [preference] stands among the rows [group] shows, which it keeps in their order. */
@@ -499,7 +499,7 @@ public final class ScreenColors {
     static void recoveryMessage(View row) {
         ScreenColors palette = forScreen(row.getContext());
         if (palette == null) palette = DEFAULT;
-        HushgramPreferenceFragment.showAllText(row);
+        TadaPreferenceFragment.showAllText(row);
         TextView title = row.findViewById(android.R.id.title);
         TextView summary = row.findViewById(android.R.id.summary);
         // Centred across the row: text wrapped to its own width has nothing to centre in.
