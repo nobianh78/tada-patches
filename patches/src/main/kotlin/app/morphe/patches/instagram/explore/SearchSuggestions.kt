@@ -17,6 +17,7 @@ import app.morphe.patches.instagram.misc.extension.jumpTargets
 import app.morphe.patches.instagram.misc.extension.loadsString
 import app.morphe.patches.instagram.misc.extension.parameterRegisterNumber
 import app.morphe.patches.instagram.misc.settings.EXTENSION_ROOT
+import app.morphe.patches.instagram.misc.extension.freeLocalsAt
 import app.morphe.util.ControlFlow
 import app.morphe.util.findFreeRegister
 import app.morphe.util.isConditionalBranchInstruction
@@ -112,9 +113,13 @@ internal fun BytecodePatchContext.findSearchSuggestions(): SearchSuggestionSites
 
     val (guardIndex, exitIndex) = section.suggestedBlockGuard()
     val scratch = try {
-        section.findFreeRegister(guardIndex)
-    } catch (failure: IllegalArgumentException) {
-        refuse("no free register to guard the ${section.name} section's $NULL_STATE_SUGGESTED block")
+        section.freeLocalsAt(PATCH, guardIndex, 1, targets = listOf(exitIndex), highest = 15).single()
+    } catch (_: Exception) {
+        try {
+            section.findFreeRegister(guardIndex)
+        } catch (_: Exception) {
+            refuse("no free register to guard the ${section.name} section's $NULL_STATE_SUGGESTED block")
+        }
     }
 
     return SearchSuggestionSites(

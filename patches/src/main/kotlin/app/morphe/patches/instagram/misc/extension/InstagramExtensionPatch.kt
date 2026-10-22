@@ -41,7 +41,7 @@ val instagramExtensionPatch = bytecodePatch {
 
     finalize {
         MorpheUtilsPatchesVersionFingerprint.method.apply {
-            returnEarly("2.0.11")
+            returnEarly("2.0.12")
         }
         MorpheUtilsBuildIdentityFingerprint.method.apply {
             returnEarly("hg1:0000000000000000000000000000000000000000000000000000000000000000")
