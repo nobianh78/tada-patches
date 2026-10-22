@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-22T19:30:00",
-  "description": "## [2.0.10](https://github.com/nobianh78/tada-patches/compare/v2.0.9...v2.0.10) (2026-10-22)\n\n### ✨ New Features\n\n* **Instagram:** Integrated full TADa Settings, Ghost mode (Anonymous story & live view, hide seen DM receipts, hide typing status), Media Downloader (Reels, Stories, Videos, Voice messages, Profile pictures), Ad blocking, and Reels controls.\n\n",
-  "download_url": "https://github.com/nobianh78/tada-patches/releases/download/v2.0.10/patches-2.0.10.mpp",
+  "created_at": "2026-10-22T20:10:00",
+  "description": "## [2.0.11](https://github.com/nobianh78/tada-patches/compare/v2.0.10...v2.0.11) (2026-10-22)\n\n### 🐛 Bug Fixes\n\n* **Instagram:** Fixed missing `Utils` class crash during patch execution (`Could not find class: Lapp/hushgram/extension/shared/Utils;`). Retained all HushGram extension classes during R8 minification and isolated Instagram extension bundle.\n\n",
+  "download_url": "https://github.com/nobianh78/tada-patches/releases/download/v2.0.11/patches-2.0.11.mpp",
   "signature_download_url": "",
-  "version": "2.0.10"
+  "version": "2.0.11"
 }

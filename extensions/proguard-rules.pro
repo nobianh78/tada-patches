@@ -7,6 +7,9 @@
 -keep class app.morphe.** {
   *;
 }
+-keep class app.hushgram.** {
+  *;
+}
 -keep class com.google.** {
   *;
 }
