@@ -1,0 +1,114 @@
+/*
+ * Copyright 2026 Hushfacebook contributors
+ * https://github.com/SysAdminDoc/Hushfacebook
+ *
+ * Modified for HushGram (Instagram), 2026.
+ */
+package app.morphe.patches.instagram.misc.extension
+
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.BytecodePatchContext
+import app.morphe.patcher.patch.PatchException
+import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.util.addInstructionsAtControlFlowLabel
+import com.android.tools.smali.dexlib2.Opcode
+import com.android.tools.smali.dexlib2.iface.Method
+import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
+import com.android.tools.smali.dexlib2.iface.reference.StringReference
+
+/**
+ * Passes every object this method returns through [filter], a static `(T)T` call, so the caller
+ * gets the filter's answer. The call goes in at the return's own label, so a branch that jumps
+ * straight to a return passes through it too. Throws naming [patch] when the method returns no
+ * object.
+ */
+internal fun MutableMethod.filterEveryReturn(patch: String, filter: String) {
+    val implementation = implementation ?: throw PatchException("$patch: $definingClass->$name has no body")
+    val returns = implementation.instructions.withIndex()
+        .filter { it.value.opcode == Opcode.RETURN_OBJECT }
+        .map { it.index to (it.value as OneRegisterInstruction).registerA }
+    if (returns.isEmpty()) throw PatchException("$patch: $definingClass->$name returns no object")
+
+    returns.asReversed().forEach { (index, register) ->
+        addInstructionsAtControlFlowLabel(
+            index,
+            """
+                invoke-static/range { v$register .. v$register }, $filter
+                move-result-object v$register
+            """,
+        )
+    }
+}
+
+/**
+ * Passes every boolean this method returns through [filter], a static `(I)Z` call, so the caller
+ * gets the filter's answer. The value goes over as an int (no hook takes a boolean, see
+ * BooleanHookParametersTest) and comes back as a boolean. As in [filterEveryReturn], the call goes
+ * in at the return's own label, so a branch that jumps straight to a return passes through it too.
+ * Throws naming [patch] when the method doesn't answer a boolean or has no return.
+ */
+internal fun MutableMethod.filterEveryBooleanReturn(patch: String, filter: String) {
+    val implementation = implementation ?: throw PatchException("$patch: $definingClass->$name has no body")
+    if (returnType != "Z") throw PatchException("$patch: $definingClass->$name answers $returnType, not a boolean")
+    if (!filter.endsWith("(I)Z")) throw PatchException("$patch: $filter doesn't take an int and answer a boolean")
+    val returns = implementation.instructions.withIndex()
+        .filter { it.value.opcode == Opcode.RETURN }
+        .map { it.index to (it.value as OneRegisterInstruction).registerA }
+    if (returns.isEmpty()) throw PatchException("$patch: $definingClass->$name has no return")
+
+    returns.asReversed().forEach { (index, register) ->
+        addInstructionsAtControlFlowLabel(
+            index,
+            """
+                invoke-static/range { v$register .. v$register }, $filter
+                move-result v$register
+            """,
+        )
+    }
+}
+
+/**
+ * Passes every `const-string` of [value] in the app's own code through [filter], a static
+ * `(String)String` call, right after the string is loaded. Only the path through the load reaches
+ * the call: a branch to the next instruction still lands on it. Answers how many loads it found.
+ * A load in a method [covered] says another hook already passes the value through [filter] is
+ * counted and left alone, so it isn't passed through twice.
+ */
+internal fun BytecodePatchContext.filterEveryStringLoad(
+    value: String,
+    filter: String,
+    covered: (Method) -> Boolean = { false },
+): Int {
+    val owners = mutableListOf<String>()
+    classesHolding(value).forEach { classDef ->
+        if (classDef.methods.any { method -> method.stringLoads(value).isNotEmpty() }) owners += classDef.type
+    }
+    var count = 0
+    owners.forEach { type ->
+        mutableClassDefBy(type).methods.forEach { method ->
+            if (covered(method)) {
+                count += method.stringLoads(value).size
+                return@forEach
+            }
+            method.stringLoads(value).asReversed().forEach { (index, register) ->
+                method.addInstructions(
+                    index + 1,
+                    """
+                        invoke-static/range { v$register .. v$register }, $filter
+                        move-result-object v$register
+                    """,
+                )
+                count++
+            }
+        }
+    }
+    return count
+}
+
+/** The index and target register of each `const-string` of [value] in this method. */
+private fun com.android.tools.smali.dexlib2.iface.Method.stringLoads(value: String): List<Pair<Int, Int>> =
+    implementation?.instructions?.withIndex()?.filter { (_, instruction) ->
+        (instruction.opcode == Opcode.CONST_STRING || instruction.opcode == Opcode.CONST_STRING_JUMBO) &&
+            ((instruction as ReferenceInstruction).reference as StringReference).string == value
+    }?.map { (index, instruction) -> index to (instruction as OneRegisterInstruction).registerA }.orEmpty()
