@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.46.0",
+  "version": "2.0.8",
   "patches": [
     {
       "name": "Add to queue",
@@ -2039,6 +2039,55 @@
             "Play": "play",
             "Play black": "play_black",
             "Custom": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Custom branding name for Instagram",
+      "description": "Changes the Instagram app name to TADa Instagram (or a custom name specified in patch options).",
+      "default": true,
+      "category": null,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.instagram.android",
+          "name": "Instagram",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#E1306C",
+          "signatures": [
+            "5f3e50f435583c9ae626302a71f7340044087a7e2c60adacfc254205a993e305",
+            "3a10c50c18ba937506c2875e9047be74f8fd8b86fae2ff9feaa50a81fcb4c014"
+          ],
+          "targets": [
+            {
+              "version": "452.0.0.48.64",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "appName",
+          "title": "App name",
+          "description": "The name of the app displayed on launcher and system settings.",
+          "required": true,
+          "type": "kotlin.String",
+          "default": "TADa Instagram",
+          "values": {
+            "Default": "TADa Instagram"
           }
         }
       ]
@@ -8844,7 +8893,7 @@
     },
     {
       "name": "Override YouTube Music buttons",
-      "description": "Overrides YouTube Music buttons to open TADa Music or any compatible third-party client.",
+      "description": "Overrides YouTube Music buttons to open any compatible third-party client.",
       "default": true,
       "category": null,
       "dependencies": [

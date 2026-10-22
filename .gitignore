@@ -35,3 +35,7 @@ google-services.json
 
 # NPM modules
 node_modules/
+
+# Eclipse / temporary build dirs
+bin/
+build_artifacts_*/
